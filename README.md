@@ -1,2 +1,3 @@
-# website_copy
-A repository for exercism's website's copy
+# Copy for the Exercism website
+
+A repository for exercism's website's copy, which is directly read into the site at runtime.
