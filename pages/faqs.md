@@ -8,7 +8,7 @@ To learn more about what it means for the devil to be in the details, check out 
 [Overkill](http://www.kytrinyx.com/talks/overkill) and 
 [Succession](http://www.kytrinyx.com/talks/succession) talks by Katrina.
 
-### Who creates Exercism
+### Who creates Exercism
 
 Exercism was founded by [Katrina Owen](http://www.kytrinyx.com/). Katrina is a polyglot developer and Ruby Hero award winner who accidentally became a developer while pursuing a degree in molecular biology. She began nitpicking code back in 2006 while volunteering at JavaRanch, and got hooked. When programming, her focus is on automation, workflow optimization, and refactoring. She cares deeply about open source and contributes to several projects outside of exercism.
 
