@@ -1,6 +1,6 @@
-# Copy for the [new Exercism prototype website](https://v2.exercism.io).
+# Copy for the new Exercism prototype website
 
-A repository for exercism's website's copy, which is directly read into the site at runtime.
+A repository for the copy used on the [Exercism prototype website](https://v2.exercism.io). This repository is directly read into the site at periodic intervals.
 
 ## Contributing
 
