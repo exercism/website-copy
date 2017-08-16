@@ -1,47 +1,47 @@
 {
-  start: {
-    header: "Welcome to the solution walkthrough",
-    content: "Do you have the exercism command line application installed on your computer?",
-    answers: [["Yes", "terminal_check", "cli_installed"], ["No", "terminal_check", "cli_not_installed"], ["I don't know", "terminal_check"]]
+  "start": {
+    "header": "Welcome to the solution walkthrough",
+    "content": "Do you have the exercism command line application installed on your computer?",
+    "answers": [["Yes", "terminal_check", "cli_installed"], ["No", "terminal_check", "cli_not_installed"], ["I don't know", "terminal_check"]]
   },
-  terminal_check: {
-    header: "Are you familiar with the terminal?",
-    content: "Do you know what a 'terminal' is how to use it?",
-    answers: [["Yes", [['cli_installed', "run_command"], ['cli_not_installed', "determine_os"], "cli_check"], "knows_terminal"], ["No", "determine_os", "does_not_know_terminal"]]
+  "terminal_check": {
+    "header": "Are you familiar with the terminal?",
+    "content": "Do you know what a 'terminal' is how to use it?",
+    "answers": [["Yes", [["cli_installed", "run_command"], ["cli_not_installed", "determine_os"], "cli_check"], "knows_terminal"], ["No", "determine_os", "does_not_know_terminal"]]
   },
-  cli_check: {
-    header: "Do you have the CLI?",
-    content: "Let's work out if you have the CLI. Here's how.",
-    answers: []
+  "cli_check": {
+    "header": "Do you have the CLI?",
+    "content": "Let's work out if you have the CLI. Here's how.",
+    "answers": []
   },
-  determine_os: {
-    header: "What operating System are you on?",
-    content: "Each one takes a different pathway",
-    answers: [["Mac", [["knows_terminal", "mac_check_brew"], ["does_not_know_terminal", "mac_open_terminal"]]], ["Linux", [["knows_terminal", "linux_install"], ["does_not_know_terminal", "linux_open_terminal"]]], ["Windows", [["knows_terminal", "windows_install"], ["does_not_know_terminal", "windows_open_terminal"]]]]
+  "determine_os": {
+    "header": "What operating System are you on?",
+    "content": "Each one takes a different pathway",
+    "answers": [["Mac", [["knows_terminal", "mac_check_brew"], ["does_not_know_terminal", "mac_open_terminal"]]], ["Linux", [["knows_terminal", "linux_install"], ["does_not_know_terminal", "linux_open_terminal"]]], ["Windows", [["knows_terminal", "windows_install"], ["does_not_know_terminal", "windows_open_terminal"]]]]
   },
-  mac_open_terminal: {
-    header: "How do use the terminal",
-    content: "This is some info about the terminal and how to open it...",
-    answers: [["OK", "mac_check_brew"]]
+  "mac_open_terminal": {
+    "header": "How do use the terminal",
+    "content": "This is some info about the terminal and how to open it...",
+    "answers": [["OK", "mac_check_brew"]]
   },
-  mac_check_brew: {
-    header: "Do you have HomeBrew installed?",
-    content: "The exercism CLI is installed through HomeBrew. Do you have it installed?",
-    answers: [["Yes", "mac_install_cli"], ["No", "mac_install_homebrew"]]
+  "mac_check_brew": {
+    "header": "Do you have HomeBrew installed?",
+    "content": "The exercism CLI is installed through HomeBrew. Do you have it installed?",
+    "answers": [["Yes", "mac_install_cli"], ["No", "mac_install_homebrew"]]
   },
-  mac_install_homebrew: {
-    header: "Install Homebrew",
-    content: "Instructions on how to install homebrew",
-    answers: [["Done", "mac_install_cli"]]
+  "mac_install_homebrew": {
+    "header": "Install Homebrew",
+    "content": "Instructions on how to install homebrew",
+    "answers": [["Done", "mac_install_cli"]]
   },
-  mac_install_cli: {
-    header: "Install via Homebrew",
-    content: "Run brew install exercism",
-    answers: [["Done", "run_command"]]
+  "mac_install_cli": {
+    "header": "Install via Homebrew",
+    "content": "Run brew install exercism",
+    "answers": [["Done", "run_command"]]
   },
-  run_command: {
-    header: "Run the command",
-    content: "You're all set. Run xyz to download the exercise and get going",
-    answers: []
+  "run_command": {
+    "header": "Run the command",
+    "content": "You're all set. Run xyz to download the exercise and get going",
+    "answers": []
   }
 }
