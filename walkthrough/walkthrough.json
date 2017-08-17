@@ -1,8 +1,29 @@
 {
   "start": {
     "header": "Welcome to the solution walkthrough",
+    "content": "Have you installed and configured the new nextercism command line client?",
+    "answers": [["Yes", "run_command"], ["No", "download_nextercism_cli"]]
+  },
+  "download_nextercism_cli": {
+    "header": "Download the nextercism CLI",
+    "content": "<p>The nextercism CLI is currently in pre-release state. Follow these instructions.</p><ul><li>Visit to the <a href='https://github.com/exercism/cli/releases' target='_blank'>all releases page</a> on the CLI repo.</li> <li>Find the most recent prerelease (it will be first)</li> <li>Find the one for your system</li> <li>Download it</li> <li>Extract it (tar for linux/mac, unzip for windows)</li> <li>Put it somewhere in your path (or add something to your path, or use it with the full path)</li></ul>",
+    "answers": [["Continue", "configure_cli"]]
+  },
+  "configure_cli": {
+    "header": "Configure your CLI",
+    "content": "We now need to configure the CLI. Run <pre><code>nextercism configure --token={authToken} --workspace=~/nextercism</code></pre>",
+    "answers": [["Continue", "run_command"]]
+  },
+  "run_command": {
+    "header": "Run the command",
+    "content": "TODO: You're all set. Close this popup and run the command on the main page. That's all you need to do each time now.",
+    "answers": [["Close", "close"]]
+  },
+
+  "alt_start": {
+    "header": "Welcome to the solution walkthrough",
     "content": "TODO: Have you installed and configured the new nextercism command line client?",
-    "answers": [["Yes", "terminal_check", "cli_installed"], ["No", "terminal_check", "cli_not_installed"], ["I don't know", "terminal_check"]]
+    "answers": [["Yes", "run_command"], ["No", "download_nextercism_cli"]]
   },
   "terminal_check": {
     "header": "Are you familiar with the terminal?",
@@ -38,15 +59,5 @@
     "header": "Install via Homebrew",
     "content": "TODO: Run brew install nextercism",
     "answers": [["Continue", "configure_cli"]]
-  },
-  "configure_cli": {
-    "header": "Configure your CLI",
-    "content": "Let's configure the command line. Run <pre><code>nextercism configure --token={authToken} --workspace=~/nextercism</code></pre>",
-    "answers": [["Continue", "run_command"]]
-  },
-  "run_command": {
-    "header": "Run the command",
-    "content": "TODO: You're all set. Close this popup and run the command on the main page. That's all you need to do each time now.",
-    "answers": [["Close", "close"]]
   }
 }
