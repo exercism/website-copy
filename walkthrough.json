@@ -15,10 +15,13 @@
     "answers": [["Continue", "run_command"]]
   },
   "run_command": {
-    "header": "Run the command",
-    "content": "TODO: You're all set. Close this popup and run the command on the main page. That's all you need to do each time now.",
+    "header": "Download the exercise",
+    "content": "You're all set. Run this following command to download the exercise: <pre><code>{exerciseCommand}</code></pre>",
     "answers": [["Close", "close"]]
   },
+
+
+
 
   "alt_start": {
     "header": "Welcome to the solution walkthrough",
