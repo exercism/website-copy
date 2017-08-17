@@ -43,7 +43,7 @@
     "header": "Configure your CLI",
     "content": "Let's configure the command line. Run <pre><code>nextercism configure --token={authToken} --workspace=~/nextercism</code></pre>",
     "answers": [["Continue", "run_command"]]
-  }
+  },
   "run_command": {
     "header": "Run the command",
     "content": "TODO: You're all set. Close this popup and run the command on the main page. That's all you need to do each time now.",
