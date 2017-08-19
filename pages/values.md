@@ -9,13 +9,13 @@ To enable anyone to achieve [fluency](#fluency) in any programming language for 
 ### Values
 We envision a world where anyone from any background can become fluent in any programming language for free. Through programming exercises, resources and a safe and nurturing community, we help people develop their fluency in programming languages, enabling them to build understanding and confidence, which empowers them to take the next steps in their careers as software developers.
 
-### Core Princples
+### Core Principles
 Based on this, we consider this is what Exercism looks like at its core:
 - Exercism’s value is in the community, the discussion and the learning.
 - Exercism should be enjoyable, challenging and valuable.
 - Exercism should feel safe and nurturing. 
 - Exercism focusses on the learning journey, not the destination. Empathy and encouragement are more important than absolute factual correctness.
-E- xercism should not be limited to being an online tool. It could be used in schools or in places without good internet access.
+- Exercism should not be limited to being an online tool. It could be used in schools or in places without good internet access.
 
 
 ### Fluency
