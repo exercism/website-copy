@@ -1,3 +1,3 @@
 # Terms and Conditions
 
-Exercism is copright Exercism, Inc.
+Exercism is copyrighted to Exercism, Inc.
