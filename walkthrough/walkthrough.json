@@ -1,0 +1,66 @@
+{
+  "start": {
+    "header": "Welcome to the solution walkthrough",
+    "content": "Have you installed and configured the new nextercism command line client?",
+    "answers": [["Yes", "run_command"], ["No", "download_nextercism_cli"]]
+  },
+  "download_nextercism_cli": {
+    "header": "Download the nextercism CLI",
+    "content": "<p>The nextercism CLI is currently in pre-release state. Follow these instructions.</p><ul><li>Visit to the <a href='https://github.com/exercism/cli/releases' target='_blank'>all releases page</a> on the CLI repo.</li> <li>Find the most recent prerelease (it will be first)</li> <li>Find the one for your system</li> <li>Download it</li> <li>Extract it (tar for linux/mac, unzip for windows)</li> <li>Put it somewhere in your path (or add something to your path, or use it with the full path)</li></ul>",
+    "answers": [["Continue", "configure_cli"]]
+  },
+  "configure_cli": {
+    "header": "Configure your CLI",
+    "content": "We now need to configure the CLI. Run <pre><code>nextercism configure --token={authToken} --workspace=~/nextercism</code></pre>",
+    "answers": [["Continue", "run_command"]]
+  },
+  "run_command": {
+    "header": "Download the exercise",
+    "content": "You're all set. Run this following command to download the exercise: <pre><code>{exerciseCommand}</code></pre>",
+    "answers": [["Close", "close"]]
+  },
+
+
+
+
+  "alt_start": {
+    "header": "Welcome to the solution walkthrough",
+    "content": "TODO: Have you installed and configured the new nextercism command line client?",
+    "answers": [["Yes", "run_command"], ["No", "download_nextercism_cli"]]
+  },
+  "terminal_check": {
+    "header": "Are you familiar with the terminal?",
+    "content": "TODO: Do you know what a 'terminal' is how to use it?",
+    "answers": [["Yes", [["cli_installed", "run_command"], ["cli_not_installed", "determine_os"], "cli_check"], "knows_terminal"], ["No", "determine_os", "does_not_know_terminal"]]
+  },
+  "cli_check": {
+    "header": "Do you have the CLI?",
+    "content": "TODO: Let's work out if you have the CLI. Here's how.",
+    "answers": []
+  },
+  "determine_os": {
+    "header": "Which operating System are you on?",
+    "content": "TODO: Each one takes a different pathway",
+    "answers": [["Mac", [["knows_terminal", "mac_check_brew"], ["does_not_know_terminal", "mac_open_terminal"]]], ["Linux", [["knows_terminal", "linux_install"], ["does_not_know_terminal", "linux_open_terminal"]]], ["Windows", [["knows_terminal", "windows_install"], ["does_not_know_terminal", "windows_open_terminal"]]]]
+  },
+  "mac_open_terminal": {
+    "header": "How do use the terminal",
+    "content": "TODO: This is some info about the terminal and how to open it...",
+    "answers": [["OK", "mac_check_brew"]]
+  },
+  "mac_check_brew": {
+    "header": "Do you have HomeBrew installed?",
+    "content": "TODO: The exercism CLI is installed through HomeBrew. Do you have it installed?",
+    "answers": [["Yes", "mac_install_cli"], ["No", "mac_install_homebrew"]]
+  },
+  "mac_install_homebrew": {
+    "header": "Install Homebrew",
+    "content": "TODO: Instructions on how to install homebrew",
+    "answers": [["Continue", "mac_install_cli"]]
+  },
+  "mac_install_cli": {
+    "header": "Install via Homebrew",
+    "content": "TODO: Run brew install nextercism",
+    "answers": [["Continue", "configure_cli"]]
+  }
+}
