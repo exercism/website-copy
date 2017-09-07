@@ -1,0 +1,770 @@
+::StoryTitle
+An unnamed story
+
+::Welcome
+# Welcome to the Exercism installation guide!
+
+This guide was created in order to help you get started learning with Exercism. Answer a few questions, follow a few instructions, and you should be ready in no time!
+
+To make better use of the guide, here's a brief outline of how this guide is structured:
+
+- This guide is comprised of several tutorials. These outline the steps needed to get Exercism installed. Inside each tutorial are step-by-step instructions to get Exercism running, as well as steps to verify whether you've done the right thing.
+
+- At the end of each tutorial, we ask a question in order to track your progress. This helps us to point you to the next installation step.
+
+That being said, let's start with our first question!
+
+---
+## Which OS do you use?
+
+- [[Mac->Installing Exercism on a Mac]]
+
+::Installation complete
+# Installation complete
+You've now installed Exercism on your computer. Start learning by choosing an exercise from your dashboard!
+
+::Talk to a Volunteer
+# Talk to a Volunteer
+
+Are you having problems installing Exercism? Don't worry! We have volunteers willing to help you <here>. Getting new people to learn with Exercism is our top priority, so please don't be afraid to reach out.
+
+::Installing Exercism on a Mac
+# Installing Exercism on a Mac
+
+To install Exercism on a Mac, we first need to open the terminal.
+
+---
+
+## Do you know how to open the terminal?
+
+- [[Yes->Verifying Homebrew Installation]]
+- [[No->Opening the Terminal on a Mac]]
+
+::Opening the Terminal on a Mac
+# Opening the Terminal on a Mac
+
+The first step in installing Exercism is opening the terminal on your Mac. The terminal is a program which allows us to send commands to our computer via text.
+
+Let's get started by opening the terminal!
+
+---
+
+## Tutorial
+
+### Step 1: Opening Spotlight Access
+
+#### Exercise
+
+To open Spotlight Access, click the magnifying glass on the top right corner of your screen.
+
+![Clicking the magnifying glass](https://lh5.googleusercontent.com/6ZfhlXaYoeS492oZU-tZ--GRRkCGcjc_I7-qM4HyIINfP1rGahbwj4NqEAgXJepjAcPZJWZXqA=w740)
+
+#### Verify
+
+To confirm whether Spotlight Access was successfully opened, you should see a search bar appear on your screen. When it appears, try typing into it, too!
+
+![Spotlight access](https://lh4.googleusercontent.com/41cK6Z4MIL3PeS0isZ-I_S-l2rtM07GDMgZ9UgvttodY2N1zlKiLlYTu_kRppsYfK1V02CEvzw=w2560)
+
+### Step 2
+
+#### Exercise
+
+To open the terminal, type in the following text into Spotlight Access:
+
+```
+terminal
+```
+
+> Sidenote: This tutorial contains more of these. Whenever you see text surrounded by a box, it means that you need to type in or copy and paste the text in the box. We recommend the latter to avoid typos.
+
+![Typing terminal](https://lh3.googleusercontent.com/BKspnwaDby98GCLtbEvQpt_a72sF5wgS7pfgTmwVN1iJBjNgS5--h09A3hOyOBLieDKmnelBPw=w884)
+
+After typing in the command, hit the `Enter` key.
+
+#### Verify
+
+To confirm whether the terminal was successfully opened, you should see a new window appear on your screen.
+
+![Terminal](https://lh5.googleusercontent.com/2I3QzE8kDS4JzkB_0NIIX-RGkoTd7bP2ejILOepuamh8V3z11mi3nmyH4kzW55HRqA90QLPdVQ=w2560)
+
+### Wrapping up
+
+If you've reached the end of this tutorial without any problems, you've successfully opened the terminal! You could try typing into it and see how you could send commands to your computer.
+
+---
+
+## Were you able to open the terminal?
+
+- [[Yes->Verifying Homebrew Installation]]
+- [[No->Open the Terminal on a Mac - Troubleshooting]]
+
+::Open the Terminal on a Mac - Troubleshooting
+# Open the Terminal on a Mac - Troubleshooting
+Having problems opening the terminal on your Mac? You might find a solution to your problem below.
+
+---
+
+## Were you able to open the Terminal?
+
+- [[Yes->Verifying Homebrew Installation]]
+- [[No->Talk to a Volunteer]]
+
+::Verifying Homebrew Installation
+# Installing Homebrew on a Mac
+
+Great! Now that you've opened the terminal on your Mac, we need to install Homebrew next. Homebrew is a package manager for the Mac, and installing it makes the whole Exercism installation process easier. If you want to Exercism manually, [[Manual Installation on a Mac]] would be helpful.
+
+Since Homebrew is pretty common on Macs, let's first verify whether you have it on your computer.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+To verify if homebrew is installed, type in the following text into your terminal:
+
+```
+brew
+```
+
+> Sidenote: This tutorial contains more of these. Whenever you see text surrounded by a box, it means that you need to type in or copy and paste the text in the box. We recommend the latter to avoid typos.
+
+
+![Clicking the magnifying glass](https://media.giphy.com/media/3ohhwwLsE2xC7Ts796/giphy.gif)
+
+After typing in the command, hit the `Enter` key.
+
+#### Verify
+
+After hitting the `Enter` key, your terminal should give you a reply.
+
+##### Homebrew is not installed
+
+When you see the following reply, it means that Homebrew isn't installed on your Mac yet.
+
+[Homebrew not installed](https://i.imgur.com/uNdKrgQ.png)
+
+> Sidenote: This reply means that the terminal doesn't understand the `brew` command. Your terminal may reply with a different text, but if it means that the `brew` command isn't understood, it still means that homebrew isn't installed.
+
+##### Homebrew is installed
+
+When you see the following reply, it means that Homebrew is installed.
+
+[Homebrew installed](https://i.imgur.com/n5MK7uO.png)
+
+> Sidenote: This reply means that the terminal understands the `brew` command. Your terminal replies with examples of how the `brew` command can be used. Again, the text can vary from terminal to terminal, but the underlying principle should be that the terminal understands the `brew` command.
+
+### Wrapping up
+
+If you've reached the end of this tutorial, you should be able to determine whether you've installed Homebrew or not.
+
+---
+
+## Do you have Homebrew installed?
+
+- [[Yes->Installing Exercism via Homebrew]]
+- [[No->Installing Homebrew]]
+
+::Installing Homebrew
+# Installing Homebrew
+
+Now that we've found out that homebrew isn't installed on your computer yet, let's install it! If you'd like to read more on Homebrew before installing it, the [Homebrew webpage](https://brew.sh/) is a good resource.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+Paste in the following text into your terminal:
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+After typing in the command, hit the `Enter` key.
+
+#### Verify
+
+After hitting the `Enter` key, you should see that the terminal prompts you to confirm installation.
+
+[Confirming installation](https://i.imgur.com/crz6jJK.png)
+
+### Step 2
+
+#### Exercise
+
+Hit the `Enter` key to confirm the `homebrew` installation.
+
+#### Verify
+
+After hitting the `Enter` key, the terminal prompts you to confirm again by typing in your password.
+
+[Input password](https://i.imgur.com/eaVWPoZ.png)
+
+### Step 3
+
+#### Exercise
+
+Type in your password in the terminal and hit `Enter`.
+
+> Sidenote: If it's your first time doing this, you might be confused that as you are typing, nothing appears. This is a security feature of the terminal. Just keep on typing and press `Enter` when you finish.
+
+#### Verify
+
+##### Incorrect password was typed in
+
+You will see a message that an incorrect password was typed in. First, try to verify if you've typed your password correctly. If it still doesn't work, it may be the case that the password you have isn't the administrator's password. It would be good to ask your administrator to put in the password for you.
+
+##### Correct password was typed in
+
+Your terminal should now reply saying that the `homebrew` installation has started. It may look something like this:
+
+[Homebrew installing](https://i.imgur.com/fWfoj8c.png)
+
+### Step 4
+
+#### Exercise
+
+Since `homebrew` is still installing at this point, the only need thing we need to do is wait. It may take at most 5 minutes.
+
+#### Verify
+
+##### Installation is successful
+
+After waiting, your terminal must respond with a message saying that the Homebrew installation is complete. It may look something like this:
+
+[Homebrew install confirmation](https://i.imgur.com/BIKJugP.png)
+
+##### Installation isn't successful
+
+If you don't seem to see a message confirming that homebrew is installed, we first recommend to check whether your internet connection is up. The installation process requires it. If your connection is up, we recommend running the install process again.
+
+### Wrapping up
+
+Once you've reached the end of this tutorial, you should've installed Homebrew on your computer.
+
+---
+
+## Were you able to install Homebrew?
+- [[Yes->Verifying Homebrew Installation]]
+- [[No->Installing Homebrew - Troubleshooting]]
+
+::Installing Homebrew - Troubleshooting
+# Installing Homebrew - Troubleshooting
+Having problems getting homebrew on your computer? A solution to your problem may be outlined below.
+
+---
+
+## Were you able to install Homebrew?
+
+- [[Yes->Installing Exercism on a Mac]]
+- [[No->Talk to a Volunteer]]
+- [[Try another installation method->Manual Installation on a Mac]]
+
+::Installing Exercism via Homebrew
+# Installing Exercism via Homebrew
+
+You've made it to the last step! Since we've got the parts to install Exercism, it shouldn't be long before you start your learning journey with Exercism.
+
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+Paste in the following text into your terminal:
+
+```
+brew install exercism
+```
+
+[Installing Exercism](https://lh3.googleusercontent.com/kj6aOKeithlvAr8vPs4-mKD-zdfvHImZb3m49tawgopR6_nEEuKnR6cJiG-7qQSy8Xrvt_wECw=w580)
+
+After typing in the command, hit the `Enter` key.
+
+#### Verify
+
+##### Installation started
+
+After hitting the `Enter` key, you should see that the terminal starts to install Exercism. Since this proccess takes time, we need to wait until it finishes.
+
+[Confirming installation](https://i.imgur.com/1xORJD2.png)
+
+##### Installation finished
+
+The installation is finished once you see this message on your terminal:
+
+[Pouring](https://i.imgur.com/bIAS3MY.png)
+
+> Sidenote: The message on your terminal doesn't need to exactly match the screenshot. If you see the message "Pouring...", that should be enough.
+
+##### Installation taking too long
+
+If your installation is taking too long, we recommend checking your internet connection. If your internet connection is up, we recommend trying to run the command again. It might work this time!
+
+### Step 2
+
+#### Exercise
+
+In order to verify whether exercism was successfully installed, paste the following text into your terminal.
+
+```
+exercism
+```
+
+After typing in the command, hit the `Enter` key.
+
+#### Verify
+
+##### Installation successful
+
+After hitting the `Enter` key, the terminal should reply with how the `exercism` command can be used.
+
+[Exercism usage](https://i.imgur.com/hy4QmaJ.png)
+
+> Sidenote: As you get the hang of Exercism, you'll get to know more about the commands.
+
+##### Installation unsuccessful
+
+After hitting the `Enter` key, the terminal still doesn't recognize the `exercism` command.
+
+[Exercism not installed](https://i.imgur.com/HWfY57R.png)
+
+> Sidenote: The messages might vary per computer, but if the message you receive means that the terminal couldn't understand the `exercism` command, you have to try installing again.
+
+If you've encountered this, we recommend trying to install again. It might work this time!
+
+### Wrapping up
+
+Once you've reached the end of this tutorial, you should've installed Exercism on your computer.
+
+---
+
+## Have you installed Exercism on your computer?
+
+- [[Yes->Installation complete]]
+- [[No->Installing Exercism via Homebrew - Troubleshooting]]
+
+::Installing Exercism via Homebrew - Troubleshooting
+# Installing Exercism via Homebrew - Troubleshooting
+Having problems getting Exercism on your computer? A solution to your problem may be present below.
+
+---
+
+## Were you able to install Exercism?
+
+- [[Yes->Installation complete]]
+- [[No->Talk to a Volunteer]]
+- [[Try another installation method->Manual Installation on a Mac]]
+
+::Manual Installation on a Mac
+# Installing Exercism on a Mac manually
+
+To install Exercism on a Mac manually, we first need to determine your Mac's process architecture.
+
+---
+
+## Do you know what your Mac's process architecture is?
+- [[32 bit->Download and unzip 32 bit version on a Mac]]
+- [[64 bit->Download and unzip 64 bit version on a Mac]]
+- [[I don't know->Determine process architecture on a Mac]]
+
+::Determine process architecture on a Mac
+# Determine process architecture on a Mac
+
+The first step in installing Exercism manually is to determine your Mac's process architecture. For this step, we need to use the terminal. If you need instructions on how to open the terminal, [[Opening the Terminal on a Mac]] would be helpful.
+
+Let's get started!
+
+---
+
+## Tutorial
+
+### Step 1: Determining process architecture
+
+#### Exercise
+
+To determine your process architecture, paste in the following command into your Mac:
+
+```
+uname -m | if grep -q 64; then echo "64-bit CPU"; else echo "32-bit CPU"; fi
+```
+
+Hit `Enter` after you've pasted in the command.
+
+#### Verify
+
+##### 32-bit process architecture
+
+If you're on a 32-bit process architecture, you're Terminal would reply with this:
+
+[32-bit](https://i.imgur.com/RqszxRw.png)
+
+##### 64-bit process architecture
+
+If you're on a 64-bit process architecture, you're Terminal would reply with this:
+
+[64-bit](https://i.imgur.com/ssF6r4f.png)
+
+##### Unknown architecture
+
+If your output doesn't match any of the above, click on "I don't know" below and we could recommend steps to help you.
+
+### Wrapping up
+
+If you've reached the end of this tutorial without any problems, you should now know what your process architecture is!
+
+---
+
+## What is your Mac's process architecture?
+
+- [[32 bit->Download and unzip 32 bit version on a Mac]]
+- [[64 bit->Download and unzip 64 bit version on a Mac]]
+- [[I don't know->Determine process architecture on a Mac - Troubleshooting]]
+
+::Determine process architecture on a Mac - Troubleshooting
+# Determine process architecture on a Mac - Troubleshooting
+Having problems determining your process architecture? A solution to your problem may be outlined below.
+
+---
+
+## What is your Mac's process architecture?
+
+- [[32 bit->Download and unzip 32 bit version on a Mac]]
+- [[64 bit->Download and unzip 64 bit version on a Mac]]
+- [[I don't know->Talk to a Volunteer]]
+
+::Download and unzip 32 bit version on a Mac
+# Downloading Exercism on your Mac
+
+Now that we've found out that you run on a 32-bit process architecture. Let's now download Exercism.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+Open your browser and navigate to this page:
+
+```
+https://github.com/exercism/cli/releases/latest
+```
+
+#### Verify
+
+To verify you are on the correct page, you must see a Downloads list when you scroll down.
+
+[Downloads list](https://i.imgur.com/CGpEnUX.png)
+
+### Step 2
+
+#### Exercise
+
+On the downloads list, click on the file named:
+
+```
+exercism-mac-32bit.tgz
+```
+
+Clicking on it downloads the file.
+
+If you're unable to find it, here it is on the downloads list:
+
+[32-bit download](https://i.imgur.com/uvzEvCo.png)
+
+#### Verify
+
+To verify whether you've downloaded the right file, you should see the following file in your `Downloads` folder:
+
+```
+exercism-mac-32bit.tgz
+```
+
+### Step 3
+
+#### Exercise
+
+Double click on `exercism-mac-32bit.tgz` in order to extract it.
+
+#### Verify
+
+To determine whether you've correctly extracted it, you must see a file named `exercism` appear.
+
+To illustrate, your `Downloads` folder should somewhat appear as this:
+
+[Exercism extracted](https://i.imgur.com/CwLauyx.png)
+
+### Wrapping up
+
+If you've reached the end of this tutorial without any problems, you should've the Exercism program in your `Downloads` folder!
+
+---
+
+## Were you able to get the Exercism program in your `Downloads` folder?
+
+- [[Yes->Create bin folder on a Mac]]
+- [[No->Download and unzip 32 bit version on a Mac - Troubleshooting]]
+
+::Download and unzip 32 bit version on a Mac - Troubleshooting
+# Download Exercism on your Mac - Troubleshooting
+Having problems determining your downloading the 32 bit version of exercism? A solution to your problem may be outlined below.
+
+---
+
+## Were you able to get the Exercism program in your `Downloads` folder?
+
+- [[Yes->Create bin folder on a Mac]]
+- [[No->Talk to a Volunteer]]
+
+::Download and unzip 64 bit version on a Mac
+# Downloading Exercism on your Mac
+
+Now that we've found out that you run on a 64-bit process architecture. Let's now download Exercism.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+Open your browser and navigate to this page:
+
+```
+https://github.com/exercism/cli/releases/latest
+```
+
+#### Verify
+
+To verify you are on the correct page, you must see a Downloads list when you scroll down.
+
+[Downloads list](https://i.imgur.com/CGpEnUX.png)
+
+### Step 2
+
+#### Exercise
+
+On the downloads list, click on the file named:
+
+```
+exercism-mac-64bit.tgz
+```
+
+Clicking on it downloads the file.
+
+If you're unable to find it, here it is on the downloads list:
+
+[64-bit download](https://i.imgur.com/U41bN7q.png)
+
+#### Verify
+
+To verify whether you've downloaded the right file, you should see the following file in your `Downloads` folder:
+
+```
+exercism-mac-64bit.tgz
+```
+
+### Step 3
+
+#### Exercise
+
+Double click on `exercism-mac-64bit.tgz` in order to extract it.
+
+#### Verify
+
+To determine whether you've correctly extracted it, you must see a file named `exercism` appear.
+
+To illustrate, your `Downloads` folder should somewhat appear as this:
+
+[Exercism extracted](https://i.imgur.com/Hu81f01.png)
+
+### Wrapping up
+
+If you've reached the end of this tutorial without any problems, you should've the Exercism program in your `Downloads` folder!
+
+---
+
+## Were you able to get the Exercism program in your `Downloads` folder?
+
+- [[Yes->Create bin folder on a Mac]]
+- [[No->Download and unzip 64 bit version on a Mac - Troubleshooting]]
+
+::Download and unzip 64 bit version on a Mac - Troubleshooting
+# Download Exercism on your Mac - Troubleshooting
+Having problems determining your downloading the 64 bit version of exercism? A solution to your problem may be outlined below.
+
+---
+
+## Were you able to get the Exercism program in your `Downloads` folder?
+
+- [[Yes->Create bin folder on a Mac]]
+- [[No->Talk to a Volunteer]]
+
+::Create bin folder on a Mac
+# Create bin folder on a Mac
+
+In order to place the Exercism program cleanly in our computer, let's create a folder named `bin` in order to house it.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+In your terminal, paste in the following to create the `bin` folder:
+
+```
+mkdir -p ~/bin
+```
+
+[Create bin](https://i.imgur.com/VaqjJwA.png)
+
+#### Verify
+
+To verify if the `bin` folder is created, paste the following command in your terminal:
+
+```
+if [ -d ~/bin ]; then echo "folder created"; else echo "folder not created"; fi
+```
+
+##### Folder created
+
+Your terminal should reply with the following message when the folder was created:
+
+[Folder created](https://i.imgur.com/FJT7e0X.png)
+
+##### Folder not created
+
+Your terminal should reply with the following message when the folder was not created:
+
+[Folder not created](https://i.imgur.com/AE4sb16.png)
+
+### Step 2
+
+#### Exercise
+
+Once the folder was created, paste in the following command in your terminal to move the exercism program to the `bin` folder:
+
+```
+mv ~/Downloads/exercism ~/bin
+```
+
+#### Verify
+
+To verify whether you've moved the exercism progam correctly, paste in the following command to your terminal:
+
+```
+if [ -f ~/bin/exercism ]; then echo "file moved"; else echo "file not moved"; fi
+```
+
+##### File moved
+
+After pasting in the command, your terminal must reply with `file moved` if the file was moved.
+
+##### File not moved
+
+After pasting in the command, your terminal must reply with `file not moved` if the file was moved.
+
+### Wrapping up
+
+If you've reached the end of this tutorial without any problems, you should've created a `bin` folder and moved the exercism program into it!
+
+---
+
+## Were you able to move the exercism program to your `bin` folder?
+
+- [[Yes->Add to $PATH on a Mac]]
+- [[No->Create bin folder on a Mac - Troubleshooting]]
+
+::Create bin folder on a Mac - Troubleshooting
+# Create bin folder on a Mac - Troubleshooting
+Having problems creating and moving exercism to your `bin` folder? A solution to your problem may be outlined below.
+
+---
+
+## Were you able to move the exercism program to your `bin` folder?
+
+- [[Yes->Add to $PATH on a Mac]]
+- [[No->Talk to a Volunteer]]
+
+::Add to $PATH on a Mac
+# Add to $PATH on a Mac
+
+In order to for us to run the exercism program from anywhere in our terminal, we need to add its location to the $PATH variable.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+In your terminal, paste in the following to create the `bin` folder:
+
+```
+echo "export PATH=~/bin:$PATH" >> ~/.bash_profile
+```
+
+#### Verify
+
+To verify if the `$PATH` variable was updated, paste the following command in your terminal:
+
+```
+source ~/.bash_profile
+```
+
+Next, paste the following command in your terminal:
+
+```
+exercism
+```
+
+#### Variable updated successfully
+
+If the terminal replies with instructions on how to use the exercism program, you've installed exercism successfully! Give yourself a pat on the back.
+
+#### Variable not updated
+
+If the terminal replies saying that the exercism command is not found, it means that the variable wasn't updated.
+
+### Wrapping up
+
+If you've reached the end of this tutorial without any problems, you have installed exercism successfully!
+
+---
+
+## Were you able to install Exercism?
+
+- [[Yes->Installation complete]]
+- [[No->Add to $PATH on a Mac - Troubleshooting]]
+
+::Add to $PATH on a Mac - Troubleshooting
+# Add to $PATH on a Mac - Troubleshooting
+Having problems creating adding exercism to the $PATH variable? A solution to your problem may be outlined below.
+
+---
+
+## Were you able to install Exercism?
+
+- [[Yes->Installation complete]]
+- [[No->Talk to a Volunteer]]
+
+::Twee2Settings [twee2]
+@story_start_name = 'Welcome'
+

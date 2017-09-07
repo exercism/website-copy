@@ -1,0 +1,10 @@
+::Add to $PATH on a Mac - Troubleshooting
+# Add to $PATH on a Mac - Troubleshooting
+Having problems creating adding exercism to the $PATH variable? A solution to your problem may be outlined below.
+
+---
+
+## Were you able to install Exercism?
+
+- [[Yes->Installation complete]]
+- [[No->Talk to a Volunteer]]
