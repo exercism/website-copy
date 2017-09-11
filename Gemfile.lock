@@ -10,9 +10,11 @@ GEM
     ffi (1.9.18)
     filewatcher (0.5.4)
       trollop (~> 2.0)
+    graph (2.8.2)
     haml (4.0.7)
       tilt
     mini_portile2 (2.2.0)
+    minitest (5.10.3)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     rb-fsevent (0.10.2)
@@ -44,7 +46,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  graph
+  minitest
   twee2
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2

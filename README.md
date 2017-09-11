@@ -12,3 +12,9 @@ TODO: write contributing documentation
 ```
 $ twee2 build main.tw2 compiled.html --format=./node_modules/protagonist/dist/
 ```
+
+## Generate graph
+
+```
+$ rake graph
+```

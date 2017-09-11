@@ -1,0 +1,47 @@
+digraph 
+  {
+    "Welcome" -> "Installing Exercism on a Mac";
+    "Add to $PATH on a Mac" -> "Installation complete";
+    "Add to $PATH on a Mac" -> "Add to $PATH on a Mac - Troubleshooting";
+    "Add to $PATH on a Mac - Troubleshooting" -> "Installation complete";
+    "Add to $PATH on a Mac - Troubleshooting" -> "Talk to a Volunteer";
+    "Create bin folder on a Mac" -> "Add to $PATH on a Mac";
+    "Create bin folder on a Mac" -> "Create bin folder on a Mac - Troubleshooting";
+    "Create bin folder on a Mac - Troubleshooting" -> "Add to $PATH on a Mac";
+    "Create bin folder on a Mac - Troubleshooting" -> "Talk to a Volunteer";
+    "Determine process architecture on a Mac" -> "Download and unzip 32 bit version on a Mac";
+    "Determine process architecture on a Mac" -> "Download and unzip 64 bit version on a Mac";
+    "Determine process architecture on a Mac" -> "Determine process architecture on a Mac - Troubleshooting";
+    "Determine process architecture on a Mac - Troubleshooting" -> "Download and unzip 32 bit version on a Mac";
+    "Determine process architecture on a Mac - Troubleshooting" -> "Download and unzip 64 bit version on a Mac";
+    "Determine process architecture on a Mac - Troubleshooting" -> "Talk to a Volunteer";
+    "Download and unzip 32 bit version on a Mac" -> "Create bin folder on a Mac";
+    "Download and unzip 32 bit version on a Mac" -> "Download and unzip 32 bit version on a Mac - Troubleshooting";
+    "Download and unzip 32 bit version on a Mac - Troubleshooting" -> "Create bin folder on a Mac";
+    "Download and unzip 32 bit version on a Mac - Troubleshooting" -> "Talk to a Volunteer";
+    "Download and unzip 64 bit version on a Mac" -> "Create bin folder on a Mac";
+    "Download and unzip 64 bit version on a Mac" -> "Download and unzip 64 bit version on a Mac - Troubleshooting";
+    "Download and unzip 64 bit version on a Mac - Troubleshooting" -> "Create bin folder on a Mac";
+    "Download and unzip 64 bit version on a Mac - Troubleshooting" -> "Talk to a Volunteer";
+    "Installing Exercism via Homebrew" -> "Installation complete";
+    "Installing Exercism via Homebrew" -> "Installing Exercism via Homebrew - Troubleshooting";
+    "Installing Exercism via Homebrew - Troubleshooting" -> "Installation complete";
+    "Installing Exercism via Homebrew - Troubleshooting" -> "Talk to a Volunteer";
+    "Installing Exercism via Homebrew - Troubleshooting" -> "Manual Installation on a Mac";
+    "Installing Homebrew" -> "Verifying Homebrew Installation";
+    "Installing Homebrew" -> "Installing Homebrew - Troubleshooting";
+    "Installing Homebrew - Troubleshooting" -> "Installing Exercism on a Mac";
+    "Installing Homebrew - Troubleshooting" -> "Talk to a Volunteer";
+    "Installing Homebrew - Troubleshooting" -> "Manual Installation on a Mac";
+    "Installing Exercism on a Mac" -> "Verifying Homebrew Installation";
+    "Installing Exercism on a Mac" -> "Opening the Terminal on a Mac";
+    "Manual Installation on a Mac" -> "Download and unzip 32 bit version on a Mac";
+    "Manual Installation on a Mac" -> "Download and unzip 64 bit version on a Mac";
+    "Manual Installation on a Mac" -> "Determine process architecture on a Mac";
+    "Opening the Terminal on a Mac" -> "Verifying Homebrew Installation";
+    "Opening the Terminal on a Mac" -> "Open the Terminal on a Mac - Troubleshooting";
+    "Open the Terminal on a Mac - Troubleshooting" -> "Verifying Homebrew Installation";
+    "Open the Terminal on a Mac - Troubleshooting" -> "Talk to a Volunteer";
+    "Verifying Homebrew Installation" -> "Installing Exercism via Homebrew";
+    "Verifying Homebrew Installation" -> "Installing Homebrew";
+  }
