@@ -17,7 +17,7 @@ In your terminal, paste in the following to create the `bin` folder:
 mkdir -p ~/bin
 ```
 
-[Create bin](https://i.imgur.com/VaqjJwA.png)
+![Create bin](https://i.imgur.com/VaqjJwA.png)
 
 #### Verify
 
@@ -31,13 +31,13 @@ if [ -d ~/bin ]; then echo "folder created"; else echo "folder not created"; fi
 
 Your terminal should reply with the following message when the folder was created:
 
-[Folder created](https://i.imgur.com/FJT7e0X.png)
+![Folder created](https://i.imgur.com/FJT7e0X.png)
 
 ##### Folder not created
 
 Your terminal should reply with the following message when the folder was not created:
 
-[Folder not created](https://i.imgur.com/AE4sb16.png)
+![Folder not created](https://i.imgur.com/AE4sb16.png)
 
 ### Step 2
 

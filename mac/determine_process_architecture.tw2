@@ -27,13 +27,13 @@ Hit `Enter` after you've pasted in the command.
 
 If you're on a 32-bit process architecture, you're Terminal would reply with this:
 
-[32-bit](https://i.imgur.com/RqszxRw.png)
+![32-bit](https://i.imgur.com/RqszxRw.png)
 
 ##### 64-bit process architecture
 
 If you're on a 64-bit process architecture, you're Terminal would reply with this:
 
-[64-bit](https://i.imgur.com/ssF6r4f.png)
+![64-bit](https://i.imgur.com/ssF6r4f.png)
 
 ##### Unknown architecture
 

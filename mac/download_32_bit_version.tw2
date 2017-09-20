@@ -21,7 +21,7 @@ https://github.com/exercism/cli/releases/latest
 
 To verify you are on the correct page, you must see a Downloads list when you scroll down.
 
-[Downloads list](https://i.imgur.com/CGpEnUX.png)
+![Downloads list](https://i.imgur.com/CGpEnUX.png)
 
 ### Step 2
 
@@ -37,7 +37,7 @@ Clicking on it downloads the file.
 
 If you're unable to find it, here it is on the downloads list:
 
-[32-bit download](https://i.imgur.com/uvzEvCo.png)
+![32-bit download](https://i.imgur.com/uvzEvCo.png)
 
 #### Verify
 
@@ -59,7 +59,7 @@ To determine whether you've correctly extracted it, you must see a file named `e
 
 To illustrate, your `Downloads` folder should somewhat appear as this:
 
-[Exercism extracted](https://i.imgur.com/CwLauyx.png)
+![Exercism extracted](https://i.imgur.com/CwLauyx.png)
 
 ### Wrapping up
 

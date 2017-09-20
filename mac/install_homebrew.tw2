@@ -23,7 +23,7 @@ After typing in the command, hit the `Enter` key.
 
 After hitting the `Enter` key, you should see that the terminal prompts you to confirm installation.
 
-[Confirming installation](https://i.imgur.com/crz6jJK.png)
+![Confirming installation](https://i.imgur.com/crz6jJK.png)
 
 ### Step 2
 
@@ -35,7 +35,7 @@ Hit the `Enter` key to confirm the `homebrew` installation.
 
 After hitting the `Enter` key, the terminal prompts you to confirm again by typing in your password.
 
-[Input password](https://i.imgur.com/eaVWPoZ.png)
+![Input password](https://i.imgur.com/eaVWPoZ.png)
 
 ### Step 3
 
@@ -55,7 +55,7 @@ You will see a message that an incorrect password was typed in. First, try to ve
 
 Your terminal should now reply saying that the `homebrew` installation has started. It may look something like this:
 
-[Homebrew installing](https://i.imgur.com/fWfoj8c.png)
+![Homebrew installing](https://i.imgur.com/fWfoj8c.png)
 
 ### Step 4
 
@@ -69,7 +69,7 @@ Since `homebrew` is still installing at this point, the only need thing we need 
 
 After waiting, your terminal must respond with a message saying that the Homebrew installation is complete. It may look something like this:
 
-[Homebrew install confirmation](https://i.imgur.com/BIKJugP.png)
+![Homebrew install confirmation](https://i.imgur.com/BIKJugP.png)
 
 ##### Installation isn't successful
 

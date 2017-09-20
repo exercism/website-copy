@@ -34,7 +34,7 @@ After hitting the `Enter` key, your terminal should give you a reply.
 
 When you see the following reply, it means that Homebrew isn't installed on your Mac yet.
 
-[Homebrew not installed](https://i.imgur.com/uNdKrgQ.png)
+![Homebrew not installed](https://i.imgur.com/uNdKrgQ.png)
 
 > Sidenote: This reply means that the terminal doesn't understand the `brew` command. Your terminal may reply with a different text, but if it means that the `brew` command isn't understood, it still means that homebrew isn't installed.
 
@@ -42,7 +42,7 @@ When you see the following reply, it means that Homebrew isn't installed on your
 
 When you see the following reply, it means that Homebrew is installed.
 
-[Homebrew installed](https://i.imgur.com/n5MK7uO.png)
+![Homebrew installed](https://i.imgur.com/n5MK7uO.png)
 
 > Sidenote: This reply means that the terminal understands the `brew` command. Your terminal replies with examples of how the `brew` command can be used. Again, the text can vary from terminal to terminal, but the underlying principle should be that the terminal understands the `brew` command.
 
