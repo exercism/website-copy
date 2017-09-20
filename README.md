@@ -10,7 +10,7 @@ TODO: write contributing documentation
 ## Compiling
 
 ```
-$ twee2 build main.tw2 compiled.html --format=./node_modules/protagonist/dist/
+$ twee2 build main.tw2 compiled.html --format=Snowman
 ```
 
 ## Generate graph
