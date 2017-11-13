@@ -1,0 +1,51 @@
+::Add to $PATH on a Mac
+# Add to $PATH on a Mac
+
+In order to for us to run the exercism program from anywhere in our terminal, we need to add its location to the $PATH variable.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+In your terminal, paste in the following to create the `bin` folder:
+
+```
+echo "export PATH=~/bin:$PATH" >> ~/.bash_profile
+```
+
+#### Verify
+
+To verify if the `$PATH` variable was updated, paste the following command in your terminal:
+
+```
+source ~/.bash_profile
+```
+
+Next, paste the following command in your terminal:
+
+```
+exercism
+```
+
+#### Variable updated successfully
+
+If the terminal replies with instructions on how to use the exercism program, you've installed exercism successfully! Give yourself a pat on the back.
+
+#### Variable not updated
+
+If the terminal replies saying that the exercism command is not found, it means that the variable wasn't updated.
+
+### Wrapping up
+
+If you've reached the end of this tutorial without any problems, you have installed exercism successfully!
+
+---
+
+## Were you able to install Exercism?
+
+- [[Yes->Installation complete]]
+- [[No->Add to $PATH on a Mac - Troubleshooting]]

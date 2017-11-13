@@ -1,0 +1,10 @@
+::Create bin folder on a Mac - Troubleshooting
+# Create bin folder on a Mac - Troubleshooting
+Having problems creating and moving exercism to your `bin` folder? A solution to your problem may be outlined below.
+
+---
+
+## Were you able to move the exercism program to your `bin` folder?
+
+- [[Yes->Add to $PATH on a Mac]]
+- [[No->Talk to a Volunteer]]
