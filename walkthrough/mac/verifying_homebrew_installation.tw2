@@ -1,0 +1,58 @@
+::Verifying Homebrew Installation
+# Installing Homebrew on a Mac
+
+Great! Now that you've opened the terminal on your Mac, we need to install Homebrew next. Homebrew is a package manager for the Mac, and installing it makes the whole Exercism installation process easier. If you want to Exercism manually, [[Manual Installation on a Mac]] would be helpful.
+
+Since Homebrew is pretty common on Macs, let's first verify whether you have it on your computer.
+
+---
+
+## Tutorial
+
+### Step 1
+
+#### Exercise
+
+To verify if homebrew is installed, type in the following text into your terminal:
+
+```
+brew
+```
+
+> Sidenote: This tutorial contains more of these. Whenever you see text surrounded by a box, it means that you need to type in or copy and paste the text in the box. We recommend the latter to avoid typos.
+
+
+![Clicking the magnifying glass](https://media.giphy.com/media/3ohhwwLsE2xC7Ts796/giphy.gif)
+
+After typing in the command, hit the `Enter` key.
+
+#### Verify
+
+After hitting the `Enter` key, your terminal should give you a reply.
+
+##### Homebrew is not installed
+
+When you see the following reply, it means that Homebrew isn't installed on your Mac yet.
+
+![Homebrew not installed](https://i.imgur.com/uNdKrgQ.png)
+
+> Sidenote: This reply means that the terminal doesn't understand the `brew` command. Your terminal may reply with a different text, but if it means that the `brew` command isn't understood, it still means that homebrew isn't installed.
+
+##### Homebrew is installed
+
+When you see the following reply, it means that Homebrew is installed.
+
+![Homebrew installed](https://i.imgur.com/n5MK7uO.png)
+
+> Sidenote: This reply means that the terminal understands the `brew` command. Your terminal replies with examples of how the `brew` command can be used. Again, the text can vary from terminal to terminal, but the underlying principle should be that the terminal understands the `brew` command.
+
+### Wrapping up
+
+If you've reached the end of this tutorial, you should be able to determine whether you've installed Homebrew or not.
+
+---
+
+## Do you have Homebrew installed?
+
+- [[Yes->Installing Exercism via Homebrew]]
+- [[No->Installing Homebrew]]
