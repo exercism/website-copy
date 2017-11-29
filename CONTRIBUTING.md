@@ -26,15 +26,15 @@ Looking at the data, we noticed that a significant number of users have never
 completed a single exercise on exercism. We believe this is because setting it up
 isn't easy. This walkthrough aims to solve that.
 
-To do exercises on exercism, installing a CLI is required. This walkthrough aims
-to guide users throughout the several installation steps.
+The goal of the walkthrough is to guide users through the many steps of
+installing the Exercism command-line client (CLI), which is a prerequisite to
+doing exercises on the site.
 
 ### Structure
 
-The walkthrough is strucured in the following way:
+The walkthrough is structured in the following way:
 
-1. The walkthrough is a step-by-step guide. This should prevent users from
-getting lost.
+1. To prevent users from getting lost, the walkthrough is a step by step guide.
 1. At the end of each step, the user must be able to confirm whether they've
 done the step correctly. This should prevent users from installing incomplete
 packages which may lead to harder troubleshooting in the future.
@@ -43,19 +43,16 @@ steps to self-diagnose or troubleshoot the problem on their own.
 
 ## How can I help?
 
-Again, thank you for taking the time to contribute! You could contribute to
-the walkthrough by doing these:
+You can help by:
 
-1. Giving feedback on the walkthrough. Answering questions such as,
-**How can we improve it?**, **What step was the most confusing?**,
-**What additional steps did you have to take?** would help us make the
-walkthrough cater to more people.
-1. Looking through the issues and submitting a patch. Upcoming features and
-bugs to fix would all be in this project's issue tracker.
-1. Testing out the walkthrough. As each user may have a unique setup, it'll
-be helpful to have a hand in testing out the walkthrough on different machines.
+1. Giving feedback on the walkthrough. In particular:
+    * **Did the instructions match your experience?**
+    * **Are any steps confusing?**
+    * **Did we miss any steps?**
 1. Writing better instructions. If you have a better way to describe a step in
-mind, a PR submission would be greatly appcreiated.
+mind, a PR submission would be greatly appreciated.
+1. Looking through the issues and submitting a patch. We're tracking bugs and
+upcoming features in this repository's issue tracker.
 
 ## How do I start contributing?
 
@@ -75,20 +72,50 @@ $ bundle
 
 ### Writing workflow
 
-#### Files
+#### Steps
 
 ##### Format
 
-Files are written in Markdown. If you haven't used it before, we recommend
+Each step is written in Markdown. If you haven't used it before, we recommend
 looking at this [tutorial][markdown].
 
-Files should be saved with the `*.tw2` extension.
+Steps should be saved with the `*.tw2` file extension.
 
-##### Including files
+##### Adding steps
 
-The main file which includes everything is [main.tw2][main.tw2]. In order for
-your file to appear in the walkthrough, [main.tw2][main.tw2] should contain the
-path to your file.
+In order to add a step, you must first add it to the table of contents. The
+table of contents is the file named [table_of_contents.tw2][table_of_contents.tw2].
+
+##### Table of contents
+
+To further explain the table of contents' structure, let's take a look at an
+example:
+
+```
+::StoryIncludes
+
+common/step_1.tw2
+common/step_2.tw2
+```
+
+The first line, `::StoryIncludes`, is a special command which doesn't need to
+be changed.
+
+The consecutive lines tell the table of contents that we have two steps,
+`common/step_1.tw2` and `common/step_2.tw2`. These steps are located inside
+the `common/` directory and have the file names `step_1.tw2` and `step_2.tw2`,
+respectively.
+
+If we want to add a third step, `step_3.tw2`, located inside the `mac/`
+directory, we write the table of contents this way:
+
+```
+::StoryIncludes
+
+common/step_1.tw2
+common/step_2.tw2
+mac/step_3.tw2
+```
 
 #### Additional commands
 
@@ -116,7 +143,7 @@ In order to view your changes, you need to compile the project. Compiling is
 done by running this command:
 
 ```
-$ twee2 build main.tw2 compiled.html --format=Snowman
+$ bundle exec rake compile
 ```
 
 Compiling produces a file named `compiled.html`. Open this file in your browser
@@ -124,21 +151,21 @@ and you should see your changes.
 
 #### Visualizing steps
 
-If you're a bit lost of how each step links to another, you could generate
-the walkthrough graph by running this command:
+If you're a bit lost of how each step links to another, you can generate the
+walkthrough graph by running this command:
 
 ```
-$ rake graph
+$ bundle exec rake graph
 ```
 
-This produces a file named `graph.png`. Opening this file shows you
-how each step links to another. This tool is also helpful to find broken links
-between steps.
+This produces a file named `graph.png`. This tool is also helpful to find broken
+links between steps.
 
 ### Submitting Code Changes
 
-These instructions should get you closer to getting a commit into the
-repository.
+If you're new to contributing to open source on GitHub, this next section should
+help you get started. If you get stuck, open an issue to ask us for help and
+we'll get you sorted out (and improve these instructions).
 
 ### Git Workflow
 
@@ -181,7 +208,7 @@ For more guidance, you are free to peek into how the installation
 instructions for Mac were written.
 
 [coc]: https://github.com/exercism/exercism.io/blob/master/CODE_OF_CONDUCT.md
-[main.tw2]: https://github.com/exercism/exercism.io/blob/master/main.tw2
+[table_of_contents.tw2]: https://github.com/exercism/exercism.io/blob/master/table_of_contents.tw2
 [squash-commits]: http://blog.steveklabnik.com/posts/2012-11-08-how-to-squash-commits-in-a-github-pull-request
 [issues]: https://github.com/exercism/interactive-cli-walkthrough/issues
 [markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
