@@ -13,10 +13,11 @@ GEM
     graph (2.8.2)
     haml (4.0.7)
       tilt
-    mini_portile2 (2.2.0)
+    mini_portile2 (2.3.0)
     minitest (5.10.3)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    rake (12.3.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -48,7 +49,8 @@ PLATFORMS
 DEPENDENCIES
   graph
   minitest
+  rake
   twee2
 
 BUNDLED WITH
-   1.16.0.pre.2
+   1.16.1
