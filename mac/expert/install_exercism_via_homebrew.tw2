@@ -1,0 +1,13 @@
+::Installing Exercism via Homebrew - Expert
+# Installing Exercism via Homebrew
+
+To install exercism, simply run:
+
+```
+brew install exercism
+```
+
+---
+Next steps:
+
+- [[Continue->Installation complete]]
