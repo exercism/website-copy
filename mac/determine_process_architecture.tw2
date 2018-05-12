@@ -1,7 +1,7 @@
 ::Determine process architecture on a Mac
-# Determine process architecture on a Mac
+# Determine processor architecture on a Mac
 
-The first step in installing Exercism manually is to determine your Mac's process architecture. For this step, we need to use the terminal. If you need instructions on how to open the terminal, [[Opening the Terminal on a Mac]] would be helpful.
+The first step in installing Exercism manually is to determine your Mac's processor architecture. For this step, we need to use the terminal. If you need instructions on how to open the terminal, [[Opening the Terminal on a Mac]] would be helpful.
 
 Let's get started!
 
@@ -9,11 +9,11 @@ Let's get started!
 
 ## Tutorial
 
-### Step 1: Determining process architecture
+### Step 1: Determining processor architecture
 
 #### Exercise
 
-To determine your process architecture, paste in the following command into your Mac:
+To determine your processor architecture, paste in the following command into your Mac:
 
 ```
 uname -m | if grep -q 64; then echo "64-bit CPU"; else echo "32-bit CPU"; fi
@@ -23,15 +23,15 @@ Hit `Enter` after you've pasted in the command.
 
 #### Verify
 
-##### 32-bit process architecture
+##### 32-bit processor architecture
 
-If you're on a 32-bit process architecture, you're Terminal would reply with this:
+If you're on a 32-bit processor architecture, your Terminal would reply with this:
 
 ![32-bit](https://i.imgur.com/RqszxRw.png)
 
-##### 64-bit process architecture
+##### 64-bit processor architecture
 
-If you're on a 64-bit process architecture, you're Terminal would reply with this:
+If you're on a 64-bit processor architecture, your Terminal would reply with this:
 
 ![64-bit](https://i.imgur.com/ssF6r4f.png)
 
@@ -41,11 +41,11 @@ If your output doesn't match any of the above, click on "I don't know" below and
 
 ### Wrapping up
 
-If you've reached the end of this tutorial without any problems, you should now know what your process architecture is!
+If you've reached the end of this tutorial without any problems, you should now know what your processor architecture is!
 
 ---
 
-## What is your Mac's process architecture?
+## What is your Mac's processor architecture?
 
 - [[32 bit->Download and unzip 32 bit version on a Mac]]
 - [[64 bit->Download and unzip 64 bit version on a Mac]]

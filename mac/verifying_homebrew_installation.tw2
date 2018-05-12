@@ -1,7 +1,7 @@
 ::Verifying Homebrew Installation
 # Installing Homebrew on a Mac
 
-Great! Now that you've opened the terminal on your Mac, we need to install Homebrew next. Homebrew is a package manager for the Mac, and installing it makes the whole Exercism installation process easier. If you want to Exercism manually, [[Manual Installation on a Mac]] would be helpful.
+Great! Now that you've opened the terminal on your Mac, we need to install Homebrew next. Homebrew is a package manager for the Mac, and installing it makes the whole Exercism installation processor easier. If you want to Exercism manually, [[Manual Installation on a Mac]] would be helpful.
 
 Since Homebrew is pretty common on Macs, let's first verify whether you have it on your computer.
 
