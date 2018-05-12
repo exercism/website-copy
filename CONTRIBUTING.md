@@ -152,7 +152,11 @@ and you should see your changes.
 #### Visualizing steps
 
 If you're a bit lost of how each step links to another, you can generate the
-walkthrough graph by running this command:
+walkthrough graph.
+
+This requires Graphviz—follow the instructions for your platform on the [Graphviz Download](https://graphviz.gitlab.io/download/) page.
+
+Then run this command:
 
 ```
 $ bundle exec rake graph
