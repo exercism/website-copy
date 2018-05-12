@@ -33,6 +33,12 @@ mac/expert/install_exercism_on_a_mac.tw2
 mac/expert/install_exercism_via_homebrew.tw2
 mac/expert/manual_install.tw2
 
+windows/add_to_path.tw2
+windows/download_64_bit_on_win10.tw2
+windows/introduction.tw2
+windows/open_command_prompt.tw2
+windows/which_version.tw2
+
 ::SharedStylesheet [stylesheet]
 
 img {
