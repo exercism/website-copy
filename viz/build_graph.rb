@@ -8,7 +8,7 @@ class BuildGraph
     new(*args).call
   end
 
-  def initialize(glob="{[!viz/]**/*}.tw2", output_path="graph")
+  def initialize(glob="**/*.tw2", output_path="graph")
     @glob = glob
     @output_path = output_path
     @graph = {}
@@ -23,11 +23,13 @@ class BuildGraph
   attr_reader :output_path, :glob, :graph
 
   def parse_files!
-    Dir[glob].each do |file|
-      text = read_file!(file)
-      title = parse_title!(text)
-      graph[title] = parse_links!(text)
-    end
+    Dir[glob].
+      reject{ |file| file['viz/'] }.
+      each do |file|
+        text = read_file!(file)
+        title = parse_title!(text)
+        graph[title] = parse_links!(text)
+      end
   end
 
   def read_file!(file)

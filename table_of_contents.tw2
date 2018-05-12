@@ -22,3 +22,7 @@ mac/create_bin_folder.tw2
 mac/create_bin_folder_troubleshooting.tw2
 mac/add_to_path.tw2
 mac/add_to_path_troubleshooting.tw2
+mac/install_exercism_on_a_mac.tw2
+mac/expert/install_exercism_on_a_mac.tw2
+mac/expert/install_exercism_via_homebrew.tw2
+mac/expert/manual_install.tw2

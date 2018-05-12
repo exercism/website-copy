@@ -1,6 +1,6 @@
 digraph 
   {
-    "Welcome" -> "Installing Exercism on a Mac";
+    "Welcome" -> "Mac Introduction";
     "Add to $PATH on a Mac" -> "Installation complete";
     "Add to $PATH on a Mac" -> "Add to $PATH on a Mac - Troubleshooting";
     "Add to $PATH on a Mac - Troubleshooting" -> "Installation complete";
@@ -23,6 +23,13 @@ digraph
     "Download and unzip 64 bit version on a Mac" -> "Download and unzip 64 bit version on a Mac - Troubleshooting";
     "Download and unzip 64 bit version on a Mac - Troubleshooting" -> "Create bin folder on a Mac";
     "Download and unzip 64 bit version on a Mac - Troubleshooting" -> "Talk to a Volunteer";
+    "Installing Exercism on a Mac - Expert" -> "Installing Exercism via Homebrew - Expert";
+    "Installing Exercism on a Mac - Expert" -> "Manual Installation on a Mac - Expert";
+    "Installing Exercism via Homebrew - Expert" -> "Installation complete";
+    "Manual Installation on a Mac - Expert" -> "Installation complete";
+    "Manual Installation on a Mac - Expert" -> "Determine process architecture on a Mac";
+    "Installing Exercism on a Mac" -> "Verifying Homebrew Installation";
+    "Installing Exercism on a Mac" -> "Opening the Terminal on a Mac";
     "Installing Exercism via Homebrew" -> "Installation complete";
     "Installing Exercism via Homebrew" -> "Installing Exercism via Homebrew - Troubleshooting";
     "Installing Exercism via Homebrew - Troubleshooting" -> "Installation complete";
@@ -33,8 +40,8 @@ digraph
     "Installing Homebrew - Troubleshooting" -> "Installing Exercism on a Mac";
     "Installing Homebrew - Troubleshooting" -> "Talk to a Volunteer";
     "Installing Homebrew - Troubleshooting" -> "Manual Installation on a Mac";
-    "Installing Exercism on a Mac" -> "Verifying Homebrew Installation";
-    "Installing Exercism on a Mac" -> "Opening the Terminal on a Mac";
+    "Mac Introduction" -> "Installing Exercism on a Mac - Expert";
+    "Mac Introduction" -> "Installing Exercism on a Mac";
     "Manual Installation on a Mac" -> "Download and unzip 32 bit version on a Mac";
     "Manual Installation on a Mac" -> "Download and unzip 64 bit version on a Mac";
     "Manual Installation on a Mac" -> "Determine process architecture on a Mac";
