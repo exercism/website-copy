@@ -26,3 +26,9 @@ mac/install_exercism_on_a_mac.tw2
 mac/expert/install_exercism_on_a_mac.tw2
 mac/expert/install_exercism_via_homebrew.tw2
 mac/expert/manual_install.tw2
+
+::SharedStylesheet [stylesheet]
+
+img {
+  width: 100%;
+}
