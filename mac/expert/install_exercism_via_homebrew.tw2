@@ -4,7 +4,13 @@
 To install exercism, simply run:
 
 ```
-brew install exercism
+brew update && brew install exercism
+```
+
+Verify that it was installed properly by running:
+
+```
+exercism --version
 ```
 
 ---
