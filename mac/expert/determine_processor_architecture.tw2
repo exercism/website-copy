@@ -1,0 +1,32 @@
+::Determine processor architecture on a Mac - Expert
+# Determine processor architecture on a Mac
+
+To determine your processor architecture, run:
+
+```
+uname -m | if grep -q 64; then echo "64-bit CPU"; else echo "32-bit CPU"; fi
+```
+
+#### Verify
+
+##### 32-bit processor architecture
+
+If you're on a 32-bit processor architecture, your Terminal would reply with this:
+
+![32-bit](https://i.imgur.com/RqszxRw.png)
+
+##### 64-bit processor architecture
+
+If you're on a 64-bit processor architecture, your Terminal would reply with this:
+
+![64-bit](https://i.imgur.com/ssF6r4f.png)
+
+##### Unknown architecture
+
+If your output doesn't match any of the above, click on "I don't know" below and we could recommend steps to help you.
+
+---
+## Do you know your processor architecture?
+
+- [[Yes->Manual Installation on a Mac - Expert]]
+- [[I don't know->Manual Installation on a Mac - Expert - Troubleshooting]]

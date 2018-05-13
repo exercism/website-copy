@@ -5,8 +5,8 @@
 2. Unzip and put the binary in your path.
 
 ----
+## Have you installed Exercism on your computer?
 
-Next steps:
-
-- [[Continue->Installation complete]]
-- [[I don't know my process architecture->Determine process architecture on a Mac]]
+- [[Yes->Installation complete]]
+- [[No->Manual Installation on a Mac - Expert - Troubleshooting]]
+- [[I don't know my processor architecture->Determine processor architecture on a Mac - Expert]]

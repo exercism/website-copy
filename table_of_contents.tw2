@@ -23,6 +23,9 @@ mac/create_bin_folder_troubleshooting.tw2
 mac/add_to_path.tw2
 mac/add_to_path_troubleshooting.tw2
 mac/install_exercism_on_a_mac.tw2
+mac/expert/determine_processor_architecture.tw2
 mac/expert/install_exercism_on_a_mac.tw2
 mac/expert/install_exercism_via_homebrew.tw2
+mac/expert/install_exercism_via_homebrew_troubleshooting.tw2
 mac/expert/manual_install.tw2
+mac/expert/manual_install_troubleshooting.tw2
