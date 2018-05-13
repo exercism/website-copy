@@ -1,0 +1,47 @@
+::Linux path
+# Adding `~/bin` to `$PATH` in Bash
+
+Note: If you’re not running Bash try to adjust the
+below to your shell or [[Talk to a Volunteer]].
+
+To have the `exercism` executable available everywhere on the
+command line you need to make sure `~/bin` is in your `$PATH`.
+
+There is a chance it’s there already; let’s see whether it is:
+
+```
+[[ ":$PATH:" == *":$HOME/bin:"* ]] && echo "~/bin is in PATH" || echo "~/bin is not in PATH"
+```
+
+If the above prints `~/bin is not in PATH` let’s add
+`~/bin` to `$PATH` and reload Bash configuration:
+
+```
+echo "export PATH=~/bin:$PATH" >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+To check whether this worked, go to your home directory
+and try to run `exercism` without providing the path:
+
+```
+cd
+exercism
+```
+
+The above should output something like the below:
+```
+NAME:
+   exercism - A command line tool to interact with http://exercism.io
+
+USAGE:
+   exercism [global options] command [command options] [arguments...]
+…
+```
+
+---
+
+## Did running `exercism` outout something like the above?
+
+- [[Yes->Installation complete]]
+- [[No->Talk to a Volunteer]]

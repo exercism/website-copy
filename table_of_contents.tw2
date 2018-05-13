@@ -3,6 +3,12 @@ common/welcome.tw2
 common/install_complete.tw2
 common/talk_to_a_volunteer.tw2
 
+linux/architecture.tw2
+linux/directory.tw2
+linux/introduction.tw2
+linux/path.tw2
+linux/tarball.tw2
+
 mac/introduction.tw2
 mac/opening_the_terminal.tw2
 mac/opening_the_terminal_troubleshooting.tw2
