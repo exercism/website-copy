@@ -1,7 +1,7 @@
 ::Manual Installation on a Mac - Expert
 # Installing Exercism on a Mac manually
 
-1. Download the appropriate version of exercism based on your process architecture at the [releases page](https://github.com/exercism/cli/releases/latest).
+1. Download the appropriate version of exercism based on your processor architecture at the [releases page](https://github.com/exercism/cli/releases/latest).
 2. Unzip and put the binary in your path.
 
 ----
@@ -9,4 +9,4 @@
 Next steps:
 
 - [[Continue->Installation complete]]
-- [[I don't know my process architecture->Determine process architecture on a Mac]]
+- [[I don't know my processor architecture->Determine processor architecture on a Mac]]
