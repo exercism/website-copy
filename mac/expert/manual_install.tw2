@@ -7,7 +7,7 @@
 After that, verify that it was installed properly by running:
 
 ```
-exercism --version
+exercism version
 ```
 
 ----

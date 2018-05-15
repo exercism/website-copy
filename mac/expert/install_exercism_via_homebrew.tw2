@@ -10,7 +10,7 @@ brew update && brew install exercism
 Verify that it was installed properly by running:
 
 ```
-exercism --version
+exercism version
 ```
 
 ---

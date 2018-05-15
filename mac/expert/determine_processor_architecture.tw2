@@ -4,26 +4,15 @@
 To determine your processor architecture, run:
 
 ```
-uname -m | if grep -q 64; then echo "64-bit CPU"; else echo "32-bit CPU"; fi
+uname -m
 ```
 
-#### Verify
-
-##### 32-bit processor architecture
-
-If you're on a 32-bit processor architecture, your Terminal would reply with this:
-
-![32-bit](https://i.imgur.com/RqszxRw.png)
-
-##### 64-bit processor architecture
-
-If you're on a 64-bit processor architecture, your Terminal would reply with this:
-
-![64-bit](https://i.imgur.com/ssF6r4f.png)
+If you see `x86_64` as output, this means that your processor architecture is 64 bit.
 
 ##### Unknown architecture
 
-If your output doesn't match any of the above, click on "I don't know" below and we could recommend steps to help you.
+Nowadays, the majority of the new (newer than 3 years) PCs are using a 64 bit architecture.
+Also, all computers with more than 4 GB of memory has to have a 64 bit processor architecture.
 
 ---
 ## Do you know your processor architecture?
