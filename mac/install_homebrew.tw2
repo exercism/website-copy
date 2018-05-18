@@ -82,5 +82,6 @@ Once you've reached the end of this tutorial, you should've installed Homebrew o
 ---
 
 ## Were you able to install Homebrew?
-- [[Yes->Verifying Homebrew Installation]]
+- [[Yes->Installing Exercism via Homebrew]]
+- [[I don't know->Verifying Homebrew Installation]]
 - [[No->Installing Homebrew - Troubleshooting]]
