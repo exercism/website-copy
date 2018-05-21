@@ -1,7 +1,9 @@
 ::Installing Exercism via Homebrew - Expert - Troubleshooting
 # Installing Exercism via Homebrew - Troubleshooting
 
-Having problems getting Exercism on your computer? A solution to your problem may be present below.
+Having problems getting Exercism on your computer using Homebrew?
+
+Here there is a list of Homebrew - Common Issues that can help: https://docs.brew.sh/Common-Issues.
 
 ---
 
@@ -9,4 +11,3 @@ Having problems getting Exercism on your computer? A solution to your problem ma
 
 - [[Yes->Installation complete]]
 - [[No->Talk to a Volunteer]]
-- [[Try another installation method->Manual Installation on a Mac - Expert]]
