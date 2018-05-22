@@ -8,6 +8,8 @@ GEM
     coffee-script-source (1.12.2)
     execjs (2.7.0)
     ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
+    ffi (1.9.18-x86-mingw32)
     filewatcher (0.5.4)
       trollop (~> 2.0)
     graph (2.8.2)
@@ -16,6 +18,10 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    nokogiri (1.8.2-x64-mingw32)
+      mini_portile2 (~> 2.3.0)
+    nokogiri (1.8.2-x86-mingw32)
       mini_portile2 (~> 2.3.0)
     rake (12.3.0)
     rb-fsevent (0.10.2)
@@ -45,6 +51,8 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
+  x86-mingw32
 
 DEPENDENCIES
   graph
@@ -53,4 +61,4 @@ DEPENDENCIES
   twee2
 
 BUNDLED WITH
-   1.16.1
+   1.16.2

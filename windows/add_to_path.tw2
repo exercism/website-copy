@@ -1,7 +1,7 @@
 ::Moving exercism to PATH on Windows 10
-# Moving exercism to the right folder on Windows 10
+# Moving the Exercism CLI to the right folder on Windows 10
 
-To make Exercism usable on your computer, we need to move it to the right folder. Using the Command Prompt we just opened, we are going to open the folder.
+To make the Exercism CLI usable on your computer, we need to move the `exercism` executable file to the correct folder. Using the Command Prompt we just opened, we are going to open the folder.
 
 ## Step 1: Opening the right folder
 ### Exercise
@@ -9,7 +9,7 @@ To make Exercism usable on your computer, we need to move it to the right folder
 In the Command Prompt window, copy & paste:
 
 ```
-start %LOCALAPPDATA%\Microsoft\WindowsApps
+start "" "%LOCALAPPDATA%\Microsoft\WindowsApps"
 ```
 
 and hit the 'Enter' key.
@@ -24,7 +24,7 @@ A new window, showing a folder, will show up. This is where we need to place the
 ## Step 2: Moving the `exercism` file
 ### Exercise
 
-Find the `exercism` file in the folder we opened earlier, when we downloaded Exercism. From this folder, drag the file (or copy & paste it) to the folder we just opened, labeled `WindowsApps`.
+Find the `exercism` file in the folder we opened earlier, when we downloaded `exercism`. From this folder, drag the file (or copy & paste it) to the folder we just opened, labeled `WindowsApps`.
 
 ### Verify
 
@@ -50,11 +50,11 @@ After hitting the `Enter` key, the Command Prompt should reply with how the `exe
 
 ![Exercism usage](https://transfer.sh/12ld3l/win10-installed.png)
 
-> Sidenote: As you get the hang of Exercism, you'll get to know more about the commands.
+> Sidenote: As you get the hang of the Exercism CLI, you'll get to know more about its commands.
 
 ---
 
-## Have you installed Exercism on your computer?
+## Have you installed the Exercism CLI on your computer?
 
 - [[Yes->Installation complete]]
 - [[No->Talk to a Volunteer]]
