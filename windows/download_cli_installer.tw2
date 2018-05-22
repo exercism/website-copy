@@ -1,0 +1,10 @@
+::Download CLI Installer for Windows
+# Option to install the Exercism CLI using the installer for Windows
+
+* Either you are using a version of Windows that is earlier than version 10.
+* You ran into issues attempting to install the CLI manually and were not successful.
+
+Would you like to try downloading and installing the Exercism CLI by using the CLI installer for Windows?
+
+- [Yes, take me to the download page for the Windows CLI Installer](https://github.com/exercism/windows-installer/releases/latest)
+- [[No thanks.->Talk to a Volunteer]]
