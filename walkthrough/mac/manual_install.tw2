@@ -1,11 +1,11 @@
 ::Manual Installation on a Mac
 # Installing Exercism on a Mac manually
 
-To install Exercism on a Mac manually, we first need to determine your Mac's process architecture.
+To install Exercism on a Mac manually, we first need to determine your Mac's processor architecture.
 
 ---
 
-## Do you know what your Mac's process architecture is?
+## Do you know what your Mac's processor architecture is?
 - [[32 bit->Download and unzip 32 bit version on a Mac]]
 - [[64 bit->Download and unzip 64 bit version on a Mac]]
-- [[I don't know->Determine process architecture on a Mac]]
+- [[I don't know->Determine processor architecture on a Mac]]

@@ -76,15 +76,14 @@ $ bundle
 
 ##### Format
 
-Each step is written in Markdown. If you haven't used it before, we recommend
-looking at this [tutorial][markdown].
+Each step is written in Markdown and Twee-style. If you haven't used Markdown before, we recommend looking at this [tutorial][markdown]. If you haven't used Twee2 yet, this is the [project documentaiton](https://dan-q.github.io/twee2/documentation.html)
 
 Steps should be saved with the `*.tw2` file extension.
 
 ##### Adding steps
 
 In order to add a step, you must first add it to the table of contents. The
-table of contents is the file named [table_of_contents.tw2][table_of_contents.tw2].
+table of contents is the file named [table_of_contents.tw2](table_of_contents.tw2).
 
 ##### Table of contents
 
@@ -146,13 +145,16 @@ done by running this command:
 $ bundle exec rake compile
 ```
 
-Compiling produces a file named `compiled.html`. Open this file in your browser
-and you should see your changes.
+Compiling produces a file named `compiled.html` in the root of the repo. Open this file in your browser and you should see your changes.
 
 #### Visualizing steps
 
 If you're a bit lost of how each step links to another, you can generate the
-walkthrough graph by running this command:
+walkthrough graph.
+
+This requires Graphviz—follow the instructions for your platform on the [Graphviz Download](https://graphviz.gitlab.io/download/) page.
+
+Then run this command:
 
 ```
 $ bundle exec rake graph

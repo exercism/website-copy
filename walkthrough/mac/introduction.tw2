@@ -1,11 +1,7 @@
-::Installing Exercism on a Mac
+::Mac Introduction
 # Installing Exercism on a Mac
 
-To install Exercism on a Mac, we first need to open the terminal.
+Are you comfortable installing and executing programs on terminal?
 
----
-
-## Do you know how to open the terminal?
-
-- [[Yes->Verifying Homebrew Installation]]
-- [[No->Opening the Terminal on a Mac]]
+- [[Yes->Installing Exercism on a Mac - Expert]]
+- [[No->Installing Exercism on a Mac]]

@@ -3,17 +3,24 @@ common/welcome.tw2
 common/install_complete.tw2
 common/talk_to_a_volunteer.tw2
 
+linux/architecture.tw2
+linux/directory.tw2
+linux/introduction.tw2
+linux/path.tw2
+linux/tarball.tw2
+
 mac/introduction.tw2
 mac/opening_the_terminal.tw2
 mac/opening_the_terminal_troubleshooting.tw2
+mac/asking_about_homebrew.tw2
 mac/verifying_homebrew_installation.tw2
 mac/install_homebrew.tw2
 mac/install_homebrew_troubleshooting.tw2
 mac/install_exercism_via_homebrew.tw2
 mac/install_exercism_via_homebrew_troubleshooting.tw2
 mac/manual_install.tw2
-mac/determine_process_architecture.tw2
-mac/determine_process_architecture_troubleshooting.tw2
+mac/determine_processor_architecture.tw2
+mac/determine_processor_architecture_troubleshooting.tw2
 mac/download_32_bit_version.tw2
 mac/download_32_bit_version_troubleshooting.tw2
 mac/download_64_bit_version.tw2
@@ -22,3 +29,21 @@ mac/create_bin_folder.tw2
 mac/create_bin_folder_troubleshooting.tw2
 mac/add_to_path.tw2
 mac/add_to_path_troubleshooting.tw2
+mac/install_exercism_on_a_mac.tw2
+mac/expert/determine_processor_architecture.tw2
+mac/expert/install_exercism_on_a_mac.tw2
+mac/expert/install_exercism_via_homebrew.tw2
+mac/expert/install_exercism_via_homebrew_troubleshooting.tw2
+mac/expert/manual_install.tw2
+
+windows/add_to_path.tw2
+windows/download_64_bit_on_win10.tw2
+windows/introduction.tw2
+windows/open_command_prompt.tw2
+windows/which_version.tw2
+
+::SharedStylesheet [stylesheet]
+
+img {
+  width: 100%;
+}

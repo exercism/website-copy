@@ -1,1 +1,4 @@
 node_modules/
+compiled.html
+graph.dot
+graph.png
