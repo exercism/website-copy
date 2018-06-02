@@ -1,8 +1,0 @@
-{
-  "name": "cli-walkthrough",
-  "version": "1.0.0",
-  "description": "An interactive walkthrough for installing the Exercism CLI",
-  "devDependencies": {},
-  "main": "index.js",
-  "license": "MIT"
-}
