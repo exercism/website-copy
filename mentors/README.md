@@ -1,5 +1,7 @@
 # Mentors
 
+This directory contains bios for mentors.
+
 There is a directory for each track.
 Each directory contains JSON files in the range 0..9,a..z
 
@@ -42,3 +44,7 @@ Use the following format.
 
 Note that if you leave a field `null`, we will use the content from your public GitHub profile.
 If you want to leave a field blank, set it to an empty string.
+
+### Example
+
+For an example, see [Katrina's commit for Go](https://github.com/exercism/website-copy/pull/8/commits/469c4e2242d320928162d12bc83efea799a1c2fa).
