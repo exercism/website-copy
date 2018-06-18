@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "The syntax is slightly ruby-ish and quite easy to grasp. But it truly is stading on the shoulders of giants (Erlang / OTP) which makes it my go to language for most new projects."
+  }
+]
