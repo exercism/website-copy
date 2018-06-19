@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "ajkavanagh",
+    "name": "Alex Kavanagh",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Haskell is a mind expanding language and I love the way it changes how you think about programming.  I'm still fairly new to Haskell, but was a seasoned Schemer in the past, and use FP techniques whenever they are appropriate."
+  }
+]

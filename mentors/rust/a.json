@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "ajkavanagh",
+    "name": "Alex Kavanagh",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Rust is a refreshing alternative to C, C++ and golang.  I find it elegant, relatively concise and very interesting to use.  I've not used in professionally, yet, but have many years of C, JavaScript and Python under my belt."
+  }
+]
