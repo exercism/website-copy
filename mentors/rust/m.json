@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "github_username": "mairandomness",
+    "name": "Maira Kodama",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Math teacher turned programmer. Fell in love with Rust while listening to Steve Klabnik talk about its design choices. Eternally grateful for helpful compiler messages. Not tall enough to write multi-threaded code.
+"
+  }
+]
