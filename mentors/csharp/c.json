@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "csharp-today",
+    "name": "Mariusz Bojkowski",
+    "link_text": "C# Today blog",
+    "link_url": "https://csharp.today",
+    "avatar_url": "https://csharp.today/wp-content/uploads/2014/05/face_150.png",
+    "bio": "I’m C# / .NET software developer and architect. My commercial adventure with software started in 2006 but it was my PASSION even before that."
+  }
+]
