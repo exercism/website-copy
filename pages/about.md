@@ -6,6 +6,6 @@ Exercism provides you with thousands of exercise spread across numerous language
 
 Exercism is entirely open source and relies on the contributions of thousands of wonderful people, include our [leadership team](/team), our [mentors](/team/mentors), our [track maintainers](/team/maintainers), and thousands of [contributors](/team/contributors).
 
-Exercism is design to be fun and friendly, and we place a strong emphasis on empathetic communication. If you have any questions or concerns about exercism, you can browse our [FAQs](/pages/faqs) or [contact us](/pages/contact).
+Exercism is design to be fun and friendly, and we place a strong emphasis on empathetic communication. If you have any questions or concerns about exercism, you can browse our [FAQs](/faqs) or [contact us](/contact).
 
 Sign up and have fun. Exercism is 100% free :)
