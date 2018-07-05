@@ -1,1 +1,29 @@
-[]
+
+[
+  {
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "Python has something for everyone. Like functional programming? Check. Like OOP? Check. Need multiple inheritance? Check. I use it for web apps (Django) and - more recently - for machine learning, it's awesome!"
+  },
+ {
+  "github_username": "slahmar",
+  "name": "Salomé Lahmar",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "Python is my favorite language because it's easy to learn and easy to write, and really explicit and concise. It's also great for machine learning enthusiasts!"
+  },
+ {
+      "github_username": "sebito91",
+      "name": "Sebastian Borza",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": "I'm a Canadian (based in Chicago) freelance golang, C and python developer working on projects within the gaming, finance and data-science worlds respectively. My favorite freetime task is coding challenges and I'm more than happy to help people talk through solutions!"
+  }
+]
+

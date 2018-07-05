@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "frerich",
+    "name": "Frerich Raabe",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been using Haskell on and off for the last eight years, and maintain a few Haskell packages. I believe knowing some Haskell makes you a better programmer in any other language and try to practice it whenever possible."
+  }
+]
