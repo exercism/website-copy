@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "nasyxx",
+    "name": "Nasy",
+    "link_text": "Nasy Moe",
+    "link_url": "https://nasy.moe",
+    "avatar_url": null,
+    "bio": "I really like to use python to solve things in life, and I also desire to use her extraordinary features. Hope you can enjoy python, too. Besides, I come from China, so if you use Chinese, I can also understand it."
+  },
+  {
+    "github_username": "neganp",
+    "name": "Nat Knight",
+    "link_text": "website",
+    "link_url": "nathanielknight.ca",
+    "avatar_url": null,
+    "bio": "I've used Python professionally and academically for nearly ten year. I like the language for its consistency and its flexibility. I like its community for its emphasis on being approachable."
+  }
+]

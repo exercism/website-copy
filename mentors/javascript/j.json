@@ -6,5 +6,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I didn't feel like I understood JS for the first two years or so that I used it professionally. Once I dug into the prototypical inheritance and functions as a first-class object things really started to click, and ever since ES6 came out it's been a favorite language of mine."
-  }
+  },
+  {
+    "github_username": "jvarness",
+    "name": "Jake Varness",
+    "link_text": "Github Page",
+    "link_url": "http://jvarness.github.io/",
+    "avatar_url": "https://pbs.twimg.com/profile_images/791823568812187648/QM6VKGDq_400x400.jpg",
+    "bio": "I'm fascinated by all of the different practical applications that JavaScript has to offer. I've developed JavaScript professionally for many years, and have worked on single-page applications using Knockout.js/Durandal, as well as Node.js applications!"
+   },
+   {
+        "github_username": "junedev",
+        "name": "June",
+        "link_text": "Website",
+        "link_url": "http://junedev.io",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/12543047?s=400&u=b52483bce01c804a73b5fc2e2d0ce9884672c76f&v=4",
+        "bio":"I really like using JavaScript in the back-end. After a web development bootcamp I was working as Node.js developer for 2 years before switching to Go."
+    }
 ]

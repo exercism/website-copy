@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "armilam",
+    "name": "Aaron Milam",
+    "link_text": "Github",
+    "link_url": "https://github.com/armilam",
+    "avatar_url": "https://www.gravatar.com/avatar/07820db2ccef786da472ecf49308e34c",
+    "bio": "I have worked primarily in Ruby for a few years now. Its ease of learning and versatility make it both a great language to start with and to use in the real world."
+  }
+]
