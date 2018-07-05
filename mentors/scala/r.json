@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "rutgerclaes",
+    "name": "Rutger Claes",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I really like working in Scala.  It allows me to come up with elegant, functional code that is also concise and type safe."
+  }
+]
