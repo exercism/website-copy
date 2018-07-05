@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "jcmorrow",
+    "name": "Josh Morrow",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I didn't feel like I understood JS for the first two years or so that I used it professionally. Once I dug into the prototypical inheritance and functions as a first-class object things really started to click, and ever since ES6 came out it's been a favorite language of mine."
+  },
+  {
     "github_username": "jvarness",
     "name": "Jake Varness",
     "link_text": "Github Page",
