@@ -1,1 +1,27 @@
-[]
+[
+    {
+        "github_username": "andreagrandi",
+        "name": "Andrea Grandi",
+        "link_text": "Website",
+        "link_url": "https://www.andreagrandi.it",
+        "avatar_url": null,
+        "bio": "I work as software developer at UK Government Digital Service. I like Python, Django, Machine Learning and security."
+   },
+  {
+    "github_username": "ajomadlabs",
+    "name": "Ajo John",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Javascript. Great fan of Vuejs. Loves Open Source."
+  },
+  {
+    "github_username": "avremel",
+    "name": "Avremel Kaminetzky",
+    "link_text": "Personal Website",
+    "link_url": "http://avremel.work",
+    "avatar_url": null,
+    "bio": "I enjoy hacking with Python, it is my language of choice for prototyping and side projects."
+  }
+
+]

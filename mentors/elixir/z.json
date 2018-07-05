@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "zoldar",
+    "name": "Adrian Gruntkowski",
+    "link_text": "Homepage",
+    "link_url": "https://todo.computer",
+    "avatar_url": null,
+    "bio": "Over 2 years ago, exercism was one of the first places where I actively learned about idiomatic approach to writing programs in Elixir. Now, after working with the language day to day, I'd like to give back to this great community."
+  }
+]

@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "cmac2454",
+    "name": "Cameron MacDonald",
+    "link_text": "GitLab",
+    "link_url": "https://gitlab.com/cadoma",
+    "avatar_url": null,
+    "bio": "I write JS professionally, and I also write JSX in Reactjs, so I've got plenty of experience with this and I'm happy to show you the ropes!"
+  }
+]

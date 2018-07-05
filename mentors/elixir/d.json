@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "dsdshcym",
+    "name": "Yiming Chen",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Elixir because I believe it can provide both dynamic polymorphism and referential transparency, which are both fundamental for writing clean code."
+  }
+]
