@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "github_username": "valrus",
+        "name": "Ian McCowan",
+        "link_text": "writing and music and what not",
+        "link_url": "ian.mccowan.space",
+        "avatar_url": null,
+        "bio": "Python is the first language I taught myself, and the one I used at my first job. I love its relative accessibility to newcomers and the huge ecosystem you can grow into as you learn it!"
+    }
+]

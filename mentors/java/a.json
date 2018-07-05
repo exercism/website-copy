@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "aadityakulkarni",
+    "name": "Aaditya Kulkarni",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a Full stack web developer. I've written code in Java professionally, as well as use it for open source contribution."
+  },
+  {
+    "github_username": "aspanu",
+    "name": "Adrian Spanu",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I work as a software engineer full time. I've been working in Java codebases for a number of years now and I really like the flexibility and usefulness of Java. I'm happy to help new coders discover the awesomeness of Java. Yes, it does exist :)."
+  }
+]

@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "github_username": "jovaneyck",
+        "name": "Jo Van Eyck",
+        "link_text": null,
+        "link_url": null,
+        "avatar_url": null,
+        "bio": "Software crafter, legacy code wrestler. I help companies get things done without shooting themselves in the foot and teach others how to do it. I use F# at work for everything except production code!"
+      }
+]

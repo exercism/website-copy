@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I mainly use Typescript at work and I really appreciate the type safety it provides. Combine it with the awesome Visual Studio Code and you're in for a treat. Another well done language by Microsoft."
+  }
+]
