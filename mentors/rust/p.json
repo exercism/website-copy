@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "potto007",
+    "name": "Paul Otto",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Rust for its type-safety, its approach to memory management, and its helpful compiler messages. I currently use Rust in side projects, and I'm working towards getting Rust into use at work."
+  }
+]

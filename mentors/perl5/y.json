@@ -1,1 +1,10 @@
-[]
+[
+   {
+      "avatar_url" : null,
+      "bio" : "Perl necrohacker. Avid polyglot. Slightly bonkers all around.",
+      "github_username" : "yanick",
+      "link_text" : "personal tech blog",
+      "link_url" : "http://techblog.babyl.ca",
+      "name" : "Yanick Champoux"
+   }
+]
