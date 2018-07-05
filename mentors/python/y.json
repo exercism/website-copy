@@ -1,4 +1,5 @@
 [
+
     {
         "github_username": "ydawant",
         "name": "Yannick Dawant",
@@ -6,5 +7,14 @@
         "link_url": null,
         "avatar_url": null,
         "bio": "I've been using Python professionally for the past 5 years. I was lucky to be surrounded by great teachers and mentors on my path to becoming a developer. Excited to pay that forward!"
-    }
+    },
+  {
+    "github_username": "yosnoop",
+    "name": "Ty Hahn",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I do Linux administration as day job and write python mainly for my personal data science projects."
+  }
+
 ]

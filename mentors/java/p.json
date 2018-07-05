@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "pdmoore",
+    "name": "Paul Moore",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been programming in Java and JUnit for almost as long as they've existed. I really appreciate the ability to effortlessly refactor code using these tools."
+  }
+]
