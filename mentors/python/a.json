@@ -1,5 +1,13 @@
 [
-    {
+  {
+    "github_username": "aldraco",
+    "name": "Ashley Drake",
+    "link_text": "Personal Site",
+    "link_url": "http://aldra.co",
+    "avatar_url": null,
+    "bio": "I have been writing Python professionally since 2015, and love it's expressiveness and flexibility."
+  },
+  {
         "github_username": "andreagrandi",
         "name": "Andrea Grandi",
         "link_text": "Website",
@@ -23,5 +31,4 @@
     "avatar_url": null,
     "bio": "I enjoy hacking with Python, it is my language of choice for prototyping and side projects."
   }
-
 ]
