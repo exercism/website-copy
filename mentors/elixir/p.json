@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "potto007",
+    "name": "Paul Otto",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Elixir for its pragmatic approach to functional programming, its small syntax, and its macro language. OTP on the BEAM (ErlangVM) is beautiful. I have professionally written and deployed networked software with Elixir."
+  }
+]
