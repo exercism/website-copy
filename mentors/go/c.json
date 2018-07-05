@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "cmac2454",
+    "name": "Cameron MacDonald",
+    "link_text": "GitLab",
+    "link_url": "https://gitlab.com/cadoma",
+    "avatar_url": null,
+    "bio": "I only started learning Go about a year ago but I've quickly come to love it. I hope I can help you learn to love it too!"
+  }
+]

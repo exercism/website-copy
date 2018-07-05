@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "potto007",
+    "name": "Paul Otto",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I enjoy writing Go for its simple, minimalist syntax. Mentoring in Go is a joy, thanks to its opinionated nature ('The Go Way'). I write and review Go professionally, as well as in side projects."
+  }
+]
