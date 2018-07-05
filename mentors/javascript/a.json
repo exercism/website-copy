@@ -1,1 +1,19 @@
-[]
+
+[
+  {
+    "github_username": "ajomadlabs",
+    "name": "Ajo John",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Javascript. Great fan of Vuejs. Loves Open Source."
+  },
+{
+  "github_username": "andrew-prior",
+  "name": "Andrew Prior",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "Javascript developer, father, and amateur everything else."
+}]
+
