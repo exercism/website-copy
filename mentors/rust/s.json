@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "sebasmagri",
+    "name": "Sebastian Magri",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I been using Rust both at work and as a hobby for a while now. Its an awesome project that makes it easy to learn and contribute, and improves really fast while remaining compliant with its principles."
+  }
+]
