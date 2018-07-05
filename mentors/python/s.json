@@ -1,1 +1,21 @@
-[]
+
+[{
+  "github_username": "slahmar",
+  "name": "Salomé Lahmar",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "Python is my favorite language because it's easy to learn and easy to write, and really explicit and concise. It's also great for machine learning enthusiasts!"
+},
+
+
+    {
+      "github_username": "sebito91",
+      "name": "Sebastian Borza",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": "I'm a Canadian (based in Chicago) freelance golang, C and python developer working on projects within the gaming, finance and data-science worlds respectively. My favorite freetime task is coding challenges and I'm more than happy to help people talk through solutions!"
+    }
+]
+
