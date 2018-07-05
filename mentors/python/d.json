@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "github_username": "dmerejkowsky",
+    "name": "Dimitri Merejkowsky",
+    "link_url": "https://dmerej.info/blog",
+    "link_text": "blog",
+    "bio": "Python3 fan. Interested in refactoring, test driven developement and type annotations."
+  }
+]
