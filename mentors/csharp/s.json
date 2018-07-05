@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I use C# for all my IoT projects and my native apps (Xamarin). It has a very big ecosystem and frameworks like ASP.NET Core can be used as a very good alternative to Node.js."
+  }
+]

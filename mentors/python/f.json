@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "frerich",
+    "name": "Frerich Raabe",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been using and enjoying Python in both hobby as well as professional projects for a few years now. Yet, I never cease to be amazed about how Python programs can be concise without being obfuscated or cryptic."
+  }
+]

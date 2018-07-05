@@ -1,8 +1,19 @@
-[{
+[
+  {
   "github_username": "SomeKittens",
   "name": "Randall Koutnik",
   "link_text": "blog",
   "link_url": "https://rkoutnik.com/",
   "avatar_url": null,
   "bio": "Level 13 JavaScript Wizard"
-}]
+},
+{
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "What can I say... it's Javascript alright :) I try to avoid pure JS as much as I can. But, it's the language of the web and the more you know about its many pitfalls the better :)"
+  }
+]
