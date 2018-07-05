@@ -1,5 +1,13 @@
 [
-    {
+  {
+    "github_username": "jvarness",
+    "name": "Jake Varness",
+    "link_text": "Github Page",
+    "link_url": "http://jvarness.github.io/",
+    "avatar_url": "https://pbs.twimg.com/profile_images/791823568812187648/QM6VKGDq_400x400.jpg",
+    "bio": "I'm fascinated by all of the different practical applications that JavaScript has to offer. I've developed JavaScript professionally for many years, and have worked on single-page applications using Knockout.js/Durandal, as well as Node.js applications!"
+   },
+   {
         "github_username": "junedev",
         "name": "June",
         "link_text": "Website",
