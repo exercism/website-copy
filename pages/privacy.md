@@ -67,13 +67,21 @@ We can remove your personal data from our systems so that you can no longer be p
 It is important to note that any certain content submissions (including, but not limited to, problem **Solutions** and Mentor's feedback) are transferred to us under a Commercial Commons BY-SA and therefore cannot be deleted or unshared.
 
 ### Cookies
+Cookies are small text files that are placed on your computer by websites that you visit. They are widely used in order to make websites work, or work more efficiently, as well as to provide information to the owners of the site. The table below explains the cookies we use and why.
 
-We use or may use the data collected through tracking technologies to better display our website, to save you time, to provide better technical support, for promotional purposes, and to track website usage. For example, cookies help us to:
+# Cookies
 
-Keep track of whether you are signed in or have previously signed in so that we can display all the features that are available to you.
-Remember your settings on the pages you visit, so that we can display your preferred content the next time you visit.
-Customize the function and appearance of the pages you visit based on information relating to your account; for example, in order to default you to a particular study level, or to remember customized settings for a report.
-Track website usage for various purposes including sales, marketing, and billing.
+The sites https://exercism.io and The sites https://teams.exercism.io use the following cookies
+
+| Cookie  | Scope | Purpose |
+| ------------- | ------------- | ------------- |
+| _exercism_session  | *.exercism.io  | manages your signed-in session on our web sites |
+| _ga  | *.exercism.io  | Google Analytics |
+| _gid  | *.exercism.io  | Google Analytics |
+| _hj |  *.exercism.io  | Hotjar cookies are prefixed with _hj - for more information see  https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookies
+
+Other cookies may be set when you sign in through a 3rd Party (such as GitHub).
+
 
 ## How we use the information we've collected
 
