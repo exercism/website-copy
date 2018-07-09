@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "jgomo3",
+    "name": "Jesús Gómez",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Considered for a new version of the legacy System I'm working with, a coworker presented Clojure to me and we found early it helps a lot on keeping complexity low with a systemic aproach to software projects. We have used in some prototypes. Still learning all I can of it, I hope I could share some knowledege of it by mentoring and learn at the same time."
+  }
+]
