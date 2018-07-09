@@ -134,6 +134,28 @@ Knowingly providing false information personal information is a breach of these 
 
 Attempting to circumvent the security of our products and services, or make any attempts to impersonate another user or gain unauthorized access, or to use our services in any way that interferes with the services provided by our Platform, will be considered a breach of these Terms.
 
+## Advertising and Sponsorship
+
+We may, from time to time, sell advertisement space on our platform. Some adverts may be platform-wide, some may be scoped to certain areas of the website. We do not target advertising based on your personal data or site behaviour.
+
+We may, from time to time, allow third parties to 'sponsor' certain features of our Platform. You may, for instance, see this sponsorship information as an advert on various Platform features (including email notifications).
+
+We periodically review the level of granularity we provide for controlling marketing-related features and may notify you of any of these changes by email.
+
+## Prohibited Conduct of users on the platform
+
+When using our Platform, you AGREE NOT TO:
+
+1. share or upload defamatory, libellous, or inaccurate content;
+2. share or upload any content that is unlawful
+3. share or upload content that a reasonable person could deem to be objectionable, offensive, indecent, pornographic, harassing, threatening, embarrassing, distressing, vulgar, hateful, racially or ethnically offensive, or otherwise inappropriate. We would recommend that you familiarise yourself with our values and code of conduct.
+3. impersonate any person or entity, falsely claim an affiliation with any person or entity, or access the Platform accounts of others without permission, or perform any other fraudulent activity
+4. make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
+5. attempt to collect, personal information about Users or third parties without their consent;
+6. remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform,
+7. intentionally interfere with or damage operation of the Platform or any user’s enjoyment of it, by any means.
+8. use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property and other proprietary rights, and data protection and privacy.
+
 
 ## Warranties and Indemnification
 
