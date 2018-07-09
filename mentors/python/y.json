@@ -15,6 +15,14 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I do Linux administration as day job and write python mainly for my personal data science projects."
+  },
+  {
+    "github_username": "yawpitch",
+    "name": "Michael Morehouse",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Although Python wasn't my first -- and won't be my last -- programming language, it remains my favorite for introducing others to the joys, the pains, the infrequent ecstacies, and the occasional terrors of life before the REPL."
   }
 
 ]
