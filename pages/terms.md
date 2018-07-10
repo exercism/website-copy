@@ -181,8 +181,6 @@ To the maximum extent allowed by law, Exercism disclaims all warranties and repr
 
 You hereby indemnify, defend and hold harmless Us, Our affiliates, officers, directors, agents, partners, employees, representatives and third party providers from and against all reasonably foreseeable losses, expenses, damages, costs, claims and demands, including reasonable legal fees and properly incurred associated costs and disbursements, due to or arising out of Your breach of any representation or warranty under these Terms.
 
-To the fullest extent permissible under applicable law we shall not be liable to you under any law of contract, tort or negligence, for any losses, unless such losses were reasonably foreseeable at the time you agreed to these terms. Notwithstanding any established liability our total liability shall at all times be limited to the amounts paid in connection with the purchase or order under which such liability arose.
-
 ## Our communication with you
 
 By using Our platform or communicating generally with Us, You agree that We may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the services or these Terms.
