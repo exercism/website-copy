@@ -3,7 +3,7 @@
 
 Last Revised: XXXXX
 
-## Who we are
+## Overview
 
 Exercism (also referred to as exercism.io) is an online platform designed to help you improve your coding skills through practice and mentorship.
 
@@ -16,8 +16,6 @@ Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaw
 
 - Our [Terms and Conditions](...)
 - Our community [Code of Conduct](...)
-
-## Overview
 
 Our approach to your privacy is very straightforward
 
