@@ -173,7 +173,7 @@ We periodically review the level of granularity we provide for controlling marke
 
 #### Platform Availability
 
-We provide the Platform to our users on a free of charge basis. We will use reasonable efforts to make our Services available 24/7/365, but from time-to-time we will have scheduled outages for maintenance purposes.
+We provide the core Platform to our users on a free of charge basis. We will use reasonable efforts to make our Services available 24/7/365, but from time-to-time we will have scheduled outages for maintenance purposes.
 
 Where feasible, we may inform users about planned outages but we are under no obligation to do so, and in any case will not be liable for any service downtime.
 
