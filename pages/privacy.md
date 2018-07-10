@@ -5,7 +5,7 @@ Last Revised: XXXXX
 
 ## Who we are
 
-Exercism (also referred to as exercism.io) is an online platform (**Platform**) and associated services designed to help you improve individuals improve their coding skills through practice and mentorship.
+Exercism (also referred to as exercism.io) is ab online platform designed to help you improve individuals improve their coding skills through practice and mentorship.
 
 Our platform comprises of a web site is located at https://exercism.io (including associated subdomains - such as https://teams.exercism.io), and related application programming interfaces (API’s), command line applications (CLI's) and other online services.
 
@@ -14,9 +14,15 @@ software coding skills.
 
 ## Overview
 
+Our approach to your privacy is very straightforward
+
 1. We do not collect more personal information than we need
-2. We do not share your private information with third parties
-3. When you create a public-visible content, you can control how much personal information is shared
+2. We will not share any data you give us (e.g. your email address) with other third parties
+3. We might use the code you publish for research purposes to improve our product, but will do so anonymously.
+4. We use tools like Google Analytics and Hotjar to understand how you use the site. The information from these tools is only used to make the site better.
+5. We try to give you as much control about what information you share. For instance, we offer facilities to have an anonymous handle/user name if you want, and we don't require you to create a public profile.
+
+It is important to note that any code submissions you make and any feedback you give will be made **publicly** available under a Commercial Commons license. However, using our privacy tools, you can decide if you want this content to be identifiably linked to you.
 
 ## The information do we collect
 
@@ -58,11 +64,11 @@ At any time you can review the information on your profile and update or change 
 
 3. Right of portability
 
-We can provide you with a copy of your personal data in a machine readable format. Please contact YYYYYYYY@exercism.io for more information.
+We can provide you with a copy of your personal data in a machine readable format. Please contact privacy@exercism.io for more information.
 
 4. Right to Erasure
 
-We can remove your personal data from our systems so that you can no longer be personally identified to your Solutions. Please contact YYYYYYYY@exercism.io for more information.
+We can remove your personal data from our systems so that you can no longer be personally identified to your Solutions. Please contact privacy@exercism.io for more information.
 
 It is important to note that any certain content submissions (including, but not limited to, problem **Solutions** and Mentor's feedback) are transferred to us under a Commercial Commons BY-SA and therefore cannot be deleted or unshared.
 
@@ -87,7 +93,7 @@ Other cookies may be set when you sign in through a 3rd Party (such as GitHub).
 
 To understand, improve, and develop our Platform and associated services. As detailed in our values, we aim to build a **positive and caring community** to help people **learn to program**. In support of these aims, we may use the data we collect to improve the quality of our Users' learning and feedback. This may include performing data analysis on anonymised datasets.
 
-## Sharing and transfering data
+## Sharing and transferring data
 
 We do not rent or sell any Personal Information that we collect with third parties.
 
