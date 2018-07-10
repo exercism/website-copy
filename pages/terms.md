@@ -152,8 +152,6 @@ We try to minimise the amount of personal data we hold, and where we do store an
 
 Knowingly providing false information personal information is a breach of these Terms and might result in termination of your account.
 
-Attempting to circumvent the security of our products and services, or make any attempts to impersonate another user or gain unauthorized access, or to use our services in any way that interferes with the services provided by our Platform, will be considered a breach of these Terms.
-
 ## Advertising and Sponsorship
 
 We may, from time to time, sell advertisement space on our platform. Some adverts may be platform-wide, some may be scoped to certain areas of the website. We do not target advertising based on your personal data or site behaviour.
