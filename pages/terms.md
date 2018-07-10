@@ -8,7 +8,7 @@ Exercism (also referred to as exercism.io) is an online platform designed to hel
 
 Our platform comprises of a web site is located at https://exercism.io (and associated subdomains) and a command line application (CLI).
 
-Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and govern your permitted use of our **Platform**.
+Exercism is run and managed by Exercism Inc. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and govern your permitted use of our **Platform**.
 
 You might also want to read:
 
