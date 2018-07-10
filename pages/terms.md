@@ -112,6 +112,8 @@ We will immediately publish your User Contributed Content under the terms of the
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
 
+You agree NOT to include personal information (such as, but not limited to, names, phone numbers, and email addresses) within any content you contribute to the Platform
+
 #### User Contributed Content - Moderator/Feedback content
 
 If you participate on our Platform as a Moderator, then any content you upload as part of providing feedback on a user's Solution will be considered User Contributed Content, and licensed in the same way as that of the Solution (see the above section).
@@ -135,7 +137,7 @@ In summary:
 
 - Because you grant us a **non-exclusive** license, you retain rights on your Solutions/User Contributed Content. You can re-use this content as you see fit.
 - Because you grant us an **irrevocable, royalty-free, commercial** license on your User Contributed Content. We are allowed to re-use and adapt this content. We will do this in ways aligned with our Values.
-- Because we present your User Contributed Content under a CC BY-SA license, others can benefit from that content, but they have to credit Exercism.
+- Because we present your User Contributed Content under a CC BY-SA license, others can use and benefit from that content, but they have to credit our Platform (exercism.io) when they do.
 
 #### No warranties for User Contributed Content
 
