@@ -68,11 +68,11 @@ When using our Platform, you AGREE NOT TO:
 
 We offer our Platform to the widest possible audience. We champion and nurture inclusivity, diversity and equality to the highest levels. Although we want to be open to all, the following eligibility restrictions do apply:
 
-### Non-Eligibility based on suspension or removal
+#### Non-Eligibility based on suspension or removal
 
 Our services are **not** available to any users previously suspended or removed from the The Platform. It is expected that such removals will be governed by these Terms of Service and our Code of Conduct.
 
-### Eligibility based on age (and region)
+#### Eligibility based on age (and region)
 
 You have to be older than a minimum age to have an account on our Platform. This is to keep our users safe. If you are younger than this age, and want to learn to program with Exercism, we would recommend that you ask a Parent or Guardian to create an account and solve the problems together.
 
@@ -80,7 +80,7 @@ You must be at least 13 years old to access our Platform. If you are under 13 ye
 
 However, if you are located within the **European Union**, you must be at least 16 years old to access our Platform. If you are under 16 years old, you may not access our Platform, and may not provide or post any personal information to our Platform (including, for example, your name, age, and contact details).
 
-### Removal/Suspension/Termination of accounts
+#### Removal/Suspension/Termination of accounts
 
 Exercism reserves the right to refuse, suspend or terminate - without notice - your access to the Platform if it determines, in its sole discretion, that you have in any way violated these Terms of Service and/or our Code of Conduct
 
