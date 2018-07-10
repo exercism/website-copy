@@ -152,7 +152,7 @@ We try to minimise the amount of personal data we hold, and where we do store an
 
 Knowingly providing false information personal information is a breach of these Terms and might result in termination of your account.
 
-## Advertising and Sponsorship
+### Advertising and Sponsorship
 
 We may, from time to time, sell advertisement space on our platform. Some adverts may be platform-wide, some may be scoped to certain areas of the website. We do not target advertising based on your personal data or site behaviour.
 
@@ -163,23 +163,21 @@ We periodically review the level of granularity we provide for controlling marke
 
 
 
-## Warranties and Indemnification
+### Warranties and Indemnification
 
-### Service Availability and Warrantee
+### Platform Availability
 
 We provide the Platform to our users on a free of charge basis. We will use reasonable efforts to make our Services available 24/7/365, but from time-to-time we will have scheduled outages for maintenance purposes.
 
 Where feasible, we may inform users about planned outages but we are under no obligation to do so, and in any case will not be liable for any service downtime.
 
-### Service Warranties
+#### Service Warranties
 
 Our services and the data and content within our Platform are provided on an "as is" basis.
 
 To the maximum extent allowed by law, Exercism disclaims all warranties and representations of any kind, including without limitation the implied warranties of fitness for a particular purpose, and non-infringement, whether express, implied, or statutory.
 
-We provide no guarantees that the services or platform will function without interruption or errors and provides the network, services, and any related content or products subject to these terms on an "as is" basis.
-
-### Indemnification
+#### Indemnification
 
 You hereby indemnify, defend and hold harmless Us, Our affiliates, officers, directors, agents, partners, employees, representatives and third party providers from and against all reasonably foreseeable losses, expenses, damages, costs, claims and demands, including reasonable legal fees and properly incurred associated costs and disbursements, due to or arising out of Your breach of any representation or warranty under these Terms.
 
