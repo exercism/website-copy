@@ -59,8 +59,8 @@ When using our Platform, you AGREE NOT TO:
 - impersonate any person or entity, falsely claim an affiliation with any person or entity
 - access the Platform accounts of others without permission, or perform any other fraudulent activity
 - make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
-- attempt to collect, personal information about Users or third parties without their consent;
-- remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform,
+- attempt to collect, personal information about Users or third parties without their consent.
+- remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform.
 - intentionally interfere with or damage operation of the Platform or any user’s enjoyment of it, by any means.
 - use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property and other proprietary rights, and data protection and privacy.
 
@@ -98,11 +98,11 @@ Where a resource does not appear to have a clear licensing statement, we would r
 
 #### Community Content
 
-All of the exercises delivered through the platform have been build by a community of volunteers and are licensed mainly under the MIT License. All of this content is available directly through our Github repositories (see https://github.com/exercism) where specific license details can be viewed.
+All of the exercises delivered through the platform have been built by a community of volunteers and are licensed mainly under the MIT License. All of this content is available directly through our GitHub repositories (see https://github.com/exercism) where specific license details can be viewed.
 
 #### User Contributed Content
 
-The primary purpose of the Platform is to provide a space where individuals can solve programming (coding) challenges, submit them, and receive feedback. Our aim is to help Users learn and develop competence in coding and also to develop skills in giving and receiving feedback.
+The primary purpose of the Platform is to provide a space where individuals can solve programming (coding) challenges, submit them, and receive feedback. Our aim is to help Users develop competence in coding and also to develop skills in giving and receiving feedback.
 
 When you use our Platform, you will be presented with a series of exercises for you to download and solve, and be invited to upload your **Solution** (potentially as a series of improvements, each named an **Iteration**) for review.
 
