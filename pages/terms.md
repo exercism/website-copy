@@ -107,7 +107,8 @@ The primary purpose of the Platform is to provide a space where individuals can 
 When you use our Platform, you will be presented with a series of exercises for you to download and solve, and be invited to upload your **Solution** (potentially as a series of improvements, each named an **Iteration**) for review.
 
 You agree that all content (**User Contributed Content**) that you upload to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive basis. This content will be licensed under the terms of the Creative Commons (CC BY-SA) licence. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
-You grant Exercism the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you.
+
+You grant Exercism the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you.
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
 
