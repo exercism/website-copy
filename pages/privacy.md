@@ -21,9 +21,8 @@ Our approach to your privacy is very straightforward
 
 1. We do not collect more personal information than we need
 2. We will not share any data you give us (e.g. your email address) with other third parties
-3. We might use the code you publish for research purposes to improve our product, but will do so anonymously.
-4. We use tools like Google Analytics and Hotjar to understand how you use the site. The information from these tools is only used to make the site better.
-5. We try to give you as much control about what information you share. For instance, we offer facilities to have an anonymous handle/user name if you want, and we don't require you to create a public profile.
+3. We use tools like Google Analytics and Hotjar to understand how you use the site. The information from these tools is only used to make the site better.
+4. We try to give you as much control about what information you share. For instance, we offer facilities to have an anonymous handle/user name if you want, and we don't require you to create a public profile.
 
 It is important to note that any code submissions you make and any feedback you give will be made **publicly** available under a Creative Commons license. However, using our privacy tools, you can decide if you want this content to be identifiably linked to you.
 
