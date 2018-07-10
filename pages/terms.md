@@ -1,6 +1,6 @@
 # Terms and Conditions
 
-Last Revised: XXXXX
+Last Revised: July 2018
 
 ## Overview
 
