@@ -55,7 +55,7 @@ We use a number of 3rd party tools/services to collect this information, you can
 
 ### GDPR
 
-The GDPR (General Data Protection Regulation) is an important piece of European legislation that governs how we process data originating from users from the EU. Exercism aims to be GDPR compliant for all users, even those outside the EU and you therefore have some important rights applicable to our Platform
+The GDPR (General Data Protection Regulation) is European legislation that governs how we process data originating from users from the EU. Exercism aims to be GDPR compliant for all users, even those outside the EU and you therefore have some important rights applicable to our Platform
 
 1. Your Right to be Informed - This Privacy Policy details who we are, what we collect, and what we use it for.
 
@@ -68,7 +68,7 @@ The GDPR (General Data Protection Regulation) is an important piece of European 
 It is important to note that any certain content submissions (including, but not limited to, problem **Solutions** and Mentor's feedback) are transferred to us under a Commercial Commons BY-SA and therefore cannot be deleted or unshared.
 
 ### Cookies
-Cookies are small text files that are placed on your computer by websites that you visit. They are widely used in order to make websites work, or work more efficiently, as well as to provide information to the owners of the site. The table below explains the cookies we use and why.
+Cookies are small text files that are placed on your computer by websites that you visit. The table below explains the cookies we use and why.
 
 The sites https://exercism.io and https://teams.exercism.io use the following cookies
 
