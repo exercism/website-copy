@@ -183,11 +183,9 @@ You hereby indemnify, defend and hold harmless Us, Our affiliates, officers, dir
 
 ## Our communication with you
 
-By using Our platform or communicating generally with Us, You agree that We may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the services or these Terms.
+By using Our Platform or communicating generally with Us, You agree that We may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the Plaform or changes to these Terms.
 
 If it is brought to our attention that there is any security breach, We may attempt to notify You electronically by posting a notice on the Site or sending an email to You.
 
 Within our Platform we invite you to configure your notification preferences describing what and when you
 would like us to contact us you about.
-
-We reserve the right to electronically contact you about updates to these Terms, and other policies governing the use of site. Especially, but not exclusively, where these updates relate to changes in the wider legislative and regulatory environment. Any such contact will be specific related to these updates, and be independent from any communication preferences that You may, from time to time, configure on the Site.
