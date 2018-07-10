@@ -53,8 +53,8 @@ As a User, you are solely responsible for ensuring that:
 
 When using our Platform, you AGREE NOT TO:
 
-- share or upload defamatory, libellous, or inaccurate content;
-- share or upload any content that is unlawful
+- share or upload defamatory, libellous, or inaccurate content.
+- share or upload any content that is unlawful.
 - share or upload content that a reasonable person could deem to be objectionable, offensive, distressing, or otherwise inappropriate. We would recommend that you familiarise yourself with our Values and Code of Conduct.
 - impersonate any person or entity, falsely claim an affiliation with any person or entity
 - access the Platform accounts of others without permission, or perform any other fraudulent activity
