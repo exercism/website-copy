@@ -108,7 +108,7 @@ When you use our Platform, you will be presented with a series of exercises for 
 
 You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
 
-We will immediately publish your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
+We will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
 
