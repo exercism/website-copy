@@ -17,7 +17,7 @@ You might also want to read:
 
 ## Overview
 
-Our general approach should be fairly straightforward
+Our general approach should be fairly straightforward:
 
 1. Our services are provided free of charge on an "as is" basis. We do our best to keep our platform
 operational, but we cannot offer any guarantees of this.
