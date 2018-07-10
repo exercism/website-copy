@@ -64,7 +64,7 @@ The GDPR (General Data Protection Regulation) is European legislation that gover
 
 4. Right to Erasure - We can remove your personal data from our systems so that you can no longer be personally identified to your solutions. Please contact privacy@exercism.io for more information.
 
-It is important to note that any certain content solutions (including, but not limited to, problem **Solutions** and Mentor's feedback) are transferred to us under a non-revokable license and therefore cannot be deleted or unshared.
+It is important to note that any certain content solutions (including, but not limited to, problem **Solutions** and Mentor's feedback) are transferred to us under a non-revokable license and therefore cannot be deleted from the Platform.
 
 ### Cookies
 Cookies are small text files that are placed on your computer by websites that you visit. The table below explains the cookies we use and why.
