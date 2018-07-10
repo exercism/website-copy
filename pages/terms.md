@@ -82,7 +82,7 @@ However, if you are located within the **European Union**, you must be at least 
 
 #### Removal/Suspension/Termination of accounts
 
-Exercism reserves the right to refuse, suspend or terminate - without notice - your access to the Platform if it determines, in its sole discretion, that you have in any way violated these Terms of Service and/or our Code of Conduct
+Exercism reserves the right to refuse, suspend or terminate - without notice - your access to the Platform if it determines, in its sole discretion, that you have in any way violated these Terms of Service and/or our Code of Conduct.
 
 ### Content Permissions and Licensing
 
