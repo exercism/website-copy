@@ -32,7 +32,7 @@ operational, but we cannot offer any guarantees of this.
 
 ## In detail
 
-Exercism is run and managed by Exercism, Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and governs your permitted use of our **Platform**.
+Exercism is run and managed by Exercism, Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism, Inc** and you, and governs your permitted use of our **Platform**.
 
 Any clause headings, numbers, and/or emphasis in these Terms are for ease of reference only and shall not be taken into account in the construction or interpretation of the clauses to which they refer.
 
@@ -168,9 +168,6 @@ We may, from time to time, sell advertisement space on our platform. Some advert
 We may, from time to time, allow third parties to 'sponsor' certain features of our Platform. You may, for instance, see this sponsorship information as an advert on various Platform features (including email notifications).
 
 We periodically review the level of granularity we provide for controlling marketing-related features and may notify you of any of these changes by email.
-
-
-
 
 ### Warranties and Indemnification
 
