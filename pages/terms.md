@@ -94,7 +94,7 @@ We are committed to Open Source, and as a result, many of the resources on our P
 
 All materials displayed on our Website and/or Platform are Copyright **Exercism Inc**.
 
-Where a resource does not appear to have a clear licensing statement, we would recommend that you check our GitHub source-code repositories. You should not assume that all content on our Platform is openly licensed.
+Where a resource does not appear to have a clear licensing statement, we would recommend that you check our GitHub source-code repositories. You should not assume that all content on our Platform is openly licensed, but it generally will be.
 
 #### Community Content
 
