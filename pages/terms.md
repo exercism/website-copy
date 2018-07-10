@@ -163,7 +163,7 @@ Knowingly providing false information personal information is a breach of these 
 
 ### Advertising and Sponsorship
 
-We may, from time to time, sell advertisement space on our platform. Some adverts may be platform-wide, some may be scoped to certain areas of the website. We do not target advertising based on your personal data or site behaviour.
+We may, from time to time, sell advertisement space on our platform. Some adverts may be platform-wide, some may be scoped to certain areas of the website. We do not target advertising based on your personal data.
 
 We may, from time to time, allow third parties to 'sponsor' certain features of our Platform. You may, for instance, see this sponsorship information as an advert on various Platform features (including email notifications).
 
