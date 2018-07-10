@@ -70,7 +70,7 @@ We offer our Platform to the widest possible audience. However, the following el
 
 #### Non-Eligibility based on suspension or removal
 
-Our services are **not** available to any users previously suspended or removed from the The Platform. It is expected that such removals will be governed by these Terms of Service and our Code of Conduct.
+Our services are **not** available to any users previously suspended or removed from the Platform. It is expected that such removals will be governed by these Terms of Service and our Code of Conduct.
 
 #### Eligibility based on age (and region)
 
