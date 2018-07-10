@@ -40,9 +40,9 @@ Any clause headings, numbers, and/or emphasis in these Terms are for ease of ref
 
 If any provision of these Terms is found to be illegal, void or unenforceable, then that provision shall be deemed severable from these Terms and shall not affect the validity and enforceability of any remaining provisions of these Terms.
 
-Exercism, reserves the right, at its discretion, to modify these Terms at any time by posting revised Terms on https://exercism.io. These Terms apply to all who access or use our Platform, including without limitation users who contribute **Solutions** and other content, registered or otherwise.
+We reserve the right to modify these Terms at any time by posting revised Terms on https://exercism.io. These Terms apply to all who access or use our Platform, registered or otherwise.
 
-Any personal information submitted to our platform is subject to Our Privacy Policy.
+Any personal information submitted to our Platform is subject to Our Privacy Policy.
 
 ## User obligations
 
