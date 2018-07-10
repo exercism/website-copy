@@ -15,19 +15,34 @@ You might also want to read:
 - Our [Privacy Policy](...)
 - Our community [Code of Conduct](...)
 
-## General
+## Overview
 
-Exercism, reserves the right, at its discretion, to modify these Terms at any time by posting revised Terms on the public web site. You shall be responsible for reviewing and becoming familiar with any such modifications. Your access to or use of our services following such modification constitutes your acceptance of the terms and conditions of these Terms as modified.
+Our general approach should be fairly straightforward
 
-These Terms apply to all who access or use our Platform, including without limitation users who contribute **Solutions** and other content, registered or otherwise.
+1. Our services are provided free of charge on an "as is" basis. We do our best to keep our platform
+operational, but we cannot offer any guarantees of this.
 
-Any clause headings (and/or numbers) in these Terms are for ease of reference only and shall not be taken into account in the construction or interpretation of the clauses to which they refer
+2. We aim to have a user-friendly approach to privacy and security
 
-These Terms supersede any prior agreement (oral or in writing) between You and Us and You acknowledge that these Terms contain the whole agreement between You and Us and that You have not relied upon any oral or written representations made by Us or Our employees or agents.
+3. We will run advertising and/or sponsorship, but we won't sell your data, or use your activity to target you for marketing purposes.
 
-Any personal information submitted in connection with Your use of this Site is subject to Our Privacy Policy, located within Our Site and which You hereby acknowledge and accept by virtue of Your agreement to Our Terms.
+4. We want to make Exercism an enjoyable and safe place for everyone and we will take action against users who undermine our Platform and/or our community values.
+
+5. The content submitted to the Platform such as Programming/Code *Solutions*, or mentoring feedback, belong to the community and are published openly under an open license.
+
+6. We will try to be open about how we choose to develop the Platform and how we use the data and content contained within it.
+
+## The detail
+
+Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and governs your permitted use of our **Platform**.
+
+Any clause headings, numbers, and/or emphasis in these Terms are for ease of reference only and shall not be taken into account in the construction or interpretation of the clauses to which they refer.
 
 If any provision of these Terms is found to be illegal, void or unenforceable, then that provision shall be deemed severable from these Terms and shall not affect the validity and enforceability of any remaining provisions of these Terms.
+
+Exercism, reserves the right, at its discretion, to modify these Terms at any time by posting revised Terms on https://exercism.io. These Terms apply to all who access or use our Platform, including without limitation users who contribute **Solutions** and other content, registered or otherwise.
+
+Any personal information submitted to our platform is subject to Our Privacy Policy.
 
 ## User obligations
 
@@ -40,21 +55,21 @@ As a User, you are solely responsible for ensuring that:
 
 ## Service Eligibility
 
-Exercism offers its products to the widest possible audience. We champion and nurture inclusivity, diversity and equality to the highest levels. Please take a look at our Code of Conduct.
+Exercism offers its products to the widest possible audience. We champion and nurture inclusivity, diversity and equality to the highest levels. Please take a look at our Code of Conduct for more information.
 
 Although we want to be open to all, the following eligibility restrictions do apply:
 
 ### Non-Eligibility based on suspension or removal
 
-Our services are not available to any users previously suspended or removed from the The Platform. It is expected that such removals will be governed by these Terms of Service and our Code of Conduct.
+Our services are **not** available to any users previously suspended or removed from the The Platform. It is expected that such removals will be governed by these Terms of Service and our Code of Conduct.
 
 ### Eligibility based on age (and region)
 
-You must be at least 13 years old to access or use the Network or Services, including without limitation to complete a Platform account registration.
+You have to be older than a minimum age to have an account on our Platform. This is to keep our users safe. If you are younger than this age, and want to learn to program with Exercism, we would recommend that you ask a Parent or Guardian to create an account and solve the problems together.
 
-By accessing or using the Services or the Network in any manner, you warrant that you are at least 13 years of age. If you are under 13 years old, you may not access our Platform, and may not provide or post any personal information to our Platform (including, for example, your name, age, and contact details).
+You must be at least 13 years old to access our Platform. If you are under 13 years old, you may not access our Platform, and may not provide or post any personal information to our Platform (including, for example, your name, age, and contact details).
 
-If you are located within the European Union, you must be at least 16 years old to access our Platform. By accessing or using the Services or the Network in any manner, you warrant that you are at least 16 years of age. If you are under 16 years old, you may not access our Platform, and may not provide or post any personal information to our Platform (including, for example, your name, age, and contact details).
+However, if you are located within the **European Union**, you must be at least 16 years old to access our Platform. If you are under 16 years old, you may not access our Platform, and may not provide or post any personal information to our Platform (including, for example, your name, age, and contact details).
 
 ### Removal/Suspension/Termination of accounts
 
