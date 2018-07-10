@@ -15,6 +15,8 @@ You might also want to read:
 - Our [Privacy Policy](...)
 - Our community [Code of Conduct](...)
 
+----
+
 Our general approach should be fairly straightforward:
 
 1. Our services are provided free of charge on an "as is" basis. We do our best to keep our platform
