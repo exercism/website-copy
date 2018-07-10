@@ -122,9 +122,9 @@ Specifically, this means that all Mentor feedback will be licensed under a Creat
 
 #### What is this licensing, and why are we using it?
 
-CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike license. A full copy of this license is available at https://creativecommons.org/licenses/by-sa/4.0/ . In summary, this license permit anyone to copy adapt, and redistribute the material, so long as proper attribution is given. When we present you with other Users' Solutions or Feedback, it is licensed under CC BY-SA.
+CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike license. A full copy of this license is available at https://creativecommons.org/licenses/by-sa/4.0/ . In summary, this license permits anyone to copy, adapt, and redistribute the material, so long as proper attribution is given. When we present you with other Users' solutions or Feedback, it is licensed under CC BY-SA.
 
-When you contribute a Solution to the platform, then that solution will be available for others (usually Track Moderators) to comment on. Our Platform uses on this feedback to help you learn and develop. In order to achieve this, it is important that the materials you share can be legally accessed by a Mentor, and using CC BY-SA helps us ensure that. Equally, when a mentor comments on your solution, their response is also licensed in the same way, allowing you to use that feedback for any purpose you choose.
+When you contribute a Solution to the platform, then that Solution will be available for others (usually Mentors) to comment on. Our Platform uses this feedback to help you learn and develop. In order to achieve this, it is important that the materials you share can be legally accessed by a Mentor, and using CC BY-SA helps us ensure that. Equally, when a Mentor comments on your solution, their response is also licensed in the same way, allowing you to use that feedback for any purpose you choose.
 
 In addition, by providing us with a worldwide, royalty-free, perpetual license, you are allowing us to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
 
@@ -141,19 +141,19 @@ In summary:
 
 #### No warranties for User Contributed Content
 
-We do not control the content uploaded on our Platform and, as such, do not provide any assurances where its validity, reliability or accuracy.
+We do not control the content uploaded on our Platform and, as such, do not provide any assurances regarding its validity, reliability or accuracy.
 
-Although User Contributed Content may be observed by Moderators, we do not routinely screen submitted content for errors, omissions or inappropriate content. Your use of the content on our Platform is at your own risk and we shall have no liability for such use.
+Although User Contributed Content may be observed by Mentors, we do not routinely screen submitted content for errors, omissions or inappropriate content. Your use of the content on our Platform is at your own risk and we shall have no liability for such use.
 
 The appearance of User Contributed or Community Content on our Platform does not imply our endorsement of that material.
 
 #### Concerns about content licensing
 
-We respects all copyright and other laws relating to content and information and will not tolerate breach of such laws.
+We respect all copyright and other laws relating to content and information and will not tolerate breach of such laws.
 
-If You believe that content of Yours infringes or breaches any law or regulation or is inaccurate or poses any risk whatsoever to a third party it is Your responsibility to take such steps You deem necessary to correct the situation.
+If you believe that content of yours infringes or breaches any law or regulation or is inaccurate or poses any risk whatsoever to a third party it is Your responsibility to take such steps You deem necessary to correct the situation.
 
-If You believe that content of a third party violates any laws or regulations, You should report it to Us.
+If you believe that content of a third party violates any laws or regulations, You should report it to Us.
 
 ### Personal information and security
 
