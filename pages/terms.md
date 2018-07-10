@@ -111,7 +111,7 @@ You grant Exercism the perpetual and irrevocable right and license to process, c
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
 
-### Moderator/Feedback content
+#### User Contributed Content - Moderator/Feedback content
 
 If you participate on our Platform as a Moderator, then any content you upload as part of providing feedback on a user's Solution will be considered User Contributed Content, and licensed in the same way as that of the Solution (see the above section).
 
