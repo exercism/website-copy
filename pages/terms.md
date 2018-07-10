@@ -66,9 +66,7 @@ When using our Platform, you AGREE NOT TO:
 
 ### Service Eligibility
 
-Exercism offers its products to the widest possible audience. We champion and nurture inclusivity, diversity and equality to the highest levels. Please take a look at our Code of Conduct for more information.
-
-Although we want to be open to all, the following eligibility restrictions do apply:
+We offer our Platform to the widest possible audience. We champion and nurture inclusivity, diversity and equality to the highest levels. Although we want to be open to all, the following eligibility restrictions do apply:
 
 ### Non-Eligibility based on suspension or removal
 
