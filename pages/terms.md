@@ -134,9 +134,9 @@ In addition, this license allows Us to use the submitted solutions to improve ou
 
 We do not control the content uploaded on our Platform and, as such, do not provide any assurances where its validity, reliability or accuracy.
 
-Although User Contributed Content may be observed by Moderators, we do not routinely screen submitted content for errors, omissions or inappropriate content. Your use of the content on our Platform is at your own risk and Exercism shall have no liability for such use.
+Although User Contributed Content may be observed by Moderators, we do not routinely screen submitted content for errors, omissions or inappropriate content. Your use of the content on our Platform is at your own risk and we shall have no liability for such use.
 
-The appearance of User Contributed Content on our Platform does not imply our endorsement of that material.
+The appearance of User Contributed or Community Content on our Platform does not imply our endorsement of that material.
 
 #### Concerns about content licensing
 
