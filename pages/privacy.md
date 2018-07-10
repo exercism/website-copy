@@ -54,17 +54,17 @@ We use a number of 3rd party tools/services to collect this information, you can
 
 ### GDPR
 
-The GDPR (General Data Protection Regulation) is European legislation that governs how we process data originating from users from the EU. Exercism aims to be GDPR compliant for all users, even those outside the EU and you therefore have some important rights applicable to our Platform
+The GDPR (General Data Protection Regulation) is European legislation that governs how we process data originating from users from the EU. Exercism aims to be GDPR compliant for all users, even those outside the EU and you therefore have some important rights applicable to our Platform.
 
 1. Your Right to be Informed - This Privacy Policy details who we are, what we collect, and what we use it for.
 
-2. Right of access - At any time you can review the information on your profile and update or change it. Through the exorcism.io website you can view all your Submissions.
+2. Right of access - At any time you can review the information on your profile and update or change it. Through the exercism.io website you can view all your solutions.
 
 3. Right of portability - We can provide you with a copy of your personal data in a machine readable format. Please contact privacy@exercism.io for more information.
 
-4. Right to Erasure - We can remove your personal data from our systems so that you can no longer be personally identified to your Solutions. Please contact privacy@exercism.io for more information.
+4. Right to Erasure - We can remove your personal data from our systems so that you can no longer be personally identified to your solutions. Please contact privacy@exercism.io for more information.
 
-It is important to note that any certain content submissions (including, but not limited to, problem **Solutions** and Mentor's feedback) are transferred to us under a non-revokable license and therefore cannot be deleted or unshared.
+It is important to note that any certain content solutions (including, but not limited to, problem **Solutions** and Mentor's feedback) are transferred to us under a non-revokable license and therefore cannot be deleted or unshared.
 
 ### Cookies
 Cookies are small text files that are placed on your computer by websites that you visit. The table below explains the cookies we use and why.
