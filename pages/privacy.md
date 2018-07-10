@@ -17,7 +17,7 @@ Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaw
 - Our [Terms and Conditions](...)
 - Our community [Code of Conduct](...)
 
-Our approach to your privacy is very straightforward
+Our approach to your privacy is very straightforward to understand.
 
 1. We do not collect more personal information than we need
 2. We will not share any data you give us (e.g. your email address) with other third parties
@@ -83,10 +83,10 @@ Other cookies may be set when you sign in through a 3rd Party (such as GitHub).
 
 ## How we use the information we've collected
 
-To understand, improve, and develop our Platform and associated services. As detailed in our values, we aim to build a **positive and caring community** to help people **learn to program**. In support of these aims, we may use the data we collect to improve the quality of our Users' learning and feedback. This may include performing data analysis on anonymised datasets.
+To understand, improve, and develop our Platform and associated services. As detailed in our values, we aim to build a **positive and caring community** to help people **improve their programming skills**. In support of these aims, we may use the data we collect to improve the quality of our Users' learning and feedback. This may include performing data analysis on anonymised datasets.
 
 ## Sharing and transferring data
 
 We do not rent or sell any Personal Information that we collect with third parties.
 
-If you choose to publish personal information on our Platform (such as, for instance, your name on a public profile page), you will remain responsible and in control of that information.
+If you choose to publish personal information on our Platform (such as, for instance, your name on a public profile page), you will remain responsible and in control of that information. You should *NOT* include personal information in your code solutions or feedback comments.
