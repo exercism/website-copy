@@ -15,8 +15,6 @@ You might also want to read:
 - Our [Privacy Policy](...)
 - Our community [Code of Conduct](...)
 
-----
-
 Our general approach should be fairly straightforward:
 
 1. Our services are provided free of charge on an "as is" basis. We do our best to keep our platform
@@ -32,7 +30,7 @@ operational, but we cannot offer any guarantees of this.
 
 6. We will try to be open about how we choose to develop the Platform and how we use the data and content contained within it.
 
-## The Detail
+## In detail
 
 Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and governs your permitted use of our **Platform**.
 
@@ -52,6 +50,18 @@ As a User, you are solely responsible for ensuring that:
 
 - your account registration is complete and remains up to date.
 - your use of our services is consistent with these Terms of Service, our Privacy Policy and our Code of Conduct
+
+When using our Platform, you AGREE NOT TO:
+
+1. share or upload defamatory, libellous, or inaccurate content;
+2. share or upload any content that is unlawful
+3. share or upload content that a reasonable person could deem to be objectionable, offensive, indecent, pornographic, harassing, threatening, embarrassing, distressing, vulgar, hateful, racially or ethnically offensive, or otherwise inappropriate. We would recommend that you familiarise yourself with our values and code of conduct.
+3. impersonate any person or entity, falsely claim an affiliation with any person or entity, or access the Platform accounts of others without permission, or perform any other fraudulent activity
+4. make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
+5. attempt to collect, personal information about Users or third parties without their consent;
+6. remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform,
+7. intentionally interfere with or damage operation of the Platform or any user’s enjoyment of it, by any means.
+8. use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property and other proprietary rights, and data protection and privacy.
 
 ## Service Eligibility
 
@@ -160,19 +170,7 @@ We may, from time to time, allow third parties to 'sponsor' certain features of 
 
 We periodically review the level of granularity we provide for controlling marketing-related features and may notify you of any of these changes by email.
 
-## Prohibited Conduct of users on the platform
 
-When using our Platform, you AGREE NOT TO:
-
-1. share or upload defamatory, libellous, or inaccurate content;
-2. share or upload any content that is unlawful
-3. share or upload content that a reasonable person could deem to be objectionable, offensive, indecent, pornographic, harassing, threatening, embarrassing, distressing, vulgar, hateful, racially or ethnically offensive, or otherwise inappropriate. We would recommend that you familiarise yourself with our values and code of conduct.
-3. impersonate any person or entity, falsely claim an affiliation with any person or entity, or access the Platform accounts of others without permission, or perform any other fraudulent activity
-4. make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
-5. attempt to collect, personal information about Users or third parties without their consent;
-6. remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform,
-7. intentionally interfere with or damage operation of the Platform or any user’s enjoyment of it, by any means.
-8. use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property and other proprietary rights, and data protection and privacy.
 
 
 ## Warranties and Indemnification
