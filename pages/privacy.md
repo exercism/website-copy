@@ -31,9 +31,9 @@ It is important to note that any code submissions you make and any feedback you 
 ### Information collected during account registration
 
 During registration we collect some information about you, such as your name and email address. If you
-choose to sign up with a 3rd Party (e.g. Github OAuth) we will capture your name and email address from that service.
+choose to sign up with a 3rd Party (e.g. GitHub OAuth) we will capture your name and email address from that service.
 
-During sign-up you will also be asked to create a **Handle**, which will act as a user name for any content you share on the site. There is no requirement for your Handle to be personally identifiable.
+During sign-up you will also be asked to create a **Handle**, which will act as a username for any content you share on the site. There is no requirement for your Handle to be personally identifiable.
 
 We use your name and email to send you notifications and updates (if you choose receive them) and any important Platform notices.
 
