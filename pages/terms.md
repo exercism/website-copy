@@ -185,11 +185,11 @@ To the maximum extent allowed by law, Exercism disclaims all warranties and repr
 
 #### Indemnification
 
-You hereby indemnify, defend and hold harmless Us, Our affiliates, officers, directors, agents, partners, employees, representatives and third party providers from and against all reasonably foreseeable losses, expenses, damages, costs, claims and demands, including reasonable legal fees and properly incurred associated costs and disbursements, due to or arising out of Your breach of any representation or warranty under these Terms.
+You hereby indemnify, defend and hold harmless us, Our affiliates, officers, directors, agents, partners, employees, representatives and third party providers from and against all reasonably foreseeable losses, expenses, damages, costs, claims and demands, including reasonable legal fees and properly incurred associated costs and disbursements, due to or arising out of Your breach of any representation or warranty under these Terms.
 
 ### Our communication with you
 
-By using Our Platform or communicating generally with Us, You agree that We may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the Plaform or changes to these Terms.
+By using our Platform or communicating generally with Us, You agree that we may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the Plaform or changes to these Terms.
 
 If it is brought to our attention that there is any security breach, We may attempt to notify You electronically by posting a notice on the Site or sending an email to You.
 
