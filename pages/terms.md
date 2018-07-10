@@ -174,7 +174,7 @@ We periodically review the level of granularity we provide for controlling marke
 
 ### Warranties and Indemnification
 
-### Platform Availability
+#### Platform Availability
 
 We provide the Platform to our users on a free of charge basis. We will use reasonable efforts to make our Services available 24/7/365, but from time-to-time we will have scheduled outages for maintenance purposes.
 
@@ -190,7 +190,7 @@ To the maximum extent allowed by law, Exercism disclaims all warranties and repr
 
 You hereby indemnify, defend and hold harmless Us, Our affiliates, officers, directors, agents, partners, employees, representatives and third party providers from and against all reasonably foreseeable losses, expenses, damages, costs, claims and demands, including reasonable legal fees and properly incurred associated costs and disbursements, due to or arising out of Your breach of any representation or warranty under these Terms.
 
-## Our communication with you
+### Our communication with you
 
 By using Our Platform or communicating generally with Us, You agree that We may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the Plaform or changes to these Terms.
 
