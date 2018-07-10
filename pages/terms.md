@@ -42,7 +42,7 @@ We reserve the right to modify these Terms at any time by posting revised Terms 
 
 Any personal information submitted to our Platform is subject to our [Privacy Policy]().
 
-## User obligations
+### User obligations
 
 When you access our services, whether registered or not, you become a **User** of our Platform
 
@@ -55,13 +55,14 @@ When using our Platform, you AGREE NOT TO:
 
 1. share or upload defamatory, libellous, or inaccurate content;
 2. share or upload any content that is unlawful
-3. share or upload content that a reasonable person could deem to be objectionable, offensive, indecent, pornographic, harassing, threatening, embarrassing, distressing, vulgar, hateful, racially or ethnically offensive, or otherwise inappropriate. We would recommend that you familiarise yourself with our values and code of conduct.
-3. impersonate any person or entity, falsely claim an affiliation with any person or entity, or access the Platform accounts of others without permission, or perform any other fraudulent activity
-4. make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
-5. attempt to collect, personal information about Users or third parties without their consent;
-6. remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform,
-7. intentionally interfere with or damage operation of the Platform or any user’s enjoyment of it, by any means.
-8. use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property and other proprietary rights, and data protection and privacy.
+3. share or upload content that a reasonable person could deem to be objectionable, offensive, threatening, distressing, or otherwise inappropriate. We would recommend that you familiarise yourself with our Values and Code of Conduct.
+3. impersonate any person or entity, falsely claim an affiliation with any person or entity
+4. access the Platform accounts of others without permission, or perform any other fraudulent activity
+5. make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
+6. attempt to collect, personal information about Users or third parties without their consent;
+7. remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform,
+8. intentionally interfere with or damage operation of the Platform or any user’s enjoyment of it, by any means.
+9. use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property and other proprietary rights, and data protection and privacy.
 
 ## Service Eligibility
 
