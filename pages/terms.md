@@ -42,7 +42,7 @@ If any provision of these Terms is found to be illegal, void or unenforceable, t
 
 We reserve the right to modify these Terms at any time by posting revised Terms on https://exercism.io. These Terms apply to all who access or use our Platform, registered or otherwise.
 
-Any personal information submitted to our Platform is subject to Our Privacy Policy.
+Any personal information submitted to our Platform is subject to our [Privacy Policy]().
 
 ## User obligations
 
