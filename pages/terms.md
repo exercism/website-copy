@@ -102,10 +102,9 @@ All of the exercises delivered through the platform have been build by a communi
 
 #### User generated Content
 
-The primary purpose of the platform is to provide a space where individuals can solve programming (coding) challenges, submit them, and receive feedback. We expect that the purposes of this activity will usually be to learn and develop competence in a software-language and also to develop skills in giving and
-receiving feedback.
+The primary purpose of the Platform is to provide a space where individuals can solve programming (coding) challenges, submit them, and receive feedback. Our aim is to help Users learn and develop competence in a coding and also to develop skills in giving and receiving feedback.
 
-In the course of pursuing this activity, you will be presented with a series of exercises for you to download and solve, and invited to upload your **Solution** (potentially as a series of improvements - each named an **Iteration**.
+When you use our Platform, you will be presented with a series of exercises for you to download and solve, and invited to upload your **Solution** (potentially as a series of improvements - each named an **Iteration**) for review.
 
 You agree that all content (**User Contributed Content**) that you upload to the Platform, including - without limitation - your Solution and Iteration files. Will be licensed to Exercism on worldwide, royalty-free, non-exclusive basis pursuant to Creative Commons licensing terms (CC-BY-SA). You grant Exercism the perpetual and irrevocable right and license to access, use, process, copy, distribute, export, display and to commercially exploit such User Contributed Content. This right will persist even if your User Contributed Content is subsequently removed by you.
 
