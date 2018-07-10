@@ -25,7 +25,7 @@ Our approach to your privacy is very straightforward
 4. We use tools like Google Analytics and Hotjar to understand how you use the site. The information from these tools is only used to make the site better.
 5. We try to give you as much control about what information you share. For instance, we offer facilities to have an anonymous handle/user name if you want, and we don't require you to create a public profile.
 
-It is important to note that any code submissions you make and any feedback you give will be made **publicly** available under a Commercial Commons license. However, using our privacy tools, you can decide if you want this content to be identifiably linked to you.
+It is important to note that any code submissions you make and any feedback you give will be made **publicly** available under a Creative Commons license. However, using our privacy tools, you can decide if you want this content to be identifiably linked to you.
 
 ## The information we collect
 
