@@ -1,4 +1,4 @@
-# Terms and Conditions
+# Terms of Service
 
 Last Revised: July 2018
 
