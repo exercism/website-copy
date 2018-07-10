@@ -74,7 +74,7 @@ Our services are **not** available to any users previously suspended or removed 
 
 #### Eligibility based on age (and region)
 
-You have to be older than a minimum age to have an account on our Platform. This is to keep our users safe. If you are younger than this age, and want to learn to program with Exercism, we would recommend that you ask a Parent or Guardian to create an account and solve the problems together.
+You have to be older than a minimum age to have an account on our Platform. This is to keep our users safe. 
 
 You must be at least 13 years old to access our Platform. If you are under 13 years old, you may not access our Platform, and may not provide or post any personal information to our Platform (including, for example, your name, age, and contact details).
 
