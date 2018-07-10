@@ -27,7 +27,7 @@ Our approach to your privacy is very straightforward
 
 It is important to note that any code submissions you make and any feedback you give will be made **publicly** available under a Commercial Commons license. However, using our privacy tools, you can decide if you want this content to be identifiably linked to you.
 
-## The information do we collect
+## The information we collect
 
 ### Information collected during account registration
 
