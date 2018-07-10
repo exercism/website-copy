@@ -123,10 +123,11 @@ CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike licen
 
 When you contribute a Solution to the platform, then that solution will be available for others (usually Track Moderators) to comment on. Our Platform uses on this feedback to help you learn and develop. In order to achieve this, it is important that the materials you share can be legally accessed by a Mentor, and using CC BY-SA helps us ensure that. Equally, when a mentor comments on your solution, their response is also licensed in the same way, allowing you to use that feedback for any purpose you choose.
 
-In addition, this license allows Exercism to use the submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
+In addition, this license allows Us to use the submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
 
 - Authoring a book that addresses common difficulties associated with writing software
 - Using anonymised solutions to build an AI-based code-review bot
+- Improving the user-experience of exercism.io and avoid common difficulties
 - Using anonymised feedback to undertake academic analysis of the factors that determine successful peer-to-peer based feedback
 
 ### No warranties for User Contributed Content
