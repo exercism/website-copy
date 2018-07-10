@@ -66,7 +66,7 @@ When using our Platform, you AGREE NOT TO:
 
 ### Service Eligibility
 
-We offer our Platform to the widest possible audience. We champion and nurture inclusivity, diversity and equality to the highest levels. Although we want to be open to all, the following eligibility restrictions do apply:
+We offer our Platform to the widest possible audience. However, the following eligibility restrictions do apply:
 
 #### Non-Eligibility based on suspension or removal
 
