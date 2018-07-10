@@ -92,17 +92,17 @@ We are committed to Open Source, and as a result, many of the resources on our P
 
 #### Our Content
 
-All materials displayed on our Website and/or Platform are Copyright Exercism Inc.
+All materials displayed on our Website and/or Platform are Copyright **Exercism Inc**.
 
 Where a resource does not appear to have a clear licensing statement, we would recommend that you check our GitHub source-code repositories. You should not assume that all content on our Platform is openly licensed.
 
 #### Community Content
 
-All of the exercises delivered through the platform have been build by a community of volunteers and are, mostly licensed under the MIT License. All of this content is available directly through our Github repositories (see https://github.com/exercism/) where specific license details can be viewed.
+All of the exercises delivered through the platform have been build by a community of volunteers and are, mostly licensed under the MIT License. All of this content is available directly through our Github repositories (see https://github.com/exercism) where specific license details can be viewed.
 
 #### User generated Content
 
-The primary purpose of the platform is to provide a space where individuals can solve software development (coding) challenges, submit them, and receive feedback. We expect that the purposes of this activity will usually be to learn and develop competence in a software-language and also to develop skills in giving and
+The primary purpose of the platform is to provide a space where individuals can solve programming (coding) challenges, submit them, and receive feedback. We expect that the purposes of this activity will usually be to learn and develop competence in a software-language and also to develop skills in giving and
 receiving feedback.
 
 In the course of pursuing this activity, you will be presented with a series of exercises for you to download and solve, and invited to upload your **Solution** (potentially as a series of improvements - each named an **Iteration**.
