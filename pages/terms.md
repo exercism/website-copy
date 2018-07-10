@@ -8,31 +8,31 @@ Exercism (also referred to as exercism.io) is an online platform designed to hel
 
 Our platform comprises of a web site is located at https://exercism.io (and associated subdomains) and a command line application (CLI).
 
-Exercism is run and managed by Exercism Inc. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and govern your permitted use of our **Platform**.
+Exercism is run and managed by Exercism Inc. The following Terms of Service (these **Terms**) are an agreement between **Exercism, Inc** and you, and govern your permitted use of our **Platform**.
 
 You might also want to read:
 
 - Our [Privacy Policy](...)
 - Our community [Code of Conduct](...)
 
-Our general approach should be fairly straightforward:
+Our general approach should be fairly straightforward to understand:
 
-1. Our services are provided free of charge on an "as is" basis. We do our best to keep our platform
+1. Our core services are provided free of charge on an "as is" basis. We do our best to keep our platform
 operational, but we cannot offer any guarantees of this.
 
-2. We aim to have a user-friendly approach to privacy and security
+2. We aim to have a user-friendly approach to privacy and security.
 
-3. We will run advertising and/or sponsorship, but we won't sell your data, or use your activity to target you for marketing purposes.
+3. We will run advertising and/or sponsorship, but we won't sell your data, or use your personal data to target you for marketing purposes.
 
 4. We want to make Exercism an enjoyable and safe place for everyone and we will take action against users who undermine our Platform and/or our community values.
 
-5. The content you submit to the Platform such as Programming/Code **Solutions**, or mentoring **Feedback**, belong to the community and are published openly under an open license.
+5. The content you submit to the Platform such as Programming/Code **Solutions**, or mentoring **Feedback** are published openly under an open license.
 
 6. We will try to be open about how we choose to develop the Platform and how we use the data and content contained within it.
 
 ## In detail
 
-Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and governs your permitted use of our **Platform**.
+Exercism is run and managed by Exercism, Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism Inc** and you, and governs your permitted use of our **Platform**.
 
 Any clause headings, numbers, and/or emphasis in these Terms are for ease of reference only and shall not be taken into account in the construction or interpretation of the clauses to which they refer.
 
@@ -44,7 +44,7 @@ Any personal information submitted to our Platform is subject to our [Privacy Po
 
 ### User obligations
 
-When you access our services, whether registered or not, you become a **User** of our Platform
+When you access our services, whether registered or not, you become a **User** of our Platform.
 
 As a User, you are solely responsible for ensuring that:
 
@@ -92,7 +92,7 @@ We are committed to Open Source, and as a result, many of the resources on our P
 
 #### Our Content
 
-All materials displayed on our Website and/or Platform are Copyright **Exercism Inc**.
+All materials displayed on our Website and/or Platform are Copyright **Exercism, Inc**.
 
 Where a resource does not appear to have a clear licensing statement, we would recommend that you check our GitHub source-code repositories. You should not assume that all content on our Platform is openly licensed, but it generally will be.
 
