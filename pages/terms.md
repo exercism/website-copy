@@ -117,7 +117,7 @@ If you participate on our Platform as a Moderator, then any content you upload a
 
 Specifically, this means that all mentor feedback will be licensed under a CC BY-SA license. It is important that you ensure that the feedback you supply (including any further code-samples) are compatible with that license.
 
-### What is CC-BY-SA, and why are we using it?
+#### What is CC-BY-SA, and why are we using it?
 
 CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike license. A full copy of this license is available at https://creativecommons.org/licenses/by-sa/3.0/ . In summary, this license permit anyone to copy adapt, and redistribute the material, so long as proper attribution is given.
 
@@ -130,25 +130,23 @@ In addition, this license allows Us to use the submitted solutions to improve ou
 - Improving the user-experience of exercism.io and avoid common difficulties
 - Using anonymised feedback to undertake academic analysis of the factors that determine successful peer-to-peer based feedback
 
-### No warranties for User Contributed Content
+#### No warranties for User Contributed Content
 
-We do not control content uploaded on our Platform and, as such, do not provide any assurances where its validity, reliability or accuracy.
+We do not control the content uploaded on our Platform and, as such, do not provide any assurances where its validity, reliability or accuracy.
 
-Although we, and our volunteer community, actively pursue maintaining our Community Code of Conduct, we do not take no responsibility nor accept any liability for any offence taken by you to any content you are exposed to using our Platform. We have no responsibility nor owe You any duty of care to keep such content from You and your continued use of Our platform should at all times be at your own risk
+Although User Contributed Content may be observed by Moderators, we do not routinely screen submitted content for errors, omissions or inappropriate content. Your use of the content on our Platform is at your own risk and Exercism shall have no liability for such use.
 
-Although Solutions are observed by Moderators, we do not routinely screen submitted content for errors, omissions or inappropriate content. Your use of the content on our Platform is at your own risk and Exercism shall have no liability for such use.
+The appearance of User Contributed Content on our Platform does not imply our endorsement of that material.
 
-### Concerns about content licensing
+#### Concerns about content licensing
 
 We respects all copyright, privacy, defamation and other laws relating to content and information and will not tolerate breach of such laws.
 
-If You believe that Submitted Content of Yours infringes or breaches any law or regulation or is inaccurate or poses any risk whatsoever to a third party it is Your responsibility to take such steps You deem necessary to correct the situation.
+If You believe that content of Yours infringes or breaches any law or regulation or is inaccurate or poses any risk whatsoever to a third party it is Your responsibility to take such steps You deem necessary to correct the situation.
 
-If You believe that Submitted Content of a third party or any Company Content violates any laws or regulations, including, without limitation, any copyright laws, You should report it to Us.
+If You believe that content of a third party violates any laws or regulations, You should report it to Us.
 
-The appearance of user generated content on our Platform does not imply our endorsement of that material.
-
-## Personal information and security
+### Personal information and security
 
 We try to minimise the amount of personal data we hold, and where we do store and capture personal information, this will be governed by our Privacy Policy and such data will only be used for the purposes it was collected for.
 
