@@ -5,12 +5,17 @@ Last Revised: XXXXX
 
 ## Who we are
 
-Exercism (also referred to as exercism.io) is ab online platform designed to help you improve individuals improve their coding skills through practice and mentorship.
+Exercism (also referred to as exercism.io) is an online platform designed to help you improve individuals improve their coding skills through practice and mentorship.
 
 Our platform comprises of a web site is located at https://exercism.io (including associated subdomains - such as https://teams.exercism.io), and related application programming interfaces (API’s), command line applications (CLI's) and other online services.
 
 We’re deeply committed to providing you with a safe and secure online platform for you to develop your
 software coding skills.
+
+Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. You might also want to read:
+
+- Our [Terms and Conditions](...)
+- Our community [Code of Conduct](...)
 
 ## Overview
 

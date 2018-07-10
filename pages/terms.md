@@ -4,15 +4,18 @@ Last Revised: XXXXX
 
 ## Who we are
 
-Exercism (also referred to as exercism.io) is an online platform (**Exercism** or **Platform**) and associated services designed to help you improve individuals improve their coding skills through practice and mentorship.
+Exercism (also referred to as exercism.io) is an online platform (**Exercism** or **Platform**) designed to help you improve your coding skills through practice and mentorship.
 
-Our platform comprises of a web site is located at https://exercism.io (including associated subdomains - such as https://teams.exercism.io), and related application programming interfaces (API’s), command line applications (CLI's) and other online services.
+Our platform comprises of a web site is located at https://exercism.io (including associated subdomains - such as https://teams.exercism.io), a command line applications (CLI) and other online services.
 
-The following Terms of Service (**Terms**) constitute an agreement between **Exercism** and you and governs your permitted use of the **Platform**.
+Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (**Terms**) are an agreement between **Exercism Inc** and you, and governs your permitted use of the **Platform**.
+
+You might also want to read:
+
+- Our [Privacy Policy](...)
+- Our community [Code of Conduct](...)
 
 ## General
-
-By accessing or using the Services or the public Network in any manner, including without limitation by visiting or browsing the public Website or registering for an account on the Website or Platform, you affirm that you have read, understand, and agree to be bound by these Terms of Service, as well as the Code of Conduct and Privacy Policy.
 
 Exercism, reserves the right, at its discretion, to modify these Terms at any time by posting revised Terms on the public web site. You shall be responsible for reviewing and becoming familiar with any such modifications. Your access to or use of our services following such modification constitutes your acceptance of the terms and conditions of these Terms as modified.
 
