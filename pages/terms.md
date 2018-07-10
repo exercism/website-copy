@@ -55,7 +55,7 @@ When using our Platform, you AGREE NOT TO:
 
 - share or upload defamatory, libellous, or inaccurate content;
 - share or upload any content that is unlawful
-- share or upload content that a reasonable person could deem to be objectionable, offensive, threatening, distressing, or otherwise inappropriate. We would recommend that you familiarise yourself with our Values and Code of Conduct.
+- share or upload content that a reasonable person could deem to be objectionable, offensive, distressing, or otherwise inappropriate. We would recommend that you familiarise yourself with our Values and Code of Conduct.
 - impersonate any person or entity, falsely claim an affiliation with any person or entity
 - access the Platform accounts of others without permission, or perform any other fraudulent activity
 - make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
@@ -98,7 +98,7 @@ Where a resource does not appear to have a clear licensing statement, we would r
 
 #### Community Content
 
-All of the exercises delivered through the platform have been build by a community of volunteers and are, mostly licensed under the MIT License. All of this content is available directly through our Github repositories (see https://github.com/exercism) where specific license details can be viewed.
+All of the exercises delivered through the platform have been build by a community of volunteers and are licensed mainly under the MIT License. All of this content is available directly through our Github repositories (see https://github.com/exercism) where specific license details can be viewed.
 
 #### User Contributed Content
 
@@ -106,9 +106,9 @@ The primary purpose of the Platform is to provide a space where individuals can 
 
 When you use our Platform, you will be presented with a series of exercises for you to download and solve, and be invited to upload your **Solution** (potentially as a series of improvements, each named an **Iteration**) for review.
 
-You agree that all content (**User Contributed Content**) that you upload to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive basis. This content will be licensed under the terms of the Creative Commons (CC BY-SA) licence. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
+You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
 
-You grant Exercism the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
+We will immediately publish your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
 
@@ -118,18 +118,24 @@ If you participate on our Platform as a Moderator, then any content you upload a
 
 Specifically, this means that all mentor feedback will be licensed under a Creative Commons license. It is important that you ensure that the feedback you supply (including any further code-samples) are compatible with that license.
 
-#### What is CC BY-SA, and why are we using it?
+#### What is this licensing, and why are we using it?
 
-CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike license. A full copy of this license is available at https://creativecommons.org/licenses/by-sa/3.0/ . In summary, this license permit anyone to copy adapt, and redistribute the material, so long as proper attribution is given.
+CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike license. A full copy of this license is available at https://creativecommons.org/licenses/by-sa/4.0/ . In summary, this license permit anyone to copy adapt, and redistribute the material, so long as proper attribution is given. When we present you with other Users' Solutions or Feedback, it is licensed under CC BY-SA.
 
 When you contribute a Solution to the platform, then that solution will be available for others (usually Track Moderators) to comment on. Our Platform uses on this feedback to help you learn and develop. In order to achieve this, it is important that the materials you share can be legally accessed by a Mentor, and using CC BY-SA helps us ensure that. Equally, when a mentor comments on your solution, their response is also licensed in the same way, allowing you to use that feedback for any purpose you choose.
 
-In addition, this license allows Us to use the submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
+In addition, by providing us with a worldwide, royalty-free, perpetual license, you are allowing us to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
 
-- Authoring a book that addresses common difficulties associated with writing software
+- Authoring a book describing common difficulties associated with writing software
 - Using anonymised solutions to build an AI-based code-review bot
-- Improving the user-experience of exercism.io and avoid common difficulties
-- Using anonymised feedback to undertake academic analysis of the factors that determine successful peer-to-peer based feedback
+- Improving the user-experience of exercism.io
+- Publishing a dataset of anonymised feedback for academic analysis of the factors that determine successful peer-to-peer based feedback
+
+In summary:
+
+- Because you grant us a **non-exclusive** license, you retain rights on your Solutions/User Contributed Content. You can re-use this content as you see fit.
+- Because you grant us an **irrevocable, royalty-free, commercial** license on your User Contributed Content. We are allowed to re-use and adapt this content. We will do this in ways aligned with our Values.
+- Because we present your User Contributed Content under a CC BY-SA license, others can benefit from that content, but they have to credit Exercism.
 
 #### No warranties for User Contributed Content
 
