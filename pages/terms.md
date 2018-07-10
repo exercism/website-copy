@@ -140,7 +140,7 @@ The appearance of User Contributed or Community Content on our Platform does not
 
 #### Concerns about content licensing
 
-We respects all copyright, privacy, defamation and other laws relating to content and information and will not tolerate breach of such laws.
+We respects all copyright and other laws relating to content and information and will not tolerate breach of such laws.
 
 If You believe that content of Yours infringes or breaches any law or regulation or is inaccurate or poses any risk whatsoever to a third party it is Your responsibility to take such steps You deem necessary to correct the situation.
 
