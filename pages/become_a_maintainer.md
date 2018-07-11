@@ -19,6 +19,8 @@ to a track without having to know anything about the rest of the Exercism ecosys
 Also, each track is focused, containing implementations of trivial exercises and the tools
 to make development easier, so there's no big codebase to get acquainted with.
 
+**The journey to becoming a maintainer starts with contributing to a track to demonstrate your interest, knowledge and ability.** Once you have been an active contributor for a while, then please reach out to the existing track maintainers if you would like to become a maintainer too :)
+
 ## Submit a Couple of Solutions
 
 If you haven't used Exercism before, then we recommend first submitting solutions to a couple of
