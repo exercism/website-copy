@@ -12,8 +12,8 @@ Exercism is run and managed by Exercism Inc. The following Terms of Service (the
 
 You might also want to read:
 
-- Our [Privacy Policy](...)
-- Our community [Code of Conduct](...)
+- Our [Privacy Policy](https://exercism.io/privacy)
+- Our community [Code of Conduct](https://exercism.io/code-of-conduct)
 
 Our general approach should be fairly straightforward to understand:
 
