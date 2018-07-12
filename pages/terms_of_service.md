@@ -116,7 +116,7 @@ You agree NOT to include personal information (such as, but not limited to, name
 
 #### User Contributed Content - Moderator/Feedback content
 
-If you participate on our Platform as a Mentor, then any content you upload as part of providing feedback on a user's Solution will be considered User Contributed Content, and licensed in the same way as that of the Solution (see the above section).
+If you participate on our Platform as a Mentor, then any content you upload as part of providing **Feedback** on a user's Solution will be considered User Contributed Content, and licensed in the same way as that of the Solution (see the above section).
 
 Specifically, this means that all Mentor feedback will be licensed under a Creative Commons license. It is important that you ensure that the feedback you supply (including any further code-samples) is compatible with that license.
 
