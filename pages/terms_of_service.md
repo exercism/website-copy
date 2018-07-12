@@ -136,7 +136,7 @@ CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike licen
 
 When you contribute a Solution to the platform, then that Solution will be available for others (usually Mentors) to comment on. Our Platform uses this feedback to help you learn and develop. In order to achieve this, it is important that the materials you share can be legally accessed by a Mentor, and using CC BY-SA helps us ensure that. Equally, when a Mentor comments on your solution, their response is also licensed in the same way, allowing you to use that feedback for any purpose you choose.
 
-By providing us with a worldwide, royalty-free, perpetual license, you are allowing **us** to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
+By providing us with a worldwide, royalty-free, perpetual license, you are also allowing **us** to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
 
 - Authoring a book describing common difficulties associated with writing software
 - Using anonymised solutions to build an AI-based code-review bot
@@ -161,9 +161,9 @@ The appearance of User Contributed or Community Content on our Platform does not
 
 We respect all copyright and other laws relating to content and information and will not tolerate breach of such laws.
 
-If you believe that content of yours infringes or breaches any law or regulation or is inaccurate or poses any risk whatsoever to a third party it is Your responsibility to take such steps You deem necessary to correct the situation.
+If you believe that content of yours infringes or breaches any law or regulation it is your responsibility to take steps to correct the situation. Similarly, if your content is inaccruate or could pose a risk to a third party, it is also your responsibility to take appropriate steps to correct the situation.
 
-If you believe that content of a third party violates any laws or regulations, You should report it to Us.
+If you believe that content on our Platform violates any laws or regulations, You should report it to Us.
 
 ### Personal information and security
 
