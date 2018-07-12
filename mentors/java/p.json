@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I've been programming in Java and JUnit for almost as long as they've existed. I really appreciate the ability to effortlessly refactor code using these tools."
+  },
+  {
+  "github_username": "ptrottier",
+  "name": "Patrick Trottier",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "I am studying Computer Science in Canada. My passion for the Web as a platform for everyone and Open Source Software fuel my work on projects like Exercism."
   }
 ]
