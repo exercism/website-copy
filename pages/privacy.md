@@ -14,8 +14,8 @@ software coding skills.
 
 Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. You might also want to read:
 
-- Our [Terms and Conditions](...)
-- Our community [Code of Conduct](...)
+- Our [Terms of Service](https://exercism.io/code-of-conduct)
+- Our community [Code of Conduct](https://exercism.io/code-of-conduct)
 
 Our approach to your privacy is very straightforward to understand.
 
