@@ -118,7 +118,7 @@ When you use our Platform, you will be presented with a series of exercises for 
 
 You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism, Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
 
-We will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
+Using our right to license the content, we will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
 
@@ -136,7 +136,7 @@ CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike licen
 
 When you contribute a Solution to the platform, then that Solution will be available for others (usually Mentors) to comment on. Our Platform uses this feedback to help you learn and develop. In order to achieve this, it is important that the materials you share can be legally accessed by a Mentor, and using CC BY-SA helps us ensure that. Equally, when a Mentor comments on your solution, their response is also licensed in the same way, allowing you to use that feedback for any purpose you choose.
 
-In addition to the above: By providing us with a worldwide, royalty-free, perpetual license, you are allowing **us** to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
+By providing us with a worldwide, royalty-free, perpetual license, you are allowing **us** to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
 
 - Authoring a book describing common difficulties associated with writing software
 - Using anonymised solutions to build an AI-based code-review bot
