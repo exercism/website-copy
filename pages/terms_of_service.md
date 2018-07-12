@@ -40,7 +40,17 @@ If any provision of these Terms is found to be illegal, void or unenforceable, t
 
 We reserve the right to modify these Terms at any time by posting revised Terms on https://exercism.io. These Terms apply to all who access or use our Platform, registered or otherwise.
 
-Any personal information submitted to our Platform is subject to our [Privacy Policy]().
+Any personal information submitted to our Platform is subject to our [Privacy Policy](https://exercism.io/privacy).
+
+### Definitions
+
+- Track(s) - a programming language track on Exercism, a collection of exercises and a group of Mentors who provide feedback on Solutions.
+- Solution(s) - code that is submitted by our Users (posted on Exercism) as a solution to an exercise in a track.
+- Iteration - a particular version, or revision, of an individual's Solution.
+- Feedback - feedback given by a Mentor or other User relating to a Solution that a User has posted on Exercism.
+- Mentor - a User of Exercism who provides Feedback on Solutions. A Mentor belongs to a Track. Individual users may be students on one track and mentors on another.
+- User(s) - any user of the Exercism Platform, whether signed up or not.
+- User Contributed Content - any content that Users post to our Platform.
 
 ### User obligations
 
@@ -56,13 +66,13 @@ When using our Platform, you AGREE NOT TO:
 - share or upload defamatory, libellous, or inaccurate content.
 - share or upload any content that is unlawful.
 - share or upload content that a reasonable person could deem to be objectionable, offensive, distressing, or otherwise inappropriate. We would recommend that you familiarise yourself with our Values and Code of Conduct.
-- impersonate any person or entity, falsely claim an affiliation with any person or entity
-- access the Platform accounts of others without permission, or perform any other fraudulent activity
-- make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
-- attempt to collect, personal information about Users or third parties without their consent.
-- remove, circumvent, disable, damage or otherwise interfere with the security-related features of our Platform.
-- intentionally interfere with or damage operation of the Platform or any user’s enjoyment of it, by any means.
-- use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property and other proprietary rights, and data protection and privacy.
+- impersonate any person or entity, falsely claim an affiliation with any person or entity.
+- access the Platform accounts of others without permission, or perform any other fraudulent activity.
+- make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings).
+- attempt to collect personal information about Users or third parties without their consent.
+- intentionally interfere with our Platform's security-related features.
+- intentionally interfere or damage our Platform, or any user’s enjoyment of it.
+- use the Platform for illegal purposes, or in violation of any local, state, national, or international law, including, without limitation, laws governing intellectual property, data protection, and privacy.
 
 ### Service Eligibility
 
@@ -106,9 +116,9 @@ The primary purpose of the Platform is to provide a space where individuals can 
 
 When you use our Platform, you will be presented with a series of exercises for you to download and solve, and be invited to upload your **Solution** (potentially as a series of improvements, each named an **Iteration**) for review.
 
-You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
+You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism, Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
 
-We will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
+Using our right to license the content, we will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
 
@@ -116,7 +126,7 @@ You agree NOT to include personal information (such as, but not limited to, name
 
 #### User Contributed Content - Moderator/Feedback content
 
-If you participate on our Platform as a Mentor, then any content you upload as part of providing feedback on a user's Solution will be considered User Contributed Content, and licensed in the same way as that of the Solution (see the above section).
+If you participate on our Platform as a Mentor, then any content you upload as part of providing **Feedback** on a user's Solution will be considered User Contributed Content, and licensed in the same way as that of the Solution (see the above section).
 
 Specifically, this means that all Mentor feedback will be licensed under a Creative Commons license. It is important that you ensure that the feedback you supply (including any further code-samples) is compatible with that license.
 
@@ -126,7 +136,7 @@ CC BY-SA is an abbreviation of the Creative Commons Attribution-ShareAlike licen
 
 When you contribute a Solution to the platform, then that Solution will be available for others (usually Mentors) to comment on. Our Platform uses this feedback to help you learn and develop. In order to achieve this, it is important that the materials you share can be legally accessed by a Mentor, and using CC BY-SA helps us ensure that. Equally, when a Mentor comments on your solution, their response is also licensed in the same way, allowing you to use that feedback for any purpose you choose.
 
-In addition, by providing us with a worldwide, royalty-free, perpetual license, you are allowing us to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
+By providing us with a worldwide, royalty-free, perpetual license, you are also allowing **us** to use submitted solutions to improve our products and services. For example, such use might include (but not be limited to) the following examples:
 
 - Authoring a book describing common difficulties associated with writing software
 - Using anonymised solutions to build an AI-based code-review bot
@@ -151,9 +161,9 @@ The appearance of User Contributed or Community Content on our Platform does not
 
 We respect all copyright and other laws relating to content and information and will not tolerate breach of such laws.
 
-If you believe that content of yours infringes or breaches any law or regulation or is inaccurate or poses any risk whatsoever to a third party it is Your responsibility to take such steps You deem necessary to correct the situation.
+If you believe that content of yours infringes or breaches any law or regulation it is your responsibility to take steps to correct the situation. Similarly, if your content is inaccruate or could pose a risk to a third party, it is also your responsibility to take appropriate steps to correct the situation.
 
-If you believe that content of a third party violates any laws or regulations, You should report it to Us.
+If you believe that content on our Platform violates any laws or regulations, You should report it to Us.
 
 ### Personal information and security
 
