@@ -50,7 +50,7 @@ Any personal information submitted to our Platform is subject to our [Privacy Po
 - Feedback - feedback given by a Mentor or other User relating to a Solution that a User has posted on Exercism.
 - Mentor - a User of Exercism who provides Feedback on Solutions. A Mentor belongs to a Track. Individual users may be students on one track and mentors on another.
 - User(s) - any user of the Exercism Platform, whether signed up or not.
-- User Contributed Content - any content that Users post to our Platform
+- User Contributed Content - any content that Users post to our Platform.
 
 ### User obligations
 
@@ -68,7 +68,7 @@ When using our Platform, you AGREE NOT TO:
 - share or upload content that a reasonable person could deem to be objectionable, offensive, distressing, or otherwise inappropriate. We would recommend that you familiarise yourself with our Values and Code of Conduct.
 - impersonate any person or entity, falsely claim an affiliation with any person or entity.
 - access the Platform accounts of others without permission, or perform any other fraudulent activity.
-- make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings)
+- make unsolicited offers and advertisements to other Users of the Platform (including, but not limited to, unsolicited advertising and unsolicited job postings).
 - attempt to collect personal information about Users or third parties without their consent.
 - intentionally interfere with our Platform's security-related features.
 - intentionally interfere or damage our Platform, or any user’s enjoyment of it.
@@ -116,7 +116,7 @@ The primary purpose of the Platform is to provide a space where individuals can 
 
 When you use our Platform, you will be presented with a series of exercises for you to download and solve, and be invited to upload your **Solution** (potentially as a series of improvements, each named an **Iteration**) for review.
 
-You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
+You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism, Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
 
 We will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 
