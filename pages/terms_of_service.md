@@ -40,7 +40,17 @@ If any provision of these Terms is found to be illegal, void or unenforceable, t
 
 We reserve the right to modify these Terms at any time by posting revised Terms on https://exercism.io. These Terms apply to all who access or use our Platform, registered or otherwise.
 
-Any personal information submitted to our Platform is subject to our [Privacy Policy]().
+Any personal information submitted to our Platform is subject to our [Privacy Policy](https://exercism.io/privacy).
+
+### Definitions
+
+- Track(s) - a programming language track on Exercism, a collection of exercises and a group of Mentors who provide feedback on Solutions.
+- Solution(s) - code that is submitted by our Users (posted on Exercism) as a solution to an exercise in a track.
+- Iteration - a particular version, or revision, of an individual's Solution.
+- Feedback - feedback given by a Mentor or other User relating to a Solution that a User has posted on Exercism.
+- Mentor - a User of Exercism who provides Feedback on Solutions. A Mentor belongs to a Track. Individual users may be students on one track and mentors on another.
+- User(s) - any user of the Exercism Platform, whether signed up or not.
+- User Contributed Content - any content that Users post to our Platform
 
 ### User obligations
 
