@@ -1,3 +1,7 @@
+If you haven't installed the new version of the command-line client (v3.x), you can run `exercism upgrade` or download the [latest release](https://github.com/exercism/cli/releases/latest).
+
+    exercism upgrade
+
 The new website relies on a metadata file that the old website did not provide.
 If you don't have this file, you will not be able to submit the exercise.
 
