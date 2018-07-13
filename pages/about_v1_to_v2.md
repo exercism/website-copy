@@ -2,7 +2,7 @@ We've rebuilt Exercism from the ground up to provide a smoother, more in-depth e
 
 Below, we have outlined a few of the biggest changes. For even **more** details you can view [this document](https://github.com/exercism/v2-feedback). If you need help migrating solutions on your local system from v1 to v2, please [read this document](/cli-v1-to-v2).
 
-We are still working through lots of TODOs to get things right, so please bare with us, but we hope you find this new version more fun and useful than ever.
+We are still working through lots of TODOs to get things right, so please bear with us, but we hope you find this new version more fun and useful than ever.
 
 ### New branding
 
