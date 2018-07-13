@@ -38,8 +38,9 @@ It is our hope that the user experience on the site is so good that it fades int
 
 There are two core audiences for the exercise portion of the language tracks. They are:
 
-people who are learning to program for the first time
-programmers who want to ramp up quickly in a new language
+- people who are learning to program for the first time
+- programmers who want to ramp up quickly in a new language
+
 We are able to have two core audiences rather than one, because they share a common goal: basic fluency in a programming language. Exercism's sweet spot is bridging the awkward gap between "hello world" and productivity in the basics of a language.
 
 How many exercises someone needs will vary from person to person and from language to language, based on people's existing background and skills. The goal is to achieve basic fluency in the syntax, data structures, standard library, and idioms of a language. There is no competitive aspect designed into the product, and we've put a lot of effort into making sure that people can work at their own pace, focusing on the parts of the language that they need the most and are most interested in.
