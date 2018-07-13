@@ -15,3 +15,9 @@ Instead, it's a pun on exercise. The way Katrina came to think about each exerci
 To learn more about what it means for the devil to be in the details, check out the
 [Overkill](http://www.kytrinyx.com/talks/overkill) and 
 [Succession](http://www.kytrinyx.com/talks/succession) talks by Katrina.
+
+### Everything's changed! What's going on?
+
+We've launched the new version of Exercism, 18months in the making :D
+
+There is a document that [explains the changes](/about-v1-to-v2) and another that [explains how to migrate your CLI from v1 to v2](/cli-v1-to-v2). We hope you enjoy the new experience :)
