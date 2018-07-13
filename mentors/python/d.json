@@ -5,5 +5,12 @@
     "link_url": "https://dmerej.info/blog",
     "link_text": "blog",
     "bio": "Python3 fan. Interested in refactoring, test driven developement and type annotations."
+  },
+  {
+    "github_username": "davidejones",
+    "name": "David Jones",
+    "link_url": "http://davidejones.com",
+    "link_text": "Website",
+    "bio": "Love python, easy to read and fun to write"
   }
 ]
