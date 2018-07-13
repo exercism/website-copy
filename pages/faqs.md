@@ -18,6 +18,6 @@ To learn more about what it means for the devil to be in the details, check out 
 
 ### Everything's changed! What's going on?
 
-We've launched the new version of Exercism, 18months in the making :D
+We've launched the new version of Exercism, 18 months in the making :D
 
 There is a document that [explains the changes](/about-v1-to-v2) and another that [explains how to migrate your CLI from v1 to v2](/cli-v1-to-v2). We hope you enjoy the new experience :)
