@@ -1,11 +1,12 @@
 [
   {
-    "github_username": "SomeKittens",
-    "name": "Randall Koutnik",
-    "link_text": "blog",
-    "link_url": "https://rkoutnik.com/",
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
     "avatar_url": null,
-    "bio": "Level 13 JavaScript Wizard"
+    "bio":
+    "What can I say... it's Javascript alright :) I try to avoid pure JS as much as I can. But, it's the language of the web and the more you know about its many pitfalls the better :)"
   },
   {
     "github_username": "sfairchild",
@@ -16,12 +17,11 @@
     "bio": "I'm a senior Ruby dev professionally at my company. I have also worked alot with JavaScript and most recently lead a team building a React app for one of our clients."
   },
   {
-    "github_username": "ser1us",
-    "name": "Christoph Lipp",
-    "link_text": null,
-    "link_url": null,
+    "github_username": "SomeKittens",
+    "name": "Randall Koutnik",
+    "link_text": "blog",
+    "link_url": "https://rkoutnik.com/",
     "avatar_url": null,
-    "bio":
-    "What can I say... it's Javascript alright :) I try to avoid pure JS as much as I can. But, it's the language of the web and the more you know about its many pitfalls the better :)"
+    "bio": "Level 13 JavaScript Wizard"
   }
 ]
