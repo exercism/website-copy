@@ -1,15 +1,23 @@
 [
   {
-    "github_username": "spaecpotato",
-    "name": "James McLaren",
-    "bio": "I started writing Ruby 4 years ago when I co-founded Workplace Arcade. I quickly fell in love with the language and have been using it ever since. I'm very passionate about mentoring and co-organize a local ruby meetup."
+    "github_username": "sfairchild",
+    "name": "Sean Fairchild",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a senior Ruby dev professionally at my company. I have taught many new devs and devs coming from other languages Ruby and Ruby on Rails."
   },
-    {
+  {
     "github_username": "sganondorf",
     "name": "Sabrina Gannon",
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
     "bio": "Ruby is the first language I've developed in professionally, I love it for it's readability and how it was developed with the intention to bring joy to those who write it."
+  },
+  {
+    "github_username": "spaecpotato",
+    "name": "James McLaren",
+    "bio": "I started writing Ruby 4 years ago when I co-founded Workplace Arcade. I quickly fell in love with the language and have been using it ever since. I'm very passionate about mentoring and co-organize a local ruby meetup."
   }
 ]
