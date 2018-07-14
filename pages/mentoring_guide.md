@@ -13,7 +13,7 @@ Click on one of the solutions to start giving feedback. This will take you to th
 
 ### Giving Mentor Feedback 
 
-You can click the the “Instructions” tab to remind yourself of what the exercise is about. These are the same instructions given to the learner. 
+You can click the “Instructions” tab to remind yourself of what the exercise is about. These are the same instructions given to the learner. 
 
 ![instructions](https://user-images.githubusercontent.com/5421823/42658359-fb059e42-861c-11e8-8b91-cb8e1e83f38e.png)
 
@@ -44,7 +44,7 @@ If you come across a solution you don't want to give feedback to, you can click 
 
 ![pass](https://user-images.githubusercontent.com/5421823/42646492-f0077750-85f8-11e8-8621-e77da7ec018f.png)
 
-When you think a learner has learnt enough from the exercise (i.e. they've touched upon a couple of concepts and made good process with each iteration based on the feedback given), you can allow the learner to progress by clicking on the the "Approve and comment" button (appears when you type). You will need to add a comment before hitting this button, for example "It looks like you've learnt enough from this exercise, great work."
+When you think a learner has learnt enough from the exercise (i.e. they've touched upon a couple of concepts and made good process with each iteration based on the feedback given), you can allow the learner to progress by clicking on the "Approve and comment" button (appears when you type). You will need to add a comment before hitting this button, for example "It looks like you've learnt enough from this exercise, great work."
 
 ![approve](https://user-images.githubusercontent.com/5421823/42646486-eecd1a3e-85f8-11e8-92de-d7d34298a3f6.png)
 
