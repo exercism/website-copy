@@ -9,7 +9,7 @@ If you're not sure what feedback to give, paste a link to the solution (e.g. `ht
 ### How can I improve my mentoring skills?
 This is something we're extremely passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples.
 
-In the mean time, here's some recommended reading on the subject: https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/
+In the meantime, here's some recommended reading on the subject: https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/
 
 Behaviours to avoid:
 - stating opinion as fact
