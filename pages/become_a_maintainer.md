@@ -1,4 +1,5 @@
-[repositories]: http://exercism.io/repositories
+[tracks]: https://exercism.io/tracks
+[repositories]: https://github.com/exercism
 [triaging-issues]: /you-can-help/triage-issues.md
 [reviewing-prs]: /you-can-help/review-pull-requests.md
 [porting]: /you-can-help/implement-an-exercise-from-specification.md
@@ -29,8 +30,8 @@ for what a language track consists of.
 
 ## Watch The Track Repository
 
-If you haven't picked a language you want to contribute to yet, check out the list of [language tracks
-and their respective repositories][repositories].
+If you haven't picked a language you want to contribute to yet, check out the list of [language tracks][tracks]
+and their respective [repositories][repositories].
 
 Then go to the repository for the language you've chosen, click the _Watch_ button, and select _Watching_.
 This will notify you of any new issues, pull requests, or comments in the repository, which is a great way
