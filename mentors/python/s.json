@@ -48,6 +48,13 @@
     "link_url": "http://sandordargo.com/",
     "avatar_url": null,
     "bio": "I like Python because it's so simple to understand it and it can read like well-written prose. Besides it's a real swiss army knife, you can use it for almost everything. Yet, it takes some time to learn writing pythonic code, but I'm happy to help you with that!"
+  },
+  {
+    "github_username": "stevelle",
+    "name": "Steve Lewis",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I appreciate python among the many languages I have used for expressiveness and readability. I have used it at work and for personal projects."
   }
-
 ]
