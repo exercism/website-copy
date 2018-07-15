@@ -6,5 +6,13 @@
     "link_url": "https://gitlab.com/cadoma",
     "avatar_url": null,
     "bio": "I write JS professionally, and I also write JSX in Reactjs, so I've got plenty of experience with this and I'm happy to show you the ropes!"
+  },
+  {
+    "github_username": "c-dante",
+    "name": "Dante Federici",
+    "link_text": "Dante Codes",
+    "link_url": "https://dante.codes/#!/",
+    "avatar_url": null,
+    "bio": "Climbing coder. Working with JS professionally for both web and desktop applications for 8+ years."
   }
 ]
