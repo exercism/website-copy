@@ -1,1 +1,60 @@
-[]
+
+[
+  {
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "Python has something for everyone. Like functional programming? Check. Like OOP? Check. Need multiple inheritance? Check. I use it for web apps (Django) and - more recently - for machine learning, it's awesome!"
+  },
+ {
+  "github_username": "slahmar",
+  "name": "Salomé Lahmar",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "Python is my favorite language because it's easy to learn and easy to write, and really explicit and concise. It's also great for machine learning enthusiasts!"
+  },
+ {
+      "github_username": "sebito91",
+      "name": "Sebastian Borza",
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": "I'm a Canadian (based in Chicago) freelance golang, C and python developer working on projects within the gaming, finance and data-science worlds respectively. My favorite freetime task is coding challenges and I'm more than happy to help people talk through solutions!"
+    },
+    {
+      "github_username": "Seenivasanseeni",
+      "name": "Seeni",
+      "link_text": "",
+      "link_url": "",
+      "avatar_url": "",
+      "bio": "I am Indian student developer working in Deep Learning with python. I work on python for almost all of my projects. Other languages i Use are javascript , c++ "
+    },
+	{
+  "github_username": "schmerziel",
+  "name": "Steven Hans",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "Everytime I wanted to do some quick automation I always choose python because it is simple, relatively easy, and fast enough to do the automation. This has saved me a lot of painful time if I were to do it myself manually. I also like java and currently learning some C."
+	},
+  {
+    "github_username": "sandordargo",
+    "name": "Sandor Dargo",
+    "link_text": "Sandor Dargo's Blog",
+    "link_url": "http://sandordargo.com/",
+    "avatar_url": null,
+    "bio": "I like Python because it's so simple to understand it and it can read like well-written prose. Besides it's a real swiss army knife, you can use it for almost everything. Yet, it takes some time to learn writing pythonic code, but I'm happy to help you with that!"
+  },
+  {
+    "github_username": "stevelle",
+    "name": "Steve Lewis",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I appreciate python among the many languages I have used for expressiveness and readability. I have used it at work and for personal projects."
+  }
+]

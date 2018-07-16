@@ -1,1 +1,18 @@
-[]
+[
+    {
+    "github_username": "alebaffa",
+    "name": "Alessandro Baffa",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love to write clean code and Go is a language created to be easy to understand and master. Despite I don't use it professionally, I closely follow its progress and amazing community."
+    },
+   {
+    "github_username": "aspanu",
+    "name": "Adrian Spanu",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I work as a software engineer full time. One of the larger codebases I work in is a set of microservices written in Go. I'm not an expert in Go, but I've started to figure out my way around it. Happy to help others trying to learn more!"
+  }
+]

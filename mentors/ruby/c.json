@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "github_username": "carolineschnapp",
+    "name": "Caroline Schnapp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Electrical engineer turned fiction writer turned bum turned Ruby on Rails developer. I love Ruby, Sandi Metz, and Exercism. I live in Quebec, Canada."
+  },
+  {
+    "github_username": "conradbeach",
+    "name": "Conrad Beach",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love the Ruby programming language; it's a joy to write code with it. The majority of my development experience is with Ruby, and I'm excited to help others learn it."
+  },
+  {
+    "github_username": "corroded",
+    "name": "Eumir Gaspar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Ruby and am very passionate about it. I have used Ruby (and Rails) professionally since 2009 and have maintained the RubyConf Philippines site as a volunteer since 2014."
+  }
+]

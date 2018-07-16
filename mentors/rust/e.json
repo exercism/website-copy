@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "ELD",
+    "name": "Eric Dattore",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been playing with Rust as my hobby language of choice since version 0.10. Before that, I was using C++ for a lot of my side projects."
+  }
+]

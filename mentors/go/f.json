@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "fate-lovely",
+    "name": "CJ Ting",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I like Go for its simplicity and single-binary deployment, it's a good fit for CLI tools and network servers."
+  }
+]

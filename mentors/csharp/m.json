@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "melston1777",
+    "name": "Mark Elston",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have used C# for several projects professionally.  I enjoy the language for its support of elegant solutions.  Especially as it matures."
+  },
+  {
+    "github_username": "mrstebo",
+    "name": "Steven Atkinson",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I began my professional programming career with VB.NET, but have spent the rest (over 8 years) happily working with C#."
+  }
+]
