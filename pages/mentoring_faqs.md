@@ -9,7 +9,7 @@ If you're not sure what feedback to give, paste a link to the solution (e.g. `ht
 ### How can I improve my mentoring skills?
 This is something we're extremely passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples.
 
-In the mean time, here's some recommended reading on the subject: https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/
+In the meantime, here's some recommended reading on the subject: https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/
 
 Behaviours to avoid:
 - stating opinion as fact
@@ -45,6 +45,9 @@ We had 1,000 submissions per day on the original Exercism site, of which fewer t
 
 ### I've found an issue with the site, where should I raise the issue?
 If you find anything that's broken, first see if it is listed here and if not please add it https://github.com/exercism/v2-feedback/issues 
+
+### I can’t see the Mentor Dashboard even though I've followed the "start-here" instructions
+Go back to https://exercism.io/mentor/configure and check that you have clicked the “Save” button at the bottom of the screen. Some people have missed this step and then been understandably confused by why they can't see the Mentor Dashboard. This should fix the issue.
 
 ### How can I report abuse or examples of bad mentoring?
 Please reach out to us at abuse@exercism.io and we will try to fix or resolve the issue respecting both you and your privacy.

@@ -6,5 +6,12 @@
         "link_url": "https://github.com/dfimbres",
         "avatar_url": null,
         "bio": "I think Javascript still has a lot of growing to do and as one of the most widely used languages I want to be able to help others as they grow as well."
+    },
+    {
+        "github_username": "davidejones",
+        "name": "David Jones",
+        "link_url": "http://davidejones.com",
+        "link_text": "Website",
+        "bio": "Software engineer and a fan of many programming languages"
     }
 ]

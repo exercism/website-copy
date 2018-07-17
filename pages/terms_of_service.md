@@ -161,7 +161,7 @@ The appearance of User Contributed or Community Content on our Platform does not
 
 We respect all copyright and other laws relating to content and information and will not tolerate breach of such laws.
 
-If you believe that content of yours infringes or breaches any law or regulation it is your responsibility to take steps to correct the situation. Similarly, if your content is inaccruate or could pose a risk to a third party, it is also your responsibility to take appropriate steps to correct the situation.
+If you believe that content of yours infringes or breaches any law or regulation it is your responsibility to take steps to correct the situation. Similarly, if your content is inaccurate or could pose a risk to a third party, it is also your responsibility to take appropriate steps to correct the situation.
 
 If you believe that content on our Platform violates any laws or regulations, You should report it to Us.
 
@@ -199,7 +199,7 @@ You hereby indemnify, defend and hold harmless us, Our affiliates, officers, dir
 
 ### Our communication with you
 
-By using our Platform or communicating generally with Us, You agree that we may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the Plaform or changes to these Terms.
+By using our Platform or communicating generally with Us, You agree that we may communicate with You electronically regarding security, privacy, and administrative issues relating to Your use of the Platform or changes to these Terms.
 
 If it is brought to our attention that there is any security breach, We may attempt to notify You electronically by posting a notice on the Site or sending an email to You.
 

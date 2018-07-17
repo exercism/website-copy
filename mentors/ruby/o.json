@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Ruby because of it's developer friendliness over everything and the speed of which you can just get going with tasks."
+  },
+  {
+    "github_username": "oliakremmyda",
+    "name": "Olia Kremmyda",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/oliakremmyda",
+    "avatar_url": null,
+    "bio": "I'm a developer for 4 years and the last year I have been working with Ruby. Exercism is a great help to get over the C and C++ habits and move to the Ruby way of thinking. Likewise, it makes me so happy to be able to give back to this community as a mentor!"
   }
 ]
