@@ -6,5 +6,13 @@
     "link_url": "https://github.com/armilam",
     "avatar_url": "https://www.gravatar.com/avatar/07820db2ccef786da472ecf49308e34c",
     "bio": "I have had an interest in functional programming for years, and Elixir has been my outlet for a while now. I love being able to program without hidden side effects, and I love the way functional programming changes the way you think about program flow."
+  },
+  {
+    "github_username": "angelikatyborska",
+    "name": "Angelika Tyborska",
+    "link_text": "angelika.me",
+    "link_url": "https://angelika.me/",
+    "avatar_url": "https://angelika.me/assets/avatar-88e72b49ecaf7ac918275ab33426e1a8e5b5d70a0725648b1ef69aadeb9c1421.jpg",
+    "bio": "I'm a web developer. I work with Elixir, Ruby, and JavaScript. Elixir is my favorite because of its elegant syntax, great performance, pattern matching, and immutability. Let me help you make it your favorite too!"
   }
 ]
