@@ -62,9 +62,6 @@ In order to reduce the risk of learners feeling like they're at the bottom of a 
 
 Once a student has completed an exercise, they can decide whether or not to make it available to the broader Exercism community. If someone decides to make the solution available, they can also decide whether or not to include it in their public showcase.
 
-Even if you believe that you will not participate as a mentor when the site launches to the public, please try out the mentorship features during the beta period.
-
-
 ### Privacy features
 **Aliases:** People can choose on a track-by-track basis what avatar they want to use and what handle they want to go by. This means that people can use their Exercism username publicly in some tracks while remaining private in others. Logging in is now decoupled from GitHub, so the Exercism username may or may not be the same as their GitHub username. If someone chooses to use a handle that is different from their username, then we will make it clear to mentors that this is an alias.
 
