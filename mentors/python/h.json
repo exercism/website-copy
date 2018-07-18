@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "hilary",
+    "name": "Hilary Holz",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "20+ years experience in systems administration, specializing in the web since NCSA HTTPd and Mosaic. Python is my language of choice for DevOps."
+  }
+]
