@@ -8,6 +8,14 @@
     "bio": "I love how simple and readable Ruby is. I've been programming in it professionally since 2016, and would like to help other people discover and enjoy using it."
   },
   {
+    "github_username": "seanhandley",
+    "name": "Sean Handley",
+    "link_text": "Website",
+    "link_url": "https://seanhandley.com",
+    "avatar_url": null,
+    "bio": "I'm a remote developer based in Manchester. Ruby is my first love but increasingly I'm focussing on Elixir. The open source community means a great deal to me and I attend (and occasionally speak at) various technical conferences."
+  },
+  {
     "github_username": "sfairchild",
     "name": "Sean Fairchild",
     "link_text": null,

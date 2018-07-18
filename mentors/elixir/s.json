@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "seanhandley",
+    "name": "Sean Handley",
+    "link_text": "Website",
+    "link_url": "https://seanhandley.com",
+    "avatar_url": null,
+    "bio": "I'm a remote developer based in Manchester. Ruby is my first love but increasingly I'm focussing on Elixir. The open source community means a great deal to me and I attend (and occasionally speak at) various technical conferences."
+  },
+  {
 
     "github_username": "ser1us",
     "name": "Christoph Lipp",
