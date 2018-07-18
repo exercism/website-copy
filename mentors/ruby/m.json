@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "What can I say? I love Ruby. And I believe it is one of the best languages for anyone to start out with. The syntax is beautiful, and you'll have a lot of support from the community (and me). I've been using Ruby for about 4 years now, and it is one of the reasons I still enjoy coding in my spare time."
+  },
+  {
+    "github_username": "matthew-campbell",
+    "name": "Matthew Campbell",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I use Ruby for its natural syntax and vibrant community."
   }
 ]
