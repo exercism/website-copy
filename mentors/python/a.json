@@ -30,5 +30,13 @@
     "link_url": "http://avremel.work",
     "avatar_url": null,
     "bio": "I enjoy hacking with Python, it is my language of choice for prototyping and side projects."
+  },
+  {
+    "github_username": "axesilo",
+    "name": "David Carroll",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "My primary professional language is Python, which I like for its flexibility and expressiveness, but I also enjoy using Rust because of its power and high-quality tooling.  I'm a former CS professor."
   }
 ]
