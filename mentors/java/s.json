@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "github_username": "simpleauthority",
+        "name": "Jacob Andersen",
+        "link_text": null,
+        "link_url": null,
+        "avatar_url": null,
+        "bio": "I am a Java nut. While some may hate it for its (seemingly) unnecessary verbosity at times, that is one of the main reasons I love it. I've written Java as a hobby and professionally for over five years."
+    }
+]
