@@ -6,5 +6,12 @@
   "link_url": "https://medium.com/@mikegehard",
   "avatar_url": null,
   "bio": "I love writing Kotlin because it has some of the power of Scala without all of the type system complexity. It is a breath of fresh air in the Java ecosystem for those of us that like the JVM but don't like Java."
-}
+  }, {
+  "github_username": "macifell",
+  "name": "Mike Cifelli",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "I've been a Java programmer for quite some time and recently started converting some of my code over to Kotlin. The results have left me with a deep appreciation of the language, which is both clean and concise. It's also nice that it allows for an incremental conversion."
+  }
 ]
