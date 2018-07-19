@@ -7,17 +7,15 @@ Join the [start-here channel on Slack](https://exercism-mentors.slack.com/archiv
 If you're not sure what feedback to give, paste a link to the solution (e.g. `https://exercism.io/mentor/solutions/...`) on the relevant language channel on Slack and brainstorm some ideas with other mentors.
 
 ### How can I improve my mentoring skills?
-This is something we're extremely passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples.
+This is something we're extremely passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples. Eventually we hope to have a guide for each track.
 
 In the meantime, here's some recommended reading:
-
 
 - [The Science and Art of Receiving Feedback Well](https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/)
 - [Unlearning Toxic Behaviours in a Code Review Culture - Conference talk by Sandya Sankarram](https://drive.google.com/file/d/1ROZA9yKpEa8suiqVXtPO0IJtqa95SOjE/view) and related [Blog Post](https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c)
 - [How Positive and Negative Feedback Motivate Goal Pursuit](https://faculty.chicagobooth.edu/ayelet.fishbach/research/FEF%20Compass%202010.pdf)
 
 In general, behaviours to avoid:
-
 
 - stating opinion as fact
 - avalanche of comments
