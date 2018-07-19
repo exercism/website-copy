@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "razum2um",
+    "name": "Vlad Bokov",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Around 4 years of clojure experience. Author of aprint & debugger libs. Maintain awesome-clojure list and hope to get russian clojure.ru done right at some point (you can help!)"
+  }
+]
