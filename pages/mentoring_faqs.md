@@ -9,15 +9,17 @@ If you're not sure what feedback to give, paste a link to the solution (e.g. `ht
 ### How can I improve my mentoring skills?
 This is something we're extremely passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples.
 
-In the meantime, here's some recommended reading on the subject: https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/
+In the meantime, here's some recommended reading:
 
-Behaviours to avoid:
+- [The Science and Art of Receiving Feedback Well](https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/)
+- [Unlearning Toxic Behaviours in a Code Review Culture - Conference talk by Sandya Sankarram](https://drive.google.com/file/d/1ROZA9yKpEa8suiqVXtPO0IJtqa95SOjE/view) and related [Blog Post](https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c)
+- [How Positive and Negative Feedback Motivate Goal Pursuit](https://faculty.chicagobooth.edu/ayelet.fishbach/research/FEF%20Compass%202010.pdf)
+
+In general, behaviours to avoid:
 - stating opinion as fact
 - avalanche of comments
 - judgemental questions
 - sarcasm
-
-Read full blog post on this here: https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c
 
 Examples:
 Unhelpful: “Why didn’t you just do ___?” (asking judgemental
@@ -26,8 +28,6 @@ Helpful: “You can also do ___, which has the benefit of ___”
 
 Unhelpful: “Did you even test this code before you submitted it?” (being sarcastic)
 Helpful: “Your code breaks during “x, y, and z” edge cases, can you please address those cases?”
-
-These have been taken from conference talk by Sandya Sankarram on Unlearning Toxic Behaviours in a Code Review Culture https://drive.google.com/file/d/1ROZA9yKpEa8suiqVXtPO0IJtqa95SOjE/view.
 
 ### When is a solution considered complete?
 Each exercise on Exercism touches upon several programming concepts. A learner should touch on 2/3 concepts as they work through their iterations whilst taking on board mentor feedback and improving their solution through each iteration. If a student has done this, you could ask them if they would like to move onto the next exercise or if they'd like to learn how to improve their solution further to allow them to choose their own pace and depth of learning.
