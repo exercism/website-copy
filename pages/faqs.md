@@ -20,4 +20,4 @@ To learn more about what it means for the devil to be in the details, check out 
 
 We've launched the new version of Exercism, 18 months in the making :D
 
-There is a document that [explains the changes](/about-v1-to-v2) and another that [explains how to migrate your CLI from v1 to v2](/cli-v1-to-v2). We hope you enjoy the new experience :)
+There is a document that [explains the changes](/about-v1-to-v2) and another that [explains how to migrate your CLI from v1 or v2 to v3](/cli-v1-to-v2). We hope you enjoy the new experience :)
