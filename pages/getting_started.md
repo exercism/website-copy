@@ -15,7 +15,7 @@ We know using a new product can be daunting, and Exercism is a little complicate
 11. Once you've received feedback, you can make some changes to your solution and then resubmit it. This will happen a couple of times before the solution is completed.
 12. Once the solution is completed you will unlock lots more exercises. 
 13. You're now an Exercism pro! :)
-14. Fancy giving back to Exercism and helping others? We always need more [mentors](/become_a_mentor) and [track maintainers](/become_a_maintainers) and we'd love you to get involved!
+14. Fancy giving back to Exercism and helping others? We always need more [mentors](/become-a-mentor) and [track maintainers](/become-a-maintainer) and we'd love you to get involved!
 
 ### Still Stuck?
 
