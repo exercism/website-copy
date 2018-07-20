@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "tejasbubane",
+    "name": "Tejas Bubane",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Ruby for its expressiveness, readability and the awesome community. I learnt a lot of good practices in Ruby while solving exercises on exercism and later started using it to mentor people in my workplace. Now I am really excited to do it on a wider scale!"
+  }
+]
