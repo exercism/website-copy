@@ -1,8 +1,10 @@
-{
-  "github_username": "juancarlospaco",
-  "name": "Juan Carlos",
-  "link_text": null,
-  "link_url": null,
-  "avatar_url": null,
-  "bio": "I code Python and Nim."
-}
+[
+  {
+    "github_username": "juancarlospaco",
+    "name": "Juan Carlos",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I code Python and Nim."
+  }
+]

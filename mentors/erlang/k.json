@@ -1,8 +1,10 @@
-{
-  "github_username": "kolinsol",
-  "name": "Yauheni Tsiarokhin",
-  "link_text": "",
-  "link_url": "",
-  "avatar_url": null,
-  "bio": "functional programming enthusiast"
-}
+[
+  {
+    "github_username": "kolinsol",
+    "name": "Yauheni Tsiarokhin",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "functional programming enthusiast"
+  }
+]

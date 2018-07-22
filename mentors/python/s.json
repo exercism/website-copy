@@ -28,8 +28,8 @@
     {
       "github_username": "Seenivasanseeni",
       "name": "Seeni",
-      "link_text": "",
-      "link_url": "",
+      "link_text": null,
+      "link_url": null,
       "avatar_url": "",
       "bio": "I am Indian student developer working in Deep Learning with python. I work on python for almost all of my projects. Other languages i Use are javascript , c++ "
     },
@@ -45,7 +45,7 @@
     "github_username": "sandordargo",
     "name": "Sandor Dargo",
     "link_text": "Sandor Dargo's Blog",
-    "link_url": "http://sandordargo.com/",
+    "link_url": "http://sandordargo.com",
     "avatar_url": null,
     "bio": "I like Python because it's so simple to understand it and it can read like well-written prose. Besides it's a real swiss army knife, you can use it for almost everything. Yet, it takes some time to learn writing pythonic code, but I'm happy to help you with that!"
   },

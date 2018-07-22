@@ -2,8 +2,8 @@
   {
     "github_username": "cartoloupe",
     "name": "Vasanth Pappu",
-    "link_text": "",
-    "link_url": "",
+    "link_text": null,
+    "link_url": null,
     "avatar_url": null,
     "bio": "I am drawn to Elm because it is a safe, reliable, and refactorable alternative to building webapps. It's an approachable language that not only supports the dynamic nature of greenfield projects, but it can also be adopted in small steps within legacy apps implemented in other front-end solutions."
   }
