@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "darrell-pittman",
+    "name": "Darrell Pittman",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "20 years experience, mostly java, javascript and ruby. I love functional programming and have been studying clojure for ~6 months. I have done one small clojure project professionally."
+  }
+]
