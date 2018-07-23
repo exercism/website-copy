@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Ruby and am very passionate about it. I have used Ruby (and Rails) professionally since 2009 and have maintained the RubyConf Philippines site as a volunteer since 2014."
+  },
+  {
+  "github_username": "choncou",
+  "name": "Unathi Chonco",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": "https://secure.gravatar.com/avatar/67152dcbd36f6e8c926371c3ebb4ea3f?size=800",
+  "bio": "I'm a Ruby on Rails developer who thinks Ruby and the entire ecosystem is glorious. I've had a pull request merged into Rails, and love finding opportunities to contribute to open source."
   }
 ]
