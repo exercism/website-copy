@@ -12,5 +12,12 @@
     "link_url": "http://davidejones.com",
     "link_text": "Website",
     "bio": "Love python, easy to read and fun to write"
+  },
+  {
+    "github_username": "dmand",
+    "name": "Dimitri Prybysh",
+    "link_url": "http://wontfix.fun/",
+    "link_text": "Website",
+    "bio": "Python, Tools for Programmers, Static Code Analysis"
   }
 ]
