@@ -1,1 +1,10 @@
-[]
+[ 
+  {
+    "github_username": "tushartyagi",
+    "name": "Tushar Tyagi",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I dabble with Common Lisp and find it interesting because of minimal syntax and the amazing functionalities which the syntax brings."
+  }
+]
