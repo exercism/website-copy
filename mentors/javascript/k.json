@@ -21,5 +21,13 @@
     "link_url": "https://kaiomagalhaes.com/",
     "avatar_url": null,
     "bio": "Software Engineer, programmer lover, Jiu-Jitsu fighter and code addicted."
+  },
+  {
+	"github_username": "kephas",
+	"name": "Pierre Thierry",
+	"link_text": "",
+	"link_url": "",
+	"avatar_url": "https://en.gravatar.com/userimage/25385857/3c8f856e5a2977e9abcc5bbc6a784907.png?size=200",
+	"bio": "I've discovered Javascript when doing Web development and I loved it for the many programming paradigms it makes possible, including Functional Programming."
   }
 ]
