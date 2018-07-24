@@ -30,7 +30,7 @@ Make sure you are on the latest version.
 Verify which version you are on:
 
 ```bash
-exercism -v
+exercism version
 ```
 
 Verify against the latest release and upgrade if your version is not the most recent.
@@ -41,10 +41,10 @@ After upgrading, double-check the version. If the version didn’t change, make 
 which exercism
 ```
 
-If you are still having trouble open an issue in exercism/cli on GitHub with the output of the debug command.
+If you are still having trouble open an issue in exercism/cli on GitHub with the output of the troubleshoot command.
 
 ```bash
-exercism debug
+exercism troubleshoot
 ```
 
 You can open issues on [our issue tracker](https://github.com/exercism/exercism.io) and the community will try to help you. **Please ensure you have worked through the [Interactive Walkthrough](https://exercism.io/cli-walkthrough) before opening any issues.**
