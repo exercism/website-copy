@@ -16,6 +16,10 @@ To learn more about what it means for the devil to be in the details, check out 
 [Overkill](http://www.kytrinyx.com/talks/overkill) and 
 [Succession](http://www.kytrinyx.com/talks/succession) talks by Katrina.
 
+### I get the error "Sorry, we could not authenticate you from Github" when trying to log in
+
+This means that GitHub isn't willing to verify who you are. That can be because you choose to not give permission or it might be because your GitHub account is not properly configured. A common problem is that you haven't verified your email address on GitHub. You can check that in your [GitHub email settings](https://github.com/settings/emails).
+
 ### Everything's changed! What's going on?
 
 We've launched the new version of Exercism, 18 months in the making :D
