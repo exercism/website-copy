@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "github_username": "ajkavanagh",
+    "name": "Alex Kavanagh",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Rust is a refreshing alternative to C, C++ and golang.  I find it elegant, relatively concise and very interesting to use.  I've not used in professionally, yet, but have many years of C, JavaScript and Python under my belt."
+  },
+  {
+    "github_username": "AndrewRadev",
+    "name": "Andrew Radev",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Rust is a language that feels as comfortable as the next Ruby. While I can't say I'm an expert quite yet, I've taught a university course in it, so I hope I've picked up enough skill to help beginners out."
+  },
+  {
+    "github_username": "axesilo",
+    "name": "David Carroll",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "My primary professional language is Python, which I like for its flexibility and expressiveness, but I also enjoy using Rust because of its power and high-quality tooling.  I'm a former CS professor."
+  }
+]

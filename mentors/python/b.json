@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "bkhl",
+    "name": "Björn Lindström",
+    "link_text": "Elektrubadur",
+    "link_url": "https://elektrubadur.se",
+    "avatar_url": null,
+    "bio": "Python was among the first programming languages I started learning, and since then I've used it for fun, in an academic setting, as well as in my work life."
+  },
+  {
+    "github_username": "bethanyg",
+    "name": "Bethany Garcia",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Python lover. Instigator. Chaser of shiny objects."
+  }
+]

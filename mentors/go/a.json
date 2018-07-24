@@ -1,1 +1,18 @@
-[]
+[
+   {
+    "github_username": "aspanu",
+    "name": "Adrian Spanu",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I work as a software engineer full time. One of the larger codebases I work in is a set of microservices written in Go. I'm not an expert in Go, but I've started to figure out my way around it. Happy to help others trying to learn more!"
+  },
+  {
+    "github_username": "adambuckland",
+    "name": "Adam Buckland",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Full time backend engineer. Gopher."
+  }
+]

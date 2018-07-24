@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "herbcso",
+    "name": "Carsten Dreesbach",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been using Java in my job for about 15 years now, but only became a full-time engineer about a year and a half ago (was in professional services doing customizations before that)."
+  },
+  {
+    "github_username": "hugueschabot",
+    "name": "Hugues Chabot",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been professionally programming in Java for more than 20 years."
+  }  
+]

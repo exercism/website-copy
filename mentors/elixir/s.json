@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "github_username": "seanhandley",
+    "name": "Sean Handley",
+    "link_text": "Website",
+    "link_url": "https://seanhandley.com",
+    "avatar_url": null,
+    "bio": "I'm a remote developer based in Manchester. Ruby is my first love but increasingly I'm focussing on Elixir. The open source community means a great deal to me and I attend (and occasionally speak at) various technical conferences."
+  },
+  {
+
+    "github_username": "ser1us",
+    "name": "Christoph Lipp",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "The syntax is slightly ruby-ish and quite easy to grasp. But it truly is stading on the shoulders of giants (Erlang / OTP) which makes it my go to language for most new projects."
+  },
+  {
+    "github_username": "supersimple",
+    "name": "Todd Resudek",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am happy to help. I have been working professionally in Elixir since January 2018 and have presented at Empex, ElixirDaze, and ElixirConf 2018."
+
+  },
+  {
+    "github_username": "Skoda091",
+    "name": "Adam Skołuda",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a cheerful guy who really enjoys programming, speaking and extending knowledge. I have been working commercially with Elixir since March 2017. I am thrilled to help."
+
+  }
+]

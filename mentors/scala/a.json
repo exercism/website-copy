@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "avremel",
+    "name": "Avremel Kaminetzky",
+    "link_text": "Personal Website",
+    "link_url": "http://avremel.work",
+    "avatar_url": null,
+    "bio": "I enjoy the functional/immutable style of Scala."
+  },
+  {
+    "github_username": "akilegaspi",
+    "name": "Adrian King Legaspi",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/6070608?s=460&v=4",
+    "bio": "Generally a Purely Functional Programming advocate and Professional Software Engineer in Scala/Haskell"
+  }
+]

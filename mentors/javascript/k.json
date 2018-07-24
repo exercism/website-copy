@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "github_username": "kiyanwang",
+    "name": "Nadeem Shabir",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Polyglot developer, loves programming, constantly learning!"
+  },{
+    "github_username": "koenwellens",
+    "name": "Koen Wellens",
+    "link_text": "My blog where I review books.",
+    "link_url": "https://readingwithwelko.wordpress.com/",
+    "avatar_url": null,
+    "bio": "I've been working with JavaScript for about 6 years now. I think I've come at a level where I can help others."
+  },
+  {
+    "github_username": "kaiomagalhaes",
+    "name": "Kaio Magalhaes",
+    "link_text": "website",
+    "link_url": "https://kaiomagalhaes.com/",
+    "avatar_url": null,
+    "bio": "Software Engineer, programmer lover, Jiu-Jitsu fighter and code addicted."
+  }
+]

@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "github_username": "fate-lovely",
+    "name": "CJ Ting",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "To be honest, I don't like JS that much, but I've been writting it professionally for a long time. If you use it carefully, it's a wonderful language."
+  },
+  {
+    "github_username": "fed135",
+    "name": "Frederic Charette",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Writing Javascript for Backend applications and open-source development are my passions. I’ve been coding for about 16 years now, and I feel that we’re probably living in one of the best possible times for Javascript software development."
+  },
+  {
+    "github_username": "froderik",
+    "name": "Fredrik Rubensson",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "So I am not that great at Javascript but I have touched it a lot over the years. I imagine myself helping out a bit with the easier exercises."
+  }
+]

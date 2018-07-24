@@ -1,1 +1,18 @@
-[]
+[
+    {
+"github_username": "Rahmeen14",
+    "name": "Rahmeen Habib",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I write C++ at the university, have 10 week professional experience with Java in an intern project and am an RGSoC scholar for a JavaScript Project"
+    },
+    {
+  "github_username": "rin",
+  "name": "Rin Raeuber",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "My grandma taught me BASIC, but I never learnt to whistle. – Originally a Ruby coder, I only recently learnt the ins and outs and this’ and thats of Javascript myself. Lost and overwhelmed? Been there and happy to help."
+}
+]

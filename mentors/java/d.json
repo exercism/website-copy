@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "das-vinculum",
+    "name": "Florian Zeidler",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am software engineer from Berlin, Germany. I work since 2013, often in legacy environments and mostly in Java."
+  },
+  {
+    "github_username": "dusan-rychnovsky",
+    "name": "Dusan Rychnovsky",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have worked with Java for many years, both professionally and as a hobby."
+  }
+]

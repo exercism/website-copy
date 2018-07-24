@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "github_username": "aldraco",
+    "name": "Ashley Drake",
+    "link_text": "Personal Site",
+    "link_url": "http://aldra.co",
+    "avatar_url": null,
+    "bio": "I enjoy writing Python at work and for personal projects; I love it's expressiveness and adaptability."
+  },
+  {
+        "github_username": "andreagrandi",
+        "name": "Andrea Grandi",
+        "link_text": "Website",
+        "link_url": "https://www.andreagrandi.it",
+        "avatar_url": null,
+        "bio": "I work as software developer at UK Government Digital Service. I like Python, Django, Machine Learning and security."
+   },
+  {
+    "github_username": "ajomadlabs",
+    "name": "Ajo John",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Javascript. Great fan of Vuejs. Loves Open Source."
+  },
+  {
+    "github_username": "avremel",
+    "name": "Avremel Kaminetzky",
+    "link_text": "Personal Website",
+    "link_url": "http://avremel.work",
+    "avatar_url": null,
+    "bio": "I enjoy hacking with Python, it is my language of choice for prototyping and side projects."
+  },
+  {
+    "github_username": "axesilo",
+    "name": "David Carroll",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "My primary professional language is Python, which I like for its flexibility and expressiveness, but I also enjoy using Rust because of its power and high-quality tooling.  I'm a former CS professor."
+  }
+]

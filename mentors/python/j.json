@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "jonmcalder",
+    "name": "Jon Calder",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've got limited experience with Python, but have found it fun and useful to learn, especially as a data scientist. I hope to continue learning from others and to be able to assist them on their journey."
+  },
+  {
+    "github_username": "jgomo3",
+    "name": "Jesús Gómez",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "For years, Python is my default language of choice when solving computing problems in general. I'm a member of Python Venezuela."
+  }
+]
