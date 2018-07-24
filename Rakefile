@@ -38,6 +38,10 @@ task :test do
         if url !~ /^https?/
           errors << "Link URL must have HTTP protocol for %s in %s." % [username, file]
         end
+
+        if mentor["link_text"].to_s.include?("Github")
+          errors << "GitHub should be spelled with an uppercase 'H' for %s in %s." % [username, file]
+        end
       end
     rescue
       errors << "Invalid JSON in: %s" % file
