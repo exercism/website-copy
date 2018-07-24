@@ -10,9 +10,9 @@
   {
     "github_username" : "flyinggrizzly",
     "name" : "Sean DMR",
-    "link_text" : "null",
-    "link_url" : "null",
-    "avatar_url" : "null",
+    "link_text" : null,
+    "link_url" : null,
+    "avatar_url" : null,
     "bio" : "(He/him pronouns). I've been a Ruby developer for a couple of years (since 2016ish), and I've been helped along immensely by friends and the community--I'm looking forward to paying that back! When I'm not working with code, I'm probably playing or making tabletop RPGs."
   }
 ]
