@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Ruby for its expressiveness, readability and the awesome community. I learnt a lot of good practices in Ruby while solving exercises on exercism and later started using it to mentor people in my workplace. Now I am really excited to do it on a wider scale!"
+  },
+  {
+    "github_username": "tryantwit",
+    "name": "Tim Ryan",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been working professionally with Ruby on the backend for about 5 years. Looking forward to share my love of Ruby."
   }
 ]
