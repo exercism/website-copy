@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "Bert-Proesmans",
+    "name": "Bert Proesmans",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://bert-proesmans.github.io/BertFace.svg",
+    "bio": "I've spent a lot of time inside its documentation, on the users forum and IRC. I'm almost celebrating my first year of Rust development."
+  }
+]
