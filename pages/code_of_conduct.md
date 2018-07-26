@@ -1,15 +1,27 @@
-This policy was adopted from the Front-end London Slack community.
+### Introduction
 
-_This policy is a "living" document, and subject to refinement and expansion in the future. This policy applies to every Exercism entity or event, including but not limited to the Slack community, Twitter chats and GitHub posts._
+Exercism is a platform centered around empathetic conversation. We have a low tolerance for communication that makes anyone feel unwelcome, unsupported, insulted or disciminated against.
 
-The simple version:
+### What to do if you see something wrong
 
+If you see or experience abuse, harassment, discrimination, or feel unsafe or upset, please email abuse@exercism.io. We will take your report seriously.
+
+### Enforcement
+
+We actively monitor for CoC violations and take any reports of violations extremely seriously. We have banned contributors, mentors and users due to violations. 
+
+After a report we view that person's conversation history on Exercism and related communication channels and attempt to understand whether someone has deliberately broken the CoC, or accidently crossed a line. We generally reach out to the person that has been reported to discuss any concerns we have and warn them that repeated violations will result in a ban. However, if we feel it is approprate, we will also ban people on a first offence. Equally, some times we decide that no action is required and that no violation has occurred. We try to be fair, but will err on the side of protecting the culture of our community.
+
+### The simple version
+
+- be empathetic
 - be welcoming
 - be kind
 - be honest
 - be supportive
+- be polite
 
-The details:
+### The details
 
 Exercism should be a safe place for everybody regardless of
 - gender, gender identity or gender expression
@@ -19,15 +31,14 @@ Exercism should be a safe place for everybody regardless of
 - race
 - age
 - religion
-
-anything else you can think of.
+- anything else you can think of.
 
 As someone who is part of this community, you agree that:
 
 - We are collectively and individually committed to safety and inclusivity.
 - We have zero tolerance for abuse, harassment, or discrimination.
 - We respect people’s boundaries and identities.
-- We refrain from using language that can be considered oppressive (systemically or otherwise), eg. sexist, racist, homophobic, transphobic, ableist, classist, etc. - this includes (but is not limited to) various slurs.
+- We refrain from using language that can be considered offensive or oppressive (systemically or otherwise), eg. sexist, racist, homophobic, transphobic, ableist, classist, etc. - this includes (but is not limited to) various slurs.
 - We avoid using offensive topics as a form of humour.
 
 We actively work towards:
@@ -53,12 +64,15 @@ These things are NOT OK.
 
 Be aware of how your actions affect others. If it makes someone uncomfortable, stop.
 
-If you say something that is found offensive, and you are called out on it, let’s:
+If you say something that is found offensive, and you are called out on it, try to:
 
 - Listen without interruption.
 - Believe what the person is saying & do not attempt to disqualify what they have to say.
 - Ask for tips / help with avoiding making the offence in the future.
 - Apologise and ask forgiveness.
-- Failing to follow the Code of Conduct as described in this document carries consequences. For minor infractions, you may be temporarily suspended from using Exercism. Upon repeat offenses, or if the community believes you are not acting in good faith, you may be asked to leave permanently.
 
-If you experience abuse, harassment, discrimination, or feel unsafe, email abuse@exercism.io.
+### History
+
+This policy was initially adopted from the Front-end London Slack community and has been modified since. A version history can be seen on [GitHub](https://github.com/exercism/website-copy/edit/master/pages/code_of_conduct.md).
+
+_This policy is a "living" document, and subject to refinement and expansion in the future. This policy applies to the Exercism webiste and any Exercism entity or event, including but not limited to the Slack community, Twitter chats and GitHub posts._
