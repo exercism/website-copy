@@ -2,7 +2,7 @@
 
 Exercism is a platform centered around empathetic conversation. We have a low tolerance for communication that makes anyone feel unwelcome, unsupported, insulted or disciminated against.
 
-### What to do if you see something wrong
+### Seen or experienced something uncomfortable?
 
 If you see or experience abuse, harassment, discrimination, or feel unsafe or upset, please email abuse@exercism.io. We will take your report seriously.
 
