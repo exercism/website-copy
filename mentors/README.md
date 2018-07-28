@@ -47,7 +47,6 @@ Aim for approximately 200-250 characters for the bio.
 The `link_url` and `link_text` are for linking to a personal site, if you want to.
 
 Note that if you leave a field `null`, we will use the content from your public GitHub profile.
-If you want to leave a field blank, set it to an empty string.
 
 Please create a Pull Request in this repository, which we will review and merge.
 
