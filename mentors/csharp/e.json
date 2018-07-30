@@ -6,5 +6,13 @@
     "link_url": "http://www.erikschierboom.com/",
     "avatar_url": "https://nl.gravatar.com/userimage/27030165/64dc5009cee6a1177883121d464d7743.jpg",
     "bio": "I am a developer with a passion for learning new languages. C# is a well-designed and expressive language that I love programming in."
+  },
+  {
+    "github_username": "elemeno",
+    "name": "Edward Rustin",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a Consultant and a Tech Lead who runs teams of developers, mostly working in C#. I've been writting C# for over a decade, building anything from trading platforms to search engines to smaller webAPIs for my own projects."
   }
 ]
