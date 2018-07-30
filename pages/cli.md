@@ -17,10 +17,10 @@ exercism help
 ```
 
 ### Configuration
-You need to tell the tool who you are. You can find your token in your [settings page](http://exercism.io/my/settings).
+You need to tell the tool who you are. You can find your API key in your [settings page](http://exercism.io/my/settings).
 
 ```
-exercism configure --token=YOUR_API_TOKEN
+exercism configure --key=YOUR_API_KEY
 ```
 
 ### Troubleshooting
