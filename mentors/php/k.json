@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I do PHP for the past few years. I enjoy helping people and doing open source. Love clean code. Never stop learning is the motto."
+  },
+  {
+	"github_username": "kephas",
+	"name": "Pierre Thierry",
+	"link_text": null,
+	"link_url": null,
+	"avatar_url": "https://en.gravatar.com/userimage/25385857/3c8f856e5a2977e9abcc5bbc6a784907.png?size=200",
+	"bio ": "PHP was my first professional programming language. Now I'm trying to apply all the wisdom I gathered in other languages in it…"
   }
 ]
