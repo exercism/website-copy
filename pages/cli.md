@@ -9,7 +9,7 @@ If you just want to download the CLI manually and work out how to use it, you ca
 
 If you have a previous version of the CLI and want to upgrade, please read [these instructions](https://github.com/exercism/website-copy/blob/master/pages/cli_v1_to_v2.md).
 
-### Basic Usage
+### Basic usage
 Run the help subcommand to get the full list of available commands.
 
 ```bash
