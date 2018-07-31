@@ -21,6 +21,6 @@ We know using a new product can be daunting, and Exercism is a little complicate
 
 You can always get the [latest release on GitHub](http://github.com/exercism/cli/releases/latest).
 
-### Still Stuck?
+### Still stuck?
 
 Check out our [FAQs](/faqs) or [contact us](/contact).
