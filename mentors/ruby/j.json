@@ -38,5 +38,13 @@
     "link_url": null,
     "avatar_url": null,
      "bio": "I love Ruby! I have been writing Ruby for more than 5 years. Ruby is a joy to use. It is expressive and readable with a wonderful community. I am excited to help you get started!"
+  },
+  {
+    "github_username": "joeltaylor",
+    "name": "Joel Taylor",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Ruby was my gateway from English-lit to programming. I've been using it professionally for over five years and love it!"
   }
 ]
