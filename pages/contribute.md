@@ -5,4 +5,4 @@ There are three main ways to contribute to Exercism:
 - Get involved in creating and managing a language track and eventually [become a maintainer](/become-a-maintainer).
 - Report issues on [GitHub](https://github.com/exercism/exercism.io/issues).
 
-Thanks! :)
+Thanks! 🙂
