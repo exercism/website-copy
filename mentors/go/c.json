@@ -6,5 +6,13 @@
     "link_url": "https://gitlab.com/cadoma",
     "avatar_url": null,
     "bio": "I only started learning Go about a year ago but I've quickly come to love it. I hope I can help you learn to love it too!"
+  },
+  {
+    "github_username": "clagraff",
+    "name": "Curtis La Graff",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/clagraff",
+    "avatar_url": "https://i.imgur.com/fsN440Q.png",
+    "bio": "I've come to love working in Gol and Python, and am always on the lookout for the next big thing to pickup. There is always something new to learn!"
   }
 ]
