@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "mawis",
+    "name": "Matthias Wimmer",
+    "link_text": "Matthias' Blog",
+    "link_url": "https://matthias.wimmer.name/",
+    "avatar_url": null,
+    "bio": "Professionaly I do embedded programming in a mixture of C and Rust code. Coding in Clojure and 10+ years Java before. I couldn't apply Haskell directly at work so far, but feel how it influenced my way of programming in other languages as well."
+  }
+]
