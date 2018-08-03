@@ -6,7 +6,7 @@ Tracks can be completed in two modes on Exercism - Mentored Mode and Independent
 
 Mentored Mode gives you the full Exercism experience. The track progresses in a structured manner, teaching you a new skill with each exercise. Every time you submit a solution a mentor will give you feedback and advice on how to improve your code. Once you've made a little progress, they'll approve your solution and you can unlock the next step in the track.
 
-Every time you complete a solution, you'll also extra bonus exercises. These are designed to give you opportunities to practice what you've learnt so far. There are lots of bonus exercises so you should always have some new challenge to be getting on with while you're waiting for our mentors to review your exercises.
+Every time you complete a solution, you'll also unlock extra bonus exercises. These are designed to give you opportunities to practice what you've learnt so far. There are lots of bonus exercises so you should always have some new challenge to be getting on with while you're waiting for our mentors to review your exercises.
 
 We try to respond to all core submissions within 24hrs, but as our mentors are volunteers helping in their evenings and weekends, we can't guarantee that we will hit that goal. Our bonus exercises hopefully mean you won't get frustrated waiting for feedback :)
 
