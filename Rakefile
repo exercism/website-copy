@@ -16,14 +16,9 @@ task :test do
 
       mentors.each do |mentor|
         url = mentor["link_url"]
-        next if url.nil?
+        next if url.nil? || url.empty?
 
         username = mentor["github_username"]
-
-        if url.strip.empty?
-          errors << "Link URL should be null for %s in %s" % [username, file]
-          next
-        end
 
         if url.strip == "null"
           errors << "Link URL should be null, not the string 'null' for %s in %s." % [username, file]
