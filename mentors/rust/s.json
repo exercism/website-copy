@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Rust is a revolutionary language that is growing and improving fast. I am proud to have been promoting Rust in my own company leading to incredible results. It covers low-level programming while offering high-level abstractions which for systems developers, it's a blessing."
+  },
+  {
+    "github_username": "skade",
+    "name": "Florian Gilcher",
+    "link_text": "Yakshaves, my personal snippet space",
+    "link_url": "https://yakshav.es",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/47542?s=460&v=4",
+    "bio": "I'm a Rustacean since 5 years and member of the Rust project. I lead the events team and contirbute to the community team. I own a Rust company. I train Rust professionally, but still got a lot to learn."
   }
 ]
