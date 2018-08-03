@@ -14,5 +14,13 @@
     "link_url": "https://github.com/oliakremmyda",
     "avatar_url": null,
     "bio": "I'm a developer for 4 years and the last year I have been working with Ruby. Exercism is a great help to get over the C and C++ habits and move to the Ruby way of thinking. Likewise, it makes me so happy to be able to give back to this community as a mentor!"
+  },
+  {
+    "github_username": "orenyk",
+    "name": "Oren Kanner",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/orenyk",
+    "avatar_url": null,
+    "bio": "I'm a lapsed mechanical engineer and robotocist turned software developer, deeply in love with Ruby (although Elixir is pretty great too). Currently the Application Development Manager @ Yale University."
   }
 ]
