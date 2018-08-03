@@ -20,7 +20,7 @@ We know using a new product can be daunting, and Exercism is a little complicate
 
 ###### Iterations, resubmit 
 11. Once you've received feedback, you can make some changes to your solution and then resubmit it (see step 8). This may happen a couple of times before the solution is approved. 
-12. Once the solution is approved by a mentor, you click 'complete' to mark the solution completed. This will unlock lots more exercises
+12. Once the solution is approved by a mentor, you click 'complete' to mark the solution completed. This will unlock lots more exercises.
 
 ###### Get involved: mentoring or maintaining a track    
 13. You're now an Exercism pro! :)
