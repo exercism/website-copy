@@ -16,7 +16,7 @@ task :test do
 
       mentors.each do |mentor|
         url = mentor["link_url"]
-        next if url.nil?
+        next if url.nil? || url.empty?
 
         username = mentor["github_username"]
 
