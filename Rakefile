@@ -20,16 +20,6 @@ task :test do
 
         username = mentor["github_username"]
 
-        if url.strip.empty?
-          errors << "Link URL should be null for %s in %s" % [username, file]
-          next
-        end
-
-        if url.strip == "null"
-          errors << "Link URL should be null, not the string 'null' for %s in %s." % [username, file]
-          next
-        end
-
         if url.strip != url
           errors << "Link URL has extraneous whitespace for %s in %s." % [username, file]
           next
