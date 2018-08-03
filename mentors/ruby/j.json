@@ -46,5 +46,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Ruby was my gateway from English-lit to programming. I've been using it professionally for over five years and love it!"
-  }
+  },
+  {
+    "github_username": "jwkyle",
+    "name": "Jim Kyle",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "After years of light web development in the financial industry, I changed course to follow my passion for software development. I love working with Ruby and Javascript and am currently building my knowledge around Elixir, Java, React, and Angular."
+  }  
 ]
