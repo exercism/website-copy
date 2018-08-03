@@ -31,3 +31,7 @@ There is a document that [explains the changes](/about-v1-to-v2). We hope you en
 The new site has a brand new CLI, and also needs some extra metadata for your exercise. Read about how to [upgrade your CLI and migrate your solutions for the new site](/cli-v1-to-v2).
 
 If that doesn't help, or you didn't use the old version of the CLI, please read through the [CLI Walkthrough](https://exercism.io/cli-walkthrough). If that doesn't help either, open an issue on [exercism/exercism.io](https://github.com/exercism/exercism.io) and we will help you get it sorted out.
+
+### How do new language tracks get added to the site?
+
+A new language track gets created when a member of the community takes the lead on it and becomes a maintainer of the track. If you'd like to get involved in helping set one up, there are instructions here: https://github.com/exercism/request-new-language-track/blob/master/README.md
