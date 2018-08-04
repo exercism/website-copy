@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "samscott89",
+    "name": "Sam Scott",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://s.gravatar.com/avatar/1af7ca7cc713a2f84159886f12e75406",
+    "bio": "For me, Rust and Cryptography has been a perfect match. As I grow my own company, I plan on sticking with Rust and want to help encourage people to pick it up."
+  },
+  {
     "github_username": "sebasmagri",
     "name": "Sebastian Magri",
     "link_text": null,
