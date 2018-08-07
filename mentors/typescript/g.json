@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "gdelgado14",
+    "name": "Giorgio Delgado",
+    "link_text": "Personal Site",
+    "link_url": "https://gdelgado.ca",
+    "avatar_url": null,
+    "bio": "I'm a full-stack developer interested in functional programming and statically-typed languages. The geek in me thinks that the world needs more Elm."
+  }
+]
