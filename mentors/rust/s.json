@@ -30,5 +30,13 @@
     "link_url": "https://yakshav.es",
     "avatar_url": "https://avatars0.githubusercontent.com/u/47542?s=460&v=4",
     "bio": "I'm a Rustacean since 5 years and member of the Rust project. I lead the events team and contirbute to the community team. I own a Rust company. I train Rust professionally, but still got a lot to learn."
+  },
+  {
+    "github_username": "Stef-Gijsberts",
+    "name": "Stef Gijsberts",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Rust and its community. The way the Rust compiler talks to the user makes me want to hug it."
   }
 ]
