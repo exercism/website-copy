@@ -15,10 +15,16 @@ task :test do
       end
 
       mentors.each do |mentor|
+        username = mentor["github_username"]
+        name = mentor["name"]
+
+        if name == "" || name.nil?
+          errors << "Name can't be blank for %s in %s." % [username, file]
+          next
+        end
+
         url = mentor["link_url"]
         next if url.nil? || url.empty?
-
-        username = mentor["github_username"]
 
         if url.strip == "null"
           errors << "Link URL should be null, not the string 'null' for %s in %s." % [username, file]
