@@ -7,5 +7,14 @@
     "avatar_url": null,
     "bio":
       "I use Elm for all my personal projects where I need a frontend framework (instead of React for example). Elm's development is \"slow\" compared to other languages but this makes it even more appealing to me."
+  },
+  {
+    "github_username": "strickinato",
+    "name": "Aaron Strick",
+    "link_text": "website",
+    "link_url": "http://aaronstrick.com",
+    "avatar_url": null,
+    "bio":
+      "Elm was my introduction to typed languages and a gateway for me to functional programming. I was lucky enough to learn it on the job, and have since adopted it as my main frontend language."
   }
 ]
