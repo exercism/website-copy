@@ -38,4 +38,4 @@ A new language track gets created when a member of the community takes the lead 
 
 ### What happened to my Team from the old site?
 
-We were expecting to launch it at the same time as the new site, but we didn't quite have time to finish it. It will be coming in the next few days.
+We were expecting to launch it at the same time as the new site, but we didn't quite have time to finish it. Teams will be coming as soon as we have time to work on it.
