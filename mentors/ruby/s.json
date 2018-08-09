@@ -35,5 +35,13 @@
     "github_username": "spaecpotato",
     "name": "James McLaren",
     "bio": "I started writing Ruby 4 years ago when I co-founded Workplace Arcade. I quickly fell in love with the language and have been using it ever since. I'm very passionate about mentoring and co-organize a local ruby meetup."
+  },
+  {
+    "github_username": "strickinato",
+    "name": "Aaron Strick",
+    "link_text": "website",
+    "link_url": "http://aaronstrick.com",
+    "avatar_url": null,
+    "bio": "In coding, ruby was my first love. I've been writing it professionally for >4 years and love how expressive it can be. Have you seen the ruby poetry?"
   }
 ]
