@@ -1,5 +1,13 @@
 [
     {
+        "github_username": "DanCouper",
+        "name": "Daniel Couper",
+        "link_text": null,
+        "link_url": null,
+        "avatar_url": null,
+        "bio": "I've programmed JS professionally for the last five years: sure, it has it's pain points, and the tooling/package management is somewhat of a hellscape, but on good days I kinda love it."
+    },
+    {
         "github_username": "dfimbres",
         "name": "David Fimbres",
         "link_text": null,
