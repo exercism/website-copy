@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I enjoy writing Haskell because of its power and robustness. I also love that it stretches my brain in weird and wonderful ways."
+  },
+  {
+    "github_username": "thelostlambda",
+    "name": "Brooks J Rady",
+    "link_text": "thelostlambda.xyz",
+    "link_url": "http://thelostlambda.xyz/",
+    "avatar_url": null,
+    "bio": "A functional programmer who loves Haskell, Lisp, Rust, and Elixir."
   }
 ]
