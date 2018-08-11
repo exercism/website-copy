@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "thelostlambda",
+    "name": "Brooks J Rady",
+    "link_text": "thelostlambda.xyz",
+    "link_url": "http://thelostlambda.xyz/",
+    "avatar_url": null,
+    "bio": "A functional programmer who loves Haskell, Lisp, Rust, and Elixir."
+  }
+]
