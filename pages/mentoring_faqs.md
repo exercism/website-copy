@@ -56,6 +56,9 @@ Please reach out to us at abuse@exercism.io and we will try to fix or resolve th
 ### How can I stop mentoring a track?
 If you'd like to stop mentoring a track please email us at mentors@exercism.io and let us know.
 
+### Why are tests marked as skipped?
+The tests are marked as skipped to encourage people to use TDD to do one at a time. When people submit their solution and you view it in the UI, you're seeing the original tests that the user was sent, not their final tests file.
+
 ###  Can I mentor another language?
 Yes! To mentor another language go to the "Configure your mentor settings" page via the main menu and select the languages you want to mentor.
 
