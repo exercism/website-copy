@@ -14,5 +14,13 @@
   "link_url": null,
   "avatar_url": null,
   "bio": "My grandma taught me BASIC, but I never learnt to whistle. – Originally a Ruby coder, I only recently learnt the ins and outs and this’ and thats of Javascript myself. Lost and overwhelmed? Been there and happy to help."
-}
+},
+  {
+    "github_username": "ryoia",
+    "name": "Julia Gao",
+    "link_text": null,
+    "link_url": "http://ryoia.github.io",
+    "avatar_url": null,
+    "bio": "I am a front-end developer who has been using vanilla JavaScript for the past three years. I would love to help others on this track."
+  }
 ]
