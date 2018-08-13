@@ -1,8 +1,10 @@
-[{
+[
+  {
     "github_username": "neodynia",
     "name": "Ryan Boris",
     "link_text": "GitHub",
-    "link_url": "https://github.com/naltun",
+    "link_url": "https://github.com/neodynia",
     "avatar_url": null,
-    "bio": "I am extremely fond of *nix systems, especially GNU + Linux (the combined OS). BASH lets me truly unlock my system's potential. As a student of BASH myself, I look to learn and share, so you can 'unlock' your system, too."
-  }]
+    "bio": "I have written CoffeeScript as part of various JS frameworks, open source projects, and profesionally.  I've also taught CoffeeScript via webinar and tutorials that were part of my weekly dev-based webcast.  Please feel free to ask me any questions!"
+  }
+]
