@@ -15,5 +15,13 @@
   "link_url": null,
   "avatar_url": null,
   "bio": "I love Ruby and have been using it professionally for more than 10 years. I also have been spending time on how to write a easy to read and easy to extend Ruby code. I am new to mentoring and a non-native English speaker. Please excuse my brevity. If my feedback to you is rude, first I am sorry and second it was not my intention. Please do reach out to me, it gives me an opportunity to learn through feedback for mentoring."
-}
+  },
+  {
+    "github_username": "byronanderson",
+    "name": "Byron Anderson",
+    "link_text": "Byron's Programming Blog",
+    "link_url": "https://programmingsimplicity.com",
+    "avatar_url": null,
+    "bio": "Ruby launched my software development career, and I love its simple syntax and minimal amount of concepts.  The Ruby community has also taught me so much that I can bring to whatever language I am using."
+  }
 ]
