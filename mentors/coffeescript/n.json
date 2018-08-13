@@ -1,1 +1,10 @@
-[]
+[
+	{
+		"github_username": "neodynia",
+		"name": "Ryan Boris",
+		"link_text": "GitHub",
+		"link_url": "https://github.com/neodynia",
+		"avatar_url": null,
+		"bio": "I have worked and continue to work with CoffeeScript in open source contributions and professional projects.  I 		have also taught CoffeeScript topics in webinars and on my weekly livecast educational videos.  Please feel free to ask questions!"
+	}
+]
