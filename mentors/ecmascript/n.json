@@ -6,6 +6,15 @@
   "link_url": "https://gofan.co",
   "avatar_url": null,
   "bio": "I've been developing in Ruby for 6 years. We use ECMAScript heavily at GoFan, I am excited to be a mentor."
-}
+  },
+  
+  {
+    "github_username": "neodynia",
+    "name": "Ryan Boris",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/neodynia",
+    "avatar_url": null,
+    "bio": "I use ECMAScript in my personal, open-source contributions and professional work as well.  I have also taught webinars on ECMAScript topics and project walkthroughs that used it.  I also do a weekly webinar series and ECMAScript is a recurring theme.  Please feel free to ask any questions!"
+  }
 
 ]
