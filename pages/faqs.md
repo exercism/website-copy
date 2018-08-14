@@ -35,3 +35,7 @@ If that doesn't help, or you didn't use the old version of the CLI, please read 
 ### How do new language tracks get added to the site?
 
 A new language track gets created when a member of the community takes the lead on it and becomes a maintainer of the track. If you'd like to get involved in helping set one up, there are [instructions here](https://github.com/exercism/request-new-language-track/blob/master/README.md).
+
+### What happened to my Team from the old site?
+
+We have a brand new dedicated Teams website coming soon. We will tweet out as soon as it's launched. Thanks for your patience!
