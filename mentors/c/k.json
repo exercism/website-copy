@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Rust and C and use them at my day job in automotive. I work with Embedded software but I'm also reasonably familiar with systems programming as well"
+  },
+  {
+    "github_username": "karthiknayak",
+    "name": "Karthik Nayak",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "The language which got me interested in programming. Most of my open source contributions have been in C."
   }
 ]
