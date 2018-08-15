@@ -1,4 +1,12 @@
-[
+
+[{
+  "github_username": "Vitruvia",
+  "name": "Thales Alexandre F. Albuquerque",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "I'm a medical student who programs as a hobby. I love python for it's elegance and readability; it was my first langauge and it remains my favorite."
+},
     {
         "github_username": "valrus",
         "name": "Ian McCowan",
@@ -17,3 +25,4 @@
         "bio": "I am a physics student with interest and experience in computational methods, especially using Python. I would like to help others learn to use its expressive syntax and extensive libraries to facilitate clean and speedy development."
     }
 ]
+
