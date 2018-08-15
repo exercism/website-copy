@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I use Python nearly every day and believe everyone can benefit from its simplicity and effectiveness to demonstrate high-level Computer Science concepts and automate everyday tasks."
-  }
+  },
+  {
+    "github_username": "nitishch",
+    "name": "Nitish Chinta",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I use Python for my side projects - mostly on competitive programming and machine learning. I contributed to CPython project for some time."
+  },
 ]
