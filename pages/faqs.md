@@ -38,4 +38,4 @@ A new language track gets created when a member of the community takes the lead 
 
 ### What happened to my Team from the old site?
 
-We have a brand new dedicated Teams website coming soon. We will tweet out as soon as it's launched. Thanks for your patience!
+We have a brand new dedicated Teams website coming soon. We will tweet out as soon as it's launched. Follow us at [@exercism_io](https://twitter.com/exercism_io).
