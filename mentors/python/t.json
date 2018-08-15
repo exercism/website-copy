@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "tewe",
+    "name": "Tobias Weber",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I came to Python for the GUI support, and I stayed because it is simple enough conceptually that humans can understand how it works."
+  },
+  {
 	"github_username": "thiagoeh",
 	"name": "Thiago Hickmann",
 	"link_text": null,
