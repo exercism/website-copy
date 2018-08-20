@@ -21,5 +21,12 @@
         "link_url": "http://davidejones.com",
         "link_text": "Website",
         "bio": "Software engineer and a fan of many programming languages"
+    },
+    {
+        "github_username": "donut",
+        "name": "Donovan Mueller",
+        "link_url": null,
+        "link_text": null,
+        "bio": "I've been programming in JavaScript for the last 13+ years. I've learned to appreciate its squishyness and flexibility, especially for small projects. It definitely can drive a man crazy, but with good architecture a lot can be done with it."
     }
 ]
