@@ -20,6 +20,7 @@
   - Adding 'Comment and Request changes' to mentoring UI, which will prompt the learner to submit another iteration (a little like Code Review on GitHub)
   - Adding difficulty filter to solution selector [#4105](https://github.com/exercism/exercism/issues/4105)
   - Showing more information (such as track backlog) on the dashboard [#4032](https://github.com/exercism/exercism/issues/4032)
+  - Improve mentoring notifications [#3883](https://github.com/exercism/exercism/issues/3883)
 
 - **Delete my account:** We need to give people the ability to delete their account without emailing Jeremy.
 
