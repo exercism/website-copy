@@ -1,3 +1,5 @@
+This is a rough guide of our roadmap for the next year. It's aim is to show priority order and when we hope to release new features. This list is in no-way comprehensive. Specifically it doesn't cover the huge amount of work that the maintainers put into improving the different tracks on the site. All times are estimates and may change at the whim of the people doing the work.
+
 ### One day - two weeks
 
 - **Teams:** We are building a dedicated site for teams. It will allow groups of people to complete exercises and mentor each other in a private space. We envision it being used by bootcamps, groups of friends, and colleagues at work. Teams on Exercism v1 was a really important feature for many people so restoring it is a top priority for us. We are close to launching and ironing out the last bugs.
@@ -32,7 +34,7 @@
 
 - **Allow users to change which iteraton is published:** At the moment only the most recent submisison is published. We will allow users to choose any of the iterations to make public.
 
-### Two to three months
+### Two months - three months
 
 - **Changelog:** We want to add a changelog into the site that all maintainers and contributors can add to. Rather than being a static page, this will be a functional product. We envisage that a maintainer would submit an entry saying "We've added a new exercise called XYZ to the ABC track". This would then appear on the changelog with a nice track icon, and the Track's twitter account (yes, every track will have its own account) will then tweet that out. The changelog will be filterable by track or topic and have built in searching.
 
@@ -44,7 +46,7 @@
 
 - **Improve accessibility:** There are various a11y improvements we are making, spearheaded by [@unused's plan here](https://github.com/exercism/website/pull/182).
 
-### Three - six months
+### Three months - six months
 
 - **Generate a examplar syllabus for the sample tracks:** We are actively working to explore what an examplar syllabus would look like for the Ruby track, considering things such as  learning pathways, goals, mentoring-burden. We will then explore where the gaps are and what new exercises might be created as part of this. Once we have made some basic progress we will widen the discussion to include a small set of sample tracks with active maintainers.
 
