@@ -10,6 +10,8 @@
 
 - **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this. [#4163](https://github.com/exercism/exercism/issues/4163)
 
+- **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
+
 - **Mentoring UI Improvements:**
   - Exposing the communal mentoring notes from GitHub to be visible directly within the UI.
   - Adding personalised mentor notes per exercise, viewable and editable within the UI. [#4083](https://github.com/exercism/exercism/issues/4083)
@@ -18,6 +20,8 @@
   - Showing more information (such as track backlog) on the dashboard [#4032](https://github.com/exercism/exercism/issues/4032)
 
 - **Delete my account:** We need to give people the ability to delete their account without emailing Jeremy.
+
+- **Improve experience of legacy or indepedent solutions in mentored mode:** When importing from legacy or independent mode have sepererate restricted queues for core and side exercises.
 
 ### Two to three months
 
