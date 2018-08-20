@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "jlao",
+    "name": "James Lao",
+    "link_text": "James' blog",
+    "link_url": "https://jameslao.com/",
+    "avatar_url": null,
+    "bio": "I write mostly C# professionally, but I have a passion for functional programming and lately Rust. I look forward to helping you anyway I can!"
+  }
+]
