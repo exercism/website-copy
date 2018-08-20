@@ -8,20 +8,22 @@
 
 - **Merging mentoring.exercism.io into the main site:** We want to streamline the sign up process, to remove the Google Form and the need to join slack to mentor. We have some challenges to do this, such as ensuring there is quality control before someone can go wild mentoring, but we have some ideas as to how to achieve this.
 
-- **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this.
+- **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this. [#4163](https://github.com/exercism/exercism/issues/4163)
 
 - **Mentoring UI Improvements:**
   - Exposing the communal mentoring notes from GitHub to be visible directly within the UI.
-  - Adding personalised mentor notes per exercise, viewable and editable within the UI.
+  - Adding personalised mentor notes per exercise, viewable and editable within the UI. [#4083](https://github.com/exercism/exercism/issues/4083)
   - Adding 'Comment and Request changes' to mentoring UI, which will prompt the learner to submit another iteration (a little like Code Review on GitHub)
-  - Adding difficulty filter to solution selector
-  - Showing more information (such as track backlog) on the dashboard
+  - Adding difficulty filter to solution selector [#4105](https://github.com/exercism/exercism/issues/4105)
+  - Showing more information (such as track backlog) on the dashboard [#4032](https://github.com/exercism/exercism/issues/4032)
 
 **Delete my account:** We need to give people the ability to delete their account without emailing Jeremy.
 
 ### Two to three months
 
 **Changelog:** We want to add a changelog into the site that all maintainers and contributors can add to. Rather than being a static page, this will be a functional product. We envisage that a maintainer would submit an entry saying "We've added a new exercise called XYZ to the ABC track". This would then appear on the changelog with a nice track icon, and the Track's twitter account (yes, every track will have its own account) will then tweet that out. The changelog will be filterable by track or topic and have built in searching.
+
+**Define a public API:** We want to define a public API that will allow other to integrate Exercism into their code editors [#4087](https://github.com/exercism/exercism/issues/4087).
 
 **Automated testing on the real site:** We want to create true integration tests that run against production that test sign up, track creation, mentoring and then delete the user. These will run after each deploy of both new code and changes to a track to ensure nothing has broken.
 
