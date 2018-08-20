@@ -4,7 +4,7 @@
 
 - **Fixing bugs:** There are still loads of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
 
--**Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).
+- **Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).
 
 ### One week - two months
 
@@ -35,7 +35,7 @@
 
 - **Improve maintainer tools:** We want to update the new website to allow for an easy and pleasent experience for track maintainers and will build out tools within the UI to allow them to more easily experiment with track setups.
 
--**Improve accessibility:** There are various a11y improvements we are making, spearheaded by [@unused's plan here](https://github.com/exercism/website/pull/182).
+- **Improve accessibility:** There are various a11y improvements we are making, spearheaded by [@unused's plan here](https://github.com/exercism/website/pull/182).
 
 ### Three - six months
 
