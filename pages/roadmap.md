@@ -22,7 +22,7 @@
 
 - **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
 
-- **Download link on all iterations** Add the download link and a link to instructions on all iterations in the student's view. [#4259](https://github.com/exercism/exercism/issues/4259]
+- **Download link on all iterations** Add the download link and a link to instructions on all iterations in the student's view. [#4259](https://github.com/exercism/exercism/issues/4259)
 
 - **Delete my account:** We need to give people the ability to delete their account without emailing Jeremy.
 
