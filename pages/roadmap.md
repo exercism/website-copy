@@ -1,4 +1,4 @@
-## One day to two weeks
+## One day - two weeks
 
 ### Teams
 
@@ -10,7 +10,7 @@ We are building a dedicated site for teams. It will allow groups of people to co
 
 There are still loads of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
 
-## One week to four weeks 
+## One week - one month
 
 ### Merging mentoring.exercism.io into the main site
 
@@ -38,7 +38,11 @@ We want to add a changelog into the site that all maintainers and contributors c
 
 We want to create true integration tests that run against production that test sign up, track creation, mentoring and then delete the user. These will run after each deploy of both new code and changes to a track to ensure nothing has broken.
 
-## Three to six months
+### Improve maintainer tools
+
+We want to update the new website to allow for an easy and pleasent experience for track maintainers and will build out tools within the UI to allow them to more easily experiment with track setups.
+
+## Three - six months
 
 ### Generate a examplar syllabus for the sample tracks
 
