@@ -28,7 +28,11 @@ We want to streamline the sign up process, to remove the Google Form and the nee
 
 We need to give people the ability to delete their account without emailing Jeremy.
 
-## Near Future
+## Mini-projects
+
+### Changelog
+
+We want to add a changelog into the site that all maintainers and contributors can add to. Rather than being a static page, this will be a functional product. We envisage that a maintainer would submit an entry saying "We've added a new exercise called XYZ to the ABC track". This would then appear on the changelog with a nice track icon, and the Track's twitter account (yes, every track will have its own account) will then tweet that out. The changelog will be filterable by track or topic and have built in searching.
 
 ### Automated testing ont the real site
 
