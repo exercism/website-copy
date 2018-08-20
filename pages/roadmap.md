@@ -4,15 +4,11 @@
 
 - **Fixing bugs:** There are still loads of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
 
-- **Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).
-
 ### One week - two months
 
+- **Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).e
+
 - **Merging mentoring.exercism.io into the main site:** We want to streamline the sign up process, to remove the Google Form and the need to join slack to mentor. We have some challenges to do this, such as ensuring there is quality control before someone can go wild mentoring, but we have some ideas as to how to achieve this.
-
-- **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this. [#4163](https://github.com/exercism/exercism/issues/4163)
-
-- **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
 
 - **Mentoring UI Improvements:**
   - Exposing the communal mentoring notes from GitHub to be visible directly within the UI.
@@ -21,6 +17,12 @@
   - Adding difficulty filter to solution selector [#4105](https://github.com/exercism/exercism/issues/4105)
   - Showing more information (such as track backlog) on the dashboard [#4032](https://github.com/exercism/exercism/issues/4032)
   - Improve mentoring notifications [#3883](https://github.com/exercism/exercism/issues/3883)
+
+- **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this. [#4163](https://github.com/exercism/exercism/issues/4163)
+
+- **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
+
+- **Download link on all iterations** Add the download link and a link to instructions on all iterations in the student's view. [#4259](https://github.com/exercism/exercism/issues/4259]
 
 - **Delete my account:** We need to give people the ability to delete their account without emailing Jeremy.
 
