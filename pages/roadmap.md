@@ -4,6 +4,8 @@
 
 - **Fixing bugs:** There are still loads of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
 
+-**Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).
+
 ### One week - two months
 
 - **Merging mentoring.exercism.io into the main site:** We want to streamline the sign up process, to remove the Google Form and the need to join slack to mentor. We have some challenges to do this, such as ensuring there is quality control before someone can go wild mentoring, but we have some ideas as to how to achieve this.
@@ -32,6 +34,8 @@
 - **Automated testing on the real site:** We want to create true integration tests that run against production that test sign up, track creation, mentoring and then delete the user. These will run after each deploy of both new code and changes to a track to ensure nothing has broken.
 
 - **Improve maintainer tools:** We want to update the new website to allow for an easy and pleasent experience for track maintainers and will build out tools within the UI to allow them to more easily experiment with track setups.
+
+-**Improve accessibility:** There are various a11y improvements we are making, spearheaded by [@unused's plan here](https://github.com/exercism/website/pull/182).
 
 ### Three - six months
 
