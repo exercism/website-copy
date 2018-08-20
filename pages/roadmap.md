@@ -6,12 +6,6 @@ We are building a dedicated site for teams. It will allow groups of people to co
 
 **Status:** Close to launching. Ironing out the last bugs.
 
-### Merging the Javascript and ECMAScript tracks
-
-We have decided to merge the Javascript and ECMAScript tracks. This will mean we can focus the work of the maintainers and mentors into one place, and improve the quality of our offering. 
-
-**Status:** We have a good plan for this with a couple of issues to iron out. [Tracking issue](https://github.com/exercism/javascript/issues/556)
-
 ### Fixing bugs
 
 There are still loads of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
@@ -24,8 +18,18 @@ We want to streamline the sign up process, to remove the Google Form and the nee
 
 ### Mentoring UI Improvements
 
-- Bringing the communal mentoring notes from GitHub to be visible directly within the UI.
-- Personalise mentor notes per exercise, viewable and editable within the UI.
+- Exposing the communal mentoring notes from GitHub to be visible directly within the UI.
+- Adding personalised mentor notes per exercise, viewable and editable within the UI.
 - Adding 'Comment and Request changes' to mentoring UI, which will prompt the learner to submit another iteration (a little like Code Review on GitHub)
-- Add difficulty filter to solution selector
-- Show more information (such as track backlog) on the dashboard
+- Adding difficulty filter to solution selector
+- Showing more information (such as track backlog) on the dashboard
+
+### Delete my account
+
+We need to give people the ability to delete their account without emailing Jeremy.
+
+## Near Future
+
+### Automated testing ont the real site
+
+We want to create true integration tests that run against production that test sign up, track creation, mentoring and then delete the user. These will run after each deploy of both new code and changes to a track to ensure nothing has broken.
