@@ -25,6 +25,10 @@
 
 - **Improve experience of legacy or indepedent solutions in mentored mode:** When importing from legacy or independent mode have sepererate restricted queues for core and side exercises.
 
+- **Allow deletion of iterations:** Often people submit iterations by default. This will allow people to delete them. [#3848](https://github.com/exercism/exercism/issues/3848)
+
+- **Allow users to change which iteraton is published:** At the moment only the most recent submisison is published. We will allow users to choose any of the iterations to make public.
+
 ### Two to three months
 
 - **Changelog:** We want to add a changelog into the site that all maintainers and contributors can add to. Rather than being a static page, this will be a functional product. We envisage that a maintainer would submit an entry saying "We've added a new exercise called XYZ to the ABC track". This would then appear on the changelog with a nice track icon, and the Track's twitter account (yes, every track will have its own account) will then tweet that out. The changelog will be filterable by track or topic and have built in searching.
