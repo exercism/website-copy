@@ -34,5 +34,13 @@
     "avatar_url": null,
     "bio": "I am a cheerful guy who really enjoys programming, speaking and extending knowledge. I have been working commercially with Elixir since March 2017. I am thrilled to help."
 
-  }
+  },
+  {
+    "github_username": "svenito",
+    "name": "Sven Steinbauer",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/31278?s=460&v=4",
+    "bio": "I'm a C++ and Python developer and am in the process of learning Elxir. I always feel that teaching is a great way to learn."
+  } 
 ]
