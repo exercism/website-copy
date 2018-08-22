@@ -38,5 +38,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Rust and its community. The way the Rust compiler talks to the user makes me want to hug it."
+  },
+  {
+    "github_username": "svenito",
+    "name": "Sven Steinbauer",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/31278?s=460&v=4",
+    "bio": "I am a C++ and Python developer who is learning Rust. I feel that teaching is a great way to learn, so I am hoping to give back a little while learning more myself."
   }
 ]
