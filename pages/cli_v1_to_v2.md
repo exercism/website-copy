@@ -11,6 +11,14 @@ The easiest way to ensure that you have the file is to copy your old solution so
 
     exercism download --exercise=THE_EXERCISE --track=THE_TRACK
 
+Example:
+
+    exercism download --exercise=hello-world --track=java
+
+Or:
+
+    exercism d -e hello-world -t java
+
 Then you will be able call `exercism submit` with the solution file(s).
 
     exercism submit path/to/file1 [path/to/file2 ...]
