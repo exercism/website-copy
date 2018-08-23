@@ -14,5 +14,13 @@
     "link_url": "https://nobbz.gitlab.io/",
     "avatar_url": null,
     "bio": "I found about elixir on exercism and thaught it were just another ruby, dropped it because I haven't had classes, read more about it, felt in love and cut off my relationship with ruby (nearly)."
+  },
+  {
+    "github_username": "Ninigi",
+    "name": "Fabian Zitter",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I started using elixir around 2016 and we have been using it in our company since 2017. I love the language for how well it translates what I want to do into code."
   }
 ]
