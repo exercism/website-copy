@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "mem",
+    "name": "Marcelo Magallon",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have been programming in Go for several years both professionally and for hobby projects. I've come to love the simplicity and expressiveness of the language, as well as the wonderful community of people that has grown around it."
+  }
+]
