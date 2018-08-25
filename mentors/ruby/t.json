@@ -14,13 +14,5 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I've been working professionally with Ruby on the backend for about 5 years. Looking forward to share my love of Ruby."
-  },
-  {
-    "github_username": "tylerferraro",
-    "name": "Tyler Ferraro",
-    "link_text": "GitHub",
-    "link_url": "https://www.github.com/tylerferraro",
-    "avatar_url": "https://www.gravatar.com/avatar/f30193798802607aa97082c4529fcc28",
-    "bio": "I have been building web applications in Ruby on Rails for over 8 years. It has a great ecosystem and supportive community that I enjoy being a part of."
   }
 ]
