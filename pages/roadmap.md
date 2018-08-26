@@ -8,7 +8,9 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
 
 ### One week - two months
 
-- **Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).e
+- **Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).
+
+- **Add a button for mentors to report learners** [#4306](https://github.com/exercism/exercism/issues/4306)
 
 - **Merging mentoring.exercism.io into the main site:** We want to streamline the sign up process, to remove the Google Form and the need to join slack to mentor. We have some challenges to do this, such as ensuring there is quality control before someone can go wild mentoring, but we have some ideas as to how to achieve this.
 
