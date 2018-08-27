@@ -30,5 +30,13 @@
     "link_url": "https://github.com/armilam",
     "avatar_url": "https://s.gravatar.com/avatar/75c27fedfe52486cdf1fd7cda1146281?s=254&r=g",
     "bio": "I am a fullstack web developer with experience in Ruby, Elixir, and Javascript (and wrote Java in a previous life). I love Elixir due to it's syntax (especially pattern matching) and the excellent concurrency primitives that it receives via Erlang and OTP."
+  },
+  {
+    "github_username": "abhyuditjain",
+    "name": "Abhyudit Jain",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/abhyuditjain",
+    "avatar_url": null,
+    "bio": "I've been working with mostly JavaScript professionally and do some personal projects in Elixir. I love the whole philosophy of Erlang/Elixir's `Let it crash`. I love all the abstactions it provides in OTP."
   }
 ]
