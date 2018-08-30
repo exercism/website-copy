@@ -24,6 +24,15 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a CS student in Switzerland. I use the most of the time Python in my courses. My specialization is information processing (NLP, machine learning, deep learning, ...)."
+  },
+
+  {
+    "github_username": "cglacet",
+    "name": "Christian Glacet",
+    "link_text": null,
+    "link_url": "https://github.com/cglacet",
+    "avatar_url": null,
+    "bio": "I'm a former student from the university of Bordeaux, where I also taught for three years. I love graph problems, I'm specialized in distributed routing problems. I also love python, I'm always happy to learn/share new things :)."
   }
 ]
 
