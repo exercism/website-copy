@@ -64,5 +64,14 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have used Python mainly for Machine Learning/Reinforcement Learning for my Master thesis."
+  },
+  {
+    "github_username": "ssarkar2",
+    "name": "Sayantan Sarkar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "Have been using Python for ~5 years for machine learning, deep learning, computer vision, data science and quick scripting purposes"
   }
 ]
