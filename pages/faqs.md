@@ -32,12 +32,6 @@ There is a document that [explains the changes](/about-v1-to-v2). We hope you en
 
 A new language track gets created when a member of the community takes the lead on it and becomes a maintainer of the track. If you'd like to get involved in helping set one up, there are [instructions here](https://github.com/exercism/request-new-language-track/blob/master/README.md).
 
-## Team FAQs
-
-### What happened to my Team from the old site?
-
-We have a brand new dedicated Teams website coming soon. We will tweet out as soon as it's launched. Follow us at [@exercism_io](https://twitter.com/exercism_io).
-
 ## Exercism CLI FAQs
 
 ### I can't submit!
@@ -45,4 +39,33 @@ We have a brand new dedicated Teams website coming soon. We will tweet out as so
 The new site has a brand new CLI, and also needs some extra metadata for your exercise. Read about how to [upgrade your CLI and migrate your solutions for the new site](/cli-v1-to-v2).
 
 If that doesn't help, or you didn't use the old version of the CLI, please read through the [CLI Walkthrough](https://exercism.io/cli-walkthrough). If that doesn't help either, open an issue on [exercism/exercism.io](https://github.com/exercism/exercism.io) and we will help you get it sorted out.
+
+### How to check if a new version of the CLI is available?
+The version command `exercism version` show the running version of the Exercism  CLI. By providing the latest command flag you check if there is a newer version of the CLI available `exercism version -l`
+
+### How do to upgrade to the latest version of the CLI?
+  The exercism CLI has an upgrade command that can be used to upgrade your CLI in-place (full replacement of existing binary). The command `exercism upgrade` will [check if a new version is available] and upgrade to the latest available version of the CLI.
+
+### Permission denied errors when upgrading!
+If you receive a permission error when trying to upgrade the CLI, chances are the binary has been installed into a directory that you don’t have permission writing to.
+
+To resolve this issue check the path of the Exercism CLI `which exercism` on Linux and MacOs. If the returned directory is not your home path please ensure that you have the write permissions to the path where the exercism binary exists. If you installed the binary using sudo then, you should try to upgrade by running `sudo exercism upgrade`.
+
+_Note_: Installing exercism into a non user own directory is not officially supported. Please see the instructions on how to install the Exercism cli at https://exercism.io/cli
+
+### Windows 16 bit MS-Dos sub-system error dialog?
+There was an error when upgrading from release from 3.0.4 and older that would cause this error. Best way to resolve this issue is to do a fresh install of the CLI; as outlined at https://exercism.io/cli
+
+### My CLI is broken, but I’m not sure how to fix it?
+  Visit github.com/exercism/cli and open an issue for the problem you are having. When reporting an issue please try your best to answer the following questions:
+  1. What is the output of `exercism troubleshoot`?
+  1. What problem are you experiencing?
+  1. How can we reproduce the problem?
+  1. What did you expect to see/happen after running the instructions outlined in question 3?
+
+## Team FAQs
+
+### What happened to my Team from the old site?
+
+We have a brand new dedicated Teams website coming soon. We will tweet out as soon as it's launched. Follow us at [@exercism_io](https://twitter.com/exercism_io).
 
