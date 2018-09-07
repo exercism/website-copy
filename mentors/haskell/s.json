@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "sshine",
+    "name": "Simon Shine",
+    "link_text": null,
+    "link_url": "https://simonshine.dk",
+    "avatar_url": null,
+    "bio": "I've taught functional programming for a number of years. My favourite languages are Haskell, Ocaml and Erlang."
+  }
+]
