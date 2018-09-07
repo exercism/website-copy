@@ -6,5 +6,13 @@
     "link_url": "https://gitlab.com/cadoma",
     "avatar_url": null,
     "bio": "Java was my second language and I wrote it professionally as well for a recommender system."
+  },
+  {
+    "github_username": "crane-yuan",
+    "name": "Crane Yuan",
+    "link_text": "Personal Blog Site",
+    "link_url": "https://crane-yuan.github.io/",
+    "avatar_url": null,
+    "bio": "I am a backend developer. I've written code in Java professionally, as well as use it for open source contribution."
   }
 ]

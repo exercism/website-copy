@@ -45,7 +45,7 @@
     "github_username": "sandordargo",
     "name": "Sandor Dargo",
     "link_text": "Sandor Dargo's Blog",
-    "link_url": "http://sandordargo.com/",
+    "link_url": "http://sandordargo.com",
     "avatar_url": null,
     "bio": "I like Python because it's so simple to understand it and it can read like well-written prose. Besides it's a real swiss army knife, you can use it for almost everything. Yet, it takes some time to learn writing pythonic code, but I'm happy to help you with that!"
   },
@@ -56,5 +56,22 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I appreciate python among the many languages I have used for expressiveness and readability. I have used it at work and for personal projects."
+  },
+  {
+    "github_username": "Sessa93",
+    "name": "Andrea Sessa",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have used Python mainly for Machine Learning/Reinforcement Learning for my Master thesis."
+  },
+  {
+    "github_username": "ssarkar2",
+    "name": "Sayantan Sarkar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "Have been using Python for ~5 years for machine learning, deep learning, computer vision, data science and quick scripting purposes"
   }
 ]

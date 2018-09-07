@@ -30,5 +30,29 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Hi! I'm a Ruby developer from NYC looking to help grow the community and get more people writing Ruby!"
-  }
+  },
+  {
+    "github_username": "justinleveck",
+    "name": "Justin Leveck",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+     "bio": "I love Ruby! I have been writing Ruby for more than 5 years. Ruby is a joy to use. It is expressive and readable with a wonderful community. I am excited to help you get started!"
+  },
+  {
+    "github_username": "joeltaylor",
+    "name": "Joel Taylor",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Ruby was my gateway from English-lit to programming. I've been using it professionally for over five years and love it!"
+  },
+  {
+    "github_username": "jwkyle",
+    "name": "Jim Kyle",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "After years of light web development in the financial industry, I changed course to follow my passion for software development. I love working with Ruby and Javascript and am currently building my knowledge around Elixir, Java, React, and Angular."
+  }  
 ]

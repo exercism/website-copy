@@ -10,9 +10,17 @@
   {
     "github_username": "bethanyg",
     "name": "Bethany Garcia",
-    "link_text": " ",
-    "link_url": " ",
+    "link_text": "",
+    "link_url": "",
     "avatar_url": null,
     "bio": "Instigator. Chaser of shiny objects. Javascript relationship status:  It's complicated."
+  },
+  {
+    "github_username": "byronanderson",
+    "name": "Byron Anderson",
+    "link_text": "Byron's Programming Blog",
+    "link_url": "https://programmingsimplicity.com",
+    "avatar_url": null,
+    "bio": "Javascript is the language I get to use without asking, so I get to pick and choose to just use 'The Good Parts'!"
   }
 ]

@@ -14,5 +14,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "For years, Python is my default language of choice when solving computing problems in general. I'm a member of Python Venezuela."
+  },
+  {
+     "github_username": "jeffdparker",
+     "name": "Jeff Parker",
+     "link_text": "Game face",
+     "link_url": "https://www.extension.harvard.edu/faculty-directory/jeff-parker",
+     "avatar_url": null,
+     "bio": "I enjoy the simplicity of Python."
+   },
+  {
+    "github_username": "johndturn",
+    "name": "John Turner",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been working, either professionally or on side projects, with Python for about 3 years now. I love its versatility, easy syntax, and powerful capabilities. I'm excited to share what I've learned, and learn from others as well!"
   }
 ]

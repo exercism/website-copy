@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I began my professional programming career with VB.NET, but have spent the rest (over 8 years) happily working with C#."
+  },
+  {
+    "github_username": "mikedamay",
+    "name": "Michael May",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I think C# is a great general purpose language balancing performance and maintainability."
   }
 ]

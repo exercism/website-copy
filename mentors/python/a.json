@@ -38,5 +38,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "My primary professional language is Python, which I like for its flexibility and expressiveness, but I also enjoy using Rust because of its power and high-quality tooling.  I'm a former CS professor."
+  },
+  {
+    "github_username": "anukul",
+    "name": "Anukul Sangwan",
+    "link_text": "Personal Website",
+    "link_url": "https://anukul.js.org/",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/42784420",
+    "bio": "I'm an undergraduate software engineering research student, and I love to hack on interesting stuff, no matter what the language!"
   }
 ]

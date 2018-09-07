@@ -22,13 +22,13 @@ to make development easier, so there's no big codebase to get acquainted with.
 
 **The journey to becoming a maintainer starts with contributing to a track to demonstrate your interest, knowledge and ability.** Once you have been an active contributor for a while, then please reach out to the existing track maintainers if you would like to become a maintainer too :)
 
-## Submit a Couple of Solutions
+## Submit a couple of solutions
 
 If you haven't used Exercism before, then we recommend first submitting solutions to a couple of
 exercises. It doesn't matter which language track you submit to, it's just to get a feel
 for what a language track consists of.
 
-## Watch The Track Repository
+## Watch the track repository
 
 If you haven't picked a language you want to contribute to yet, check out the list of [language tracks][tracks]
 and their respective [repositories][repositories].
@@ -37,7 +37,7 @@ Then go to the repository for the language you've chosen, click the _Watch_ butt
 This will notify you of any new issues, pull requests, or comments in the repository, which is a great way
 of getting acquainted with the people involved and the issues that tend to come up.
 
-## Orient Yourself
+## Orient yourself
 
 Read the README, and look through the open issues and pull requests, and get a feel for what's going on.
 
@@ -45,19 +45,19 @@ Read the README, and look through the open issues and pull requests, and get a f
 
 There are a number of ways to contribute to a track. All of them are sorely needed, and greatly appreciated!
 
-### Triaging Issues
+### Triaging issues
 
 A great issue is detailed and actionable. When they're not, you can help ask the questions to make them so.
 
 For more detailed suggestions about things to keep in mind when triaging, check out [this documentation][triaging-issues].
 
-### Reviewing Pull Requests
+### Reviewing pull requests
 
 We always need more eyeballs on pull requests. On language tracks most pull requests tend to be related to
 the exercises themselves, and we have [detailed documentation][reviewing-prs] that should help
 you get started with code reviews.
 
-### Porting an Exercise
+### Porting an exercise
 
 The easiest way to add a new exercise is to find an exercise that has already been implemented in another language
 track, and port it over to your target language.
@@ -65,7 +65,7 @@ track, and port it over to your target language.
 We've got [a guide][porting] that walks you through how to find an exercise to port, and the things to
 keep in mind when implementing it.
 
-### Improving the Contributing Documentation
+### Improving the contributing documentation
 
 It's not always obvious how to get started contributing to a language track. As you get involved, help improve the
 README in the track repository.
@@ -76,12 +76,12 @@ README in the track repository.
 * Is there any tooling that we're using? Linters?
 * Is there continuous integration? Are there any gotchas?
 
-## Improving the Curriculum
+## Improving the curriculum
 
 As you solve exercises on the site, pay attention to what you like and dislike
 about the exercises.
 
-### Improving Exercise READMEs
+### Improving exercise READMEs
 
 If the README is ambiguous or confusing, then there's almost certainly
 something we can do to clarify.
@@ -90,7 +90,7 @@ Or maybe you found a typo (you wouldn't be the first).
 
 The READMEs are generated, and all the details are explained [here][fixing-readmes].
 
-### Changing Exercise Test Suites
+### Changing exercise test suites
 
 * Did the test suite force you towards a certain solution? (It shouldn't.)
 * Did you come across a solution that passed the tests, but that had a bug?
@@ -120,7 +120,7 @@ issue in [problem-specifications][] to:
   exercise using the [blazon][] tool (which automates the tedious parts).
   More about that [here][blazon-process].
 
-### Reordering Exercises
+### Reordering exercises
 
 We don't have a formal process for deciding how the exercises should be
 ordered, and often as we add more exercises, we get some less-than-optimal
@@ -140,7 +140,7 @@ We can also deprecate an exercise by removing it from the `exercises` array
 and adding the slug to the `deprecated` key, which is also in the
 `config.json` file.
 
-### Adding Hints
+### Adding hints
 
 Sometimes an exercise is in the right place in the sequence, but it's really
 hard to figure out how to solve it anyway.

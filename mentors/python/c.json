@@ -15,6 +15,24 @@
     "link_url": "https://gitlab.com/cadoma",
     "avatar_url": null,
     "bio": "Python was my very first language and is still one of my favorites to write in. It's super simple to understand, easy to translate pseudocode to, and wonderfully verbose in its errors. Join me in the Python cult!"
+  },
+
+  {
+    "github_username": "cheshirecat12",
+    "name": "Cheshirecat",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a CS student in Switzerland. I use the most of the time Python in my courses. My specialization is information processing (NLP, machine learning, deep learning, ...)."
+  },
+
+  {
+    "github_username": "cglacet",
+    "name": "Christian Glacet",
+    "link_text": null,
+    "link_url": "https://github.com/cglacet",
+    "avatar_url": null,
+    "bio": "I'm a former student from the university of Bordeaux, where I also taught for three years. I love graph problems, I'm specialized in distributed routing problems. I also love python, I'm always happy to learn/share new things :)."
   }
 ]
 

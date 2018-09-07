@@ -1,5 +1,13 @@
 [
     {
+        "github_username": "DanCouper",
+        "name": "Daniel Couper",
+        "link_text": null,
+        "link_url": null,
+        "avatar_url": null,
+        "bio": "I've programmed JS professionally for the last five years: sure, it has it's pain points, and the tooling/package management is somewhat of a hellscape, but on good days I kinda love it."
+    },
+    {
         "github_username": "dfimbres",
         "name": "David Fimbres",
         "link_text": null,
@@ -13,5 +21,12 @@
         "link_url": "http://davidejones.com",
         "link_text": "Website",
         "bio": "Software engineer and a fan of many programming languages"
+    },
+    {
+        "github_username": "donut",
+        "name": "Donovan Mueller",
+        "link_url": null,
+        "link_text": null,
+        "bio": "I've been programming in JavaScript for the last 13+ years. I've learned to appreciate its squishiness and flexibility, especially for small projects. It definitely can drive a dev crazy, but with good architecture a lot can be done with it."
     }
 ]

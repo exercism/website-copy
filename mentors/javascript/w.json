@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "worg",
+    "name": "Hiram J. Perez",
+    "link_text": null,
+    "link_url": "https://worg.xyz",
+    "avatar_url": null,
+    "bio": "I enjoy writting code, nowadays mostly ES6"
+  }
+]

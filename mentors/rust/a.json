@@ -1,11 +1,27 @@
 [
   {
+    "github_username": "adeschamps",
+    "name": "Anthony Deschamps",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I use Rust professionally in my day job, as well as for some hobby projects. I like it for a lot of technical reasons, but most of all for the great community."
+  },
+  {
     "github_username": "ajkavanagh",
     "name": "Alex Kavanagh",
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
     "bio": "Rust is a refreshing alternative to C, C++ and golang.  I find it elegant, relatively concise and very interesting to use.  I've not used in professionally, yet, but have many years of C, JavaScript and Python under my belt."
+  },
+  {
+    "github_username": "alphashuro",
+    "name": "Alpha Shuro",
+    "link_text": null,
+    "link_url": "https://alphashuro.com",
+    "avatar_url": null,
+    "bio": "Rust empowers developers to write code that is ambitious, fast and correct. Viva Rust!"
   },
   {
     "github_username": "AndrewRadev",

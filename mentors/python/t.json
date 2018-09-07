@@ -1,10 +1,26 @@
 [
   {
+    "github_username": "tewe",
+    "name": "Tobias Weber",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I came to Python for the GUI support, and I stayed because it is simple enough conceptually that humans can understand how it works."
+  },
+  {
 	"github_username": "thiagoeh",
 	"name": "Thiago Hickmann",
 	"link_text": null,
 	"link_url": null,
 	"avatar_url": null,
 	"bio": "I have a sysadmin background (on Linux and Windows) and I began learning Python about a year ago to automate tasks. I really like the breadth of the use that you get in this language, and how easy is to write clean code."
+  },
+  {
+    "github_username": "TsebMagi",
+    "name": "Doug Whitley",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been using C# for personal projects in Unity for a little over a year and love the balance it strikes between readiblity and functionality."
   }
 ]
