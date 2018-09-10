@@ -6,5 +6,13 @@
         "link_url": null,
         "avatar_url": null,
         "bio": "C++ is a powerful language, and I love it for its speed and abundance of utilities. It works both at high-level and low-level, simple and complex program."
-    }
+    },
+    {
+        "github_username": "lmarcell",
+        "name": "Marcell Lipp",
+        "link_text": "How to survive as a programmer?",
+        "link_url": "http://howtosurviveasaprogrammer.blogspot.com",
+        "avatar_url": null,
+        "bio": "I'm working with cpp with years and I'm really fighting to achieve a better code quality all around the world, so I'm happy to help"
+    } 
 ]
