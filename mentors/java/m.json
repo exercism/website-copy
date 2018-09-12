@@ -22,5 +22,13 @@
   "link_url": null,
   "avatar_url": null,
   "bio": "I've worked in Java since I started coding seriously for living and having fun :sparkles:"
+  },
+  {
+  "github_username": "m4ver1k",
+  "name": "Adarsh K Kumar",
+  "link_text": "My Blog",
+  "link_url": "https://www.jigsawcode.com/",
+  "avatar_url": null,
+  "bio": "I'm a Software Developer with exposure to Java/Spring, Devops, Linux, Databases. Currently exploring Distributed Systems and Erlang."
   }
 ]
