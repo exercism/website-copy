@@ -22,5 +22,13 @@
     "link_url": "",
     "avatar_url": null,
     "bio": "I've been coding in Python off and on for 20 years.  It's still my favorite language for many tasks."
+  },
+  {
+    "github_username": "BTaskaya",
+    "name": "Batuhan Taşkaya",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Over 6 years Python experience with high Object Orianted skills. Developed Compilers & Restful API's & CLI Apps & Games & Frameworks. Familiar with CPython Source Code (especially Memory Management & Garbage Collecting Techniques) "
   }
 ]
