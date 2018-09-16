@@ -6,7 +6,7 @@
 [problem-specifications]: https://github.com/exercism/problem-specifications
 [blazon]: https://github.com/exercism/blazon
 [blazon-process]: /you-can-help/improve-exercise-metadata.md
-[fixing-readmes]: /language-tracks/exercises/anatomy/readmes.md
+[fixing-readmes]: https://github.com/exercism/docs/blob/master/language-tracks/exercises/anatomy/readmes.md
 
 The Exercism language tracks are a great way to get involved in:
 
