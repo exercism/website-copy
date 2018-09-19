@@ -1,4 +1,4 @@
-## General FAQs
+## Exercism FAQs
 
 ### Who is behind Exercism?
 
@@ -63,7 +63,7 @@ There was an error when upgrading from release from 3.0.4 and older that would c
   1. How can we reproduce the problem?
   1. What did you expect to see/happen after running the instructions outlined in question 3?
 
-## Team FAQs
+## Exercism Team FAQs
 
 ### What happened to my Team from the old site?
 
