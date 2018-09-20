@@ -33,6 +33,15 @@
     "link_url": "https://github.com/cglacet",
     "avatar_url": null,
     "bio": "I'm a former student from the university of Bordeaux, where I also taught for three years. I love graph problems, I'm specialized in distributed routing problems. I also love python, I'm always happy to learn/share new things :)."
-  }
+  },
+ 
+ {
+     "github_username": "cameron-wood",
+     "name": "Cameron Wood",
+     "link_text": "Landing Page",
+     "link_url": "https://cameron-wood.github.io/",
+     "avatar_url": null,
+     "bio": "Python was my first programming language; I started learning it in school and discovered a passion for the power of programming. I strongly believe that Python is one of the best languages, especially for beginners! I currently specialize in using Python for mathematics, namely numerical analysis."
+ }
 ]
 
