@@ -16,6 +16,14 @@
 	"bio": "I have a sysadmin background (on Linux and Windows) and I began learning Python about a year ago to automate tasks. I really like the breadth of the use that you get in this language, and how easy is to write clean code."
   },
   {
+    "github_username": "tiagoantao",
+    "name": "Tiago Antao",
+    "link_text": "Personal site",
+    "link_url": "https://tiago.org",
+    "avatar_url": "http://0.gravatar.com/avatar/9d97b401cb8272790d9ef0ebf27d0935",
+    "bio": "I work mostly with Scientific Applications of Python. I am interesting in issues related to High-Performance Computing. I am the author of the book Bioinformatics with Python."
+  },
+  {
     "github_username": "TsebMagi",
     "name": "Doug Whitley",
     "link_text": null,
