@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "YashdalfTheGray",
+    "name": "Yash Kulshrestha",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I got introduced to Typescript through the Angular 2 alpha and since then, I've been using it for projects at and outside of work. I'm a huge fan of the typing system and miss it when I'm working in other languages."
+  }
+]
