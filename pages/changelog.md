@@ -13,4 +13,3 @@ We have added a dark theme to the code editor. You can enable it in [your prefer
 ### [Tracks] Merged the Javascript and ECMAScript tracks
 
 We merged the Javascript and ECMAScript tracks with the aim of focussing the work of the maintainers and mentors into one place, and improve the quality of our offering. 
-
