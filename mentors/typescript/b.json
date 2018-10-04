@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "BrianDGLS",
+    "name": "Brian Douglas",
+    "link_text": "hard-coded.com",
+    "link_url": "https://hard-coded.com/",
+    "avatar_url": "https://hard-coded.com/images/me-in-nyc.jpeg",
+    "bio": "An Irish software engineer. Typescript is my go to language and I use it code websites, games, and everything else."
+  }
+]
