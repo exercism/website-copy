@@ -21,5 +21,19 @@
         "link_url": "http://davidejones.com",
         "link_text": "Website",
         "bio": "Software engineer and a fan of many programming languages"
+    },
+    {
+        "github_username": "donut",
+        "name": "Donovan Mueller",
+        "link_url": null,
+        "link_text": null,
+        "bio": "I've been programming in JavaScript for the last 13+ years. I've learned to appreciate its squishiness and flexibility, especially for small projects. It definitely can drive a dev crazy, but with good architecture a lot can be done with it."
+    },
+    {
+        "github_username": "darthbob88",
+        "name": "Raymond Price",
+        "link_url": null,
+        "link_text": null,
+        "bio": "Professional developer for the past 7 years, primarily in JS and secondarily in C# and Typescript."
     }
 ]

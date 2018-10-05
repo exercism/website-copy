@@ -6,5 +6,21 @@
     "link_url": "https://medium.com/@CohenCarlisle",
     "avatar_url": null,
     "bio": "I love Elixir for its productivity, elegant syntax, and functional nature. I've written it professionally and for fun. I hope to help people get excited about Elixir and learn some things myself, as well."
+  },
+  {
+    "github_username": "cheerfulstoic",
+    "name": "Brian Underwood",
+    "link_text": null,
+    "link_url": "http://www.brian-underwood.codes",
+    "avatar_url": "http://www.brian-underwood.codes/img/headshot.jpg",
+    "bio": "I'm a long-time full-stack web developer with a particular interest in different ways to store and process data.  I'm a huge fan how Elixir makes functional programming and fault tolerance accessible and am excited to help others."
+  },
+  {
+    "github_username": "chriseyre2000",
+    "name": "Chris Eyre",
+    "link_text": null,
+    "link_url": "https://devrantsblog.wordpress.com",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1099999?s=460&v=4",
+    "bio": "I'm a long-time full-stack web developer in a range of languages" 
   }
 ]

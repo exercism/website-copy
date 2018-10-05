@@ -29,5 +29,13 @@
 	"link_url": null,
 	"avatar_url": "https://en.gravatar.com/userimage/25385857/3c8f856e5a2977e9abcc5bbc6a784907.png?size=200",
 	"bio": "I've discovered Javascript when doing Web development and I loved it for the many programming paradigms it makes possible, including Functional Programming."
+  },
+  {
+    "github_username": "kzap",
+    "name": "Andre Marcelo-Tanner",
+    "link_text": "MyDev.org - Personal Blog",
+    "link_url": "https://mydev.org/",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/62213?s=200&v=4",
+    "bio": "Software engineer for over 18 years, a wealth of experience in building online systems, e-commerce sites, large databases and tackling hard problems at scale."
   }
 ]

@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have worked with Java for many years, both professionally and as a hobby."
-  }
+  },
+  {
+    "github_username": "dpolivaev",
+    "name": "Dimitry Polivaev",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am developer mostly practicing Java, Scala, clean code and TDD"
+  }  
 ]

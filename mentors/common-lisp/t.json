@@ -14,5 +14,13 @@
     "link_url": "http://thelostlambda.xyz/",
     "avatar_url": null,
     "bio": "A functional programmer who loves Haskell, Lisp, Rust, and Elixir."
+  },
+  {
+    "github_username": "timotheosh",
+    "name": "Tim Hawes",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Lisp, functional programming, and the nostalgia behind Common Lisp."
   }
 ]
