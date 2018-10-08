@@ -6,7 +6,7 @@
     "link_url": "http://alwayswantedtoplay.com",
     "avatar_url": "http://alwayswantedtoplay.com/images/sunking2.png",
     "bio": "I've been doing java for a long time, including a word game that was online for years. I love Haskell, and I'm learning Elm, Rust, and (yikes!) Perl. Say hi if ya like :) "
- },  
+ },
  {
      "github_username": "simpleauthority",
       "name": "Jacob Andersen",
@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am an professional Java Developer who takes great interest in open source, teaching and self improvement. I'm hoping to help new Developers achieve their goals."
- }
+},
+{
+  "github_username": "shankarshastri",
+  "name": "Shankar Shastri",
+  "link_text": "Github Profile",
+  "link_url": "https://github.com/shankarshastri/",
+  "avatar_url": "https://avatars0.githubusercontent.com/u/10391044",
+  "bio": "Lover Of Pure Functional Programming."
+}
 ]

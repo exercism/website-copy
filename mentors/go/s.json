@@ -6,5 +6,13 @@
       "link_url": null,
       "avatar_url": null,
       "bio": "I'm a Canadian (based in Chicago) freelance golang, C and python developer working on projects within the gaming, finance and data-science worlds respectively. My favorite freetime task is coding challenges and I'm more than happy to help people talk through solutions!"
+    },
+    {
+      "github_username": "shankarshastri",
+      "name": "Shankar Shastri",
+      "link_text": "Github Profile",
+      "link_url": "https://github.com/shankarshastri/",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/10391044",
+      "bio": "Lover Of Pure Functional Programming."
     }
 ]
