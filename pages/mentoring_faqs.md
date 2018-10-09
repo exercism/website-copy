@@ -1,7 +1,7 @@
 Here we have collated a list of the questions asked frequently by mentors. 
 
 ### How do I get started with Mentoring?
-Join the [start-here channel on Slack](https://exercism-mentors.slack.com/archives/CBDA9LMDF/p1529968977000336) and you will see some step-by-step instructions that will guide you through the process.
+Once you've become a mentor via the [become a mentor](https://exercism.io/become-a-mentor) page, you can access your [mentor dashboard](https://exercism.io/mentor/dashboard) at any time. When you joined you should have received an invitation to our Slack Room. You can find more instructions in the [start-here channel on Slack](https://exercism-mentors.slack.com/archives/CBDA9LMDF/p1529968977000336).
 
 ### What should I do if I don't know how to give feedback on a solution?
 If you're not sure what feedback to give, paste a link to the solution (e.g. `https://exercism.io/mentor/solutions/...`) on the relevant language channel on Slack and brainstorm some ideas with other mentors.
