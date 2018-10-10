@@ -1,3 +1,11 @@
+### [Website] Merge mentoring.exercism.io into the main site
+
+We wanted to streamline the sign up process, to remove the Google Form and the need to join slack to mentor. This is the first step in a long list of changes we'll make to the mentoring onboarding process.
+
+### [Website] Make the site responsive.
+
+The Exercism website is now mobile-responsive thanks to this [huge Pull Request](https://github.com/exercism/website/pull/252) by [@jackhughesweb](https://github.com/jackhughesweb)..
+
 ### [Website] Add all notifications
 
 Marked a notification as read but want to still see it? We've added a button for "All notifications" that allows you to see both read and unread notifications. Credit to [@PatrickMcSweeny](https://github.com/PatrickMcSweeny).
