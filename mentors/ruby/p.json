@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": "https://s.gravatar.com/avatar/5b36c6cfb4083458ae9e12a377692efc?s=400",
     "bio": "I've been writing code professionally for 10 years. In the last 5 years, Ruby has been my main language. I think Ruby is a great language and I'd love to help other people get into it :-)"
+  },
+  {
+    "github_username": "pgrunwald",
+    "name": "Percy Grunwald",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Learning Ruby was the turning point for me as a developer. Not only is Ruby a beautiful and extremely productive language, but I can say with certainty that if you are a beginner or intermediate developer that learning Ruby will significantly improve your code and workflow in all languages."
   }
 ]
