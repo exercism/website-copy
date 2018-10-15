@@ -22,5 +22,13 @@
     "link_url" : null,
     "avatar_url" : null,
     "bio" : "After working with Ruby for a couple of years, I love it.  I also enjoy teaching and mentoring others, plus it's a great way to refresh knowledge."
-  }
+  },
+  {
+  "github_username": "freddie1221",
+  "name": "Freddie Lawson",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "I am a junior Ruby engineer, I've been working with it for a few months on an engineerig bootcamp and finding it a great language."
+}
 ]
