@@ -30,5 +30,13 @@
     "link_url": "http://benjameep.tech",
     "avatar_url": null,
     "bio": "Javascript is my native language, still working on my English."
+  },
+  {
+    "github_username": "Bouncey",
+    "name": "Stuart Taylor",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://github.com/bouncey.png",
+    "bio": "Tell me and I forget, teach me and I may remember, involve me and I learn."
   }
 ]
