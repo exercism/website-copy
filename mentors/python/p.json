@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "As a developer that has programmed professionally for many years in many different languages, I can honestly say that the ability to write Python is always and constantly useful regardless of whether it's your main language. Python is a must-have tool for your tool belt as a developer."
-  }
+  },
+  {
+    "github_username": "periGK",
+    "name": "Periklis Gkolias",
+    "link_text": "My blog",
+    "link_url": "https://medium.com/@periklisgkolias",
+    "avatar_url": null,
+    "bio": "I am a fullstack software engineer specialising in python and javascript related technologies and a huge enthusiast of the deep learning revolution. My aim is to help people, as I would like to have been offered help when I was doing my first steps in the field."
+  },
 ]
