@@ -10,3 +10,26 @@ Good copy and documentation is just as important as good code so we are massivel
 - If you think a new page should be added to the website, please open an Issue so that we can discuss it.
 
 Thank you! :blue_heart:
+
+## Mentor notes
+
+The structure within the repository is: `/tracks/$track_id/exercises/$exercise_slug/mentoring.md`.
+
+- You can easily edit the files within GitHub to create Pull Requests for changes.
+- We'll be offering some mentors write permissions to the repo so that they can merge PRs without waiting for us to check everything.
+- In the near-future we'll auto-pull things into the website to display it for mentors at the relevant time.
+
+Please use `###` for headings and try to keep to a structure of:
+
+- **Reasonable solutions:** 1+ solutions that solve this problem well.
+- **Common suggestions:** Good suggestions specific to this exercise. Good lessons that emerge from it.
+- **Talking points:** Questions to challenge more advance learners with.
+
+Here's an example for [Ruby's Isogram](https://github.com/exercism/website-copy/blob/master/tracks/ruby/exercises/isogram/mentoring.md).
+
+<details>
+<summary>This is how you create a new file:</summary>
+
+![Create a new file](http://g.recordit.co/96zCDgEkfG.gif)
+
+</details>
