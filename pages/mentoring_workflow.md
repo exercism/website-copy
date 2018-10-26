@@ -5,7 +5,7 @@ To get started with mentoring, log into your Exercism account and click on “Me
 
 You will see your Mentor Dashboard which lists solutions that have been submitted by learners and are ready for mentor feedback. Here you can filter the solutions by Status, Track (language) or Exercise. We recommend using the “Exercise” filter so you can give feedback on multiple solutions while a particular exercise is fresh in your mind.
 
-The right hand side shows how many solutions you’ve mentored so far so you can see how your hard work if you’re helping out the community.
+The right hand side shows how many solutions you’ve mentored so far so you can see how your hard work is helping out the community.
 
 ![dashboard](https://user-images.githubusercontent.com/5421823/42657796-40b30242-861b-11e8-9f98-112665eb4e99.png)
 
