@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have been writing Elixir for many years now and I find it a pleasure to write and read. Elixir is an extremely productive language with a beautiful syntax and has amazing performance for networked applications. I think it's an ideal choice for any web application or backend."
+  },
+  {
+    "github_username": "pdgonzalez872",
+    "name": "Paulo Gonzalez",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm transitioning to using Elixir full time. I try to use it as much as I can on my free time as well. I'm excited to mentor folks starting out and can hopefully learn new things as well!"
   }
 ]
