@@ -1,11 +1,11 @@
 [tracks]: https://exercism.io/tracks
 [repositories]: https://github.com/exercism
-[triaging-issues]: /you-can-help/triage-issues.md
-[reviewing-prs]: /you-can-help/review-pull-requests.md
-[porting]: /you-can-help/implement-an-exercise-from-specification.md
+[triaging-issues]: https://github.com/exercism/docs/blob/master/you-can-help/triage-issues.md
+[reviewing-prs]: https://github.com/exercism/docs/blob/master/you-can-help/review-pull-requests.md
+[porting]: https://github.com/exercism/docs/blob/master/you-can-help/implement-an-exercise-from-specification.md
 [problem-specifications]: https://github.com/exercism/problem-specifications
 [blazon]: https://github.com/exercism/blazon
-[blazon-process]: /you-can-help/improve-exercise-metadata.md
+[blazon-process]: https://github.com/exercism/docs/blob/master/you-can-help/improve-exercise-metadata.md
 [fixing-readmes]: https://github.com/exercism/docs/blob/master/language-tracks/exercises/anatomy/readmes.md
 
 The Exercism language tracks are a great way to get involved in:
