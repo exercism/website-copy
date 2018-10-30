@@ -33,6 +33,8 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
 
 - **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
 
+- **Reset CLI token:** We want to let people reset their CLI tokens in case they are leaked. [#4150](https://github.com/exercism/exercism/issues/4150)
+
 - **Download link on all iterations** Add the download link and a link to instructions on all iterations in the student's view. [#4259](https://github.com/exercism/exercism/issues/4259)
 
 - **Delete my account:** We need to give people the ability to delete their account without emailing Jeremy.
