@@ -2,8 +2,6 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
 
 ### One day - two weeks
 
-- **Make side-exercise mentoring opt-in:** At the moment some tracks have thousands of side-exercises in the backlog. We're going to change this behaviour so people have to opt-in to mentoring on an exercise-by-exercise basis and can only request mentoring on a handful of exercises at once.
-
 - **Teams:** We are building a dedicated site for teams. It will allow groups of people to complete exercises and mentor each other in a private space. We envision it being used by bootcamps, groups of friends, and colleagues at work. Teams on Exercism v1 was a really important feature for many people so restoring it is a top priority for us. We are close to launching and ironing out the last bugs.
 
 - **Fixing bugs:** There are still loads of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
@@ -11,8 +9,6 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
 - **Add a button for mentors to report learners** [#4306](https://github.com/exercism/exercism/issues/4306).
 
 - **Fix issues with exercises not being unlocked:** [#3867](https://github.com/exercism/exercism/issues/3867).
-
-- **Put challenge back to mentor queue if mentor leaves conversation:** [#4308](https://github.com/exercism/exercism/issues/4308)
 
 ### One week - two months
 
