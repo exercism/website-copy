@@ -1,3 +1,10 @@
+### [Website] Make side-exercise mentoring opt-in:
+
+At the moment some tracks have thousands of side-exercises in the backlog. We're going to change this behaviour so people have to opt-in to mentoring on an exercise-by-exercise basis and can only request mentoring on a handful of exercises at once.
+
+### [Website] Put challenge back to mentor queue if mentor leaves conversation:
+[#4308](https://github.com/exercism/exercism/issues/4308)
+
 ### [Website] Merge mentoring.exercism.io into the main site
 
 We wanted to streamline the sign up process, to remove the Google Form and the need to join slack to mentor. This is the first step in a long list of changes we'll make to the mentoring onboarding process.
