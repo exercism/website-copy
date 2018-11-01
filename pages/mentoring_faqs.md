@@ -60,7 +60,7 @@ If you'd like to stop mentoring a track please email us at mentors@exercism.io a
 The tests are marked as skipped to encourage people to use TDD to do one at a time. When people submit their solution and you view it in the UI, you're seeing the original tests that the user was sent, not their final tests file.
 
 ###  Can I mentor another language?
-Yes! To mentor another language go to the "Configure your mentor settings" page via the main menu and select the languages you want to mentor.
+Yes! To mentor another language go to https://exercism.io/mentor/configure and select the languages you want to mentor.
 
 ### Still have a question?
 If you have a question that hasn't been answered here, please post it on the "questions" channel on Slack.
