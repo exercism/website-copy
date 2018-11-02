@@ -22,5 +22,13 @@
     "link_url": "https://jameslao.com/",
     "avatar_url": null,
     "bio": "I write mostly C# professionally, but I have a passion for functional programming and lately Rust. I look forward to helping you anyway I can!"
+  },
+  {
+    "github_username": "j2jensen",
+    "name": "James Jensen",
+    "link_text": "James' StackOverflow Profile",
+    "link_url": "https://stackoverflow.com/users/120955/striplingwarrior",
+    "avatar_url": "https://s.gravatar.com/avatar/3653360c9b96b1ae5e39067c9e18183c",
+    "bio": "I love programming, and helping people with programming. You may have seen my StackOverflow contributions under the username StriplingWarrior. I speak English and French."
   }
 ]
