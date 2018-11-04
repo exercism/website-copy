@@ -10,7 +10,7 @@ public static class SumOfMultiples
     public static int Sum(IEnumerable<int> multiples, int max)
     {
         return Enumerable.Range(1, max - 1)
-            .Where(i => multiples.Any(m => i % m == 0))
+            .Where(i => multiples.Any(m => m != 0 && i % m == 0))
             .Sum();
     }
 }
@@ -27,14 +27,20 @@ using System.Collections.Generic;
 public static class SumOfMultiples
 {
     public static int Sum(IEnumerable<int> multiples, int max)
-        => multiples.SelectMany(
-            multiple => Enumerable.Range(1, (max - 1) / multiple).Select(numTimes => numTimes * multiple)
-            , (numtimes, multiple) => multiple).Distinct().Sum();
+        => multiples
+            .Where(multiple => multiple > 0)
+            .SelectMany(multiple => 
+                Enumerable.Range(1, (max - 1) / multiple)
+                          .Select(numTimes => numTimes * multiple),
+                (numtimes, multiple) => multiple)
+            .Distinct()
+            .Sum();
 }
 ```
 
 #### Custom LINQ Method
 An alternative that shows how you can roll your own LINQ methods to boost performance is below:
+
 ```csharp
 using System.Collections.Generic;
 using System.Linq;
@@ -43,8 +49,11 @@ public static class SumOfMultiples
 {
     public static int Sum(IEnumerable<int> multiples, int max)
     {
-        return multiples.SelectMany(multiple => GenerateMultiples(multiple, max - 1, multiple))
-          .Distinct().Sum();
+        return multiples
+            .Where(multiple => multiple > 0)
+            .SelectMany(multiple => GenerateMultiples(multiple, max - 1, multiple))
+            .Distinct()
+            .Sum();
     }
 
     public static IEnumerable<int> GenerateMultiples(int min, int max, int step)
@@ -56,7 +65,6 @@ public static class SumOfMultiples
         }
     }
 }
-
 ```
 
 #### Non-LINQ
@@ -73,6 +81,11 @@ public static class SumOfMultiples
         var results = new HashSet<int>();
         foreach (var multiple in multiples)
         {
+            if (multiple == 0)
+            {
+                continue;
+            }
+        
             // reversed direction to avoid int overflow
             for (int i = (max - 1) / multiple * multiple; i > 0; i -= multiple)
             {
