@@ -1,4 +1,13 @@
 [
+  
+  {
+    "github_username": "jamesgeorge007",
+    "name": "James George",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm specialized in the JavaScript stack but still I have an immense love for python as well. I had experiemented with it while building stuffs like web apps, Desktop apps, 2-D games, and even messing up with ML and Data science topics. In the process I had come across a variety of libraries and had fun using them."
+  },
   {
     "github_username": "jonmcalder",
     "name": "Jon Calder",
@@ -30,5 +39,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I've been working, either professionally or on side projects, with Python for about 3 years now. I love its versatility, easy syntax, and powerful capabilities. I'm excited to share what I've learned, and learn from others as well!"
+  },
+  {
+    "github_username": "jvmachadorj",
+    "name": "Joao Machado",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Everyday Python keeps surprising me with the simple! I work professionally with python and I do some side projects as well and I want to share my knowledge with the world! And learn in the way!"
   }
 ]

@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": null
+  },
+  {
+    "github_username": "BTaskaya",
+    "name": "Batuhan Taşkaya",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Over 6 years GNU/Linux & *BSD experience. Developed / Improved bash scripts for various automations. Used most of known services and scripted them with bash."
   }
 ]

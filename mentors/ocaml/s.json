@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I like OCaml's approach of being functional first, but allowing for escape hatches into imperative code when you really need them."
+  },
+  {
+    "github_username": "sshine",
+    "name": "Simon Shine",
+    "link_text": null,
+    "link_url": "https://simonshine.dk",
+    "avatar_url": null,
+    "bio": "I've taught functional programming for a number of years. My favourite languages are Haskell, Ocaml and Erlang."
   }
 ]

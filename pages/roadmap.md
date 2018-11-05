@@ -6,15 +6,11 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
 
 - **Fixing bugs:** There are still loads of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
 
+- **Add a button for mentors to report learners** [#4306](https://github.com/exercism/exercism/issues/4306).
+
+- **Fix issues with exercises not being unlocked:** [#3867](https://github.com/exercism/exercism/issues/3867).
+
 ### One week - two months
-
-- **Make the website responsive:** This is a big job with a [WIP PR](https://github.com/exercism/website/pull/252).
-
-- **Save comments in local storage** We want to save comments into local storage as they're being written so that if a user accidently navigates off the page, they are stored. [#4312](https://github.com/exercism/exercism/issues/4312)
-
-- **Add a button for mentors to report learners** [#4306](https://github.com/exercism/exercism/issues/4306)
-
-- **Merging mentoring.exercism.io into the main site:** We want to streamline the sign up process, to remove the Google Form and the need to join slack to mentor. We have some challenges to do this, such as ensuring there is quality control before someone can go wild mentoring, but we have some ideas as to how to achieve this.
 
 - **Mentoring UI Improvements:**
   - Exposing the communal mentoring notes from GitHub to be visible directly within the UI.
@@ -23,10 +19,17 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
   - Adding difficulty filter to solution selector [#4105](https://github.com/exercism/exercism/issues/4105)
   - Showing more information (such as track backlog) on the dashboard [#4032](https://github.com/exercism/exercism/issues/4032)
   - Improve mentoring notifications [#3883](https://github.com/exercism/exercism/issues/3883)
+  - Allow mentors to view other mentors' comments [#3988](https://github.com/exercism/exercism/issues/3988)
+  - Allow track mentors to find previous reviews of other solutions of the same exercise [#4364](https://github.com/exercism/exercism/issues/4364)
+  - Calculate mentors' "weekly progress" per track [#4438](https://github.com/exercism/exercism/issues/4438)
+
+- **Add more information about timescales for mentoring:** [#4368](https://github.com/exercism/exercism/issues/4368).
 
 - **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this. [#4163](https://github.com/exercism/exercism/issues/4163)
 
 - **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
+
+- **Reset CLI token:** We want to let people reset their CLI tokens in case they are leaked. [#4150](https://github.com/exercism/exercism/issues/4150)
 
 - **Download link on all iterations** Add the download link and a link to instructions on all iterations in the student's view. [#4259](https://github.com/exercism/exercism/issues/4259)
 

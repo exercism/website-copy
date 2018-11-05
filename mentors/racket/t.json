@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "timotheosh",
+    "name": "Tim Hawes",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Lisp, functional programming, and language-oriented programming."
+  }
+]
