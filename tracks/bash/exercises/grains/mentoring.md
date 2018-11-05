@@ -1,5 +1,4 @@
 # Grains
-Hello World -> **Grains** -> Armstrong Numbers -> Hamming -> ...
 
 *Grains* focuses on validating input and managing control flow, as well as doing
 arithmetic (probably exponentiation) in Bash.
@@ -72,21 +71,21 @@ print as an unsigned integer.
 
 ## Talking points
 
- - If the student doesn't have a strong grasp on math, it seems effective to
-   tabulate the first several powers of two alongside their values and the
-   values of the running sum.
+If the student doesn't have a strong grasp on math, it seems effective to
+tabulate the first several powers of two alongside their values and the
+values of the running sum.
 
-    ```
-    Power     Value      Sum of all previous values
-    2**0      1          0
-    2**1      2          1
-    2**2      4          3
-    2**3      8          7
-    2**4     16         15
-    2**5     32         31
-    2**6     64         63
-    2**7    128        127
-    ```
+```
+Power     Value      Sum of all previous values
+2**0      1          0
+2**1      2          1
+2**2      4          3
+2**3      8          7
+2**4     16         15
+2**5     32         31
+2**6     64         63
+2**7    128        127
+```
 
-    By this point, the student should start to catch on to the fact that the 
-    running total is 1 less than the next value.  This should help.
+By this point, the student should start to catch on to the fact that the 
+running total is 1 less than the next value.  This should help.
