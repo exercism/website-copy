@@ -1,5 +1,4 @@
-### Intro
-This is the first core exercise. Great opportunity to prepare for the track with attention to style conventions. 
+This is a great opportunity to prepare for the track with attention to style conventions. 
 
 ### Reasonable solutions
 

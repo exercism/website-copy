@@ -1,9 +1,5 @@
-### Intro
-TwoFer -> Hamming -> RainDrops -> Difference of Squares -> **Grains** -> Scrabble Score 
-
 The instructions for the students suggest(!) that the first solution would use an iteration, and that the next step would be optimizing (with maths) for performance and/or readability.
 At this point, students should have used 'basic' and 'advanced' Enumberable methods for iterations in previous exercises (core: Hamming, Difference of Squares, side: Series).  
-
 
 ### Reasonable solutions
 

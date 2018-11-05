@@ -1,5 +1,3 @@
-# Accumulate
-
 This exercise is asking you to re-implement `Array#map`. The goal is to get a
 feel for what's happening under the hood.
 

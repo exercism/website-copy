@@ -63,4 +63,7 @@ The most common feedback revolves around:
 
 ## Talking points
 
-* trade-off between `fmt.Sprintf` and `+`, `fmt` is very common and idiomatic, but `+` is shorter and avoids and import.
+Regarding the trade-off between `fmt.Sprintf` and `+`:
+* `fmt` is very common and idiomatic.
+* `+` is shorter and avoids an import.
+*  Using `fmt` takes over 5x longer (~400 ns/op) than `+` (~80 ns/op) as reported by `go test --bench .`. This may be too confusing for beginning programmers, and it's trivial in the context of this program, but if it seems apparent that you're mentoring an experienced programmer who's new to Go, it may be worth mentioning.

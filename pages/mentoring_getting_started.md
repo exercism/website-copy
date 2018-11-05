@@ -29,7 +29,7 @@ Mentor Notes show one or more variants of acceptable solutions. Some also list c
 
 ### 6. Mentoring Tips: general
 - Please do not approve a solution without any comment. Especially new programmers may have spent lots of time to get the tests pass. At least acknowledge that they managed to pass the tests.
-- Rather tell what you like about a solution than pass a judgement - even if it's a positive judgment.
+- Prefer telling the student what you like about a solution rather than pass a judgement - even if it's a positive judgment.
 - Be aware that your student may not be a native English speaker. If they seem to misunderstand your comments, try a different wording.
 
 ### 7. Mentoring Tips: early exercises

@@ -1,5 +1,4 @@
-### Intro
-Side exercise. Great to step up from basic loops and `Enumerable#each` to more powerful Enumberable methods. 
+Great to step up from basic loops and `Enumerable#each` to more powerful Enumberable methods. 
 
 ### Reasonable solutions
 ```ruby
