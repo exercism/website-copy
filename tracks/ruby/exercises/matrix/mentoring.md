@@ -1,6 +1,4 @@
-# Matrix
-
-## Reasonable Solutions
+### Reasonable Solutions
 
 ```ruby
 class Matrix
@@ -19,7 +17,7 @@ end
 
 Many solutions will not split out the input parsing into methods like this. We don't yet have consensus among mentors if this is important or not. If the methods are split out, then they should be private.
 
-## Common Suggestions
+### Common Suggestions
 
 There's no need to overload a student with all of these suggestions, so here is a list ordered roughly by most important suggestions first:
 
