@@ -1,5 +1,4 @@
-[
-  {
+[{
     "github_username": "dsdshcym",
     "name": "Yiming Chen",
     "link_text": null,
@@ -14,5 +13,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Ruby because it delivers on its promise: programmer happiness. As a programmer, I'm happy when my code is intention revealing, easy to reason about and easy to change. I have used Ruby to build 4 startups over 12 years and I'm not done yet."
+  },
+  {
+    "github_username": "dipto0321",
+    "name": "Dipto Karmakar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am passionate about programing. Love to build new things with Ruby, python and Javascript. I am enjoying too much by sharing my knowledge and learning from others. Love to contribute on open source projects"
   }
 ]
