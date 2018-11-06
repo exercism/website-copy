@@ -28,7 +28,6 @@ give the regex away for free, especially if they already found `scan(/\w+/)`
 
 ## Talking points
 * If the solution uses Class instead of Module: that's totally acceptable at this stage. No reason to discuss.
-* `scan` is faster than `split`
 * It can be hard to catch all the possible delimiters. 
 * `upcasing` the whole string is (10% ?) slower than `upcasing` the acronym only. 
 * Store the regex in a constant or a variable, mostly so it can be named. 
