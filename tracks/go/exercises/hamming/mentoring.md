@@ -45,6 +45,7 @@ The most common feedback revolves around:
 * Is the error formatted correctly? For example the error [should not be capitalized or have punctuation](https://github.com/golang/go/wiki/CodeReviewComments#error-strings).
 * Did they use a combination of `errors.New` and `fmt.Sprintf`? Hint at `golint` and `fmt.Errorf`.
 * Did they use `fmt.Errorf` for a non-interpolated string? It may be worth suggesting they use `errors.New` in these cases to explicitly indicate that no interpolation will be occurring. Encouraging early exposure to the `errors` package might start benefitting them immediately, e.g., `errors.Wrap`.
+* Did they return `-1` or `0` in the error case? Returning the zero value may be more idiomatic, since the error indicates that the preceding value isn't that useful. There are test cases that specify `-1` should be returned, but because this value isn't checked by the tests, a student doing strict TDD might not discover this. Careful readers might. 
 
 **Comments: the Go community has strong opinions and great guidelines**
 * Do they not have comments at all? Suggest that they try out `golint`. Maybe something like _I'd recommend taking a moment to run `golint` on your package, and follow the trail to making the linter happy.  Linting is definitely not something that people would recommend breaking the build for, but `golint` tends to complain about things that the Go community has strong preferences about, so it can be a really useful tool for learning about making your Go look more Go-ish._
