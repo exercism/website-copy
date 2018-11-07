@@ -6,5 +6,13 @@
     "link_url": "",
     "avatar_url": null,
     "bio": "Go admirer. Instigator. Chaser of shiny objects."
+  },
+  {
+    "github_username": "bitfield",
+    "name": "John Arundel",
+    "link_text": "Bitfield Consulting",
+    "link_url": "http://bitfieldconsulting.com/",
+    "avatar_url": null,
+    "bio": "Consultant, author, Gopher, Kuberneticist."
   }
 ]
