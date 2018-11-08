@@ -9,7 +9,7 @@ def is_leap_year(year):
 
 Some students are less comfortable with using `%` to mean "is divisible by" and find
 something like the one below (from a student) easier to understand.
-There is more overhead storing an loading from local variables, but
+There is more overhead storing and loading from local variables, but
 it's still O(1).
 
 ```python
