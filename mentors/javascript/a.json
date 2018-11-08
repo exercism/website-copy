@@ -15,14 +15,14 @@
     "avatar_url": null,
     "bio": "I love Javascript. Great fan of Vuejs. Loves Open Source."
   },
- {
-  "github_username": "andrew-prior",
-  "name": "Andrew Prior",
-  "link_text": null,
-  "link_url": null,
-  "avatar_url": null,
-  "bio": "Javascript developer, father, and amateur everything else."
- },
+  {
+    "github_username": "andrew-prior",
+    "name": "Andrew Prior",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Javascript developer, father, and amateur everything else."
+  },
   {
     "github_username": "Alxandr",
     "name": "Aleksander Heintz",
@@ -30,5 +30,13 @@
     "link_url": "https://alxandr.me",
     "avatar_url": "https://avatars1.githubusercontent.com/u/112334?s=460&v=4",
     "bio": "I love programming, and do it both professionally and as a hobby. At work I do most javascript and typescript, but I've also done a lot of F# and C#."
+  },
+  {
+    "github_username": "alexZielonko",
+    "name": "Alex Zielonko",
+    "link_text": "github.com/alexZielonko",
+    "link_url": "https://github.com/alexZielonko",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5274697?s=460&v=4",
+    "bio": "I'm one part professional developer and two parts programming enthusiast, shaken with a liberal dash of pragmatism."
   }
 ]
