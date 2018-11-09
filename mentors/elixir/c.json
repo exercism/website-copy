@@ -22,5 +22,13 @@
     "link_url": "https://devrantsblog.wordpress.com",
     "avatar_url": "https://avatars0.githubusercontent.com/u/1099999?s=460&v=4",
     "bio": "I'm a long-time full-stack web developer in a range of languages" 
+  },
+  {
+    "github_username": "costaraphael",
+    "name": "Raphael Costa",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/7742817?s=460&v=4",
+    "bio": "I'm an Engineer/Teacher using Elixir at my day job and in my side projects as well. I gave talks on Elixir and functional programming at some events, one of them being ElixirConf EU." 
   }
 ]

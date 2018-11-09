@@ -1,12 +1,10 @@
-# Hamming
-
 Hamming is composed of two sub-problems: how to **iterate** through two collections, and how to **count**
 based on a condition.
 
 The `Enumerable` module contains fantastic tools to solve these problems. This is a great exercise to introduce students
 to some of its features.
 
-## Reasonable Solutions
+### Reasonable Solutions
 
 There are three strategies for the **iteration**. In descending order of popularity with mentors:
  
@@ -30,7 +28,7 @@ translate almost directly into the Ruby code:
 It's worthwhile pointing this out to students who use `#count` in their solutions. It's
 one of the things that's really nice about Ruby!
 
-## Examples
+### Examples
 Strategy 1: `zip`
 
 ```ruby
@@ -62,7 +60,7 @@ Pros: more intuitive? (students seem to pick this often);
 Cons: requires both indices and converting to arrays, so it's kind of the worst of both worlds from 1 and 2 😛 . 
 
 
-## Mentoring flow
+### Mentoring flow
 
 Most students start at either steps 1 or 2. 
 
@@ -81,7 +79,7 @@ Most students start at either steps 1 or 2.
 More details on particular pieces of feedback and good conversations to have in
 the _Common Suggestions_ and _Talking Points_ sections below.
 
-## Common Suggestions
+### Common Suggestions
 
 - By far the most common feedback revolves around eliminating the use of
 manually managed intermediate counter and index variables. In Ruby you should

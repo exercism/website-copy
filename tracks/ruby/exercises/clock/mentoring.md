@@ -1,5 +1,3 @@
-# Clock
-
 Clock introduces students to the concept of **value objects** and **[modular
 arithmetic](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)**.
 

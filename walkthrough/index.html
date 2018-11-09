@@ -146,14 +146,14 @@ command line you need to make sure `~/bin` is in your `$PATH`.
 There is a chance it’s there already; let’s see whether it is:
 
 ```
-[[ ":$PATH:" == *":$HOME/bin:"* ]] &amp;&amp; echo "~/bin is in PATH" || echo "~/bin is not in PATH"
+[[ ":$PATH:" == *":$HOME/bin:"* || ":$PATH:" == *":~/bin:"* ]] &amp;&amp; echo "~/bin is in PATH" || echo "~/bin is not in PATH"
 ```
 
 If the above prints `~/bin is not in PATH` let’s add
 `~/bin` to `$PATH` and reload Bash configuration:
 
 ```
-echo "export PATH=~/bin:$PATH" &gt;&gt; ~/.bash_profile
+echo 'export PATH=~/bin:$PATH' &gt;&gt; ~/.bash_profile
 source ~/.bash_profile
 ```
 

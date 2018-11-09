@@ -1,5 +1,3 @@
-_Leap_ is one of the first side exercises, unlocked by _TwoFer_. 
-
 ## Reasonable Solutions
 
 ```ruby
