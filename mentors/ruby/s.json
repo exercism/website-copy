@@ -43,5 +43,13 @@
     "link_url": "http://aaronstrick.com",
     "avatar_url": null,
     "bio": "In coding, ruby was my first love. I've been writing it professionally for >4 years and love how expressive it can be. Have you seen the ruby poetry?"
+  },
+  {
+    "github_username": "serg-kovalev",
+    "name": "Sergey Kovalev",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have more than 10 years of production experience. I love Ruby because of its friendly and active community. Nothing is impossible when you do what you love! Happy coding!"
   }
 ]
