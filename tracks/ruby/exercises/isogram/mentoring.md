@@ -1,9 +1,24 @@
 ### Reasonable solutions
 
+Using `uniq`
 ```ruby
 def isogram?(string)
-  letters = string.downcase.scan(/[a-z]/)
+  letters = string.downcase.scan(/[[:alpha:]]/)
   letters.uniq.length == letters.length
+end
+```
+
+Using `Set`'s `add?`
+```ruby
+require "set"
+
+class Isogram
+  def self.isogram?(text)
+    seen_before = Set.new
+    text.downcase.
+      scan(/[[:alpha:]]/).
+      all? { |l| seen_before.add?(l) }
+  end
 end
 ```
 
