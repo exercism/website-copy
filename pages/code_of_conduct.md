@@ -1,6 +1,6 @@
 ### Introduction
 
-Exercism is a platform centered around empathetic conversation. We have a low tolerance for communication that makes anyone feel unwelcome, unsupported, insulted or disciminated against.
+Exercism is a platform centered around empathetic conversation. We have a low tolerance for communication that makes anyone feel unwelcome, unsupported, insulted or discriminated against.
 
 ### Seen or experienced something uncomfortable?
 
