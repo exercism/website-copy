@@ -67,4 +67,4 @@ The most common feedback revolves around:
 
 ## Mentoring Tools
 
-* [Exalysis](https://github.com/tehsphinx/exalysis): Mentoring tool for the Go track on Exercism. Downloads students code, checks it and provides suggestions.
+* [Exalysis](https://github.com/tehsphinx/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.
