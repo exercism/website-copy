@@ -61,4 +61,6 @@ The most common feedback revolves around:
 * `rune` vs `byte` and why iterating over a string with `range` returns runes: [Strings, bytes, runes and characters in Go](https://blog.golang.org/strings)
 
 ## Mentoring Tools
- * [Exalysis](https://github.com/tehsphinx/exalysis): Mentoring tool for the Go track on Exercism. Downloads students code, checks it and provides suggestions.
+
+* [Exalysis](https://github.com/tehsphinx/exalysis): Mentoring tool for the Go track on Exercism. Downloads students code, checks it and provides suggestions.
+
