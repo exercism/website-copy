@@ -64,3 +64,7 @@ The most common feedback revolves around:
 
 * `map` iteration order: See [specs](https://golang.org/ref/spec#For_statements). Since the order in which the map is iterated matters in this exercise a map is not a perfect fit here. If one wants to iterate, using a `for i := 3; i < 8; i += 2` or iterating a slice is a better fit.
 * `golint` as a great helper to write idiomatic go code and why it is so important for the go community: all go code looks the same, `godoc` uses comments to auto-create documentation, etc.
+
+## Mentoring Tools
+
+* [Exalysis](https://github.com/tehsphinx/exalysis): Mentoring tool for the Go track on Exercism. Downloads students code, checks it and provides suggestions.
