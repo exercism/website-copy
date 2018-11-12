@@ -89,3 +89,7 @@ The most common feedback revolves around:
 * `rune`s vs `byte`s. What are runes? What is the difference? `Rune`s are not necessary here (we are in ascii space) but they are faster because we need no extra type conversions.
 * How to use and read benchmarks in go: it seems some students mistake the time the benchmarks or tests took altogether as an indication of speed. Point out that the important number for speed is the ns/op (nanoseconds per operation) value.
 * If they used go routines talk about why the go routines don't make sense here. They add too much overhead to be faster than a simple switch + count.
+
+## Mentoring Tools
+
+* [Exalysis](https://github.com/tehsphinx/exalysis): Mentoring tool for the Go track on Exercism. Downloads students code, checks it and provides suggestions.
