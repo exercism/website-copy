@@ -1,0 +1,36 @@
+### Reasonable solutions
+
+This solution deliberately shows the two steps seperately:
+1) finding the set of numbers that are multiples and,
+2) doing the summation of those numbers.
+
+```python
+def sum_of_multiples(limit, multiples):
+
+    def is_multiple(number):
+        for multiple in multiples:
+            if number % multiple == 0:
+                return True
+        return False
+
+    numbers = filter(is_multiple, range(limit))
+
+    return sum(numbers)
+```
+
+The solution below shows a terser approach:
+
+```python
+def sum_of_multiples(limit, multiples):
+    return sum(num for num in range(limit)
+               if any((num % x == 0 for x in multiples)))
+```
+
+### Common Suggestions
+ - It's tempting to write a complex one liner for this, but that should be discouraged in favour of
+   PEP8 complaint solutions for readability and maintainability.
+
+
+### Talking points
+ - It's possible to do this with a set or list [and associated comprehensions] instead of the generators shown above. 
+   The benefit of a generator is the space used is constant no matter how large the inputs are.
