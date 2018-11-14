@@ -25,6 +25,8 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
 
 - **Add more information about timescales for mentoring:** [#4368](https://github.com/exercism/exercism/issues/4368).
 
+- **Send content with mentor emails:** [4428](https://github.com/exercism/exercism/issues/4428)
+
 - **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this. [#4163](https://github.com/exercism/exercism/issues/4163)
 
 - **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
@@ -52,6 +54,8 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
 - **Improve maintainer tools:** We want to update the new website to allow for an easy and pleasent experience for track maintainers and will build out tools within the UI to allow them to more easily experiment with track setups.
 
 - **Improve accessibility:** There are various a11y improvements we are making, spearheaded by [@unused's plan here](https://github.com/exercism/website/pull/182).
+
+- **Add display name option:** [4365](https://github.com/exercism/exercism/issues/4365)
 
 ### Three months - six months
 
