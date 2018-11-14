@@ -23,6 +23,8 @@ This is a rough guide of our roadmap for the next year. It's aim is to show prio
   - Allow track mentors to find previous reviews of other solutions of the same exercise [#4364](https://github.com/exercism/exercism/issues/4364)
   - Calculate mentors' "weekly progress" per track [#4438](https://github.com/exercism/exercism/issues/4438)
 
+- **Make the steps of the installation guide linkable:** [#4470](https://github.com/exercism/exercism/issues/4470)
+
 - **Add more information about timescales for mentoring:** [#4368](https://github.com/exercism/exercism/issues/4368).
 
 - **Send content with mentor emails:** [4428](https://github.com/exercism/exercism/issues/4428)
