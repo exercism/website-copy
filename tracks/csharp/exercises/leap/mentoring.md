@@ -32,5 +32,5 @@ public static class Leap
 
 ### Talking points
 
-- Students often use parentheses, but this is not always necessary, as the [precedence](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#conditional-and-operator) of the `&&` and `||` operators is based on the order in which they appear in the code.
+- Students often use parentheses, but as the `&&` operator has a [higher precedence](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#conditional-and-operator) than the `||` operator, this is not necessary.
 - Not everyone likes them, but it might be useful to suggest writing the `IsLeapYear` method as an [expression-bodied method](https://docs.microsoft.contm/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
