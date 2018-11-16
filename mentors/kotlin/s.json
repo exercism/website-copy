@@ -14,5 +14,13 @@
         "link_url": null,
         "avatar_url": null,
         "bio": "I'm a geek doing a lot of things, including Kotlin. I've using the language for 3 years now but still learning everyday"
+    },
+    {
+        "github_username": "SleeplessByte",
+        "name": "Derk-Jan Karrenbeld",
+        "link_text": null,
+        "link_url": null,
+        "avatar_url": null,
+        "bio": "After being stuck with Java for 8 years, Kotlin was the fresh breath of joy I needed."
     }
 ]
