@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I've been developing with JavaScript/EcmaScript for about 2 decades. I've been helped by many and I'm happy to help others."
+  },
+  {
+    "github_username": "coltonehrman",
+    "name": "Colton Ehrman",
+    "link_text": "Personal Website",
+    "link_url": "http://coltonehrman.com",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/12456288?s=460&v=4",
+    "bio": "I love to keep things simple, and slowly work on new projects little by little. It makes the most complex problems not so complex after all."
   }
 ]
