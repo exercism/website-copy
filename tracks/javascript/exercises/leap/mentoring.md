@@ -20,10 +20,10 @@ export const isLeap = year => year % 4 === 0 && (year % 100 !== 0 || year % 400 
     - 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 !== 0` second
     - 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 === 0` third
     - Inverse tests:
-    ```javascript
-    export const isLeap = year => year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
-    ```
-    Albeit correct in output, the check `year % 400` is _only_ true for `1.03%`. Always try to put the common path first. Logically, following the instructions putting this check first is **incorrect**.
+      ```javascript
+      export const isLeap = year => year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
+      ```
+      Albeit correct in output, the check `year % 400` is _only_ true for `1.03%`. Always try to put the common path first. Logically, following the instructions putting this check first is **incorrect**.
   - _order of evaluation_ matters: Refer to [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence). In Javascript `&&` always goes before `||`. Adding parentheses clears up any confusion, and groups the second and third test together.
 - There are only two cases that return true:
   - a year MUST be a multiple of four AND NOT be a multiple of 100
