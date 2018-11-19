@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Go and the Go community. I am a software engineer with 10 years experience."
+  },
+   {
+    "github_username": "AnuchitO",
+    "name": "Anuchit Prasertsang",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/AnuchitO",
+    "avatar_url": null,
+    "bio": "Go is a fantastic language for me. We have the Go community in Thailand is growing."
   }
 ]
