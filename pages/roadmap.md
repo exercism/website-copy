@@ -17,7 +17,7 @@ We are building a dedicated site for teams. It will allow groups of people to co
 
 ### Curriculum
 
-We are actively working to explore what an examplar syllabus would look like for the Ruby track, considering things such as  learning pathways, goals, mentoring-burden. We will then explore where the gaps are and what new exercises might be created as part of this. Once we have made some basic progress we will widen the discussion to include a small set of sample tracks with active maintainers.
+We are actively working to explore what an exemplar syllabus would look like for the Ruby track, considering things such as  learning pathways, goals, mentoring-burden. We will then explore where the gaps are and what new exercises might be created as part of this. Once we have made some basic progress we will widen the discussion to include a small set of sample tracks with active maintainers.
 
 ### Mentoring Tools
 
@@ -51,7 +51,7 @@ We want to update the new website to allow for an easy and pleasent experience f
 
 ### Accessibility
 
-There are various a11y improvements we are making, spearheaded by [@unused's plan here](https://github.com/exercism/website/pull/182).
+There are various [a11y](https://a11yproject.com/) improvements we are making, spearheaded by [@unused's plan here](https://github.com/exercism/website/pull/182).
 
 ### Changelog
 
@@ -59,7 +59,7 @@ We want to add a changelog into the site that all maintainers and contributors c
 
 ### Public API
 
-We want to define a public API that will allow other to integrate Exercism into their code editors [#4087](https://github.com/exercism/exercism/issues/4087).
+We want to define a public API that will allow others to integrate Exercism into their code editors [#4087](https://github.com/exercism/exercism/issues/4087).
 
 ### Automated running of the tests
 
@@ -77,6 +77,6 @@ We used to have a bot called Rikki that used the [AST](https://en.wikipedia.org/
 
 Remove the requirement to install the CLI allow people to complete the exercises and run the tests on the Exercism website. This will also allow us to automatically run tests against submitted code to test that it works and help mentors.
 
-### Multi-lingual support
+### Multilingual support
 
 We really want to support multiple languages, but doing this is a huge, complex project, which would involve translating the exercises, website, etc as well as being able to recruit mentors into a specific language. We're currently exploring what a first stage of this might look like for PT-BR [here](https://github.com/exercism/exercism/issues/4207).
