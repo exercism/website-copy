@@ -8,7 +8,7 @@ We wanted to let people reset their CLI tokens in case they are leaked. [#4150](
 
 ### [Website] Improve experience of legacy or indepedent solutions in mentored mode
 
-When importing from legacy or independent mode have sepererate restricted queues for core and side exercises.
+Have separate restricted queues for core and side exercises when importing from legacy or independent mode.
 
 ### [Website] Make side-exercise mentoring opt-in:
 
