@@ -10,6 +10,18 @@ export const isLeap = (year) => year % 4 === 0 && (year % 100 !== 0 || year % 40
 ```
 Variations check for truthy `year % m` and falsy `(!year % m)`.
 
+```javascript
+  function isDivisibleByFn(mod) {
+    return number => number % mod === 0;
+  }
+
+  const by4 = isDivisibleByFn(4);
+  const by100 = isDivisibleByFn(100);
+  const by400 = isDivisibleByFn(400);
+
+  export const isLeap = year => by4(year) && (!by10(year) || by400(year))
+  ```
+
 ### Common suggestions
 - There are two types of students that give different responses than the reasonable solutions:
   - A student explicitly returns `true` and `false` and/or doesn't use [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) to combine multiple expressions,
@@ -32,3 +44,24 @@ Variations check for truthy `year % m` and falsy `(!year % m)`.
 - [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence): unlike other languages, logical AND (`&&`) _always_ has a **higher** precedence than logical OR (`||`).
 - [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) values in JavaScript
 - Differences between loose value equality (`==`) and same-value equality (`===`)
+- Maintainability and performance:
+  Something like this ís readable and maintainable, but if a student submits this, point out resources (functions are created each invocation) and returning expression evaluations as in this example, each invocation `isDivisibleFn` is recreated, which can be fixed by inversing the curry; and all values are calculated before they are used. In fact, when `by400` is true, the rest doesn't matter, so it's a waste of CPU cycles. Applying the suggestions to this works the same when it comes to logical operators, _order of operations_ and _order of evaluation_ as per the second reasonable solution.
+
+  ```javascript
+  function isDivisibleBy(number) {
+    return mod => number % mod === 0;
+  }
+
+  export const isLeap = year => {
+    const isDivisibleByFn = isDivisibleBy(year);
+    const by4 = isDivisibleByFn(4);
+    const by100 = isDivisibleByFn(100);
+    const by400 = isDivisibleByFn(400);
+    let isLeapResult = Boolean(by4 && !by100);
+    if (by400) {
+      isLeapResult = true;
+    }
+    return isLeapResult;
+  };
+  ```
+
