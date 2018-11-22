@@ -21,6 +21,9 @@ Variations check for truthy `year % m` and falsy `(!year % m)`.
   - 75% of all years *cannot* be leap years because they are not multiples of 4; test the common path `year % 4 === 0` first.
   - 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 !== 0` second.
   - 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 === 0` third.
+- If a student does _not_ use parentheses, and the structure is `div?(4) && !div?(100) || div?(400)`, explain that the _order of evaluation_ matters:
+  - [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+  - [Short circuit evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-circuit_evaluation)
 - Eliminate duplicate work: no year should ever have to be checked multiple times for the same condition; encourage students to resolve this by consolidating and/or reordering conditions.
 
 ### Talking points
