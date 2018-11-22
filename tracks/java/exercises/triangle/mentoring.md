@@ -80,7 +80,7 @@ class Triangle {
 
 ### Common suggestions
 
-- Count the number of unique sides and save it in a field, the use it in the `is` methods. 
+- Count the number of unique sides and save it in a field, then use it in the `is` methods. 
 That will make them shorter an easier to understand.
 - A simple way to check if the triangle is sane is to see if the longest side times two is 
 less than the sum of all sides. If it is not, throw an exception. 
