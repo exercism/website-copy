@@ -27,6 +27,8 @@ Variations check for truthy `year % m` and falsy `(!year % m)`.
 - Eliminate duplicate work: no year should ever have to be checked multiple times for the same condition; encourage students to resolve this by consolidating and/or reordering conditions.
 
 ### Talking points
-- [`!`, `&&`, and `||`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
+- [Remainder (%)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()), also known as modulo. This usually does not need explaining.
+- [Logical operators (`!`, `&&`, and `||`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators). If they use the binary forms `&`, `|`, explain how [short-circuit](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-circuit_evaluation) evaluation works.
+- [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence): unlike other languages, logical AND (`&&`) _always_ has a **higher** precedence than logical OR (`||`).
 - [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) values in JavaScript
 - Differences between loose value equality (`==`) and same-value equality (`===`)
