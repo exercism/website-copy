@@ -17,14 +17,11 @@ Variations check for truthy `year % m` and falsy `(!year % m)`.
 - If there are more than two "returns" or more than three "tests", suggest that there are just two cases that return `true`:
   - A year is a multiple of 4 *and not* 100
   - A year is a multiple of 4, 100, and 400
-- Order of operations matter:
-  - 75% of all years *cannot* be leap years because they are not mulitples of 4; test `year % 4 === 0` first.
+- If the order of the tests is not `disivible by 4`, `divisible by 100`, `divisible by 100`, explain that the _order of operations_ matter:
+  - 75% of all years *cannot* be leap years because they are not multiples of 4; test the common path `year % 4 === 0` first.
   - 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 !== 0` second.
   - 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 === 0` third.
-- Eliminate duplicate work:
-  -  Some submissions may repeat the same condition multiple times (`year % 4 === 0` is common); encourage students to resolve this by consolidating and/or reordering conditions.
-- Submissions often explicitly return `true` or `false`; encourage the use of an implicit return.
-- Submissions may include multiple `if/else` statements to satisfy the test suite; encourage users to consider how [logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) can make their solution more concise.
+- Eliminate duplicate work: no year should ever have to be checked multiple times for the same condition; encourage students to resolve this by consolidating and/or reordering conditions.
 
 ### Talking points
 - [`!`, `&&`, and `||`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
