@@ -11,7 +11,10 @@ export const isLeap = (year) => year % 4 === 0 && (year % 100 !== 0 || year % 40
 Variations check for truthy `year % m` and falsy `(!year % m)`.
 
 ### Common suggestions
-- There are just two cases that return `true`:
+- There are two types of students that give different responses than the reasonable solutions:
+  - A student explicitly returns `true` and `false` and/or doesn't use [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) to combine multiple expressions,
+  - A student comes up with something "clever", that is usually either unreadable at first sight or unmaintable, or both.
+- If there are more than two "returns" or more than three "tests", suggest that there are just two cases that return `true`:
   - A year is a multiple of 4 *and not* 100
   - A year is a multiple of 4, 100, and 400
 - Order of operations matter:
