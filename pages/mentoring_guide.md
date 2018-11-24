@@ -15,9 +15,9 @@ Thanks for being here! There are two stages to getting started. The first is to 
 Now you're set up in the community, you'll want to start mentoring.
 
 - Firstly [configure the tracks you want to mentor](https://exercism.io/mentor/configure).
-- Next, have a quick read of our [Getting started with mentoring guide](https://exercism.io/mentoring-getting-started) guide. Depending on how confident you feel you might want to skim it over and just get stuck in, or have a thorough read to get a really solid understanding how the process works.
+- Next, have a quick read of our [Getting started with mentoring guide](https://exercism.io/mentoring-getting-started). Depending on how confident you feel you might want to skim it over and just get stuck in, or have a thorough read to get a really solid understanding how the process works.
 - Our [Mentoring workflow guide](https://exercism.io/mentoring-workflow) will give you a quick walk through of how the mentoring section of Exercism works and show you the normal workflow.
 
 ### Resources
-- We have mentor notes for many of the exercises. You can currently find them [on GitHub](https://github.com/exercism/mentors/tree/master/tracks).
+- We have mentor notes for many of the exercises. You can currently find them [on GitHub](https://github.com/exercism/website-copy/tree/master/tracks).
 - If you have any questions, check out our [Mentoring FAQs](https://exercism.io/mentoring-faqs) or post in [#questions on Slack](https://exercism-team.slack.com/messages/CAQP7JL3T).
