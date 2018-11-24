@@ -24,7 +24,7 @@ As the queues for side exercises in the tracks are huge, time-to-mentor can be l
 - When you build your mentoring experience, know the exercises better and have a collection of notes you can rely on, you'll be much faster. Even then, every once and a while a review can take longer.
 
 ### 5. Mentor Notes in your track
-We try to add Mentor Notes for every exercise; it's a work in progress so there may not be any for the track or the exercise you're mentoring. If there are, a button 'View community mentoring notes' will appear on your mentor dashboard as soon as you select a submission to mentor.
+We try to add Mentor Notes for every exercise; it's a work in progress so there may not be any for the track or the exercise you're mentoring. If there are notes, a button 'View community mentoring notes' will appear on your mentor dashboard as soon as you select a submission to mentor.
 Mentor Notes show one or more variants of acceptable solutions. Some also list common topics that your fellow mentors discuss in their mentoring, and/or common pitfalls.
 
 ### 6. Mentoring Tips: general
