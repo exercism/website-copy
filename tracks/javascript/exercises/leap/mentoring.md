@@ -8,7 +8,10 @@ The point of this exercise is to teach the student to use:
 ```javascript
 export const isLeap = (year) => year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
 ```
-Variations check for truthy `year % m` and falsy `(!year % m)`.
+Variations check for truthy `year % m` and falsy `(!year % m)`:
+```javascript
+export const isLeap = (year) => !(year % 4) && year % 100 || !(year % 400);
+```
 
 ```javascript
   function isDivisibleByFn(mod) {
