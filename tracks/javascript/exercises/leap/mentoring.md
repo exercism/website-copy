@@ -14,15 +14,19 @@ export const isLeap = (year) => !(year % 4) && year % 100 || !(year % 400);
 ```
 
 ```javascript
-  function isDivisibleByFn(mod) {
-    return number => number % mod === 0;
+  function isDivisibleBy4(number) {
+    return number % 4 === 0;
   }
 
-  const by4 = isDivisibleByFn(4);
-  const by100 = isDivisibleByFn(100);
-  const by400 = isDivisibleByFn(400);
+  function isDivisibleBy100(number) {
+    return number % 100 === 0;
+  }
 
-  export const isLeap = year => by4(year) && (!by10(year) || by400(year))
+  function isDivisibleBy400(number) {
+    return number % 400 === 0;
+  }
+
+  export const isLeap = year => isDivisibleBy4(year) && (!isDivisibleBy100(year) || isDivisibleBy400(year))
   ```
 
 ### Common suggestions
