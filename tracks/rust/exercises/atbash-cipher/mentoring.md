@@ -22,11 +22,11 @@ A reasonable solution should do the following:
   encode, but this is good place to introduce the `impl Trait` in the return
   position after having already approved the exercise.
 - **Optional**: Avoid heap allocations when inserting spaces into the encoded
-  final string. Its better to `flat_map` spaces into the than collecting each
-  set of chunks and joining the slices together with spaces. Using itertools
-  `chunks` and `join` is okay but can cause lifetime issues that are fixed with
-  NLL, its okay for students so use this but if they do its a good idea to show
-  them alternative solutions that use only std methods.
+  final string. Its better to `flat_map` spaces into the iterator than
+  collecting each set of chunks and joining the slices together with spaces.
+  Using itertools `chunks` and `join` is okay but can cause lifetime issues
+  that are fixed with NLL, its okay for students so use this but if they do its
+  a good idea to show them alternative solutions that use only std methods.
 
 ### Examples
 
