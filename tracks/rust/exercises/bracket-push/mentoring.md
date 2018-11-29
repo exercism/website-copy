@@ -1,10 +1,8 @@
-# Bracket Push
-
-## Concepts
+### Concepts
 
 - stack or recursion
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -34,5 +32,3 @@ pub fn brackets_are_balanced(string: &str) -> bool {
     expected.is_empty()
 }
 ```
-
-## Example Comments
