@@ -1,13 +1,11 @@
-# Atbash Cipher
-
-## Concepts
+### Concepts
 
 - ascii
 - chars
 - iterators
 - primative types
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -136,7 +134,7 @@ pub fn decode(cipher: &str) -> String {
 }
 ```
 
-## Example Comments
+### Example Comments
 
 If they're not using ascii specific char functions.
 
