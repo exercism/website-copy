@@ -1,12 +1,10 @@
-# Luhn
-
-## Concepts
+### Concepts
 
 - higher-order functions
 - iterators
 - str to digits
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -28,5 +26,3 @@ pub fn is_valid(code: &str) -> bool {
         }).map_or(false, |(sum, count)| sum % 10 == 0 && count > 1)
 }
 ```
-
-## Example Comments
