@@ -1,14 +1,14 @@
-# Macros
-
-## Concepts
+### Concepts
 
 - hashmap
 - macros
 - macros by example
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
+
+- utilize a recursive macro
 
 ### Examples
 
@@ -25,5 +25,3 @@ macro_rules! hashmap {
     ( $($key:expr => $value:expr,)+ ) => { hashmap!($($key => $value),+) }
 }
 ```
-
-## Example Comments
