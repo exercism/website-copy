@@ -1,11 +1,9 @@
-# Atbash Cipher
-
-## Concepts
+### Concepts
 
 - Option
 - Math
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -49,7 +47,7 @@ pub fn find(sum: u32) -> HashSet<[u32; 3]> {
 }
 ```
 
-## Common Comments
+### Example Comments
 
 If they use return on the last line for the None variant.
 
