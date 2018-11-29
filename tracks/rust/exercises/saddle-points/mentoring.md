@@ -1,13 +1,23 @@
-# Saddle Points
-
-## Concepts
+### Concepts
 
 - iterators
 - vectors
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
+
+- Avoid unnecessary allocations. This is a good exercise to go over how vectors
+  are heap allocated and how constructing and using them has runtime costs.
+  For most exercises its a good idea to avoid worrying about performance and
+  optimization but this one is an exception.
+- An effective solution should only utilize one, or possibly two vectors. A one
+  vector solution would calculate the max value of the row once for each row,
+  and would calculate the max value of a column each time the current column is
+  equal to the max value of the row. This can cause re calculations of the same
+  column min, which would have negative performance implications on larger
+  matrixes. Adding a second vector to store or cache the mins of columns is
+  fine.
 
 ### Examples
 
@@ -32,5 +42,3 @@ pub fn find_saddle_points(input: &[Vec<u64>]) -> Vec<(usize, usize)> {
     results
 }
 ```
-
-## Example Comments
