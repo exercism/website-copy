@@ -1,13 +1,17 @@
-# Sublist
-
-## Concepts
+### Concepts
 
 - enum
 - generic over type
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
+
+- break down the unordered size problem into two subproblems, checking if a
+  list is smaller than another, and checking if a smaller list is a sublist of
+  a larger list
+- Utilize Eq for slices
+- not reimplement the functionality of the `windows` method
 
 ### Examples
 
@@ -39,5 +43,3 @@ pub fn sublist<T: PartialEq>(_first_list: &[T], _second_list: &[T]) -> Compariso
     }
 }
 ```
-
-## Example Comments
