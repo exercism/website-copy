@@ -1,12 +1,10 @@
-# Clock
-
-## Concepts
+### Concepts
 
 - derive
 - struct
 - traits
 
-## Reasonable solutions
+### Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -41,5 +39,3 @@ impl fmt::Display for Clock {
     }
 }
 ```
-
-## Example Comments
