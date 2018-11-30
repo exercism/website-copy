@@ -26,6 +26,13 @@ def sum_of_multiples(limit, multiples):
                if any((num % x == 0 for x in multiples)))
 ```
 
+When limit is very large and values in multiples are high in the range, there could be a lot of computational time wasted on unnecessary division, so a collection-based approach may be more suitable:
+
+```
+def sum_of_multiples(limit, multiples):
+    return sum({n for m in multiples for n in range(m, limit, m)})
+```
+
 ### Common Suggestions
  - It's tempting to write a complex one liner for this, but that should be discouraged in favour of
    PEP8 complaint solutions for readability and maintainability.
