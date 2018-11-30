@@ -28,7 +28,7 @@ def sum_of_multiples(limit, multiples):
 
 When limit is very large and values in multiples are high in the range, there could be a lot of computational time wasted on unnecessary division, so a collection-based approach may be more suitable:
 
-```
+```python
 def sum_of_multiples(limit, multiples):
     return sum({n for m in multiples for n in range(m, limit, m)})
 ```
