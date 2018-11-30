@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I got introduced to Ruby through writing Cucumber tests for a web app. I got addicted to using ruby as I wrote it more and more - it's truly a fun language to write. I use it both for OSS projects and for tooling at work."
+  },
+  {
+    "github_username": "yyyc514",
+    "name": "Josh Goebel",
+    "link_text": "Blog: Running Blind",
+    "link_url": "http://runningblind.com/",
+    "avatar_url": "",
+    "bio" :" I mostly write Ruby on Rails professionally but for fun (and possibly profit one day) I dabble with Elixir, Nim, Arduino, and such. I’m really digging both Nim and Vim lately."
   }
 ]
