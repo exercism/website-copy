@@ -6,13 +6,5 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Considered for a new version of the legacy System I'm working with, a coworker presented Clojure to me and we found early it helps a lot on keeping complexity low with a systemic aproach to software projects. We have used in some prototypes. Still learning all I can of it, I hope I could share some knowledege of it by mentoring and learn at the same time."
-  },
-  {
-    "github_username": "carnellj",
-    "name": "John Carnell",
-    "link_text": null,
-    "link_url": null,
-    "avatar_url": null,
-    "bio": "I am a prolific speaker and writer and regularly speak at local user groups and industry conferences.  I program mainly in Clojure and Java (my last was book was Spring Microservices in Action).  I have spent the last 3.5 years writing Clojure code for a cloud-based telephony company."
-}
+  }
 ]
