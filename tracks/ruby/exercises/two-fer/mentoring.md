@@ -50,5 +50,5 @@ end
 - Style preferences based on [community style guide via rubocop](https://github.com/rubocop-hq/ruby-style-guide): This exercise is a good opportunity to talk about style conventions like indentation, parameter parenthesis in method declarations and removing redundant comments. Given the place in the curriculum, it may be worth to not going to deep, and to not addressing points that are controversial or personal preference.
 
 ### Mentoring notes
-- A friendly standard answer about how this can be done in one line, and a 'hint: use a different default value' to get rid of the conditionals, will be all you need for maybe 90% of the submissions. 
+- A friendly standard answer about how this can be done in one line, and a 'hint: use a different default value' to get rid of the conditionals, will be all you need for maybe 90% of the submissions.
 
