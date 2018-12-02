@@ -7,10 +7,6 @@ This is a rough roadmap for Exercism. It is split into our short term goals (<12
 - There are lots of little issues that need resolving from the launch of v2. Anything tagged with `type/bug` on the exercism/exercism repo needs sorting. You can explore that list [here](https://github.com/exercism/exercism/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fbug).
 - **Fix issues with exercises not being unlocked:** [#3867](https://github.com/exercism/exercism/issues/3867).
 
-### Teams
-
-We are building a dedicated site for teams. It will allow groups of people to complete exercises and mentor each other in a private space. We envision it being used by bootcamps, groups of friends, and colleagues at work. Teams on Exercism v1 was a really important feature for many people so restoring it is a top priority for us. We are close to launching and ironing out the last bugs.
-
 ### Abuse and quality control
 
 - **Add a button for mentors to report learners** [#4306](https://github.com/exercism/exercism/issues/4306).
@@ -21,7 +17,6 @@ We are actively working to explore what an exemplar syllabus would look like for
 
 ### Mentoring Tools
 
-- Exposing the communal mentoring notes from GitHub to be visible directly within the UI.
 - Adding personalised mentor notes per exercise, viewable and editable within the UI. [#4083](https://github.com/exercism/exercism/issues/4083)
 - Adding 'Comment and Request changes' to mentoring UI, which will prompt the learner to submit another iteration (a little like Code Review on GitHub)
 - Adding difficulty filter to solution selector [#4105](https://github.com/exercism/exercism/issues/4105)
@@ -40,7 +35,6 @@ We are actively working to explore what an exemplar syllabus would look like for
 
 ### Profiles and public solutions
 
-- **Add ability to change which solutions are published:** Currently, you cannot change which solutions are published. We will enable this. [#4163](https://github.com/exercism/exercism/issues/4163)
 - **Allow users to change which iteraton is published:** At the moment only the most recent submisison is published. We will allow users to choose any of the iterations to make public.
 - **Allow deletion of iterations:** Often people submit iterations by default. This will allow people to delete them. [#3848](https://github.com/exercism/exercism/issues/3848)
 - **Add display name option:** [4365](https://github.com/exercism/exercism/issues/4365)
