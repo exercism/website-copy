@@ -9,6 +9,7 @@ class TwoFer
   end
 end
 ```
+Variations include using a `class` instead of `module`, using the [metaclass](https://yehudakatz.com/2009/11/15/metaprogramming-in-ruby-its-all-about-the-self/) instead of `self`, using [`module_function`](https://idiosyncratic-ruby.com/8-self-improvement.html#modulefunction), [`extend self`](https://idiosyncratic-ruby.com/8-self-improvement.html#modulefunction).
 
 ### Common suggestions
 - Suggest using a default value instead of any form of conditionals. 
@@ -28,5 +29,4 @@ end
 ### Mentoring notes
 - A friendly standard answer about how this can be done in one line, and a 'hint: use a different default value' to get rid of the conditionals, will be all you need for maybe 90% of the submissions. 
 - Most mentors seem to ignore the use of either `self.two_fer` or `class << self`. That is appropriate to where we are in the track. 
-- Every now and then there is a submission that makes TwoFer a module instead of a class.
 
