@@ -36,7 +36,6 @@ end
 ### Common suggestions
 - Suggest using a default value instead of any form of conditionals. 
 - People often set the default of `name` to `nil`. Ask if there is something they could do with the default value to avoid the conditional and make their code simpler.
-- Check if the BookKeeper module is present and the comment removed.
 - Some people need help with running the tests. 
 - Style suggestions based on community conventions:
   - Remove explicit `return` ([no-explicit-return](https://github.com/rubocop-hq/ruby-style-guide#no-explicit-return))
