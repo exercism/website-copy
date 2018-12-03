@@ -24,5 +24,13 @@
   "link_url": null,
   "avatar_url": null,
   "bio": "A continous learner, love technology and nature."
+},
+{
+  "github_username": "MrDataStorage",
+  "name": "Victor Nizeyimana",
+  "link_text": "My personal site",
+  "link_url": "https://www.mrclarify.com",
+  "avatar_url": "https://secure.gravatar.com/avatar/031dead686b069657d7f2e2044ae940d",
+  "bio": "Hello, I’m Victor, Full-Stack developer based in the United Kingdom. I have rich experience in web site design building and customization. Also I am good at AI, html, css, laravel, php, node.js, react.js, angular.js, Elixir, a bunch of frameworks, GIT! , bootstrap, MongoDB, redis, couchbase, docker, elastic, AWS, Citrix, linux, project management."
 }
 ]
