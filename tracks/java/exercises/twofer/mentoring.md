@@ -29,11 +29,22 @@ class Twofer {
 }
 ```
 
+```java
+import java.util.Optional;
+
+class Twofer {
+  String twofer(String name) {
+    return String.format("One for %s, one for me.", Objects.toString(name, "you"));
+  }
+}
+```
+
 
 ### Common suggestions
 
-- Use String#format or ` "One for " + name + ", one for me."`. To highlight that the method method performs string interpolation.
+- Use String#format for ` "One for " + name + ", one for me."`. To highlight that the method method performs string interpolation.
 - Use Optional for optional arguments
+- Use Objects#toString for defaults
 
 ### Talking points
 
