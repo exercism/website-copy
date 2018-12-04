@@ -42,7 +42,7 @@ class Twofer {
 
 ### Common suggestions
 
-- Use String#format for ` "One for " + name + ", one for me."`. To highlight that the method method performs string interpolation.
+- Use String#format for ` "One for " + name + ", one for me."`. To highlight that the method performs string interpolation.
 - Use Optional for optional arguments
 - Use Objects#toString for defaults
 
