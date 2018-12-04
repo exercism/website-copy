@@ -24,3 +24,11 @@ func twoFer(name: String = "you") -> String {
   ```
 - Encourage string interpolation with `"\()"` instead of concatenation, e.g.
   `"One for " + name + ", one for me."`.
+- Some students would wrap the `twoFer` function into another type and make it a `static` or `class` function:
+  ```swift
+  class TwoFer {
+    static func twoFer(name: String = "") -> String {
+      //...
+    }
+  ```
+  It will pass the test cases. However, the class name `TwoFer` shadows the module name in test cases. There is no need to introduce a class here. Just making the function as a top-level one would make things simpler.
