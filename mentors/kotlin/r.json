@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "roschlau",
+    "name": "Robin Roschlau",
+    "link_text": "Twitter",
+    "link_url": "https://twitter.com/lushorac",
+    "avatar_url": null,
+    "bio": "I've been slightly addicted to Kotlin ever since I first used it, coming from Java a few years ago, so much so that I started a Kotlin User Group in my area and am regularly holding talks about it."
+  }
+]
