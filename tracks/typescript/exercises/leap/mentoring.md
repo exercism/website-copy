@@ -76,9 +76,9 @@ A student may explicitly type the return value as `boolean`.
   const isLeapYear = (year: number) => {
     const isDivisibleByFn = isDivisibleBy(year)
     const by4 = isDivisibleByFn(4)
-    const by10 = isDivisibleByFn(10)
+    const by100 = isDivisibleByFn(100)
     const by400 = isDivisibleByFn(400)
-    let isLeapResult = Boolean(by4 && !by10)
+    let isLeapResult = Boolean(by4 && !by100)
     if (by400) {
       isLeapResult = true
     }
@@ -96,10 +96,10 @@ A student may explicitly type the return value as `boolean`.
   }
 
   const by4 = isDivisibleByFn(4)
-  const by10 = isDivisibleByFn(10)
+  const by100 = isDivisibleByFn(100)
   const by400 = isDivisibleByFn(400)
 
-  const isLeapYear = (year: number) => by400(year) || (by4(year) && !by10(year))
+  const isLeapYear = (year: number) => by400(year) || (by4(year) && !by100(year))
 
   export default isLeapYear
   ```
