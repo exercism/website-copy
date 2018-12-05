@@ -20,7 +20,7 @@ module TwoFer
   end
 end
 ```
-Solutions can also use string templates with `format` or `%`:
+Solutions can also use string templates with [`sprintf`](https://ruby-doc.org/core/Kernel.html#method-i-sprintf) or [`%`](https://ruby-doc.org/core-2.5.3/String.html#method-i-25):
 
 ```ruby
 class TwoFer
