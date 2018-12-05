@@ -20,13 +20,18 @@ task :test do
         username = mentor["github_username"]
         name = mentor["name"]
 
-        if name == "" || name.nil?
-          errors << "Name can't be blank for %s in %s." % [username, file]
+        if username == "" || username.nil?
+          errors << "Github username can't be blank for %s." % [file]
           next
         end
 
         unless username.downcase.start_with?(filename)
           errors << "First letter of github_username \"%s\" must equal JSON filename %s" % [username, file]
+          next
+        end
+
+        if name == "" || name.nil?
+          errors << "Name can't be blank for %s in %s." % [username, file]
           next
         end
 
