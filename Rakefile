@@ -6,7 +6,9 @@ task :test do
   require 'json'
   Dir['mentors/**/*.json'].each do |file|
     begin
+      filename = File.basename(file).downcase[0]
       mentors = JSON.parse(File.read(file))
+
       next if mentors.empty?
 
       if mentors.is_a?(Hash)
@@ -20,6 +22,11 @@ task :test do
 
         if name == "" || name.nil?
           errors << "Name can't be blank for %s in %s." % [username, file]
+          next
+        end
+
+        unless username.downcase.start_with?(filename)
+          errors << "First letter of github_username \"%s\" must equal JSON filename %s" % [username, file]
           next
         end
 
