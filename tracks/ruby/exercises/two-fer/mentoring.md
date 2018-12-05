@@ -34,9 +34,9 @@ end
 ```
 
 ### Common suggestions
-- Use a default value instead of any form of conditionals.
-- When a student set the default of `name` to `nil`: Ask if there is something they could do with the default value to avoid the conditional and make their code simpler.
-- Some people need help with running the tests.
+- If a student uses a conditional, suggest a default value for the argument `name`.
+- If a student sets the default value of `name` to `nil`, ask if there is something they could do with the default value to avoid the conditional statement, making their code simpler.
+- If the code doesn't pass the tests, ask them if they need help with running the tests.
 - Style suggestions based on community conventions:
   - Remove explicit `return` ([no-explicit-return](https://github.com/rubocop-hq/ruby-style-guide#no-explicit-return))
   - Use `def` with parentheses, because of the [parameter (method-parens)](https://github.com/rubocop-hq/ruby-style-guide#method-parens).
