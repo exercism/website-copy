@@ -9,16 +9,22 @@ A solution with a single loop that counts the differnces:
 
 int compute(const char *lhs, const char *rhs)
 {
-   int count = -1;
-   if (lhs && rhs && (strlen(lhs) == strlen(rhs))) {
-      count = 0;
-      int length = (int)strlen(lhs);
-      for (int i = 0; i < length; ++i) {
-         if (lhs[i] != rhs[i]) {
+    if (!lhs || !rhs)
+        return -1;
+    
+    int length = strlen(lhs);
+    if (length != strlen(rhs))
+        return -1;
+
+    int count = 0;
+    for (int i = 0; i < length; ++i)
+    {
+        if (lhs[i] != rhs[i])
+        {
             ++count;
-         }
-      }
-   }
+        }
+    }
+    
    return count;
 }
 ```
