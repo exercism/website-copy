@@ -1,6 +1,6 @@
 ### Reasonable Solutions
 
-A solution with a single loop that counts the differnces.
+A solution with a single loop that counts the differnces:
 
 ```c
 #include <stddef.h>
