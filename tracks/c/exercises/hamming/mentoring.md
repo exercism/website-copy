@@ -24,7 +24,7 @@ int compute(const char *lhs, const char *rhs)
             ++count;
         }
     }
-    
+
    return count;
 }
 ```
@@ -52,3 +52,6 @@ int compute(const char *lhs, const char *rhs)
     return count;
 }
 ```
+
+### Common suggestions
+1. Reducing calls to `strlen` - every call is a string length loop.
