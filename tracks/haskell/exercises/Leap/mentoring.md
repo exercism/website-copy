@@ -1,7 +1,7 @@
 ### Reasonable solutions
 
  ```haskell
-  isDivisibleBy :: Integer -> Integer -> Bool
+ isDivisibleBy :: Integer -> Integer -> Bool
  isDivisibleBy x n = x `rem` n == 0
 
  isLeapYear :: Integer -> Bool
