@@ -43,5 +43,15 @@ Some suggestions would be
 
  ### Talking points
  
- - `if then else` is over elaborate
- - the over use of parentheses is something to watch
+ - `if then else` is over uneccessary
+  - some students tend to write patterns like
+  ```
+  if p then True else False
+  if p then False else True
+  if p then True else q
+  if p then q else False
+  ```
+- the over use of parentheses is something to watch. This can be triggered by
+  - not knowing the precedence rules of various operators, infixed functions and function application
+  - a habit of assuming that parentheses are required when making function calls
+  - because they forgot to refactor them out before submitting.
