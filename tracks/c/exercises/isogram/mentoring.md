@@ -36,6 +36,8 @@ bool is_isogram(const char phrase[])
 - An initial solution will often have a second loop inside the first to check for duplicate letters. A lookup table, of either a 32-bit bitmask or a 26-item array, will let them avoid this second loop.
   - Sometimes the solution will have an array that is not 26 items long. Greek, for instance, uses 24 letters in its alphabet.
 
+- Some solution will use `strchr` instead of the second loop mentioned in the previous point. This has the additional downside of the need to call `strchr` twice for case-insensitive search.
+
 - Use standard library functions like tolower() (or toupper()) and isalpha() to avoid re-implementing the same functionality.
 
 - Use character constants like 'A' instead of bare numbers.
