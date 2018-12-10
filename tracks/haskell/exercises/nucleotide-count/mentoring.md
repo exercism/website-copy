@@ -82,6 +82,12 @@ Another drawback with this solution is that `incr` performs both error
 handling and the increment making it less simple.
 
 ```haskell
+import qualified Data.Map as M
+import           Data.Map (Map)
+
+import Control.Monad (foldM)
+import Data.Semigroup ((<>))
+import Text.Read (readEither)
 
 nucleotideCounts :: String -> Either String (Map Nucleotide Int)
 nucleotideCounts = foldM (\nmap c -> toNucleotide c >>= incr nmap) empty
