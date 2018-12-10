@@ -77,26 +77,30 @@ with zeroes. Beware that *the order matters* for arguments to `M.union`!
 import qualified Data.Map as M
 import           Data.Map (Map)
 
-import Data.List (foldl')
+import Text.Read (readEither)
 
-data Nucleotide = A | C | G | T deriving (Eq, Ord, Show, Read)
+data Nucleotide = A | C | G | T
+                deriving (Eq, Ord, Show, Read, Enum, Bounded)
 
 nucleotideCounts :: String -> Either String (Map Nucleotide Int)
-nucleotideCounts = fmap frequencies . mapM toNucleotide
+nucleotideCounts = fmap (fillZeroes . frequencies) . mapM toNucleotide
 
 frequencies :: [Nucleotide] -> Map Nucleotide Int
-frequencies = foldl' (\nmap c -> M.insertWith (+) c 1 nmap) empty
+frequencies ns = M.fromListWith (+) (zip ns [1,1..])
 
 toNucleotide :: Char -> Either String Nucleotide
-toNucleotide c
-  | isNucleotide c = return (read [c])
-  | otherwise = Left $ "Unknown nucleotide " ++ show c
+toNucleotide c = readEither [c] <> Left ("Unknown nucleotide " ++ show c)
 
-empty :: Map Nucleotide Int
-empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
+fillZeroes :: Map Nucleotide Int -> Map Nucleotide Int
+fillZeroes = (`M.union` M.fromListWith (+) (zip [minBound..] [0,0..]))
 ```
 
-This solution also uses monadic error handling.
+This solution also uses monadic error handling, but via `mapM toNucleotide`.
+It counts the frequency of each element in the validated input using and
+pads the result with zeroes for elements that were not found once. It uses
+the `Read` instance and `readEither` for safe conversion, and the `Enum` and
+`Bounded` instances along with `zip [minBound..]` to create an empty `Map`
+without having to re-list the nucleotides.
 
 ### Common suggestions
 
