@@ -24,6 +24,9 @@ isNucleotide = (`elem` "ACGT")
 
 This solution uses monadic error handling via `foldM`.
 
+Because nucleotides with a count of zero must occur in the result, the
+initial map is populated with zeroes.
+
 ```haskell
 import qualified Data.Map as M
 import           Data.Map (Map)
@@ -45,8 +48,30 @@ isNucleotide = (`elem` "ACGT")
 
 This solution handles errors in an initial guard.
 
-Because GHC can fuse list combinators, four separate `length . filter (==
-c)` do not necessarily perform bad.
+Because GHC can fuse list combinators, four separate `length . filter (== c)`
+do not necessarily perform bad. Zeroes are not a special case here.
+
+```haskell
+nucleotideCounts :: String -> Either String (Map Nucleotide Int)
+nucleotideCounts s
+  | all isNucleotide s = Right (counts `M.union` empty)
+  | otherwise          = Left s
+  where
+    nucleotides = map (read . return) s
+    counts = M.fromListWith (+) (zip nucleotides [1,1..])
+
+isNucleotide :: Char -> Bool
+isNucleotide = (`elem` "ACGT")
+
+empty :: Map Nucleotide Int
+empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
+```
+
+This solution also handles errors in an initial guard.
+
+At its core, `M.fromListWith (+)` produces the result.  Because nucleotides
+with a count of zero must occur in the result, the initial map is populated
+with zeroes. Beware that *the order matters* for arguments to `M.union`!
 
 ```haskell
 import qualified Data.Map as M
@@ -66,6 +91,9 @@ toNucleotide :: Char -> Either String Nucleotide
 toNucleotide c
   | isNucleotide c = return (read [c])
   | otherwise = Left $ "Unknown nucleotide " ++ show c
+
+empty :: Map Nucleotide Int
+empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
 ```
 
 This solution also uses monadic error handling.
