@@ -77,6 +77,8 @@ with zeroes. Beware that *the order matters* for arguments to `M.union`!
 import qualified Data.Map as M
 import           Data.Map (Map)
 
+import Control.Monad (mapM)
+import Data.Semigroup ((<>))
 import Text.Read (readEither)
 
 data Nucleotide = A | C | G | T
@@ -92,15 +94,18 @@ toNucleotide :: Char -> Either String Nucleotide
 toNucleotide c = readEither [c] <> Left ("Unknown nucleotide " ++ show c)
 
 fillZeroes :: Map Nucleotide Int -> Map Nucleotide Int
-fillZeroes = (`M.union` M.fromListWith (+) (zip [minBound..] [0,0..]))
+fillZeroes = (`M.union` empty)
+
+empty :: Map Nucleotide Int
+empty = M.fromListWith (+) (zip [minBound..] [0,0..]))
 ```
 
 This solution also uses monadic error handling, but via `mapM toNucleotide`.
-It counts the frequency of each element in the validated input using and
-pads the result with zeroes for elements that were not found once. It uses
-the `Read` instance and `readEither` for safe conversion, and the `Enum` and
-`Bounded` instances along with `zip [minBound..]` to create an empty `Map`
-without having to re-list the nucleotides.
+It counts the frequency of each element in the validated input using
+`M.fromListWith (+)` and pads the result with zeroes for elements that were not
+found once. It uses the `Read` instance and `readEither` for safe conversion,
+and the `Enum` and `Bounded` instances along with `zip [minBound..]` to create
+an empty `Map` without having to re-list the nucleotides.
 
 ### Common suggestions
 
