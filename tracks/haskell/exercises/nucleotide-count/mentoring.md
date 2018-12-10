@@ -1,57 +1,6 @@
 ### Reasonable solutions
 
 ```haskell
-import qualified Data.Map as M
-import           Data.Map (Map)
-
-import Control.Monad (foldM)
-
-data Nucleotide = A | C | G | T deriving (Eq, Ord, Show, Read)
-
-nucleotideCounts :: String -> Either String (Map Nucleotide Int)
-nucleotideCounts = foldM incr empty
-  where
-    incr nmap c
-      | isNucleotide c = return (M.adjust (+1) (read [c]) nmap)
-      | otherwise      = Left $ "Unknown nucleotide " ++ show c
-
-empty :: Map Nucleotide Int
-empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
-
-isNucleotide :: Char -> Bool
-isNucleotide = (`elem` "ACGT")
-```
-
-This solution uses monadic error handling via `foldM`.
-
-Because nucleotides with a count of zero must occur in the result, the
-initial map is populated with zeroes.
-
-```haskell
-import qualified Data.Map as M
-import           Data.Map (Map)
-
-data Nucleotide = A | C | G | T deriving (Eq, Ord, Show)
-
-nucleotideCounts :: String -> Either String (Map Nucleotide Int)
-nucleotideCounts s
-  | any (not . isNucleotide) s = Left $ "Invalid strand " ++ show s
-  | otherwise = Right $ M.fromList [ (A, count 'A')
-                                   , (C, count 'C')
-                                   , (G, count 'G')
-                                   , (T, count 'T') ]
-  where count c = length . filter (== c) $ s
-
-isNucleotide :: Char -> Bool
-isNucleotide = (`elem` "ACGT")
-```
-
-This solution handles errors in an initial guard.
-
-Because GHC can fuse list combinators, four separate `length . filter (== c)`
-do not necessarily perform bad. Zeroes are not a special case here.
-
-```haskell
 nucleotideCounts :: String -> Either String (Map Nucleotide Int)
 nucleotideCounts s
   | all isNucleotide s = Right (counts `M.union` empty)
@@ -67,11 +16,71 @@ empty :: Map Nucleotide Int
 empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
 ```
 
-This solution also handles errors in an initial guard.
+This solution handles errors in an initial guard.
 
 At its core, `M.fromListWith (+)` produces the result.  Because nucleotides
 with a count of zero must occur in the result, the initial map is populated
 with zeroes. Beware that *the order matters* for arguments to `M.union`!
+
+The error message is a little imprecise.
+
+```haskell
+import qualified Data.Map as M
+import           Data.Map (Map)
+
+data Nucleotide = A | C | G | T deriving (Eq, Ord, Show)
+
+nucleotideCounts :: String -> Either String (Map Nucleotide Int)
+nucleotideCounts s
+  | all isNucleotide s = Right $ M.fromList [ (A, count 'A')
+                                            , (C, count 'C')
+                                            , (G, count 'G')
+                                            , (T, count 'T') ]
+  | otherwise = Left $ "Invalid strand " ++ show s
+  where count c = length . filter (== c) $ s
+
+isNucleotide :: Char -> Bool
+isNucleotide = (`elem` "ACGT")
+```
+
+This solution also handles errors in an initial guard.
+
+Because GHC can fuse list combinators, four separate `length . filter (== c)`
+do not necessarily perform bad. Zeroes are not a special case here.
+
+```haskell
+{-# LANGUAGE TypeApplications #-}
+import qualified Data.Map as M
+import           Data.Map (Map)
+
+import Control.Monad (foldM)
+
+data Nucleotide = A | C | G | T deriving (Eq, Ord, Show, Read)
+
+nucleotideCounts :: String -> Either String (Map Nucleotide Int)
+nucleotideCounts = foldM incr empty
+  where
+    incr nmap c
+      | isNucleotide c = return (M.adjust (+1) (read [c]) nmap)
+      | otherwise      = Left $ "Unknown nucleotide " ++ show c
+
+isNucleotide :: Char -> Bool
+isNucleotide = (`elem` "ACGT")
+
+empty :: Map Nucleotide Int
+empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
+```
+
+This solution uses monadic error handling via `foldM`.
+
+Because nucleotides with a count of zero must occur in the result, the
+initial map is populated with zeroes.
+
+The conversion happens with a combination of the guard `isNucleotide`, the
+additional `Read` instance, and the partial (unsafe) `read [c]`.
+
+Another drawback with this solution is that `incr` performs both error
+handling and the increment making it less simple.
 
 ```haskell
 import qualified Data.Map as M
@@ -100,12 +109,13 @@ empty :: Map Nucleotide Int
 empty = M.fromListWith (+) (zip [minBound..] [0,0..]))
 ```
 
-This solution also uses monadic error handling, but via `mapM toNucleotide`.
-It counts the frequency of each element in the validated input using
-`M.fromListWith (+)` and pads the result with zeroes for elements that were not
-found once. It uses the `Read` instance and `readEither` for safe conversion,
-and the `Enum` and `Bounded` instances along with `zip [minBound..]` to create
-an empty `Map` without having to re-list the nucleotides.
+This solution also uses monadic error handling, but via `mapM toNucleotide`,
+thus separating error handling.  It counts the frequency of each element in
+the validated input using `M.fromListWith (+)` and pads the result with
+zeroes for elements that were not found once. It uses the `Read` instance
+and `readEither` for safe conversion, and the `Enum` and `Bounded` instances
+along with `zip [minBound..]` to create an empty `Map` without having to
+re-list the nucleotides from the data type definition.
 
 ### Common suggestions
 
