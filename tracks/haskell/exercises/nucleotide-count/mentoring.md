@@ -49,7 +49,6 @@ Because GHC can fuse list combinators, four separate `length . filter (== c)`
 do not necessarily perform bad. Zeroes are not a special case here.
 
 ```haskell
-{-# LANGUAGE TypeApplications #-}
 import qualified Data.Map as M
 import           Data.Map (Map)
 
@@ -83,6 +82,21 @@ Another drawback with this solution is that `incr` performs both error
 handling and the increment making it less simple.
 
 ```haskell
+
+nucleotideCounts :: String -> Either String (Map Nucleotide Int)
+nucleotideCounts = foldM (\nmap c -> toNucleotide c >>= incr nmap) empty
+  where incr nmap n = return (M.adjust (+1) n nmap)
+
+toNucleotide :: Char -> Either String Nucleotide
+toNucleotide c = readEither [c] <> Left ("Unknown nucleotide " ++ show c)
+```
+
+This solution also uses monadic error handling in combination with `foldM`,
+but the error handling has been separated from the `incr` function. It uses
+the `Read` instance and `readEither` for safe conversion without needing a
+separate definition of what a valid nucleotide is.
+
+```haskell
 import qualified Data.Map as M
 import           Data.Map (Map)
 
@@ -110,12 +124,13 @@ empty = M.fromListWith (+) (zip [minBound..] [0,0..]))
 ```
 
 This solution also uses monadic error handling, but via `mapM toNucleotide`,
-thus separating error handling.  It counts the frequency of each element in
-the validated input using `M.fromListWith (+)` and pads the result with
-zeroes for elements that were not found once. It uses the `Read` instance
-and `readEither` for safe conversion, and the `Enum` and `Bounded` instances
-along with `zip [minBound..]` to create an empty `Map` without having to
-re-list the nucleotides from the data type definition.
+thus separating error handling into a separate step.  It counts the
+frequency of each element in the validated input using `M.fromListWith (+)`
+and pads the result with zeroes for elements that were not found once.
+
+The `Enum` and `Bounded` instances along with `zip [minBound..]` are used to
+create an empty `Map` without having to re-list the nucleotides from the
+data type definition.
 
 ### Common suggestions
 
@@ -137,3 +152,6 @@ re-list the nucleotides from the data type definition.
   discard anything else. `insertWith` makes sense when one wishes to gather
   a result for all inputs, which is the case after conversion to
   `Nucleotide`.
+- Using a more specialised combinator such as a *map*, `M.fromList` or
+  `M.fromListWith (+)` conveys more information about the intent of the
+  recursion and is thus more declarative.
