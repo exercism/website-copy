@@ -46,5 +46,13 @@
     "link_url": "https://anukul.js.org/",
     "avatar_url": "https://avatars2.githubusercontent.com/u/42784420",
     "bio": "I'm an undergraduate software engineering research student, and I love to hack on interesting stuff, no matter what the language!"
+  },
+  {
+    "github_username": "alex-bender",
+    "name": "Alex Bender",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Sharing is what really matters. So I'd like to share my Python knowledge to augment (help develop) present capabilities of anyone who desires to know Python."
   }
 ]
