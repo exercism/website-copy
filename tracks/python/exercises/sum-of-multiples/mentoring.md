@@ -35,7 +35,7 @@ def sum_of_multiples(limit, multiples):
 
 ### Common Suggestions
  - It's tempting to write a complex one liner for this, but that should be discouraged in favour of
-   PEP8 complaint solutions for readability and maintainability.
+   PEP8 compliant solutions for readability and maintainability.
 
 
 ### Talking points
