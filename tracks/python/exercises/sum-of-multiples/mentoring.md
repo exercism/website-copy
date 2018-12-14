@@ -1,6 +1,6 @@
 ### Reasonable solutions
 
-This solution deliberately shows the two steps seperately:
+This solution deliberately shows the two steps separately:
 1) finding the set of numbers that are multiples and,
 2) doing the summation of those numbers.
 
