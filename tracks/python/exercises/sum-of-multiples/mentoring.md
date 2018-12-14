@@ -18,7 +18,7 @@ def sum_of_multiples(limit, multiples):
     return sum(numbers)
 ```
 
-The solution below shows a terser approach:
+The solution below shows a more terse approach:
 
 ```python
 def sum_of_multiples(limit, multiples):
