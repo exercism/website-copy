@@ -50,3 +50,16 @@ This exercise can be solved without regular expressions and a student could be e
  - Regular expressions are not known for their readability. `String.ends_with?(input, "?")` is more obvious than `Regex.match?(~r/\?$/, input)`.
  - It is a good habit to use simple tools for simple problems and advanced tools for advanced problems.
  - Elixir developers should be familiar with the `String` module and the functions it offers.
+
+#### Hint functions for the truely stuck
+
+https://hexdocs.pm/elixir/String.html#trim/1
+https://hexdocs.pm/elixir/String.html#ends_with?/2
+https://hexdocs.pm/elixir/String.html#downcase/2
+https://hexdocs.pm/elixir/String.html#upcase/2
+
+#### Style guide
+
+This is the first time on the track that students get to define their own functions and frequently trip over nameing conventions.
+
+https://github.com/christopheradams/elixir_style_guide
