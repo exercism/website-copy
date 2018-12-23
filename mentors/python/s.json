@@ -82,5 +82,14 @@
     "avatar_url": null,
     "bio":
       "Python was the first language I learnt when I started programming several years ago. Since then I have used it extensively for uni projects, web, scripting, and pretty much everything else. Excited to be able to help mentor new pythonistas!"
+  },
+  {
+    "github_username": "suzaku",
+    "name": "Xuecong Liao",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I am a system programmer in JuiceFS. Python is my favorite programming language and I have been using it for >9 years. I hope I can help you pick up Python faster."
   }
 ]
