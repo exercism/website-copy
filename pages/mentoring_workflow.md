@@ -42,6 +42,8 @@ Once you're happy with the feedback you've written, click "Comment". If you're n
 
 If you come across a solution you don't want to give feedback to, you can click the "I'll pass, thanks" button and you won't ever see the solution in your Mentor Dashboard queue again.
 
+_Note: this button is labeled as `Leave conversation` for solutions you are actively mentoring.  Clicking this button will return the solution to the mentor queue for another mentor to assume._
+
 ![pass](https://user-images.githubusercontent.com/5421823/42646492-f0077750-85f8-11e8-8621-e77da7ec018f.png)
 
 When you think a learner has learnt enough from the exercise (i.e. they've touched upon a couple of concepts and made good process with each iteration based on the feedback given), you can allow the learner to progress by clicking on the "Approve and comment" button (appears when you type). You will need to add a comment before hitting this button, for example "It looks like you've learnt enough from this exercise, great work."
