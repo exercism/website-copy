@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "thedarkula",
+    "name": "Meade Kincke",
+    "link_text": "Code Artistry",
+    "link_url": "https://thedarkula.gitlab.io/code-artistry/",
+    "avatar_url": null,
+    "bio": "I love real-world, usable examples. I'm a huge fan of being able to help others to make something work how it should with maximum performance. I especially love Rust and have written a tool called BrewStillery in it and GTK-rs."
+  },
+  {
     "github_username": "thelostlambda",
     "name": "Brooks J Rady",
     "link_text": "thelostlambda.xyz",
