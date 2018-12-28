@@ -10,7 +10,7 @@ public static class Raindrops
 {
     public static string Convert(int number)
     {
-        var sounds = new Dictionary<int, string>()
+        var sounds = new SortedDictionary<int, string>()
         {
             [3] = "Pling",
             [5] = "Plang",
