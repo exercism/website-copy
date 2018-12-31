@@ -60,6 +60,6 @@ https://hexdocs.pm/elixir/String.html#upcase/2
 
 #### Style guide
 
-This is the first time on the track that students get to define their own functions and frequently trip over nameing conventions.
+This is the first time on the track that students get to define their own functions and frequently trip over naming conventions.
 
 https://github.com/christopheradams/elixir_style_guide
