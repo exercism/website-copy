@@ -35,7 +35,7 @@ extension Numeric {
 
 ## Common suggestions
 
-- Sometimes students will try to do all of the computations within the init method. This is not optimal when numbers get very large; the cost of computation starts to rise. So the use of lazy variables is strongly encouraged.
+- Sometimes students will try to do all of the computations within the init method. This is not optimal when numbers get very large; the cost of computation starts to rise. So the use of lazy variables is strongly encouraged so that computation is only done if needed.
 - Encourage the use of reduce here. It's a perfect place to understand exactly what this function does and how powerful it can be.
 - In addition it is a great place to teach students about the power of ranges. You can assemble a range in a variety of ways, however the syntactial sugar of `...` is the simpliest and most straight forward.
 
