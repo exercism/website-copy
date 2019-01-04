@@ -11,7 +11,7 @@ A solution with a single loop that uses a lookup table to keep track of letters 
 bool is_isogram(const char phrase[])
 {
   size_t phraseLength = strlen(phrase);
-  uint32_t used[26] = { 0 };
+  bool used[26] = { false };
   size_t usedIndex;
 
   for (size_t i = 0; i < phraseLength; i++)
@@ -24,7 +24,7 @@ bool is_isogram(const char phrase[])
     if (used[usedIndex])
       return false;
 
-    used[usedIndex] = 1;
+    used[usedIndex] = true;
   }
 
   return true;
@@ -42,7 +42,7 @@ bool is_isogram(const char phrase[])
 
 - Use character constants like 'A' instead of bare numbers.
 
-- If an array is used for the lookup table, use the array initializer '{0}' instead of a loop for initialization.
+- If a boolean array is used for the lookup table, use the array initializer '{false}' instead of a loop for initialization.
 
 ### Talking Points
 
