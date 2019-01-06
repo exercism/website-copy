@@ -66,5 +66,5 @@ def binary_search(list_of_numbers, number):
 
 ### Talking points
 - Using a single variable to track where the midpoint is on each iteration is not enough, because you also need to track how long the current sub-list is.
-- You can represent the high end of the range as the last index where the value could be (inclusive), or one past that (exclusive).  Both work.  The exclusive approach seems more natural in Python, because that's the way slicing works.
+- You can represent the high end of the range as the last index where the value could be (inclusive), or one past that (exclusive).  The exclusive approach seems more natural in Python, because that's the way slicing works.
 
