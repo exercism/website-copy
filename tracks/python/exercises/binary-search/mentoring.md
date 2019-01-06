@@ -22,7 +22,9 @@ And so is a recursive solution:
 
 ```python
 def binary_search(list_of_numbers, number):
-    return binary_search_helper(list_of_numbers, number, 0, len(list_of_numbers))
+    return binary_search_helper(list_of_numbers, number, 0,
+                                len(list_of_numbers))
+
 
 def binary_search_helper(list_of_numbers, number, low, high):
     if low >= high:
@@ -32,10 +34,9 @@ def binary_search_helper(list_of_numbers, number, low, high):
         mid_value = list_of_numbers[mid]
         if number < mid_value:
             return binary_search_helper(list_of_numbers, number, low, mid)
-        elif number == mid_value:
+        if number == mid_value:
             return mid
-        else:
-            return binary_search_helper(list_of_numbers, number, mid + 1, high)
+        return binary_search_helper(list_of_numbers, number, mid + 1, high)
 ```
 
 ### Unreasonable Solutions
@@ -47,17 +48,17 @@ right, but copies the remaining list on each recursive call, so it runs in O(n) 
 
 ```python
 def binary_search(list_of_numbers, number):
-    if len(list_of_numbers) == 0:
+    count = len(list_of_numbers)
+    if count == 0:
         raise ValueError('number not found')
     else:
-        mid = len(list_of_numbers) // 2
+        mid = count // 2
         mid_value = list_of_numbers[mid]
         if number < mid_value:
             return binary_search(list_of_numbers[:mid], number)
-        elif number == mid_value:
+        if number == mid_value:
             return mid
-        else:
-            return (mid + 1) + binary_search(list_of_numbers[mid+1:], number)
+        return (mid + 1) + binary_search(list_of_numbers[mid+1:], number)
 ```
 
 ### Common suggestions
