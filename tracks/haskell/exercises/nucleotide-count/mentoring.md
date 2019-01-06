@@ -1,6 +1,9 @@
 ### Reasonable solutions
 
 ```haskell
+import qualified Data.Map as M
+import           Data.Map (Map)
+
 nucleotideCounts :: String -> Either String (Map Nucleotide Int)
 nucleotideCounts s
   | all isNucleotide s = Right (counts `M.union` empty)
@@ -18,9 +21,9 @@ empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
 
 This solution handles errors in an initial guard.
 
-At its core, `M.fromListWith (+)` produces the result.  Because nucleotides
-with a count of zero must occur in the result, the initial map is populated
-with zeroes. Beware that *the order matters* for arguments to `M.union`!
+At its core, `M.fromListWith (+)` produces the result. Beware that *the
+order matters* for arguments to `M.union`, and that `read . return` is
+partial and relies on the validation of the `all isNucleotide` guard.
 
 The error message is a little imprecise.
 
@@ -45,9 +48,6 @@ isNucleotide = (`elem` "ACGT")
 
 This solution also handles errors in an initial guard.
 
-Because GHC can fuse list combinators, four separate `length . filter (== c)`
-do not necessarily perform bad. Zeroes are not a special case here.
-
 ```haskell
 import qualified Data.Map as M
 import           Data.Map (Map)
@@ -71,9 +71,6 @@ empty = M.fromList [(A, 0), (C, 0), (G, 0), (T, 0)]
 ```
 
 This solution uses monadic error handling via `foldM`.
-
-Because nucleotides with a count of zero must occur in the result, the
-initial map is populated with zeroes.
 
 The conversion happens with a combination of the guard `isNucleotide`, the
 additional `Read` instance, and the partial (unsafe) `read [c]`.
