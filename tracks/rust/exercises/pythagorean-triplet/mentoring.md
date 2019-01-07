@@ -15,7 +15,7 @@ A reasonable solution should do the following:
 
 A good solution may go above and beyond and also do the following:
 
-- Solve the problem with euler's formula
+- Solve the problem with Euler's formula
 - Break out the core logic of find into a variant that takes the perimeter as an argument
 - Introduce negative test cases.
 
