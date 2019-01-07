@@ -47,3 +47,4 @@ extension Sequence where Element: Numeric {
 ### Talking Points
 - The extensions on sequence make each line within the Squares class more delarative, and while optimal they should not be required to allow a student to pass and continue on.
 - Additionally students could do all of the of the computation inside the init. This saves them from having to store the `maxNum`, but forces the computation of every variable at initialization time (potentially taxing). The solution here takes the trade off of saving the Int (a relatively small amount of memory) to delay to computation of each variable (which is still only done once with the lazy vars).
+- Some students may generate Arrays of numbers instead of using the range operators to generate the numbers from 0 to the max int. Ranges should be the prefered way since they take up less memory than an Array and are far easier to generate.
