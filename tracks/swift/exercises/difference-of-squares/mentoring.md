@@ -1,20 +1,15 @@
-# Difference of Squares
-
-_Differences of Squares_ is a core exercise, unlocked after _Gigasecond_.
-
-## Reasonable Solutions
+### Reasonable Solutions
 
 ```swift
 class Squares {
     let maxNum: Int
     
     lazy var squareOfSum: Int = {
-        let sum = (0...self.maxNum).reduce(0, { $0 + $1 })
-        return sum.squared
+        return (0...self.maxNum).sum.squared
     }()
     
     lazy var sumOfSquares: Int = {
-        return (0...self.maxNum).reduce(0, { $0 + $1.squared })
+        return (0...self.maxNum).eachSquared.sum
     }()
     
     lazy var differenceOfSquares: Int = {
@@ -31,17 +26,7 @@ extension Numeric {
         return self * self
     }
 }
-```
 
-## Common suggestions
-
-- Sometimes students will try to do all of the computations within the init method. This is not optimal when numbers get very large; the cost of computation starts to rise. So the use of lazy variables is strongly encouraged so that computation is only done if needed.
-- Encourage the use of reduce here. It's a perfect place to understand exactly what this function does and how powerful it can be.
-- In addition it is a great place to teach students about the power of ranges. You can assemble a range in a variety of ways, however the syntactial sugar of `...` is the simpliest and most straight forward.
-
-## Next Level Additions
-- You can take this to the next level with some extra extensions on sequences to do the heavy lifting of summing and squaring: (but this is more advanced and not required for an easy level problem)
-```swift
 extension Sequence where Element: Numeric {
     var sum: Element {
         return reduce(0, +)
@@ -52,3 +37,13 @@ extension Sequence where Element: Numeric {
     }
 }
 ```
+
+### Common suggestions
+
+- Sometimes students will try to do all of the computations within the init method. This is not optimal when numbers get very large; the cost of computation starts to rise. So the use of lazy variables is strongly encouraged so that computation is only done if needed.
+- Encourage the use of reduce here. It's a perfect place to understand exactly what this function does and how powerful it can be.
+- In addition it is a great place to teach students about the power of ranges. You can assemble a range in a variety of ways, however the syntactial sugar of `...` is the simpliest and most straight forward.
+
+### Talking Points
+- The extensions on sequence make each line within the Squares class more delarative, and while optimal they should not be required to allow a student to pass and continue on.
+- Additionally students could do all of the of the computation inside the init. This saves them from having to store the `maxNum`, but forces the computation of every variable at initialization time (potentially taxing). The solution here takes the trade off of saving the Int (a relatively small amount of memory) to delay to computation of each variable (which is still only done once with the lazy vars).
