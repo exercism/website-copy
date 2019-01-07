@@ -52,7 +52,7 @@ pub fn find(sum: u32) -> HashSet<[u32; 3]> {
 If they use return on the last line for the None variant.
 
 ```
-The `return` the last line of the function isn't necessary. In rust, blocks evaluate to the value of the last expression in the block, so it's idiomatic to have end-of-function return values be the value of the expression, in this case, `None` rather than explicitly passing this value with the return keyword. It helps to think of the return keyword as being for early returns only, like with the `Some` variant in this problem.
+The `return` in the last line of the function isn't necessary. In rust, blocks evaluate to the value of the last expression in the block, so it's idiomatic to have end-of-function return values be the value of the expression, in this case, `None` rather than explicitly passing this value with the return keyword. It helps to think of the return keyword as being for early returns only, like with the `Some` variant in this problem.
 ```
 
 If they dont use `pow`
