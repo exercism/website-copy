@@ -34,7 +34,7 @@ give the regex away for free, especially if they already found `scan(/\w+/)`
 * Store the regex in a constant or a variable, mostly so it can be named. 
 
 ## Passing Regular Expressions
-`/\b[a-zA-Z]/` # only returns first letters, not `_` 
+`/\b[a-zA-Z]/` # only returns first letters, not `_` (but completely ignores words starting with `_`)
 
 `\b[[:alpha:]]/` # same
 
@@ -42,3 +42,4 @@ give the regex away for free, especially if they already found `scan(/\w+/)`
 
 `/\b[[:word]]/` # same 
 
+`/(?<!\p{Alpha})\p{Alpha}/` # uses lookbehind instead of `\b` to ignore underscores
