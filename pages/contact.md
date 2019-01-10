@@ -2,4 +2,4 @@ The best place to get help with Exercism is on Github at [https://github.com/exe
 
 If you'd like to get in touch privately please email us at [hello@exercism.io](mailto:hello@exercism.io), but please note that due to the quantity of emails we get we may not reply if the question would be more appropriate on GitHub. 
 
-If you have a Code of Conduct violation to report, please email us at [hello@exercism.io](mailto:hello@exercism.io) and we will deal with that as a priority.
+If you have a Code of Conduct violation to report, please email us at [hello@exercism.io](mailto:hello@exercism.io) and include `[CoC]` in the subject line. We will deal with all CoC issues as a priorities.
