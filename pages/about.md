@@ -6,7 +6,7 @@ Exercism provides you with thousands of exercises spread across numerous languag
 
 You complete a challenge by downloading the exercise to your computer and solving it in your normal working environment. Once you've finished you submit it online and one of our mentors will give you feedback on how you could improve it using features of the language that you may not be familiar with. After a couple of rounds of refactoring, your exercise will be complete and you will unlock both the next core exercise and also a series of related side-exercises for you to practice with.
 
-Exercism is entirely open source and relies on the contributions of thousands of wonderful people, include our [leadership team](/team), our [mentors](/team/mentors), our [track maintainers](/team/maintainers), and thousands of [contributors](/team/contributors).
+Exercism is entirely open source and relies on the contributions of thousands of wonderful people, including our [leadership team](/team), our [mentors](/team/mentors), our [track maintainers](/team/maintainers), and thousands of [contributors](/team/contributors).
 
 Exercism is designed to be fun and friendly, and we place a strong emphasis on empathetic communication. If you have any questions or concerns about Exercism, you can browse our [FAQs](/faqs) or [contact us](/contact).
 
