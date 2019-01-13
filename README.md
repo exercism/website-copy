@@ -17,7 +17,7 @@ The structure within the repository is: `/tracks/$track_id/exercises/$exercise_s
 
 - You can easily edit the files within GitHub to create Pull Requests for changes.
 - We'll be offering some mentors write permissions to the repo so that they can merge PRs without waiting for us to check everything.
-- In the near-future we'll auto-pull things into the website to display it for mentors at the relevant time.
+- You'll find a button to the Mentor Notes when you start mentoring a submission (if notes are available for that exercise).  
 
 Please use `###` for headings and try to keep to a structure of:
 
