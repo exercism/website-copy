@@ -21,7 +21,10 @@ end
 ```
 
 ### Reasonable variants
- - `Proc.to_sym` for the joining ( `map(&:join)` ), but at this point in the track just allow it if students use it, don't ask for it.  
+- Do the splitting in the initializer: 
+  ```
+    @numbers = serie.chars
+  ```
 
 ### General 
 - The Instructions point to a beginner friendly [explanation of iterating in Ruby:](http://jeromedalbert.com/ruby-how-to-iterate-the-right-way/)
@@ -35,6 +38,7 @@ and to the rubydocs [Enumerable](https://ruby-doc.org/core/Enumerable.html) with
 - `private` attr_reader: Following the 'rule' for encapsulation: if it doesn't need to be public, make it private. [This link](http://ruby-for-beginners.rubymonstas.org/writing_classes/state_and_behaviour.html) may come in handy for a first introduction. 
 - `inline if statement`
 - `error`: Custom error message? (Only if the first submission meets the Minimal Solution.)
+- `map(&:join)`: `Proc.to_sym` instead of map with block, but at this point in the track just allow it if students use it, no need to ask for it.  
 
 ### Mentor Research
 - The Iteration article mentioned above isn't ideal, but it's one of the few I know of that does more than comparing `each` and `map`, PLUS don't uses hashes for examples.
