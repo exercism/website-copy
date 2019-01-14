@@ -1,4 +1,4 @@
-New concepts: Iterating over an array (preferably with `each_cons`, avoid `each_with_index`); `.chars` to split a string; `attr_reader`; `private` (for the attr_reader); raising an Argument Error; inline if-statement 
+New concepts: Iterating over an array (preferably with `each_cons`, avoid `each_with_index`); `.chars` to split a string; (private) `attr_reader`; raising an Argument Error; inline if-statement 
 
 ### Minimal solution for approval
 
@@ -32,7 +32,7 @@ and to the rubydocs [Enumerable](https://ruby-doc.org/core/Enumerable.html) with
 
 
 ### Talking points
-- `each_cons` instead of an iterator `with_index`: In Ruby, you rarely have to write iterators that need to keep track of the index. Enumerable has powerful methods that does that for us.
+- `each_cons` instead of an iterator `with_index`: In Ruby, you rarely have to write iterators that need to keep track of the index. Enumerable has powerful methods that do that for us.
 - `chars`: Use Ruby's built-in methods instead of implementing it yourself: `chars` instead of `split('')`   
 - `attr_reader`: instead of the instance variable (Explained here:)[https://ivoanjo.me/blog/2017/09/20/why-i-always-use-attr_reader-to-access-instance-variables]
 - `private` attr_reader: Following the 'rule' for encapsulation: if it doesn't need to be public, make it private. [This link](http://ruby-for-beginners.rubymonstas.org/writing_classes/state_and_behaviour.html) may come in handy for a first introduction. 
