@@ -1,4 +1,4 @@
-New concepts: Iterating over an array (preferably with `each_cons`, avoid `each_with_index`); `.chars` to split a string; (private) `attr_reader`; raising an Argument Error; inline if-statement 
+New concepts: Iterating over an array (preferably with `each_cons`, avoid `each_with_index`); `.chars` to split the string; (private) `attr_reader`; raising an Argument Error; inline if-statement; `unless` 
 
 ### Minimal solution for approval
 
@@ -6,24 +6,24 @@ New concepts: Iterating over an array (preferably with `each_cons`, avoid `each_
 
 class Series
 
-  def initialize(serie)
-    @serie = serie
+  def initialize(numerals)
+    @numerals = numerals.chars
   end
 
   def slices(span)
-    raise ArgumentError unless span <= serie.size
-    serie.chars.each_cons(span).map(|slice| slice.join )
+    raise ArgumentError unless span <= numerals.size
+    numeral.each_cons(span).map(|slice| slice.join )
   end
 
   private
-  attr_reader :serie
+  attr_reader :numerals
 end
 ```
 
 ### Reasonable variants
-- Do the splitting in the initializer: 
+- Do the splitting in the slices method: 
   ```
-    @numbers = serie.chars
+    @numerals = numerals.chars
   ```
 
 ### General 
@@ -38,7 +38,7 @@ and to the rubydocs [Enumerable](https://ruby-doc.org/core/Enumerable.html) with
 - `private` attr_reader: Following the 'rule' for encapsulation: if it doesn't need to be public, make it private. [This link](http://ruby-for-beginners.rubymonstas.org/writing_classes/state_and_behaviour.html) may come in handy for a first introduction. 
 - `unless` , inline: With `unless` instead of `if`, we can show what "good" looks like for the conditional statement.
 - `error`: Custom error message? (Only if the first submission meets the Minimal Solution.)
-- `map(&:join)`: `Proc.to_sym` instead of map with block, but at this point in the track just allow it if students use it, no need to ask for it.  
+- `map(&:join)`: instead of map with block, but at this point in the track it's okay to just accept it if students use it, no need to require it or dive into the subject of `Symbol#to_proc`  
 
 ### Mentor Research
 - The Iteration article mentioned above isn't ideal, but it's one of the few I know of that does more than comparing `each` and `map`, PLUS don't uses hashes for examples.
