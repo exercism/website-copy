@@ -12,7 +12,7 @@ class Series
 
   def slices(span)
     raise ArgumentError unless span <= numerals.size
-    numeral.each_cons(span).map(|slice| slice.join )
+    numerals.each_cons(span).map(|slice| slice.join )
   end
 
   private
