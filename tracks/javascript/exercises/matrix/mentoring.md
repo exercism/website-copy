@@ -33,7 +33,7 @@ the student allows for calling both `columns` and `rows` on the same instance,
 multiple times. This is _not_ part of the test suite (yet). This is important if
 the student uses getters for example.
 
-The matrix itself is straigh-forward:
+The matrix itself is straight-forward:
 
 ```javascript
 export class Matrix {
