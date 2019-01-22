@@ -25,6 +25,7 @@ function transpose(matrix) {
     }
   }
   return matrix
+}
 ```
 
 In case of the latter, the logic becomes harder. Make sure the implementation of
