@@ -24,7 +24,5 @@ class RotationalCipher(private val key: Int) {
 }
 ```
 
-Thanks go out to (Xifax)[https://exercism.io/profiles/Xifax] for the inspiration.
-
 ### Common suggestions
 * Do not allow private members to access object state. This allows for easier refactoring to another object because their state is self contained.
