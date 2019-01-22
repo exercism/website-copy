@@ -11,28 +11,15 @@ class RotationalCipher(private val key: Int) {
     fun encode(input: String): String =
             input.map(shiftBy(key)).joinToString("")
 
-    // Do not allow private members to access object state.
-    // This allows for easier refactoring to another object
-    // because their state is self contained.
     private fun shiftBy(key: Int): (Char) -> Char = {
-        if (shouldNotShift(it)) it
-        else doShift(key, it)
+        if (it.isLetter()) doShift(key, it) else it
     }
 
     private fun doShift(key: Int, c: Char): Char {
         val mod = 26
-        val shift = if (c.isUpperCase()) {
-            65
-        } else {
-            97
-        }
+        val shift = if (c.isUpperCase()) 65 else 97
 
         return ((c.toInt() + key - shift) % mod + shift).toChar()
-    }
-
-    private fun shouldNotShift(c: Char): Boolean {
-        val symbolRange = 32..64
-        return c.toInt() in symbolRange
     }
 }
 ```
@@ -40,3 +27,4 @@ class RotationalCipher(private val key: Int) {
 Thanks go out to (Xifax)[https://exercism.io/profiles/Xifax] for the inspiration.
 
 ### Common suggestions
+* Do not allow private members to access object state. This allows for easier refactoring to another object because their state is self contained.
