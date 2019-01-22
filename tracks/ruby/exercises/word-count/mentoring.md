@@ -1,5 +1,5 @@
 ### New Concepts
-Hash (it's new here because Robot Name has been removed as a core exercise); constant; `each_with_object`: avoiding the Accumulator Pattern.
+Hash (it's new here because Robot Name has been removed as a core exercise); constant; `each_with_object`: avoiding a separate  accumulator variable.
 
 ### Minimal solution for approval
 ```ruby
@@ -40,7 +40,7 @@ end
 
 ### General
 - This is the first exercise where students practice with avoiding the Accumulator Pattern (with a counter variable)! It's an important goal of this exercise. 
-- Solutions with `each`, `for` or others are not considered approvable.
+- Solutions with `each`, `for` or others are not considered approvable (at least not in a first submission and/or without addressing it).
 - The RegEx gets complicated in the last test, where it should catch both `"large"` and `'large'` ` => { large: 2 }`. 
 As long as they got something that catches a word with or without `'`, it's fine to give away the last step for free.  
 http://www.rubular.com/ 
