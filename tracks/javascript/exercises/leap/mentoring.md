@@ -71,4 +71,5 @@ export const isLeap = (year) => !(year % 4) && year % 100 || !(year % 400);
     return isLeapResult;
   };
   ```
-
+- If a student submits one-liner with a `return`, talk about implicit return of arrow functions with
+  [concise body rather than block body](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Function_body).
