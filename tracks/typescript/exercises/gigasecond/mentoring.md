@@ -1,5 +1,6 @@
 This exersize introduces [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
+### Reasonable solution
 ```typescript
 const GIGASECOND_IN_MS = (10 ** 9) * 1000
 
