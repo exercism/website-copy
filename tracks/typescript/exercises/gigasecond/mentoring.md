@@ -3,15 +3,25 @@ This exersize introduces [`Date`](https://developer.mozilla.org/en-US/docs/Web/J
 ```typescript
 const GIGASECOND_IN_MS = (10 ** 9) * 1000
 
-/**
- * Adds a gigasecond (10^9) to the input {date}
- *
- * @export
- * @param {Readonly<Date>} date
- * @returns {Date} the date + 10^9 seconds
- */
-export function gigasecond(date: Readonly<Date>): Date {
-  return new Date(date.getTime() + GIGASECOND_IN_MS)
+export default class Gigasecond {
+
+  private futureDate: Date
+
+  /**
+   * Create a new Gigasecond instance
+   * @param {Readonly<Date>} date the input date
+   */
+  constructor(date: Readonly<Date>) {
+    this.futureDate = new Date(date.getTime() + GIGASECOND_IN_MS)
+  }
+
+  /**
+   * The origina input date plus one gigasecond
+   * @returns {Date} the future date
+   */
+  date(): Date {
+    return this.futureDate
+  }
 }
 ```
 
