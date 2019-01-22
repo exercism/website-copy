@@ -1,9 +1,7 @@
-This exersize introduces [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
+This exercise introduces [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
 ### Reasonable solutions
 ```javascript
-// @ts-check
-
 const GIGASECOND_IN_MS = (10 ** 9) * 1000
 
 /**
