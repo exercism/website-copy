@@ -15,11 +15,11 @@ class RotationalCipher(private val key: Int) {
         if (it.isLetter()) doShift(key, it) else it
     }
 
-    private fun doShift(key: Int, c: Char): Char {
+    private fun doShift(key: Int, char: Char): Char {
         val mod = 26
-        val shift = if (c.isUpperCase()) 65 else 97
+        val shift = if (char.isUpperCase()) 65 else 97
 
-        return ((c.toInt() + key - shift) % mod + shift).toChar()
+        return ((char.toInt() + key - shift) % mod + shift).toChar()
     }
 }
 ```
