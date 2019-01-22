@@ -10,9 +10,9 @@ object Hamming {
 
 ```kotlin
 object Hamming {
-    fun compute(left: String, right: String): Int {
-        require(left.length == right.length) { "left and right strands must be of equal length." }
-        return left.zip(right).count { (left, right) -> left != right }
+    fun compute(leftStrand: String, rightStrand: String): Int {
+        require(leftStrand.length == rightStrand.length) { "left and right strands must be of equal length." }
+        return leftStrand.zip(rightStrand).count { (left, right) -> left != right }
     }
 }
 ```
