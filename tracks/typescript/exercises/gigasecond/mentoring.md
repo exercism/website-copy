@@ -8,18 +8,10 @@ export default class Gigasecond {
 
   private futureDate: Date
 
-  /**
-   * Create a new Gigasecond instance
-   * @param {Readonly<Date>} date the input date
-   */
   constructor(date: Readonly<Date>) {
     this.futureDate = new Date(date.getTime() + GIGASECOND_IN_MS)
   }
 
-  /**
-   * The origina input date plus one gigasecond
-   * @returns {Date} the future date
-   */
   date(): Date {
     return this.futureDate
   }
