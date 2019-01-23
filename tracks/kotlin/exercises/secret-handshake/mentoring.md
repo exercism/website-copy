@@ -11,20 +11,16 @@ object HandshakeCalculator {
 
         val signalsPresent = signalMap.filter(isPresentIn(input)).keys.toList()
 
-        return if (shouldReverse(input)) {
-            signalsPresent.reversed()
-        } else {
-            signalsPresent
-        }
+        return if (shouldReverse(input)) signalsPresent.reversed() else signalsPresent
     }
 
-    private fun shouldReverse(input: Int): Boolean {
-        return input and 16 == 16
-    }
+    private fun shouldReverse(input: Int): Boolean = hasBitSet(input, 16)
 
     private fun isPresentIn(input: Int): (Map.Entry<Signal, Int>) -> Boolean = {
-        input and it.value == it.value
+        hasBitSet(input, it.value)
     }
+
+    private fun hasBitSet(input: Int, bit: Int): Boolean = input and bit == bit
 }
 ```
 
