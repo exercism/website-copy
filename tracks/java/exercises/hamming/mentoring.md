@@ -2,20 +2,19 @@
 
 ```java
 class Hamming {
-    private String leftStrand, rightStrand;
-    
+    private char[] leftStrand, rightStrand;
+
     Hamming(String leftStrand, String rightStrand) {
-        if (leftStrand.length() != rightStrand.length()) {
+        if (leftStrand.length() != rightStrand.length())
             throw new IllegalArgumentException("leftStrand and rightStrand must be of equal length.");
-        this.leftStrand = leftStrand;
-        this.rightStrand = rightStrand;
-        }
+        this.leftStrand = leftStrand.toCharArray();
+        this.rightStrand = rightStrand.toCharArray();
     }
 
     int getHammingDistance() {
         int hammingDistance = 0;
-        for (int i = 0; i < l.length; i++) {
-            if (l[i] != r[i]) hammingDistance++;
+        for (int i = 0; i < leftStrand.length; i++) {
+            if (leftStrand[i] != rightStrand[i]) hammingDistance++;
         }
         return hammingDistance;
     }
@@ -26,17 +25,17 @@ class Hamming {
 import java.util.stream.IntStream;
 
 class Hamming {
-    private char[] left, right;
+    private char[] leftStrand, rightStrand;
 
     Hamming(String leftStrand, String rightStrand) {
         if (leftStrand.length() != rightStrand.length())
             throw new IllegalArgumentException("leftStrand and rightStrand must be of equal length.");
-        left = leftStrand.toCharArray();
-        right = rightStrand.toCharArray();
+        this.leftStrand = leftStrand.toCharArray();
+        this.rightStrand = rightStrand.toCharArray();
     }
 
     int getHammingDistance() {
-        return (int) IntStream.range(0, left.length).filter(i -> left[i] != right[i]).count();
+        return (int) IntStream.range(0, leftStrand.length).filter(i -> leftStrand[i] != rightStrand[i]).count();
     }
 }
 ```
