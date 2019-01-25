@@ -23,6 +23,6 @@ There's no need to overload a student with all of these suggestions, so here is 
 
 - For students who wrote code that interleaves string manipulation with data persistence, encourage them to do those steps sequentially
 - Suggest the student look at other methods on `String` that could simplify their code if they don't use `String#lines` or `String#each_line`
-- If they have written their own transpose method, `point out Array#transpose`
+- If they have written their own transpose method, point out `Array#transpose`
 - More generally, for any solutions that has matching based on a regular expression or explicitly declared string or substring, encourage them to find a solution that does not require either
 - If the solution is reasonable, then approve it, but suggest that they might want to attempt to write their own version of `Array#transpose`.
