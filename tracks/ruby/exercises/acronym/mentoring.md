@@ -1,4 +1,4 @@
-_Acronym_ is meant to introduce `String#scan`.
+_Acronym_ is meant for practicing with `String#scan`. 
 
 ## Reasonable Solutions
 
@@ -11,20 +11,15 @@ end
 ```
 with variations for the regex (see below).
 
-
 ## Common suggestions
 * Most first submissions split the phrase into words with `String#split`: 
   ```ruby
   phrase.split(/[ -]/)
   ```
-  , followed by operations to find the first letters.
-  Variation: first `gsub` or `tr` the non-space delimiters, then `split`
+  followed by operations to find the first letters.
+  Variation: first `gsub` or `tr` the non-space delimiters, then `split`.
   
-In all these cases: point to String#scan.   
-* The first use of `scan` mostly is a scan for full words. That's a perfect moment to show the power of `scan`: 
-when it returns the first letters only, it will save a few operations.  
-* As this exercise is not about Regular Expressions, it's recommended to 
-give the regex away for free, especially if they already found `scan(/\w+/)`
+In all these cases: it's recommended to suggest the `String#scan` method and, because the exercise is not about Regular Expressions, give them also the RegEx (`/\b[a-zA-Z]/`). (At this point in the track, it's more about experiencing the strengths of Ruby's built-in methods then making them find them. There's ample opportunity for research later on in the track.)   
 
 ## Talking points
 * If the solution uses Class instead of Module: that's totally acceptable at this stage. No reason to discuss.
@@ -42,4 +37,4 @@ give the regex away for free, especially if they already found `scan(/\w+/)`
 
 `/\b[[:word]]/` # same 
 
-`/(?<!\p{Alpha})\p{Alpha}/` # uses lookbehind instead of `\b` to ignore underscores
+`/(?<!\p{Alpha})\p{Alpha}/` # finds first letters even with underscores in front of them (Note: we don't have tests for this case. The only reason we test for `'` is to ensure that `split` is not a equally good choice.)
