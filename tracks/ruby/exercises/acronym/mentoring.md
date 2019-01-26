@@ -19,7 +19,7 @@ with variations for the regex (see below).
   followed by operations to find the first letters.
   Variation: first `gsub` or `tr` the non-space delimiters, then `split`.
   
-In all these cases: it's recommended to suggest the `String#scan` method and, because the exercise is not about Regular Expressions, give them also the RegEx (`/\b[a-zA-Z]/`). (At this point in the track, it's more about experiencing the strengths of Ruby's built-in methods then making them find them. There's ample opportunity for research later on in the track.)   
+In all these cases: it's recommended to suggest the `String#scan` method and, because the exercise is not about Regular Expressions, give them also the RegEx (`/\b[a-zA-Z]/`). (At this point in the track, it's more about experiencing the strengths of Ruby's built-in methods than making them find them. There's ample opportunity for research later on in the track.)   
 
 ## Talking points
 * If the solution uses Class instead of Module: that's totally acceptable at this stage. No reason to discuss.
