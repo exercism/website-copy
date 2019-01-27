@@ -121,7 +121,7 @@ export class LinkedList {
 Variations include the following
 - A student may only pass `value` to `Node` and assign `prev` and `next` afterwards
 - A student may forego the `throw` clauses completely as there are no test cases covering empty list popping and shifting.
-- A student may actually put the logic on the `Node` class (classic linked list) and only have the `LinkedList` API keep track of `head` and `tail` (and fix them on mutations). `LinkedList` is than a mere proxy to the actual doubly linked-list.
+- A student may actually put the logic on the `Node` class (classic linked list) and only have the `LinkedList` API keep track of `head` and `tail` (and fix them on mutations). In this case the `LinkedList` class is solely a proxy to the actual doubly linked-list.
 - A student may traverse from `tail` backwards instead of `head` forwards.
 - A student may use a `NO_ELEMENT` element instead of `null` or `undefined` to indicate there is no element at `next` / `head` / `prev` / `tail`.
 
