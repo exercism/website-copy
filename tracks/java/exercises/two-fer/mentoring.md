@@ -42,10 +42,10 @@ class Twofer {
 
 ### Common suggestions
 
-- Prefer the use of String#format over string concatenation as in ` "One for " + name + ", one for me."` 
+- Prefer the use of `String.format()` over string concatenation as in ` "One for " + name + ", one for me."` 
   for better readability.
 - Use Optional for optional arguments
-- Use Objects#toString for defaults
+- Use `Objects.toString()` for defaults
 
 ### Talking points
 
