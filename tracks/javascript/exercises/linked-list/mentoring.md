@@ -156,5 +156,5 @@ Earlier version had a different `Readme.MD` that pointed to using a `Deque`.
 This usually only confused students and has been removed.
 
 ### Common suggestions
-- If a student uses a backing array or the likes, talk about performance and the upsides of actually using a linked-list.
+- If a student uses a backing array or the likes, talk about performance, the upsides of actually using a linked-list, talk about linked lists being [classical data structures](https://en.wikipedia.org/wiki/Linked_data_structure) and it being a good exercise to implement them in the intended way.
 - If a student implements `count` by keeping track of `size` (with increments and decrements), suggest them to think about list traversal instead. You don't need to block approval for this, as it turns `count` into `O(1)` which is not a bad thing.
