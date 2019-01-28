@@ -23,5 +23,3 @@ object HandshakeCalculator {
     private fun hasBitSet(input: Int, bit: Int): Boolean = input and bit == bit
 }
 ```
-
-### Common suggestions
