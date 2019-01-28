@@ -34,5 +34,3 @@ loop.
 ### Common suggestions
 - `rows` should be `readonly` (and students should now that by now)
 - a getter makes more sense than an extra field `lastRow`
-
-### Talking points
