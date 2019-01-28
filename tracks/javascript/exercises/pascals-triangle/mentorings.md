@@ -46,7 +46,3 @@ export class Triangle {
 ```
 There are many valid ways implementing building the triangle, which all reduce
 to the same and as long as the logic is sound, you should approve it.
-
-### Common suggestions
-
-### Talking points
