@@ -1,4 +1,4 @@
-### Readonable solutions
+### Reasonable solutions
 ```typescript
 type StudentRoster<T> = Map<T, string[]>
 
