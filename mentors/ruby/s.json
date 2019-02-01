@@ -67,5 +67,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm mostly a Rubyist though I mess with JavaScript when necessary and have a secret love for Haskell. Giving back to the community is something dear to my heart, hence becoming a Ruby track mentor while learning some other bits!"
+  },
+   {
+    "github_username": "son1112",
+    "name": "Anderson Reinkordt",
+    "link_text": "CardFlight - Payment Acceptance Solution",
+    "link_url": "https://cardflight.com",
+    "avatar_url": "https://gravatar.com/avatar/634717c16bf30a59ed5ae2322ea6b143?s=400&d=robohash&r=x",
+    "bio": "I got my start using Ruby in 2014, learning Ruby on Rails and used it to launch my freelance career that eventually led to becoming a fulltime software engineer at CardFlight."
   }
 ]
