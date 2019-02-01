@@ -31,6 +31,10 @@ A new language track gets created when a member of the community takes the lead 
 
 ## Exercism Command-line Client FAQs
 
+### I can't test my code! What should I do?
+
+To test your code using the 'dotnet test' command, you need to have the dotnet Core SDK installed. You can download it [here](https://dotnet.microsoft.com/download)
+
 ### I can't submit! What should I do?
 
 The new site has a brand new command-line client, and also needs some extra metadata for your exercise. Read about how to [upgrade your command-line client and migrate your solutions for the new site](/cli-v1-to-v2).
