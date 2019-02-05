@@ -4,7 +4,7 @@ The solution looks for duplicate letters.
 
 ### Reasonable solutions
 	
-This version searches for a second copy of each letter in turn
+This version searches for a second copy of each letter in turn:
 	
 ```python
 def is_isogram(string):
@@ -26,7 +26,7 @@ This version needs the index to construct the substring of remaining characters.
 #### Sorting the string
     
 Another approach is to sort the input, and walk down it looking for
-duplicates.  However, Python provides a number of useful tools that allow
+duplicates. However, Python provides a number of useful tools that allow
 alternative approaches.  
 
 #### Trimming the string
@@ -57,7 +57,7 @@ s = ''.join(result)
 
 #### Introducing List Comprehension
 
-In turn, it is much more concise and faster to use a List Comprehension
+In turn, it is much more concise and faster to use a List Comprehension:
 
 ```python
 result = [ ch for ch in string if ch.isalpha() ]
@@ -67,7 +67,7 @@ s = ''.join(result)
 
 #### Introducing Counter
 
-The Counter collection provides a simple way to solve the problem.
+The Counter collection provides a simple way to solve the problem:
 
 ```python
 import string
@@ -89,7 +89,7 @@ def is_isogram(string):
 
 #### Sets
 
-A similar idea can be implemented with sets.
+A similar idea can be implemented with sets:
 
 ```python
 import string
@@ -106,7 +106,7 @@ def is_isogram(string):
 
 #### string count() method
 
-A third way to look directly at letter counts is to use the string count() method
+A third way to look directly at letter counts is to use the string count() method:
 
 ```python
 def is_isogram(string):
