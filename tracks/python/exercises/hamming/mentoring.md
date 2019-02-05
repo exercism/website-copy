@@ -1,12 +1,12 @@
 ### Problem and challenges
 
-The solution needs to raise an exception if the lengths are different
+The solution needs to raise an exception if the lengths are different.
 
 Otherwise, the task is to find the number of differences between two strings of the same size.
 
 ### Reasonable solutions
 	
-We check the lengths, and then look for differences
+We check the lengths, and then look for differences:
 	
 ```python
 def distance(strand_a, strand_b):
@@ -27,7 +27,7 @@ This works, but needs to use an index variable to walk the two strings.
 
 #### Introducing zip()
 
-We can use the zip function to pair up the two strands
+We can use the zip function to pair up the two strands:
 
 ```python
 def distance(strand_a, strand_b):
@@ -59,4 +59,4 @@ A List Comprehension can be suggested, but isn't an obvious win.
 	 
 ### Talking points
 
-Running time is not a concern here.  It is hard to make this worse than O(N).
+Running time is not a concern here. It is hard to make this worse than O(N).
