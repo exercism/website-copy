@@ -70,8 +70,8 @@ solutions did not require nesting of the tests. The extra response makes it
 more interesting in some languages, but in JavaScript it doesn't.
 
 ### Common suggestions
-- If a student uses the complicated `RegEx` of `isShouting`, discuss its use over a simpler `message.toUpperCase() === message && /A-Z/.test(message)` which checks if there is at least one letter.
-- If a student uses the correct `RegEx` but does _not_ use the `^` or `$` boundaries, explain how we're trying to match the entire message and not part of it. The tests won't raise a false positive, but other input might.
+- If a student uses the complicated `RegExp` of `isShouting`, discuss its use over a simpler `message.toUpperCase() === message && /A-Z/.test(message)` which checks if there is at least one letter.
+- If a student uses the correct `RegExp` but does _not_ use the `^` or `$` boundaries, explain how we're trying to match the entire message and not part of it. The tests won't raise a false positive, but other input might.
 
 ### Talking points
 - If a student does not use regex, this is a good opportunity to introduce them, but it should not be a requirement for approval. Suggest to simplify solution without regex as much as possible, approve it and then optionally ask the student to try using regex if interested.
