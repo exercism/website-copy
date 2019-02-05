@@ -104,6 +104,16 @@ def is_isogram(string):
 	return len(set(word)) == len(word)
 ```
 
+#### string count() method
+
+A third way to look directly at letter counts is to use the string count() method
+
+```python
+def is_isogram(string):
+    lowerstr = string.lower()
+    return all(lowerstr.count(c) == 1 for c in lowerstr if c.isalpha())
+```
+
 ### Common Suggestions
 
 This is a good place to introduce a number of ideas: List Comprehensions, Sets, or Counters.
