@@ -6,9 +6,9 @@ Otherwise, the task is to find the number of differences between two strings of 
 
 ### Reasonable solutions
 	
-	We check the lengths, and then look for differences
+We check the lengths, and then look for differences
 	
-	```python
+    ```python
     def distance(strand_a, strand_b):
         if (len(strand_a) != len(strand_b)):
             raise ValueError('Strands must have the same length')
@@ -21,15 +21,15 @@ Otherwise, the task is to find the number of differences between two strings of 
                 count = count + 1
 
         return count
-	```
+    ```
 
-    This works, but needs to use an index variable to walk the two strings.
+This works, but needs to use an index variable to walk the two strings.
 
-### Introducing zip()
+#### Introducing zip()
 
-    We can use the zip function to pair up the two strands
+We can use the zip function to pair up the two strands
 
-	```python
+    ```python
     def distance(strand_a, strand_b):
         if (len(strand_a) != len(strand_b)):
             raise ValueError('Strands must have the same length')
@@ -40,22 +40,23 @@ Otherwise, the task is to find the number of differences between two strings of 
                 count = count + 1
 
         return count
-	```
-### List Comprehensions
+    ```
+    
+#### List Comprehensions
 	
-	The solution below uses a List Comprehension to provide a more terse approach:
+The solution below uses a List Comprehension to provide a more terse approach:
 	
-	```python
+    ```python
     def distance(strand_a, strand_b):
         if len(strand_a) != len(strand_b):
             raise ValueError("strands length are not the same")
         return len([(a, b) for (a, b) in zip(strand_a, strand_b) if a != b])
-	```
+    ```
 	
 ### Common Suggestions
 
-    A List Comprehension can be suggested, but isn't an obvious win.
+A List Comprehension can be suggested, but isn't an obvious win.
 	 
 ### Talking points
 
-    Running time is not a concern here.  It is hard to make this worse than O(N).
+Running time is not a concern here.  It is hard to make this worse than O(N).
