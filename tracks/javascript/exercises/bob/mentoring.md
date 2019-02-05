@@ -74,4 +74,4 @@ more interesting in some languages, but in JavaScript it doesn't.
 - If a student uses the correct `RegEx` but does _not_ use the `^` or `$` boundaries, explain how we're trying to match the entire message and not part of it. The tests won't raise a false positive, but other input might.
 
 ### Talking points
-- Regular expressions! If a student doesn't use them, explain how to use `RegExp` in JavaScript
+- If a student does not use regex, this is a good opportunity to introduce them, but it should not be a requirement for approval. Suggest to simplify solution without regex as much as possible, approve it and then optionally ask the student to try using regex if interested.
