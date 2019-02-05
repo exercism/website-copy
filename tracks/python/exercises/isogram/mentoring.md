@@ -29,7 +29,7 @@ Another approach is to sort the input, and walk down it looking for
 duplicates.  However, Python provides a number of useful tools that allow
 alternative approaches.  
 
-### Trimming the string
+#### Trimming the string
 
 If the approach is to remove non-letters, it is simpler to look for things that
 belong (letters) than things that do not belong - a much harder list to define.
@@ -55,7 +55,7 @@ Building strings is slow in Python, and it is much better to create a list and j
         s = ''.join(result)
 	```
 
-### Introducing List Comprehension
+#### Introducing List Comprehension
 
 In turn, it is much more concise and faster to use a List Comprehension
 
