@@ -12,6 +12,7 @@ The underscore can be silently remmoved, but the hypen marks
 the boundary between two words, and it is simplest to replace 
 it with a space.
 
+```python
     def abbreviate(words):
         words = words.upper()
         words = words.replace('_', '')      # Remove underscore
@@ -19,12 +20,13 @@ it with a space.
 
         tla = [ word[0] for word in words.split(' ') if word ]
         return ''.join(tla)
-
+```
 
 #### Assembling Strings
 
 Some solutions will assemble the result string one character at a time:
 
+```python
     def abbreviate(words):
         words = words.replace('_', '')
         words = words.replace('-', ' ')
@@ -37,6 +39,7 @@ Some solutions will assemble the result string one character at a time:
                 tla = tla + word[0].upper()
 
         return tla
+```
 
 The student should be told about buiding lists and join() them.
 
@@ -44,10 +47,11 @@ The student should be told about buiding lists and join() them.
 
 Regular Expressions can help to prune the cruft:
 
+```python
     import re
     def abbreviate(words):
         return "".join(item[0].upper() for item in re.findall(r"[a-zA-Z']+", words))
-
+```
 
 ### Common Suggestions
 
