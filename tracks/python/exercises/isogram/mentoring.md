@@ -34,8 +34,8 @@ alternative approaches.
 If the approach is to remove non-letters, it is simpler to look for things that
 belong (letters) than things that do not belong - a much harder list to define.
 
-    It is common to see students constructing strings by addition with a
-    fragment like this:
+It is common to see students constructing strings by addition with a
+fragment like this:
 
 ```python
 result = ""
