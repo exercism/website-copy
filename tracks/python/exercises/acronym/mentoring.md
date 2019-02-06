@@ -1,6 +1,6 @@
 ### Problem and challenges
 
-The problem requires to student split a string at word boundaries,
+The problem requires the student to split a string at word boundaries,
 and select the first letter of each word.
 
 ### Reasonable solutions
