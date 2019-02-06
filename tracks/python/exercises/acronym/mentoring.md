@@ -13,6 +13,7 @@ the boundary between two words, and it is simplest to replace
 it with a space.
 
 '''python
+
     def abbreviate(words):
         words = words.upper()
         words = words.replace('_', '')      # Remove underscore
@@ -27,6 +28,7 @@ it with a space.
 Some solutions will assemble the result string one character at a time:
 
 '''python
+
     def abbreviate(words):
         words = words.replace('_', '')
         words = words.replace('-', ' ')
@@ -48,6 +50,7 @@ The student should be told about buiding lists and join() them.
 Regular Expressions can help to prune the cruft:
 
 '''python
+
     import re
     def abbreviate(words):
         return "".join(item[0].upper() for item in re.findall(r"[a-zA-Z']+", words))
