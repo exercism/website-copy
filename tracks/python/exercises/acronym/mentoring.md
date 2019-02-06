@@ -7,7 +7,7 @@ and select the first letter of each word.
 
 There are two characters that require special attention: 
 the hypen, used to tie together words such as "metal-oxide", 
-and the underscore, which must _not_ be included.  
+and the underscore, which must not be included.  
 The underscore can be silently remmoved, but the hypen marks 
 the boundary between two words, and it is simplest to replace 
 it with a space.
