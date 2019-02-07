@@ -1,6 +1,6 @@
 # Terms of Service
 
-Last Revised: July 2018
+Last Revised: January 2019
 
 ## Overview
 
@@ -169,7 +169,7 @@ If you believe that content on our Platform violates any laws or regulations, Yo
 
 We try to minimise the amount of personal data we hold, and where we do store and capture personal information, this will be governed by our Privacy Policy and such data will only be used for the purposes it was collected for.
 
-Knowingly providing false information personal information is a breach of these Terms and might result in termination of your account.
+Knowingly providing false personal information is a breach of these Terms and might result in termination of your account.
 
 ### Advertising and Sponsorship
 

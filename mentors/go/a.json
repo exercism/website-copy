@@ -22,5 +22,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Go and the Go community. I am a software engineer with 10 years experience."
+  },
+   {
+    "github_username": "AnuchitO",
+    "name": "Anuchit Prasertsang",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/AnuchitO",
+    "avatar_url": null,
+    "bio": "Go is a fantastic language for me. We have the Go community in Thailand is growing."
+  },
+  {
+    "github_username": "arjunmahishi",
+    "name": "Arjun mahishi",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/arjunmahishi",
+    "avatar_url": null,
+    "bio": "Go is the first compiled langauge that I was comfortable with. It is also the first langauge I wrote production worthy code in."
   }
 ]

@@ -1,3 +1,14 @@
+### [Website]- Add ability to change which solutions are published:
+
+Previously, you could not change which solutions are published. We have now enabled this along with the ability to choose which appear on the profile and which allow public comments. [#4163](https://github.com/exercism/exercism/issues/4163)
+
+### [Website] Add communal mentoring notes
+We have exposed the communal mentoring notes from GitHub to be visible directly within the UI.
+
+### [Teams] Launch the site
+
+We have built a dedicated site for teams. It allows groups of people to complete exercises and mentor each other in a private space. We envision it being used by bootcamps, groups of friends, and colleagues at work.
+
 ### [Website] Delete my account
 
 We needed to give people the ability to delete their account without emailing Jeremy.

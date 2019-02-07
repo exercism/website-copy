@@ -19,7 +19,7 @@ pub fn is_leap_year(year):
 - order of evaluation matters:
 
   ```rust
-  year $ 4 == 0 && year % 100 != 0 || year % 400 == 0
+  year % 4 == 0 && year % 100 != 0 || year % 400 == 0
   ```
 
   _looks_ right, but will force a year like 999 to be checked for being a
