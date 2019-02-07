@@ -59,9 +59,9 @@ struct Year {
 
 
 
-## We can suggest to start with immutation over than mutating things
+#### Prefer immutability over mutability
 
-Please see this example. 
+Given the following solution
 
 ```swift 
 class Year {
@@ -84,6 +84,8 @@ year.calendarYear = 2009
 year.isLeapYear // this is still true
 ```
 
-We can fix the above issue by changing var to let ``` let calendarYear: Int ```. 
+The issue above can be fixed by changin `var` to `let`:
+```swift
+let calendarYear: Int
 
 So i would suggest to start the code with ``` let ``` and ``` struct ```.
