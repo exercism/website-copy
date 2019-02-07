@@ -56,3 +56,34 @@ struct Year {
     }
 }
 ```
+
+
+
+## We can suggest to start with immutation over than mutating things
+
+Please see this example. 
+
+```swift 
+class Year {
+    var calendarYear: Int
+    var isLeapYear: Bool
+    
+    init(calendarYear: Int) {
+        self.calendarYear = calendarYear;
+        
+        self.isLeapYear = ((calendarYear % 4 == 0) && (calendarYear % 100 != 0) || (calendarYear % 400 == 0));
+    }
+}
+```
+Below Code breaks
+```swift
+let year = Year(calendarYear:2004)
+year.isLeapYear // this is true, 
+// Since it is class i can mutate its value
+year.calendarYear = 2009
+year.isLeapYear // this is still true
+```
+
+We can fix the above issue by changing var to let ``` let calendarYear: Int ```. 
+
+So i would suggest to start the code with ``` let ``` and ``` struct ```.
