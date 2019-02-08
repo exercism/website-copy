@@ -43,31 +43,32 @@ suite, and generally point out certain things. In the JavaScript track, this exe
 general, if the student has a reasonable solution not listed above, you can approve the solution and tell them they can
 resubmit to improve. **Most** students will actually keep improving:
 
-> Hi there {name},
->
-> Congrats on submitting your first real solution for the JavaScript track. I
-> have a few comments for you:
->
-> - In Javascript, the result of an expression can be returned!
->   ```javascript
->   if (expressionThatMightBeTruthyOrFalsy) {
->     return true
->   }
->   return false
->   ```
->
->   Given the example above, you can rewrite this to:
->   ```javascript
->   return expressionThatMightBeTruthyOrFalsy
->   ```
-> - You should be able to combine the if statements into a single expression
->   using the [logical AND](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) (&&)
->   and [logical OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) (||)
->   operators.
->
-> I'm approving your current submission so you can continue down the track, but
-> feel free to iterate, improve and submit another solution. I will continue
-> mentoring future iterations.
+
+    Hi there {name},
+
+    Congrats on submitting your first real solution for the JavaScript track. I
+    have a few comments for you:
+
+    - In Javascript, the result of an expression can be returned!
+      ```javascript
+      if (expressionThatMightBeTruthyOrFalsy) {
+        return true
+      }
+      return false
+      ```
+      Given the example above, you can rewrite this to:
+      ```javascript
+      return expressionThatMightBeTruthyOrFalsy
+      ```
+    - You should be able to combine the if statements into a single expression
+      using the [logical AND](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) (&&)
+      and [logical OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) (||)
+      operators.
+
+    I'm approving your current submission so you can continue down the track,
+    but feel free to iterate, improve and submit another solution. I will
+    continue to mentor your future iterations.
+
 
 Generally, for `leap` in JavaScript, it's okay to approve if there are one or two suggestions, but don't approve if
 there is something significantly wrong.
@@ -88,23 +89,26 @@ Other suggestions are as follows:
   work as no year should ever have to be checked multiple times for the same condition. This usually results in a better
   solution overall.
 - If the order of the tests is not (`4`, `100`, `400`), you can give them a mathy suggestion:
-  > - Mathematically your checks are not ordered optimally.
-  >   - Consider all years and you'll see that only 25% of all years are
-  >     divisible by 4. You probably want to test for that right away, so that
-  >     75% of all cases evaluate to `false` before you check anything else.
-  >   - Only 1% of all years is divisible by 100, which means that 98.97% of all
-  >     years that are divisible by 4, are **not** divisible by 100. You
-  >     probably want to test for that to eliminate almost any input.
-  >   - Finally, 1.03% of all years divisible by 4 are divisible by 400. This
-  >     should be the last test.
+
+      - Mathematically your checks are not ordered optimally.
+        - Consider all years and you'll see that only 25% of all years are
+          divisible by 4. You probably want to test for that right away, so that
+          75% of all cases evaluate to `false` before you check anything else.
+        - Only 1% of all years is divisible by 100, which means that 98.97% of
+          all years that are divisible by 4, are **not** divisible by 100. You
+          probably want to test for that to eliminate almost any input.
+        - Finally, 1.03% of all years divisible by 4 are divisible by 400. This
+          should be the last test.
 
 - If the student does _not_ use parentheses, _or_ has parentheses around the test for 4 and 100, and not around 100 and
   400, you can give them a mathy suggestion:
-  > - Mathematically you are testing if a year is divisible by 4 more than once:
-  >   - Consider the year 1003, which is not divisible by 4.
-  >   - In this case it _still_ checks if the year is divisible by 400, which
-  >     can never be true.
-  >   - You can solve this by re-aranging your parentheses.
+
+      - Mathematically you are testing if a year is divisible by 4 more than
+        once:
+        - Consider the year 1003, which is not divisible by 4.
+        - In this case it _still_ checks if the year is divisible by 400, which
+          can never be true.
+        - You can solve this by re-aranging your parentheses.
 
 ### Talking points
 - If there are more than two "returns" or more than three "tests", you can talk about the two cases that return `true`:
@@ -144,40 +148,43 @@ Some students ask something along the lines of:
 
 > Are some expressions not evaluated if they won't effect the result?
 
-That is a good question. In JavaScript and Typescript, some operators have [short-circuit](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-circuit_evaluation) evaluation.
 
-> - `a && b`
->  - `a` is _always_ evaluated
->  - `b` is _only_ evaluated if `a` was `truthy`, otherwise the entire expression short-circuits to whatever `a` yielded.
->- `a || b`
->  - `a` is _always_ evaluated
->  - `b` is _only_ evaluated if `b` was `falsy`, otherwise the entire expression short-circuits to whatever `a` yielded.
->
-> In the wild you'll find code like this:
-> ```javascript
-> // only execute functionname if variable is truthy,
-> //   usefull for flags, or preconditions
-> variable && functionname()
->
-> // only execute functionname if variable is falsy,
-> //   usefull for flags, or defaults, or error cases
-> variable || functionname()
-> ```
->
-> You can observe this yourself in the console:
-> ```javascript
-> function a() {
->   console.log('a')
->   return 0
-> }
->
-> function b() {
->   console.log('b')
->   return 2
-> }
->
-> a() || b() // prints both a and b
-> b() || a() // prints only a
-> a() && b() // prints only a
-> b() && a() // prints both a and b
-> ```
+Here is a template you can respond with:
+
+    That is a good question. In JavaScript and Typescript, some operators have [short-circuit](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-circuit_evaluation) evaluation.
+
+    - `a && b`
+      - `a` is _always_ evaluated
+      - `b` is _only_ evaluated if `a` was `truthy`, otherwise the entire expression short-circuits to whatever `a` yielded.
+    - `a || b`
+      - `a` is _always_ evaluated
+      - `b` is _only_ evaluated if `b` was `falsy`, otherwise the entire expression short-circuits to whatever `a` yielded.
+
+    In the wild you'll find code like this:
+    ```javascript
+    // only execute functionname if variable is truthy,
+    //   usefull for flags, or preconditions
+    variable && functionname()
+
+    // only execute functionname if variable is falsy,
+    //   usefull for flags, or defaults, or error cases
+    variable || functionname()
+    ```
+
+    You can observe this yourself in the console:
+    ```javascript
+    function a() {
+      console.log('a')
+      return 0
+    }
+
+    function b() {
+      console.log('b')
+      return 2
+    }
+
+    a() || b() // prints both a and b
+    b() || a() // prints only a
+    a() && b() // prints only a
+    b() && a() // prints both a and b
+    ```
