@@ -41,7 +41,7 @@ Some solutions will assemble the result string one character at a time:
         return tla
 ```
 
-The student should be told about buiding lists and join() them.
+The student should be told about building lists and join() them.
 
 #### Regular Expressions
 
