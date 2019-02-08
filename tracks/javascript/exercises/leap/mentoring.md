@@ -108,7 +108,7 @@ Other suggestions are as follows:
         - Consider the year 1003, which is not divisible by 4.
         - In this case it _still_ checks if the year is divisible by 400, which
           can never be true.
-        - You can solve this by re-aranging your parentheses.
+        - You can solve this by rearranging your parentheses.
 
 ### Talking points
 - If there are more than two "returns" or more than three "tests", you can talk about the two cases that return `true`:
