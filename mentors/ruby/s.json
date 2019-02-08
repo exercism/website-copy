@@ -59,5 +59,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "When I started dabbling with programming in Ruby over 15 years ago, I did not expect it to pay my bills ánd make me happy!"
+  },
+  {
+    "github_username": "SamuSan",
+    "name": "Sam Minns",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm mostly a Rubyist though I mess with JavaScript when necessary and have a secret love for Haskell. Giving back to the community is something dear to my heart, hence becoming a Ruby track mentor while learning some other bits!"
   }
 ]

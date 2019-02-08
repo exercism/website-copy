@@ -1,7 +1,7 @@
 This exercise focuses on:
 - control flow loops: how to _iterate_ through two collections and how to _count_ based on a condition
 
-## Reasonable solutions
+### Reasonable solutions
 ```javascript
 export function compute(leftStrand, rightStrand) {
   const { length } = leftStrand;
@@ -32,7 +32,7 @@ distance += leftStrand[i] === rightStrand[i] ? 0 : 1
 ```
 Variations include re-assignment using `? distance : distance + 1`
 
-### Using streams
+#### Using streams
 Vanilla JavaScript doesn't have a `Array#zip(array)` or `Enumerable#count(expression)` function, yet, but it can still be attempted by using `split` with `reduce` or `replace`. These solutions work, but are a factor 5-10 slower. You might want to challenge a student to use a for loop. **Note** that performance is heavily impacted by the JavaScript engine and things like bable/bubble implementation/version.
 
 Stream processing with `reduce` (significantly slower, but `reduce` is a common method to `count`):
@@ -48,11 +48,11 @@ leftStrand.replace(/./g, (letter, index) => rightStrand[index] === letter ? '' :
 ```
 Variations include `leftStrand.split('').filter()` and `[...leftStrand].filter()`
 
-## Common suggestions
+### Common suggestions
 - When going for performance, at time of writing these notes, a `for` loop, counting each difference in a mutable variable, _always_ trumps any form of `String#split` + `String#replace` or `Array#reduce`: [Benchmarks](https://run.perf.zone/view/Count-differences-between-strings-1542904507660).
 
 
-## Talking points
+### Talking points
 - If a student uses streams:
   - `reduce` and `filter` are better candidates than `forEach` (use a for loop)
   - These functions have second arguments `index`. Don't do manual bookkeeping of an index

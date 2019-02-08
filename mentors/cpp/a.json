@@ -6,5 +6,13 @@
         "link_url": null,
         "avatar_url": null,
         "bio": "I like C++ for the power it puts in the hands of the developer and I believe that mastering a powerful and versatile tool craftsman grows"
+    },
+    {
+        "github_username": "AlexLlyr",
+        "name": "Alexios Lyrakis",
+        "link_text": null,
+        "link_url": null,
+        "avatar_url": null,
+        "bio": "Until now I have worked mainly with C. However, through my master in Embedded Systems I discovered the power of C++. I love the power and the flexibility of this language."
     }
 ]

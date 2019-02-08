@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "sbromberger",
+    "name": "Seth Bromberger",
+    "link_text": "Homepage",
+    "link_url": "https://www.bromberger.com",
+    "avatar_url": null,
+    "bio": "I am the founder of JuliaGraphs and one of the core developers of LightGraphs.jl. I've been using Julia at work and for personal projects since v0.3."
+  }
+]
