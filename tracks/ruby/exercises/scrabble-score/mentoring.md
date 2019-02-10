@@ -10,7 +10,7 @@ class Scrabble
     [%w(K), 5],
     [%w(J X), 8],
     [%w(Q Z), 10]
-  ].flat_map { |(letters, score)| 
+  ].flat_map { |letters, score| 
     letters.map { |letter| [letter, score] } 
   }.to_h
   private_constant :LETTERS
