@@ -25,6 +25,7 @@ class HighScores
     scores.sort.reverse.take(3) 
   end
 
+  # this method is removed in version 3/4
   def report
     difference = "#{personal_best - latest} short of" unless personal_best == latest
 
