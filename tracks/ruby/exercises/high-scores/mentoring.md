@@ -59,4 +59,5 @@ Concatenation mutates the string instance in-place, `String#+` creates new strin
 Ruby 2.3 will freeze string literals by default.
 
 ### Changelog
-- Version 2 changed method names "highest" -> "personal_best", "top" -> "personal_top"
+- Version 3/4 changed method names "personal_top" -> "personal_top_three" and removed the "report" method.
+- Version 2 changed method names "highest" -> "personal_best", "top" -> "personal_top".
