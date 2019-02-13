@@ -22,7 +22,7 @@ with variations for the regex (see below).
 In all these cases: it's recommended to suggest the `String#scan` method and, because the exercise is not about Regular Expressions, give them also the RegEx (`/\b[a-zA-Z]/`). (At this point in the track, it's more about experiencing the strengths of Ruby's built-in methods than making them find them. There's ample opportunity for research later on in the track.)   
 
 ## Talking points
-* `Class vz Module`: If the solution uses Class instead of Module: that's totally acceptable at this stage. No reason to discuss.
+* `Class vs Module`: If the solution uses Class instead of Module: that's totally acceptable at this stage. No reason to discuss.
 * Because of the regex needed for `split`, `scan` is in this exercise (marginally) faster.
 * It can be hard to catch all the possible delimiters. 
 * `upcasing` the whole string is (10% ?) slower than `upcasing` the acronym only. 
