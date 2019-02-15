@@ -14,5 +14,13 @@
     "link_url": "http://bitfieldconsulting.com/",
     "avatar_url": null,
     "bio": "Consultant, author, Gopher, Kuberneticist."
+  },
+  {
+    "github_username": "buddhamagnet",
+    "name": "Dave Goodchild",
+    "link_text": "",
+    "link_url": "",
+    "avatar_url": null,
+    "bio": "Tech lead at The Economist, love Go and open source."
   }
 ]
