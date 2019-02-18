@@ -155,19 +155,19 @@ Here is a template you can respond with:
 
     - `a && b`
       - `a` is _always_ evaluated
-      - `b` is _only_ evaluated if `a` was `truthy`, otherwise the entire expression short-circuits to whatever `a` yielded.
+      - `b` is _only_ evaluated if `a` was `truthy`, otherwise the entire expression short-circuits to whatever `a` evaluated to.
     - `a || b`
       - `a` is _always_ evaluated
-      - `b` is _only_ evaluated if `b` was `falsy`, otherwise the entire expression short-circuits to whatever `a` yielded.
+      - `b` is _only_ evaluated if `b` was `falsy`, otherwise the entire expression short-circuits to whatever `a` evaluated to.
 
     In the wild you'll find code like this:
     ```javascript
     // only execute functionname if variable is truthy,
-    //   usefull for flags, or preconditions
+    //   useful for flags, or preconditions
     variable && functionname()
 
     // only execute functionname if variable is falsy,
-    //   usefull for flags, or defaults, or error cases
+    //   useful for flags, or defaults, or error cases
     variable || functionname()
     ```
 
