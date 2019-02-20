@@ -10,7 +10,7 @@
   {
     "github_username": "sshine",
     "name": "Simon Shine",
-    "link_text": "https://simonshine.dk",
+    "link_text": null,
     "link_url": "https://simonshine.dk",
     "avatar_url": null,
     "bio": "I've been a classroom teacher in compilers and various functional languages for five years. Having pure functions and isolation of side-effects are fundamental to separation of concerns. Strong, static types, type inference and algebraic types are hard for me to live without."
