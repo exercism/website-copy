@@ -22,5 +22,13 @@
     "link_url": "https://github.com/shawnHartsell/",
     "avatar_url": null,
     "bio": "Go developer based out of Nashville, TN. I enjoy Go because of it's simplicity and no-frills approach to development."
+  },
+  {
+    "github_username": "serg-kovalev",
+    "name": "Sergey Kovalev",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have more than 10 years of production experience. I love Go/Ruby because of its friendly and active community. Nothing is impossible when you do what you love! Happy coding!"
   }
 ]
