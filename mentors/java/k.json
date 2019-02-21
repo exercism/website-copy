@@ -14,5 +14,13 @@
     "link_url": "https://www.linkedin.com/in/kellsaro/",
     "avatar_url": null,
     "bio": "I enjoy learning and teaching programming languages. Web development enthusiast."
+  },
+  {
+    "github_username": "kdridi",
+    "name": "Karim DRIDI",
+    "link_text": "My LinkedIn Profile",
+    "link_url": "https://www.linkedin.com/in/karimdridi/",
+    "avatar_url": "https://en.gravatar.com/userimage/31900778/a0e884893d400ae84103b90e256d35e4.jpg?size=200",
+    "bio": "Passionate about coding since 1995."
   }
 ]
