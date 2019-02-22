@@ -28,7 +28,7 @@ class Hamming {
     private char[] leftStrand, rightStrand;
 
     Hamming(String leftStrand, String rightStrand) {
-        if (leftStrand.length() != rightStrand.length())
+        if (leftStrand == null || rightStrand == null || leftStrand.length() != rightStrand.length())
             throw new IllegalArgumentException("leftStrand and rightStrand must be of equal length.");
         this.leftStrand = leftStrand.toCharArray();
         this.rightStrand = rightStrand.toCharArray();
