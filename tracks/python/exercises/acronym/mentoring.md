@@ -27,18 +27,18 @@ it with a space.
 Some solutions will assemble the result string one character at a time:
 
 ```python
-    def abbreviate(words):
-        words = words.replace('_', '')
-        words = words.replace('-', ' ')
+def abbreviate(words):
+    words = words.replace('_', '')
+    words = words.replace('-', ' ')
 
-        word_list = words.split(' ')
+    word_list = words.split(' ')
     
-        tla = ""
-        for word in word_list:
-            if word:
-                tla = tla + word[0].upper()
+    tla = ""
+    for word in word_list:
+        if word:
+            tla = tla + word[0].upper()
 
-        return tla
+    return tla
 ```
 
 The student should be told about building lists and join() them.
@@ -48,9 +48,9 @@ The student should be told about building lists and join() them.
 Regular Expressions can help to prune the cruft:
 
 ```python
-    import re
-    def abbreviate(words):
-        return "".join(item[0].upper() for item in re.findall(r"[a-zA-Z']+", words))
+import re
+def abbreviate(words):
+    return "".join(item[0].upper() for item in re.findall(r"[a-zA-Z']+", words))
 ```
 
 ### Common Suggestions
