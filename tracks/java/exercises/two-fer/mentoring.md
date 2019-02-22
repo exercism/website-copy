@@ -28,6 +28,16 @@ class Twofer {
 }
 ```
 
+```java
+import java.text.MessageFormat;
+
+class Twofer {
+  String twofer(String name) {
+    return MessageFormat.format("One for {0}, one for me.", name == null ? "you" : name);
+  }
+}
+```
+
 ### Common suggestions
 
 - Avoid code duplication: instead of using an `if` statement, consider using a single expression
