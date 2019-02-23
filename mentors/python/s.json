@@ -91,5 +91,14 @@
     "avatar_url": null,
     "bio":
       "I am a system programmer in JuiceFS. Python is my favorite programming language and I have been using it for >9 years. I hope I can help you pick up Python faster."
+  },
+  {
+    "github_username": "sencudra",
+    "name": "Vlad Tarasevich",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I'm a student at HSE university in Moscow and an intern at Kaspersky Lab. Python is one of my most favorite programming languages since it simple and easy to use on daily basis." 
   }
 ]
