@@ -6,7 +6,7 @@ defmodule BankAccount do
   @moduledoc """
   A bank account that supports access from multiple processes.
   """
-
+ 
   @typedoc """
   An account handle.
   """
