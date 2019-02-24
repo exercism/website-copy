@@ -116,3 +116,11 @@ redundant_punctuation = ~r/[^\w\s-_']/u
 apostrophes_around_words = ~r/(?<=\W)'|'(?=\W)/u
 word_delimiters = ~r/[^\p{L}0-9-]+/u
 ```
+
+#### Simple Regex
+```
+~r/[^[:alnum:]\-]/u
+```
+
+References:
+- https://hexdocs.pm/elixir/master/Regex.html#module-character-classes
