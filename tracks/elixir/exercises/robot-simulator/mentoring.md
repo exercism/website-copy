@@ -3,7 +3,7 @@
 ```elixir
 
 # GenServer
-
+ 
 defmodule RobotSimulator do
 @moduledoc """
 This is a solution to the RobotSimulator
