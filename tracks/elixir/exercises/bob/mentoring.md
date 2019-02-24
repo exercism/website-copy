@@ -32,6 +32,11 @@ end
 
 ### Common suggestions
 
+#### Hardcoding test data
+
+This is the first solution on the track and students will frequently hardcode test data to get a solution.
+Generally they should be recomended to try to find a more general solution. 
+
 #### `is_shouting`
 
 If a solution uses names like `is_shouting` and `is_question`,
@@ -53,10 +58,12 @@ This exercise can be solved without regular expressions and a student could be e
 
 #### Hint functions for the truely stuck
 
-https://hexdocs.pm/elixir/String.html#trim/1
-https://hexdocs.pm/elixir/String.html#ends_with?/2
-https://hexdocs.pm/elixir/String.html#downcase/2
-https://hexdocs.pm/elixir/String.html#upcase/2
+- https://hexdocs.pm/elixir/String.html#trim/1
+- https://hexdocs.pm/elixir/String.html#ends_with?/2
+- https://hexdocs.pm/elixir/String.html#downcase/2
+- https://hexdocs.pm/elixir/String.html#upcase/2
+
+- String.upcase(input) != String.downcase(input) if there is a letter present.
 
 #### Style guide
 
