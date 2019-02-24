@@ -6,6 +6,14 @@
       "link_url": null,
       "avatar_url": null,
       "bio": "I'm very enthuastic about clean code and TDD. I've developed a few small android apps and otherwise microservices in java 8. I'm addicted to (un)conferences, meetups, watching conference talks online, or simply reading the classic books about software development. Never stop learning!"
+    },
+    {
+      "github_username" : "loradd",
+      "name" : "Lorenzo Addazi",
+      "link_text" : null,
+      "link_url" : null,
+      "avatar_url" : null,
+      "bio" : "I am a researcher in model-driven engineering and domain-specific languages with a pure love for programming."
     }
   ]
 
