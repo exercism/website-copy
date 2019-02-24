@@ -3,7 +3,7 @@
 #### Using int array for mapping letters to scores:
 ```java
 class Scrabble {
-    private String word;
+    private final String word;
 
     private final static int[] scores = initializeScores();
 
