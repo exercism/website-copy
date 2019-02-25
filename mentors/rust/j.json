@@ -15,5 +15,13 @@
     "link_url": "https://cslai.coolsilon.com/",
     "avatar_url": "https://www.gravatar.com/avatar/3c09250bd1e6c4618d8e469e7aa0468d",
     "bio": "Writes Javascript/ES and Python at work, discovered Rust and find it expressive despite being a system langauge. Would love to contribute back by mentoring."
+  },
+  {
+    "github_username": "jonhoo",
+    "name": "Jon Gjengset",
+    "link_text": "Website",
+    "link_url": "https://thesquareplanet.com/",
+    "avatar_url": null,
+    "bio": "I'm PhD student at MIT CSAIL where I work on a research database written in Rust. I also do regular Rust live-coding streams."
   }
 ]
