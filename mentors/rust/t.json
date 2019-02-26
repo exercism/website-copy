@@ -18,7 +18,7 @@
   {
     "github_username": "tekerson",
     "name": "Brenton Alker",
-    "link_text": "github.com/tekerson",
+    "link_text": null,
     "link_url": "https://github.com/tekerson",
     "avatar_url": "https://avatars0.githubusercontent.com/u/83486?s=200",
     "bio": "Rust brings an expressive type-system to low-level perfomance and portability. The WASM support ties in particularly well with web development where I spend most of my time and I'm excited to join others on this learning path."
