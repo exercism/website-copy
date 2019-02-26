@@ -1,31 +1,16 @@
 ### Reasonable solutions
 
 ```elixir
+  # GenServer
 
-# GenServer
-
-defmodule RobotSimulator do
-@moduledoc """
-This is a solution to the RobotSimulator
-
-For some reason the test is marked as OTP which would be overkill.
-"""
- 
   defmodule Robot do
     @opaque t :: %Robot{direction: :north, position: {integer, integer}}
     defstruct direction: nil, position: nil
   end
-  @doc """
-  Ensures that the instruction is valid 
-  """
+  
   defguard is_direction(d) when d in [:north, :east, :south, :west]
   defguard is_rotation(cmd) when cmd in ["R", "L"] 
 
-  @doc """
-  Create a Robot Simulator given an initial direction and position.
-
-  Valid directions are: `:north`, `:east`, `:south`, `:west`
-  """
   @spec create(direction :: atom, position :: {integer, integer}) :: any
   
   def create(direction \\ :north, position \\ {0 , 0})
@@ -42,11 +27,6 @@ For some reason the test is marked as OTP which would be overkill.
     {:error, "invalid direction"}
   end
 
-  @doc """
-  Simulate the robot's movement given a string of instructions.
-
-  Valid instructions are: "R" (turn right), "L", (turn left), and "A" (advance)
-  """
   @spec simulate(robot :: any, instructions :: String.t()) :: any
   def simulate(robot, instructions) do
     do_simulate(robot, instructions |> String.codepoints() )
@@ -84,25 +64,19 @@ For some reason the test is marked as OTP which would be overkill.
   defp calc_position(:south, {e, n}), do: {e, n - 1}
   defp calc_position(:west, {e, n}), do: {e - 1, n}
 
-  @doc """
-  Return the robot's direction.
-
-  Valid directions are: `:north`, `:east`, `:south`, `:west`
-  """
   @spec direction(robot :: any) :: atom
   def direction(robot) do
     robot.direction
   end
 
-  @doc """
-  Return the robot's position.
-  """
   @spec position(robot :: any) :: {integer, integer}
   def position(robot) do
     robot.position
   end
 end
+```
 
+```elixir
 # Recursive
 
 defmodule RobotSimulator do
@@ -111,11 +85,6 @@ defmodule RobotSimulator do
   defguard is_direction(direction) when direction in @directions
   defguard is_position(x, y) when is_integer(x) and is_integer(y)
 
-  @doc """
-  Create a Robot Simulator given an initial direction and position.
-
-  Valid directions are: `:north`, `:east`, `:south`, `:west`
-  """
   def create(direction \\ :north, {x, y} = position \\ {0, 0})
       when is_direction(direction) and is_position(x, y) do
     %{position: position, direction: direction}
@@ -130,11 +99,6 @@ defmodule RobotSimulator do
     {:error, "invalid position"}
   end
 
-  @doc """
-  Simulate the robot's movement given a string of instructions.
-
-  Valid instructions are: "R" (turn right), "L", (turn left), and "A" (advance)
-  """
   @spec simulate(robot :: any, instructions :: String.t()) :: any
   def simulate(robot, instructions) do
     instructions
@@ -147,9 +111,6 @@ defmodule RobotSimulator do
     end)
   end
 
-  # process_inst: Updates a robot after one instruction.
-  # "R", "L", and "A" are supported.
-  # (Robot, String) -> Robot
   defp process_inst(robot, "R"), do: process_turn(robot, 1)
   defp process_inst(robot, "L"), do: process_turn(robot, -1)
 
@@ -159,8 +120,6 @@ defmodule RobotSimulator do
 
   defp process_inst(_robot, _), do: {:error, "invalid instruction"}
 
-  # process_turn: Updates a robot with a turn specified in number of 90 deg clockwise turns.
-  # (Robot, Integer) -> Robot
   defp process_turn(%{direction: direction} = robot, direction_delta) do
     new_dir =
       @directions
@@ -172,35 +131,22 @@ defmodule RobotSimulator do
     %{robot | direction: new_dir}
   end
 
-  # advance_position: Gives position after taking a step forward.
-  # (Position, Direction) -> Position
   defp advance_position(position, direction) do
     direction
     |> direction_vector
     |> addt(position)
   end
 
-  # addt: Adds two tuples.
   defp addt({a, b}, {c, d}), do: {a + c, b + d}
 
-  # direction_vector: Converts a direction (atom) into a unit vector.
-  # (Direction) -> Position
   defp direction_vector(:north), do: {0, 1}
   defp direction_vector(:south), do: {0, -1}
   defp direction_vector(:west), do: {-1, 0}
   defp direction_vector(:east), do: {1, 0}
 
-  @doc """
-  Return the robot's direction.
-
-  Valid directions are: `:north`, `:east`, `:south`, `:west`
-  """
   @spec direction(robot :: any) :: atom
   def direction(%{direction: d}), do: d
 
-  @doc """
-  Return the robot's position.
-  """
   @spec position(robot :: any) :: {integer, integer}
   def position(%{position: p}), do: p
 end
@@ -220,4 +166,3 @@ end
 #### Use map update syntax
 
 ```%Robot{ robot | direction: calc_direction(robot.direction, h) }```
-
