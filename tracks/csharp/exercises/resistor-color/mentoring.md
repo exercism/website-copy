@@ -75,7 +75,7 @@ public static class ResistorColor
 }
 ```
 ### Common suggestions
-* Enum version: If users are able to inputting or reading-out number values for the
+* Enum version: If users are able to input or read out number values for the
 resistors than it might be more expressive to assign the numbers to
 the enums to show that the actual values are important. 
 * Array version: consider cloning the array on return from `Colors()` as
@@ -84,10 +84,10 @@ accidentally overwriting the values.
 ### Talking points
 * This may or may not be the place to handle the letter case of the colors.
 * Array version: students are frequently calling `Colors()` from
-`ColorCode()` and newing the array there each time. This does not 
+`ColorCode()` and recreating the array there each time. This does not 
 give optimal performance. Discretion should be used as to whether to raise this point
 as we don't want to overwhelm novices.
-* Dictionary version: The returned dictionary should be read only as 
+* Dictionary version: The returned dictionary should be `readonly` as 
 a defensive measure. This will prevent a user of the class from
 accidentally overwriting the values.
 * Arguably the most maintainable solution would be a dictionary mapping
