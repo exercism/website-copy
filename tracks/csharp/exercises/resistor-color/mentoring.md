@@ -11,7 +11,6 @@ public static class ResistorColor
 }
 ```
 #### Dictionary Based
-Based on Horatiu's solution
 ```
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -76,23 +75,22 @@ public static class ResistorColor
 }
 ```
 ### Common suggestions
-* Enum version: If users will be inputting or reading-out number values for the
+* Enum version: If users are able to inputting or reading-out number values for the
 resistors than it might be more expressive to assign the numbers to
 the enums to show that the actual values are important. 
 * Array version: consider cloning the array on return from `Colors()` as
-a defensive measure.  This will prevent a user of the class from
+a defensive measure. This will prevent a user of the class from
 accidentally overwriting the values.
 ### Talking points
 * This may or may not be the place to handle the letter case of the colors.
 * Array version: students are frequently calling `Colors()` from
-`ColorCode()` and newing the array there each time.  This does not 
-give optimal performance.  Discretion should be used as to whether to raise this point
+`ColorCode()` and newing the array there each time. This does not 
+give optimal performance. Discretion should be used as to whether to raise this point
 as we don't want to overwhelm novices.
 * Dictionary version: The returned dictionary should be read only as 
-a defensive measure.  This will prevent a user of the class from
+a defensive measure. This will prevent a user of the class from
 accidentally overwriting the values.
 * Arguably the most maintainable solution would be a dictionary mapping
-string color names to explicit enums.  This would apply if both color
-names and color values had a role outside of the program.  `enum`s could 
-be used within the code.  This,
-of course, sacrifices simplicity. 
+string color names to explicit enums. This would apply if both color
+names and color values had a role outside of the program. `enum`s could 
+be used within the code. This, of course, sacrifices simplicity. 
