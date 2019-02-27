@@ -88,7 +88,7 @@ accidentally overwriting the values.
 `ColorCode()` and newing the array there each time.  This does not 
 give optimal performance.  Discretion should be used as to whether to raise this point
 as we don't want to overwhelm novices.
-* Dictionary version: The returned dictionary should be read only as 
+* Dictionary version: The returned dictionary should be `readonly` as 
 a defensive measure.  This will prevent a user of the class from
 accidentally overwriting the values.
 * Arguably the most maintainable solution would be a dictionary mapping
