@@ -85,7 +85,7 @@ accidentally overwriting the values.
 ### Talking points
 * This may or may not be the place to handle the letter case of the colors.
 * Array version: students are frequently calling `Colors()` from
-`ColorCode()` and newing the array there each time.  This does not 
+`ColorCode()` and recreating the array there each time. This does not 
 give optimal performance.  Discretion should be used as to whether to raise this point
 as we don't want to overwhelm novices.
 * Dictionary version: The returned dictionary should be `readonly` as 
