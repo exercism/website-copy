@@ -14,35 +14,35 @@ public static class ResistorColor
 Based on Horatiu's solution
 ```
 ﻿using System.Collections.Generic;
- using System.Collections.ObjectModel;
- using System.Linq;
+using System.Collections.ObjectModel;
+using System.Linq;
   
- public static class ResistorColor
- {
-     private static ReadOnlyDictionary<string, int> colors = new ReadOnlyDictionary<string, int>(new Dictionary<string, int>
-     {
-         {"black", 0},
-         {"brown", 1},
-         {"red" , 2},
-         {"orange", 3},
-         {"yellow", 4},
-         {"green", 5},
-         {"blue", 6},
-         {"violet", 7},
-         {"grey", 8},
-         {"white", 9}
-     });
+public static class ResistorColor
+{
+    private static ReadOnlyDictionary<string, int> colors = new ReadOnlyDictionary<string, int>(new Dictionary<string, int>
+    {
+        {"black", 0},
+        {"brown", 1},
+        {"red" , 2},
+        {"orange", 3},
+        {"yellow", 4},
+        {"green", 5},
+        {"blue", 6},
+        {"violet", 7},
+        {"grey", 8},
+        {"white", 9}
+    });
  
-     public static int ColorCode(string color)
-     {
-         return colors[color];
-     }
+    public static int ColorCode(string color)
+    {
+        return colors[color];
+    }
  
-     public static string[] Colors()
-     {
-         return colors.Keys.ToArray();
-     }
- }
+    public static string[] Colors()
+    {
+        return colors.Keys.ToArray();
+    }
+}
 ```
 #### Enum Based
 ```
@@ -86,7 +86,8 @@ accidentally overwriting the values.
 * This may or may not be the place to handle the letter case of the colors.
 * Array version: students are frequently calling `Colors()` from
 `ColorCode()` and newing the array there each time.  This does not 
-give optimal performance.
+give optimal performance.  Discretion should be used as to whether to raise this point
+as we don't want to overwhelm novices.
 * Dictionary version: The returned dictionary should be read only as 
 a defensive measure.  This will prevent a user of the class from
 accidentally overwriting the values.
