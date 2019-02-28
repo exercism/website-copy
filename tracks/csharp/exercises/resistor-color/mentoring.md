@@ -91,6 +91,7 @@ as we don't want to overwhelm novices.
 a defensive measure. This will prevent a user of the class from
 accidentally overwriting the values.
 * Arguably the most maintainable solution would be a dictionary mapping
-string color names to explicit enums. This would apply if both color
-names and color values had a role outside of the program. `enum`s could 
-be used within the code. This, of course, sacrifices simplicity. 
+string color names to explicit enums. This would apply if both color names 
+and color values are mapped outside of this code, for example in a 
+design document or a spec. Implicit mappings are less maintainable. 
+As a bonus it's easier to mentally map the dictionary to the spec file. 
