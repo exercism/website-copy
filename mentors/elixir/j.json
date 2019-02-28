@@ -6,5 +6,13 @@
     "link_url": "https://github.com/Jumpi96",
     "avatar_url": null,
     "bio": "Elixir was my first step in functional programming and since I started I am very surprised with this language, its community and the incredible capabilities that Elixir has to improve software development."
+  },
+  {
+    "github_username": "julioleitao",
+    "name": "Júlio Leitão",
+    "link_text": "GitHub",
+    "link_url": "https://julioleitao.github.io",
+    "avatar_url": "https://s.gravatar.com/avatar/bded7904d07d650f9a51fcdb7d9f2408?s=200",
+    "bio": "Enjoying the Functional Programming paradigm to solve problems and build solutions with quality, maintainability, and great code design. Elixir is one of the best options on the FP world."
   }
 ]
