@@ -7,8 +7,14 @@ def two_fer(name="you"):
     return "One for {}, one for me.".format(name)
 ```
 
+```python
+def two_fer(name='you'):
+    return f'One for {name}, one for me.'
+```
+
 ### Common suggestions
-- Suggest using a default value instead of any form of conditionals. 
+- Suggest using a default value instead of any form of conditionals.
+- Suggest [Literal String Interpolation introduced with Python 3.6](https://www.python.org/dev/peps/pep-0498/).
 - Some people need help with running the tests. 
 - Check indentation.
 
