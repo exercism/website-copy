@@ -21,7 +21,7 @@ class HighScores
     scores.last
   end
 
-  def personal_top
+  def personal_top_three
     scores.sort.reverse.take(3) 
   end
 end
@@ -42,7 +42,7 @@ standard libraries (and work with method chaining) than that they know how to op
 - `@scores` vs `scores`: This is the most important issue in this exercise. Beginners may _write_ the getter method/attr_reader, but _call_ the instance variable `@scores` still.
 This link explains: [launchschool: accessor_methods](https://launchschool.com/books/oo_ruby/read/classes_and_objects_part1#accessormethods). It's recommended to link to this or your favorite explanation, instead of typing the solution for them. 
 - `scores.max(3)`: `Array#max` [takes an argument](https://ruby-doc.org/core/Array.html#method-i-max).
-- `Array#[]`: Most submissions retrieve the `personal_top` values with the `Array#[]` method, which is harder to read than the convenience methods that Ruby offers: `Array#take(3)` or `Array#first(3)` win in readability. And `Array#max(3)` doesn't even need the sorting-and-reverting steps. 
+- `Array#[]`: Most submissions retrieve the `personal_top_three` values with the `Array#[]` method, which is harder to read than the convenience methods that Ruby offers: `Array#take(3)` or `Array#first(3)` win in readability. And `Array#max(3)` doesn't even need the sorting-and-reverting steps. 
 
 ### Mentor Research
 - [String](https://ruby-doc.org/core/String.html): `String#<< / String.concat` vs. `String#+`? 
