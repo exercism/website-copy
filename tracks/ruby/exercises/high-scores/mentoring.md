@@ -29,7 +29,6 @@ end
 ```
 ### Reasonable variants
  - Using `attr_reader :scores` instead of the getter method `scores`: Is better, but no need to point them to `attr_reader` if they write the method `scores`. 
- - Variants in composing the string in `report`, as long as it's not a complicated if/else statement (see Talking Points).
  
 ### General 
 - The Instructions point to a beginner friendly explanation of instantiating a class: 
@@ -43,11 +42,6 @@ standard libraries (and work with method chaining) than that they know how to op
 This link explains: [launchschool: accessor_methods](https://launchschool.com/books/oo_ruby/read/classes_and_objects_part1#accessormethods). It's recommended to link to this or your favorite explanation, instead of typing the solution for them. 
 - `scores.max(3)`: `Array#max` [takes an argument](https://ruby-doc.org/core/Array.html#method-i-max).
 - `Array#[]`: Most submissions retrieve the `personal_top_three` values with the `Array#[]` method, which is harder to read than the convenience methods that Ruby offers: `Array#take(3)` or `Array#first(3)` win in readability. And `Array#max(3)` doesn't even need the sorting-and-reverting steps. 
-
-### Mentor Research
-- [String](https://ruby-doc.org/core/String.html): `String#<< / String.concat` vs. `String#+`? 
-Concatenation mutates the string instance in-place, `String#+` creates new string objects.
-Ruby 2.3 will freeze string literals by default.
 
 ### Changelog
 - Version 3/4 changed method names "personal_top" -> "personal_top_three" and removed the "report" method. (See related Mentor Notes [here](https://github.com/exercism/website-copy/blob/aa66a176756313687baf214bbb051e1c3fc0f832/tracks/ruby/exercises/high-scores/mentoring.md) 
