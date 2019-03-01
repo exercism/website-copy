@@ -60,11 +60,12 @@ If a student is on an older version, kindly suggest they update to the newer tes
 
 ### Common suggestions
 
-- If they use the unary `+` to convert to a number, show them `Number(val)` which explicitely converts `val` to a number
-- If they round via `Math.round(age * 100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+- If they use the unary `+` to convert to a number, show them `Number(val)` which explicitely converts `val` to a
+  number.
+- If they round via `Math.round(age * 100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed).
 
 ### Talking points
 
 - Define `const` on the file-level and outside of function definitions if they stay constant for the duration of the
   file (as opposed to constants re-defined each function call).
--
+
