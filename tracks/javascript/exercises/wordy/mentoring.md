@@ -2,8 +2,8 @@
 
 There are many _valid_ solutions to this problem. If the student has written
 something completely different than the options listed below, do not dismiss it.
-At this point in the track, we can except them to have developped their own
-style. However, follow the guideliness listed in this document.
+At this point in the track, we can expect them to have developed their own
+style. However, follow the guidelines listed in this document.
 
 > **Note**: solutions using `eval` are usually very concise, but most of the
 > time neither safe (they don't whitelist the tokens) or meant to be. If a
@@ -105,8 +105,9 @@ Discourage `if/else` trees or `switches`.
 
 #### Error throwing
 
-Unfortunately the current implementation of checking the error is horrible so
-the only two valid ways to make the tests pass are:
+Unfortunately the current implementation of checking the error is incorrect and
+may cause the student plenty of issues (We are working towards changing this).
+The only two valid ways to make the tests pass currently are:
 
 ```javascript
 function ArgumentError() {}
