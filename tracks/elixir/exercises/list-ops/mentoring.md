@@ -123,7 +123,7 @@ end
 This is the first problem that students need to use helper functions
 with a name similar to the public version.
 
-There are two naming conventions here, per the [elixer style guide](https://github.com/christopheradams/elixir_style_guide)
+There are two naming conventions here, per the [elixir style guide](https://github.com/christopheradams/elixir_style_guide)
 
 
 #### Performance problems
