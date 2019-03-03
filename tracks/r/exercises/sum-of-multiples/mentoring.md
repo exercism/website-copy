@@ -1,13 +1,6 @@
 ### Reasonable solutions
 
-This is a nice, concise, efficient solution:
-
-```r
-sum_of_multiples <- function(factors, limit) {
-  func <- function(x) seq(0, limit - 1, x)
-  sum(unique(unlist(lapply(factors, func))))
-}
-```
+A nice, concise, efficient solution can be found in [`example.R`](https://github.com/exercism/r/blob/master/exercises/sum-of-multiples/example.R).
 
 
 ### Common suggestions

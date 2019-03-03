@@ -1,12 +1,6 @@
 ### Reasonable solutions
 
-This is a nice, concise, efficient solution:
-
-```r
-leap <- function(year) {
-  year %% 4 == 0 & (year %% 100 != 0 | year %% 400 == 0)
-}
-```
+A nice, concise, efficient solution can be found in [`example.R`](https://github.com/exercism/r/blob/master/exercises/leap/example.R).
 
 
 ### Common suggestions
