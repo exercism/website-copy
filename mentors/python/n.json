@@ -38,5 +38,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have been programming in Python for the last 7 years and teaching it to beginners for the last 4. I don't claim to know much, but I hope to be a useful person to bounce ideas off of. Thanks for reading!"
+  },
+  {
+    "github_username": "nfbullock",
+    "name": "Nick Bullock",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I think Python is a great language for doing everyday tasks, improving mental models fundamental to computer science, and implementing really cool projects.  I use it every day, and encourage others to start thinking about how it can improve their lives."
   }
 ]
