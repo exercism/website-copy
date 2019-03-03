@@ -123,18 +123,14 @@ end
 This is the first problem that students need to use helper functions
 with a name similar to the public version.
 
-There arw two naming conventions here:
-- Use the same as the "outer" function
-- Use do_xxx for xxx
+There are two naming conventions here, per the [elixer style guide](https://github.com/christopheradams/elixir_style_guide)
 
-Sources:
-- https://github.com/christopheradams/elixir_style_guide
 
 #### Performance problems
 
-Students frquently have solutions that time out.
-Normally this is beacuse they are reversing the entire list at each iteration.
+Students frequently have solutions that time out.
+Normally this is because they are reversing the entire list at each iteration.
 
 #### Stretch solution
 
-Suggest that the student could implement all of these using their own reduce function.
+Suggest that the student implements all of these using their own reduce function.
