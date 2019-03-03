@@ -1,8 +1,7 @@
 ### Reasonable solutions
 
+#### Sample GenServer solution
 ```elixir
-  # GenServer
-
   defmodule Robot do
     @opaque t :: %Robot{direction: :north, position: {integer, integer}}
     defstruct direction: nil, position: nil
@@ -76,9 +75,9 @@
 end
 ```
 
-```elixir
-# Recursive
+#### Sample Recursive solution
 
+```elixir
 defmodule RobotSimulator do
   @directions [:north, :east, :south, :west]
 
@@ -154,6 +153,10 @@ end
 ```
 
 ### Common suggestions
+
+#### OTP
+
+The problem is marked as OTP but not a problem if not used.
 
 #### Use ```defguard``` or ```defguardp```
 
