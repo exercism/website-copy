@@ -46,4 +46,4 @@ public static string Name(string input = null) => $"One for {input ?? "you"}, on
 ### Talking points
 
 - Many solutions re-assign the input parameter (e.g. `if (input == null) input = "you";`). While there is technically nothing wrong with this, you could suggest not to re-use the parameter but instead introduce a new variable. This has the main benefit of keeping things immutable: by not overwriting the parameter value, you know its value on every single line in the method: namely its original value. This greatly helps in figuring out the state of a system.
-- Not everyone likes them, but it might be useful to suggest writing the `Add` method as an [expression-bodied method](https://docs.microsoft.contm/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
+- Not everyone likes them, but it might be useful to suggest writing the `Add` method as an [expression-bodied method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
