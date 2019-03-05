@@ -12,32 +12,20 @@ class Node {
 
 export class LinkedList {
   constructor() {
-    this.head = null
     this.tail = null
+    this.head = null
   }
 
   clear() {
-    this.head = null
     this.tail = null
+    this.head = null
   }
 
   push(value) {
-    const element = new Node({ value, next: this.head })
-
-    if (this.head) {
-      this.head.prev = element
-    } else {
-      this.tail = element
-    }
-
-    this.head = element
-  }
-
-  unshift(value) {
-    const element = new Node({ value, prev: this.tail })
+    const element = new Node({ value, next: this.tail })
 
     if (this.tail) {
-      this.tail.next = element
+      this.tail.prev = element
     } else {
       this.head = element
     }
@@ -45,16 +33,28 @@ export class LinkedList {
     this.tail = element
   }
 
+  unshift(value) {
+    const element = new Node({ value, prev: this.head })
+
+    if (this.head) {
+      this.head.next = element
+    } else {
+      this.tail = element
+    }
+
+    this.head = element
+  }
+
   pop() {
-    if (!this.head) {
+    if (!this.tail) {
       throw new Error('list is empty')
     }
 
-    const { value } = this.head
+    const { value } = this.tail
 
-    if (this.head.next) {
-      this.head = this.head.next
-      this.head.prev = null
+    if (this.tail.next) {
+      this.tail = this.tail.next
+      this.tail.prev = null
     } else {
       this.clear()
     }
@@ -63,15 +63,15 @@ export class LinkedList {
   }
 
   shift() {
-    if (!this.tail) {
+    if (!this.head) {
       throw new Error('list is empty')
     }
 
-    const { value } = this.tail
+    const { value } = this.head
 
-    if (this.tail.prev) {
-      this.tail = this.tail.prev
-      this.tail.next = null
+    if (this.head.prev) {
+      this.head = this.head.prev
+      this.head.next = null
     } else {
       this.clear()
     }
@@ -81,7 +81,7 @@ export class LinkedList {
 
   count() {
     let count = 0
-    let element = this.head
+    let element = this.tail
 
     while (element) {
       count += 1
@@ -92,7 +92,7 @@ export class LinkedList {
   }
 
   delete(value) {
-    let element = this.head
+    let element = this.tail
     while (element) {
       if (element.value !== value) {
         element = element.next
@@ -103,13 +103,13 @@ export class LinkedList {
       if (element.next) {
         element.next.prev = element.prev
       } else {
-        this.tail = this.tail.prev
+        this.head = this.head.prev
       }
 
       if (element.prev) {
         element.prev.next = element.next
       } else {
-        this.head = this.head.next
+        this.tail = this.tail.next
       }
 
       break
