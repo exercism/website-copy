@@ -63,5 +63,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a data scientist who's been using Python at work for 3-4 years. I love how readable and versatile it is."
+  },
+  {
+    "github_username": "jasonpeacock",
+    "name": "Jason Peacock",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "A software engineer of 20yrs, I've written production code in Perl, Ruby, and Python, among other languages. Python is my favorite interpreted language."
   }
 ]
