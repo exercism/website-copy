@@ -51,13 +51,13 @@ Strategy 2: String Power
 Pros: uses string directly; no array conversion needed;   
 Cons: requires indices.
 
-Strategy 3: Each with index
+Strategy 3: Each char and with index
 
 ```ruby
-    strand1.chars.each_with_index.count {|letter, index| letter != strand2[index] }
+    strand1.each_char.with_index.count {|letter, index| letter != strand2[index] }
 ```
 Pros: more intuitive? (students seem to pick this often);  
-Cons: requires both indices and converting to arrays, so it's kind of the worst of both worlds from 1 and 2 😛 . 
+Cons: requires indices. 
 
 
 ### Mentoring flow
