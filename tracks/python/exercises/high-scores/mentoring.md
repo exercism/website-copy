@@ -1,21 +1,18 @@
 ### Problem Summary and Challenges
 
 This problem asks that students be familiar with **classes** and how they are created in Python.  In particular, the usage of **`__init__()`** , object attributes,  and the  **`self`** keyword.  The  **class** represents simple score tracking for a game, and should include:
-
--   A constructor
+- A constructor
 - Attribute(s) to hold data
 - Associated methods that return  **latest**  score, **personal_best** score, and **personal_top_three** scores.  
 
 In tracking scores, students also use:
-
 -  List indexing and slicing syntax
 -  Strategies for computing/returning the maximum values in a list
 -  Strategies for sorting/filtering lists 
 
   
-
 ### Reasonable Solutions
-
+Canonical solution using the `max()` built-in to return `persona_best()`.
 ```python
 class HighScores(object):
     def __init__(self, scores):
@@ -30,9 +27,7 @@ class HighScores(object):
     def personal_top_three(self):
         return sorted(self.scores, reverse=True)[:3]
 ```
-
-
-
+Solution adding a `self.sorted_scores` attribute `sorted()` in reverse order.  `personal_best()` returns index zero of `self.sorted_scores` .
 ```python
 class HighScores(object):
     def __init__(self, scores):
@@ -48,9 +43,7 @@ class HighScores(object):
     def personal_top_three(self):
         return self.sorted_scores[:3]
 ```
-
-
-
+Solution adding a `self.sorted_scores` attribute that is `sorted()`.  `personal_best()` returns index **-1** of `self.sorted_scores` and `personal_top_three()` returns a slice from the right, using negative indexes.
 ```python
 class HighScores(object):
     def __init__(self, scores):
@@ -107,7 +100,7 @@ class HighScores(object):
 - [**`heapq` & `heapq.nlargest`**](https://docs.python.org/3/library/heapq.html#heapq.nlargest).  A _heap_ implementation.  Can be used in place of `sorted()` or `max()` for small sets of values.
 
 #### Blogs and Tutorials
--  [**Object-Oriented Programming in Python 3**](https://www.digitalocean.com/community/tutorial_series/object-oriented-programming-in-python-3) a tutorial series on using and creating classes from Lisa Tagliaferri at DigitalOcean.  
+-  [**Object-Oriented Programming in Python 3**](https://www.digitalocean.com/community/tutorial_series/object-oriented-programming-in-python-3) a tutorial series on classes from Lisa Tagliaferri at DigitalOcean.  
 - [**OOP in Python 3**](https://realpython.com/python3-object-oriented-programming/) a tutorial from Real Python.
--  [**Lists and Tuples in Python**](https://realpython.com/python-lists-tuples/#python-lists) from John Sturtz at Real Python.  Rundown on indexing, slicing and all things list and tuple.
+-  [**Lists and Tuples in Python**](https://realpython.com/python-lists-tuples/#python-lists) from John Sturtz at Real Python.  Indexing, slicing and all things list and tuple.
 - [**Is Python call-by-reference or call-by-value?  Neither**](https://jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/) an explainer from Jeff Knupp.  Details why assigning a new name doesn't copy data in Python.
