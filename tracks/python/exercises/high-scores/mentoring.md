@@ -1,4 +1,4 @@
-### Problem summary and challenges
+### Problem Summary and Challenges
 
 This problem asks that students be familiar with **classes** and how they are created in Python.  In particular, the usage of **`__init__()`** , object attributes,  and the  **`self`** keyword.  The  **class** represents simple score tracking for a game, and should include:
 
