@@ -98,7 +98,7 @@ class HighScores(object):
   
 ### Resources
 
-#### links into Python 3 documentation
+#### Links to Python 3 Documentation
 -  [**A First Look at Classes**](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes) 
 -  [**Data Structures in Python**](https://docs.python.org/3/tutorial/datastructures.html).  Describes list object methods, uses for lists, and comprehensions.
 - [**`list.sort()`**](https://docs.python.org/3/library/stdtypes.html#list.sort) **|** [**`sorted()`**](https://docs.python.org/3/library/functions.html#sorted)
