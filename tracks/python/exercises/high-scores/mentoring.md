@@ -80,7 +80,7 @@ class HighScores(object):
 - The syntax of  **`sorted(self.scores, reverse=True)[:3]`** is preferred over  **`sorted(self.scores, reverse=True)[0:3]`**.  All slices default to zero unless otherwise specified - so convention is to leave it off.
 
   
-### Talking points
+### Talking Points
 
 #### Copying Data and Lists
 - Python is _pass by object reference_.  You cannot copy list data by assigning a new variable name, you must copy data by calling `.copy()` or using slice syntax `copied_data = data[:]`
