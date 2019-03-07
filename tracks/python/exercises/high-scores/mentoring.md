@@ -14,7 +14,7 @@ In tracking scores, students also use:
 
   
 
-### Reasonable solutions
+### Reasonable Solutions
 
 ```python
 class HighScores(object):
