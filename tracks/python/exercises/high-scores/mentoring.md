@@ -106,7 +106,7 @@ class HighScores(object):
 -  [**`max()` built-in function**](https://docs.python.org/3/library/functions.html#max) 
 - [**`heapq` & `heapq.nlargest`**](https://docs.python.org/3/library/heapq.html#heapq.nlargest).  A _heap_ implementation.  Can be used in place of `sorted()` or `max()` for small sets of values.
 
-#### blogs and tutorials
+#### Blogs and Tutorials
 -  [**Object-Oriented Programming in Python 3**](https://www.digitalocean.com/community/tutorial_series/object-oriented-programming-in-python-3) a tutorial series on using and creating classes from Lisa Tagliaferri at DigitalOcean.  
 - [**OOP in Python 3**](https://realpython.com/python3-object-oriented-programming/) a tutorial from Real Python.
 -  [**Lists and Tuples in Python**](https://realpython.com/python-lists-tuples/#python-lists) from John Sturtz at Real Python.  Rundown on indexing, slicing and all things list and tuple.
