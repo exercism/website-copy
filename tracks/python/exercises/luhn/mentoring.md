@@ -1,4 +1,4 @@
-## Problem and challenges
+### Problem and challenges
 	
 The Luhn problem asks the student to filter a string 
 of digits, and then perform a checksum. 
