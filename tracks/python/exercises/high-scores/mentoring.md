@@ -69,7 +69,7 @@ class HighScores(object):
 
 
 
-### Common suggestions
+### Common Suggestions
 
 - Use **`sorted()`** over **`sort()`**.   `sorted()` returns a _**copy**_ , `sort()` _**mutates in place**_.  
   Solutions that use `sort()` without first _copying_ the data in `self.scores`  erase the "latest" score.  If `latest()` is called after the `sort()`, it will be inaccurate.
