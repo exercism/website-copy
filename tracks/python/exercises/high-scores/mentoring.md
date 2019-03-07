@@ -82,7 +82,7 @@ class HighScores(object):
   
 ### Talking points
 
-#### copying data and lists
+#### Copying Data and Lists
 - Python is _pass by object reference_.  You cannot copy list data by assigning a new variable name, you must copy data by calling `.copy()` or using slice syntax `copied_data = data[:]`
 - **Indexing and slicing work from either direction**.  Positive numbers from the left (starting at 0), negative numbers from the right (starting at -1).
 - Why _wouldn't_ you use `heapq.nlargest` for getting the top three scores?  What other strategies could you use within the class to create and manage the "top three" scores?  How does your strategy change if there are incoming scores to manage on top of the existing scores?
