@@ -88,7 +88,7 @@ class HighScores(object):
 - Why _wouldn't_ you use `heapq.nlargest` for getting the top three scores?  What other strategies could you use within the class to create and manage the "top three" scores?  How does your strategy change if there are incoming scores to manage on top of the existing scores?
 
   
-#### classes
+#### Classes
 -  **`__init__()`** is the constructor for the class.  Anything written inside of **`__init()__`**  executes _**once**_ -- when someone "makes a new object":  `my_scores = HighScores()`.   If this class needs to handle additional _incoming_ scores, what strategies and issues would the student need to think about because of this?
 - **`self`** is a keyword that represents an _**object instance**_.  Any methods (including `__init__()`) intended to "belong" to an object  need `self` as their first argument.
 -  `self` also denotes _**object attributes**_  :  `self.scores`, `self.sorted_scores`.  Data variables meant to be part of an object need `self` as part of their declaration.   Object attribute values can be changed _**per instance**_.  What are the potential downsides to this?
