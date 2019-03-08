@@ -35,7 +35,7 @@ It is a useful exercise to use this table to build a dictionary that
 maps numbers to strings, and then invert the dictionary
 to get a mapping from letters to their value in the game.
 
-This is less prone to error, and the editing is straigforward, 
+This is less prone to error, and the editing is straightforward, 
 and illustrates an important idea.
 
 ```python
