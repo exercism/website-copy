@@ -17,4 +17,4 @@ Using a default value for the variable (rather than an `if` & `<- 'you'` in the 
 
 ### Talking points
 
-- Point learners whose code shows inconstistent formatting to [this StackOverflow thread about automatic code styling in R(Studio)](https://stackoverflow.com/a/46012908/4341322). This should prevent issues in more complex exercises for both them and us in future.
+- Point learners whose code shows inconstistent formatting to resources about automatic code styling in R(Studio), e.g. to [this StackOverflow thread](https://stackoverflow.com/a/46012908/4341322). This should prevent issues in more complex exercises for both them and us in future.
