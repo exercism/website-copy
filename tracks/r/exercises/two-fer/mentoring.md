@@ -2,7 +2,7 @@
 
 This is a nice, concise, efficient solution:
 
-```{r}
+```r
 … (input = "you")  
   paste0("One for ", input, ", one for me.")
 ```
