@@ -23,7 +23,7 @@ class Matrix(object):
 
 ### Talking Points
 
-#### Delayed contruction
+#### Delayed Contruction
 
 You will see solutions that store the matrix in 
 an intermediate state, and then find the integers
