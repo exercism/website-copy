@@ -1,4 +1,4 @@
-### Problem and challenges
+### Problem and Challenges
 
 The problem asks you to write a Matrix class.
 The constructor takes as input a string holding 
