@@ -37,7 +37,7 @@ point out that if the input containted bad data,
 you would want the constructor to fail, rather 
 than failing at row() or column()
 
-#### Duplicate storage
+#### Duplicate Storage
 
 You will see solutions that build two copies of 
 the matrix: the original and the transposed matrix.
