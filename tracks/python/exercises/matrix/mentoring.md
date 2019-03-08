@@ -45,7 +45,7 @@ Point out that this takes twice the storage, and
 that constructing a column on the fly isn't that
 difficult.
 
-#### To copy or not to copy
+#### To Copy or not to Copy
 
 The solution presented copies the rows to avoid
 any chance of updating the matrix. 
