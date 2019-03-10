@@ -70,5 +70,5 @@ object Bob {
 ### Common suggestions
 
 - Tests for the different cases should be broken into well named functions - `isShouting`, `isShoutingQuestion`, etc.
-- Exercise can be solved without use of complex regular expressions.
+- The exercise can be solved without use of complex regular expressions.
 
