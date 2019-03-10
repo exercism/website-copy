@@ -35,7 +35,7 @@ end
 #### Hardcoding test data
 
 This is the first solution on the track and students will frequently hardcode test data to get a solution.
-Generally they should be recomended to try to find a more general solution. 
+They should be recommended to find a more general solution. 
 
 #### `is_shouting`
 
