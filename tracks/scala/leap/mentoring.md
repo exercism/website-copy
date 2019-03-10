@@ -21,5 +21,5 @@ object Leap {
 
 ### Common suggestions
 
-- True and false do not need to be returned explicitly. Instead return the result of combining expressions with &&, || and !
+- `true` and `false` do not need to be returned explicitly. Instead return the result of combining expressions with `&&`, `||` and `!`
 
