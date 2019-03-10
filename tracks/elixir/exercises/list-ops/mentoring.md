@@ -55,8 +55,9 @@ end
 This is the first problem that students need to use helper functions
 with a name similar to the public version.
 
-There are two naming conventions here, per the [elixir style guide](https://github.com/christopheradams/elixir_style_guide)
-
+They should name the private function the same name as the public functions,
+but starting with `do_`, according to the
+[elixir style guide](https://github.com/christopheradams/elixir_style_guide#private-functions-with-same-name-as-public).
 
 #### Performance problems
 
