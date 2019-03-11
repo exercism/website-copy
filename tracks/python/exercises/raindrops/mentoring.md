@@ -124,4 +124,4 @@ relaxing it is to allow an early return from a
 complex routine: perhaps a return when the data
 is invalid, or the answer is easy to compute. 
 That argument doesn't apply here, so there is
-little reasonnot not to use a single return. 
+little reason not to use a single return. 
