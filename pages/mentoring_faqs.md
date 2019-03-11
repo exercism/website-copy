@@ -51,10 +51,10 @@ If you find anything that's broken, first see if it is listed here and if not pl
 Go back to [https://exercism.io/mentor/configure](https://exercism.io/mentor/configure) and check that you have clicked the “Save” button at the bottom of the screen. Some people have missed this step and then been understandably confused by why they can't see the Mentor Dashboard. This should fix the issue.
 
 ### How can I report abuse or examples of bad mentoring?
-Please reach out to us at abuse@exercism.io and we will try to fix or resolve the issue respecting both you and your privacy.
+Please reach out to us at [abuse@exercism.io](mailto:abuse@exercism.io) and we will try to fix or resolve the issue respecting both you and your privacy.
 
 ### How can I stop mentoring a track?
-If you'd like to stop mentoring a track please email us at mentors@exercism.io and let us know.
+If you'd like to stop mentoring a track please email us at [mentors@exercism.io](mailto:mentors@exercism.io) and let us know.
 
 ### Why are tests marked as skipped?
 The tests are marked as skipped to encourage people to use TDD to do one at a time. When people submit their solution and you view it in the UI, you're seeing the original tests that the user was sent, not their final tests file.
