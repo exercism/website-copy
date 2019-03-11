@@ -16,7 +16,7 @@ def raindrops(val: int) -> str:
         (7, 'Plong'),
         ]
 
-    lst = [ sound for factor, sound in sound_map if not (val % factor)]
+    lst = [sound for factor, sound in sound_map if not (val % factor)]
 
     if not lst:
         result = str(val)
@@ -88,7 +88,7 @@ def raindrops(val: int) -> str:
     return result
 ```
 
-The Dictionary seems like a step forward, but there are two arguments
+The Dictionary seems like a step forward, but there are three arguments
 against it. First, the keys to an ordinary dictionary are not
 guaranteed to be presented in any particular order. Of course,
 that can be addressed. The solution presented sorts the keys.
