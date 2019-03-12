@@ -41,7 +41,7 @@ return result
 The operation of adding two strings is slower
 than appending to a list.  It is faster to 
 append and join() than adding characters.
-Rather than the solution above we wold prefer
+Rather than the solution above we would prefer
 
 ```python
 result = []
