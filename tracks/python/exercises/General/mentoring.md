@@ -18,7 +18,7 @@ result = ''
 
 for ch in word:
     if ch.lower() in matchingSet:
-        result = result + ch.lower
+        result = result + ch.lower()
 
 return result
 ```
