@@ -72,6 +72,10 @@ This doesn't make add() much simpler, but
 increases the runtime of the other two methods,
 and should be discouraged.
 
+I have just seen two solutions that create a dictionary to map names to grades.
+There is no need to store this mapping, and it should be discouraged.  
+If they want to store (name, grade) pairs, they could use a list of pairs.  
+
 #### List Comprehension
 
 The roster() method is a natural place for a list comprehension.
