@@ -11,15 +11,15 @@ public static class NucleotideCount
 {
     public static IDictionary<char, int> Count(string sequence)
     {
-        var result = new Dictionary<char, int> { {'A', 0}, {'C', 0}, {'G', 0}, {'T', 0} };
+        var nucleotideCounts = new Dictionary<char, int> { {'A', 0}, {'C', 0}, {'G', 0}, {'T', 0} };
         
         foreach (var c in sequence)
         {
-            if (result.ContainsKey(c)) result[c]++;
+            if (nucleotideCounts.ContainsKey(c)) nucleotideCounts[c]++;
             else throw new ArgumentException("Invalid Nucleotide Symbol");
         }
 
-        return result;
+        return nucleotideCounts;
     }
 }
 ```
@@ -37,15 +37,15 @@ public static class NucleotideCount
     
     public static IDictionary<char, int> Count(string sequence)
     {
-        var result = ValidNucleotideSymbols.ToDictionary(c => c, c => 0);
+        var nucleotideCounts = ValidNucleotideSymbols.ToDictionary(c => c, c => 0);
         
         foreach (var c in sequence)
         {
-            if (ValidNucleotideSymbols.Contains(c)) result[c]++;
+            if (ValidNucleotideSymbols.Contains(c)) nucleotideCounts[c]++;
             else throw new ArgumentException("Invalid Nucleotide Symbol");
         }
 
-        return result;
+        return nucleotideCounts;
     }
 }
 ```
