@@ -38,5 +38,13 @@
     "link_url": null,
     "avatar_url": "https://github.com/bouncey.png",
     "bio": "Tell me and I forget, teach me and I may remember, involve me and I learn."
+  },
+  {
+    "github_username": "bdjnk",
+    "name": "Michael Plotke",
+    "link_text": null,
+    "link_url": "michael.plotke.me",
+    "avatar_url": null,
+    "bio": "I'm paid to write JavaScript. I mostly enjoy it. I also enjoy teaching. Exercism is a nice convergence."
   }
 ]
