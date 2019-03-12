@@ -15,8 +15,14 @@ public static class NucleotideCount
         
         foreach (var c in sequence)
         {
-            if (nucleotideCounts.ContainsKey(c)) nucleotideCounts[c]++;
-            else throw new ArgumentException("Invalid Nucleotide Symbol");
+            if (nucleotideCounts.ContainsKey(c))
+            {
+                nucleotideCounts[c]++;
+            }
+            else
+            {
+                throw new ArgumentException("Invalid Nucleotide Symbol");
+            }
         }
 
         return nucleotideCounts;
@@ -41,8 +47,14 @@ public static class NucleotideCount
         
         foreach (var c in sequence)
         {
-            if (ValidNucleotideSymbols.Contains(c)) nucleotideCounts[c]++;
-            else throw new ArgumentException("Invalid Nucleotide Symbol");
+            if (ValidNucleotideSymbols.Contains(c))
+            {
+                nucleotideCounts[c]++;
+            }
+            else
+            {
+                throw new ArgumentException("Invalid Nucleotide Symbol");
+            }
         }
 
         return nucleotideCounts;
