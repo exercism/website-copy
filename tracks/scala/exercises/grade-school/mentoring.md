@@ -27,11 +27,12 @@ class School {
 #### Solution using mutable collection
 
 ```scala
-import scala.collection.mutable._
+import scala.collection.Map
+import scala.collection.mutable.SortedMap
 
 class School {
-  type DB = SortedMap[Int, Seq[String]]
-  private val mydb: DB = SortedMap.empty[Int, Seq[String]]
+  type DB = Map[Int, Seq[String]]
+  private val mydb = SortedMap.empty[Int, Seq[String]]
 
   def add(name: String, g: Int) = {
     val ns = mydb.getOrElseUpdate (g, Seq.empty[String]) :+ name
@@ -44,10 +45,11 @@ class School {
 
   def sorted: DB = {
     mydb map { case (k,v) => k-> v.sortWith(_ < _)}
-  }
+    }
 }
 ```
 
 ### Common suggestions
 
 - Internal val/var holding DB should be private to prevent mutable state being exposed to the caller.
+- `type DB` should be defined as `scala.collection.immutable.Map` or  `scala.collection.Map`. `scala.collection.mutable.Map` should not be used for `type DB`.
