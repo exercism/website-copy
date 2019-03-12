@@ -50,7 +50,7 @@ for ch in word.lower():
     if ch in matchingSet:
         result.append(ch)
 
-return ''.joint(result)
+return ''.join(result)
 ```
 
 #### Iterating and Indexing
