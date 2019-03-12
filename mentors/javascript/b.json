@@ -42,8 +42,8 @@
   {
     "github_username": "bdjnk",
     "name": "Michael Plotke",
-    "link_text": null,
-    "link_url": "michael.plotke.me",
+    "link_text": "michael.plotke.me",
+    "link_url": "https://michael.plotke.me/",
     "avatar_url": null,
     "bio": "I'm paid to write JavaScript. I mostly enjoy it. I also enjoy teaching. Exercism is a nice convergence."
   }
