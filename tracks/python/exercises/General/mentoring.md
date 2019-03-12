@@ -156,4 +156,4 @@ everything that shouldn't be there.
 It is often simpler to specify what **should**
 be in the string than to specify what shouldn't.
 Testing for what to include can be simpler than 
-tests for what to exclude. 
+testing for what to exclude. 
