@@ -54,4 +54,4 @@ public static class NucleotideCount
 
  * Iterating over `sequence` more than once wastes cycles, memory, etc. Often it isn't obvious that this is happening because methods like `ToList`, `GroupBy` or `OrderBy` will iterate a list without the student having to write a loop.
    * Hence, using `sequence.Any()` or `sequence.Where(...)` to implement the exception is wrong. It should be thrown within the single iteration.
-   * Similarly, though there are numerous ways to use Linq to solve this problem it should be avoided. All of them involve iterating `sequence` multiple times.
+   * Similarly, though there are numerous ways to use LINQ to solve this problem it should be avoided. All of them involve iterating `sequence` multiple times.
