@@ -40,7 +40,7 @@ return result
 
 The operation of adding two strings is slower
 than appending to a list.  It is faster to 
-append and join() than adding characters.
+append() and join() than to add characters one by one.
 Rather than the solution above we would prefer
 
 ```python
