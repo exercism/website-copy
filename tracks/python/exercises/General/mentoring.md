@@ -163,5 +163,5 @@ testing for what to exclude.
 When solutions have extraneous material, suggest
 edits.  The single most common exaple is a trailing
 `pass` left over from the downloaded sourcefile.  
-Leaving the 'pass' is a sign that student doesn't
+Leaving the `pass` is a sign that student doesn't
 understand the keyword.  
