@@ -1,4 +1,4 @@
-### Problem and challenges
+### Problem and Challenges
 
 The challenge is to implement a Class representing students in a school. 
 Each student has a unique first name and a grade. 
