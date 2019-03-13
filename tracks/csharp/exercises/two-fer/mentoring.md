@@ -43,7 +43,7 @@ public static string Name(string input = null) => $"One for {input ?? "you"}, on
 - It is not uncommon for students to put parentheses within the interpolated variable (like `{(input ?? "you")}`. These can safely be removed.
 - If they are using the approach where the default value is changed to `"you"`, check if they have also change the parameter name to something more descriptive than `input`.
 
-### Talking points
+### Talking Suggestions
 
 - Many solutions re-assign the input parameter (e.g. `if (input == null) input = "you";`). While there is technically nothing wrong with this, you could suggest not to re-use the parameter but instead introduce a new variable. This has the main benefit of keeping things immutable: by not overwriting the parameter value, you know its value on every single line in the method: namely its original value. This greatly helps in figuring out the state of a system.
 - Not everyone likes them, but it might be useful to suggest writing the `Add` method as an [expression-bodied method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
