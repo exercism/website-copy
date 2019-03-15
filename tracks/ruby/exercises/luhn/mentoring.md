@@ -15,7 +15,7 @@ class Luhn
   def valid?
     return unless valid_format?(candidate)
     
-    luhn_sum(digits) % 10 == 0
+    luhn_sum(candidate) % 10 == 0
   end
 
   private
@@ -24,13 +24,10 @@ class Luhn
   def valid_format?(rough)
     rough.size > 1 && rough !~ (/\D/)
   end
-  
-  def digits
-    candidate.to_i.digits
-  end
+
 
   def luhn_sum(plaintext)
-    plaintext.each_slice(2).sum do |first, second|
+    plaintext.to_i.digits.each_slice(2).sum do |first, second|
       first + digit_sum_of_doubled(second.to_i)
     end
   end
@@ -45,7 +42,7 @@ end
 
 Well, this is Ruby, and almost everything can be done in several ways. Make sure to acknowledge the student's own preferences (given that's idiomatic Ruby).
 * _guard clause_: variants of `valid_format?(...) && valid_luhn_sum?(...)`  
-* `chars` in the initializer, `reverse.map(&:to_i)` in the luhn_sum calculation
+* `chars` in the initializer, `reverse` in the luhn_sum calculation
 * `divmod(10).sum` instead of `digits.sum`; I usually save one of those as a final give-away to get rid of a ternary :-) 
 * _advanced_ Most suitable as a follow up after the instantiated class is thoroughly refactored first. Don't go here except with students who demonstrate advanced Ruby fluency. (TODO: add notes.) 
 
