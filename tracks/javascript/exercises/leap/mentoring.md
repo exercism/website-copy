@@ -29,7 +29,7 @@ const isDivisibleBy400 = (year) => isDivisible(year, 400)
 export const isLeap = year => isDivisibleBy4(year) && (!isDivisibleBy100(year) || isDivisibleBy400(year))
 ```
 
-The particulary clever student will use `Date`. Do not punish them, for this, and simply appreciate the ingenuity:
+The particularly clever student will use `Date`. Do not punish them for this - instead simply appreciate their ingenuity:
 ```javascript
 // Months in Date start at 0, this tries to set the date to 29th of february and
 // checks if it has rolled over to March.
