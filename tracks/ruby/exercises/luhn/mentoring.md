@@ -74,7 +74,7 @@ In the 'Instantiated Class' variant, almost every concept has been addressed in 
 
 _First iteration: start with feedback on general design and pointing to Enumerable for the Luhn Calculation_
 * When people start with a Class and one Giant Class Method: start with just a suggestion to instantiate, without going into details. 
-* When they don't use `each_slice`, I point them to the Series exercise "for inspiration on a similar solution".  I don't give them `each_slice.
+* When they don't use `each_slice`, I point them to the Series exercise "for inspiration on a similar solution".  I don't give them `each_slice`.
 * If both of these ^ points are relevant, I put them both in the first comment. And nothing else. 
 
 _Next iterations:_ 
