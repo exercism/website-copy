@@ -13,21 +13,21 @@ class Luhn
   end
 
   def valid?
-    return unless valid_format?(candidate)
-    
-    luhn_sum(candidate) % 10 == 0
+    return unless valid_format?
+
+    luhn_sum % 10 == 0
   end
 
   private
   attr_reader :candidate
 
-  def valid_format?(rough)
-    rough.size > 1 && rough !~ (/\D/)
+  def valid_format?
+    candidate.size > 1 && candidate !~ (/\D/)
   end
 
 
-  def luhn_sum(plaintext)
-    plaintext.to_i.digits.each_slice(2).sum do |first, second|
+  def luhn_sum
+    candidate.to_i.digits.each_slice(2).sum do |first, second|
       first + digit_sum_of_doubled(second.to_i)
     end
   end
