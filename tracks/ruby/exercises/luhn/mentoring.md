@@ -53,7 +53,7 @@ def self.valid?(candidate)
   candidate.delete(' ')
     .to_i
     .digits
-    .yield_self(&method(:luhn_sum)
+    .yield_self(&method(:luhn_sum))
     .modulo(10)
     .zero?
 end
