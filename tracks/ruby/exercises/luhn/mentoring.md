@@ -49,7 +49,7 @@ Well, this is Ruby, and almost everything can be done in several ways. Make sure
 ```ruby
 # Class with class methods or a Module with extend self or module_function
 def self.valid?(candidate)
-  return unless valid_format?(candidate.delete(' ')
+  return unless valid_format?(candidate.delete(' '))
   candidate.delete(' ')
     .to_i
     .digits
