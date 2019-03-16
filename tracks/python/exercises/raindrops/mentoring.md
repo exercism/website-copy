@@ -1,4 +1,4 @@
-### Problem and challenges
+### Problem and Challenges
 
 The problem asks us to take an integer and return a string.
 We need to map potential factors 3, 5, and 7 to Pling, Plang, and Plong.
