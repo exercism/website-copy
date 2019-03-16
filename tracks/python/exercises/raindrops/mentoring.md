@@ -5,7 +5,7 @@ We need to map potential factors 3, 5, and 7 to Pling, Plang, and Plong.
 If the integer is not divisible by any of the factors, we must
 return a string representing the number in base 10.
 
-### Reasonable solutions
+### Reasonable Solutions
 
 ```python
 def raindrops(val: int) -> str:
