@@ -54,7 +54,7 @@ rather than appending to a list and joining.
 (See the General Issues discussion for more
 on this common problem.)
 
-The second issue is that the soluition contains
+The second issue is that the solution contains
 a sequence of if statements, rather than iterating
 over some data structure that holds the pairs.
 
