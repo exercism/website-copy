@@ -53,7 +53,6 @@ const Null = {
   length() { return 0 },
   append(other) { return other },
   concat() { return this },
-  forEach() { /* done */ },
   foldl(_, initial) { return initial },
   foldr(_, initial) { return initial },
   filter() { return Null },
@@ -104,10 +103,6 @@ class Cons {
 
   foldl(callback, initial = undefined) {
     return this.next.foldl(callback, callback(initial, this.value))
-  }
-
-  forEach(callback) {
-    this.foldl((_, item) => callback(item))
   }
 
   foldr(callback, initial = undefined) {
@@ -185,10 +180,6 @@ filter(predicate) {
   )
 }
 
-forEach(callback) {
-  return fold(this.values, (_, item) => callback(item))
-}
-
 length() {
   return this.foldl(acc => acc + 1, 0);
 }
@@ -196,6 +187,12 @@ length() {
 
 It's important to note that in this implementation there are still no `for`
 loops, no use of the `length` property, no `push` etc.
+
+#### A note about foreach
+
+There is no `forEach` in this solution, because it's not mandated by the tests.
+If a student uses `forEach` to iterate, instead of `foldl`, that's okay. If a
+student just added `forEach` for posterity, that's fine too.
 
 ### Common suggestions
 
