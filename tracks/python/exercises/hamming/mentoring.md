@@ -52,7 +52,17 @@ def distance(strand_a, strand_b):
 		raise ValueError("strands length are not the same")
 	return len([(a, b) for (a, b) in zip(strand_a, strand_b) if a != b])
 ```
-	
+
+As well as len(), we can use sum()
+
+```python
+def distance(strand_a, strand_b):
+    if len(strand_a) != len(strand_b):
+        raise ValueError("Strands must be of same length")
+
+    return sum(a != b for a,b in zip(strand_a,strand_b))
+```
+
 ### Common Suggestions
 
 A List Comprehension can be suggested, but isn't an obvious win.
