@@ -165,3 +165,54 @@ edits.  The single most common example is a trailing
 `pass` left over from the downloaded sourcefile.  
 Leaving the `pass` is a sign that student doesn't
 understand the keyword.  
+
+#### Many Unhappy Returns
+
+There is an rule of thumb that functions should have a single return.
+This is an aid in debugging: you can place a breakpoint on the statements
+and see what the function returns.
+
+There are a variety of viewpoints on the requirement
+of a single return. The strongest argument for
+relaxing it is to allow an early return from a
+complex routine: perhaps a return when the data
+is invalid, or the answer is easy to compute.
+
+#### Long Happy Path
+
+A related issue is described as the "Else Return".
+This is an alternative return on the unhappy path. 
+Consider the following example:
+
+```python
+def distance(strand_a, strand_b):
+    if (len(strand_a) == len(strand_b)):
+        strand_a = strand_a.lower()
+        strand_b = strand_b.lower()
+        count = 0
+        for i in range(len(strand_a)):
+            if strand_a[i] != strand_b[i]:
+                count = count + 1
+        return count
+    else:
+        raise ValueError('Strands must have the same length')
+```
+
+There are a number of issues here, but we are looking at one:
+the position of the exception. 
+By the time the reader hits the exception, they have been running
+through the logic of the loop, and have long forgotten the original
+test of length.  Even with the text in the exception explaining 
+the problem, it is easier to understand in the following order.
+
+```python
+def distance(strand_a, strand_b):
+    if (len(strand_a) != len(strand_b)):
+        raise ValueError('Strands must have the same length')
+    else:
+        strand_a = strand_a.lower()
+        ...
+```
+
+Of course, the else is optional at this point: Fat Elvis 
+has left the building and we are all together on the happy path.  
