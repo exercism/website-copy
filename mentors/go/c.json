@@ -14,5 +14,13 @@
     "link_url": "https://github.com/clagraff",
     "avatar_url": "https://i.imgur.com/fsN440Q.png",
     "bio": "I've come to love working in Gol and Python, and am always on the lookout for the next big thing to pickup. There is always something new to learn!"
+  },
+  {
+    "github_username": "codebender",
+    "name": "Matthew Bender",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/987305",
+    "bio": "I'm a backend engineer and a long time rubyist turned gopher. I have really enjoyed learning Go and embraced its simplicity."
   }
 ]
