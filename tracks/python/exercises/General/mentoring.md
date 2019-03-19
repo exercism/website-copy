@@ -165,3 +165,47 @@ edits.  The single most common example is a trailing
 `pass` left over from the downloaded sourcefile.  
 Leaving the `pass` is a sign that student doesn't
 understand the keyword.  
+
+#### Variable Names
+
+In Python, we do not need to declare the type of a variable.  
+
+````python
+for i in text:
+    if i.isalpha()
+        lst.append(i)
+```
+
+The convention is that i is the name of an integer,
+and ch is a better name for a character.  
+Do everything you can to nudge the reader towards
+understanding.  
+
+#### Too Clever By Half 
+
+If it takes you more than an instant to see what is going on, 
+perhaps the solution could be clarified.
+
+````python
+def Hamming_distance(strand_a, strand_b):
+    if len(strand_a) != len(strand_b):
+        raise ValueError("Strands should be equal in length!")
+    return sum([len(set(pair))-1 for pair in zip(strand_a, strand_b)])
+````
+
+This works to compute the Hamming distance between two strands,
+but it is not the clearest way to express the thought.  
+As Hal Abelson said, 
+“Programs must be written for people to read, and 
+only incidentally for machines to execute.”
+
+Encourage clarity in everything.  
+
+````python
+def Hamming_distance(strand_a, strand_b):
+    if len(strand_a) != len(strand_b):
+        raise ValueError("Strands should be equal in length!")
+    return sum(1 for ch1, ch2 in zip(strand_a, strand_b) if ch1 != ch2])
+````
+
+This makes clear that we are counting the number of pairs that don't match.
