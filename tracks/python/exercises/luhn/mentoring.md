@@ -86,6 +86,16 @@ for n in self.card_num[-2::-2]:
     else:
         every_other_num.append((int(n)*2) % 9)
 ```
+
+Here is an example that uses a tuple of values.  Why this is a default parameter is beyond my ken.  
+
+```python
+def luhn_lookup(index, digit, luhn_table=(0, 2, 4, 6, 8, 1, 3, 5, 7, 9)):
+    if index % 2 != 1:
+        return digit
+    else:
+        return luhn_table[digit]
+```
 	
 #### Summing via reduce()
 	
