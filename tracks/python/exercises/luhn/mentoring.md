@@ -87,7 +87,9 @@ for n in self.card_num[-2::-2]:
         every_other_num.append((int(n)*2) % 9)
 ```
 
-Here is an example that uses a tuple of values.  Why this is a default parameter is beyond my ken.  
+Here is an example that uses a tuple of values to hold the mapping. 
+While the table was passed in as a default parameter, 
+it would probably be clearer to include it as a local variable.
 
 ```python
 def luhn_lookup(index, digit, luhn_table=(0, 2, 4, 6, 8, 1, 3, 5, 7, 9)):
@@ -99,7 +101,7 @@ def luhn_lookup(index, digit, luhn_table=(0, 2, 4, 6, 8, 1, 3, 5, 7, 9)):
 	
 #### Summing via reduce()
 	
-You will see solutions that use reduce() rather than sum(). While this works, it is more complex than needed. 
+You will see solutions that use reduce() rather than sum(). While this works, it is more complex than needed.
 	
 ```python
 from functools import reduce
