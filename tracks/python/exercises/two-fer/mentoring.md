@@ -58,3 +58,18 @@ them a reference to your favorite article.
 
 You will see students who modify the tests to get them to pass.
 You should explain the function and importance of the tests.  
+
+#### Test Driven Thinking
+
+The submission below passes all the tests, but misses the point.
+Ask what happens when Carol and Doug show up.
+
+```python
+def two_fer(name=None):
+    if name == 'Alice':
+        return 'One for Alice, one for me.'
+    elif name == 'Bob':
+        return 'One for Bob, one for me.'
+    else:
+        return 'One for you, one for me.'
+```
