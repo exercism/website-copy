@@ -36,7 +36,7 @@ For another 5% of the submissions you will need to go into detailed instructions
 You might start with some questions:
 
 Do they know how to run the tests?
-Some users may have trouble running pytest du to path issues.
+Some users may have trouble running pytest due to path issues.
 They can still use
 
 ```python
@@ -54,7 +54,7 @@ explaining what the test called and what it expected.
 
 When they can describe what is going wrong, you may wish to give
 them the term 'Default Arguments' and let them search, or give
-them a reference to your favorite article.
+them a reference to your favorite article about default arguments.
 
 #### Editing the Tests
 
