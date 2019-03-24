@@ -20,6 +20,7 @@ def two_fer(name='you'):
 - If the student is using Python <= 3.5, suggest upgrading to Python 3.7 for additional language features.
 - Some people need help with running the tests. 
 - Check indentation.
+- Printing vs. returning 
 
 ### Talking Points
 - Default values
