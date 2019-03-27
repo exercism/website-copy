@@ -18,7 +18,7 @@ def abbreviate(words):
     words = words.replace('-', ' ')
     words = words.upper()
 
-    return ''.join([word[0] for word in words.split(' ') if word])
+    return ''.join(word[0] for word in words.split(' ') if word)
 ```
 
 #### Assembling Strings
