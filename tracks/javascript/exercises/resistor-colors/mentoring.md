@@ -26,9 +26,9 @@ implicit return instead of an explicit `return`.
 
 #### Approvability
 
-If the solution does not look like the reasonable solutions, do _not_ approve it.
+If the solution does not look like the reasonable solutions, do _not_ approve it, unless they match an exception.
 
-There are two exceptions: a student who uses a `reducer` on the `reverse` of the input. This is a technique that
+There are exceptions: a student who uses a `reducer` on the `reverse` of the input. This is a technique that
 comes from other languages as well as algorithm solving in university and is perfectly valid. It's also the only 
 _real_ way to do this without conversion to a `String`. Such a solution looks like this:
 
@@ -53,7 +53,10 @@ export function value(colors) {
 
 A variation is not using `reverse` but instead using `length - i`.
 
-The second exception is using string interpolation to build the value:
+The second exception is using string interpolation to build the value, or manually extracting the two colors 
+(`[COLORS.indexOf(colors[0]), COLORS.indexOf(colors[1])].join('')`). This is technically correct, because 
+**only the first two color bands** can be calculated using the method in this exercise. It looks something
+like this:
 
 ```javascript
 export const COLORS = [
