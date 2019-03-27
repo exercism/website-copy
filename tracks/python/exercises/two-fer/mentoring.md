@@ -1,6 +1,6 @@
 This is a great opportunity to prepare for the track with attention to style conventions. 
 This is currently the first reviewed problem on the Python track, and serves to 
-make sure the student understands unit testing.
+make sure the student understands unit testing and Test Driven Design.
 
 ### Reasonable Solutions
 
