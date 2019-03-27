@@ -79,7 +79,7 @@ Generator isn't any better than a List Comprehension.
 Regular Expressions are very useful in pruning the 
 input.
 
-At some point we need to ingnore case.
+At some point we need to ignore case.
 This is usually done by converting to lower or 
 upper case.
 This should be done on the whole string, rather
