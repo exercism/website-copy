@@ -62,7 +62,7 @@ solution to `resistor-color`. The gist of the suggestions follows now, after whi
 
 #### `parseXXX` family
 
-If a student is using `parseFloat` or `parseInt` to convert back to a number, introduce them to [`Number(...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#Using_Number_to_convert_a_Date_object).
+If a student is using `parseFloat` or `parseInt` to convert back to a number, introduce them to [`Number(...)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#Using_Number_to_convert_a_Date_object).
 The `parseXXX` family is _great_ if you do not know if the input is a number, but when you know it, it's better to use
 the stricter `Number(...)` function.
 
