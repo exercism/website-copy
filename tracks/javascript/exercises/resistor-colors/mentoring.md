@@ -33,7 +33,10 @@ languages as well as algorithm solving in university and is perfectly valid. It'
 without conversion to a `String`. Such a solution looks like this:
 
 ```javascript
-const reducer = (acc, color, i) => acc + COLORS.indexOf(color) * (10 ** i);
+export const COLORS = [
+  'black', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'violet',
+  'grey', 'white',
+];
 
 export function value(colors) {
   return colors
