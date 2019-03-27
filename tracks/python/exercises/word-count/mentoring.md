@@ -17,7 +17,7 @@ must retain the \' in "can't", and remove them from
 One way to deal with this is the Python string method strip(),
 which can remove a given character from the head and tail.
 
-### Reasonable solutions
+### Reasonable Solutions
 
 Most solutions use Regular Expressions to 
 remove the cruft and then bin the words in 
