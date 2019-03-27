@@ -14,12 +14,11 @@ it with a space.
 
 ```python
 def abbreviate(words):
+    words = words.replace('_', '')
+    words = words.replace('-', ' ')
     words = words.upper()
-    words = words.replace('_', '')      # Remove underscore
-    words = words.replace('-', ' ')     # Transform hyphen
 
-    tla = [ word[0] for word in words.split(' ') if word ]
-    return ''.join(tla)
+    return ''.join(word[0] for word in words.split(' ') if word)
 ```
 
 #### Assembling Strings
@@ -45,12 +44,19 @@ The student should be told about building lists and join() them.
 
 #### Regular Expressions
 
-Regular Expressions can help to prune the cruft:
+Regular Expressions can help to prune the cruft.
+This version still uses string addition.
 
 ```python
 import re
+  
 def abbreviate(words):
-    return "".join(item.upper() for item in re.findall(r"\b([a-zA-Z])", words))
+    result = ''
+
+    for word in re.findall(r"[^\W_]+[']?[^\W_]*", words):
+        result += word[0].upper()
+
+    return result
 ```
 
 ### Common Suggestions
