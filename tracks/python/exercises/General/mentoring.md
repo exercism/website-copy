@@ -170,7 +170,7 @@ understand the keyword.
 
 In Python, we do not need to declare the type of a variable.  
 
-````python
+```python
 for i in text:
     if i.isalpha()
         lst.append(i)
