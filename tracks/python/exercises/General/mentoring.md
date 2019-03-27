@@ -186,7 +186,7 @@ understanding.
 If it takes you more than an instant to see what is going on, 
 perhaps the solution could be clarified.
 
-````python
+```python
 def Hamming_distance(strand_a, strand_b):
     if len(strand_a) != len(strand_b):
         raise ValueError("Strands should be equal in length!")
