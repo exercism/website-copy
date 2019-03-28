@@ -38,16 +38,16 @@ export const isLeap = (year) => new Date(year, 1, 29).getMonth() === 1
 
 ### Common suggestions
 
-This is the first mentored exercise, so you may use this to determine a student's skill, help them set up their test
-suite, and generally point out certain things. In the JavaScript track, this exercise is not meant to be a barrier so in
-general, if the student has a reasonable solution not listed above, you can approve the solution and tell them they can
-resubmit to improve. **Most** students will actually keep improving:
+This is used to be the first mentored exercise, but now it's one of the first side exercises. You may use this to
+determine a student's skill, help them set up their test suite, and generally point out certain things. In the
+JavaScript track, this exercise is not meant to be a barrier so in general, if the student has a reasonable solution not
+listed above, you can approve the solution and tell them they can resubmit to improve. **Most** students will actually
+keep improving:
 
 
     Hi there {name},
 
-    Congrats on submitting your first real solution for the JavaScript track. I
-    have a few comments for you:
+    I have a few comments for you:
 
     - In Javascript, the result of an expression can be returned!
       ```javascript
