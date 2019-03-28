@@ -51,7 +51,7 @@ export function value(colors) {
 }
 ```
 
-A variation is not using `reverse` but instead using `length - i`.
+A variation is not using `reverse` but instead using `length - i`. Or using `reduceRight` without `reverse`.
 
 The second exception is using string interpolation to build the value, or manually extracting the two colors. 
 This is technically correct, because **only the first two color bands** can be calculated using the method in
