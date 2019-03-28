@@ -30,7 +30,7 @@ You should **_only approve_** this if it matches the solutions above, with a few
 - a student uses a "falsy" or "short-circuit pattern" like `${name || 'you'}`.
 - a student uses CommonJS style `exports`.
 
-In all these cases, suggest they make a change (inline the `return`, use a default value for the parameter, use es6
+In all these cases, suggest they make a change (inline the `return`, use a default value for the parameter, use ES6
 style exports respectively), approve the submission and tell the student they can move on or improve:
 
   I'm approving your current submission so you can continue down the track, but
@@ -102,12 +102,12 @@ This is the perfect time to point them towards templated string literals and how
 
 #### CommonJS exports
 
-This applies if the student does _not_ use es6 style exports:
+This applies if the student does _not_ use ES6 style exports:
 
 - `module.exports = { twoFer }`
 
-Explain that we use babel, and this allows the student to use all new language features. They may use es6 style `export`
-as well as any other es6 feature.
+Explain that we use babel, and this allows the student to use all new language features. They may use ES6 style `export`
+as well as any other ES6 feature. If this is the **only** comment, approve but give this suggestion for future exercises.
 
 ### Talking points
 
