@@ -23,14 +23,14 @@ colors.map(COLORS.indexOf.bind(COLORS))
 A student may use also use a an arrow function expression instead of a function declaration, as well as using an
 implicit return instead of an explicit `return`.
 
-
 #### Approvability
 
-If the solution does not look like the reasonable solutions, do _not_ approve it, unless they match an exception.
+The solution listed above as well as any of the solutions that divert from this listed directly below are
+approvable. Anything listed under **Common Suggesstions** is _not_.
 
-There are exceptions: a student who uses a `reducer` on the `reverse` of the input. This is a technique that
-comes from other languages as well as algorithm solving in university and is perfectly valid. It's also the only 
-_real_ way to do this without conversion to a `String`. Such a solution looks like this:
+A student who uses a `reducer` on the `reverse` of the input. This is a technique that comes from other languages
+as well as algorithm solving in university and is perfectly valid. It's one of the ways to do this without 
+conversion to a `String`. Such a solution looks like this:
 
 ```javascript
 export const COLORS = [
@@ -53,10 +53,9 @@ export function value(colors) {
 
 A variation is not using `reverse` but instead using `length - i`.
 
-The second exception is using string interpolation to build the value, or manually extracting the two colors 
-(`[COLORS.indexOf(colors[0]), COLORS.indexOf(colors[1])].join('')`). This is technically correct, because 
-**only the first two color bands** can be calculated using the method in this exercise. It looks something
-like this:
+The second exception is using string interpolation to build the value, or manually extracting the two colors. 
+This is technically correct, because **only the first two color bands** can be calculated using the method in
+this exercise. It looks something like this:
 
 ```javascript
 export const COLORS = [
@@ -69,7 +68,13 @@ export function value(colors) {
 }
 ```
 
-In this last case, approve, but challenge them to solve it using `map`, as listed below.
+Or this:
+
+```javascript
+export const value = bands => colorCode(bands[0]) * 10 + colorCode(bands[1])
+```
+
+Approve the solution, but challenge them to solve it using `map`, as listed below.
 
 ### Common suggestions
 
@@ -124,3 +129,4 @@ export function value(colors) {
 If a student uses an object where each key is a color and each value is the index it would have if it were a list, they
 might not have linked this exercise to the previous one called `resistor-color`. That said, explain they should use
 `indexOf` and an `Array` when an `Object` looks like this.
+
