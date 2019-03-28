@@ -20,7 +20,7 @@ A student may choose to enter the `function` into `map`:
 colors.map(COLORS.indexOf.bind(COLORS))
 ```
 
-A student may use also use a an arrow function expression instead of a function declaration, as well as using an
+A student may use also use an arrow function expression instead of a function declaration, as well as using an
 implicit return instead of an explicit `return`.
 
 #### Approvability
