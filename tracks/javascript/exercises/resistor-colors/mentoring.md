@@ -12,7 +12,7 @@ export const COLORS = [
 export function value(colors) {
   return Number(colors.map(color => COLORS.indexOf(color)).join(''))
 }
-```test
+```
 
 A student may choose to enter the `function` into `map`:
 
@@ -78,11 +78,9 @@ Approve the solution, but challenge them to solve it using `map`, as listed belo
 
 ### Common suggestions
 
-Here are a few common suggestions based on student's solutions. You may always suggest they re-
-
-
-code from their
-solution to `resistor-color`. The gist of the suggestions follows now, after which each one is elaborated on.
+Here are a few common suggestions based on student's solutions. You may always suggest they re-use code from 
+their solution to `resistor-color`. The gist of the suggestions follows now, after which each one is 
+elaborated on.
 
 - `Number` instead of `parseXXX`
 - `join` instead of `reduce`
