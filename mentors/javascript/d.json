@@ -42,5 +42,12 @@
         "link_url": null,
         "link_text": null,
         "bio": "Professional developer for the past 7 years, primarily in JS and secondarily in C# and Typescript."
+    },
+    {
+        "github_username": "debck",
+        "name": "Debasish Sahoo",
+        "link_url": "https://github.com/debck",
+        "link_text": "debck",
+        "bio": "Love writing Javascript for Backend applications and open-source development."
     }
 ]
