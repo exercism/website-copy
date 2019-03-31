@@ -15,6 +15,23 @@ end
 
 ```ruby
 module Raindrops
+  RULES = {
+    3 => 'Pling',
+    5 => 'Plang',
+    7 => 'Plong'
+  }
+
+  def self.convert(integer)
+    sounds = RULES.each_with_object(+'') do |(divisor, sound), result|
+      result << sound if (integer % divisor).zero?
+    end
+    sounds.empty? ? integer.to_s : sounds
+  end
+end
+```
+
+```ruby
+module Raindrops
   SOUNDS = {3 => "Pling", 5 => "Plang", 7 => "Plong"}.freeze
 
   def self.convert(num)
