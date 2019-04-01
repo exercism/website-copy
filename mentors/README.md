@@ -31,7 +31,7 @@ Each mentor should add a bio to _all_ tracks that they mentor.
 
 ## Add your bio
 Choose the JSON file that starts with the first character of your GitHub username.
-Use the following format.
+Use the following format. 
 
     {
       "github_username": "kytrinyx",
@@ -41,6 +41,8 @@ Use the following format.
       "avatar_url": null,
       "bio": "I love Go for its simplicity and consistency. I've written Go professionally, and also use it for open source projects."
     }
+
+Note: Watch out for the amount of needed whitespace, after the { every line is indented by 2 spaces until the }.
 
 Aim for approximately 200-250 characters for the bio.
 
