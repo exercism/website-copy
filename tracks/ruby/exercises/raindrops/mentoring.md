@@ -13,8 +13,6 @@ module Raindrops
 end
 ```
 
-This is the optimal solution:
-
 ```ruby
 module Raindrops
   SOUNDS = {3 => "Pling", 5 => "Plang", 7 => "Plong"}.freeze
