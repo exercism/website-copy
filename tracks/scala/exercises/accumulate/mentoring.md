@@ -34,11 +34,11 @@ class Accumulate {
 
     loop(list, ListBuffer.empty).toList
   }
-
 }
 ```
 
 ### Common suggestions
 
-- Appending to a list in Scala is linear in proportion to the collection size. Prepend is constant time. Suggest prepending to build the list in reverse order. Then reverse the resulting list before returning. Alternately ListBuffer could be used.  https://docs.scala-lang.org/overviews/collections/performance-characteristics.html
-- The instructions for this exercise forbid the use of map, flatmap and for comprehensions. The exercise is asking that the solution is solved using other tools. One possible solution is tail recursion.
+- Use tail recursion. [Reference: tail recursive algorithms](https://alvinalexander.com/scala/fp-book/tail-recursive-algorithms).
+- Do not append to immutable list. Instead prepend to immutable list. Or, use ListBuffer. [Reference: performance characteristics](https://docs.scala-lang.org/overviews/collections/performance-characteristics.html).
+- The instructions for this exercise forbid the use of `map`, `flatmap` and `for` comprehensions. 
