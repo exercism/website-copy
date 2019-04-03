@@ -1,5 +1,7 @@
 ### Reasonable solutions
 
+- the first solution uses a mutable string
+
 ```ruby
 module Raindrops
   def self.convert(integer)
@@ -12,6 +14,8 @@ module Raindrops
   end
 end
 ```
+
+- using `each_with_object` over the rules object, then add them if they pass a test
 
 ```ruby
 module Raindrops
@@ -29,6 +33,8 @@ module Raindrops
   end
 end
 ```
+
+- this solution selects the correct rules by testing them and then joining the selected rules
 
 ```ruby
 module Raindrops
