@@ -1,15 +1,17 @@
 ### Concepts
 
-- &str
-- String
-- Iterators
-- Iterator Methods
+- [&str](https://doc.rust-lang.org/std/primitive.str.html)
+- [String](https://doc.rust-lang.org/std/string/struct.String.html)
+- [Iterators](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+- [Iterator Methods](https://doc.rust-lang.org/std/iter/trait.Iterator.html#provided-methods)
 
 ### Reasonable solutions
 
 A reasonable solution should:
 
-- Use `.chars()`, `.rev()`, and `.collect()`
+- Use [.chars()](https://doc.rust-lang.org/std/primitive.str.html#method.chars),
+[.rev()](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rev), and
+[.collect()](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect)
 - Be explicit with `.collect()` by using the turbofish operator `::<>`
 - Not use other iterators or iterator methods like `.into_iter()` or
 `.flat_map()`
@@ -18,11 +20,12 @@ A reasonable solution should:
 
 A bonus solution should:
 
-- Use the `unicode_segmentation` crate
+- Use the [unicode_segmentation crate](https://unicode-rs.github.io/unicode-segmentation/unicode_segmentation/index.html)
 - Use `input.graphemes(true)` instead of
-`UnicodeSegmentation::graphemes(input, true)`
+`UnicodeSegmentation::graphemes(input, true)`.
+The documentation for this method can be found [here](https://unicode-rs.github.io/unicode-segmentation/unicode_segmentation/trait.UnicodeSegmentation.html#tymethod.graphemes).
 
-### Examples
+#### Examples
 
 ```rust
 pub fn reverse(input: &str) -> String {
@@ -30,7 +33,7 @@ pub fn reverse(input: &str) -> String {
 }
 ```
 
-##### Bonus solution:
+#### Bonus solution
 
 ```rust
 use unicode_segmentation::UnicodeSegmentation;
@@ -40,7 +43,7 @@ pub fn reverse(input: &str) -> String {
 }
 ```
 
-### Example Comments
+### Common Suggestions
 
 If they don't use the turbofish operator:
 ```
@@ -90,7 +93,7 @@ If they haven't done the bonus:
 Do you want to give the bonus a go? :)
 ```
 
-##### For the bonus:
+### Common Suggestions For The Bonus
 
 If they ask, "What bonus?"
 ```
