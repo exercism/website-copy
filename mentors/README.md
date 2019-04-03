@@ -42,7 +42,7 @@ Use the following format.
       "bio": "I love Go for its simplicity and consistency. I've written Go professionally, and also use it for open source projects."
     }
 
-Note: Watch out for the amount of needed whitespace, after the { every line is indented by 2 spaces until the }.
+Note: After the opening `{`, every line is indented by 2 spaces until the closing `}`.
 
 Aim for approximately 200-250 characters for the bio.
 
