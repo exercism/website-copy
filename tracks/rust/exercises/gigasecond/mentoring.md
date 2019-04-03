@@ -1,9 +1,11 @@
 ### Concepts
 
-- Integer
-- constant
-- struct (We're returning the `Utc` struct, which is the field in the
-`DateTime` struct from the Chrono crate)
+- [Integer (i64 in this case)](https://doc.rust-lang.org/std/primitive.i64.html)
+- [constant](https://doc.rust-lang.org/std/keyword.const.html)
+- [struct](https://doc.rust-lang.org/std/keyword.struct.html)
+(We're returning the [Utc](https://docs.rs/chrono/0.4.6/chrono/offset/struct.Utc.html) struct,
+which is the `offset` field in the [DateTime](https://docs.rs/chrono/0.4.6/chrono/struct.DateTime.html)
+struct from the [Chrono crate](https://docs.rs/chrono))
 
 ### Reasonable solutions
 
@@ -18,7 +20,7 @@ A reasonable solution should:
 - Not use `.unwrap()` or `.expect()`
 - Not use `.pow()`
 
-### Examples
+#### Examples
 
 ```rust
 use chrono::{DateTime, Duration, Utc};
@@ -30,7 +32,7 @@ pub fn after(start: DateTime<Utc>) -> DateTime<Utc> {
 }
 ```
 
-### Example Comments
+### Common Suggestions
 
 If they don't use a constant:
 ```
