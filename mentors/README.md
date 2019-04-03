@@ -31,7 +31,7 @@ Each mentor should add a bio to _all_ tracks that they mentor.
 
 ## Add your bio
 Choose the JSON file that starts with the first character of your GitHub username.
-Use the following format. 
+Use the following format.
 
     {
       "github_username": "kytrinyx",
