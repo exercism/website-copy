@@ -14,8 +14,8 @@ def is_isogram(string):
         ch = string[i]
 
         if ch.isalpha():
-		    if (s.find(ch) > -1):
-			    return False
+	    if (s.find(ch) > -1):
+	        return False
 
     return True
 ```
@@ -25,8 +25,18 @@ This version needs the index to construct the substring of remaining characters.
 #### Sorting the string
     
 Another approach is to sort the input, and walk down it looking for
-duplicates. However, Python provides a number of useful tools that allow
-alternative approaches.  
+duplicates.   
+
+```python
+def is_isogram(string):
+    temp = sorted(string.replace("-", "").replace(" ", "").lower())
+
+    for ch1, ch2 in zip(temp, temp[1:]):
+        if ch1 == ch2:
+            return False
+
+    return True
+```
 
 #### Trimming the string
 
@@ -39,8 +49,8 @@ fragment like this:
 ```python
 result = ""
 for ch in string:
-	if ch.isalpha()
-		result = result + ch
+    if ch.isalpha()
+        result = result + ch
 ```
 
 Building strings is slow in Python, and it is much better to create a list and join() it.
