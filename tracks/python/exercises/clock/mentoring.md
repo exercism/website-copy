@@ -15,7 +15,7 @@ class Clock(object):
     def __init__(self, hour, minute):
         self.h, self.m = divmod((hour * 60 + minute) % (24 * 60), 60)
 
-    def __repr__(self):
+    def __str__(self):
         return '%02d:%02d' % (self.h, self.m)
 
     def __eq__(self, other):
