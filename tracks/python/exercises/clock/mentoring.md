@@ -69,7 +69,7 @@ once: repeated logic tends to drift apart.
 ```
 
 This case passed the test while missing the point:
-rathenr than returning an instance of Clock,
+rather than returning an instance of Clock,
 this returns a string.
 
 This also incorrectly handles adding negative minutes.
