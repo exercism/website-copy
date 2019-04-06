@@ -76,3 +76,20 @@ def two_fer(name=None):
     else:
         return 'One for you, one for me.'
 ```
+
+#### Variadic Argument List
+
+We can use a variadic argument list to solve the problem
+
+```python
+def two_fer(*name):
+    if name:
+        return 'One for ' + name + ', one for me.'
+    else:
+        return 'One for you, one for me.'
+```
+
+This satisfies the tests, but it more complex than needed.
+Encourage the the student to find a simpler solution:
+perhaps suggest the term "default argument".
+
