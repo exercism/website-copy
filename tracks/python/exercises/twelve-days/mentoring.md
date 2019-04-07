@@ -108,8 +108,11 @@ This depends upon having a file with
 12 lines with the assembled text. While it solves the
 problem, it avoids all the difficulties mentioned in
 the introduction.
+
 Encourage the student to address the challenges of
 dealing with the raw material.
+You can point out that the are storing the Pear Tree
+twelve times, and challenge them to store it only once.
 
 The next solution also prepares everything, but 
 solves all the difficulties mentioned, while working
