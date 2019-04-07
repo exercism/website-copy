@@ -28,7 +28,7 @@ The Track Anatomy Project will fix this by providing a framework to Track Mainta
 
 The majority of submissions are common. It is rare for a student to submit a solution that no-one else has ever submitted. The Track Anatomy Project aims to ensure this is the case, guiding tracks to have core exercises that are usually solved with one of a few common approaches. Automated Mentoring Support aims to utilize this consistency to provide automated approval and/or feedback to students for the majority of submissions to core exercises. This has the following benefits:
 - **Reduce student frustration:** We give students a quick feedback loop. If a solution is optimal, let them continue. If it fails in a known way, tell them and let them improve it. This keeps students getting frustrated with waiting for their perfectly-ok solutions to be approved and therefore with the mentors who they perceive to be the source of the slowness.
-- **Dramatically reduce the size of the queue:** Our prototyping has shown that for simple exercises (e.g. TwoFer) we will be able to provide automated mentoring in 90%+ of cases. For more complex exercises, this will reduce, but we expect to be able to provide automated mentoring on 50% of exercises, and on all optimal, or close-to-optimal, solutions.
+- **Dramatically reduce the size of the queue:** Our prototyping has shown that for simple exercises (e.g. TwoFer) we will be able to provide automated mentoring in 90%+ of cases. For more complex exercises, he percentage will be smaller but we expect to be able to provide automated mentoring on 50% of exercises, and on all optimal, or close-to-optimal, solutions.
 - **Removes repetitiveness for mentors:** As most solutions fall into similar buckets, mentoring often turns into a copy and paste process, with a canned answer for each class of solution. This is boring and uninteresting to all but the most determined of mentors. By removing common solutions from the mentor queue, we ask mentors to only help students who need something extra, or have a fundamental learning gap that we cannot see.
 
 ### Mentor-Learner Relationship Project
@@ -39,7 +39,7 @@ By providing profiles for both mentors and learners, within the user interface, 
 
 ### Improve documentation and onboarding for mentors
 
-Over 50% of people who sign up to mentor do not go on to mentor a single solution. I recently emailed all of those who had done this. Nearly 1/3 replied with various explanations, but a clear underlying theme is that getting a mentor to give feedback on their first solution quickly and with enough hand-holding would dramatically increase the amount of people who try mentoring. Providing guides and information that they help upskill those mentors and give them a further safety net would significantly increase their retention.
+Over 50% of people who sign up to mentor do not go on to mentor any solutions. I recently emailed all of those who had done this. Nearly 1/3 replied with various explanations, but a clear underlying theme is that getting a mentor to give feedback on their first solution quickly and with enough hand-holding would dramatically increase the number of people who try mentoring. Providing guides and information that help upskill those mentors and give them a further safety net would significantly increase their retention.
 
 ### Empower our mentors into a self-supporting community
 
@@ -53,6 +53,6 @@ By providing realistic response-time expectations for the students in the UI **b
 
 ### Remove the barrier to mentoring
 
-We currently have a deliberate barrier to mentoring with a wall that you have to sign up through. We have put this in place because we want to try and ensure a level of quality control and therefore want to gate-keep and ensure that people who are mentoring feel like they are up to the taks. However, as we add automation, documentation, and a more integrated community, we will be able to remove this barrier and making mentoring more of "something for everyone" on Exercism, rather than something for the elite.
+We currently have a deliberate barrier to mentoring, requiring mentors to sign up and accept T&Cs. We have put this in place because we want to try to ensure a level of quality control and therefore want to gate-keep and ensure that people who are mentoring feel like they are up to the task. However, as we add automation, documentation, and a more integrated community, we will be able to remove this barrier and making mentoring more of "something for everyone" on Exercism, rather than something exclusive.
 
 Once the barriers to mentoring are removed, we can actively encourage students to become mentors within the flow of Exercism itself. When someone completes the core exercises in a Track, we can prompt them to mentor. By asking students to fill out profiles listing the languages they know, we can show them solutions that they might be able to mentor, and encourage them to get involved.
