@@ -1,4 +1,4 @@
-Exercism is a large complex project with thousands of contributors working across dozens of projects, all trying to achieve ambitious goals. It would quickly become overwhelming if we were all working towards making Exercism perfect, so to keep ourselves sane, we periodically determine the critical next step for Exercism to achieve its goals and then plan that into a strategy. Our current goal is to make Exercism scalable. We expect our next three goals to be to make Exercism financially sustainable, to make Exercism more accessible to beginners, and to intentionally grow Exercism for the first time.
+Exercism is a large complex project with thousands of contributors working across dozens of projects, all trying to achieve ambitious goals. It would quickly become overwhelming if we were all working towards making Exercism perfect, so to keep things manageable, we periodically determine the critical next step for Exercism to achieve its goals and then plan that into a strategy. Our current goal is to make Exercism scalable. We expect our next three goals to be to make Exercism financially sustainable, to make Exercism more accessible to beginners, and to intentionally grow Exercism for the first time.
 
 We present this as an Objective, which will aim to achieve with a Strategy, supported by a series of Tactics. This is commonly known as the OST framework.
 
@@ -47,7 +47,7 @@ Those mentors who mentor the most regularly are also the most active on our Slac
 
 ### Provide realistic expectations to students
 
-A key frustration for students is that some Tracks have a response time of hours and others have a response time of weeks. This discrepancy means that we frustrate and lose many students, many of whom could eventually become mentors. We also end up with lots of "abandoned" solutions that we don't know are abandoned until the student doesn't respond to the mentor - something that disheartens mentors and causes them to leave. 
+A key frustration for students is that some Tracks have a response time of hours and others have a response time of weeks. This discrepancy means that we frustrate and lose many students, many of whom could eventually become mentors. We also end up with lots of "abandoned" solutions that we don't know are abandoned until the student doesn't respond to the mentor - something that disheartens mentors and causes them to leave.
 
 By providing realistic response-time expectations for the students in the UI **before** they put the effort into solving a solution, we can remove this frustration for both students and mentors.
 
@@ -55,4 +55,4 @@ By providing realistic response-time expectations for the students in the UI **b
 
 We currently have a deliberate barrier to mentoring with a wall that you have to sign up through. We have put this in place because we want to try and ensure a level of quality control and therefore want to gate-keep and ensure that people who are mentoring feel like they are up to the taks. However, as we add automation, documentation, and a more integrated community, we will be able to remove this barrier and making mentoring more of "something for everyone" on Exercism, rather than something for the elite.
 
-Once the barriers to mentoring are removed, we can actively encourage students to become mentors within the flow of Exercism itself. When someone completes the core exercises in a Track, we can prompt them to mentor. By asking students to fill out profiles listing the languages they know, we can show them solutions that they might be able to mentor, and encourage them to get involved. 
+Once the barriers to mentoring are removed, we can actively encourage students to become mentors within the flow of Exercism itself. When someone completes the core exercises in a Track, we can prompt them to mentor. By asking students to fill out profiles listing the languages they know, we can show them solutions that they might be able to mentor, and encourage them to get involved.
