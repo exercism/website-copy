@@ -22,7 +22,7 @@ Currently, mentoring can be both fulfilling and frustrating. It can be very rewa
 
 Some solutions are fun to mentor, some are extremely challenging. For example, solutions that require maths lead to mentors trying to tutor someone on algebra, not on coding. Other solutions can be solved in such a variety of ways that the mentor ends up debating the right algorithm, not teaching the idioms of the language.
 
-TAP will fix this by providing a framework to Track Maintainers, which they can work through in order to determine the optimal series of core exercises, and sensible related side exercises. In our prototype Track (Ruby), the result of TAP saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the amount of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic affect on mentor enjoyment.
+TAP will fix this by providing a framework to Track Maintainers, which they can work through in order to determine the optimal series of core exercises, and sensible related side exercises. In our prototype Track (Ruby), the result of TAP saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic affect on mentor enjoyment.
 
 ### Automated Mentor Support Project (AMS)
 
