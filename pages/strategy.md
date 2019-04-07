@@ -18,15 +18,15 @@ Currently, mentoring can be both fulfilling and frustrating. It can be very rewa
 
 ## Tactics
 
-### Track Anatomy Project (TAP)
+### Track Anatomy Project
 
 Some solutions are fun to mentor, some are extremely challenging. For example, solutions that require maths lead to mentors trying to tutor someone on algebra, not on coding. Other solutions can be solved in such a variety of ways that the mentor ends up debating the right algorithm, not teaching the idioms of the language.
 
-TAP will fix this by providing a framework to Track Maintainers, which they can work through in order to determine the optimal series of core exercises, and sensible related side exercises. In our prototype Track (Ruby), the result of TAP saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic affect on mentor enjoyment.
+The Track Anatomy Project will fix this by providing a framework to Track Maintainers, which they can work through in order to determine the optimal series of core exercises, and sensible related side exercises. In our prototype Track (Ruby), the result of the Track Anatomy Project saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic affect on mentor enjoyment.
 
-### Automated Mentor Support Project (AMS)
+### Automated Mentor Support Project
 
-The majority of submissions are common. It is rare for a student to submit a solution that no-one else has ever submitted. TAP aims to ensure this is the case, guiding tracks to have core exercises that are normally solved in a regular amount of ways. AMS aims to utilize this consistency to provide automated approval and/or feedback to students for the majority of submissions to core exercises. This has the following benefits:
+The majority of submissions are common. It is rare for a student to submit a solution that no-one else has ever submitted. The Track Anatomy Project aims to ensure this is the case, guiding tracks to have core exercises that are normally solved in a regular amount of ways. Automated Mentoring Support aims to utilize this consistency to provide automated approval and/or feedback to students for the majority of submissions to core exercises. This has the following benefits:
 - **Reduce student frustration:** We give students a quick feedback loop. If a solution is optimal, let them continue. If it fails in a known way, tell them and let them improve it. This keeps students getting frustrated with waiting for their perfectly-ok solutions to be approved and therefore with the mentors who they perceive to be the source of the slowness.
 - **Dramatically reduce the size of the queue:** Our prototyping has shown that for simple exercises (e.g. TwoFer) we will be able to provide automated mentoring in 90%+ of cases. For more complex exercises, this will reduce, but we expect to be able to provide automated mentoring on 50% of exercises, and on all optimal, or close-to-optimal, solutions.
 - **Removes repetitiveness for mentors:** As most solutions fall into similar buckets, mentoring often turns into a copy and paste process, with a canned answer for each class of solution. This is boring and uninteresting to all but the most determined of mentors. By removing common solutions from the mentor queue, we ask mentors to only help students who need something extra, or have a fundamental learning gap that we cannot see.
