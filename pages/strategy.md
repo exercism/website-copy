@@ -13,7 +13,7 @@ We expect our next three objectives to be:
 
 **Make Exercism scalable**
 
-At the time of writing, Exercism has 8,000 new submissions per week. Our mentors currently cannot keep up with the amount of submissions submitted. When they do keep up, the number of submissions almost immediately doubles, as students stick with a Language Track. We are growing by 300-400 new users per day. Many find Exercism too hard to use, but in the future, when that is fixed, we will expect to see the number of submissions double again. We have never actively marketed Exercism. All 300,000 members have come through word of mouth. When we start to market Exercism, we expect to see an increase in usage by two orders of magnitude. 
+At the time of writing, Exercism has 8,000 new submissions per week. Our mentors currently cannot keep up with the number of submissions submitted. When they do keep up, the number of submissions almost immediately doubles, as students stick with a Language Track. We are growing by 300-400 new users per day. Many find Exercism too hard to use, but in the future, when that is fixed, we will expect to see the number of submissions double again. We have never actively marketed Exercism. All 300,000 members have come through word of mouth. When we start to market Exercism, we expect to see an increase in usage by two orders of magnitude. 
 
 Our most important goal at this stage is being able to give our current students a timely mentoring experience, and be able to cope with further growth without overwhelming mentors.
 
