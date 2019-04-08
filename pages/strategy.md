@@ -27,24 +27,30 @@ Currently, mentoring can be both fulfilling and frustrating. It can be very rewa
 
 ## Tactics
 
-### Track Anatomy Project
+### Restructure tracks for student enjoyment and ease of mentoring
 
 Some solutions are fun to mentor, some are extremely challenging. For example, solutions that require maths lead to mentors trying to tutor someone on algebra, not on coding. Other solutions can be solved in such a variety of ways that the mentor ends up debating the right algorithm, not teaching the idioms of the language.
 
-The Track Anatomy Project will fix this by providing a framework to Track Maintainers, which they can work through in order to determine the optimal series of core exercises, and sensible related side exercises. In our prototype Track (Ruby), the result of the Track Anatomy Project saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic positively effect on mentor enjoyment.
+We aim to fix this by determining the optimal set and order of core exercises within a track, which will provide a sensible progression for students and be fun to review for mentors. 
 
-### Automated Mentor Support Project
+_Update: We have called this this the [Track Anatomy Project](https://exercism.io/blog/track-anatomy-project). In our prototype Track (Ruby), the result of the Track Anatomy Project saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic positively effect on mentor enjoyment._
 
-The majority of submissions are common. It is rare for a student to submit a solution that no-one else has ever submitted. The Track Anatomy Project aims to ensure this is the case, guiding tracks to have core exercises that are usually solved with one of a few common approaches. Automated Mentoring Support aims to utilize this consistency to provide automated approval and/or feedback to students for the majority of submissions to core exercises. This has the following benefits:
+### Automatically analyze common solutions
+
+The majority of submissions are common. It is rare for a student to submit a solution that no-one else has ever submitted. As part of restructing the track, we aim to enforce this as a contraint, guiding tracks to have core exercises that are usually solved with one of a few common approaches. Automated Mentoring Support aims to utilize this consistency to provide automated approval and/or feedback to students for the majority of submissions to core exercises. This has the following benefits:
 - **Reduce student frustration:** We give students a quick feedback loop. If a solution is optimal, let them continue. If it fails in a known way, tell them and let them improve it. This keeps students getting frustrated with waiting for their perfectly-ok solutions to be approved and therefore with the mentors who they perceive to be the source of the slowness.
 - **Dramatically reduce the size of the queue:** Our prototyping has shown that for simple exercises (e.g. TwoFer) we will be able to provide automated mentoring in 90%+ of cases. For more complex exercises, the percentage will be smaller but we expect to be able to provide automated mentoring on 50% of exercises, and on all optimal, or close-to-optimal, solutions.
 - **Removes repetitiveness for mentors:** As most solutions fall into similar buckets, mentoring often turns into a copy and paste process, with a canned answer for each class of solution. This is boring and uninteresting to all but the most determined of mentors. By removing common solutions from the mentor queue, we ask mentors to only help students who need something extra, or have a fundamental learning gap that we cannot see.
 
-### Mentor-Learner Relationship Project
+_Update: We have called this the [Automated Mentor Support Project](https://exercism.io/blog/automated-mentoring-support-project) and received [funding from Mozilla](https://exercism.io/blog/mozilla-supports-exercism-static-analysis) to accelerate it._
+
+### Make mentoring less purely transactional
 
 Mentoring on Exercism is currently a very transactional process. A student submits a solution and a mentor gives comments. Other than the generally friendly nature of conversations there is no "relationship" between the mentor and the learner. There is no easy way for a mentor to remember if they have given feedback to that student before. There is no way to know if a student is a beginner or an experienced programmer and tailor feedback accordingly. There is no way for a student to know their mentor's background and respect/appreciate the feedback in that context.
 
 By providing profiles for both mentors and learners, within the user interface, and by allowing both parties to continue the mentorship beyond one solution, we can make the whole experience less transactional and more empathetic, making mentoring more rewarding and enjoyable.
+
+_Update: We have called this the [Mentor-Learner Relationship Project](https://github.com/exercism/exercism/issues/4658)._
 
 ### Improve documentation and onboarding for mentors
 
