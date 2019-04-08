@@ -69,6 +69,16 @@ def recite(start_verse, end_verse):
 
 This is clever, but too opaque to recommend.
 
+Another attempt to deal with this uses surgery:
+
+```python
+    if start_verse != 1 and end_verse != 1:
+        verses[0][1] = 'and ' + verses[0][1]
+```
+
+This works until you want to recite the first verse again.  
+And and and and it leads to an excess of additions.  
+
 #### Choice of Data Structures
 
 You can create a dictionary to hold the names, like this:
