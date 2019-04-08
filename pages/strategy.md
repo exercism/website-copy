@@ -2,7 +2,7 @@
 
 Exercism is a large complex project with thousands of contributors working across dozens of projects, all trying to achieve ambitious goals. It would quickly become overwhelming if we were all working towards making Exercism perfect, so to keep things manageable, we periodically determine the critical next step for Exercism to achieve its goals and then plan that into a strategy.  We present this using the OST framework - defining an **Objective**, which will aim to achieve with a **Strategy**, implemented by a series of **Tactics**.
 
-Our _current_ objective is to make Exercism scalable. 
+Our _current_ objective is to make Exercism scalable.
 
 We expect our next three objectives to be:
 - to make Exercism financially sustainable
@@ -13,7 +13,7 @@ We expect our next three objectives to be:
 
 **Make Exercism scalable**
 
-At the time of writing, Exercism has 8,000 new submissions per week. Our mentors currently cannot keep up with the number of submissions submitted. When they do keep up, the number of submissions almost immediately doubles, as students stick with a Language Track. We are growing by 300-400 new users per day. Many find Exercism too hard to use, but in the future, when that is fixed, we will expect to see the number of submissions double again. We have never actively marketed Exercism. All 300,000 members have come through word of mouth. When we start to market Exercism, we expect to see an increase in usage by two orders of magnitude. 
+At the time of writing, Exercism has 8,000 new submissions per week. Our mentors currently cannot keep up with the number of submissions submitted. When they do keep up, the number of submissions almost immediately doubles, as students stick with a Language Track. We are growing by 300-400 new users per day. Many find Exercism too hard to use, but in the future, when that is fixed, we will expect to see the number of submissions double again. We have never actively marketed Exercism. All 300,000 members have come through word of mouth. When we start to market Exercism, we expect to see an increase in usage by two orders of magnitude.
 
 Our most important goal at this stage is being able to give our current students a timely mentoring experience, and be able to cope with further growth without overwhelming mentors.
 
@@ -31,7 +31,7 @@ Currently, mentoring can be both fulfilling and frustrating. It can be very rewa
 
 Some solutions are fun to mentor, some are extremely challenging. For example, solutions that require maths lead to mentors trying to tutor someone on algebra, not on coding. Other solutions can be solved in such a variety of ways that the mentor ends up debating the right algorithm, not teaching the idioms of the language.
 
-We aim to fix this by determining the optimal set and order of core exercises within a track, which will provide a sensible progression for students and be fun to review for mentors. 
+We aim to fix this by determining the optimal set and order of core exercises within a track, which will provide a sensible progression for students and be fun to review for mentors.
 
 _Update: We have called this this the [Track Anatomy Project](https://exercism.io/blog/track-anatomy-project). In our prototype Track (Ruby), the result of the Track Anatomy Project saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic positively effect on mentor enjoyment._
 
