@@ -6,16 +6,20 @@
 object PerfectNumbers {
   import NumberType._
 
-  def classify(number: Int): NumberType = {
-    val isFactor: Int => Boolean = number % _ == 0
+  def classify(number: Int):  Either[String, NumberType] = {
+    if (number <= 0)
+      Left("Classification is only possible for natural numbers.")
+    else {
+      val isFactor: Int => Boolean = number % _ == 0
 
-    val candidates = 1 to number/2
-    val factors = candidates filter isFactor
-    val aliquotSum = factors sum
+      val candidates = 1 to number/2
+      val factors = candidates filter isFactor
+      val aliquotSum = factors sum
 
-    if (aliquotSum == number) Perfect
-    else if (aliquotSum > number) Abundant
-    else Deficient
+      if (aliquotSum == number) Right(Perfect)
+      else if (aliquotSum > number) Right(Abundant)
+      else Right(Deficient)
+    }
   }
 }
 
