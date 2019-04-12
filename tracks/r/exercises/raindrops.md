@@ -28,7 +28,7 @@ The learning goal here is (I guess) to avoid unnecessary conversion of inputs as
 ### Common suggestions
 
 - avoid a string transformation of the input at the beginning
-- go through the task iterratively to account for all possible factors
+- go through the task iteratively to account for all possible factors
 - for-loops impact the readability here a bit, I think, so one could point learners to alternatives 
 
 ### Talking points
