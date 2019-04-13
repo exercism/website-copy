@@ -74,6 +74,30 @@ this returns a string.
 
 This also incorrectly handles adding negative minutes.
 
+#### Side Effects
+
+```python
+    def __add__(self, minutes: int):
+        self.time += datetime.timedelta(minutes=minutes)
+        return self.__repr__()
+```
+
+There are three things wrong with this solution.
+
+First, it uses datetime, which is overkill.
+
+Second, it returns a string, rather than a Clock object.
+
+Third, it changes self.
+You should be able to find out when a movie
+ends with a statement like
+
+```python
+    print(now + 137)
+```
+
+without moving two hours into the future.  
+
 #### Talking Points
 
 ##### Magic Methods
