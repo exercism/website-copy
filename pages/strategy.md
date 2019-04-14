@@ -33,7 +33,7 @@ Some solutions are fun to mentor, some are extremely challenging. For example, s
 
 We aim to fix this by determining the optimal set and order of core exercises within a track, which will provide a sensible progression for students and be fun to review for mentors.
 
-_Update: We have called this this the [Track Anatomy Project](https://exercism.io/blog/track-anatomy-project). In our prototype Track (Ruby), the result of the Track Anatomy Project saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic positively effect on mentor enjoyment._
+_Update: We have called this the [Track Anatomy Project](https://exercism.io/blog/track-anatomy-project). In our prototype Track (Ruby), the result of the Track Anatomy Project saw a average reduction in waiting time from one week to half a day, and reduced the queue from hundreds to ~30 at any time. It also saw a doubling in the number of submissions per week and dramatically increased mentor retention, with the most active weekly number mentors of any track. Encoding this into a framework and applying it to all tracks should have a dramatic positively effect on mentor enjoyment._
 
 ### Automatically analyze common solutions
 
