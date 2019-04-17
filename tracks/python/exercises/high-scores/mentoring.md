@@ -57,10 +57,13 @@ class HighScores(object):
         return self.sorted_scores[-1]
 
     def personal_top_three(self):
+        return self.sorted_scores[:-4:-1]
+```
+Another variation of this solution includes the start at -1 for slicing the result to personal_top_three. The last solution works due the step being -1. Since no start is defined the start will default to 0 and the first step will start at -1 due to the step being defined.
+```python
+    def personal_top_three(self):
         return self.sorted_scores[-1:-4:-1]
 ```
-
-
 
 ### Common Suggestions
 
