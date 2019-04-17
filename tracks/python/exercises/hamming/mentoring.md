@@ -63,6 +63,22 @@ def distance(strand_a, strand_b):
     return sum(a != b for a,b in zip(strand_a,strand_b))
 ```
 
+#### Recursion
+
+It is possible to write a recursive solution.
+
+```python
+def distance(strand_a, strand_b):
+    if len(strand_a) != len(strand_b):
+        raise ValueError("Different length")
+    elif len(strand_a) == 0:
+        return 0
+    else:
+        return (0 if strand_a[0] == strand_b[0] else 1) + distance(strand_a[1:], strand_b[1:])
+```
+
+This take more time and more stack space than an iterative solution, and should be discouraged.
+
 ### Common Suggestions
 
 A List Comprehension can be suggested, but isn't an obvious win.
