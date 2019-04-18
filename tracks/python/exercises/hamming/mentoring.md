@@ -1,10 +1,10 @@
-### Problem and challenges
+### Problem and Challenges
 
 The solution needs to raise an exception if the lengths are different.
 
 Otherwise, the task is to find the number of differences between two strings of the same size.
 
-### Reasonable solutions
+### Reasonable Solutions
 	
 We check the lengths, and then look for differences:
 	
@@ -63,9 +63,11 @@ def distance(strand_a, strand_b):
     return sum(a != b for a,b in zip(strand_a,strand_b))
 ```
 
+### Solutions to Discourage
+
 #### Recursion
 
-It is possible to write a recursive solution.
+It is possible to write a recursive method.
 
 ```python
 def distance(strand_a, strand_b):
@@ -77,7 +79,8 @@ def distance(strand_a, strand_b):
         return (0 if strand_a[0] == strand_b[0] else 1) + distance(strand_a[1:], strand_b[1:])
 ```
 
-This take more time and more stack space than an iterative solution, and should be discouraged.
+This solution works, but will take more time and more stack space than an iterative solution. 
+Encourage the student to think in terms of performance as well as correctness.
 
 ### Common Suggestions
 
@@ -86,3 +89,5 @@ A List Comprehension can be suggested, but isn't an obvious win.
 ### Talking points
 
 Running time is not a concern here. It is hard to make this worse than O(N).
+
+
