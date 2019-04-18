@@ -89,5 +89,3 @@ A List Comprehension can be suggested, but isn't an obvious win.
 ### Talking points
 
 Running time is not a concern here. It is hard to make this worse than O(N).
-
-
