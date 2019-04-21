@@ -15,12 +15,44 @@
     "avatar_url": null,
     "bio": "I love Javascript. Great fan of Vuejs. Loves Open Source."
   },
- {
-  "github_username": "andrew-prior",
-  "name": "Andrew Prior",
-  "link_text": null,
-  "link_url": null,
-  "avatar_url": null,
-  "bio": "Javascript developer, father, and amateur everything else."
- }
+  {
+    "github_username": "andrew-prior",
+    "name": "Andrew Prior",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Javascript developer, father, and amateur everything else."
+  },
+  {
+    "github_username": "Alxandr",
+    "name": "Aleksander Heintz",
+    "link_text": "My blog",
+    "link_url": "https://alxandr.me",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/112334?s=460&v=4",
+    "bio": "I love programming, and do it both professionally and as a hobby. At work I do most javascript and typescript, but I've also done a lot of F# and C#."
+  },
+  {
+    "github_username": "alexZielonko",
+    "name": "Alex Zielonko",
+    "link_text": null,
+    "link_url": "https://github.com/alexZielonko",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/5274697?s=460&v=4",
+    "bio": "I'm one part professional developer and two parts programming enthusiast, shaken with a liberal dash of pragmatism."
+  },
+  {
+    "github_username": "aibrahim3546",
+    "name": "Ahmad Ibrahim",
+    "link_text": null,
+    "link_url": "https://aibrahim3546.github.io/",
+    "avatar_url": null,
+    "bio": "I am a fan of javascript. I have been working with ReactJs for a year and yeah I am really good at front-end development. Also Good at NodeJs and React Native"
+  },
+  {
+    "github_username": "akoenig",
+    "name": "André König",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a sofware architect & engineer and I love to share knowledge, because I think that everybody should be able to learn how to develop software."
+  }
 ]

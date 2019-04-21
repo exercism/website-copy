@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Considered for a new version of the legacy System I'm working with, a coworker presented Clojure to me and we found early it helps a lot on keeping complexity low with a systemic aproach to software projects. We have used in some prototypes. Still learning all I can of it, I hope I could share some knowledege of it by mentoring and learn at the same time."
+  },
+  {
+    "github_username": "JarredLHumphrey",
+    "name": "Jarred Humphrey",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Professionally developed in Clojure for last 5 years and use it as my language of choice for most personal projects. I've been programming with a wide array of languages for past 12 years (Java/Javascript/Ruby/PHP)."
   }
 ]

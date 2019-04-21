@@ -6,5 +6,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I developed a curiosity towards Go through wanting to better understand the tools we used at work. I was pleasantly surprised to see how straightforward the language specification is. I’m keen to learn and to help others on their Go journey."
+  },
+  {
+    "github_username": "dysolution",
+    "name": "Jordan Peterson",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Go is my first and favorite compiled language. I love its extensive standard library and its documentation conventions, tooling, and idioms that make the code useful and accessible to programmers with a wide range of experience."
+  },
+  {
+    "github_username": "DenysNahurnyi",
+    "name": "Denys Nahurnyi",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/27808442?s=400&u=b1a77df8111cad1a4ddfc36df63b815f8182fdde&v=4",
+    "bio": "Someone wise said that the best way to learn something is to tech that, so here I am :). I don't write on Go for a long time but I already know enough to share some useful info and help newbies. Happy to help!"
   }
 ]

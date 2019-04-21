@@ -22,5 +22,29 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Javascript is one of the greatest languages to get your teeth stuck into. I'll be on hand to help guide anyone on a quest to tame the JS beast!"
+  },
+  {
+    "github_username": "mccr",
+    "name": "Monica Calderaro",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a career changer (used to be a telecommunication Engineer), always up for learning new things and helping along the way."
+  },
+  {
+    "github_username": "MakanTaghizadeh",
+    "name": "Makan Taghizadeh",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've developed JavaScript professionally for years and I believe JavaScript is the most flexible programming language on the planet. From backend (Node.js) to frontend (React.js, Angular, Vue.js, ...) to mobile devices (React Native, Native Script, ...), you can develop for so many parallel universes with JavaScript."
+  },
+  {
+    "github_username": "marzieh312",
+    "name": "Marzi Morovatpasand",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Really enjoying coding in Javascript and love to be part of the joy of learning it for anybody else :) "
   }
 ]

@@ -1,6 +1,6 @@
 ### Introduction
 
-Exercism is a platform centered around empathetic conversation. We have a low tolerance for communication that makes anyone feel unwelcome, unsupported, insulted or disciminated against.
+Exercism is a platform centered around empathetic conversation. We have a low tolerance for communication that makes anyone feel unwelcome, unsupported, insulted or discriminated against.
 
 ### Seen or experienced something uncomfortable?
 
@@ -8,7 +8,7 @@ If you see or experience abuse, harassment, discrimination, or feel unsafe or up
 
 ### Enforcement
 
-We actively monitor for CoC violations and take any reports of violations extremely seriously. We have banned contributors, mentors and users due to violations. 
+We actively monitor for Code of Conduct (CoC) violations and take any reports of violations extremely seriously. We have banned contributors, mentors and users due to violations. 
 
 After we receive a report of a CoC violation, we view that person's conversation history on Exercism and related communication channels and attempt to understand whether someone has deliberately broken the CoC, or accidently crossed a line. We generally reach out to the person who has been reported to discuss any concerns we have and warn them that repeated violations will result in a ban. Sometimes we decide that no violation has occurred and that no action is required and sometimes we will also ban people on a first offence. We strive to be fair, but will err on the side of protecting the culture of our community.
 
@@ -16,24 +16,24 @@ Exercism's leadership reserve the right to take whatever action they feel approp
 
 ### The simple version
 
-- be empathetic
-- be welcoming
-- be kind
-- be honest
-- be supportive
-- be polite
+- Be empathetic
+- Be welcoming
+- Be kind
+- Be honest
+- Be supportive
+- Be polite
 
 ### The details
 
 Exercism should be a safe place for everybody regardless of
-- gender, gender identity or gender expression
-- sexual orientation
-- disability
-- physical appearance (including but not limited to body size)
-- race
-- age
-- religion
-- anything else you can think of.
+- Gender, gender identity or gender expression
+- Sexual orientation
+- Disability
+- Physical appearance (including but not limited to body size)
+- Race
+- Age
+- Religion
+- Anything else you can think of.
 
 As someone who is part of this community, you agree that:
 
@@ -55,10 +55,9 @@ We condemn:
 - Violence, threats of violence or violent language
 - Anything that compromises people’s safety
 - Conduct or speech which might be considered sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory or offensive in nature.
-- Do not use unwelcome, suggestive, derogatory or inappropriate nicknames or terms.
-- Do not show disrespect towards others. (Jokes, innuendo, dismissive attitudes.)
+- The use of unwelcome, suggestive, derogatory or inappropriate nicknames or terms.
+- Disrespect towards others (jokes, innuendo, dismissive attitudes) and towards differences of opinion.
 - Intimidation or harassment (online or in-person). Please read the [Citizen Code of Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md) for how we interpret harassment.
-- Disrespect towards differences of opinion.
 - Inappropriate attention or contact.
 - Not understanding the differences between constructive criticism and disparagement.
 

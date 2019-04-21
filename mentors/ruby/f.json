@@ -14,5 +14,29 @@
     "link_url" : null,
     "avatar_url" : null,
     "bio" : "(He/him pronouns). I've been a Ruby developer for a couple of years (since 2016ish), and I've been helped along immensely by friends and the community--I'm looking forward to paying that back! When I'm not working with code, I'm probably playing or making tabletop RPGs."
+  },
+  {
+    "github_username" : "favrik",
+    "name" : "Favio Manriquez",
+    "link_text" : null,
+    "link_url" : null,
+    "avatar_url" : null,
+    "bio" : "After working with Ruby for a couple of years, I love it.  I also enjoy teaching and mentoring others, plus it's a great way to refresh knowledge."
+  },
+  {
+  "github_username": "freddie1221",
+  "name": "Freddie Lawson",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "I am a junior Ruby engineer, I've been working with it for a few months on an engineerig bootcamp and finding it a great language."
+},
+  {
+    "github_username": "filalex77",
+    "name": "Oleksii Filonenko",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Ruby is my favourite programming language, and I use many ideas from Ruby in other languages. I also like teaching, Linux, and Free Software :)"
   }
 ]

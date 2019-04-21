@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "tekerson",
+    "name": "Brenton Alker",
+    "link_text": null,
+    "link_url": "https://github.com/tekerson",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/83486?s=200",
+    "bio": "As a believer in the communicative power of type systems, I think TypeScript has an opportunity to bring lessons learned in other communities to the world of front-end web development."
+  }
+]

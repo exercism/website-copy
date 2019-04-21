@@ -1,4 +1,12 @@
 [
+  
+  {
+    "github_username": "jamesgeorge007",
+    "name": "James George",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have experience with the Java Android framework as well as the traditional swing library for building Desktop apps."  },
   {
     "github_username": "jvarness",
     "name": "Jake Varness",
@@ -14,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Java is one of my favorite languages. It's very powerful and versatile. Besides, you can build once and run everywhere! :)"
+  },
+  {
+    "github_username": "jdvr",
+    "name": "Juan D. Vega",
+    "link_text": "Blog",
+    "link_url": "https://juandavidvega.es/",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6184100?s=400&u=96a379bd6af8d0b74ce3e4350b984d6d7a7cb791&v=4",
+    "bio": "I love Java and I think it is getting better year after year. I think it takes advantage of the JVM and also has large community with a lot of amazing tools."
   }
 ]

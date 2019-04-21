@@ -1,7 +1,7 @@
 Here we have collated a list of the questions asked frequently by mentors. 
 
 ### How do I get started with Mentoring?
-Join the [start-here channel on Slack](https://exercism-mentors.slack.com/archives/CBDA9LMDF/p1529968977000336) and you will see some step-by-step instructions that will guide you through the process.
+Once you've become a mentor via the [become a mentor](https://exercism.io/become-a-mentor) page, you can access your [mentor dashboard](https://exercism.io/mentor/dashboard) at any time. When you joined you should have received an invitation to our Slack Room. You can find more instructions in the [start-here channel on Slack](https://exercism-mentors.slack.com/archives/CBDA9LMDF/p1529968977000336).
 
 ### What should I do if I don't know how to give feedback on a solution?
 If you're not sure what feedback to give, paste a link to the solution (e.g. `https://exercism.io/mentor/solutions/...`) on the relevant language channel on Slack and brainstorm some ideas with other mentors.
@@ -39,28 +39,28 @@ We appreciate this is a rough guide and we are working on creating documentation
 Ideally within a week of a learner submitting their solution to help maintain their motivation and enthusiasm for the exercise. We will be implementing a "Leave of Absence" notification button for mentors soon that you can use if don't feel like you'll be able to respond to solutions within this timeframe. This button will pass the solutions you're mentoring onto another mentor.
 
 ### I need to have a break from mentoring, can I stop receiving new solutions?
-Yes! We have this logged as an issue on GitHub (see https://github.com/exercism/exercism.io/issues/3922) and will be implementing a Leave of Absence notification soon. 
+Yes! We have this logged as an issue on GitHub (see [https://github.com/exercism/exercism/issues/3922](https://github.com/exercism/exercism/issues/3922)) and will be implementing a Leave of Absence notification soon. 
 
 ### How much time should I be spending on mentoring?
 We had 1,000 submissions per day on the original Exercism site, of which fewer than 20% received feedback. Our key launch-targets are to achieve >95% feedback-rate. We have based our mentor recruitment numbers on mentors offering 1hr/week on average. If you can offer more than that then that's great!
 
 ### I've found an issue with the site, where should I raise the issue?
-If you find anything that's broken, first see if it is listed here and if not please add it https://github.com/exercism/exercism.io/issues 
+If you find anything that's broken, first see if it is listed here and if not please add it [https://github.com/exercism/exercism/issues](https://github.com/exercism/exercism/issues)
 
 ### I can’t see the Mentor Dashboard even though I've followed the "start-here" instructions
-Go back to https://exercism.io/mentor/configure and check that you have clicked the “Save” button at the bottom of the screen. Some people have missed this step and then been understandably confused by why they can't see the Mentor Dashboard. This should fix the issue.
+Go back to [https://exercism.io/mentor/configure](https://exercism.io/mentor/configure) and check that you have clicked the “Save” button at the bottom of the screen. Some people have missed this step and then been understandably confused by why they can't see the Mentor Dashboard. This should fix the issue.
 
 ### How can I report abuse or examples of bad mentoring?
-Please reach out to us at abuse@exercism.io and we will try to fix or resolve the issue respecting both you and your privacy.
+Please reach out to us at [abuse@exercism.io](mailto:abuse@exercism.io) and we will try to fix or resolve the issue respecting both you and your privacy.
 
 ### How can I stop mentoring a track?
-If you'd like to stop mentoring a track please email us at mentors@exercism.io and let us know.
+If you'd like to stop mentoring a track please email us at [mentors@exercism.io](mailto:mentors@exercism.io) and let us know.
 
 ### Why are tests marked as skipped?
 The tests are marked as skipped to encourage people to use TDD to do one at a time. When people submit their solution and you view it in the UI, you're seeing the original tests that the user was sent, not their final tests file.
 
 ###  Can I mentor another language?
-Yes! To mentor another language go to the "Configure your mentor settings" page via the main menu and select the languages you want to mentor.
+Yes! To mentor another language go to [https://exercism.io/mentor/configure](https://exercism.io/mentor/configure) and select the languages you want to mentor.
 
 ### Still have a question?
 If you have a question that hasn't been answered here, please post it on the "questions" channel on Slack.

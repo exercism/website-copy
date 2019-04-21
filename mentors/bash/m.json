@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "machuu",
+    "name": "Matt Hoover",
+    "link_text": "Personal Site",
+    "link_url": "http://hoover.ml",
+    "avatar_url": "http://gravatar.com/avatar/6dcd94787d387411653a88ac408c09dd.png",
+    "bio": "I use Bash daily at work and home, and I think it is a foundational skill for mastering any UNIX-like system."
+  },
+  {
     "github_username": "mrstebo",
     "name": "Steven Atkinson",
     "link_text": null,

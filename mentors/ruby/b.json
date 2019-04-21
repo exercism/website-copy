@@ -23,5 +23,13 @@
     "link_url": "https://programmingsimplicity.com",
     "avatar_url": null,
     "bio": "Ruby launched my software development career, and I love its simple syntax and minimal amount of concepts.  The Ruby community has also taught me so much that I can bring to whatever language I am using."
+  },
+  {
+    "github_username": "boddhisattva",
+    "name": "Mohnish G Jadwani",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Mohnish is a programmer who cares about - programming as a craft, mentorship, diversity, inclusiveness and empathy. Away from work, he enjoys contributing to open source, blogging, and has even organized Ruby user group meetups in the past. He's also learning more of Elixir whenever he gets an opportunity."
   }
 ]

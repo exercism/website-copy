@@ -6,5 +6,21 @@
     "link_url": "",
     "avatar_url": null,
     "bio": "functional programming enthusiast"
+  },
+  {
+    "github_username": "k-cross",
+    "name": "Ken Cross",
+    "link_text": "blog",
+    "link_url": "https://k-cross.github.io",
+    "avatar_url": null,
+    "bio": "Enjoy learning and teaching topics in functional programming and mathematics as it relates to distributed systems, category theory, graph theory, and computer science at large."
+  },
+  {
+    "github_username": "kellsaro",
+    "name": "Maykell Sánchez Romero",
+    "link_text": "kellsaro",
+    "link_url": "https://www.linkedin.com/in/kellsaro/",
+    "avatar_url": null,
+    "bio": "Enjoy learning and teaching programming languages. Web development enthusiast."
   }
 ]

@@ -14,7 +14,7 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Full time backend engineer. Rubyist."
-  }, 
+  },
     {
     "github_username": "arnoFleming",
     "name": "Arno Fleming",
@@ -22,5 +22,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Developer: Mostly Ruby and JavaScript. Teacher: Ruby, JavaScript basics, Programming paradigms. People skills. Like to learn myself"
+  },
+    {
+    "github_username": "andreasandpiper",
+    "name": "Andrea Wayte",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Science teacher turned software engineer. Currently working as a Ruby and Javascript developer. I enjoy working with others to create elegant code."
+  },
+  {
+    "github_username": "anujk14",
+    "name": "Anuj Khandelwal",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Backend developer. Love Ruby because I find it to be very intuitive, clean and easy to learn!"
   }
 ]

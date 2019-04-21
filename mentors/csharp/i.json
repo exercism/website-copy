@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "IanKnighton",
+    "name": "Ian Knighton",
+    "link_text": "Personal Blog",
+    "link_url": "https://ianknighton.com/",
+    "avatar_url": null,
+    "bio": "I've been working in C# for 5 years. Building everything from simple console apps to major data-analytics tools."
+  }
+]

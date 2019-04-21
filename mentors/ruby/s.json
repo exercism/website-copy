@@ -24,7 +24,7 @@
     "bio": "I'm a senior Ruby dev professionally at my company. I have taught many new devs and devs coming from other languages Ruby and Ruby on Rails."
   },
   {
-    "github_username": "sganondorf",
+    "github_username": "sansbrina",
     "name": "Sabrina Gannon",
     "link_text": null,
     "link_url": null,
@@ -43,5 +43,37 @@
     "link_url": "http://aaronstrick.com",
     "avatar_url": null,
     "bio": "In coding, ruby was my first love. I've been writing it professionally for >4 years and love how expressive it can be. Have you seen the ruby poetry?"
+  },
+  {
+    "github_username": "serg-kovalev",
+    "name": "Sergey Kovalev",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have more than 10 years of production experience. I love Ruby because of its friendly and active community. Nothing is impossible when you do what you love! Happy coding!"
+  },
+  {
+    "github_username": "SleeplessByte",
+    "name": "Derk-Jan Karrenbeld",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "When I started dabbling with programming in Ruby over 15 years ago, I did not expect it to pay my bills ánd make me happy!"
+  },
+  {
+    "github_username": "SamuSan",
+    "name": "Sam Minns",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm mostly a Rubyist though I mess with JavaScript when necessary and have a secret love for Haskell. Giving back to the community is something dear to my heart, hence becoming a Ruby track mentor while learning some other bits!"
+  },
+  {
+    "github_username": "son1112",
+    "name": "Anderson Reinkordt",
+    "link_text": "CardFlight - Payment Acceptance Solution",
+    "link_url": "https://cardflight.com",
+    "avatar_url": "https://gravatar.com/avatar/634717c16bf30a59ed5ae2322ea6b143?s=400&d=robohash&r=x",
+    "bio": "I got my start using Ruby in 2014, learning Ruby on Rails and used it to launch my freelance career that eventually led to becoming a fulltime software engineer at CardFlight."
   }
 ]

@@ -15,5 +15,13 @@
     "avatar_url": null,
     "bio":
       "I mainly use Typescript at work and I really appreciate the type safety it provides. Combine it with the awesome Visual Studio Code and you're in for a treat. Another well done language by Microsoft."
+  },
+  {
+    "github_username": "SleeplessByte",
+    "name": "Derk-Jan Karrenbeld",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Typings for JavaScript is what that language needed. Programming professionally with TypeScript for over 3 years."
   }
 ]

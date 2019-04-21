@@ -56,5 +56,49 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I appreciate python among the many languages I have used for expressiveness and readability. I have used it at work and for personal projects."
+  },
+  {
+    "github_username": "Sessa93",
+    "name": "Andrea Sessa",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have used Python mainly for Machine Learning/Reinforcement Learning for my Master thesis."
+  },
+  {
+    "github_username": "ssarkar2",
+    "name": "Sayantan Sarkar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "Have been using Python for ~5 years for machine learning, deep learning, computer vision, data science and quick scripting purposes"
+  },
+  {
+    "github_username": "swalladge",
+    "name": "Samuel Walladge",
+    "link_text": "Website",
+    "link_url": "https://swalladge.id.au",
+    "avatar_url": null,
+    "bio":
+      "Python was the first language I learnt when I started programming several years ago. Since then I have used it extensively for uni projects, web, scripting, and pretty much everything else. Excited to be able to help mentor new pythonistas!"
+  },
+  {
+    "github_username": "suzaku",
+    "name": "Xuecong Liao",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I am a system programmer in JuiceFS. Python is my favorite programming language and I have been using it for >9 years. I hope I can help you pick up Python faster."
+  },
+  {
+    "github_username": "Sencudra",
+    "name": "Vlad Tarasevich",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I'm a student at HSE university in Moscow and an intern at Kaspersky Lab. Python is one of my most favorite programming languages since it's simple and easy to use on daily basis." 
   }
 ]

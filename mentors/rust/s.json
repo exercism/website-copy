@@ -32,11 +32,19 @@
     "bio": "I'm a Rustacean since 5 years and member of the Rust project. I lead the events team and contirbute to the community team. I own a Rust company. I train Rust professionally, but still got a lot to learn."
   },
   {
-    "github_username": "Stef-Gijsberts",
-    "name": "Stef Gijsberts",
+    "github_username": "svenito",
+    "name": "Sven Steinbauer",
     "link_text": null,
     "link_url": null,
-    "avatar_url": null,
-    "bio": "I love Rust and its community. The way the Rust compiler talks to the user makes me want to hug it."
+    "avatar_url": "https://avatars0.githubusercontent.com/u/31278?s=460&v=4",
+    "bio": "I am a C++ and Python developer who is learning Rust. I feel that teaching is a great way to learn, so I am hoping to give back a little while learning more myself."
+  },
+  {
+    "github_username": "squidboylan",
+    "name": "Caleb Boylan",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/10985680?s=460&v=4",
+    "bio": "I am a student and spend most of my time hacking on personal projects. I enjoy Rust as it makes some of the more painful parts of programming easier to handle."
   }
 ]

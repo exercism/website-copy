@@ -16,6 +16,13 @@
     "bio": "I'm a programmer trying and learning how to write beautiful code."
   },
   {
+    "github_username": "mikestephens",
+    "name": "Michael Stephens",
+    "link_text": null,
+    "link_url": null,
+    "bio": "I am a backend engineer that absolutely love's ruby. I've been doing it for over 6 years and love how easy to pick up it is but has all the intricacies to keep you digging for more knowledge"
+  },
+  {
     "github_username": "mrstebo",
     "name": "Steven Atkinson",
     "link_text": null,
@@ -30,5 +37,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I use Ruby for its natural syntax and vibrant community."
+  },
+  {
+    "github_username": "mikegee",
+    "name": "Michael Gee",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have found Ruby the most fun language to use. I've been using Ruby full-time since 2006 (mostly Rails applications)."
+  },
+  {
+    "github_username": "mccr",
+    "name": "Monica Calderaro",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a career changer (used to be a telecommunication Engineer), always up for learning new things and helping along the way."
   }
 ]

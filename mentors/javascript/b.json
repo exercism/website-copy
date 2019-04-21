@@ -22,5 +22,29 @@
     "link_url": "https://programmingsimplicity.com",
     "avatar_url": null,
     "bio": "Javascript is the language I get to use without asking, so I get to pick and choose to just use 'The Good Parts'!"
+  },
+  {
+    "github_username": "benjameep",
+    "name": "Benjamin Earl",
+    "link_text": "Benz Projects",
+    "link_url": "http://benjameep.tech",
+    "avatar_url": null,
+    "bio": "Javascript is my native language, still working on my English."
+  },
+  {
+    "github_username": "Bouncey",
+    "name": "Stuart Taylor",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://github.com/bouncey.png",
+    "bio": "Tell me and I forget, teach me and I may remember, involve me and I learn."
+  },
+  {
+    "github_username": "bdjnk",
+    "name": "Michael Plotke",
+    "link_text": "michael.plotke.me",
+    "link_url": "https://michael.plotke.me/",
+    "avatar_url": null,
+    "bio": "I'm paid to write JavaScript. I mostly enjoy it. I also enjoy teaching. Exercism is a nice convergence."
   }
 ]

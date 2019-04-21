@@ -6,7 +6,9 @@ task :test do
   require 'json'
   Dir['mentors/**/*.json'].each do |file|
     begin
+      filename = File.basename(file).downcase[0]
       mentors = JSON.parse(File.read(file))
+
       next if mentors.empty?
 
       if mentors.is_a?(Hash)
@@ -15,33 +17,54 @@ task :test do
       end
 
       mentors.each do |mentor|
-        username = mentor["github_username"]
-        name = mentor["name"]
+        github_username = mentor["github_username"].to_s
+        name = mentor["name"].to_s
 
-        if name == "" || name.nil?
-          errors << "Name can't be blank for %s in %s." % [username, file]
+        if github_username.empty?
+          errors << "Github username can't be blank for %s." % [file]
           next
         end
 
-        url = mentor["link_url"]
-        next if url.nil? || url.empty?
-
-        if url.strip == "null"
-          errors << "Link URL should be null, not the string 'null' for %s in %s." % [username, file]
+        unless github_username.downcase.start_with?(filename)
+          errors << "First letter of github_username \"%s\" must equal JSON filename %s" % [github_username, file]
           next
         end
 
-        if url.strip != url
-          errors << "Link URL has extraneous whitespace for %s in %s." % [username, file]
+        if name.empty?
+          errors << "Name can't be blank for %s in %s." % [github_username, file]
           next
         end
 
-        if url !~ /^https?/
-          errors << "Link URL must have HTTP protocol for %s in %s." % [username, file]
+        link_text = mentor["link_text"].to_s
+        link_url = mentor["link_url"].to_s
+        if link_url.empty?
+          if !link_text.empty?
+            errors << "\"link_text\" should be null since \"link_url\" is null/empty for %s in %s." % [github_username, file]
+          end
+          next
         end
 
-        if mentor["link_text"].to_s.include?("Github")
-          errors << "GitHub should be spelled with an uppercase 'H' for %s in %s." % [username, file]
+        if link_url.strip == "null"
+          errors << "Link URL should be null, not the string 'null' for %s in %s." % [github_username, file]
+          next
+        end
+
+        if link_url.strip != link_url
+          errors << "Link URL has extraneous whitespace for %s in %s." % [github_username, file]
+          next
+        end
+
+        if link_url !~ /^https?/
+          errors << "Link URL must have HTTP protocol for %s in %s." % [github_username, file]
+        end
+
+        if link_text.downcase.gsub(/https?\:\/\//,"") == link_url.downcase.gsub(/https?\:\/\//,"")
+          errors << "Use null for \"link_text\" when equivalent to \"link_url\" for %s in %s." % [github_username, file]
+          next
+        end
+
+        if link_text.downcase.include?("github") && !link_text.include?("GitHub")
+          errors << "Capitalization of GitHub is incorrect in \"link_text\" for %s in %s." % [github_username, file]
         end
       end
     rescue

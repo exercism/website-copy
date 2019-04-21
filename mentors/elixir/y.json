@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": "https://avatars0.githubusercontent.com/u/809030?s=400&u=9ee0561ab63136e5222a2b2ef4ed1268f77966f9&v=4",
     "bio": "I chanced upon Elixir back in early 2014 when we were looking out for a replacement stack that is as pleasant and productive to work in as Ruby, while giving us the reliability and fault-tolerance of Erlang, without having to add too much external dependencies to scale out our Ruby stack product."
+  },
+  {
+    "github_username": "yyyc514",
+    "name": "Josh Goebel",
+    "link_text": "Blog: Running Blind",
+    "link_url": "http://runningblind.com/",
+    "avatar_url": "",
+    "bio" :" I mostly write Ruby on Rails professionally but for fun (and possibly profit one day) I dabble with Elixir, Nim, Arduino, and such. I’m really digging both Nim and Vim lately."
   }
 ]

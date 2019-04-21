@@ -1,10 +1,34 @@
 [
   {
+    "github_username": "thedarkula",
+    "name": "Meade Kincke",
+    "link_text": "Code Artistry",
+    "link_url": "https://thedarkula.gitlab.io/code-artistry/",
+    "avatar_url": null,
+    "bio": "I love real-world, usable examples. I'm a huge fan of being able to help others to make something work how it should with maximum performance. I especially love Rust and have written a tool called BrewStillery in it and GTK-rs."
+  },
+  {
     "github_username": "thelostlambda",
     "name": "Brooks J Rady",
     "link_text": "thelostlambda.xyz",
     "link_url": "http://thelostlambda.xyz/",
     "avatar_url": null,
     "bio": "A functional programmer who loves Haskell, Lisp, Rust, and Elixir."
+  },
+  {
+    "github_username": "tekerson",
+    "name": "Brenton Alker",
+    "link_text": null,
+    "link_url": "https://github.com/tekerson",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/83486?s=200",
+    "bio": "Rust brings an expressive type-system to low-level perfomance and portability. The WASM support ties in particularly well with web development where I spend most of my time and I'm excited to join others on this learning path."
+  },
+  {
+    "github_username": "tmccombs",
+    "name": "Thayne McCombs",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Although rust does have a steeper learning curve than many other languages, once you understand it, it is a truly incredible language."
   }
 ]
