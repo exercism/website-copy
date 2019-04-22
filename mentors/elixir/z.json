@@ -10,7 +10,7 @@
   {
     "github_username": "zeeker",
     "name": "Sascha Wolf",
-    "link_text": "saschawolf.me",
+    "link_text": null,
     "link_url": "https://saschawolf.me",
     "avatar_url": null,
     "bio": "Elixir made me realize that concurrency doesn't need to be hard. It's a great introduction to functional programming and a joy to write. I've been using it professionally since 2017, contributed to a number of libraries, and maintain some of my own." 
