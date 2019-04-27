@@ -14,8 +14,8 @@ def is_isogram(string):
         ch = string[i]
 
         if ch.isalpha():
-		    if (s.find(ch) > -1):
-			    return False
+            if (s.find(ch) > -1):
+                return False
 
     return True
 ```
