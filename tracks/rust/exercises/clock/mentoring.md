@@ -1,8 +1,10 @@
 ### Concepts
 
-- derive
+- derive macro: Debug and PartialEq
 - struct
-- traits
+- constants
+- implmentations
+- traits: Display
 
 ### Reasonable solutions
 
