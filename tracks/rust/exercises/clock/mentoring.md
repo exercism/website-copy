@@ -101,26 +101,35 @@ impl fmt::Display for Clock {
 
 If they implement Debug or PartialEq manually:
 
-```
-We can use the `#[derive]` attribute on the `Clock` struct to automatically generate impls of [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html) and [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#derivable).
+```markdown
+We can use the `#[derive]` attribute on the `Clock` struct to automatically
+generate impls of [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html)
+and [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#derivable).
 ```
 
 If they visibly lament the behavior of `%` on negative arguments:
 
-```
-The standard library does provide a method called [`rem_euclid`](https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid) that produces a non-negative result, but it is currently unstable.  We can help test it out on a nightly version of the compiler by adding a `#![feature]` flag as shown in the method's documentation.
+```markdown
+The standard library does provide a method called [`rem_euclid`] that produces a
+non-negative result, but it is currently unstable.  We can help test it out on a
+nightly version of the compiler by adding a `#![feature]` flag as shown in the
+method's documentation.
+
+[`rem_euclid`]: https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid
 ```
 
 If a helper function is `pub`:
 
-```
-The `pub` modifier can be removed from this function to keep it a private implementation detail.
+```markdown
+The `pub` modifier can be removed from this function to keep it a
+private implementation detail.
 ```
 
 If there are patterns like `((a % b) + b) % b` in `Clock::new` or `Clock::add_minutes`:
 
-````
-This can be pulled out into a helper function to help keep the methods of `Clock` cleaner.  For example:
+````markdown
+This can be pulled out into a helper function to help keep the methods of `Clock` cleaner.
+For example:
 
 ```rust
 /// Like `a % b`, but positive for positive `a`.
@@ -132,22 +141,32 @@ fn rem_floor(x: i32, modulus: i32) -> i32 {
 
 If they already have a modulus function factored out from the get-go:
 
-```
+```markdown
 Let's take this a step further and add a unit test for your `rem_floor` function!
 
-Notice you are allowed to put `#[test]` functions alongside the rest of your code (i.e. in `src/lib.rs`), where they can see and test private functions.
+Notice you are allowed to put `#[test]` functions alongside the rest of your
+code (i.e. in `src/lib.rs`), where they can see and test private functions.
 ```
 
 If it looks like they could benefit from learning about floored or Euclidean division (e.g. they have a helper function for the modulus but it is very specialized):
 
-```
-Your `reduced_minutes` function is a nice, clean way to solve the problem, but there is a more general concept you might find useful here.  The reason that the `%` operator in Rust can return a negative result is because `/` in Rust is defined to round towards zero.  But there are other ways to define integer division that produce a positive result, such as floored division/modulus or Euclidean division/modulus.
+```markdown
+Your `reduced_minutes` function is a nice, clean way to solve the problem,
+but there is a more general concept you might find useful here.
+The reason that the `%` operator in Rust can return a negative result is because
+`/` in Rust is defined to round towards zero.  But there are other ways to define
+integer division that produce a positive result, such as floored division/modulus
+or Euclidean division/modulus.
 
-We can try implementing one of these modulus functions, or alternatively, we can help test out the (currently unstable) implementation of [`rem_euclid`](https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid) in the standard library.
+We can try implementing one of these modulus functions, or alternatively, we can
+help test out the (currently unstable) implementation of [`rem_euclid`] in the
+standard library.
+
+[`rem_euclid`]: https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid
 ```
 
 It turns out that this problem is generally trickier to solve if the clock stores both hours and minutes. If their logic is hopelessly complicated and you're not sure where else to begin:
 
-```
-Here's a secret: This problem is easier to solve if the clock only stores minutes.
+```markdown
+Here's a secret: This problem is easier to solve if the clock only stores minutes!
 ```
