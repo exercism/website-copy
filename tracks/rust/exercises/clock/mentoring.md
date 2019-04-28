@@ -55,7 +55,7 @@ fn rem_floor(x: i32, modulus: i32) -> i32 {
 
 A more specialized helper function is okay:
 
-```
+```rust
 fn reduced_minutes(minutes: i32) -> i32 {
     match minutes % MINUTES_PER_DAY {
         x if x < 0 => x + MINUTES_PER_DAY,
