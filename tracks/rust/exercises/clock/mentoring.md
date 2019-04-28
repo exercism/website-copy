@@ -125,6 +125,7 @@ This can be pulled out into a helper function to help keep the methods of `Clock
 fn rem_floor(x: i32, modulus: i32) -> i32 {
     // ...
 }
+```
 ````
 
 If they already have a modulus function factored out from the get-go:
