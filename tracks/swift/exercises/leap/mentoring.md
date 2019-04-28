@@ -9,21 +9,24 @@ struct Year {
     let isLeapYear: Bool
 
     init(calendarYear year: Int) {
-        isLeapYear = year.isDivisibleBy(4) && (!year.isDivisibleBy(100) || year.isDivisibleBy(400))
-    }
-}
-
-extension Int {
-    func isDivisibleBy(_ n: Int) -> Bool {
-        return self % n == 0
+        isLeapYear = year.isMultiple(of: 4) && (!year.isMultiple(of: 100) || year.isMultiple(of: 400))
     }
 }
 ```
 
 ## Common Suggestions
 
-- Consider refactoring the divisibility check to an internal function, or an
-  extension (as shown above).
+- Swift 5 includes `Int.isMultiple(of:)`. ([SE-0225](https://github.com/apple/swift-evolution/blob/master/proposals/0225-binaryinteger-iseven-isodd-ismultiple.md))
+- For previous versions, we can extend the language ourselves and refactoring the divisibility check to an internal function, or an extension:
+  
+```
+extension Int {
+    func isDivisibleBy(_ n: Int) -> Bool {
+        return self % n == 0
+    }
+}
+```
+  
 - It may be more readable to return the results of boolean expressions, instead
   of explicit `true` or `false` (see example below).
 
@@ -56,3 +59,5 @@ struct Year {
     }
 }
 ```
+
+
