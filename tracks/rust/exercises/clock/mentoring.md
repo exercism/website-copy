@@ -95,7 +95,7 @@ impl fmt::Display for Clock {
 }
 ```
 
-### Notes
+### Common Suggestions
 
 If they implement Debug or PartialEq manually:
 
