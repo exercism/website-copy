@@ -1,10 +1,10 @@
 ### Concepts
 
-- derive macro: Debug and PartialEq
-- struct
-- constants
-- implmentations
-- traits: Display
+- derive macro: [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html) and [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#derivable)
+- [struct](https://doc.rust-lang.org/std/keyword.struct.html)
+- [constants](https://doc.rust-lang.org/std/keyword.const.html)
+- [implmentations](https://doc.rust-lang.org/std/keyword.impl.html)
+- traits: [Display](https://doc.rust-lang.org/std/fmt/trait.Display.html)
 
 ### Reasonable solutions
 
