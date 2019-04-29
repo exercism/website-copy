@@ -18,7 +18,7 @@
   {
     "github_username": "joaofcosta",
     "name": "Dino",
-    "link_text": "Github",
+    "link_text": "GitHub",
     "link_url": "https://github.com/joaofcosta",
     "avatar_url": "https://avatars0.githubusercontent.com/u/6334322?s=400&u=e1553e569d46a26620d3807735ab8127a7643ff7&v=4",
     "bio": "After some time working professionally with Python I got the chance to finally build something with Elixir that now runs in a production environment. \nI've always been passionate about functional programming because I feel it is more closely related to Mathematics and Elixir has enabled me to rediscover Functional Programming using awesome syntax."
