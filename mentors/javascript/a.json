@@ -54,5 +54,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a sofware architect & engineer and I love to share knowledge, because I think that everybody should be able to learn how to develop software."
+  },
+  {
+    "github_username": "archanid",
+    "name": "Archana Sriram",
+    "link_text": "github",
+    "link_url": "https://github.com/archanid",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/13165182?s=460&v=4",
+    "bio": "JavaScript and Node.js are my top programming languages. I'm a professional software engineer with over two decades of work experience. I love to teach and mentor."
   }
 ]
