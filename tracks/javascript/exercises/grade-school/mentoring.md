@@ -1,4 +1,4 @@
-### Readonable solutions
+### Reasonable solutions
 ```typescript
 export class GradeSchool {
 
