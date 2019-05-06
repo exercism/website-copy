@@ -1,7 +1,7 @@
 ### Algorithm
 
 This problem has relatively few variations.
-```
+```crystal
 class Triangle
   getter sides : Array(Int32)
   property? valid : Bool
