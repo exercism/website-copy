@@ -26,7 +26,7 @@ end
 module Hamming
   def self.compute(strand, other)
     raise ArgumentError.new unless strand.size == other.size
-    strand.each_char.with_index do |base, index|
+    strand.each_char.with_index.count do |base, index|
       base != other[index]
     end
   end
