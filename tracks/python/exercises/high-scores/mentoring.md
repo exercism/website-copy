@@ -20,7 +20,7 @@ Canonical solution using the `max()` built-in to return `personal_best()`, and r
         return sorted(scores, reverse=True)[:3]
 ```
 
-Solution sorting  in reverse order for `personal_best` and `personal_top_three`.  `personal_best()` returns index zero of the sorted scores.
+Solution sorting in reverse order for `personal_best` and `personal_top_three`.  `personal_best()` returns index zero of the sorted scores.
 ```python
     def latest(scores):
         return scores[-1]
@@ -31,7 +31,7 @@ Solution sorting  in reverse order for `personal_best` and `personal_top_three`.
     def personal_top_three(scores):
         return sorted(scores, reverse=True)[:3]
 ```
-Solution sorting without reversed.  `personal_best()` returns index **-1** and `personal_top_three()` returns a slice from the right, using negative indexes.
+Solution sorting without reversed. `personal_best()` returns index **-1** and `personal_top_three()` returns a slice from the right, using negative indexes.
 ```python
     def latest(scores):
         return scores[-1]
@@ -51,12 +51,12 @@ Another variation of this solution includes the start at -1 for slicing the resu
 ### Common Suggestions
 
 - Use **`sorted()`** over **`sort()`**.   `sorted()` returns a _**copy**_ , `sort()` _**mutates in place**_.  
-  Solutions that use `sort()` without first _copying_ the data in `scores`  effectively erase the "latest" score.  If `latest()` is called after the `sort()`, it will be inaccurate.
+  Solutions that use `sort()` without first _copying_ the data in `scores` effectively erase the "latest" score. If `latest()` is called after the `sort()`, it will be inaccurate.
 -  Use built-in functions like **`max(scores)`** -OR- **`sorted(scores, reverse=True)[0]`**  over looping manually.   It's is more efficient than iterating through `scores` to find the largest value.
--  Using **`sorted(scores, reverse=True)[:3]`**  is preferable to  iterating through scores to find the three largest values.
+-  Using **`sorted(scores, reverse=True)[:3]`** is preferable to iterating through scores to find the three largest values.
 - Checking  **`len(scores) < 3`**  is unnecessary if a list slice is used to make the three highest scores list.  Python will return a copy of the entire list if it is shorter than the requested list slice.
 - A _negative index_ (e.g. **`scores[-1]`**) is preferred over performing a length-check  to get the index of the last element (e.g.**`scores[len(scores)-1]`**). 
-- The syntax of  **`sorted(scores, reverse=True)[:3]`** is preferred over  **`sorted(scores, reverse=True)[0:3]`**.  All slices default to zero unless otherwise specified - so convention is to leave it off.
+- The syntax of **`sorted(scores, reverse=True)[:3]`** is preferred over **`sorted(scores, reverse=True)[0:3]`**. All slices default to zero unless otherwise specified - so convention is to leave it off.
 
   
 ### Talking Points
