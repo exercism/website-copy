@@ -50,7 +50,7 @@ Another variation of this solution includes the start at -1 for slicing the resu
 
 ### Common Suggestions
 
-- Use **`sorted()`** over **`sort()`**.   `sorted()` returns a _**copy**_ , `sort()` _**mutates in place**_.  
+- Use **`sorted()`** over **`sort()`**. `sorted()` returns a _**copy**_ , `sort()` _**mutates in place**_.  
   Solutions that use `sort()` without first _copying_ the data in `scores` effectively erase the "latest" score. If `latest()` is called after the `sort()`, it will be inaccurate.
 -  Use built-in functions like **`max(scores)`** -OR- **`sorted(scores, reverse=True)[0]`**  over looping manually.   It's is more efficient than iterating through `scores` to find the largest value.
 -  Using **`sorted(scores, reverse=True)[:3]`** is preferable to iterating through scores to find the three largest values.
