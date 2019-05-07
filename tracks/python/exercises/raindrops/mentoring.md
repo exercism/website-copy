@@ -37,7 +37,7 @@ def raindrops(number)
     if number % 3 == 0:
       result += 'Pling'
     if number % 5 == 0:
-      result = result + 'Plang'
+      result += 'Plang'
     if number % 7 == 0:
       result += 'Plong'
 
