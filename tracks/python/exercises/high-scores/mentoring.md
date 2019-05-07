@@ -8,7 +8,7 @@ This problem asks that students be familiar with **lists** and list manipulation
 
   
 ### Reasonable Solutions
-Canonical solution using the `max()` built-in to return `persona_best()`, and reverse `sorted()` for `personal_top_three`.
+Canonical solution using the `max()` built-in to return `personal_best()`, and reverse `sorted()` for `personal_top_three`.
 ```python
     def latest(scores):
         return scores[-1]
