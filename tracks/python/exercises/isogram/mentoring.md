@@ -101,6 +101,30 @@ def is_isogram(string):
     return len(set(word)) == len(word)
 ```
 
+The solution might define their own sets:
+
+```python
+def is_isogram(string):
+    arr = [0] * 256
+
+    for l in string.lower():
+        if arr[ord(l)] == 0:
+            arr[ord(l)] += 1
+        elif (l != ' ') and (l != '-'):
+            return False
+
+    return True
+```
+
+This passes the unit tests, but assumes that the string holds only ASCII characters.
+Point out that strings in Python 3 can hold Unicode characters that 
+have an ord() larger than 255.  
+
+```python
+    print('\U00000394')
+    print(ord('\U00000394'))
+```
+
 #### string count() method
 
 A third way to look directly at letter counts is to use the string count() method:
