@@ -85,23 +85,9 @@ def is_isogram(string):
         return count == 1
 ```
 
-#### Sets
+##### Defective Solution using Handcrafted Counters 
 
-A similar idea can be implemented with sets:
-
-```python
-import string
-import collections
-
-def is_isogram(string):
-    string = string.lower()
-
-    word = [ch for ch in string if ch.isalpha()]
-
-    return len(set(word)) == len(word)
-```
-
-The solution might define their own sets:
+The solution might define their own counters:
 
 ```python
 def is_isogram(string):
@@ -118,11 +104,31 @@ def is_isogram(string):
 
 This passes the unit tests, but assumes that the string holds only ASCII characters.
 Point out that strings in Python 3 can hold Unicode characters that 
-have an ord() larger than 255.  
+have an ord() larger than 255.
 
 ```python
     print('\U00000394')
     print(ord('\U00000394'))
+```
+
+Our first solution looked to the right for duplicates among the remaining characters: 
+this one looks to the left at the characters we have already seen.
+This idiom is best rewritten using sets or lists to hold the previous characters.
+
+#### Sets
+
+A similar idea can be implemented with sets:
+
+```python
+import string
+import collections
+
+def is_isogram(string):
+    string = string.lower()
+
+    word = [ch for ch in string if ch.isalpha()]
+
+    return len(set(word)) == len(word)
 ```
 
 #### string count() method
