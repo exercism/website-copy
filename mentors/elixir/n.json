@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I started using elixir around 2016 and we have been using it in our company since 2017. I love the language for how well it translates what I want to do into code."
+  },
+  {
+    "github_username": "neenjaw",
+    "name": "Tim Austin",
+    "link_text": "my blog",
+    "link_url": "https://www.neenjaw.com",
+    "avatar_url": null,
+    "bio": "Was interested in elixir for a long time, but didn't really start to look into it until 2018.  Started the track, and enjoyed it so much I decided to help others enjoy their time learning it aswell."
   }
 ]
