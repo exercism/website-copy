@@ -70,11 +70,6 @@ public class Clock
         if (obj.GetType() != this.GetType()) return false;
         return Equals((Clock) obj);
     }
-
-    public override int GetHashCode()
-    {
-        return timeInMinutes;
-    }
 }
 ```
 
