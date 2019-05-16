@@ -38,5 +38,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love learning to the point I got degrees in how/why people think the way they do and how to teach them. Then I learned how to program and have been trying to teach others as often as I can. Hope I can help."
+  },
+    {
+    "github_username": "ceoehis",
+    "name": "Celestine Ekoh-Ordan",
+    "link_text": "Personal Website",
+    "link_url": "https://blog.ekohordan.com",
+    "avatar_url": null,
+    "bio": "I am a full stack software developer with experience primarily in the JavaScript stack."
   }
 ]
