@@ -1,3 +1,5 @@
+_This page deals with the various individual tasks that the team are focused on. Before reading this, you may be interested in reading about [Exercism's Strategy](/strategy) to place the items below in context._
+
 This is a rough roadmap for Exercism. It is split into our short term goals (<12months) and our longer-term goals, which will be dependant on the success of our short-term objectives. Each section is split roughly in priority order, and sections are ordered as per our general priorities.
 
 ## Short-term goals

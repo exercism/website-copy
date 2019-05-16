@@ -45,7 +45,7 @@ end
 ### Talking points
 - [Implicit returns](https://franzejr.github.io/best-ruby/idiomatic_ruby/implicit_return.html)
 - Default values
-- String interpolation (http://ruby-for-beginners.rubymonstas.org/bonus/string_interpolation.html), but a student may also use string templates via `format`, `sprintf` or `%`. You may mention the alternative technique (templates when interpolation is used, and vice versa), always prefer either over string concatination.
+- [String interpolation](http://ruby-for-beginners.rubymonstas.org/bonus/string_interpolation.html), but a student may also use string templates via `format`, `sprintf` or `%`. You may mention the alternative technique (templates when interpolation is used, and vice versa), always prefer either over string concatination.
 - Style preferences based on [community style guide via rubocop](https://github.com/rubocop-hq/ruby-style-guide): This exercise is a good opportunity to talk about style conventions like indentation, parameter parenthesis in method declarations and removing redundant comments. Given the place in the curriculum, it may be worth not going too deep, and to not addressing points that are controversial or personal preference.
 
 ### Mentoring notes

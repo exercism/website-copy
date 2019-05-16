@@ -1,5 +1,7 @@
 ### Reasonable solutions
 
+- the first solution uses a mutable string
+
 ```ruby
 module Raindrops
   def self.convert(integer)
@@ -13,15 +15,34 @@ module Raindrops
 end
 ```
 
-This is the optimal solution:
+- using `each_with_object` over the rules object, then add them if they pass a test
+
+```ruby
+module Raindrops
+  RULES = {
+    3 => 'Pling',
+    5 => 'Plang',
+    7 => 'Plong'
+  }
+
+  def self.convert(integer)
+    sounds = RULES.each_with_object(+'') do |(divisor, sound), result|
+      result << sound if (integer % divisor).zero?
+    end
+    sounds.empty? ? integer.to_s : sounds
+  end
+end
+```
+
+- this solution selects the correct rules by testing them and then joining the selected rules
 
 ```ruby
 module Raindrops
   SOUNDS = {3 => "Pling", 5 => "Plang", 7 => "Plong"}.freeze
 
   def self.convert(num)
-    rhythm = SOUNDS.select{|key, sound| num % key == 0}.values
-    rhythm.empty? ? num.to_s : rhythm.join
+    rhythm = SOUNDS.select{|key, _| (num % key).zero? }
+    rhythm.empty? ? num.to_s : rhythm.values.join
   end
 end
 ```

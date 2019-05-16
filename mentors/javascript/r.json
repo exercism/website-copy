@@ -22,5 +22,13 @@
     "link_url": "http://ryoia.github.io",
     "avatar_url": null,
     "bio": "I am a front-end developer who has been using vanilla JavaScript for the past three years. I would love to help others on this track."
+  },
+  {
+    "github_username": "rosebeats",
+    "name": "Sophie Doiron",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a CS/Physics university student.  My favorite CS related topic is AI.  I've been programming with JavaScript off and on for about 7 years now and I'm excited to help others with the language!"
   }
 ]

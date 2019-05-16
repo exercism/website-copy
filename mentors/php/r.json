@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "ricpelo",
+    "name": "Ricardo Pérez",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "PHP teacher (among other things) in a Computer Science course in a High School from Andalusia, Spain."
+  },
+  {
+    "github_username": "roma-glushko",
+    "name": "Roman Glushko",
+    "link_text": "LinkedIn",
+    "link_url": "https://www.linkedin.com/in/glushko-roman/",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/9402690",
+    "bio ": "Beyond 4 years of experience in Magento/PHP development and E-commerce 🚀 Passion to new technologies and Data Science. Coding on Python and Rust for fun 🎉"
+  }
+]
