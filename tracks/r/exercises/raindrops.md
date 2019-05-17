@@ -15,7 +15,7 @@ raindrops <- function(number) {
   if (number %% 7 == 0)
     rain <- append(rain, "Plong")
   
-  if (!(number %% 3 == 0 | number %% 5 == 0 | number %% 7 == 0)) # alternatively: if(rain == "")
+  if (rain == "") # alternatively: !(number %% 3 == 0 | number %% 5 == 0 | number %% 7 == 0)
     return(as.character(number))
   
   paste(rain, collapse = "")
