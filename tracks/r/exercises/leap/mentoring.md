@@ -28,10 +28,3 @@ _looks_ right, but will force a year like 999 to be checked for being a multiple
 ### Talking points
 
 It's probably too early in the track to introduce the concept of vectorized functions, but worth mentioning here in case it comes up. Using `&&` instead of `&` and `||` instead of `|` is still correct if the input year can be assumed to be a scalar. But use of the vectorized `&` and `|` is preferable since this will yield a vectorized solution.
-
-
-### Concepts
-
-- Booleans
-- Integers
-- Logic
