@@ -56,9 +56,3 @@ anagram <- function(subject, candidates) {
 ```
 
 ... The use of `grepl()` is encouraged for its performance benefits. Otherwise, most of the same logic is applied in this solution as above.
-
-
-### Concepts
-
-- Filtering
-- Strings
