@@ -40,9 +40,3 @@ This exercise can be the starting point of using the [tidyverse](https://tidyver
 `strsplit(…)` [`%>%`](https://magrittr.tidyverse.org) `unlist()` avoids function nesting
 or intermediate variables. This makes longer code blocks (e.g. of data analysis
 pipelines) more readable, but decreases performance.
-
-
-### Concepts
-
-- Filtering
-- Strings
