@@ -55,9 +55,3 @@ bob <- function(input) {
   responses[tests][1]
 }
 ```
-
-
-### Concepts
-
-- Control flow conditionals
-- Strings
