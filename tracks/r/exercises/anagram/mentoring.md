@@ -23,7 +23,7 @@ anagram <- function(subject, candidates) {
 }
 ```
 
-The learning goal here is common string operations and checking conditions on whole objects vs. on a per item level.
+The learning goal here is common string operations and checking conditions on strings vs. on a per character level.
 
 
 ### Common suggestions
