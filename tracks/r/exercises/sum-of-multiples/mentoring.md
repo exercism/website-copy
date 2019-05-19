@@ -32,9 +32,3 @@ microbenchmark(
   sum_of_multiples_new(1:100, 10^4)
 )
 ```
-
-
-### Concepts
-
-- Lists
-- Math
