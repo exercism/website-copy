@@ -69,9 +69,3 @@ raindrops <- function(n) {
   paste(c("Pling", "Plang", "Plong", n)[boo], collapse = "")
 }
 ```
-
-
-### Concepts
-
-- Filtering
-- Text formatting
