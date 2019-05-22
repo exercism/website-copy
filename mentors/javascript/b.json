@@ -46,5 +46,13 @@
     "link_url": "https://michael.plotke.me/",
     "avatar_url": null,
     "bio": "I'm paid to write JavaScript. I mostly enjoy it. I also enjoy teaching. Exercism is a nice convergence."
+  },
+  {
+    "github_username": "bpk68",
+    "name": "Rob Kendal",
+    "link_text": null,
+    "link_url": "https://robkendal.co.uk",
+    "avatar_url": null,
+    "bio": "I have 15+ years development experience and I love to learn and share knowledge. Anything front-end, JavaScript and React!"
   }
 ]
