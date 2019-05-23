@@ -54,5 +54,13 @@
     "link_url": "https://robkendal.co.uk",
     "avatar_url": null,
     "bio": "I have 15+ years development experience and I love to learn and share knowledge. Anything front-end, JavaScript and React!"
+  },
+  {
+    "github_username": "bintay",
+    "name": "Ben Taylor",
+    "link_text": "bentaylor.me",
+    "link_url": "https://bentaylor.me/",
+    "avatar_url": null,
+    "bio": "I love tinkering, making cool things, and teaching. JS Developer for over 7 years, learner & teacher forever."
   }
 ]
