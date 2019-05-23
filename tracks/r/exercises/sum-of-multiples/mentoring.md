@@ -14,10 +14,10 @@ sum_of_multiples <- function(factors, limit) {
 
 - Point learners who use a `for` loop to the alternative `apply` or `map` function families
     + For example, explained by one of these:
-        * [How to Avoid For Loop in R](https://statcompute.wordpress.com/2018/09/15/how-to-avoid-for-loop-in-r/)
-        * [For loops vs. functionals](https://r4ds.had.co.nz/iteration.html#for-loops-vs.functionals)
-        * [Happy R Users Purrr](https://www.rstudio.com/resources/videos/happy-r-users-purrr-tutorial/)
-        * [What is Vectorization?](https://www.datacamp.com/community/tutorials/tutorial-on-loops-in-r#the-alternatives-to-loops-in-r)
+        * `https://statcompute.wordpress.com/2018/09/15/how-to-avoid-for-loop-in-r/`
+        * `https://r4ds.had.co.nz/iteration.html#for-loops-vs.functionals`
+        * `https://www.rstudio.com/resources/videos/happy-r-users-purrr-tutorial/`
+        * `https://www.datacamp.com/community/tutorials/tutorial-on-loops-in-r#the-alternatives-to-loops-in-r`
     + Performance benefit esp. for larger input vectors.
     + The code's intention can be expressed better by a better `func` name.
 
