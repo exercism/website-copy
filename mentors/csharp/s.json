@@ -5,8 +5,7 @@
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
-    "bio":
-      "I use C# for all my IoT projects and my native apps (Xamarin). It has a very big ecosystem and frameworks like ASP.NET Core can be used as a very good alternative to Node.js."
+    "bio": "I use C# for all my IoT projects and my native apps (Xamarin). It has a very big ecosystem and frameworks like ASP.NET Core can be used as a very good alternative to Node.js."
   },
   {
    "github_username": "sachiwhite",
@@ -14,6 +13,14 @@
    "link_text": null,
    "link_url": null,
    "avatar_url": null,
-   "bio": "Currently, I'm an IT student and a fan of clean code. I use mostly C# for my own projects. "
- }
+   "bio": "Currently, I'm an IT student and a fan of clean code. I use mostly C# for my own projects."
+  },
+  {
+   "github_username": "semsuddin",
+   "name": "Semsudin Sefic",
+   "link_text": null,
+   "link_url": null,
+   "avatar_url": null,
+   "bio": "C# developer with a focus on QA Test Automation as well as Automation in general."
+  }
 ]
