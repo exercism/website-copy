@@ -45,7 +45,7 @@ They can still use
 ```
 
 Do they understand what the tests tell them?
-It may be helpful to take appart one of the assertions:
+It may be helpful to take apart one of the assertions:
 explaining what the test called and what it expected.
 
 ```python
