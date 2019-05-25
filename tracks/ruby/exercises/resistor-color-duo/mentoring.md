@@ -19,7 +19,9 @@ end
 ```
 
 ### General
-This is the very first Array exercise, and the first loop. Introducing `map` is key in this exercise. You, dear mentor, are totally right that using a hash would be a better solution, because it makes the relation between the color and it's value explicit. But we really want people to know how to work with arrays before we ask them to work with hashes. (That will be taken care of later on in the track.) If a student _starts_ with a hash themselves, then by all means go with the hash.
+This is the very first Array exercise, and the first loop. Introducing `map` is key in this exercise. 
+
+You, dear mentor, are totally right that using a hash would be a better solution, because it makes the relation between the color and its value explicit. But we really want people to know how to work with arrays before we ask them to work with hashes. (That will be taken care of later on in the track.) If a student _starts_ with a hash themselves, then by all means go with the hash.
 
 ### Talking points
 - _`%w` notation_: for arrays of strings. Link to [styleguide](https://github.com/rubocop-hq/ruby-style-guide#percent-w)
@@ -31,5 +33,6 @@ This is the very first Array exercise, and the first loop. Introducing `map` is 
 
 ### Changelog
 
-2019 Apr 06 - Renamed to Resistor Color Duo  
+2019 Apr 06 - Renamed to Resistor Color Duo
+
 2019 Mar 10 - First introduced
