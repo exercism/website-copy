@@ -36,7 +36,7 @@ In all these cases: it's recommended to suggest the `String#scan` method and, be
   Using split works, but it forces you to focus on the delimiters (space, -). Ruby has `String#scan`. With `scan` and a regex (Regular Expression), you can catch the parts you need. For instance, `scan` with the regex `/\b[a-zA-Z]/` will catch 'word boundaries' (space, - and more) followed by a word character.
 I use "www.rubular.com" whenever I want to check a regex. 
 > 2) (after they implemented scan)
-You just discovered one of the strengths of Ruby: we can extract certain parts of a string into an array in only one or two operations most of the time. :-)
+  You just discovered one of the strengths of Ruby: we can extract certain parts of a string into an array in only one or two operations most of the time. :-)
 With `scan`, you avoid the multiple iteration. You also got rid of the intermediate variable 'xxx', that you needed to track stuff in your loop. That's called the Accumulator pattern. In general, eliminating the extra variable is considered best practice in Ruby.
 
 ### Passing Regular Expressions
