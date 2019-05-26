@@ -26,7 +26,7 @@ rotate <- function(text, key) {
 
 - The example above could be improved by replacing "magic numbers" like `65` with variables or expressions such as `utf8ToInt('a')` to define the lower and upper-case bounds, and so that future coders know what the number is defining.
 - Make sure that the key cannot exceed the bounds of whatever the student is using as a mapping variable. For example, if the student is simply using the base variable `letters` as a map, ensure that the key is modulo divided (`%%`) by the length of `letters` so index errors don't arise.
-- Point learners towards functions like `utf8ToInt` and `intToUtf8` to make their solution more robust that hard-coded indices.
+- Point learners towards functions like `utf8ToInt` and `intToUtf8` to make their solution more robust than hard-coded indices.
 
 
 ### Talking points

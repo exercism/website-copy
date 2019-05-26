@@ -32,8 +32,8 @@ The learning goal here is to get comfortable with regular-expressions, pattern m
 
 ### Common suggestions
 
-- Readablility can easily be degraded with dense conditional statements, or especially when trying to index on a vector using a Boolean vector (although decent examples exist, like the one below); have students try to make their answer as intelligible as possible.
-- If students are performing the same operations on `input` in their if statments, suggest that they create a variable instead, so the computer doesn't have to do more work than necessary.
+- Readability can easily be degraded with dense conditional statements, or especially when trying to index on a vector using a Boolean vector (although decent examples exist, like the one below); have students try to make their answer as intelligible as possible.
+- If students are performing the same operations on `input` in their if statements, suggest that they create a variable instead, so the computer doesn't have to do more work than necessary.
 - Discuss how R returns values from a function if they exclusively use `return()` commands, or their solution could easily be altered to have no explicit return statements, like above.
 
 
