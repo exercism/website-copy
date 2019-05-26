@@ -5,8 +5,8 @@ This solution is simple and follows a logical thought process.
 ```r
 word_count <- function(input) {
   input_no_punctuation <- gsub('[[:punct:]]+','',input)
-  input_parsed_whitespace <- gsub('\\s+', ' ', trimws(input_no_punctuation))
-  words <- unlist(strsplit(tolower(input_parsed_whitespace), ' '))
+  input_no_whitespace <- gsub('\\s+', ' ', trimws(input_no_punctuation))
+  words <- unlist(strsplit(tolower(input_no_whitespace), ' '))
   return(as.list(table(words)))
 }
 ```
