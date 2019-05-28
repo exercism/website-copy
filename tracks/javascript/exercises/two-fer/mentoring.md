@@ -117,5 +117,5 @@ as well as any other ES6 feature. If this is the **only** comment, approve but g
   You should suggest they always use strict equality, but since the optimal solution doesn't have a conditional, it
   does not apply to this exercise.
 - On exercism there is no need for [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming). This
-  means they should not test if the input is a string, or something else unforseen. The test cases should indicate what
+  means they should not test if the input is a string, or something else unforeseen. The test cases should indicate what
   a function might be called with.
