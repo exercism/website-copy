@@ -83,7 +83,7 @@ public class Clock
 - The clock can be implemented as a struct or a class.  The main practical advantage of the struct
  in this exercise is that equality is handled automatically for the struct
 - To pad the string "00" and "D2" (where D stands for decimal) are equally valid
-- If the student has modified any of fields of the clock (as opposed to simply creating a new clock) then it is important to point out that this is not compatible with `GetHashCode()` which requires all fields used in its calculation to be immutable.
+- If the student has modified any of the fields of the clock (as opposed to simply creating a new clock), then it is important to point out that this is not compatible with `GetHashCode()` which requires all fields used in its calculation to be immutable.
 
 ### Talking points
 
