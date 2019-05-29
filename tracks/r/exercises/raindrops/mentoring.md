@@ -24,17 +24,15 @@ raindrops <- function(number) {
 
 The learning goal here is to avoid unnecessary conversion of inputs as strings and to account for inputs that are factors of more than one if-statement (e.g. 15).
 
-
 ### Common suggestions
 
 - Avoid a string transformation of the input at the beginning.
 - Go through the task iteratively to account for all possible factors.
 - For-loops impact the readability here a bit, I think, so one could point learners to alternatives. 
 
-
 ### Talking points
 
-- More advanced learners might prefer to avoid several if conditions could be pointed to an alternative with an if-else statement:
+More advanced learners might prefer to avoid several if conditions could be pointed to an alternative with an if-else statement:
 
 ```r
 raindrops <- function(number) {
@@ -47,7 +45,7 @@ raindrops <- function(number) {
 }
 ```
 
-- Or an elegant solution that directly compares the input with its divisors in the `paste()` command:
+...or an elegant solution that directly compares the input with its divisors in the `paste()` command:
 
 ```r
 raindrops <- function(number) {
@@ -60,7 +58,7 @@ raindrops <- function(number) {
 }
 ```
 
-- Finally, `n` can be added to the `sounds` vector and it's value is only pasted if all other conditions are `FALSE`.
+...finally, `n` can be added to the `sounds` vector and it's value is only pasted if all other conditions are `FALSE`.
 
 ```r
 raindrops <- function(n) {
