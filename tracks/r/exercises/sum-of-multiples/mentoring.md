@@ -9,7 +9,6 @@ sum_of_multiples <- function(factors, limit) {
 }
 ```
 
-
 ### Common suggestions
 
 - Point learners who use a `for` loop to the alternative `apply` or `map` function families
@@ -24,7 +23,7 @@ sum_of_multiples <- function(factors, limit) {
 
 ### Talking points
 
-- `microbenchmark`ing can be used to compare the performance of different function variants, which in turn should support the argument that a `for` loop falls behind for large vectors.
+`microbenchmark` can be used to compare the performance of different function variants, which in turn should support the argument that a `for` loop falls behind for large vectors.
 
 ```r
 microbenchmark(
