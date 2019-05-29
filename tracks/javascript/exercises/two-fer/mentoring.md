@@ -48,8 +48,7 @@ conditional _and_ use a template literal.
 
     Hi there {name},
 
-    Congrats on submitting your first exercise for the JavaScript
-    track. I have a few comments for you:
+    Congrats on submitting your first exercise for the JavaScript track. I have a few comments for you:
 
     - In Javascript, the result of an expression can be returned!
       ```javascript
