@@ -11,13 +11,11 @@ word_count <- function(input) {
 }
 ```
 
-
 ### Common suggestions
 
 - For general help with regular-expressions, `[regex](https://regexr.com/)` is a wonderful website for visualizing what a pattern is capturing.
 - `strsplit` is able to use patterns just like `gsub` and `grep`. Using `'\\s+'` in the call to `strsplit` can save the call to `gsub` above it.
 - If there was a test for words separated by commas, e.g. `"one,two,three"`, it'd be best to have a solution that could handle it. Don't be afraid to think about more tests that _could_ be accounted for.
-
 
 ### Talking points
 
