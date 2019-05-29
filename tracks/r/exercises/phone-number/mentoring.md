@@ -25,16 +25,15 @@ parse_phone_number <- function(number_string) {
 }
 ```
 
-
 ### Common suggestions
 
-- Just like with Word Count, `[regex](https://regexr.com/)` is a great resource for visualizing regular expression pattern matching.
+- Same as the Word Count exercise, `[regex](https://regexr.com/)` is a great resource for visualizing regular expression pattern matching.
 - Emphasize the `grep`, `gsub`, and `gregexpr` family of functions. As with the solution above, most of the conditional logic can be replaced with keen pattern matching.
 
 
 ### Talking points
 
-- A solution heavy on pattern-matching might look like this:
+A solution heavy on pattern-matching might look like this:
 ```r
 parse_phone_number <- function(number_string) {
   only_numbers <- gsub("\\D" , "", number_string)
@@ -48,7 +47,7 @@ parse_phone_number <- function(number_string) {
 }
 ```
 
-- But beware! A complex pattern can start to hinder readability.
+But beware! A complex pattern can start to hinder readability.
 ```r
 parse_phone_number <- function(number_string) {
   digits <- gsub("[^0-9]", "", number_string)
