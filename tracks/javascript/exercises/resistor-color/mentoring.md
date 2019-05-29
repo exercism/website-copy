@@ -15,6 +15,32 @@ export const colorCode = color => COLORS.indexOf(color)
 A student may use a function declaration instead of an arrow function expression, as well as using an explicit `return`
 instead of an implict return.
 
+A student may use an object to store color names instead of an array because they might be taking into consideration time complexity. Reach out to the student to ask if this is the case.
+A pretty solid guess about this is when the student is using [`Object#keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) to return the list of colors as an array.
+
+The solution should look something similar to this:
+
+```javascript
+const colorsCode = {
+    'black': 0,
+    'brown': 1,
+    'red': 2,
+    'orange': 3,
+    'yellow': 4,
+    'green': 5,
+    'blue': 6,
+    'violet': 7,
+    'grey': 8,
+    'white': 9
+}
+
+export const COLORS = Object.keys(colorsCode)
+
+export function colorCode(color) {
+    return colorsCode[color]
+}
+```
+
 ### Common suggestions
 
 If the solution does not look like the reasonable solution, do _not_ approve it. Here are a few common suggestions based
