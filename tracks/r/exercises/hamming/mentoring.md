@@ -15,7 +15,6 @@ hamming <- function(strand1, strand2) {
 }
 ```
 
-
 ### Common suggestions
 
 - Point learners who use _many_ intermediate variables, or even a dataframe, or an accumulator(-like) pattern …
@@ -32,7 +31,6 @@ used on the result of the vector comparison directly.
 but this also shifts the burden of formulating a useful message to the developer.
 `stopifnot(… == …)` is more compact, and in case of an error, prints the exact comparison
 and its result.
-
 
 ### Talking points
 
