@@ -1,6 +1,7 @@
 ### Reasonable solutions
 
 #### Using the `ordinal()` method to check the bits
+
 ```java
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,7 +27,7 @@ class HandshakeCalculator {
     
     // NOTE: there are multiple ways to check if the bit is set
     boolean bitIsSet(int number, int position) {
-        return ((number >> position) & 0x1) == 1;
+        return ((number >> position) & 1) == 1;
     }
 }
 ```
@@ -36,10 +37,13 @@ class HandshakeCalculator {
 `Signal.java`:
 ```java
 enum Signal {
-    WINK, DOUBLE_BLINK, CLOSE_YOUR_EYES, JUMP, REVERSE;
+    WINK(1), DOUBLE_BLINK(1 << 1), CLOSE_YOUR_EYES(1 << 2), JUMP(1 << 3), REVERSE(1 << 4);
 
-    boolean isBitSet(int number) {
-        return ((number >> ordinal()) & 0x1) == 1;
+    private final int bitmask;
+    Signal(int bitmask) { this.bitmask = bitmask; }
+
+    boolean isPresent(int number) {
+        return (number & bitmask) == bitmask;
     }
 }
 ```
@@ -47,31 +51,23 @@ enum Signal {
 `HandshakeCalculator.java`
 ```java
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 class HandshakeCalculator {
 
     List<Signal> calculateHandshake(int number) {
-        List<Signal> result = new ArrayList<Signal>();
+        List<Signal> handshake = new ArrayList<Signal>();
 
         for (Signal signal : Signal.values()) {
-            if (signal.isBitSet(number)) {
-                if (signal == Signal.REVERSE) {
-                    Collections.reverse(result);
-                } else {
-                    result.add(signal);
-                }
+            if (signal.isPresent(number)) {
+                handshake.add(signal);
             }
         }
-        return result;
+        if (handshake.remove(Signal.REVERSE)) {
+            Collections.reverse(handshake);
+        }
+        return handshake;
     }
 }
 ```
-
-### Common suggestions
-
-- TODO: add some common suggestions here
-
-### Talking points
-
-- TODO: additional suggestions
