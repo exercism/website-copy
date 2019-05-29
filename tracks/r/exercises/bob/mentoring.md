@@ -29,17 +29,16 @@ letters_only <- function(string) { gsub("[^a-zA-Z]", "", string) }
 
 The learning goal here is to get comfortable with regular-expressions, pattern matching, and common string operations. Secondarily, having students check multiple conditions in an orderly fashion bolsters their conditional flow control.
 
-
 ### Common suggestions
 
-- Readability can easily be degraded with dense conditional statements, or especially when trying to index on a vector using a Boolean vector (although decent examples exist, like the one below); have students try to make their answer as intelligible as possible.
+- If a student uses dense conditional statements, readability can easily be degraded.
+- If a student uses a Boolean vector for indexing, so too can readability decrease (although decent examples exist, like the one below). Have students try to make their answer as intelligible as possible.
 - If students are performing the same operations on `input` in their if statements, suggest that they create a variable instead, so the computer doesn't have to do more work than necessary.
-- Discuss how R returns values from a function if they exclusively use `return()` commands, or their solution could easily be altered to have no explicit return statements, like above.
-
+- If they use explicit `return` commands, discuss how R returns values from a function and suggest they remove the explicit returns.
 
 ### Talking points
 
-- An advanced solution might look like one below, where indexing is used instead of if statements. Notice that readability is decreased, but essentially the ordering of the conditions is identical.
+An advanced solution might look like one below, where indexing is used instead of if statements. Notice that readability is decreased, but the ordering of the conditions checked is identical.
 
 ```r
 responses <- c("Fine. Be that way!", "Calm down, I know what I'm doing!",
