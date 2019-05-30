@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I worked with C++ during my first job as a developer 4 years ago and continued to use it in my scientific thesis. I love the power of this language and want to further refine my mastery over its various uses."
-  }    
+  },
+  {
+    "github_username": "Alexhans",
+    "name": "Alex Guglielmone Nemi (Alex Hans)",
+    "link_text": "The Living Deadline - Alex Hans Blog",
+    "link_url": "https://alexhans.github.io/",
+    "avatar_url": null,
+    "bio": "With 10+ years in software/product development, I love to be in a constant learning state and to help others in their journeys.  Mentoring on a site that focuses on encouraging critical skills and idiomatic code is an extremely enriching experience."
+  }
 ]
