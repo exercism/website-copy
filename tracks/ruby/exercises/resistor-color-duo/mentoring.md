@@ -1,6 +1,7 @@
 Resistor Color Duo is a side exercise, unlocked by Hello World (meaning this _may_ be the first time they get mentoring!). 
 
 ### New Concepts
+
 Array, Array#index, `map`, Constant, chaining methods
 
 ### Minimal solution for approval
