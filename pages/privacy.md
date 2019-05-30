@@ -1,7 +1,7 @@
 
 # Privacy Policy
 
-Last Revised: July 2018
+Last Revised: April 2019
 
 ## Overview
 
@@ -12,7 +12,7 @@ Our platform comprises of a web site is located at https://exercism.io (and asso
 We’re deeply committed to providing you with a safe and secure online platform for you to develop your
 software coding skills.
 
-Exercism is run and managed by Exercism Inc ("We", "Us"), a corporation of Delaware. You might also want to read:
+Exercism is run and managed by Exercism ("We", "Us"), a not-profit-company registered in the UK with Company Number 11733062. You might also want to read:
 
 - Our [Terms of Service](https://exercism.io/terms-of-service)
 - Our community [Code of Conduct](https://exercism.io/code-of-conduct)

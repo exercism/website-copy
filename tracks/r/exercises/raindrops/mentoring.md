@@ -1,6 +1,6 @@
-### Possible solution
+### Reasonable solution
 
-This solution is very intuitive and follows step-by-step the instructions in the exercise
+This solution is very intuitive and follows step-by-step the instructions in the exercise:
 
 ```r
 raindrops <- function(number) {
@@ -20,20 +20,19 @@ raindrops <- function(number) {
   
   paste(rain, collapse = "")
 }
-
 ```
 
-The learning goal here is (I guess) to avoid unnecessary conversion of inputs as strings and to account for inputs that are factors of more than one if-statement (e.g. 15).
+The learning goal here is to avoid unnecessary conversion of inputs as strings and to account for inputs that are factors of more than one if-statement (e.g. 15).
 
 ### Common suggestions
 
-- avoid a string transformation of the input at the beginning
-- go through the task iteratively to account for all possible factors
-- for-loops impact the readability here a bit, I think, so one could point learners to alternatives 
+- Avoid a string transformation of the input at the beginning.
+- Go through the task iteratively to account for all possible factors.
+- For-loops impact the readability here a bit, I think, so one could point learners to alternatives. 
 
 ### Talking points
 
-- more advanced learners might prefer to avoid several if conditions could be pointed to an alternative with an if-else statement:
+More advanced learners might prefer to avoid several if conditions could be pointed to an alternative with an if-else statement:
 
 ```r
 raindrops <- function(number) {
@@ -45,16 +44,26 @@ raindrops <- function(number) {
   }
 }
 ```
-- or an elegant solution that directly compares the input with its divisors in the paste0() command:
+
+Or an elegant solution that directly compares the input with its divisors in the `paste()` command:
 
 ```r
 raindrops <- function(number) {
-  sounds<-c('Pling', 'Plang', 'Plong')
-  divisors<-c(3,5,7)
+  sounds <- c('Pling', 'Plang', 'Plong')
+  divisors <- c(3, 5, 7)
   
-  rain <- paste0(sounds[(number %% divisors) == 0], collapse='')
+  rain <- paste(sounds[(number %% divisors) == 0], collapse='')
   
-  if(nchar(rain) > 0) rain else as.character(number)
+  if (nchar(rain) > 0) { rain } else { as.character(number) }
 }
 ```
 
+Finally, `n` can be added to the `sounds` vector and it's value is only pasted if all other conditions are `FALSE`.
+
+```r
+raindrops <- function(n) {
+  boo <- !(n %% c(3, 5, 7))
+  boo <- c(boo, all(!boo))
+  paste(c("Pling", "Plang", "Plong", n)[boo], collapse = "")
+}
+```

@@ -10,6 +10,9 @@ A solution with a single loop that uses a lookup table to keep track of letters 
 
 bool is_isogram(const char phrase[])
 {
+  if (phrase == NULL)
+    return true;
+  
   size_t phraseLength = strlen(phrase);
   bool used[26] = { false };
   size_t usedIndex;

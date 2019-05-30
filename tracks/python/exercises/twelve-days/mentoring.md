@@ -121,7 +121,7 @@ the introduction.
 
 Encourage the student to address the challenges of
 dealing with the raw material.
-You can point out that the are storing the Pear Tree
+You can point out that they are storing the Pear Tree
 twelve times, and challenge them to store it only once.
 
 The next solution also prepares everything, but 

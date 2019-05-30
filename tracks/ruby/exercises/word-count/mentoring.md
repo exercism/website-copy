@@ -56,7 +56,7 @@ http://www.rubular.com/
 ### Research Notes 
 Passing regular expressions:
 - `/\b[\w']+\b/`
-- `/\b[[:alnum]']+\b/`
+- `/\b[[:alnum:]']+\b/`
 - `/\b[[:word:]']+\b/`
 
 
