@@ -9,18 +9,28 @@ export const COLORS = [
   'grey', 'white',
 ];
 
-export const colorCode = color => COLORS.indexOf(color)
+export const colorCode = color => COLORS.indexOf(color);
 ```
 
 A student may use a function declaration instead of an arrow function expression, as well as using an explicit `return`
 instead of an implict return.
+
+Using the [`Array#findIndex`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) method is also acceptable for the `colorCode()` method but remind the student that [`Array#indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) only requires a simple string as the argument whereas `Array#findIndex` requires a function to determine the index.
+
+```js
+export const colorCode = color => COLORS.findIndex(currentColor => currentColor === color);
+
+// vs
+
+export const colorCode = color => COLORS.indexOf(color);
+```
 
 ### Common suggestions
 
 If the solution does not look like the reasonable solution, do _not_ approve it. Here are a few common suggestions based
 on student's solutions.
 
-#### Manualy doing `indexOf`
+#### Manually doing `indexOf`
 
 A student may manually try to find the index of a color:
 
