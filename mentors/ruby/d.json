@@ -29,5 +29,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Ruby was the starting point for me learning to program. It still is my go-to-language for web applications and my knowledge made it easier for me to learn new languages I use at work."
+  },
+  {
+    "github_username": "donatoaz",
+    "name": "Donato Azevedo",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Ruby caught my attention due to its idiomatic constructs and powerful metaprogramming capabilities. I've been working with ruby for half a decade and am trully in love with how elegant the code is. I would very much like to evangelize and enfuse in others this passion for ruby."
   }
 ]
