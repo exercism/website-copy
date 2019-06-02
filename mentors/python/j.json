@@ -25,12 +25,12 @@
     "bio": "For years, Python is my default language of choice when solving computing problems in general. I'm a member of Python Venezuela."
   },
   {
-     "github_username": "jeffdparker",
-     "name": "Jeff Parker",
-     "link_text": "Game face",
-     "link_url": "https://www.extension.harvard.edu/faculty-directory/jeff-parker",
-     "avatar_url": null,
-     "bio": "I enjoy the simplicity of Python."
+    "github_username": "jeffdparker",
+    "name": "Jeff Parker",
+    "link_text": "Game face",
+    "link_url": "https://www.extension.harvard.edu/faculty-directory/jeff-parker",
+    "avatar_url": null,
+    "bio": "I enjoy the simplicity of Python."
    },
   {
     "github_username": "johncrickett",
@@ -71,5 +71,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "A software engineer of 20yrs, I've written production code in Perl, Ruby, and Python, among other languages. Python is my favorite interpreted language."
+  },
+  {
+    "github_username": "joaoluizn",
+    "name": "João Luiz",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a CS student, Developer, that loves to use Python to solve problems and build things. I like helping others enhance their quality of life through knowledge sharing like programming skills, automation, and business stuff."
   }
 ]
