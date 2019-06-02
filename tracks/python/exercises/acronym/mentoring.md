@@ -32,12 +32,12 @@ def abbreviate(words):
 
     word_list = words.split(' ')
     
-    tla = ""
+    acronym = ""
     for word in word_list:
         if word:
-            tla = tla + word[0].upper()
+            acronym = acronym + word[0].upper()
 
-    return tla
+    return acronym
 ```
 
 The student should be told about building lists and join() them.
@@ -51,12 +51,12 @@ This version still uses string addition.
 import re
   
 def abbreviate(words):
-    result = ''
+    acronym = ""
 
     for word in re.findall(r"[^\W_]+[']?[^\W_]*", words):
-        result += word[0].upper()
+        acronym += word[0].upper()
 
-    return result
+    return acronym
 ```
 
 ### Common Suggestions
@@ -67,7 +67,7 @@ special place as a pseudo-space.
 
 As noted above, assembling a string character by character is slow.
 
-Once string addition is replace with list joining(), this
+Once string addition is replaced with list joining(), it
 is a natural place for a List Comprehension.
 
 It would be better to call the string method upper() only once, 
