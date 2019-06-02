@@ -68,7 +68,7 @@ experience.
 #### Time Complexity
 
 A student may use an `Object` instead of an `Array` to store color names with the intention to optimize the execution time.
-This is **not** cause for dissaproval but it's a good opportunity to discuss with the student about not to prematurely optimize code.
+This is **not** cause for disaproval but it's a good opportunity to discuss with the student about not to prematurely optimize code.
 
 You can check (and share) the performance on both solutions following this [jsPerf](https://jsperf.com/resistor-color-perf). The performance is barely different (~4%) for the size of data on this exercise.
 
