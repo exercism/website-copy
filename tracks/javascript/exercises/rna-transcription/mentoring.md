@@ -50,7 +50,7 @@ function invalidInput() {
 /*...*/
 ```
 
-Since the error handling is now unnessary, it will be considered defensive programming. The
+Since the error handling is now unnecessary, it will be considered defensive programming. The
 student does _not_ need to validate the input, as the tests no longer ask for it.
 
 ### Common suggestions
