@@ -29,9 +29,6 @@ isLeapYear year
   | year `rem` 100 /= 0 = True
   | year `rem` 400 /= 0 = False
   | otherwise           = True
-
-isDivisibleBy :: Integer -> Integer -> Bool
-isDivisibleBy x n = x `rem` n == 0
 ```
 
 This solution evaluates the three conditions in an optimal order.
