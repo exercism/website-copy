@@ -36,6 +36,12 @@ isDivisibleBy x n = x `rem` n == 0
 
 This solution evaluates the three conditions in an optimal order.
 
+```haskell
+import Data.Time.Calendar (isLeapYear)
+```
+
+This solution assumes that `time` has been added as a dependency in package.yaml.
+
 ### Common suggestions
 
 - See this as an opportunity to practice using guards to separate the three criteria.
