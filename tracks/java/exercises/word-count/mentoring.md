@@ -25,23 +25,24 @@ class WordCount {
 
 FP solution (Java 11):
 ```java
-import java.util.AbstractMap;
 import java.util.Arrays;
 import java.util.Map;
-import java.util.function.Predicate;
 
+import static java.util.function.Function.identity;
+import static java.util.function.Predicate.not;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.summingInt;
 
 public class WordCount {
+    // Characters ignored in a phrase: space, newline, punctuation !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ with the exception of simple quote
+    private static final String IGNORED_CHARACTERS = "[ \n\\p{Punct}&&[^\\']]";
 
     public Map<String, Integer> phrase(String data) {
-        return Arrays.stream(data.split("[ \n\\p{Punct}&&[^\\']]"))
-                .filter(Predicate.not(String::isEmpty))
+        return Arrays.stream(data.split(IGNORED_CHARACTERS))
+                .filter(not(String::isEmpty))
                 .map(this::stripQuotes)
                 .map(String::toLowerCase)
-                .map(word -> new AbstractMap.SimpleEntry<>(word, 1))
-                .collect(groupingBy(entry -> entry.getKey(), summingInt(entry -> entry.getValue())));
+                .collect(groupingBy(identity(), summingInt(word -> 1)));
     }
 
     private String stripQuotes(String word) {
