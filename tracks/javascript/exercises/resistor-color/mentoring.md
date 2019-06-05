@@ -84,7 +84,12 @@ This is **not** cause for disaproval but it's a good opportunity to discuss with
 
 You can check (and share) the performance on both solutions following this [jsPerf](https://jsperf.com/resistor-color-perf). The performance is barely different (~4%) for the size of data on this exercise.
 
-You should ask the student to justify and discuss their decision; make them aware that the exercise is intentionally easy and straighforward. Also make sure they see the value of writting code *in context*, in other words, **not** to over engineer
+You should ask the student to justify their decision; these are some discussion points you can use:
+
+* O(N) for small numbers doesn't matter at all.
+* Solutions with hash tables instead simple arrays comes with additional costs: Maintenance and increased complexity.
+* Learn about the value of writting code *in context*, in other words, **not** to over engineer to soon.
+* The exercise is **intentionally** easy and straighforward.
 
 The solution proposed by the student could following these lines:
 
