@@ -86,7 +86,7 @@ You can check (and share) the performance on both solutions following this [jsPe
 
 You should ask the student to justify their decision; these are some discussion points you can use:
 
-* O(N) for small numbers doesn't matter at all.
+* O(N) for small numbers doesn't matter at all, in terms of execution speed.
 * Solutions with hash tables instead simple arrays comes with additional costs: Maintenance and increased complexity.
 * Learn about the value of writting code *in context*, in other words, **not** to over engineer to soon.
 * The exercise is **intentionally** easy and straighforward.
