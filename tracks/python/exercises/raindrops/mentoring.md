@@ -26,12 +26,12 @@ def raindrops(val: int) -> str:
     return result
 ```
 
-#### Solutions That Need Work
+### Solutions That Need Work
 
-Linear testing
+#### Linear testing
 
 ```python
-def raindrops(number) 
+def raindrops(number): 
   
     result = ''
     if number % 3 == 0:
@@ -47,7 +47,7 @@ def raindrops(number)
     return result
 ```
 
-The solution contains
+This solution contains
 a sequence of if statements, rather than iterating
 over some data structure that holds the pairs.
 
@@ -91,15 +91,17 @@ def raindrops(val: int) -> str:
 ```
 
 The Dictionary seems like a step forward, but there are three arguments
-against it. First, the keys to an ordinary dictionary are not
+against it. 
+
+1. The keys to an ordinary dictionary are not
 guaranteed to be presented in any particular order. Of course,
 that can be addressed. The solution presented sorts the keys.
 
-A stronger argument against it is the memory footprint for a
+2. A stronger argument against it is the memory footprint for a
 dictionary, which takes a great deal of memory to store
 a hash table. Lists or tuples are much smaller.  
 
-Finally, a dictionary provides a map to give
+3. A dictionary provides a map to give
 random access mapping keys to values. 
 However, that is not the prolem we face here:
 we are performing a sequential traverse of the 
@@ -108,9 +110,6 @@ The dictionary isn't well suited for sequential
 access, and the problem doesn't require random access. 
 This problem is not a good showcase for a dictionary.   
 
-### What to look for
-
-Encourage students to use a list comprehension.
 
 #### Many Happy Returns
 
@@ -126,3 +125,9 @@ complex routine: perhaps a return when the data
 is invalid, or the answer is easy to compute. 
 That argument doesn't apply here, so there is
 little reason not to use a single return. 
+
+### What to look for / Talking Points
+
+- Encourage students to use list comprehension.
+- Discourage linear testing and talk about scalability
+- Discourage dictionaries and multiple returns
