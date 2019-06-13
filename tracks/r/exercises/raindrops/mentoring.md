@@ -54,7 +54,7 @@ raindrops <- function(number) {
   
   rain <- paste(sounds[(number %% divisors) == 0], collapse = "")
   
-  if (nchar(rain) > 0) { rain } else { as.character(number) }
+  ifelse(nchar(rain) > 0, yes = rain, no = as.character(number)
 }
 ```
 
