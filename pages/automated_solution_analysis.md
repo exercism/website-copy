@@ -13,6 +13,7 @@ We use a mixture of techniques to analyze solutions, but most centre around stat
 - [Perl5](https://github.com/exercism/perl5-analyzer)
 - [Python](https://github.com/exercism/python-analyzer)
 - [Ruby](https://github.com/exercism/ruby-analyzer)
+- [Rust](https://github.com/exercism/rust-analyzer)
 - [Typescript](https://github.com/exercism/typescript-analyzer)
 
 If you'd like to get involved with any of those analyzers or create your own, please follow instructions in the [README of the Automated Mentoring Support project](https://github.com/exercism/automated-mentoring-support#analyzers)
