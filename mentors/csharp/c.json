@@ -22,5 +22,13 @@
     "link_url": "https://medium.com/@chaisstar19",
     "avatar_url": "https://miro.medium.com/fit/c/128/128/2*yx4DpH7FrYM8PucaZXNrVw.jpeg",
     "bio": "I use C# every day at work for building web application. And I believe, that the best way to learn something new is to teach someone"
+  },
+  {
+    "github_username": "ceddlyburge",
+    "name": "Cedd Burge",
+    "link_text": "Blog Posts",
+    "link_url": "https://medium.com/@cuddlyburger",
+    "avatar_url": "https://github.com/ceddlyburge.png",
+    "bio": "I'm a software lead / architect / manager type thing and I have a strong focus on code quality. C# is an excellent general purpose language, with a rich and mature ecosystem. .Net Core has brought cross platform development and a stronger focus on web development."
   }
 ]
