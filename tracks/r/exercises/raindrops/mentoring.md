@@ -49,10 +49,10 @@ Or an elegant solution that directly compares the input with its divisors in the
 
 ```r
 raindrops <- function(number) {
-  sounds <- c('Pling', 'Plang', 'Plong')
+  sounds <- c("Pling", "Plang", "Plong")
   divisors <- c(3, 5, 7)
   
-  rain <- paste(sounds[(number %% divisors) == 0], collapse='')
+  rain <- paste(sounds[(number %% divisors) == 0], collapse = "")
   
   if (nchar(rain) > 0) { rain } else { as.character(number) }
 }
