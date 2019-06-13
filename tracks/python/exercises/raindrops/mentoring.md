@@ -26,7 +26,7 @@ def raindrops(val: int) -> str:
     return result
 ```
 
-### Solutions That Need Work
+### Common Suggestions
 
 #### Linear testing
 
