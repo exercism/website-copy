@@ -27,7 +27,6 @@ The learning goal here is to avoid unnecessary conversion of inputs as strings a
 ### Common suggestions
 
 - Avoid a string transformation of the input at the beginning.
-- Go through the task iteratively to account for all possible factors.
 - For-loops impact the readability here a bit, I think, so one could point learners to alternatives. 
 
 ### Talking points
