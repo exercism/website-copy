@@ -58,7 +58,7 @@ This exercise can be solved without regular expressions and a student could be e
 
 #### Hint functions for the truely stuck
 
-- https://hexdocs.pm/elixir/String.html#trim/1
+- [`String#trim/1`](https://hexdocs.pm/elixir/String.html#trim/1)
 - https://hexdocs.pm/elixir/String.html#ends_with?/2
 - https://hexdocs.pm/elixir/String.html#downcase/2
 - https://hexdocs.pm/elixir/String.html#upcase/2
