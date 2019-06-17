@@ -17,13 +17,13 @@
     "bio": "I have written JavaScript as part of various JS frameworks, open source projects, and profesionally.  As a MEAN stack developer, JS is my life.  I would identify JS as the language I am most comfortable with at an advanced level.  I also teach JS lessons in webinars from time to time. Please feel free to ask me any questions!"
   },
   {
-  "github_username": "nadaa",
-  "name": "Nada Ghanem",
-  "link_text": null,
-  "link_url": null,
-  "avatar_url": null,
-  "bio": "A continous learner, love technology and nature."
-},
+    "github_username": "nadaa",
+    "name": "Nada Ghanem",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "A continous learner, love technology and nature."
+  },
   {
     "github_username": "nastassiadanilova",
     "name": "Nastassia Danilova",
@@ -31,5 +31,13 @@
     "link_url": "https://github.com/nastassiadanilova",
     "avatar_url": null,
     "bio": "I am very passionate about JavaScript. I have a lot of experience in different sized projects, but I'll never stop to learn something new every day. I'll be happy to help you"
+  },
+  {
+    "github_username": "NoZiL",
+    "name": "Nicolas Zilli",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am here to share experience and knowledge! Let's learn all the languages and paradigms!"
   }
 ]
