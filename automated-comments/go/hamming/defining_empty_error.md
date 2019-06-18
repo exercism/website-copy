@@ -1,0 +1,1 @@
+To define an empty error in Go we usually use the `var err error` notation.

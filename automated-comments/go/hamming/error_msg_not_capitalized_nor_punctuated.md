@@ -1,0 +1,1 @@
+In Go, error strings are often chained together to form a kind of 'breadcrumb trail' reflecting the chain of function calls that led to the error. For this reason it is recommended they are [not capitalized or punctuated](https://github.com/golang/go/wiki/CodeReviewComments#error-strings).

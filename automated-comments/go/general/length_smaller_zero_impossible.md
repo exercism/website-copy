@@ -1,0 +1,1 @@
+You can just check if the `len` is equal to or unequal to `0`. The length is never smaller than zero.
