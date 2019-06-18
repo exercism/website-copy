@@ -1,0 +1,1 @@
+You are using `strings.Split` to split up the `string` into single character `strings`. Have a look at using `runes` (Go's characters) instead.
