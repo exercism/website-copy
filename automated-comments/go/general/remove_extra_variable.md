@@ -1,1 +1,2 @@
-You are declaring the variable `%{name}` and only using it once. You can inline it instead.
+The variable `%{name}` is only used once after declaration. 
+In that case, it is common to inline it, using the definition directly.

@@ -1,1 +1,1 @@
-Community style says that a function in Go should have a comment. For more details, have a look at the comments section below.
+It's idiomatic in Go to provide a comment for each exported function. For more details, see the comments section below.

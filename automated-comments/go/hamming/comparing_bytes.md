@@ -1,4 +1,3 @@
-This solution is comparing `bytes`. While is perfectly fine for this exercise (we only have to deal with ascii characters)
-this would fail if we were to calculate the `hamming distance` of any two strings including `utf-8` characters.
-
-Try it! You can easily add more tests with special characters and see what happens.
+`byte` comparisons are safe when dealing with ASCII characters. 
+As soon as `utf-8` characters are involved, it complicates matters. 
+To explore, add an extra test with special characters to see what happens.

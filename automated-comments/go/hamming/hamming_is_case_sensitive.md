@@ -1,2 +1,2 @@
-The hamming distance is case sensitive. The difference between the strings "a" and "A" should be `1`.
-You can add that test and see if your solution works correctly.
+The hamming distance is case sensitive. To verify this solution against that requirement, 
+add a test that asserts that the difference between `"a"` and `"A"` is `1`.

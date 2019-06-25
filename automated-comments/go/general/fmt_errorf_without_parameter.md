@@ -1,2 +1,2 @@
-If you have a static error message you can use `errors.New` instead of `fmt.Errorf`. It is a lot faster as it does not need
-to parse the message for placeholders.
+Prefer `errors.New` over `fmt.Errorf` for error messages that don't need interpolation, 
+as it avoids parsing the message for placeholders.

@@ -1,4 +1,4 @@
-There is no need to create an extra variable to hold the name. Go does not pass variables by reference. 
-You will therefore not change the `name` variable beyond the scope of the `ShareWith` function.
-
-Go does not have default values. Overwriting the `name` with `you` is setting a default value for `name` if it is empty.
+Creating an extra variable to hold the name is unnecessary, as Go does not pass variables by reference.
+Re-assigning to `name` will not change the value beyond the scope of the `ShareWith` function.
+Since Go does not provide a way of providing default values to function parameters,
+it is a common idiom in Go to re-assign the value to provide a default.

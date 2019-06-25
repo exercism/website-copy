@@ -1,1 +1,1 @@
-The comment describing the package `twofer` isn't quite in the standard format. The section on comments below may help you fix this.
+The package comment for `twofer` does not follow the Go convention. See the section on comments below.
