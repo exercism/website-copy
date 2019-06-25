@@ -10,6 +10,7 @@ We use a mixture of techniques to analyze solutions, but most centre around stat
 - [Go](https://github.com/exercism/go-analyzer)
 - [JavaScript](https://github.com/exercism/javascript-analyzer)
 - [Java](https://github.com/exercism/java-analyzer)
+- [Kotlin](https://github.com/exercism/kotlin-analyzer)
 - [Perl5](https://github.com/exercism/perl5-analyzer)
 - [Python](https://github.com/exercism/python-analyzer)
 - [Ruby](https://github.com/exercism/ruby-analyzer)
