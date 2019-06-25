@@ -1,5 +1,6 @@
-Tip: any type of value in Go can be printed using the format character `%v`. However, there's also a different format for each type (for example `%s` for strings). The type specific formats also offer more options for formatting that type. For example the format `%f`, for `float` values, can also specify the precision: `%.2f`.
-
-Additionally, if you use the type specific placeholders and you refactor your code you will get notified 
-if you changed the type of the variable but not the type of the placeholder. This can e.g. help 
-to avoid breaking a string based api without noticing it.
+In Go people tend to prefer type-specific placeholders rather than the generic `%v`. 
+There are two reasons for this. First, more specific placeholders often have additional options, 
+for example the format `%f` for `float` values can also specify the precision: `%.2f`. 
+The second reason is that `%v` accepts any value type. If a variable type changes during a refactoring, 
+`%v` will print the default for that type, which might not be the desired behavior. 
+A type-specific placeholder will cause the linter to complain, catching the error before it gets deployed to production.
