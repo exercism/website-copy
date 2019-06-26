@@ -1,0 +1,1 @@
+As well as the `String#%` method, a common way to create strings in Ruby is to use interpolation. For example, rather than `"format("One for %s, one for me.", <%= variable %>)` you might consider `"One for #{<%= variable %>}, one for me."`.
