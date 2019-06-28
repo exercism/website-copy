@@ -22,5 +22,13 @@
     "link_url": "",
     "avatar_url": null,
     "bio": "Tech lead at The Economist, love Go and open source."
+  },
+  {
+    "github_username": "bugdiver",
+    "name": "Vinay Shankar Shukla",
+    "link_text": "",
+    "link_url": "https://bugdiver.github.io",
+    "avatar_url": null,
+    "bio": "Senior Developer at ThoughtWorks, Gopher, Pythonist, Open Source contributor and a Coffee Lover"
   }
 ]
