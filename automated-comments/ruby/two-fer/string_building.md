@@ -1,1 +1,1 @@
-In Ruby, it is unusual to use string addition. People tend to use `sprintf`, `format`, `%%`, or string interpolation. So instead of `"One for " + %<name_variable>s + ", one for me."`, consider `"One for #{%<name_variable>s}, one for me."`.
+Ruby has no problem with the way you are composing the string ('string concatenation'). However, a more idiomatic way to compose a string in Ruby is with [string interpolation](http://ruby-for-beginners.rubymonstas.org/bonus/string_interpolation.html).
