@@ -103,7 +103,7 @@ a hash table. Lists or tuples are much smaller.
 
 3. A dictionary provides a map to give
 random access mapping keys to values. 
-However, that is not the prolem we face here:
+However, that is not the problem we face here:
 we are performing a sequential traverse of the 
 keys. 
 The dictionary isn't well suited for sequential
