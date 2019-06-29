@@ -1,0 +1,1 @@
+You are currently using `string.IsNullOrEmpty` to determine if the default name should be used. As the test suite only tests for `null` values and not empty values, you could try using the [null-coalescing operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator) to simplify your code.

@@ -1,0 +1,1 @@
+You are currently using `string.Concat` to dynamically build a string. This is perfectly fine, but the more idiomatic C# solution to create such a string is to use [string interpolation](https://csharp.net-tutorials.com/operators/the-string-interpolation-operator/).
