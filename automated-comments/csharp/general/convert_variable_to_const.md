@@ -1,0 +1,1 @@
+You can convert the `%{name}` variable to a `const` as the value is intended never to change. You can either declare the `const` a method-only constant, by defining it within the method (similar to how the variable is defined), or make it a class-only constant, which is the more idiomatic solution.

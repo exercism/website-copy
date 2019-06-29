@@ -1,0 +1,1 @@
+Instead of storing the return value into an intermediate value, you could just return it directly. This usually makes code a bit easier to understand, as seeing that a method returns will allow you to skip reading the rest of the code, which you would still have to do when a variable is used, as that variable could be modified in another line of code.
