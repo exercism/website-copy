@@ -6,6 +6,7 @@ We algorithmically analyse solutions to certain exercises to look for optimal so
 
 We use a mixture of techniques to analyze solutions, but most centre around statically analysing the code that students submit. Each language has a different analyzer maintained by a different team, who may approach things in different ways. You may be interested in browsing the code to see how this works:
 - [C#](https://github.com/exercism/csharp-analyzer)
+- [Common Lisp](https://github.com/exercism/common-lisp-analyzer)
 - [Erlang](https://github.com/exercism/erlang-analyzer)
 - [Go](https://github.com/exercism/go-analyzer)
 - [JavaScript](https://github.com/exercism/javascript-analyzer)
