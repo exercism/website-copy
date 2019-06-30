@@ -1,1 +1,1 @@
-Currently, there is a bit of duplication in the two strings that are returned. Could you try to structure your code such that only one `string` is returned?
+There are two `return` statements returning very similar `string`'s. Could you try to structure your code such that this duplication is eliminated? This will involve having just one `return` statement, returning a single `string`.
