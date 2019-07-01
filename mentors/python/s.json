@@ -109,5 +109,13 @@
     "avatar_url": null,
     "bio":
       "I'm a student at HSE university in Moscow and an intern at Kaspersky Lab. Python is one of my most favorite programming languages since it's simple and easy to use on daily basis." 
+  },
+  {
+    "github_username": "shimst3r",
+    "name": "Nils Müller",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Python for its accessibility, its welcoming community, and its wide area of application. I've used it both professionally and for research."
   }
 ]
