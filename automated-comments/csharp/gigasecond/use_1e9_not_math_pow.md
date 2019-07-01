@@ -1,1 +1,1 @@
-`%{value}` can also be written as `1e9`.
+Consider writing the `%{value}` as `1e9`.
