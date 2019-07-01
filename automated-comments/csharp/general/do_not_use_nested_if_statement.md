@@ -1,4 +1,4 @@
-You are currently using nested if-statements. In general, it is usually best to avoid deep nesting, as it makes for harder reading. Consider the following two pieces of code:
+You are currently using nested if-statements. When possible, try to avoid deep nesting, as it can lead to code that is harder to follow. Consider the following two pieces of code:
 
 ```csharp
 void PrintName(Person p)
