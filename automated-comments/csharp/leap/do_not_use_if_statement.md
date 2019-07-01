@@ -1,1 +1,1 @@
-Try converting the `if`-statement(s) to a single expression using the `&&` and `||` operators.
+Consider converting the `if`-statement(s) into a single expression using the `&&` and `||` operators.
