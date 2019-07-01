@@ -1,1 +1,1 @@
-You are currently using string concatenation to dynamically build a string. This is perfectly fine, but the more idiomatic C# solution to create such a string is to use [string interpolation](https://csharp.net-tutorials.com/operators/the-string-interpolation-operator/).
+Rather than using string concatenation, consider using [string interpolation](https://csharp.net-tutorials.com/operators/the-string-interpolation-operator/) to dynamically build a string.

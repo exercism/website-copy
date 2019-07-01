@@ -1,4 +1,4 @@
-You are currently using nested if-statements. When possible, try to avoid deep nesting, as it can lead to code that is harder to follow. Consider the following two pieces of code:
+Try rewriting the if-statements to avoid deep nesting, as it can lead to code that is harder to follow. Consider the following two pieces of code:
 
 ```csharp
 void PrintName(Person p)
@@ -32,4 +32,4 @@ void PrintName(Person p)
 }
 ```
 
-The second example has a very specific structure: all paths that are dealing with errors are dealt with in indented blocks, whereas the "happy path" is always leftmost aligned. This makes for very easy reading, as you can quickly see what is the most common, error-free path through the code.
+The second example has a very specific structure: all paths that are dealing with errors are dealt with in indented blocks, whereas the "happy path" is always leftmost aligned. This makes for very easy reading, as one can quickly see what is the most common, error-free path through the code.

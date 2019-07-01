@@ -1,1 +1,1 @@
-The code contains the initial `throw new NotImplementedException` code. This statement can safely be removed, as it will either make the test suite fail, or is never called.
+Try removing the `throw new NotImplementedException` code, which either causes one or more tests to fail, or is in a part of the code that is never reached.
