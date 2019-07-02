@@ -1,1 +1,0 @@
-In Ruby, it is unusual to use string addition. People tend to use `sprintf`, `format`, `%%`, or string interpolation. So instead of `"One for " + %<name_variable>s + ", one for me."`, consider `"One for #{%<name_variable>s}, one for me."`.
