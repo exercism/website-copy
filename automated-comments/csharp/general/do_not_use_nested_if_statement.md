@@ -7,7 +7,10 @@ void PrintName(Person p)
     {
         if (p.Name != null)
         {
-            Console.WriteLine(p.Name);
+            if (p.Age >= 21)
+            {
+                Console.WriteLine(p.Name);
+            }
         }
     }
 }
@@ -18,12 +21,7 @@ Compare that to the following code:
 ```csharp
 void PrintName(Person p)
 {
-  if (p == null)
-  {
-      return;
-  }
-
-  if (p.Name == null)
+  if (p == null || p.Name == null || p.Age < 21)
   {
       return;
   }
