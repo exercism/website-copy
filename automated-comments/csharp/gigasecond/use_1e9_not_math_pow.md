@@ -1,1 +1,1 @@
-Consider writing the `%{value}` as `1e9`.
+Consider writing `%{value}` as `1e9`.
