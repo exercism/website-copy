@@ -1,5 +1,5 @@
 Use a [templated string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-interpolate dynamic values, instead of manually building the string using
+to interpolate dynamic values, instead of manually building the string using
 string concatenation:
 
 ```javascript

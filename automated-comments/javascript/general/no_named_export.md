@@ -1,7 +1,7 @@
 No [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
-called `%<export.name>s`. The tests won't pass without it.
+called `%<export.name>s` was found. The tests won't pass without it.
 
-Make sure `%<export.name>s` exists and add `export` in front of it:
+Ensure `%<export.name>s` exists and add `export` in front of it:
 ```javascript
 // exporting a "const"
 export const %<export.name>s = /*...*/

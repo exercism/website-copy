@@ -1,2 +1,2 @@
-The function `%<function.name>s` does not have a parameter.
+The function `%<function.name>s` requires a parameter.
 The tests won't pass without it.
