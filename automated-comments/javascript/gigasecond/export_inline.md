@@ -1,7 +1,7 @@
 Functions, classes and constants can be `export`ed inline.
 
 ```javascript
-const %<const.name>s = (...)
+const %{const.name} = (...)
 
-export %<method-signature>s
+export %{method-signature}
 ```
