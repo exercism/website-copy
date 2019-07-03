@@ -22,5 +22,13 @@
     "link_url": "https://thesquareplanet.com/",
     "avatar_url": null,
     "bio": "I'm PhD student at MIT CSAIL where I work on a research database written in Rust. I also do regular Rust live-coding streams."
+  },
+  {
+  "github_username": "jgilray",
+  "name": "Joe Gilray",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "Retired but still programming in Racket, Rust and Wolfram.  I am in awe of the Rust community and thinking mentoring here on exercism.io is one way to give back"
   }
 ]
