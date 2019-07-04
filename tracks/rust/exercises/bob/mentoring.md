@@ -17,7 +17,7 @@ A reasonable solution should:
 - Use constants
 - Use variables
 - Use `match` statements
-- Check if the input string is empty and return the "Sure" constant
+- Check if the input string is empty and return the "FINE" constant
 before doing any additional processing
 - Use simple methods from the standard library
 - Not use the regex crate
