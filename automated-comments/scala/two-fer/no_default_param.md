@@ -1,0 +1,1 @@
+Try specifying a (default parameter value)[https://docs.scala-lang.org/tour/default-parameter-values.html] for the `name` parameter. Providing a default parameter will allow for a solution utilzing a single function without conditional logic.
