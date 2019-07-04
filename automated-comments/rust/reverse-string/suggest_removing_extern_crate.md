@@ -1,0 +1,2 @@
+The `extern crate` line [is no longer needed](https://doc.rust-lang.org/stable/edition-guide/rust-2018/module-system/path-clarity.html#no-more-extern-crate) in the 2018 edition of Rust, which the exercises on the Rust track are configured to use.
+Please, consider removing the line.
