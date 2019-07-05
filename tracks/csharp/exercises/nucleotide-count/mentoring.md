@@ -70,4 +70,4 @@ As the README doesn't explicitly mention that student should optimize for perfor
   * Hence, using `IEnumerable.Any()` or `IEnumerable.Where(...)` to implement the exception is wrong. It should be thrown within the single iteration.
   * Similarly, though there are numerous ways to use LINQ to solve this problem it should be avoided in performance scenarios. All of them involve iterating the input string multiple times.
 
-* If you look for readability oriented solution, one using LINQ probably will be better fit.
+* If one wants to optimize for readability, using LINQ is probably the best approach.
