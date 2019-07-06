@@ -8,12 +8,12 @@
     "bio": "I enjoy writing Python at work and for personal projects; I love it's expressiveness and adaptability."
   },
   {
-        "github_username": "andreagrandi",
-        "name": "Andrea Grandi",
-        "link_text": "Website",
-        "link_url": "https://www.andreagrandi.it",
-        "avatar_url": null,
-        "bio": "I work as software developer at UK Government Digital Service. I like Python, Django, Machine Learning and security."
+    "github_username": "andreagrandi",
+    "name": "Andrea Grandi",
+    "link_text": "Website",
+    "link_url": "https://www.andreagrandi.it",
+    "avatar_url": null,
+    "bio": "I work as software developer at UK Government Digital Service. I like Python, Django, Machine Learning and security."
    },
   {
     "github_username": "ajomadlabs",
@@ -62,5 +62,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I use python a lot at work, and I really enjoy helping people to learn new skills!"
+  },
+  {
+    "github_username": "Alexhans",
+    "name": "Alex Guglielmone Nemi (Alex Hans)",
+    "link_text": "The Living Deadline - Alex Hans Blog",
+    "link_url": "https://alexhans.github.io/",
+    "avatar_url": null,
+    "bio": "With 10+ years in software/product development, I love to be in a constant learning state and to help others in their journeys.  Mentoring on a site that focuses on encouraging critical skills and idiomatic code is an extremely enriching experience."
+  },
+  {
+    "github_username": "adesanjo",
+    "name": "Adrian de Sanjose",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a young but experienced python programmer and my goal is to help people learn the art of programming."
   }
 ]

@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Part of Osu! videogame dev community, develops third-party AI that creates maps for that game named 'Osu!Automapper', written in python. Have strong interest on UI/UX design and machine learning. Professional in Python and Java. Watches anime, especially ones from Trigger studio."
+  },
+  {
+    "github_username": "pathcl",
+    "name": "Luis San Martin",
+    "link_text": null,
+    "link_url": "https://sanmartin.io",
+    "avatar_url": "https://pbs.twimg.com/profile_images/1125454481678852098/GxD3wabM_400x400.jpg",
+    "bio": "Hi there! I'm a SRE with 10+ years on Linux/Open Source and want to give back all the knowledge I have :)"
   }
 ]

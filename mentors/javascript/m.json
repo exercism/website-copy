@@ -46,5 +46,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Really enjoying coding in Javascript and love to be part of the joy of learning it for anybody else :) "
+  },
+  {
+    "github_username": "mdmccarley89",
+    "name": "Matt McCarley",
+    "link_text": "Personal Website",
+    "link_url": "https://mattmccarley.com/",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/16927488?s=400&u=87d5923bf84a4fe44b1af70f8fb731927dd8b248&v=4",
+    "bio": "Curriculum Developer <- Wannabe CS Nerd <- Front-End Developer & UX/UI Designer <- Teacher"
   }
 ]

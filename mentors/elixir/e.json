@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a developer passionate about clean code that fell in love with Elixir"
+  },
+  {
+    "github_username": "EmilienMottet",
+    "name": "Emilien Mottet",
+    "link_text": "blog",
+    "link_url": "https://emottet.com",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/15970369?s=460&v=4",
+    "bio": "I'm a curious developer. For me, Elixir is the language that allows me to write effective programs running on the Erlang virtual machine" 
   }
 ]
