@@ -1,3 +1,3 @@
-There was a problem whilst parsing.
+There was a problem while parsing.
 
 Make sure the uploaded solution is valid Scala and passes the tests, then upload again.
