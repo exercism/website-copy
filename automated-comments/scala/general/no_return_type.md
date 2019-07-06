@@ -1,1 +1,1 @@
-A return type should be specified for all public members. Including the return type allows the compiler to validate that the expected return type. And, ensures that changing Scala type inference maintains binary compatibility. 
+Specify a `return` type for all public members. Including the return type allows the compiler to validate the expected `return` type. It also ensures that changing Scala type inference maintains binary compatibility. 
