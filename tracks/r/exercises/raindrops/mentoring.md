@@ -15,7 +15,7 @@ raindrops <- function(number) {
   if (number %% 7 == 0)
     rain <- append(rain, "Plong")
   
-  if (!(number %% 3 == 0 | number %% 5 == 0 | number %% 7 == 0)) # alternatively: if(rain == "")
+  if (rain == "") # alternatively: !(number %% 3 == 0 | number %% 5 == 0 | number %% 7 == 0)
     return(as.character(number))
   
   paste(rain, collapse = "")
@@ -27,7 +27,6 @@ The learning goal here is to avoid unnecessary conversion of inputs as strings a
 ### Common suggestions
 
 - Avoid a string transformation of the input at the beginning.
-- Go through the task iteratively to account for all possible factors.
 - For-loops impact the readability here a bit, I think, so one could point learners to alternatives. 
 
 ### Talking points
@@ -45,20 +44,20 @@ raindrops <- function(number) {
 }
 ```
 
-...or an elegant solution that directly compares the input with its divisors in the `paste()` command:
+Or an elegant solution that directly compares the input with its divisors in the `paste()` command:
 
 ```r
 raindrops <- function(number) {
-  sounds <- c('Pling', 'Plang', 'Plong')
+  sounds <- c("Pling", "Plang", "Plong")
   divisors <- c(3, 5, 7)
   
-  rain <- paste(sounds[(number %% divisors) == 0], collapse='')
+  rain <- paste(sounds[(number %% divisors) == 0], collapse = "")
   
-  if (nchar(rain) > 0) { rain } else { as.character(number) }
+  ifelse(nchar(rain) > 0, yes = rain, no = as.character(number)
 }
 ```
 
-...finally, `n` can be added to the `sounds` vector and it's value is only pasted if all other conditions are `FALSE`.
+Finally, `n` can be added to the `sounds` vector and it's value is only pasted if all other conditions are `FALSE`.
 
 ```r
 raindrops <- function(n) {
