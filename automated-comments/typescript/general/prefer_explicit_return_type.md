@@ -8,4 +8,4 @@ for public APIs, such as functions that are `export`ed:
 TypeScript is really good at type inference and will assign a `return` type to
 all functions. But accidental changes may change that inferred type, and it
 may or may not cause a compilation error at the source of that change. Adding an
-explicit return type makes the compilation fail at the source.
+explicit return type may make the compilation fail at the source.

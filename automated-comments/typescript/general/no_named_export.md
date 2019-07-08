@@ -1,5 +1,5 @@
-No [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
-called `%{export.name}` was found. The tests won't pass without it.
+[`export %{export.name}`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+was not found. The tests won't pass without it.
 
 Ensure `%{export.name}` exists and add `export` in front of it:
 ```javascript
