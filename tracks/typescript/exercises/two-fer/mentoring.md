@@ -36,7 +36,7 @@ You should **_only approve_** this if it matches the solutions above,
 with a few exceptions where you may be lenient:
 
 - a student uses CommonJS style `module.exports`
-- a student does omitted the return type `: string`
+- a student omitted the return type `: string`
 - a student omitted the parameter type `: string`
 
 In all these cases, suggest they make a change (e.g. use ES6 style exports),
@@ -51,7 +51,7 @@ approve the submission and tell the student they can move on or improve:
 This is the first mentored exercise, so you may use this to determine a
 student's skill, help them set up their test suite, and generally point out
 certain things. In the JavaScript track, this exercise is not meant to be a
-barrier so in general, don't be harsch but set the tone for the rest of the
+barrier so in general, don't be harsh but set the tone for the rest of the
 mentored track.
 
 Here is a template you can copy with a few example comments. The goal of this
