@@ -43,10 +43,10 @@ colors.map { |color| COLOR_CODES[color.to_sym] }.join.to_i
 
 This is the very first Array exercise, and the first loop. Introducing `map` is key in this exercise. 
 
-You, dear mentor, are totally right that using a hash would be a better solution, because it makes the relation between the color and its value explicit. But we really want people to know how to work with arrays before we ask them to work with hashes. (That will be taken care of later on in the track.) If a student _starts_ with a hash themselves, then by all means go with the hash. 
+You, dear mentor, are totally right that using a hash would be a better solution, because it makes the relation between the color and its value explicit. But we really want people to know how to work with arrays before we ask them to work with hashes. (That will be taken care of later on in the track.) If a student _starts_ with a hash themselves, then by all means go with the hash.
 
 ### Talking points
-- _string interpolation_ : if the student uses string interpolation to compose the value, challenge them to solve it with `map` and `join`. Approve if they don't want to do the challenge. 
+- _string interpolation_ : if the student uses string interpolation to compose the value, challenge them to solve it with `map` and `join`. Approve if they don't want to do the challenge.
 - _`%w` notation_: for arrays of strings. Link to [styleguide](https://github.com/rubocop-hq/ruby-style-guide#percent-w)
 - _chaining methods_ after a block (especially when people use a local variable for `join.to_i`
 - _`each` vs `map`_: this explains the difference: [each vs map](https://learn.onemonth.com/ruby-tutorial-map-vs-each/)
