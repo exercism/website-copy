@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm self-employed and doing web & mobile apps (ECMAScript/JavaScript) & I'm in love with all the possibilities you get with that language."
+  },
+  {
+    "github_username": "viktorzetterstrom",
+    "name": "Viktor Zetterström",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love using Javascript to solve problems in a functional fashion, I'm starting my professional career as a JS-developer in September and Exercism has been a huge help, now I want to help Exercism."
   }
 ]
