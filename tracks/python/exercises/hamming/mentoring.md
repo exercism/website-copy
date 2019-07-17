@@ -35,7 +35,7 @@ def distance(strand_a, strand_b):
 		raise ValueError('Strands must have the same length')
 
 	count = 0
-	for ch1, ch2 in zip(strand_a.lower(), strand_b.lower())
+	for ch1, ch2 in zip(strand_a.lower(), strand_b.lower()):
 		if ch1 != ch2:
 			count = count + 1
 
