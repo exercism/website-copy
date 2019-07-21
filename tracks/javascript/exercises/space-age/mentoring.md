@@ -64,7 +64,7 @@ If a student is on an older version, kindly suggest they update to the newer tes
   number.
   
 ### Other considerations
-- While [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed), is shorter to write, using `Math.round` is actually better performance-wise.
+- While [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed), is shorter to write, using `Math.round` has better performance
 
 ### Talking points
 
