@@ -65,10 +65,7 @@ If a student is on an older version, kindly suggest they update to the newer tes
 
 
 ### Talking points
-- While [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) is much more declarative, using `Math.round` has much better performance.
-
-### Talking points
-
 - Define `const` on the file-level and outside of function definitions if they stay constant for the duration of the
   file (as opposed to constants re-defined each function call).
+- While [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) is much more declarative, using `Math.round` has much better performance.
 
