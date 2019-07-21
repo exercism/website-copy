@@ -62,7 +62,9 @@ If a student is on an older version, kindly suggest they update to the newer tes
 
 - If they use the unary `+` to convert to a number, show them `Number(val)` which explicitely converts `val` to a
   number.
-- If they round via `Math.round(age * 100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed).
+  
+### Other considerations
+- While [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed), is shorter to write, using `Math.round` is actually better performance-wise.
 
 ### Talking points
 
