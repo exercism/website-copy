@@ -49,5 +49,12 @@
     "link_url": "https://github.com/debck",
     "link_text": "debck",
     "bio": "Love writing Javascript for Backend applications and open-source development."
+  },
+  {
+    "github_username": "derekliang",
+    "name": "Derek Liang",
+    "link_url": null,
+    "link_text": null,
+    "bio": "Love reading, writing code. Love to give back to the community."
   }
 ]
