@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am a software engineer by training, build and run software teams in practice, and am a longtime fan and user of Exercism!"
+  },
+  {
+    "github_username": "whatapalaver",
+    "name": "Angela Wolff",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a recent career changer, having left NHS Accountancy for a coding bootcamp. I'm now in my first year of a Full Stack Developer role, working predominantly with Rails. I've been helped by exercism.io and want to do my bit to keep the Ruby learning track flowing."
   }
 ]
