@@ -14,5 +14,13 @@
         "link_url": "http://www.reesespieces.io/",
         "avatar_url": null,
         "bio": "I am a software engineer with a passion for testing. If you have any questions about the track or the language in general, feel free to ask; I'd love to hear them."
-      }
+     },
+    {
+        "github_username": "jaimemartinez88",
+        "name": "Jaime Martinez",
+        "link_text": "LinkedIn",
+        "link_url": "https://www.linkedin.com/in/jaime-m88/",
+        "avatar_url": "http://2.gravatar.com/avatar/1b270f85560f475fb57ff4d999587978?size=800",
+        "bio": "I first started working with Go over 4 years ago writing REST APIs, I fell in love! I have been working with it ever since. I love spreading the Go-love, I hope can do that here too!"
+    }
 ]
