@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Functional programming and Lisp enthusiast."
+  },
+  {
+    "github_username": "andrewwhitehouse",
+    "name": "Andrew Whitehouse",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "My main languages are Java and Clojure. Have been using Clojure on and off commercially since 2014."
   }
 ]
