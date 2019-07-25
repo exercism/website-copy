@@ -31,30 +31,27 @@ const CALM: &str = "Calm down, I know what I'm doing!";
 const FINE: &str = "Fine. Be that way!";
 const WHATEVER: &str = "Whatever.";
 
-#[allow(clippy::match_bool)]
 pub fn reply(message: &str) -> &str {
-    let trimmed: &str = message.trim();
+    let message: &str = message.trim();
 
-    match trimmed.is_empty() {
-        true => FINE,
-        false => {
-            let is_question: bool = trimmed.ends_with("?");
+    if message.is_empty() {
+        FINE
+    } else {
+        let is_question = message.ends_with('?');
 
-            let contains_alphabetic_characters: bool = trimmed.chars().any(|character| character.is_alphabetic());
-            let is_uppercase: bool = trimmed == trimmed.to_uppercase();
-            let is_yelled: bool = contains_alphabetic_characters && is_uppercase;
+        let contains_alphabetic = message.chars().any(char::is_alphabetic);
+        let is_uppercase = !message.chars().any(char::is_lowercase);
+        let is_yelled = contains_alphabetic && is_uppercase;
 
-            match (is_question, is_yelled) {
-                (true, false) => SURE,
-                (false, true) => WHOA,
-                (true, true) => CALM,
-                (false, false) => WHATEVER,
-            }
+        match (is_question, is_yelled) {
+            (true, false) => SURE,
+            (false, true) => WHOA,
+            (true, true) => CALM,
+            (false, false) => WHATEVER,
         }
     }
 }
 ```
-Variations of `is_yelled` can also include using a `chars()` loop to ensure no extra `String` is allocated.
 
 ### Common Suggestions
 
