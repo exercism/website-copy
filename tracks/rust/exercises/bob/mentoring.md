@@ -64,7 +64,7 @@ If they don't use a constant:
 We can improve this by setting our output strings to be [constants](https://doc.rust-lang.org/std/keyword.const.html)
 ```
 
-If they don't create a trimmed variable or use something other than `.trim()` or `.trim_right()`:
+If they don't create a trimmed variable or use something other than `.trim()` or `.trim_end()`:
 ```
 Have a look at the `.trim()` method.
 ```
