@@ -131,7 +131,7 @@ If they ask about `&str` having a static lifetime:
 ```
 Lifetimes prevent dangling pointers; they are needed when a value points to some data, so the value doesn't outlive its data.
 
-String literals are [slices](https://doc.rust-lang.org/std/primitive.slice.html) that point to UTF-8 string data. This data is never freed, so string slices are alive for the entire duration of the application, so they have the `'static` lifetime.
+String literals are [slices](https://doc.rust-lang.org/std/primitive.slice.html) that point to a section in the executable, where all strings are stored. Because this data is never freed, string slices are alive for the entire duration of the application, which is denoted with the special `'static` lifetime.
 ```
 
 If they use `_` instead of `false` in their match statement:
