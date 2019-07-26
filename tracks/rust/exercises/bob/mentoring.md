@@ -55,7 +55,7 @@ pub fn reply(message: &str) -> &str {
 }
 ```
 
-Note that `message.chars().any(..)` is equivalent to `message.contains(..)`, and `message.chars().all(..)` is equivalent to `message.matches(..)`.
+Note that `message.chars().any(..)` is equivalent to `message.contains(..)`.
 
 ### Common Suggestions
 
