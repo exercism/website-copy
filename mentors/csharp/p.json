@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "C# is one of the most used languages at client sites I work with. I'm glad I can share my knowledge with you as you pick up this valuable tool."
+  },
+  {
+    "github_username": "fpetru",
+    "name": "Petru Faurescu",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://qappdesign.com/wp-content/uploads/2016/10/395272_106879716102100_939106567_n-e1477342826225.jpg",
+    "bio": "I love C# and .NET Core. I've written .NET / C# professionally, and also use it for open source projects."
   }
 ]
