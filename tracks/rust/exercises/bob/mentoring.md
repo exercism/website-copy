@@ -32,7 +32,7 @@ const FINE: &str = "Fine. Be that way!";
 const WHATEVER: &str = "Whatever.";
 
 pub fn reply(message: &str) -> &str {
-    let message: &str = message.trim();
+    let message = message.trim();
 
     if message.is_empty() {
         FINE
