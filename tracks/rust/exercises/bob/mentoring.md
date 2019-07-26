@@ -64,7 +64,7 @@ If they don't use a constant:
 We can improve this by setting our output strings to be [constants](https://doc.rust-lang.org/std/keyword.const.html)
 ```
 
-If they don't create a trimmed variable or use something other than `.trim()`:
+If they don't create a trimmed variable or use something other than `.trim()` or `.trim_right()`:
 ```
 Have a look at the `.trim()` method.
 ```
@@ -79,20 +79,6 @@ If they use `if` statements, you can alternatively suggest that they try out usi
 Check out using `match` instead of `if`. For some things, like destructuring, it's required. It's an idiom specific to Rust, so I always default to it unless the logic is comparing many different things and a match in that case makes it messy.
 ```
 
-Similarly, if they use an `if` on their `.is_empty()` check, you can offer that they use `match`:
-
-````md
-See about doing a  `match`, instead of `if`, on `your_trimmed_variable.is_empty()`. And, if it's `true`, instantly output our "Fine. Be that way!" constant. Then, everything else will be in the `false` arm.
-Like this:
-```rust
-match your_trimmed_variable.is_empty() {
-    true => FINE,
-    false => {
-```
-Be aware that if you use Clippy, it will tell you that it is improper, it's purely a stylistic choice :)
-We can tell Clippy to allow it with `#[allow(clippy::match_bool)]`.
-````
-
 If they are struggling with how to check if it's a question or use something like `chars().last()`:
 ```
 Have a look at `.ends_with()` to check if it's a question, it's much cleaner.
@@ -105,11 +91,6 @@ This is good! Great idea using the regex crate! Let's look at how to do this wit
 Then note the following:
 ```
 See about finding a way to check if it's alphabetic without using regex.
-```
-
-If they use separate functions:
-```
-We don't need to create separate functions here. We can put this all in one by setting these calls to variables instead.
 ```
 
 If they don't use a `match` to compare the conditions:
