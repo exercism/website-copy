@@ -40,6 +40,8 @@ pub fn reply(message: &str) -> &str {
         let is_question = message.ends_with('?');
 
         let contains_alphabetic = message.chars().any(char::is_alphabetic);
+        // A message is uppercase if it doesn't contain lowercase.
+        // `.all(char::is_uppercase)` doesn't work because of whitespace/punctuation
         let is_uppercase = !message.chars().any(char::is_lowercase);
         let is_yelled = contains_alphabetic && is_uppercase;
 
@@ -52,6 +54,8 @@ pub fn reply(message: &str) -> &str {
     }
 }
 ```
+
+Note that `message.chars().any(..)` is equivalent to `message.contains(..)`, and `message.chars().all(..)` is equivalent to `message.matches(..)`.
 
 ### Common Suggestions
 
