@@ -127,13 +127,11 @@ If they put their constants inside the function:
 Note that it's common convention to put constants at the beginning of a file like I've done above. If it's a public constant, which is typical, we put it following our `use` lines, along with `struct`s and `enum`s. If it's a private constant, we put it at the beginning of the scope of the function. But, either way doesn't affect the performance or functionality!
 ```
 
-If they ask about `&str` having a static lifetime in comparison to using constants:
+If they ask about `&str` having a static lifetime:
 ```
-To quote from [Rust By Example](https://doc.rust-lang.org/rust-by-example/scope/lifetime/static_lifetime.html): "When `static_string` goes out of scope, the reference can no longer be used, but the data remains in the binary."
+Lifetimes prevent dangling pointers; they are needed when a value points to some data, so the value doesn't outlive its data.
 
-What I think the compiler is doing is recreating the pointer to the static data if we use a plain `let` line, whereas with `const`, the data and the pointer are always kept alive.
-
-Also, the use of `const` allows us to have it globally scopable.
+String literals are [slices](https://doc.rust-lang.org/std/primitive.slice.html) that point to UTF-8 string data. This data is never freed, so string slices are alive for the entire duration of the application, so they have the `'static` lifetime.
 ```
 
 If they use `_` instead of `false` in their match statement:
