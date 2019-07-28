@@ -79,6 +79,6 @@ public class SpaceAge
     
 - Not everyone likes them, but it might be useful to suggest writing the single-line methods as [expression-bodied methods]((https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)), as it is perfect for these kinds of small methods.
 
-### Talking Suggestions
+### Talking points
 
 - Not mentioned in the unit tests, negative time periods should be excluded
