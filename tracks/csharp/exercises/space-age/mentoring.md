@@ -42,7 +42,7 @@
 
     public class SpaceAge
     {
-        private double _seconds { get; }
+        private readonly double _seconds;
         private const int EarthYearInSeconds = 31_557_600;
         private const double orbitalPeriodMercuryInEarthYears = 0.2408467;
         private const double orbitalVenus = 0.61519726;
