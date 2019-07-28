@@ -75,7 +75,7 @@ public class SpaceAge
 
 ### Common suggestions
 
-- _In case_ values of each indivdual orbital period is defined in a variable, these should be defined as _const_.
+- _In case_ the values of each individual orbital period are defined in a variable, that variable should be defined as _const_.
 
 - The internal parameter (storing the number of seconds) should be a readonly member, initialized in the constructor.
     
