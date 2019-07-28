@@ -77,7 +77,7 @@ public class SpaceAge
 
 - The internal parameter (storing the number of seconds) should be a readonly member, initialized in the constructor.
     
-- Not everyone likes them, but it might be useful to suggest writing the single-line methods as [expression-bodied methods]((https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)), as it is perfect for these kinds of small methods.
+- You may suggest writing the single-line methods as [expression-bodied methods]((https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)), as it is perfect for these kinds of small methods.
 
 ### Talking points
 
