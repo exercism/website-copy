@@ -1,84 +1,84 @@
 ### Reasonable solutions
 
 #### using Dictionary
-    ```csharp
-    using System.Collections.Generic;
+```csharp
+using System.Collections.Generic;
 
-    public class SpaceAge
+public class SpaceAge
+{
+    private readonly double earthYear;
+    private const double OrbitalPeriodEarth = 31_557_600.0;
+
+    private static Dictionary<string, double> conversionFactor 
+            = new Dictionary<string, double>()
     {
-        private readonly double earthYear;
+        {"Mercury", 0.2408467},
+        {"Venus",   0.61519726},
+        {"Mars",    1.8808158},
+        {"Jupiter", 11.862615},
+        {"Saturn",  29.447498},
+        {"Uranus",  84.016846},
+        {"Neptune", 164.79132},
+        {"Earth",   1.0}
+    };
 
-        private static Dictionary<string, double> conversionFactor 
-                = new Dictionary<string, double>()
-        {
-            {"Mercury", 0.2408467},
-            {"Venus",   0.61519726},
-            {"Mars",    1.8808158},
-            {"Jupiter", 11.862615},
-            {"Saturn",  29.447498},
-            {"Uranus",  84.016846},
-            {"Neptune", 164.79132},
-        };
-
-        public SpaceAge(int seconds)
-        {
-            earthYear = seconds / 31557600.0;
-        }
-    
-        public double OnEarth() => earthYear;
-        public double OnMercury() => earthYear / conversionFactor["Mercury"];
-        public double OnVenus() => earthYear / conversionFactor["Venus"];
-        public double OnMars() => earthYear / conversionFactor["Mars"];
-        public double OnJupiter() => earthYear / conversionFactor["Jupiter"];
-        public double OnSaturn() => earthYear / conversionFactor["Saturn"];
-        public double OnUranus() => earthYear / conversionFactor["Uranus"];
-        public double OnNeptune() => earthYear / conversionFactor["Neptune"];
+    public SpaceAge(int seconds)
+    {
+        earthYear = seconds / OrbitalPeriodEarth;
     }
-    ```
+
+    private double GetOrbitalPeriodInEarthYears(string planetName) 
+            => earthYear / conversionFactor[planetName];
+
+    public double OnEarth() => GetOrbitalPeriodInEarthYears("Earth");
+    public double OnMercury() => GetOrbitalPeriodInEarthYears("Mercury");
+    public double OnVenus() => GetOrbitalPeriodInEarthYears("Venus");
+    public double OnMars() => GetOrbitalPeriodInEarthYears("Mars");
+    public double OnJupiter() => GetOrbitalPeriodInEarthYears("Jupiter");
+    public double OnSaturn() => GetOrbitalPeriodInEarthYears("Saturn");
+    public double OnUranus() => GetOrbitalPeriodInEarthYears("Uranus");
+    public double OnNeptune() => GetOrbitalPeriodInEarthYears("Neptune");
+}
+```
 
 #### Using constants
-    ```csharp
-    using System;
+```csharp
+using System;
 
-    public class SpaceAge
-    {
-        private readonly double _seconds;
-        private const int EarthYearInSeconds = 31_557_600;
-        private const double orbitalPeriodMercuryInEarthYears = 0.2408467;
-        private const double orbitalVenus = 0.61519726;
-        private const double orbitalMars = 1.8808158;
-        private const double orbitalJupiter = 11.862615;
-        private const double orbitalSaturn = 29.447498;
-        private const double orbitalUranus = 84.016846;
-        private const double orbitalNeptune = 164.79132;
-    
-        public SpaceAge(int seconds) => _seconds = seconds;
+public class SpaceAge
+{
+    private readonly double earthYear;
 
-        public double OnEarth() => _seconds / earthYearInSeconds;
-        public double OnMercury() => _seconds / earthYearInSeconds / orbitalMercury;
-        public double OnVenus() => _seconds / earthYearInSeconds / orbitalVenus;
-        public double OnMars() => _seconds / earthYearInSeconds / orbitalMars;
-        public double OnJupiter() => _seconds / earthYearInSeconds / orbitalJupiter;
-        public double OnSaturn() => _seconds / earthYearInSeconds / orbitalSaturn;
-        public double OnUranus() => _seconds / earthYearInSeconds / orbitalUranus;
-        public double OnNeptune() => _seconds / earthYearInSeconds / orbitalNeptune;
-    }
-    ```
+    private const double OrbitalPeriodEarth = 31_557_600.0;
+    private const double OrbitalPeriodMercuryInEarthYears = 0.2408467;
+    private const double OrbitalPeriodVenusInEarthYears = 0.61519726;
+    private const double OrbitalPeriodMarsInEarthYears = 1.8808158;
+    private const double OrbitalPeriodJupiterInEarthYears = 11.862615;
+    private const double OrbitalPeriodSaturnInEarthYears = 29.447498;
+    private const double OrbitalPeriodUranusInEarthYears = 84.016846;
+    private const double OrbitalPeriodNeptuneInEarthYears = 164.79132;
+
+    public SpaceAge(int seconds) => earthYear = seconds / OrbitalPeriodEarth;
+
+    public double OnEarth() => earthYear;
+    public double OnMercury() => earthYear / OrbitalPeriodMercuryInEarthYears;
+    public double OnVenus() => earthYear / OrbitalPeriodVenusInEarthYears;
+    public double OnMars() => earthYear / OrbitalPeriodMarsInEarthYears;
+    public double OnJupiter() => earthYear / OrbitalPeriodJupiterInEarthYears;
+    public double OnSaturn() => earthYear / OrbitalPeriodSaturnInEarthYears;
+    public double OnUranus() => earthYear / OrbitalPeriodUranusInEarthYears;
+    public double OnNeptune() => earthYear / OrbitalPeriodNeptuneInEarthYears;
+}
+```
 
 ### Common suggestions
 
-- _In case_ values of each indivdual orbital period is defined in a variable, these should be defined either as _const_ (these are implicitly static) or _static readonly_.
+- _In case_ values of each indivdual orbital period is defined in a variable, these should be defined as _const_.
 
-- The internal parameter (storing the number of seconds) could be an auto-implemented property or a readonly member (with value initialized in the constructor)
-
-    ```csharp 
-        private double _seconds {get;}
-    ```
+- The internal parameter (storing the number of seconds) should be a readonly member, initialized in the constructor.
     
-- It needs to be done a conversion to double. Either by defining as a double  (in our case_ _seconds_ is a double), or making an explicit conversion _(double)_
-
-- Suggest [expression bodied members](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition) syntax. It makes code cleaner for short (one-line) methods.
+- Not everyone likes them, but it might be useful to suggest writing the single-line methods as [expression-bodied methods]((https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)), as it is perfect for these kinds of small methods.
 
 ### Talking Suggestions
 
-- Not mentioned in the unit tests, should negative time periods be excluded ?
+- Not mentioned in the unit tests, negative time periods should be excluded
