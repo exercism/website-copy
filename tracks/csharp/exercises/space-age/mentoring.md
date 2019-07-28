@@ -1,6 +1,7 @@
 ### Reasonable solutions
 
 #### using `Dictionary`
+
 ```csharp
 using System.Collections.Generic;
 
