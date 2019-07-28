@@ -1,4 +1,4 @@
-### Reasonable solution
+### Reasonable solutions
 
 - using Dictionary
     ```csharp
