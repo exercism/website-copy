@@ -12,7 +12,6 @@ A reasonable solution should:
 - Use [.chars()](https://doc.rust-lang.org/std/primitive.str.html#method.chars),
 [.rev()](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rev), and
 [.collect()](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect)
-- Be explicit with `.collect()` by using the turbofish operator `::<>`
 - Not use other iterators or iterator methods like `.into_iter()` or
 `.flat_map()`
 - Not use variables or loops
@@ -44,12 +43,6 @@ pub fn reverse(input: &str) -> String {
 ```
 
 ### Common Suggestions
-
-If they don't use the turbofish operator:
-```
-It's best to be explicit with generics such as `.collect()` by using the turbofish operator `::<>` to specify what type we want to build. With
-more code, it makes it easier to simply look at the collect instead of having to find the function's signature.
-```
 
 If they use other iterators:
 ```
