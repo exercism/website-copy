@@ -1,4 +1,4 @@
-### Algorithm
+### Reasonable Solutions
 
 There are technically two ways to do this, but only one is useful.
 

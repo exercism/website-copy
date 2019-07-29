@@ -1,4 +1,4 @@
-### Algorithm
+### Reasonable Solutions
 
 There does not seem to be any fitter method than `Time#+`.
 
