@@ -1,6 +1,7 @@
-### Algorithm
+### Reasonable Solutions
 
 There are two general approaches, either using regular expressions or `String` methods.
+
 ```crystal
 class Bob
   getter comment
@@ -38,8 +39,8 @@ class Bob
     comment.blank?
   end
 end
-
 ```
+
 ```crystal
 module Bob
   SHOUTING = "\\A(?=.*[A-Z])(?!.*[a-z])"
@@ -64,11 +65,10 @@ module Bob
   end
 end
 ```
-### Structure
+
+### Common Suggestions
 
 A `case` statement is probably recommended over `if`/`elsif`. As with many Exercism exercises, using an instantiated class is not a strict requirement, but probably useful if any helper methods (e.g. `shouting?`) are defined.
-
-### Style
 
 Regular expressions are powerful but illegible. If used, they should be assigned to constants.
 It's not required that methods declare what type they accept and return, but the larger the project and more complicated the code, the more this becomes a good idea.

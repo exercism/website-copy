@@ -1,4 +1,4 @@
-### Algorithm
+### Reasonable Solutions
 
 This is a relatively straightforward problem with some minor variations. The "standard" solution is:
 ```crystal
