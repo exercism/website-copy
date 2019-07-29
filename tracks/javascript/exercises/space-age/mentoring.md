@@ -59,13 +59,13 @@ breaking solutions with arrow functions and a `this` inside.
 If a student is on an older version, kindly suggest they update to the newer test suite.
 
 ### Common suggestions
-
 - If they use the unary `+` to convert to a number, show them `Number(val)` which explicitely converts `val` to a
   number.
-- If they round via `Math.round(age * 100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed).
+ - If they round via `Math.round(age * 100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed).
+
 
 ### Talking points
-
 - Define `const` on the file-level and outside of function definitions if they stay constant for the duration of the
   file (as opposed to constants re-defined each function call).
+- While [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) is much more declarative, using `Math.round` has much better performance.
 
