@@ -25,6 +25,7 @@ public static class Isogram
 #### using `LINQ`
 
 ```csharp
+using System;
 using System.Linq;
 
 public static class Isogram
@@ -32,8 +33,8 @@ public static class Isogram
     public static bool IsIsogram(string word)
     {
         // Ignore spaces, hyphens, regard uppercase as lower.
-        string trimmedInput = word.Trim().Replace(" ", "").Replace("-", "").ToLower();
-        return trimmedInput.Count(c => trimmedInput.Count(b => b == c) <= 1) == trimmedInput.Length;
+        var trimmedInput = word.ToLower().ToCharArray().Where(Char.IsLetter);
+        return trimmedInput.Distinct().Count() == trimmedInput.Count();
     }
 }
 ```
@@ -42,7 +43,8 @@ public static class Isogram
 
 - In the non LINQ version, try to use a single loop
 
-- The Replace could be potentially improved (either using regular expressions or LINQ via Split and Aggregate. But due to the fact there are only 2 chars to be replaced, it may take longer, and maybe suboptimal to write in a different way.
+- Using LINQ next suggestions could be made:
+  * each element of the string should be a letter (in this way we avoid checking for space or '-')
+  * without making any iteration, _distinct_ helps to enforce the letter uniqueness  
     
 ### Talking points
-
