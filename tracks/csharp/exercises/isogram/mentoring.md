@@ -45,6 +45,6 @@ public static class Isogram
 
 - Using LINQ next suggestions could be made:
   * each element of the string should be a letter (in this way we avoid checking for space or '-')
-  * without making any iteration, _distinct_ helps to enforce the letter uniqueness  
+  * without making any iteration, _distinct_ method helps to enforce the letter uniqueness, and find the isogram   
     
 ### Talking points
