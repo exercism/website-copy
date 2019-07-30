@@ -28,8 +28,7 @@ public class SpaceAge
         earthYear = seconds / OrbitalPeriodEarth;
     }
 
-    private double GetOrbitalPeriodInEarthYears(string planetName) 
-        => earthYear / conversionFactor[planetName];
+    private double GetOrbitalPeriodInEarthYears(string planetName) => earthYear / conversionFactor[planetName];
 
     public double OnEarth() => GetOrbitalPeriodInEarthYears("Earth");
     public double OnMercury() => GetOrbitalPeriodInEarthYears("Mercury");
@@ -42,7 +41,7 @@ public class SpaceAge
 }
 ```
 
-#### Using constants
+#### Using `constants`
 
 ```csharp
 using System;
