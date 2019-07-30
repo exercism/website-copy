@@ -29,7 +29,7 @@ public class SpaceAge
     }
 
     private double GetOrbitalPeriodInEarthYears(string planetName) 
-            => earthYear / conversionFactor[planetName];
+        => earthYear / conversionFactor[planetName];
 
     public double OnEarth() => GetOrbitalPeriodInEarthYears("Earth");
     public double OnMercury() => GetOrbitalPeriodInEarthYears("Mercury");
