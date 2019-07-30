@@ -28,8 +28,7 @@ public class SpaceAge
         earthYear = seconds / OrbitalPeriodEarth;
     }
 
-    private double GetOrbitalPeriodInEarthYears(string planetName) 
-            => earthYear / conversionFactor[planetName];
+    private double GetOrbitalPeriodInEarthYears(string planetName) => earthYear / conversionFactor[planetName];
 
     public double OnEarth() => GetOrbitalPeriodInEarthYears("Earth");
     public double OnMercury() => GetOrbitalPeriodInEarthYears("Mercury");
@@ -42,7 +41,7 @@ public class SpaceAge
 }
 ```
 
-#### Using constants
+#### Using `constants`
 
 ```csharp
 using System;
@@ -77,7 +76,7 @@ public class SpaceAge
 
 - _In case_ the values of each individual orbital period are defined in a variable, that variable should be defined as _const_.
 
-- The internal parameter (storing the number of seconds) should be a `readonly` member, initialized in the constructor.
+- The internal variable (storing the number of seconds) should be a `readonly` field, initialized in the constructor.
     
 - You may suggest writing the single-line methods as [expression-bodied methods]((https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)), as it is perfect for these kinds of small methods.
 
