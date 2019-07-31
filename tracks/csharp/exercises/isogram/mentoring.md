@@ -41,7 +41,7 @@ public static class Isogram
 
 ### Common suggestions
 
-- In the non LINQ version, try to use a single loop
+- In the non-LINQ version, try to use a single loop.
 
 - When using LINQ, the following suggestions can be made:
   * each element of the string should be a letter (in this way we avoid checking for space or '-')
