@@ -44,5 +44,5 @@ public static class Isogram
 - In the non-LINQ version, try to use a single loop.
 
 - When using LINQ, the following suggestions can be made:
-  * each element of the string should be a letter (in this way we avoid checking for space or '-')
+  * To make things easier, try only processing the string's letters (in this way we avoid checking for spaces or '-').
   * Suggest using the `Distinct()` method to help calculate the uniqueness of the letters.
