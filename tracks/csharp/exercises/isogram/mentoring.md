@@ -43,7 +43,7 @@ public static class Isogram
 
 - In the non LINQ version, try to use a single loop
 
-- Using LINQ next suggestions could be made:
+- When using LINQ, the following suggestions can be made:
   * each element of the string should be a letter (in this way we avoid checking for space or '-')
   * without making any iteration, _distinct_ method helps to enforce the letter uniqueness, and find the isogram   
     
