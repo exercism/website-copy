@@ -34,7 +34,7 @@ public static class Isogram
     {
         // Ignore spaces, hyphens, regard uppercase as lower.
         var trimmedInput = word.ToLower().Where(Char.IsLetter).ToCharArray();
-        return trimmedInput.Distinct().Count() == trimmedInput.Count();
+        return trimmedInput.Distinct().Count() == trimmedInput.Length;
     }
 }
 ```
