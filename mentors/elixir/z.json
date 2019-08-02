@@ -8,14 +8,6 @@
     "bio": "I have been using Elixir for the past year and it has quickly become one of my favorite programming languages. Programming is supposed to be fun and Elixir is no exception. Elixir makes it easy to play around with concurrent programming and its applications are near endless." 
   },
   {
-    "github_username": "zeeker",
-    "name": "Sascha Wolf",
-    "link_text": "Website",
-    "link_url": "https://saschawolf.me",
-    "avatar_url": null,
-    "bio": "Elixir made me realize that concurrency doesn't need to be hard. It's a great introduction to functional programming and a joy to write. I've been using it professionally since 2017, contributed to a number of libraries, and maintain some of my own." 
-  },
-  {
 
     "github_username": "zentetsukenz",
     "name": "Wiwatta Mongkhonchit",
