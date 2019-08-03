@@ -39,7 +39,6 @@ Separate methods are also permissible rather than doing all the work upfront in 
 
 There's no need to overload a student with all of these suggestions, so here is a list ordered roughly by most important suggestions first:
 
-- For students who wrote code that interleaves string manipulation with data persistence, encourage them to do those steps sequentially
 - Suggest the student look at other methods on `String` that could simplify their code if they don't use `String#lines` or `String#each_line`
 - If they have written their own transpose method, point out `Array#transpose`
 - More generally, for any solutions that has matching based on a regular expression or explicitly declared string or substring, encourage them to find a solution that does not require either
