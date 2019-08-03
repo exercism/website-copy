@@ -62,6 +62,54 @@ public static class NucleotideCount
 }
 ```
 
+#### Using Dictionary & LINQ
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public static class NucleotideCount
+{
+    static List<char> dnaTypeList = new List<char> { 'A', 'C', 'G', 'T' };
+    public static IDictionary<char, int> Count(string sequence)
+    {
+        if (sequence.Any(n => !dnaTypeList.Exists(c => n == c)))
+            throw new ArgumentException();
+        return dnaTypeList.ToDictionary(c => c, c => sequence.Split(c).Length - 1);
+    }
+}
+```
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public static class NucleotideCount
+{
+    public static IDictionary<char, int> Count(string sequence) =>
+        sequence.Aggregate(new Dictionary<char, int>
+        {
+            ['A'] = 0,
+            ['C'] = 0,
+            ['G'] = 0,
+            ['T'] = 0,
+        },
+        (dictionary, next) =>
+        {
+            try
+            {
+                dictionary[next]++;
+            }
+            catch(Exception ex)
+            {
+                throw new ArgumentException("", ex);
+            }
+            return dictionary;
+        });
+}
+```
+
 ### Common Suggestions
 
  * Iterating over the input string more than once wastes cycles, memory, etc. Often it isn't obvious that this is happening because methods like `ToList`, `GroupBy` or `Count` will iterate a list without the student having to write a loop.
