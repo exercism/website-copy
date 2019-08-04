@@ -41,7 +41,7 @@ less readable for many than `if number % 3 == 0`
 
 #### Simplify the return statement
 
-The final **if** can be simplified in several ways:
+The final **if**/**return** block can be simplified in several ways:
 
 ```python
 # ternary if statement
@@ -57,7 +57,23 @@ return str(result or number)
 Note that the final one will not involve a copy since the value of 
 **result** is always constrained enough to be interned.
 
-#### Leverage multiplication of a str
+#### Leverage the ternary if
+
+```python
+def convert(number: int) -> str:
+  
+    result = ''
+    result += "Pling" if number % 3 == 0 else ""
+    result += "Plang" if number % 5 == 0 else ""
+    result += "Plong" if number % 7 == 0 else ""
+
+    return result or str(number)
+```
+
+Not everyone likes the ternary **if** syntax, but it's quite workable
+in this situation.
+
+#### Alternatively, use multiplication of a str
 
 ```python
 def convert(number: int) -> str:
@@ -70,6 +86,12 @@ def convert(number: int) -> str:
     return result or str(number)
 ```
 
+This helps introduce the **bool** type and the fact that it's just a 
+numerical value. It also introduces the idea that a string can be
+multiplied.
+
+The caveat is that the parentheses are required.
+
 #### Use an iterable data structure
 
 The approaches above all involve some repetition, and so would become 
@@ -77,11 +99,11 @@ unwieldy and difficult to maintain if the number of different factors
 were substantially increased.
 
 The value of preparing for such scope creep in such a simple exercise
-is debatable, but were the exercise to expand significantly then a more 
-maintainable approach would be to use one of the many iterable data 
-structures provided by Python's builtins via a _comprehension_.
+is debatable, but were it an issue then a more maintainable approach 
+would be to use one of the many iterable data structures provided by P
+ython's builtins via a _comprehension_.
 
-##### Tuples & Lists
+##### Use tuple / list
 
 ```python
 DROPS = (
@@ -107,7 +129,7 @@ Notice that a _generator comprehension_ is used to feed **str.join** rather
 than a _list comprehension_; again either form is acceptable, but this saves 
 a small amount of memory and is slightly easier to read.
 
-##### Dict
+##### Use dict
 
 ```python
 DROPS = {
@@ -125,23 +147,18 @@ A dict can be used because it's a natural fit for mapping a string to a
 value, or vice versa, but it introduces some issues of its own:
 
 1. Prior to Python 3.7 the keys of a dict were not guaranteed to be retained 
-in insertion order, though for most of Python 3 they have been kept in that 
-order due to an implementation detail of the CPython interpreter. To be 
-_reliably_ sorted before Python 3.7 either **sorted** or a 
-**collections.OrderedDict** would be required. In this case reversing the 
-key: value relationship in **DROPS** could allow `sorted(DROPS.items())` to 
-be used to give back the factors and drops in numerically sorted order. 
-This clearly introduces an extra set of concerns that don't exist with any 
-solution above.
+in insertion order. To be _reliably_ sorted before Python 3.7 either 
+**sorted** or a **collections.OrderedDict** would be required. This introduces 
+an extra set of concerns that don't exist with the solutions above.
 2. The memory footprint of a dict is larger either the list of lists or 
 the tuple of tuples, though not so substantially larger that it should be 
-considered a reason for disqualifying or discouraging its use. The student 
-might benefit from knowing the additional memory overhead exists, however.
-3. The real argument against a dict in this case is that none of its 
+considered disqualifying. The student would however benefit from knowing the 
+additional memory overhead exists.
+3. The best argument against a dict in this case is that none of its 
 strengths are used; a dict is meant to provide fast membership testing, but 
 that's not an issue here. As used it's just a more expensive list / tuple.
 
-##### enum.Enum
+##### Use enum.Enum
 
 ```python
 from enum import Enum
@@ -157,7 +174,7 @@ def convert(number: int) -> str:
 ```
 
 An enum.Enum introduces an import and the use of a class, but with the 
-advantage of being unambiguous, immutable, inherently ordered, and is arguably
+advantage of being unambiguous, immutable, inherently ordered, and arguably
 the easiest of all of the above to read and maintain. However it does have 
 the disadvantage of having the largest memory overhead of everything above, 
 and is only available in Python 3.4 and newer.
