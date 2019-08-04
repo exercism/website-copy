@@ -31,3 +31,5 @@ public class HighScores
     
 ### Talking points
 - While scores could be made readonly here, it may be not a general recommendation. We might expect the class to be further expanded.
+- Implementing Latest() method using Last() is ok for the scope of this exercise. However, LastOrDefault() should be more frequent used, especially when we need to check whether there was an element or not. In other words, when it is legal for the sequence to be empty - and in our case it is. We should not rely on exception handling for the check, being not a good practice and bringing a performance penalty.
+- Not everyone likes them, but it might be useful to suggest writing methods as  [expression-bodied methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as they are perfect for these kinds of small methods.
