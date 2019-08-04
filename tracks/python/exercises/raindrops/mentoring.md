@@ -1,6 +1,6 @@
 ### Problem and Challenges
 
-The problem asks us to take an integer and return a string.
+The problem asks us to take an **int** and return a **str**.
 We need to map potential factors 3, 5, and 7 to Pling, Plang, and Plong.
 If the integer is not divisible by any of the factors, we must
 return a string representing the number in base 10.
@@ -87,10 +87,8 @@ def convert(number: int) -> str:
 ```
 
 This helps introduce the **bool** type and the fact that it's just a 
-numerical value. It also introduces the idea that a string can be
-multiplied.
-
-The caveat is that the parentheses are required.
+numerical value. It also introduces the idea that a **str** can be
+multiplied. The caveat is that the parentheses are required.
 
 #### Use an iterable data structure
 
@@ -100,8 +98,8 @@ were substantially increased.
 
 The value of preparing for such scope creep in such a simple exercise
 is debatable, but were it an issue then a more maintainable approach 
-would be to use one of the many iterable data structures provided by P
-ython's builtins via a _comprehension_.
+would be to use one of the many iterable data structures provided by 
+Python's builtins via a _comprehension_.
 
 ##### Use tuple / list
 
@@ -117,8 +115,8 @@ def convert(number: int) -> str:
     return str(result or number)
 ```
 
-A tuple of tuples can be used because no dynamic resize of **DROPS** 
-is necessary, and it's got a smaller footprint in memory than a list 
+A **tuple** of tuples can be used because no dynamic resize of **DROPS** 
+is necessary, and it's got a smaller footprint in memory than a **list** 
 of lists, but either form would be acceptable.
 
 This and the following solutions use a global constant rather than a local; 
@@ -143,7 +141,7 @@ def convert(number: int) -> str:
     return str(result or number)
 ```
 
-A dict can be used because it's a natural fit for mapping a string to a 
+A **dict** can be used because it's a natural fit for mapping a string to a 
 value, or vice versa, but it introduces some issues of its own:
 
 1. Prior to Python 3.7 the keys of a dict were not guaranteed to be retained 
@@ -173,7 +171,7 @@ def convert(number: int) -> str:
     return str(result or number)
 ```
 
-An enum.Enum introduces an import and the use of a class, but with the 
+An **enum.Enum** introduces an import and the use of a class, but with the 
 advantage of being unambiguous, immutable, inherently ordered, and arguably
 the easiest of all of the above to read and maintain. However it does have 
 the disadvantage of having the largest memory overhead of everything above, 
