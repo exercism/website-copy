@@ -7,31 +7,14 @@ return a string representing the number in base 10.
 
 ### Reasonable Solutions
 
-```python
-def raindrops(val: int) -> str:
+This exercise is an early core exercise and is intended to introduce
+simple concepts such as basic conditionals, modulo division, and string 
+concatenation.
 
-    sound_map = [
-        (3, 'Pling'),
-        (5, 'Plang'),
-        (7, 'Plong'),
-        ]
-
-    lst = [sound for factor, sound in sound_map if not (val % factor)]
-
-    if not lst:
-        result = str(val)
-    else:
-        result = ''.join(lst)
-
-    return result
-```
-
-### Common Suggestions
-
-#### Linear testing
+Therefore the following is considered both reasonable and acceptable:
 
 ```python
-def raindrops(number): 
+def convert(number: int) -> str:
   
     result = ''
     if number % 3 == 0:
@@ -43,91 +26,145 @@ def raindrops(number):
 
     if not result:
         result = str(number)
-
     return result
 ```
 
-This solution contains
-a sequence of if statements, rather than iterating
-over some data structure that holds the pairs.
+A couple notes on the reasonable solution:
 
-The problem is still fairly early in the Python 
-Track, but you should make the case that, although
-this solution passes the tests, it does not scale
-to a solution when there are dozens of factors.
+1. concatenation is efficient and reasonable here; `"".join(words)` is 
+only more efficient with relatively large number of additions -- try to
+avoid prematurely burdening the beginner student with optimization
+2. similarly `if not number % 3` is slightly more efficient but will be
+less readable for many than `if number % 3 == 0`
 
-Tell the student that what sets Python apart
-from many other languages is the rich set of 
-data structures with full linguistic support.
+### Common Suggestions
 
-The solution also uses string addition,
-rather than appending to a list and joining.
-See the General Issues discussion for more
-on this common problem.
-However, since there are a limited number
-of possible additions, you may wish to overlook this
-or to comment in passing.
+#### Simplify the return statement
 
-
-#### The Dictionary
+The final **if** can be simplified in several ways:
 
 ```python
-def raindrops(val: int) -> str:
+# ternary if statement
+return result if result else str(number)
 
-    sound_map = {
-        3: 'Pling',
-        5: 'Plang',
-        7: 'Plong'
-        }
+# leverage boolean OR
+return result or str(number)
 
-    lst = [sound_map[i] for i in sorted(sound_map.keys()) if not (val % i)]
-
-    if not lst:
-        result = str(val)
-    else:
-        result = ''.join(lst)
-
-    return result
+# cast either side of boolean OR
+return str(result or number)
 ```
 
-The Dictionary seems like a step forward, but there are three arguments
-against it. 
+Note that the final one will not involve a copy since the value of 
+**result** is always constrained enough to be interned.
 
-1. The keys to an ordinary dictionary are not
-guaranteed to be presented in any particular order. Of course,
-that can be addressed. The solution presented sorts the keys.
+#### Leverage multiplication of a str
 
-2. A stronger argument against it is the memory footprint for a
-dictionary, which takes a great deal of memory to store
-a hash table. Lists or tuples are much smaller.  
+```python
+def convert(number: int) -> str:
+  
+    result = ''
+    result += "Pling" * (number % 3 == 0)
+    result += "Plang" * (number % 5 == 0)
+    result += "Plong" * (number % 7 == 0)
 
-3. A dictionary provides a map to give
-random access mapping keys to values. 
-However, that is not the problem we face here:
-we are performing a sequential traverse of the 
-keys. 
-The dictionary isn't well suited for sequential
-access, and the problem doesn't require random access. 
-This problem is not a good showcase for a dictionary.   
+    return result or str(number)
+```
 
+#### Use an iterable data structure
 
-#### Many Happy Returns
+The approaches above all involve some repetition, and so would become 
+unwieldy and difficult to maintain if the number of different factors 
+were substantially increased.
 
-All of the examples above have a single return.  
-This is an aid in debugging: you can place a 
-breakpoint on the return and see what the function
-returns.  
+The value of preparing for such scope creep in such a simple exercise
+is debatable, but were the exercise to expand significantly then a more 
+maintainable approach would be to use one of the many iterable data 
+structures provided by Python's builtins via a _comprehension_.
 
-There are a variety of viewpoints on the requirement
-of a single return. The strongest argument for
-relaxing it is to allow an early return from a 
-complex routine: perhaps a return when the data
-is invalid, or the answer is easy to compute. 
-That argument doesn't apply here, so there is
-little reason not to use a single return. 
+##### Tuples & Lists
 
-### What to look for / Talking Points
+```python
+DROPS = (
+   ('Pling', 3),
+   ('Plang', 5),
+   ('Plong', 7),
+)
 
-- Encourage students to use list comprehension.
-- Discourage linear testing and talk about scalability
-- Discourage dictionaries and multiple returns
+def convert(number: int) -> str:
+    result = "".join(d for d, f in DROPS if not number % f)
+    return str(result or number)
+```
+
+A tuple of tuples can be used because no dynamic resize of **DROPS** 
+is necessary, and it's got a smaller footprint in memory than a list 
+of lists, but either form would be acceptable.
+
+This and the following solutions use a global constant rather than a local; 
+this saves wasted allocation and deallocation if **convert** is called often, 
+however a local constant would be acceptable as well.
+
+Notice that a _generator comprehension_ is used to feed **str.join** rather 
+than a _list comprehension_; again either form is acceptable, but this saves 
+a small amount of memory and is slightly easier to read.
+
+##### Dict
+
+```python
+DROPS = {
+    'Pling': 3,
+    'Plang': 5,
+    'Plong': 7,
+}
+
+def convert(number: int) -> str:
+    result = "".join(d for d, f in DROPS.items() if not number % f)
+    return str(result or number)
+```
+
+A dict can be used because it's a natural fit for mapping a string to a 
+value, or vice versa, but it introduces some issues of its own:
+
+1. Prior to Python 3.7 the keys of a dict were not guaranteed to be retained 
+in insertion order, though for most of Python 3 they have been kept in that 
+order due to an implementation detail of the CPython interpreter. To be 
+_reliably_ sorted before Python 3.7 either **sorted** or a 
+**collections.OrderedDict** would be required. In this case reversing the 
+key: value relationship in **DROPS** could allow `sorted(DROPS.items())` to 
+be used to give back the factors and drops in numerically sorted order. 
+This clearly introduces an extra set of concerns that don't exist with any 
+solution above.
+2. The memory footprint of a dict is larger either the list of lists or 
+the tuple of tuples, though not so substantially larger that it should be 
+considered a reason for disqualifying or discouraging its use. The student 
+might benefit from knowing the additional memory overhead exists, however.
+3. The real argument against a dict in this case is that none of its 
+strengths are used; a dict is meant to provide fast membership testing, but 
+that's not an issue here. As used it's just a more expensive list / tuple.
+
+##### enum.Enum
+
+```python
+from enum import Enum
+
+class Drops(Enum):
+    Pling = 3
+    Plang = 5
+    Plong = 7
+
+def convert(number: int) -> str:
+    result = "".join(d.name for d in Drops if not number % d.value)
+    return str(result or number)
+```
+
+An enum.Enum introduces an import and the use of a class, but with the 
+advantage of being unambiguous, immutable, inherently ordered, and is arguably
+the easiest of all of the above to read and maintain. However it does have 
+the disadvantage of having the largest memory overhead of everything above, 
+and is only available in Python 3.4 and newer.
+
+### Talking Points
+
+- Encourage simple & readable over complex & efficient
+- Discuss possible maintainability / scalability problems & requirement drift
+- Mention some of the available builtin data structures
+- If looping is involved, encourage comprehension syntax
