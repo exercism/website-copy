@@ -183,3 +183,4 @@ and is only available in Python 3.4 and newer.
 - Discuss possible maintainability / scalability problems & requirement drift
 - Mention some of the available builtin data structures
 - If looping is involved, encourage comprehension syntax
+- Type annotations should be omitted for Python 2; for Python 3 they're optional, but it's worth encouraging the student to consider adding them and becoming familiar with them.
