@@ -1,4 +1,3 @@
----
 
 This is a good exercise to talk about naming, as it is quite difficult and most students struggle with it.
 
