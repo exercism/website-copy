@@ -33,7 +33,7 @@ A lot of students struggle to concatenate the verses without a lot of special ca
 
 ### Talking points
 
-In the real world, the entry function would probably return a `Maybe` or a `Result` to indicate that it can fail / can recieve invalid input. However, this function already defined by the exercise without this (I think to keep the exercise relatively simple). This means that we have to make choices about what to do with out of bounds inputs. Using `clamp` or similar is one possibility, to transform out of range inputs in to in range ones. The other options are to return non sensical output, or explicit error output. 
+In the real world, the entry function would probably return a `Maybe` or a `Result` to indicate that it can fail / can recieve invalid input. However, this function already defined by the exercise without this (I think to keep the exercise relatively simple). This means that we have to make choices about what to do with out of bounds inputs. Using `clamp` or similar is one possibility, to transform out of range inputs in to in range ones. The other options are to return nonsensical output, or explicit error output. 
 
 How much code / how far down the file do I have to read to understand what the code does, and how easy is it to do so? 
 
