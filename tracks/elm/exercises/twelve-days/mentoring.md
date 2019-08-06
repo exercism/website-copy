@@ -29,7 +29,7 @@ type alias NthDay =
 
 Naming is difficult in this solution, and most students do not choose good names. Generally the name should be one level of abstraction up from what the code does (so it still means something, but you can change the implementation without having to change the name). `onTheNthDay` and `whatWasGiven` are reasonable choices for commonly used functions. `onTheNthDay` doesn't mention Christmas, so would allow the code to be changed for a different event ('on the first day of easter ...') and still make sense, while still being meaningful enough to be useful. 'onTheNth' is also possible, which would allow the code to change to 'on the second year of the new millenium' without having to change the name, and again the name is still meaningful enough to be useful.
 
-A lot of students stuggle to concatenate the verses without a lot of special case code and conditionals. Most of this can be avoided by adding `,` and `, and` to the gift strings.
+A lot of students struggle to concatenate the verses without a lot of special case code and conditionals. Most of this can be avoided by adding `,` and `, and` to the gift strings.
 
 ### Talking points
 
