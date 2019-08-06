@@ -1,7 +1,7 @@
 ### Reasonable solution
 
 #### using LINQ 
-The exercise focuses mainly on using two concepts: `List` as generic collection, combined with basic LINQ methods. 
+The exercise aims to teach two concepts: `List<T>` as a generic collection, combined with basic LINQ methods. 
 
 ```csharp
 using System.Collections.Generic;
