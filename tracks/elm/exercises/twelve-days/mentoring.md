@@ -9,7 +9,7 @@ Students should strive to communicate what the code does in as few lines as poss
 
 Only listing out the complete text of all verses is the most straight-forward solution, and is a reasonable initial choice in real life. Then, if changes are required to the song, it makes sense to refactor to remove the duplication, and then make the changes. However this solution doesn't really help the student learn elm, so if they have done this encourage them to make a further iteration.
 
-All solutions need a way of turning an `Int` in to a string ordinal, and in to a string describing the gift for a day. `Dict.fromList`, `Array.fromList`, `List` or `case statements` are the normal ways to do this, and there is not much to choose between them.
+All solutions need a way of turning an `Int` into a string ordinal, and into a `string` describing the gift for a day. `Dict.fromList`, `Array.fromList`, `List` or `case statements` are normal ways to do this, and are equally favourable.
 
 It is generally best to iterate over the verses using `List.map` or similar. It is possible to use recursion, but it makes naming harder, and is more complex than it needs to be.
 
