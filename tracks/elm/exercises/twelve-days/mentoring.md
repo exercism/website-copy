@@ -13,7 +13,7 @@ All solutions need a way of turning an `Int` into a string ordinal, and into a `
 
 It is generally best to iterate over the verses using `List.map` or similar. It is possible to use recursion, but it makes naming harder, and is more complex than it needs to be.
 
-It is possible to use a type (like the one below) to contain all the information for a day (the ordinal and the gift for the day). This keeps the ordinal and gift strings closer together, which is good, but adds some noise, which is bad. Either is acceptable.
+It is possible to use a type (like the one below) to contain all the information for a day (the ordinal and the gift for the day). This keeps the ordinal and gift strings closer together, which is good, but adds some noise, which is bad.
 
 ```elm
 type alias NthDay =
