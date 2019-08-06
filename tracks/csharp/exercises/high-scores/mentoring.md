@@ -16,7 +16,6 @@ public class HighScores
         _scores = list;
     }
 
-    // Methods
     public List<int> Scores() => _scores.ToList(); 
     public int Latest() => _scores.Last();
     public int PersonalBest() => _scores.Max();
