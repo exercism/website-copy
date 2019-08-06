@@ -27,7 +27,7 @@ public class HighScores
 
 ### Common suggestions
 - The exercise focuses mainly on using two concepts: list as generic collection, combined with basic LINQ methods. 
-- LINQ is especially helpful on creating method "PersonalTopThree", where a combination of OrderByDescending and Take provides a quick solution [with an example](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.take?view=netcore-2.1). Take method does not raise an exception when there are less elements. 
+- LINQ is especially helpful on creating method `PersonalTopThree`, where a combination of `OrderByDescending` and `Take` provides a quick solution [with an example](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.take?view=netcore-2.1). `Take` method does not raise an exception when there are less elements. 
 - By design, field `_scores` should be `private`
     
 ### Talking points
