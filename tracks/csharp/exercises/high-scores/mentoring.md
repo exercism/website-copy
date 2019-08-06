@@ -11,7 +11,6 @@ public class HighScores
 {
     private readonly List<int> _scores; 
 
-    // Constructor
     public HighScores(List<int> list)
     {
         _scores = list;
