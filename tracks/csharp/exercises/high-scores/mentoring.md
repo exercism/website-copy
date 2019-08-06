@@ -9,7 +9,6 @@ using System.Linq;
 
 public class HighScores
 {
-    // Fields
     private readonly List<int> _scores; 
 
     // Constructor
