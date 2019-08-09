@@ -16,12 +16,15 @@ function invalidInput() {
   throw new Error('Invalid input DNA.')
 }
 
-export function toRna(sequence: string): string {
-  return sequence
-    .split('')
-    .map(nucleotide => TRANSCRIPTION[nucleotide] || throwError())
-    .join('')
+export class Transcriptor {
+  toRna(sequence: string): string {
+    return sequence
+      .split('')
+      .map(nucleotide => TRANSCRIPTION[nucleotide] || invalidInput())
+      .join('')
+  }
 }
+
 ```
 Variations include `Set` or `Map` with `#get`, which are valid!
 
