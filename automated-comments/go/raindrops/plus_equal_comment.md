@@ -1,1 +1,1 @@
-Strings in Go can be appended with a syntax like this: `speech += "Plang"`.
+Strings in Go can be appended using syntax like this: `speech += "Plang"`.
