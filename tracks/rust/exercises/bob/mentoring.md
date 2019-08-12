@@ -16,7 +16,7 @@ A reasonable solution should:
 
 - Use constants
 - Use variables
-- Use `match` statements
+- Use a `match` statement
 - Check if the input string is empty and return the "FINE" constant
 before doing any additional processing
 - Use simple methods from the standard library
@@ -39,11 +39,10 @@ pub fn reply(message: &str) -> &str {
     } else {
         let is_question = message.ends_with('?');
 
-        let contains_alphabetic = message.chars().any(char::is_alphabetic);
         // A message is uppercase if it doesn't contain lowercase.
         // `.all(char::is_uppercase)` doesn't work because of whitespace/punctuation
-        let is_uppercase = !message.chars().any(char::is_lowercase);
-        let is_yelled = contains_alphabetic && is_uppercase;
+        let is_yelled = message.chars().any(char::is_alphabetic) &&
+            !message.chars().any(char::is_lowercase);
 
         match (is_question, is_yelled) {
             (true, false) => SURE,
@@ -113,6 +112,8 @@ If they ask about `&str` having a static lifetime:
 Lifetimes prevent dangling pointers; they are needed when a value points to some data, so the value doesn't outlive its data.
 
 String literals are [slices](https://doc.rust-lang.org/std/primitive.slice.html) that point to a section in the executable, where all string slices are stored. Because this data is never freed, string slices are alive for the entire duration of the application, which is denoted with the special `'static` lifetime.
+
+There's an example in [Rust By Example](https://doc.rust-lang.org/rust-by-example/scope/lifetime/static_lifetime.html).
 ```
 
 If they use `_` instead of `false` in their match statement:
