@@ -1,4 +1,4 @@
-Here we have collated a list of the questions asked frequently by mentors. 
+Here we have collated a list of the questions asked frequently by mentors.
 
 ### How do I get started with Mentoring?
 Once you've become a mentor via the [become a mentor](https://exercism.io/become-a-mentor) page, you can access your [mentor dashboard](https://exercism.io/mentor/dashboard) at any time. When you joined you should have received an invitation to our Slack Room. You can find more instructions in the [start-here channel on Slack](https://exercism-mentors.slack.com/archives/CBDA9LMDF/p1529968977000336).
@@ -9,11 +9,12 @@ If you're not sure what feedback to give, paste a link to the solution (e.g. `ht
 ### How can I improve my mentoring skills?
 This is something we're extremely passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples. Eventually we hope to have a guide for each track.
 
-In the meantime, here's some recommended reading:
+In the meantime, here are some recommended resources:
 
 - [The Science and Art of Receiving Feedback Well](https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/)
 - [Unlearning Toxic Behaviours in a Code Review Culture - Conference talk by Sandya Sankarram](https://drive.google.com/file/d/1ROZA9yKpEa8suiqVXtPO0IJtqa95SOjE/view) and related [Blog Post](https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c)
 - [How Positive and Negative Feedback Motivate Goal Pursuit](https://faculty.chicagobooth.edu/ayelet.fishbach/research/FEF%20Compass%202010.pdf)
+- The #mentor-the-mentor channel on Slack, where you can learn to be an amazing mentor from other amazing mentors.
 
 In general, behaviours to avoid:
 
@@ -39,7 +40,7 @@ We appreciate this is a rough guide and we are working on creating documentation
 Ideally within a week of a learner submitting their solution to help maintain their motivation and enthusiasm for the exercise. We will be implementing a "Leave of Absence" notification button for mentors soon that you can use if don't feel like you'll be able to respond to solutions within this timeframe. This button will pass the solutions you're mentoring onto another mentor.
 
 ### I need to have a break from mentoring, can I stop receiving new solutions?
-Yes! We have this logged as an issue on GitHub (see [https://github.com/exercism/exercism/issues/3922](https://github.com/exercism/exercism/issues/3922)) and will be implementing a Leave of Absence notification soon. 
+Yes! We have this logged as an issue on GitHub (see [https://github.com/exercism/exercism/issues/3922](https://github.com/exercism/exercism/issues/3922)) and will be implementing a Leave of Absence notification soon.
 
 ### How much time should I be spending on mentoring?
 We had 1,000 submissions per day on the original Exercism site, of which fewer than 20% received feedback. Our key launch-targets are to achieve >95% feedback-rate. We have based our mentor recruitment numbers on mentors offering 1hr/week on average. If you can offer more than that then that's great!

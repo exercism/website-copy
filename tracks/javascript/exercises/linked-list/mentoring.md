@@ -12,20 +12,20 @@ class Node {
 
 export class LinkedList {
   constructor() {
-    this.tail = null
     this.head = null
+    this.tail = null
   }
 
   clear() {
-    this.tail = null
     this.head = null
+    this.tail = null
   }
 
   push(value) {
-    const element = new Node({ value, next: this.tail })
+    const element = new Node({ value, prev: this.tail })
 
     if (this.tail) {
-      this.tail.prev = element
+      this.tail.next = element
     } else {
       this.head = element
     }
@@ -34,10 +34,10 @@ export class LinkedList {
   }
 
   unshift(value) {
-    const element = new Node({ value, prev: this.head })
+    const element = new Node({ value, next: this.head })
 
     if (this.head) {
-      this.head.next = element
+      this.head.prev = element
     } else {
       this.tail = element
     }
@@ -52,9 +52,9 @@ export class LinkedList {
 
     const { value } = this.tail
 
-    if (this.tail.next) {
-      this.tail = this.tail.next
-      this.tail.prev = null
+    if (this.tail.prev) {
+      this.tail = this.tail.prev
+      this.tail.next = null
     } else {
       this.clear()
     }
@@ -69,9 +69,9 @@ export class LinkedList {
 
     const { value } = this.head
 
-    if (this.head.prev) {
-      this.head = this.head.prev
-      this.head.next = null
+    if (this.head.next) {
+      this.head = this.head.next
+      this.head.prev = null
     } else {
       this.clear()
     }
@@ -81,7 +81,7 @@ export class LinkedList {
 
   count() {
     let count = 0
-    let element = this.tail
+    let element = this.head
 
     while (element) {
       count += 1
@@ -92,7 +92,7 @@ export class LinkedList {
   }
 
   delete(value) {
-    let element = this.tail
+    let element = this.head
     while (element) {
       if (element.value !== value) {
         element = element.next
@@ -100,16 +100,16 @@ export class LinkedList {
         continue
       }
 
-      if (element.next) {
-        element.next.prev = element.prev
-      } else {
-        this.head = this.head.prev
-      }
-
       if (element.prev) {
         element.prev.next = element.next
       } else {
-        this.tail = this.tail.next
+        this.head = this.head.next
+      }
+
+      if (element.next) {
+        element.next.prev = element.prev
+      } else {
+        this.tail = this.tail.prev
       }
 
       break
