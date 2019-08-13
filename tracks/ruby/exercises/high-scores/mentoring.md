@@ -24,6 +24,10 @@ class HighScores
   def personal_top_three
     scores.sort.reverse.take(3) 
   end
+  
+  def latest_is_personal_best?
+    latest == personal_best
+  end
 end
 
 ```
@@ -36,9 +40,11 @@ end
 
 ### Talking points
 - `@scores` vs `scores`: This is the most important issue in this exercise. Beginners may _write_ the getter method/`attr_reader`, but _call_ the instance variable `@scores` still. This link explains some of the advantages of using the getter method internally in the class instead of directly referencing the instance variable: [LaunchSchool: accessor_methods](https://launchschool.com/books/oo_ruby/read/classes_and_objects_part1#accessormethodsinaction). It's recommended to link to this or your favorite explanation, instead of typing the solution for them. 
+- `latest_is_personal_best?`: this predicate method should use the existing methods, and implicitly return true or false. For new programmers it may be helpful to ask what they think the question mark indicates.   
 - `scores.max(3)`: `Array#max` [takes an argument](https://ruby-doc.org/core/Array.html#method-i-max).
 - `Array#[]`: Most submissions retrieve the `personal_top_three` values with the `Array#[]` method, which is harder to read than the convenience methods that Ruby offers. `Array#take(3)` or `Array#first(3)` win in readability. And `Array#max(3)` doesn't even need the sorting-and-reverting steps. 
 
 ### Changelog
+- Version 5 added a boolean/predicate method `latest_is_personal_best?` (See https://github.com/exercism/problem-specifications/pull/1564) 
 - Version 3/4 changed method names "personal_top" -> "personal_top_three" and removed the "report" method. (See related Mentor Notes [here](https://github.com/exercism/website-copy/blob/aa66a176756313687baf214bbb051e1c3fc0f832/tracks/ruby/exercises/high-scores/mentoring.md).)
 - Version 2 changed method names "highest" -> "personal_best", "top" -> "personal_top".
