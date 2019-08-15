@@ -1,0 +1,5 @@
+A `main` function is used as an entry point to a program. Exercism is using TDD (Test Driven Development).
+That means the code is executed by running the tests to make them pass. To run the tests use `go test` from the terminal.
+The tests will pass if the functionality is implemented correctly.
+
+Remove the `main` function and rename the package name back to `twofer`. Then run the tests.
