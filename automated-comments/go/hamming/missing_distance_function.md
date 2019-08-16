@@ -1,1 +1,1 @@
-The `Distance` function is missing or couldn't be found.
+Add the function `Distance`, as it is required and currently missing.
