@@ -1,4 +1,5 @@
-Converting the `bytes` to `runes` to compare disguises the problem.
-Such conversion works perfectly in the context of this exercise as there are only ASCII letters in DNA strands.
+Converting a `byte` to a `rune` works perfectly in the context of this exercise as there are only ASCII letters in DNA strands.
+ASCII characters consist of one `byte` each. As soon as non-ASCII characters get involved this will break as they consist of 
+up to 4 bytes.
 
-Try creating more tests with non-ASCII characters and see what happens.
+For an additional challenge you can try creating more tests with non-ASCII characters and see what happens.

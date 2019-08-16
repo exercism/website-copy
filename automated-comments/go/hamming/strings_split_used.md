@@ -1,8 +1,8 @@
-Improve the efficiency by converting the string to a slice of `rune`s like this:
+Use the built in type `rune` to work with individual characters in Go.
+A `string` can be converted into a `[]rune` (slice of runes) with:
 
 ```go
-ar := []rune(a)
+aRunes := []rune(a)
 ```
 
-The type in Go to hold a single character is `rune`. Splitting the string into a slice of single character strings and working with them is a lot slower than ...
-Splitting the string into a slice of single character strings and working with them is a lot slower.
+Splitting the string into a lot of small strings (one for each rune) works, but is not the most efficient.
