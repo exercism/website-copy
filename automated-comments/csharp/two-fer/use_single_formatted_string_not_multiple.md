@@ -1,1 +1,1 @@
-There are two `return` statements returning very similar strings. How could this code be structured so that this duplication is eliminated? This will involve having just one `return` statement that returns a single `string`.
+There are two very similar `string` instances being returned. How could this code be structured such that this duplication is eliminated? This will involve removing any branching and returning just a single `string`.
