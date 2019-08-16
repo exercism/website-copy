@@ -42,7 +42,7 @@ colors.take(2).map { |color| COLOR_CODES[color] }.join.to_i
 ```ruby
 
 # and &Parameter
-colors.map(&COLOR_CODES).join.to_i
+colors.take(2).map(&COLOR_CODES).join.to_i
 
 ```
 Plus: 
