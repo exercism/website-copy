@@ -2,48 +2,58 @@ Resistor Color Duo is the first core exercise after TwoFer.
 
 ### New Concepts
 
-`Array`, `Array#index`, `map`, Constant, chaining methods
+`Array`, `Array#index`, `map`, or `Hash`, `Hash#[]`; Constant, chaining methods
 
 ### Minimal solution for approval
 
-* using `map` to iterate over the array of colors
-* extracting the values in a `constant`, outside of the method
+* Using either an array of color names and reading the index as the value, or a hash of colors and values
+* Extracting the values in a `constant`, outside of the method
+* Two possible approaches: a) iterating over the color names, and join them together to compose a 2-digit number
+b) Acknowledging the position of each band, by treating the first color as 'tens' and the second as 'ones'.    
 
 ```ruby
-
 class ResistorColorDuo
-
+  
   COLOR_CODES = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"].freeze
 
+  # The 'join' approach
   def self.value(colors)
-    colors.map { |color| COLOR_CODES.index(color) }.join.to_i
+    colors.first(2).map { |color| COLOR_CODES.index(color) }.join.to_i
+  end
+
+  # The 'positional' approach
+  def self.value(colors)
+    tens, ones = colors
+    COLORS.index(tens) * 10 + COLORS.index(ones)
   end
 
 end
+
+# with a hash instead of an array 
+COLOR_CODES[colors[0]] * 10 + COLOR_CODES[colors[1]]
+
+# or 
+colors.take(2).map { |color| COLOR_CODES[color] }.join.to_i
 
 ```
 
 ### Reasonable Variants
 
 ```ruby
-# with a hash instead of an array 
-COLOR_CODES.fetch_values(*colors).join.to_i
 
 # and &Parameter
 colors.map(&COLOR_CODES).join.to_i
 
-# or a hash with symbols
-colors.map { |color| COLOR_CODES[color.to_sym] }.join.to_i
 ```
-
-- Using a class or a module (no reason to discuss). 
-- Multiplying the first value and adding the second one.     
+Plus: 
+- Using a class or a module (no reason to discuss).   
+- The color names as strings or symbols.
 
 ### General
 
-This is the very first Array exercise, and the first loop. Introducing `map` is key in this exercise. 
-
-You, dear mentor, are totally right that using a hash would be a better solution, because it makes the relation between the color and its value explicit. But we really want people to know how to work with arrays before we ask them to work with hashes. (That will be taken care of later on in the track.) If a student _starts_ with a hash themselves, then by all means go with the hash.
+Both array and hash have their pros and cons. A hash makes the mapping more explicit, while an array seems to better reflect the fact that a color band has a position plus a numerical value (the tens and ones). Some mentors have a strong preference for one over the other, but it's recommended to go with the solution the student starts with. 
+Same for the general approach, `join` or `positional approach`: go with the solution the student starts with. 
+Fun fact: Resistor Color Trio will actually use the third color, and will be a more appropriate moment to talk about the pros and cons of both the data structure and the general approach.
 
 ### Talking points
 - _string interpolation_ : if the student uses string interpolation to compose the value, challenge them to solve it with `map` and `join`. Approve if they don't want to do the challenge.
@@ -55,6 +65,7 @@ You, dear mentor, are totally right that using a hash would be a better solution
 
 
 ### Changelog
+2019 Aug 16 - Version 2.1 introduces a new test: an input of 3 colors should still return a 2 digit number, ignoring the third color
 
 2019 Jul 13 - Changed from side to core exercise
 
