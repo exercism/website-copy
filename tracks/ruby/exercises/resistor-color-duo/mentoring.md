@@ -10,7 +10,7 @@ Resistor Color Duo is the first core exercise after TwoFer.
 * Extracting the values in a `constant`, outside of the method
 * Two possible approaches: 
   - Iterating over the color names, and join them together to compose a 2-digit number
-b) Acknowledging the position of each band, by treating the first color as 'tens' and the second as 'ones'.    
+  - Acknowledging the position of each band, by treating the first color as 'tens' and the second as 'ones'.    
 
 ```ruby
 class ResistorColorDuo
