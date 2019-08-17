@@ -8,7 +8,8 @@ Resistor Color Duo is the first core exercise after TwoFer.
 
 * Using either an array of color names and reading the index as the value, or a hash of colors and values
 * Extracting the values in a `constant`, outside of the method
-* Two possible approaches: a) iterating over the color names, and join them together to compose a 2-digit number
+* Two possible approaches: 
+  - Iterating over the color names, and join them together to compose a 2-digit number
 b) Acknowledging the position of each band, by treating the first color as 'tens' and the second as 'ones'.    
 
 ```ruby
