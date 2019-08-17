@@ -1,4 +1,4 @@
-Resistor Color Duo is the first core exercise after TwoFer. 
+Resistor Color Duo is the first core exercise after TwoFer.
 
 ### New Concepts
 
@@ -8,13 +8,13 @@ Resistor Color Duo is the first core exercise after TwoFer.
 
 * Using either an array of color names and reading the index as the value, or a hash of colors and values
 * Extracting the values in a `constant`, outside of the method
-* Two possible approaches: 
+* Two possible approaches:
   - Iterating over the color names, and join them together to compose a 2-digit number
-  - Acknowledging the position of each band, by treating the first color as 'tens' and the second as 'ones'.    
+  - Acknowledging the position of each band, by treating the first color as 'tens' and the second as 'ones'
 
 ```ruby
 class ResistorColorDuo
-  
+
   COLOR_CODES = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"].freeze
 
   # The 'join' approach
@@ -30,10 +30,10 @@ class ResistorColorDuo
 
 end
 
-# with a hash instead of an array 
+# with a hash instead of an array
 COLOR_CODES[colors[0]] * 10 + COLOR_CODES[colors[1]]
 
-# or 
+# or
 colors.take(2).map { |color| COLOR_CODES[color] }.join.to_i
 
 ```
@@ -46,14 +46,16 @@ colors.take(2).map { |color| COLOR_CODES[color] }.join.to_i
 colors.take(2).map(&COLOR_CODES).join.to_i
 
 ```
-Plus: 
-- Using a class or a module (no reason to discuss).   
+Plus:
+- Using a class or a module (no reason to discuss).
 - The color names as strings or symbols.
 
 ### General
 
-Both array and hash have their pros and cons. A hash makes the mapping more explicit, while an array seems to better reflect the fact that a color band has a position plus a numerical value (the tens and ones). Some mentors have a strong preference for one over the other, but it's recommended to go with the solution the student starts with. 
-Same for the general approach, `join` or `positional approach`: go with the solution the student starts with. 
+Both array and hash have their pros and cons. A hash makes the mapping more explicit, while an array seems to better reflect the fact that a color band has a position plus a numerical value (the tens and ones). Some mentors have a strong preference for one over the other, but it's recommended to go with the solution the student starts with.
+
+Same for the general approach, `join` or `positional approach`: go with the solution the student starts with.
+
 Fun fact: Resistor Color Trio will actually use the third color, and will be a more appropriate moment to talk about the pros and cons of both the data structure and the general approach.
 
 ### Talking points
