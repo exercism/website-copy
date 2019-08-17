@@ -1,1 +1,1 @@
-The `Convert` function is missing or couldn't be found.
+Add the function `Convert`, as it is required and currently missing.
