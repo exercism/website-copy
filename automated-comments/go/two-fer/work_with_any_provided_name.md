@@ -1,2 +1,1 @@
-This solution references the names `Alice` and `Bob` directly in the code. This is a good first step!
-The funcion should be able to work with any name provided to it.
+This is a good first step. Improve this function to make it handle any name provided to it, not just Alice and Bob specifically.

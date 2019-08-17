@@ -1,1 +1,1 @@
-The `ShareWith` function is missing or couldn't be found.
+ Add the function `ShareWith`, as it is required and currently missing.
