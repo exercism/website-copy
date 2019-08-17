@@ -1,1 +1,1 @@
-The signature of the `%{name}` method should be `%{signature}`.
+Change the signature of the `%{name}` method to be `%{signature}`.
