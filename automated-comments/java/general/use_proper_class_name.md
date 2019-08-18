@@ -1,3 +1,3 @@
 The class name should match the file name.
 
-Rename your class to %<className>s and submit again.
+Rename the class to `%<className>s`.

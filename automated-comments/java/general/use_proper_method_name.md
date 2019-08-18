@@ -1,7 +1,7 @@
 The method name should match exactly what was used in the tests.
 
-Rename your method to %<methodName>s and submit again.
+Rename the method to `%<methodName>s`.
 
-NOTE: If you modified the tests to match the method name, change the tests back
-as well. In general, we should not need to modify the tests (only adding our own
+**NOTE**: Don't modify the tests to match a different method name.
+In general, try to only add
 additional tests if desired).
