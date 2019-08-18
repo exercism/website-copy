@@ -1,0 +1,1 @@
+Define an explicit `name` variable rather than using the splat argument keyword (`*`). This will make the code clearer to someone else reading it, and involves less manipulation to access the value of the argument.
