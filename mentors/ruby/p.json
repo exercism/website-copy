@@ -23,4 +23,12 @@
     "avatar_url": null,
     "bio": "Learning Ruby was the turning point for me as a developer. Not only is Ruby a beautiful and extremely productive language, but I can say with certainty that if you are a beginner or intermediate developer that learning Ruby will significantly improve your code and workflow in all languages."
   }
+  {
+    "github_username": "programatologist",
+    "name": "Bibin Venugopal",
+    "link_text": Programatologist Blog,
+    "link_url": https://programatologist.com,
+    "avatar_url": https://www.programatologist.com/blog/wp-content/uploads/2019/06/Logo-Blog.png,
+    "bio": "Working as ruby on rail(RoR)s last 4 years (I recommend to have a look at RoR when learning Ruby). I have total 8+ years in software development. I always believe sharing knowledge is a beautiful concept, exercism is perfect place to learn and share your knowledge."
+  }
 ]
