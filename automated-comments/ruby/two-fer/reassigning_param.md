@@ -1,1 +1,1 @@
-What could the default value of the paramater be set to in order to avoid having to reassign the variable?
+What could the default value of the parameter be set to in order to avoid having to reassign the variable?
