@@ -33,13 +33,8 @@ public static class Isogram
     public static bool IsIsogram(string word)
     {
         // Ignore spaces, hyphens, regard uppercase as lower.
-<<<<<<< HEAD
-        var trimmedInput = word.ToLower().ToCharArray().Where(Char.IsLetter);
-        return trimmedInput.Distinct().Count() == trimmedInput.Count();
-=======
         var trimmedInput = word.ToLower().Where(Char.IsLetter).ToCharArray();
         return trimmedInput.Distinct().Count() == trimmedInput.Length;
->>>>>>> master
     }
 }
 ```
