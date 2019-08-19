@@ -33,18 +33,21 @@ public static class Isogram
     public static bool IsIsogram(string word)
     {
         // Ignore spaces, hyphens, regard uppercase as lower.
+<<<<<<< HEAD
         var trimmedInput = word.ToLower().ToCharArray().Where(Char.IsLetter);
         return trimmedInput.Distinct().Count() == trimmedInput.Count();
+=======
+        var trimmedInput = word.ToLower().Where(Char.IsLetter).ToCharArray();
+        return trimmedInput.Distinct().Count() == trimmedInput.Length;
+>>>>>>> master
     }
 }
 ```
 
 ### Common suggestions
 
-- In the non LINQ version, try to use a single loop
+- In the non-LINQ version, try to use a single loop.
 
-- Using LINQ next suggestions could be made:
-  * each element of the string should be a letter (in this way we avoid checking for space or '-')
-  * without making any iteration, _distinct_ method helps to enforce the letter uniqueness, and find the isogram   
-    
-### Talking points
+- When using LINQ, the following suggestions can be made:
+  * To make things easier, try only processing the string's letters (in this way we avoid checking for spaces or '-').
+  * Suggest using the `Distinct()` method to help calculate the uniqueness of the letters.
