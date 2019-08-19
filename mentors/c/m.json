@@ -22,5 +22,13 @@
     "link_url": "https://www.linkedin.com/in/mayurdwadhwani/",
     "avatar_url": "https://pbs.twimg.com/profile_images/762234167031574528/wzCGfc3D_400x400.jpg",
     "bio": "I am constantly looking out ways to improve myself. At this stage, I feel like I am capable enough to mentor people."
+  },
+  {
+    "github_username": "marauderlabs",
+    "name": "Anandakumar U",
+    "link_text": "LinkedIn",
+    "link_url": "https://www.linkedin.com/in/anandakumar-u/",
+    "avatar_url": null,
+    "bio": "I've been professionally developing C applications for over 8 years now. Interested in Go, JS, TS and Java. Love to teach anybody programming and love to learn anything from anybody too!"
   }
 ]

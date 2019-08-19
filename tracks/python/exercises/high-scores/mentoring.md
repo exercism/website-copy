@@ -48,6 +48,16 @@ Another variation of this solution includes the start at -1 for slicing the resu
         return sorted(scores)[-1:-4:-1]
 ```
 
+Since immutability has not yet been introduced, solutions that mutate the original list (`scores.pop()` or `scores.sort()`) are acceptable. However, take the opportunity to start introducing this concept in your comments.
+```python
+    def latest(scores):
+        return scores.pop()
+
+    def personal_top_three(scores):
+        scores.sort(reverse=True)
+        return scores[:3]
+```
+
 ### Common Suggestions
 
 - Use **`sorted()`** over **`sort()`**. `sorted()` returns a _**copy**_ , `sort()` _**mutates in place**_.  
