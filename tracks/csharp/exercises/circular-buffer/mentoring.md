@@ -1,6 +1,7 @@
-### Reasonable solutions
+### Reasonable solution
 
 #### using `Queue`
+This exercise aims to teach two concepts: queue, as an abstract data structure, and how to use the associated implementation `Queue<T>`.
 
 ```csharp
 using System;
@@ -19,14 +20,18 @@ public class CircularBuffer<T>
 
     public T Read()
     {
-        if (_capacity < 1) throw new InvalidOperationException("Circular buffer capacity needs to be greater than 0 !");
-        else return _buffer.Dequeue(); 
+        if (_capacity < 1) 
+            throw new InvalidOperationException("Circular buffer capacity needs to be greater than 0 !");
+        else 
+            return _buffer.Dequeue(); 
     }
 
     public void Write(T value)
     {
-        if (_buffer.Count == _capacity) throw new InvalidOperationException("Circular buffer is full !");
-        else _buffer.Enqueue(value);   
+        if (_buffer.Count == _capacity) 
+            throw new InvalidOperationException("Circular buffer is full !");
+        else 
+            _buffer.Enqueue(value);   
     }
 
     public void Overwrite(T value)
@@ -41,10 +46,10 @@ public class CircularBuffer<T>
 
 ### Common suggestions
 
-- try recommend using Queue, instead of Arrays
+- While queue data structure could be implemented using a different type of collection (e.g. `Array<T>`), it is much easier to do this with `Queue<T>`. 
 
-- capacity and buffer could be made [readonly](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly) - this would prevent changing them outside of the constructor
+- To achieve a better performance, the queue should be initialized in the constructor (setting the initial capacity). This initialization would be preferred to small, and incremental memory allocations.
 
 ### Talking points
 
-- within the constructor, the queue should be also initialized (setting the initial capacity). This could bring a  performance optimization on large buffers. 
+- The class members (__capacity_ and __buffer_) should be made [readonly](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly) - by doing this we could prevent changing their values outside of the constructor.
