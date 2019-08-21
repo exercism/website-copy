@@ -52,4 +52,4 @@ public class CircularBuffer<T>
 
 ### Talking points
 
-- The class members (__capacity_ and __buffer_) should be made [readonly](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly) - by doing this we could prevent changing their values outside of the constructor.
+- The class fields should be made [readonly](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly) - by doing this we could prevent changing their values outside of the constructor.
