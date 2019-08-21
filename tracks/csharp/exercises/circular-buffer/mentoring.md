@@ -36,7 +36,7 @@ public class CircularBuffer<T>
 
     public void Overwrite(T value)
     {
-        if (_buffer.Count==_capacity) _buffer.Dequeue();
+        if (_buffer.Count == _capacity) _buffer.Dequeue();
         _buffer.Enqueue(value);
     }
 
