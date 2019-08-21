@@ -48,7 +48,7 @@ public class CircularBuffer<T>
 
 - While the queue data structure could be implemented using a different type of collection (e.g. `Array<T>`), it is much easier to do this with `Queue<T>`. 
 
-- To achieve a better performance, the queue should be initialized in the constructor (setting the initial capacity). This initialization would be preferred to small, and incremental memory allocations.
+- To achieve better performance, the queue should be initialized in the constructor (setting the initial capacity). This initialization would be preferred to small, and incremental memory allocations.
 
 ### Talking points
 
