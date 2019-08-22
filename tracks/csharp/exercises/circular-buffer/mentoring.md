@@ -79,7 +79,7 @@ public class CircularBuffer<T> : Queue<T>
 
 - To achieve better performance, the queue should be initialized in the constructor, by setting the initial capacity. This initialization would be preferred to small, and incremental memory allocations. 
 
-- An additional advantage for setting the initial capacity comes with the implicit check of the capacity. If this is not valid an exception is raised (`ArgumentOutOfRangeException`) with the text: `Non-negative number required.`   
+- An additional advantage for setting the initial capacity comes with the implicit check of the capacity. If this is not valid then an exception will be raised (`ArgumentOutOfRangeException: Non-negative number required.`)   
 
 ### Talking points
 
