@@ -17,7 +17,7 @@ function invalidInput() {
 }
 
 export class Transcriptor {
-  toRna(sequence: string): string {
+  public toRna(sequence: string): string {
     return sequence
       .split('')
       .map(nucleotide => TRANSCRIPTION[nucleotide] || invalidInput())
