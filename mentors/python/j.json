@@ -94,5 +94,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am a software architect building platforms for 3D renderings and eCommerce. Python 2 is my day to day language but I also work with Python 3 on my side projects. I am hoping to share my knowledge with people!"
+  },
+  {
+    "github_username": "jangroth",
+    "name": "Jan Groth",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Coming from a Java background, I gave up not loving Python about 3 years ago. Today, it's by far my favorite language."
   }
 ]
