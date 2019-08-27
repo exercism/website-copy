@@ -1,0 +1,2 @@
+When comparing characters to calculate the Hamming distance, use the String `charAt` or `codePointAt` method.
+Other alternatives generally require additional storage to create a new array or list of the characters.

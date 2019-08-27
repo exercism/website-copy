@@ -1,0 +1,1 @@
+Stream-based computations should make use of Stream's `filter` and `count` methods.
