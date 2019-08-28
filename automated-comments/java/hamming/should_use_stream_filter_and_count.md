@@ -1,1 +1,1 @@
-Stream-based computations should make use of Stream's `filter` and `count` methods.
+When using Streams to calculate the Hamming distance, use the Stream's `filter` and `count` methods to improve the clarity of the computation.

@@ -5,4 +5,5 @@ Hamming(String leftStrand, String rightStrand) {
 }
 ```
 
-NOTE: do not modify the tests to allow alternative inputs and make sure the tests are passing.
+NOTE: please ensure the tests are passing.
+If you have modified the tests to work with your solution, please revert those modifications.
