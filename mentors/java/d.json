@@ -46,5 +46,13 @@
     "link_url": "https://twitter.com/dedalusium",
     "avatar_url": null,
     "bio": "I am developper working with java and javascript every day. I love to learn new things and share it with people around me. I believe in team work, well designed code and simple things to make coding a fun experience."
+  },
+  {
+    "github_username": "dariagolub",
+    "name": "Daria Golub",
+    "link_text": "Twitter",
+    "link_url": "https://twitter.com/nano_repka",
+    "avatar_url": null,
+    "bio": "I am a software developer, with the main focus on Java. Clean code, proper tests, best practices ♥."
   }
 ]
