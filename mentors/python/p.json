@@ -46,5 +46,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am a master's student, with 5+ years of past software development experience. Happy to help!"
+  },
+  {
+    "github_username": "pranasziaukas",
+    "name": "Pranas Ziaukas",
+    "link_text": "Personal site",
+    "link_url": "https://www.ziaukas.lt",
+    "avatar_url": null,
+    "bio": "As a mathematician, data and software engineer I enjoy coding in Python. Also, I appreciate clean and concise solutions under all circumstances."
   }
 ]
