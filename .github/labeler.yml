@@ -1,3 +1,5 @@
+# Categorize by type
+
 type/analyzer-comments:
 - automated-comments/**/*.md
 
@@ -10,3 +12,225 @@ type/mentor-bios:
 
 type/mentor-notes:
 - tracks/*/exercises/*/mentoring.md
+
+# Categoryze by language
+
+track/bash:
+- automated-comments/bash/**/*
+- mentors/bash/**/*
+- tracks/bash/**/*
+
+track/c:
+- automated-comments/c/**/*
+- mentors/c/**/*
+- tracks/c/**/*
+
+track/ceylon:
+- automated-comments/ceylon/**/*
+- mentors/ceylon/**/*
+- tracks/ceylon/**/*
+
+track/clojure:
+- automated-comments/clojure/**/*
+- mentors/clojure/**/*
+- tracks/clojure/**/*
+
+track/common-lisp:
+- automated-comments/common-lisp/**/*
+- mentors/common-lisp/**/*
+- tracks/common-lisp/**/*
+
+track/coq:
+- automated-comments/coq/**/*
+- mentors/coq/**/*
+- tracks/coq/**/*
+
+track/cpp:
+- automated-comments/cpp/**/*
+- mentors/cpp/**/*
+- tracks/cpp/**/*
+
+track/crystal:
+- automated-comments/crystal/**/*
+- mentors/crystal/**/*
+- tracks/crystal/**/*
+
+track/csharp:
+- automated-comments/csharp/**/*
+- mentors/csharp/**/*
+- tracks/csharp/**/*
+
+track/d:
+- automated-comments/d/**/*
+- mentors/d/**/*
+- tracks/d/**/*
+
+track/delphi:
+- automated-comments/delphi/**/*
+- mentors/delphi/**/*
+- tracks/delphi/**/*
+
+track/elisp:
+- automated-comments/elisp/**/*
+- mentors/elisp/**/*
+- tracks/elisp/**/*
+
+track/elixir:
+- automated-comments/elixir/**/*
+- mentors/elixir/**/*
+- tracks/elixir/**/*
+
+track/elm:
+- automated-comments/elm/**/*
+- mentors/elm/**/*
+- tracks/elm/**/*
+
+track/erlang:
+- automated-comments/erlang/**/*
+- mentors/erlang/**/*
+- tracks/erlang/**/*
+
+track/fortran:
+- automated-comments/fortran/**/*
+- mentors/fortran/**/*
+- tracks/fortran/**/*
+
+track/fsharp:
+- automated-comments/fsharp/**/*
+- mentors/fsharp/**/*
+- tracks/fsharp/**/*
+
+track/gleam:
+- automated-comments/gleam/**/*
+- mentors/gleam/**/*
+- tracks/gleam/**/*
+
+track/go:
+- automated-comments/go/**/*
+- mentors/go/**/*
+- tracks/go/**/*
+
+track/groovy:
+- automated-comments/groovy/**/*
+- mentors/groovy/**/*
+- tracks/groovy/**/*
+
+track/haskell:
+- automated-comments/haskell/**/*
+- mentors/haskell/**/*
+- tracks/haskell/**/*
+
+track/java:
+- automated-comments/java/**/*
+- mentors/java/**/*
+- tracks/java/**/*
+
+track/javascript:
+- automated-comments/javascript/**/*
+- mentors/javascript/**/*
+- tracks/javascript/**/*
+
+track/julia:
+- automated-comments/julia/**/*
+- mentors/julia/**/*
+- tracks/julia/**/*
+
+track/lua:
+- automated-comments/lua/**/*
+- mentors/lua/**/*
+- tracks/lua/**/*
+
+track/nim:
+- automated-comments/nim/**/*
+- mentors/nim/**/*
+- tracks/nim/**/*
+
+track/ocaml:
+- automated-comments/ocaml/**/*
+- mentors/ocaml/**/*
+- tracks/ocaml/**/*
+
+track/perl5:
+- automated-comments/perl5/**/*
+- mentors/perl5/**/*
+- tracks/perl5/**/*
+
+track/perl6:
+- automated-comments/perl6/**/*
+- mentors/perl6/**/*
+- tracks/perl6/**/*
+
+track/pharo-smalltalk:
+- automated-comments/pharo-smalltalk/**/*
+- mentors/pharo-smalltalk/**/*
+- tracks/pharo-smalltalk/**/*
+
+track/php:
+- automated-comments/php/**/*
+- mentors/php/**/*
+- tracks/php/**/*
+
+track/plsql:
+- automated-comments/plsql/**/*
+- mentors/plsql/**/*
+- tracks/plsql/**/*
+
+track/purescript:
+- automated-comments/purescript/**/*
+- mentors/purescript/**/*
+- tracks/purescript/**/*
+
+track/python:
+- automated-comments/python/**/*
+- mentors/python/**/*
+- tracks/python/**/*
+
+track/r:
+- automated-comments/r/**/*
+- mentors/r/**/*
+- tracks/r/**/*
+
+track/racket:
+- automated-comments/racket/**/*
+- mentors/racket/**/*
+- tracks/racket/**/*
+
+track/ruby:
+- automated-comments/ruby/**/*
+- mentors/ruby/**/*
+- tracks/ruby/**/*
+
+track/rust:
+- automated-comments/rust/**/*
+- mentors/rust/**/*
+- tracks/rust/**/*
+
+track/scala:
+- automated-comments/scala/**/*
+- mentors/scala/**/*
+- tracks/scala/**/*
+
+track/sml:
+- automated-comments/sml/**/*
+- mentors/sml/**/*
+- tracks/sml/**/*
+
+track/system-verilog:
+- automated-comments/system-verilog/**/*
+- mentors/system-verilog/**/*
+- tracks/system-verilog/**/*
+
+track/tcl:
+- automated-comments/tcl/**/*
+- mentors/tcl/**/*
+- tracks/tcl/**/*
+
+track/typescript:
+- automated-comments/typescript/**/*
+- mentors/typescript/**/*
+- tracks/typescript/**/*
+
+track/x86-64-assembly:
+- automated-comments/x86-64-assembly/**/*
+- mentors/x86-64-assembly/**/*
+- tracks/x86-64-assembly/**/*
