@@ -51,11 +51,9 @@ Variations include replacing the nested [`Array#forEach`](https://developer.mozi
 
 ## Common suggestions
 - When going for performance, at time of writing these notes, [`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) is significantly faster than [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) and [`Array#forEach`]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) is faster than [`for ... in ...`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) / `for ;;;` loops: [Benchmarks](https://run.perf.zone/view/Nested-object-iteration-1542907930560).
-- [`for ... of ...`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) is not supported / turned on on exercism (see `eslint` error when you use it) because generators are not supported.
 
 
 ## Talking points
 - If a student uses [`for ... in ...`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in):
   - Explain that this iterates over all properties, so you _SHOULD_ use the [`Object#hasOwnProperty`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) check.
   - Using [`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys), [`Object.values`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values) or [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) and iterating over the resulting array is the idiomatic way.
-- If a student uses [`for ... of ...`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of), explain how generators are at moment of writing not supported and the babel transformation is ugly at best. Will probably be enabled once [caniuse](https://caniuse.com/#feat=es6-generators) indicates it.
