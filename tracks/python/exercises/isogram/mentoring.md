@@ -85,6 +85,36 @@ def is_isogram(string):
         return count == 1
 ```
 
+##### Defective Solution using Handcrafted Counters 
+
+The solution might define their own counters:
+
+```python
+def is_isogram(string):
+    arr = [0] * 256
+
+    for l in string.lower():
+        if arr[ord(l)] == 0:
+            arr[ord(l)] += 1
+        elif (l != ' ') and (l != '-'):
+            return False
+
+    return True
+```
+
+This passes the unit tests, but assumes that the string holds only ASCII characters.
+Point out that strings in Python 3 can hold Unicode characters that 
+have an ord() larger than 255.
+
+```python
+    print('\U00000394')
+    print(ord('\U00000394'))
+```
+
+Our first solution looked to the right for duplicates among the remaining characters: 
+this one looks to the left at the characters we have already seen.
+This idiom is best rewritten using sets or lists to hold the previous characters.
+
 #### Sets
 
 A similar idea can be implemented with sets:
