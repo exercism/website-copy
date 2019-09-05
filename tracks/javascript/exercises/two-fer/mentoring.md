@@ -123,9 +123,6 @@ exercises.
 - The difference of intent between a default value and using a falsy logical or
   (`name || 'you'`). What happens when the input is `null`, what happens when
   the input is `''`, what happens when the input is ... `0`?
-- The difference between `===` and `==`, `!==` and `!=` ([equality comparisons and sameness][ref-equality]).
-  You should suggest they always use strict equality, but since the optimal
-  solution doesn't have a conditional, it does not apply to this exercise.
 - On exercism there is no need for [defensive programming][ref-defensive-programming].
   This means they should not test if the input is a string, or something else
   unforeseen. The test cases should indicate what a function might be called
@@ -133,5 +130,4 @@ exercises.
 
 [ref-template-literal]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 [ref-default-parameter]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
-[ref-equality]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
 [ref-defensive-programming]: https://en.wikipedia.org/wiki/Defensive_programming
