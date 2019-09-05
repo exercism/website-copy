@@ -45,7 +45,7 @@ the submission and tell the student they can move on or improve:
 This is the first mentored exercise, so you may use this to determine a
 student's skill, help them set up their test suite, and generally point out
 certain things. In the JavaScript track, this exercise is not meant to be a
-barrier so in general, don't be harsch but set the tone for the rest of the
+barrier so in general, don't be harsh but set the tone for the rest of the
 mentored track.
 
 Here is a template you can copy with a few example comments. The goal of this
