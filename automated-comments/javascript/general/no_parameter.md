@@ -1,2 +1,1 @@
-The function `%{function.name}` requires a parameter.
-The tests won't pass without it.
+In order to make the tests pass, you need to change the function `%{function.name}` to require a parameter.
