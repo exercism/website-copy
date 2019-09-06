@@ -1,8 +1,6 @@
-# Leap
-
 _Leap_ is a core exercise, unlocked after _Two Fer_.
 
-## Reasonable Solutions
+### Reasonable Solutions
 
 ```swift
 struct Year {
@@ -14,7 +12,7 @@ struct Year {
 }
 ```
 
-## Common Suggestions
+### Common Suggestions
 
 - Swift 5 includes `Int.isMultiple(of:)`. ([SE-0225](https://github.com/apple/swift-evolution/blob/master/proposals/0225-binaryinteger-iseven-isodd-ismultiple.md))
 - For previous versions, we can extend the language ourselves and refactoring the divisibility check to an internal function, or an extension:
