@@ -47,7 +47,8 @@ keep improving:
 
     Hi there {name},
 
-    I have a few comments for you:
+    Congrats on submitting your first side exercise solution for the JavaScript
+    track. I have a few comments for you:
 
     - In Javascript, the result of an expression can be returned!
       ```javascript
