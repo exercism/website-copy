@@ -62,6 +62,7 @@ If they don't use a constant:
 ```
 We can improve this by setting our output strings to be [constants](https://doc.rust-lang.org/std/keyword.const.html)
 ```
+*Why?* Constants help the compiler optimize and improve readability of your program.
 
 If they don't create a trimmed variable or use something other than `.trim()`:
 ```
