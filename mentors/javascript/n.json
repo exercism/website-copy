@@ -7,7 +7,6 @@
     "avatar_url": null,
     "bio": "I have been developing in JS for 6 years. We use JS heavily at GOFan, and I am excited to be a mentor."
   },
-
   {
     "github_username": "neodynia",
     "name": "Ryan Boris",
@@ -39,5 +38,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am here to share experience and knowledge! Let's learn all the languages and paradigms!"
+  },
+  {
+    "github_username": "NJM8",
+    "name": "Nate Mallison",
+    "link_text": "Portfolio",
+    "link_url": "https://www.natethedev.com/",
+    "avatar_url": "https://storage.googleapis.com/portfoliopictures/nate_and_kai.jpg",
+    "bio": "A big JavaScript fan. I learned a lot here on my way to my first developer position and I look forward to helping others learn as well."
   }
 ]
