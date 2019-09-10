@@ -76,7 +76,7 @@ public static class ResistorColor
 ```
 ### Common suggestions
 * Enum version: If users are able to input or read out number values for the
-resistors than it might be more expressive to assign the numbers to
+resistors then it might be more expressive to assign the numbers to
 the enums to show that the actual values are important. 
 * Array version: consider cloning the array on return from `Colors()` as
 a defensive measure. This will prevent a user of the class from
