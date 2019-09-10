@@ -19,5 +19,13 @@
     "link_url": "http://wontfix.fun/",
     "link_text": "Website",
     "bio": "Python, Tools for Programmers, Static Code Analysis"
+  },
+  {
+    "github_username": "dnllln",
+    "name": "Daniel Allen",
+    "link_text": "https://www.linkedin.com/in/dnllln/",
+    "link_url": "LinkedIn",
+    "avatar_url": null,
+    "bio": "I love Python for it's simplicity and elegance. Readability counts!"
   }
 ]
