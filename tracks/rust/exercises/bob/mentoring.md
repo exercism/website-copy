@@ -93,7 +93,7 @@ Be aware that if you use Clippy, it will tell you that it is improper, it's pure
 
 If they are struggling with how to check if it's a question or use something like `chars().last()`:
 ```
-Have a look at `.ends_with()` to check if it's a question, it's much cleaner.
+Have a look at [`.ends_with()`](https://doc.rust-lang.org/std/string/struct.String.html#method.ends_with) to check if it's a question, it's much cleaner.
 ```
 
 If they use regex:
