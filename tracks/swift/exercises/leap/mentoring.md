@@ -28,7 +28,7 @@ extension Int {
 - It may be more readable to return the results of boolean expressions, instead
   of explicit `true` or `false` (see example below).
 
-## Talking Points
+### Talking Points
 
 - If initializing a `struct` or `class` based on a `let` property, is a computed
   property necessary? It will recompute the result even though the value never
