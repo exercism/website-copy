@@ -46,5 +46,13 @@
     "link_url": "https://www.natethedev.com/",
     "avatar_url": "https://storage.googleapis.com/portfoliopictures/nate_and_kai.jpg",
     "bio": "A big JavaScript fan. I learned a lot here on my way to my first developer position and I look forward to helping others learn as well."
+  },
+  {
+    "github_username": "nathanburgess",
+    "name": "Nathan Burgess",
+    "link_text": "GitHub",
+    "link_url": "https://www.github.com/nathanburgess",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/12576267?s=460&v=4",
+    "bio": "I started programming back in 1995 and have used a variety of languages since then. Currently I'm a CTO for a political technology startup annd working heavily with React."
   }
 ]
