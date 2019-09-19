@@ -75,5 +75,13 @@
     "link_url": "https://cardflight.com",
     "avatar_url": "https://gravatar.com/avatar/634717c16bf30a59ed5ae2322ea6b143?s=400&d=robohash&r=x",
     "bio": "I got my start using Ruby in 2014, learning Ruby on Rails and used it to launch my freelance career that eventually led to becoming a fulltime software engineer at CardFlight."
-  }
+  },
+  {
+    "github_username": "s2k",
+    "name": "Stephan Kämper",
+    "link_text": "SeasideTesting",
+    "link_url": "https://seasidetesting.com",
+    "avatar_url": null,
+    "bio": "I test & write software, studied physics & worked in #oceanography. I love the #ocean & live close to it. Languages: English, German, Ruby"
+}
 ]

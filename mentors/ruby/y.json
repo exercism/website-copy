@@ -22,5 +22,13 @@
     "link_url": "http://runningblind.com/",
     "avatar_url": "",
     "bio" :" I mostly write Ruby on Rails professionally but for fun (and possibly profit one day) I dabble with Elixir, Nim, Arduino, and such. I’m really digging both Nim and Vim lately."
+  },
+  {
+    "github_username": "YemreAybey",
+    "name": "Yunus Emre AYBEy",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Student and Mentor at Microverse.org. I am a ruby enthusiast. I love to teach and learn."
   }
 ]

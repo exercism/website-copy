@@ -22,5 +22,21 @@
     "link_url": "https://medium.com/@periklisgkolias",
     "avatar_url": null,
     "bio": "I am a fullstack software engineer specialising in python and javascript related technologies and a huge enthusiast of the deep learning revolution. My aim is to help people, as I would like to have been offered help when I was doing my first steps in the field."
+  },
+  {
+    "github_username": "parampaa2",
+    "name": "Muhammad Aufi Rayesa Frandhana",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Part of Osu! videogame dev community, develops third-party AI that creates maps for that game named 'Osu!Automapper', written in python. Have strong interest on UI/UX design and machine learning. Professional in Python and Java. Watches anime, especially ones from Trigger studio."
+  },
+  {
+    "github_username": "pathcl",
+    "name": "Luis San Martin",
+    "link_text": null,
+    "link_url": "https://sanmartin.io",
+    "avatar_url": "https://pbs.twimg.com/profile_images/1125454481678852098/GxD3wabM_400x400.jpg",
+    "bio": "Hi there! I'm a SRE with 10+ years on Linux/Open Source and want to give back all the knowledge I have :)"
   }
 ]

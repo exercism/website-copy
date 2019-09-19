@@ -16,6 +16,14 @@
     "bio": "Rust is a refreshing alternative to C, C++ and golang.  I find it elegant, relatively concise and very interesting to use.  I've not used in professionally, yet, but have many years of C, JavaScript and Python under my belt."
   },
   {
+    "github_username": "Aloso",
+    "name": "Ludwig Stecher",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I study IT in Bavaria, Germany. Rust is one of my favourite languages because of its expressive type system, its strong safety guarantees and good WASM support. I also code a lot in Java, Kotlin, JS and Typescript."
+  },
+  {
     "github_username": "alphashuro",
     "name": "Alpha Shuro",
     "link_text": null,

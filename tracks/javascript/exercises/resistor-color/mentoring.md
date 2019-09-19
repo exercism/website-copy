@@ -9,7 +9,7 @@ export const COLORS = [
   'grey', 'white',
 ];
 
-export const colorCode = color => COLORS.indexOf(color)
+export const colorCode = (color) => COLORS.indexOf(color)
 ```
 
 A student may use a function declaration instead of an arrow function expression, as well as using an explicit `return`

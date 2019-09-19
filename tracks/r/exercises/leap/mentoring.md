@@ -1,4 +1,4 @@
-### Reasonable solutions
+### Reasonable solution
 
 This is a nice, concise, efficient solution:
 
@@ -8,21 +8,21 @@ leap <- function(year) {
 }
 ```
 
-
 ### Common suggestions
-- there are just two cases that return True:
-- a year is a multiple of 4 *and not* 100
-- a year is a multiple of 4, 100, and 400
+
+- There are just two cases that return `TRUE`:
+    1. A year is a multiple of 4 *and not* 100.
+    2. A year is a multiple of 4, 100, and 400.
 - For students interested in optimization, order of operations matter:
-- 75% of all years *cannot* be leap years because they are not mulitples of 4; test `year % 4 == 0` first
-- 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 != 0` second
-- 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 == 0` third
-- and order of evaluation matters:
+    1. 75% of all years *cannot* be leap years because they are not multiples of 4; test `year % 4 == 0` first.
+    2. 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 != 0` second.
+    3. 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 == 0` third.
+- Order of evaluation matters:
 ```r
 year %% 4 == 0 & year %% 100 != 0 | year %% 400 == 0
 ```
-_looks_ right, but will force a year like 999 to be checked for being a multiple of 400 unnecessarily
-- eliminate duplicate work; no year should ever have to be checked multiple times for the same condition
+_looks_ right, but will force a year like 999 to be checked for being a multiple of 400 unnecessarily.
+- Eliminate duplicate work; no year should ever have to be checked multiple times for the same condition.
 
 
 ### Talking points

@@ -23,7 +23,7 @@ This means that GitHub isn't willing to verify who you are. That can be because 
 
 ### How do I delete my account?
 
-You can delete your account my following the link at the bottom of your [settings page](https://exercism.io/my/settings).
+You can delete your account by following the link at the bottom of your [settings page](https://exercism.io/my/settings).
 
 ### How do new language tracks get added to the site?
 

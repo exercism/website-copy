@@ -21,5 +21,29 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am passionate about programing. Love to build new things with Ruby, python and Javascript. I am enjoying too much by sharing my knowledge and learning from others. Love to contribute on open source projects"
+  },
+  {
+    "github_username": "davidwessman",
+    "name": "David Wessman",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Ruby was the starting point for me learning to program. It still is my go-to-language for web applications and my knowledge made it easier for me to learn new languages I use at work."
+  },
+  {
+    "github_username": "donatoaz",
+    "name": "Donato Azevedo",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Ruby caught my attention due to its idiomatic constructs and powerful metaprogramming capabilities. I've been working with ruby for half a decade and am trully in love with how elegant the code is. I would very much like to evangelize and enfuse in others this passion for ruby."
+  },
+  {
+    "github_username": "DiegoSalazar",
+    "name": "Diego Salazar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/89930?s=460&v=4",
+    "bio": "I love Ruby for its beauty and consistency. I've been happily working with it for 10+ years and don't see myself stopping any time soon. Mentoring has been a great way to help the community while reinforcing my skills and knowledge in programming."
   }
 ]

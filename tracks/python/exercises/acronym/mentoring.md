@@ -14,12 +14,11 @@ it with a space.
 
 ```python
 def abbreviate(words):
+    words = words.replace('_', '')
+    words = words.replace('-', ' ')
     words = words.upper()
-    words = words.replace('_', '')      # Remove underscore
-    words = words.replace('-', ' ')     # Transform hyphen
 
-    tla = [ word[0] for word in words.split(' ') if word ]
-    return ''.join(tla)
+    return ''.join(word[0] for word in words.split(' ') if word)
 ```
 
 #### Assembling Strings
@@ -33,24 +32,31 @@ def abbreviate(words):
 
     word_list = words.split(' ')
     
-    tla = ""
+    acronym = ""
     for word in word_list:
         if word:
-            tla = tla + word[0].upper()
+            acronym = acronym + word[0].upper()
 
-    return tla
+    return acronym
 ```
 
 The student should be told about building lists and join() them.
 
 #### Regular Expressions
 
-Regular Expressions can help to prune the cruft:
+Regular Expressions can help to prune the cruft.
+This version still uses string addition.
 
 ```python
 import re
+  
 def abbreviate(words):
-    return "".join(item.upper() for item in re.findall(r"\b([a-zA-Z])", words))
+    acronym = ""
+
+    for word in re.findall(r"[^\W_]+[']?[^\W_]*", words):
+        acronym += word[0].upper()
+
+    return acronym
 ```
 
 ### Common Suggestions
@@ -61,7 +67,7 @@ special place as a pseudo-space.
 
 As noted above, assembling a string character by character is slow.
 
-Once string addition is replace with list joining(), this
+Once string addition is replaced with list joining(), it
 is a natural place for a List Comprehension.
 
 It would be better to call the string method upper() only once, 
