@@ -1,36 +1,52 @@
-This exercise introduces `map` and `join` to the student, as well as converting from and to `number`, and builds upon
-their knowledge of arrays from the previous exercise `resistor-color`.
+This exercise builds upon their knowledge of arrays from the previous exercise `resistor-color`. It's a natural
+extension and prepares them for `resistor-color-trio`.
 
 ### Reasonable solutions
 
 ```javascript
-export const COLORS = [
+// NOTE: this is the solution to resistor-color, see notes below
+const COLORS = [
   'black', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'violet',
   'grey', 'white',
 ];
 
-export function value(colors) {
-  return Number(colors.map(color => COLORS.indexOf(color)).join(''))
+const colorCode = (color) => COLORS.indexOf(color)
+// END OF NOTE
+
+export function value([tens, ones]) {
+  return colorCode(tens) * 10 + colorCode(ones)
 }
 ```
 
-A student may choose to enter the `function` into `map`:
+A student may choose to use numeric indexing instead of destructuring:
 
 ```javascript
-colors.map(COLORS.indexOf.bind(COLORS))
+export function value(colors) {
+  return colorCode(colors[0]) * 10 + colorCode(colors[1])
+}
 ```
 
-A student may also use an arrow function expression instead of a function declaration, as well as using an
-implicit return instead of an explicit `return`.
+A student may also use an arrow function expression instead of a function declaration, as well as using an implicit
+return instead of an explicit `return`.
+
+#### Previous versions
+
+Previously, it was possible to use `.map` or `.reduce` on the input and map/reduce over all values, but an extra test
+has been added that breaks these solutions. Solutions using `map` and `reduce` are still fine, but need to be
+prepended by a `slice` or `splice` to only get the first two values.
+
+#### Importing `resistor-color`
+
+A student _may_ import their `colorCode` function from `../resistor-color/resistor-color`. This is perfectly fine and
+should be regarded as such. **DO NOT** suggest them to add this import if they don't have it.
 
 #### Approvability
 
 The solution listed above as well as any of the solutions that divert from this listed directly below are
 approvable. Anything listed under **Common Suggesstions** is _not_.
 
-A student who uses a `reducer` on the `reverse` of the input. This is a technique that comes from other languages
-as well as algorithm solving in university and is perfectly valid. It's one of the ways to do this without 
-conversion to a `String`. Such a solution looks like this:
+A student who uses a `reducer` on the `reverse` of the input. The solution below is such a solution. It's overly
+complex for the task at hand. You may approve it, but mentor them in order to simplify the solution.
 
 ```javascript
 export const COLORS = [
@@ -41,10 +57,11 @@ export const COLORS = [
 export function value(colors) {
   return colors
     .reverse()
+    .slice(0, 2)
     .reduce(
       (value, color, i) => {
         // Find the index, then shift it in base 10, i places to the left
-        return COLORS.indexOf(color) * (10 ** i) + value
+        return colorCode(color) * (10 ** i) + value
       }
       , 0
     );
@@ -53,7 +70,7 @@ export function value(colors) {
 
 A variation is not using `reverse` but instead using `length - i`. Or using `reduceRight` without `reverse`.
 
-The second exception is using string interpolation to build the value, or manually extracting the two colors. 
+The second exception is using string interpolation to build the value, or manually extracting the two colors.
 This is technically correct, because **only the first two color bands** can be calculated using the method in
 this exercise. It looks something like this:
 
@@ -64,28 +81,21 @@ export const COLORS = [
 ];
 
 export function value(colors) {
-  return Number(`${COLORS.indexOf(colors[0])}${COLORS.indexOf(colors[1])}`)
+  return Number(`${colorCode(colors[0])}${colorCode(colors[1])}`)
 }
 ```
 
-Or this:
+But this type juggling is unnecessary. Approve it, but recommend them to use math instead:
 
 ```javascript
-export const value = bands => colorCode(bands[0]) * 10 + colorCode(bands[1])
+export const value = (bands) => colorCode(bands[0]) * 10 + colorCode(bands[1])
 ```
-
-Approve the solution, but challenge them to solve it using `map`, as listed below.
 
 ### Common suggestions
 
-Here are a few common suggestions based on student's solutions. You may always suggest they re-use code from 
-their solution to `resistor-color`. The gist of the suggestions follows now, after which each one is 
+Here are a few common suggestions based on student's solutions. You may always suggest they re-use code from
+their solution to `resistor-color`. The gist of the suggestions follows now, after which each one is
 elaborated on.
-
-- `Number` instead of `parseXXX`
-- `join` instead of `reduce`
-- `join` (converts to string) instead of explicit `toString`
-- `Array` for `COLORS` instead of `Object`
 
 #### `parseXXX` family
 
@@ -96,9 +106,15 @@ the stricter `Number(...)` function.
 ```javascript
 // BAD example
 export function value(colors) {
-  return parseInt(colors.map(color => COLORS.indexOf(color)).join(''))
+  return parseInt(
+    colors.slice(0, 2)
+          .map(color => colorCode(color))
+          .join('')
+  )
 }
 ```
+
+This is a good first step before you show them that they _don't need to convert at all_ using math.
 
 #### `reduce` the array to a string
 
@@ -108,11 +124,15 @@ If a student is using `map` followed by a `reduce` to build the string of digits
 // BAD example
 export function value(colors) {
   return Number(
-    colors.map(color => COLORS.indexOf(color).toString())
+    colors.slice(0, 2)
+          .map(color => colorCode(color).toString())
           .reduce((r, s) => r + s)
   )
 }
 ```
+
+Then, let them know they don't need to convert at all. Help them discover the solution using just numbers and math.
+
 #### Explicit string conversions
 
 If a student is converting each `indexOf` to a string, (`+ ""` or `.toString()`), they probably didn't need that as
@@ -122,12 +142,30 @@ for you.
 ```javascript
 // BAD example
 export function value(colors) {
-  return Number(colors.map(color => COLORS.indexOf(color).toString()).join(''))
+  return Number(
+    colors.slice(0, 2)
+          .map(color => colorCode(color).toString())
+          .join('')
+  )
 }
 ```
-#### Using an `Object` with index values
 
-If a student uses an object where each key is a color and each value is the index it would have if it were a list, they
-might not have linked this exercise to the previous one called `resistor-color`. That said, explain they should use
-`indexOf` and an `Array` when an `Object` looks like this.
+But, they don't need to convert at all. Help them discover the solution using just numbers and math.
+
+#### Not using `colorCode`
+
+Some students may "re-discover" the implementation of `resistor-color`:
+
+```js
+const COLORS = [ ... ]
+
+export function value(colors) {
+  return COLORS.indexOf(colors[0]) * 10 + COLORS.indexOf(colors[1])
+}
+```
+
+This is _not_ approvable. There is a reason they had to do `resistor-color` first. Mentor them so they'll re-use that
+solution (e.g. copy the `colorCode` function, or `import` it). In `resistor-color-trio` these concepts are visited
+again, and it helps if they don't have to start anew.
+
 
