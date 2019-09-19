@@ -44,7 +44,7 @@ an `Array`. However, check the common suggestions for anything else. A `Map` is 
 If the solution does not look like the reasonable solution, do _not_ approve it. Here are a few common suggestions
 based on student's solutions.
 
-#### Manualy doing `indexOf`
+#### Manually doing `indexOf`
 
 A student may manually try to find the index of a color:
 
