@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": "https://avatars1.githubusercontent.com/u/27808442?s=400&u=b1a77df8111cad1a4ddfc36df63b815f8182fdde&v=4",
     "bio": "Someone wise said that the best way to learn something is to tech that, so here I am :). I don't write on Go for a long time but I already know enough to share some useful info and help newbies. Happy to help!"
+  },
+  {
+    "github_username": "droidlinq",
+    "name": "Haruya Shida",
+    "link_text": "GitHub",
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Originally a .NET developer. Now a big Go lover for its simplicity."
   }
 ]
