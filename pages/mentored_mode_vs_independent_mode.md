@@ -20,4 +20,4 @@ While we recommend sticking to one mode per track, it is possible to change if y
 
 ### Oversubscribed tracks
 
-Some tracks are oversubscribed, meaning here are two many students per mentor. In this situation, anyone starting the track is forced to start in Practice Mode, and no-one in Practice Mode will be able to request mentor help until the track is back in a "healthy" state. At the time of writing, we define an oversubscribed track as one that has a median wait time of over one week.
+Some tracks are oversubscribed, meaning there are too many students per mentor. In this situation, anyone starting the track is forced to start in Practice Mode, and no-one in Practice Mode will be able to request mentor help until the track is back in a "healthy" state. At the time of writing, we define an oversubscribed track as one that has a median wait time of over one week.
