@@ -1,2 +1,2 @@
-In order to %{expected.reason}, expected a `%{method.name}` call. If
+In order to %{expected.reason}, we would expect a `%{method.name}` call. If
 that reasoning applies, mentor the student to add this call.
