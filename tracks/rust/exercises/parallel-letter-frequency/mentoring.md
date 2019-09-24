@@ -188,9 +188,9 @@ Thanks to the type system of Rust, if the solution compiles & passes all the tes
 - Why std::thread::spawn requires all captured variables having 'static lifetime: thread in libstd is unscoped, they can live for arbitrarily long & outlive all lifetimes except 'static. It may be helpful to provide an historical note on scoped thread in pre-1.0 Rust and why it's removed: https://github.com/rust-lang/rust/issues/24292. An introduction to scoped thread in external crates (rayon or crossbeam) may also be helpful. 
 - What is Send and why std::thread::spawn requires all captured variables implement Send: for students got this far into the Rust track it's probably enough to direct them to the documentation of [std::sync::Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html). Nomicon also has [a chapter explaining data race](https://doc.rust-lang.org/nomicon/races.html).
 
-If they use channels to send the result out from the spawned thread:
+If they use channels to send the results out from the spawned threads:
 ```
-The channels sending values back to the main thread is kind of unnecessary since the spawned thread can can return a value on exit and be recovered later by JoinHandle::join.
+The channels sending values back to the main thread is kind of unnecessary since the spawned thread can return a value on exit and be recovered later by JoinHandle::join.
 ```
 
 A subtle detail is the characters must be filtered after being cast to lowercase, otherwise the letter frequency may contain non-alphabetic characters. e.g. the unicode character \u{0130}, [capital I with dot above](https://unicode.org/cldr/utility/character.jsp?a=0130&B1=Show), is itself alphabetic, but yields two characters when cast to lowercase, one of them (\u{0307}, [combining dot above](https://unicode.org/cldr/utility/character.jsp?a=0307&B1=Show)) is not alphabetic.
