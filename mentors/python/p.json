@@ -38,5 +38,21 @@
     "link_url": "https://sanmartin.io",
     "avatar_url": "https://pbs.twimg.com/profile_images/1125454481678852098/GxD3wabM_400x400.jpg",
     "bio": "Hi there! I'm a SRE with 10+ years on Linux/Open Source and want to give back all the knowledge I have :)"
+  },
+  {
+    "github_username": "PavanRaga",
+    "name": "Pavan Raga",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a master's student, with 5+ years of past software development experience. Happy to help!"
+  },
+  {
+    "github_username": "pranasziaukas",
+    "name": "Pranas Ziaukas",
+    "link_text": "Personal site",
+    "link_url": "https://www.ziaukas.lt",
+    "avatar_url": null,
+    "bio": "As a mathematician, data and software engineer I enjoy coding in Python. Also, I appreciate clean and concise solutions under all circumstances."
   }
 ]

@@ -14,5 +14,13 @@
 	  "link_url": null,
 	  "avatar_url": null,
 	  "bio": "I have been writing F# professionally for over a year, including one relatively large project. I like the pragmatic approach it takes to functional programming. I also enjoy working with other similar languages such as OCaml, Elm and Haskell."
+	},
+	{
+	  "github_username": "miyamotoakira",
+	  "name": "Jorge Gueorguiev Garcia",
+	  "link_text": null,
+	  "link_url": null,
+	  "avatar_url": null,
+	  "bio": "I have been getting in and out of F# for a while, although I haven't been able to use it on a production system yet. I love the syntax, the Hindley-Milner type system, and the use of indentation for scope. I have used other functional languages like Clojure (professionally) and Elixir."
 	}
 ]

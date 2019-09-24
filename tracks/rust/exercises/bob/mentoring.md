@@ -88,18 +88,17 @@ match your_trimmed_variable.is_empty() {
     true => FINE,
     false => {
 ```
-Be aware that if you use Clippy, it will tell you that it is improper, it's purely a stylistic choice :)
-We can tell Clippy to allow it with `#[allow(clippy::match_bool)]`.
+Be aware that if you use Clippy, it will tell you that it is improper, it's purely a stylistic choice. We can tell Clippy to allow it with `#[allow(clippy::match_bool)]`.
 ````
 
 If they are struggling with how to check if it's a question or use something like `chars().last()`:
 ```
-Have a look at `.ends_with()` to check if it's a question, it's much cleaner.
+Have a look at [`.ends_with()`](https://doc.rust-lang.org/std/string/struct.String.html#method.ends_with) to check if it's a question, it's much cleaner.
 ```
 
 If they use regex:
 ```
-This is good! Great idea using the regex crate! Let's look at how to do this with just the standard library :)
+This is good! Great idea using the regex crate! Let's look at how to do this with just the standard library.
 ```
 Then note the following:
 ```
@@ -137,5 +136,5 @@ Also, the use of `const` allows us to have it globally scopable.
 
 If they use `_` instead of `false` in their match statement:
 ```
-Using the `_` in the true/false `match` suggests that there's something else to catch while there isn't. This makes it less readable and can even be a source of bugs in some cases. So, we should limit its use to only when it's needed. Here, we should use `false` because there is no other option :)
+Using the `_` in the true/false `match` suggests that there's something else to catch while there isn't. This makes it less readable and can even be a source of bugs in some cases. So, we should limit its use to only when it's needed. Here, we should use `false` because there is no other option.
 ```

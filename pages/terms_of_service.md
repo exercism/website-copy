@@ -100,7 +100,7 @@ We are committed to Open Source, and as a result, many of the resources on our P
 
 #### Our Content
 
-All materials displayed on our Website and/or Platform are Copyright **Exercism, Inc**.
+All materials displayed on our Website and/or Platform are Copyright **Exercism**.
 
 Where a resource does not appear to have a clear licensing statement, we would recommend that you check our GitHub source-code repositories. You should not assume that all content on our Platform is openly licensed, but it generally will be.
 
@@ -115,6 +115,8 @@ The primary purpose of the Platform is to provide a space where individuals can 
 When you use our Platform, you will be presented with a series of exercises for you to download and solve, and be invited to upload your **Solution** (potentially as a series of improvements, each named an **Iteration**) for review.
 
 You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
+
+When you delete your account, we erase all the personal details from your account. This is an irreversal process, so please be sure before you delete your account. Your solutions and any comments made as a mentor will still remain the Platform but will be anonymised. 
 
 Using our right to license the content, we will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 

@@ -51,7 +51,7 @@ A student may use `parseInt` instead of `number`, and a student may use getters
 ### Common suggestions
 - If a student uses `foreach`, intermediary bookkeeping and `push`, suggest [`Array#map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 - If a student uses a dangerous version of transpose, suggest a non-destructive one, or make sure it's only ever called once.
-- If a student uses `map(arg => parseInt(arg))` or similar, explain they can drop the anonymous arrow function and pass in `parseInt` directly.
+- If a student uses `map(arg => parseInt(arg))` or similar, explain they can drop the anonymous arrow function and pass in `Number` function directly, but not `parseInt` because that accepts two arguments and `Array#map` passes item index implicitly.
 - If a student builds both array in one go, as shown below this suggestion, suggest `Array#map` and point them to "transpose algorithm":
 
 ```javascript

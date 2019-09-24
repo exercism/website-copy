@@ -3,7 +3,7 @@
 - ascii
 - chars
 - iterators
-- primative types
+- primitive types
 
 ### Reasonable solutions
 
@@ -14,7 +14,7 @@ A reasonable solution should do the following:
 - Use char methods for working with ascii data, all of which contain `_ascii_`
   in their name, rather than filtering characters with `is_ascii` and using
   unicode centric methods for manipulation.
-- Factor the common logic into a seperate function rather than duplicating
+- Factor the common logic into a separate function rather than duplicating
   filtering and transposition in encode and decode. **Bonus** its fine if this
   function returns a String or if they just use decode as the starting point of
   encode, but this is good place to introduce the `impl Trait` in the return

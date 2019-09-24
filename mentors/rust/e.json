@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "efx",
+    "name": "Eli Flanagan",
+    "link_text": "a post every 6 months kind of blog",
+    "link_url": "https://www.typedspace.com/",
+    "avatar_url": null,
+    "bio": "I'm a software developer chasing my curiosity. I've been learning Rust to better understand computing and write secure, performant software."
+  },
+  {
     "github_username": "ELD",
     "name": "Eric Dattore",
     "link_text": null,

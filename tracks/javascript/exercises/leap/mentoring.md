@@ -47,7 +47,8 @@ keep improving:
 
     Hi there {name},
 
-    I have a few comments for you:
+    Congrats on submitting your first side exercise solution for the JavaScript
+    track. I have a few comments for you:
 
     - In Javascript, the result of an expression can be returned!
       ```javascript
@@ -74,7 +75,7 @@ Generally, for `leap` in JavaScript, it's okay to approve if there are one or tw
 there is something significantly wrong.
 
 Above you can see two common suggestions:
-- Use implicit return of expressions instead of explictly returning `true` or `false`.
+- Use implicit return of expressions instead of explicitly returning `true` or `false`.
 - Instead of nesting `if` statements, use [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
   to combine multiple expressions.
 
