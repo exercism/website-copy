@@ -116,8 +116,6 @@ When you use our Platform, you will be presented with a series of exercises for 
 
 You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
 
-When you delete your account, we erase all the personal details from your account. This is an irreversal process, so please be sure before you delete your account. Your solutions and any comments made as a mentor will still remain the Platform but will be anonymised. 
-
 Using our right to license the content, we will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 
 It is your responsibility to ensure that the content you upload to the Platform is compatible by the CC BY-SA license and includes any appropriate attribution. This agreement means that you cannot revoke permission for us to use any content you upload.
@@ -170,6 +168,8 @@ If you believe that content on our Platform violates any laws or regulations, Yo
 We try to minimise the amount of personal data we hold, and where we do store and capture personal information, this will be governed by our Privacy Policy and such data will only be used for the purposes it was collected for.
 
 Knowingly providing false personal information is a breach of these Terms and might result in termination of your account.
+
+When you delete your account, we erase all the personal details from your account. This is an irreversal process, so please be sure before you delete your account. Your solutions and any comments made as a mentor will still remain the Platform but will be anonymised. 
 
 ### Advertising and Sponsorship
 
