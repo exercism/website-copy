@@ -1,16 +1,16 @@
 ### Concepts
 
-- char and string manipulation
-- multithreading and synchronization toolkits in libstd
-- lifetime constraints, Send and Sync auto traits
-- how the captured references determine the lifetime of a closure
+- Char and string manipulation
+- Multithreading and synchronization toolkits in libstd
+- Lifetime constraints, Send and Sync auto traits
+- How the captured references determine the lifetime of a closure
 - (optional) third party parallel crates
 
 ### Reasonable solutions
 
 A reasonable solution should:
 
-- Constraint number of threads spawned according to worker_count
+- Constrain the number of threads spawned according to worker_count
 - Split work loads evenly among threads
 - Surpass the performance of sequential implementation on at least one benchmark case
 - Not use unsafe blocks to circumvent lifetime constraints naively
@@ -183,10 +183,10 @@ pub fn frequency(input: &[&str], worker_count: usize) -> HashMap<char, usize> {
 // test bench_tiny_sequential  ... bench:         164 ns/iter (+/- 19)
 ```
 
-Thanks to the type system of Rust, if the solution compiles & passed all the tests, usually there's no data race in it. Students may however question the necessity of these apparently too restrictive constraints, and it's the mentors' responsibility to explain these concepts throughout:
+Thanks to the type system of Rust, if the solution compiles & passes all the tests, usually there's no data race in it. Students may however question the necessity of these apparently too restrictive constraints, and it's the mentors' responsibility to explain these concepts throughout:
 
-- why std::thread::spawn requires all captured variables having 'static lifetime: thread in libstd is unscoped, they can live for arbitrarily long & outlive all lifetimes except 'static. It may be helpful to provide a history node on scoped thread in pre-1.0 Rust and why it's removed: https://github.com/rust-lang/rust/issues/24292. An introduction to scoped thread in external crates (rayon or crossbeam) may also be helpful. 
-- what is Send and why std::thread::spawn requires all captured variables implement Send: for students got this far into the Rust track it's probably enough to direct them to the documentation of [std::sync::Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html). Nomicon also has [a chapter explaining data race](https://doc.rust-lang.org/nomicon/races.html).
+- Why std::thread::spawn requires all captured variables having 'static lifetime: thread in libstd is unscoped, they can live for arbitrarily long & outlive all lifetimes except 'static. It may be helpful to provide an historical note on scoped thread in pre-1.0 Rust and why it's removed: https://github.com/rust-lang/rust/issues/24292. An introduction to scoped thread in external crates (rayon or crossbeam) may also be helpful. 
+- What is Send and why std::thread::spawn requires all captured variables implement Send: for students got this far into the Rust track it's probably enough to direct them to the documentation of [std::sync::Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html). Nomicon also has [a chapter explaining data race](https://doc.rust-lang.org/nomicon/races.html).
 
 If they use channels to send the result out from the spawned thread:
 ```
