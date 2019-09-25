@@ -46,7 +46,7 @@ for ch in string:
 Building strings is slow in Python, and it is much better to create a list and join() it.
 
 ```python
-result = ""
+result = []
 for ch in string:
     if ch.isalpha():
         result.append(ch)
@@ -121,7 +121,6 @@ A similar idea can be implemented with sets:
 
 ```python
 import string
-import collections
 
 def is_isogram(string):
     string = string.lower()
