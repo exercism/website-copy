@@ -17,7 +17,7 @@ We needed to give people the ability to delete their account without emailing Je
 
 We wanted to let people reset their CLI tokens in case they are leaked. [#4150](https://github.com/exercism/exercism/issues/4150)
 
-### [Website] Improve experience of legacy or indepedent solutions in practice mode.
+### [Website] Improve experience of legacy or indepedent solutions in practice mode
 
 Have separate restricted queues for core and side exercises when importing from legacy or practice mode.
 
