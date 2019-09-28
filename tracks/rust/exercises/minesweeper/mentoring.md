@@ -52,10 +52,10 @@ fn count_mines(minefield: &[&str], x: usize, y: usize) -> usize {
 ```
 If they're handling edge cases with if blocks or rolling out their own implementation of `saturating_sub`:
 ```
-Nice attempt handling the first line individually: substracting 1 from the first row index, usize 0, will cause overflow. Good news is there's a method of usize in std for that purpose: 
+Nice attempt handling the first line individually: subtracting 1 from the first row index, usize 0, will cause overflow. Good news is there's a method of usize in std for that purpose: 
 
 https://doc.rust-lang.org/std/primitive.usize.html#method.saturating_sub
 
-in particular, 0usize.saturating_sub(1) == 0. With its help this edge case may not be necessary.
+in particular, 0usize.saturating_sub(1) == 0. With its help this if block may not be necessary.
 ```
-An alternative approach to this exercise is to distribute mine counts from each mine to empty squares surrounding it. This approach requires more allocation (in safe Rust: with unsafe blocks bytes in a string can be manipulated by as_bytes_mut). It could be disencouraged because of the extra allocation, in that case at least a concise explaination to its impact on performance (best with real-life examples you encounted) should be provided.
+An alternative approach to this exercise is to distribute mine counts from each mine to empty squares surrounding it. This approach requires more allocation (in safe Rust: with unsafe blocks bytes in a string can be manipulated by as_bytes_mut). It could be discouraged because of the extra allocation, in that case at least a concise explanation to its impact on performance (best with real-life examples you encountered) should be provided.
