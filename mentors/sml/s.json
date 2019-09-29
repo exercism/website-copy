@@ -5,6 +5,6 @@
     "link_text": null,
     "link_url": "https://simonshine.dk",
     "avatar_url": null,
-    "bio": "I've been a classroom teacher in compilers and various functional languages for five years. Having pure functions and isolation of side-effects are fundamental to separation of concerns. Strong, static types, type inference and algebraic types are hard for me to live without."
+    "bio": "I learned Standard ML on my 1st year at university. I've been a classroom teacher in functional programming and compilers using this language for a number of years, and today I mostly lurk on StackOverflow's 'sml' tag."
   }
 ]

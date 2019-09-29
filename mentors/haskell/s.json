@@ -5,6 +5,6 @@
     "link_text": null,
     "link_url": "https://simonshine.dk",
     "avatar_url": null,
-    "bio": "I've been a classroom teacher in compilers and various functional languages for five years. Having pure functions and isolation of side-effects are fundamental to separation of concerns. Strong, static types, type inference and algebraic types are hard for me to live without."
+    "bio": "Haskell has been my favourite programming language since 2012. I have been a classroom teacher on a Haskell course for a number of years. Today I spend my spare time making FOSS projects in Haskell and learning about all the great features they don't teach you in school."
   }
 ]
