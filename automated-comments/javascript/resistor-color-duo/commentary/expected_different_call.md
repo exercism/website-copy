@@ -1,4 +1,4 @@
-Found \`%{unexpected}\`, expected \`%{expected}\`.
+Found `%{unexpected}`, expected `%{expected}`.
 
 ⚡ **Warning:** We cannot guarantee the analyzer worked correctly on this point.
 Please double-check if it made a mistake, and if it did please open an issue
