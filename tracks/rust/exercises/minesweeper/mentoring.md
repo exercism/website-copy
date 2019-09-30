@@ -12,7 +12,7 @@ A reasonable solution should:
 - Use iterator methods instead of slice indexing whenever possible
 - Avoid unnecessary heap allocation
 - Handle edge cases (first and last line / column) gracefully
-- ***optional***: Boost readability by e.g. defining mine character ('*') as a constant
+- ***optional***: Boost readability by e.g. defining mine character (`'*'`) as a constant
 
 ### Examples
 
@@ -54,7 +54,7 @@ If they're handling edge cases with if blocks or rolling out their own implement
 ```
 Nice attempt handling the first line individually: subtracting 1 from the first row index, usize 0, will cause overflow. Good news is there's a method of usize in std for that purpose: 
 
-https://doc.rust-lang.org/std/primitive.usize.html#method.saturating_sub
+[https://doc.rust-lang.org/std/primitive.usize.html#method.saturating_sub](https://doc.rust-lang.org/std/primitive.usize.html#method.saturating_sub)
 
 in particular, 0usize.saturating_sub(1) == 0. With its help this if block may not be necessary.
 ```
