@@ -4,7 +4,7 @@ Thanks for being here! There are two stages to getting started. The first is to 
 
 #### Joining the community
 
-1) We have a private Slack room for mentors. You should have received an invite when you signed up. If you didn't, email us at [mentoring@exercism.io](mentoring@exercism.io).
+1) We have a private Slack room for mentors. You should have received an invite when you signed up. If you didn't, email us at [mentoring@exercism.io](mailto:mentoring@exercism.io).
 2) In Slack, introduce yourself in the #introductions channel.
 3) Join the Slack channels for the languages that you want to mentor in. There's a [video here](http://recordit.co/96ONu2RR8Q) if you get stuck! There's loads of interesting and helpful conversations in these language channels and they're the first place to go if you have any questions about any of the exercises.
 4) Join the Slack #mentor-the-mentor channel, where you can learn to be an amazing mentor from other amazing mentors.
