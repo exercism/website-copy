@@ -1,7 +1,7 @@
 ### Concepts
 
 - Char and string manipulation
-- Multithreading and synchronization toolkits in libstd
+- Multithreading and synchronization toolkit in libstd
 - Lifetime constraints, Send and Sync auto traits
 - How the captured references determine the lifetime of a closure
 - (optional) third party parallel crates
@@ -77,16 +77,17 @@ fn merge(result: &mut HashMap<char, usize>, freq: &HashMap<char, usize>) {
 // test bench_tiny_parallel    ... bench:         207 ns/iter (+/- 8)
 // test bench_tiny_sequential  ... bench:         162 ns/iter (+/- 9)
 ```
-With scoped threads:
+With scoped threads provided by crossbeam:
 ```rust
+use crossbeam_utils::thread;
 use std::collections::HashMap;
-use std::sync::mpsc::channel;
 
 type Frequencies = HashMap<char, usize>;
 
 fn collect_chars(slice: &[&str]) -> Frequencies {
     let mut map = HashMap::new();
-    slice.iter()
+    slice
+        .iter()
         .flat_map(|s| s.chars())
         .flat_map(|c| c.to_lowercase())
         .filter(|c| c.is_alphabetic())
@@ -111,30 +112,30 @@ pub fn frequency(input: &[&str], worker_count: usize) -> HashMap<char, usize> {
         return collect_chars(input);
     }
 
-    rayon::scope(|scope| {
-        let (tx, rx) = channel();
-        for work_load in input.chunks(load_size) {
-            let tx_clone = tx.clone();
-            scope.spawn(move |_| {
-                tx_clone.send(collect_chars(work_load)).unwrap();
-            });
-        }
-        drop(tx);
-        rx.into_iter().fold(Frequencies::new(), |mut acc, map| {
-            append_chars(&mut acc, &map);
-            acc
-        })
+    thread::scope(|scope| {
+        let handles = input
+            .chunks(load_size)
+            .map(|work_load| scope.spawn(move |_| collect_chars(work_load)))
+            .collect::<Vec<_>>();
+
+        handles
+            .into_iter()
+            .fold(Frequencies::new(), |mut acc, handle| {
+                append_chars(&mut acc, &handle.join().unwrap());
+                acc
+            })
     })
+    .unwrap()
 }
 
-// reference benchmark results
+// reference benchmark result
 // running 6 tests
-// test bench_large_parallel   ... bench:     561,458 ns/iter (+/- 22,860)
-// test bench_large_sequential ... bench:   1,298,340 ns/iter (+/- 31,940)
-// test bench_small_parallel   ... bench:      34,413 ns/iter (+/- 3,932)
-// test bench_small_sequential ... bench:      44,452 ns/iter (+/- 1,209)
-// test bench_tiny_parallel    ... bench:         188 ns/iter (+/- 7)
-// test bench_tiny_sequential  ... bench:         163 ns/iter (+/- 3)
+// test bench_large_parallel   ... bench:     718,435 ns/iter (+/- 11,169)
+// test bench_large_sequential ... bench:   1,256,775 ns/iter (+/- 39,374)
+// test bench_small_parallel   ... bench:     232,211 ns/iter (+/- 3,215)
+// test bench_small_sequential ... bench:      43,885 ns/iter (+/- 3,951)
+// test bench_tiny_parallel    ... bench:         175 ns/iter (+/- 12)
+// test bench_tiny_sequential  ... bench:         165 ns/iter (+/- 10)
 ```
 With high level abstraction in rayon:
 ```rust
@@ -164,23 +165,30 @@ fn append_chars(this: &mut Frequencies, other: &Frequencies) {
 pub fn frequency(input: &[&str], worker_count: usize) -> HashMap<char, usize> {
     let work_load = input.len() / worker_count + 1;
 
-    input
-        .par_chunks(work_load)
-        .map(|s| collect_chars(s))
-        .reduce(HashMap::new, |mut acc, map| {
-            append_chars(&mut acc, &map);
-            acc
-        })
+    // otherwise rayon cheats by spawning global thread pool beforehand
+    let pool = rayon::ThreadPoolBuilder::new()
+        .num_threads(worker_count)
+        .build().unwrap();
+
+    pool.install(|| {
+        input
+            .par_chunks(work_load)
+            .map(|s| collect_chars(s))
+            .reduce(HashMap::new, |mut acc, map| {
+                append_chars(&mut acc, &map);
+                acc
+            })
+    })
 }
 
-// reference bench result
+// reference benchmark results
 // running 6 tests
-// test bench_large_parallel   ... bench:     576,281 ns/iter (+/- 127,084)
-// test bench_large_sequential ... bench:   1,311,870 ns/iter (+/- 215,485)
-// test bench_small_parallel   ... bench:      39,303 ns/iter (+/- 19,573)
-// test bench_small_sequential ... bench:      44,236 ns/iter (+/- 5,220)
-// test bench_tiny_parallel    ... bench:         368 ns/iter (+/- 73)
-// test bench_tiny_sequential  ... bench:         164 ns/iter (+/- 19)
+// test bench_large_parallel   ... bench:     693,635 ns/iter (+/- 11,275)
+// test bench_large_sequential ... bench:   1,272,481 ns/iter (+/- 26,080)
+// test bench_small_parallel   ... bench:     192,525 ns/iter (+/- 4,335)
+// test bench_small_sequential ... bench:      44,306 ns/iter (+/- 3,133)
+// test bench_tiny_parallel    ... bench:     149,884 ns/iter (+/- 9,356)
+// test bench_tiny_sequential  ... bench:         164 ns/iter (+/- 4)
 ```
 
 Thanks to the type system of Rust, if the solution compiles & passes all the tests, usually there's no data race in it. Students may however question the necessity of these apparently too restrictive constraints, and it's the mentors' responsibility to explain these concepts throughout:
