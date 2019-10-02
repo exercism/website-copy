@@ -83,6 +83,58 @@ defmodule BankAccount do
 end
 ```
 
+Using [`spawn/1`](https://hexdocs.pm/elixir/Kernel.html#spawn/1),
+[`send/2`](https://hexdocs.pm/elixir/Kernel.html#send/2) and
+[`receive/1`](https://hexdocs.pm/elixir/Kernel.SpecialForms.html#receive/1):
+
+```elixir
+defmodule BankAccount do
+  @opaque account :: pid
+
+  defp listen(from, balance) do
+    new_balance =
+      receive do
+        :balance ->
+          send(from, balance)
+          balance
+
+        {:update, amount} ->
+          balance + amount
+      end
+
+    listen(from, new_balance)
+  end
+
+  @spec open_bank() :: account
+  def open_bank(), do: spawn(fn -> listen(self(), 0) end)
+
+  @spec close_bank(account) :: true
+  def close_bank(account), do: Process.exit(account, :kill)
+
+  @spec balance(account) :: integer
+  def balance(account) do
+    if Process.alive?(account) do
+      send(account, :balance)
+
+      receive do
+        balance -> balance
+      end
+    else
+      {:error, :account_closed}
+    end
+  end
+
+  @spec update(account, integer) :: any
+  def update(account, amount) do
+    if Process.alive?(account) do
+      send(account, {:update, amount})
+    else
+      {:error, :account_closed}
+    end
+  end
+end
+```
+
 ### Common questions
 
 #### `@opaque` vs `@type`/`@typep`
