@@ -2,8 +2,7 @@
 This error is raised when the solution doesn't use guards
 -->
 
-Use [guards](https://hexdocs.pm/elixir/master/guards.html) to prevent `two_fer/1` from executing code with with
-non-binary inputs.
+Use [guards](https://hexdocs.pm/elixir/master/guards.html) to prevent `two_fer/1` from executing code with non-binary inputs.
 
 > Remember, [strings](https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html) are considered to be [binary data](https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html) in elixir.
 
@@ -14,7 +13,7 @@ def hello(what) when is_binary(what) do
 end
 ```
 
-> Now in `iex` we can test this guard
+> This guard can be tested in `iex`
 
 ```shell
 iex> hello("world")

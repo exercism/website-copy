@@ -14,5 +14,12 @@ end
 ```
 
 - This function now defines both `foo/0` and also `foo/1`
-- if `foo()` is called, `"baz"` is put to the stdio
-- if `foo("bar")` is called, `"bar"` is put to the stdio
+- if `foo()` is called, `"baz"` is written to the application group leader, which in turn writes to `stdout`
+- if `foo("bar")` is called, `"bar"` is written to the application group leader which in turn writes to `stdout`
+
+> When Elixir is compiled and run, the [BEAM VM](https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)) starts a process known as the `group leader` which represents standard input and output, this process is shared with all other processes to abstract input and output operations
+
+For reference:
+
+- [Elixir-Lang - Getting Started - IO and the File System](https://elixir-lang.org/getting-started/io-and-the-file-system.html#processes-and-group-leaders)
+- [Learn you some Erlang for great good - The application behavior](https://learnyousomeerlang.com/building-otp-applications#the-application-behaviour)
