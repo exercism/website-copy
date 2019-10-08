@@ -4,7 +4,7 @@ This error is raised when the solution doesn't use default parameters
 
 Use a [default parameter](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) for this solution.
 
-- [Default parameters](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) allows you to avoid writing duplicate function clauses for functions with different [arities](https://en.wikipedia.org/wiki/Arity).
+- [Default parameters](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) removes the need of writing duplicate function clauses for functions with different [arities](https://en.wikipedia.org/wiki/Arity).
 
 ```elixir
 # Consider this function:
