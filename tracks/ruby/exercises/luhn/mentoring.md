@@ -107,7 +107,7 @@ the value of Luhn is also that it requires students to use the things that they 
   - _parameter_: the class can handle all kind of strings of numbers, not just card_numbers or identification numbers.
   - `checksum` for `luhn_sum`: in the world of Luhn, the checksum is the last number; what do we expect a checksum method to do?
   - `valid_format?` vs `invalid_format?`: When people extract the validation conditionals into a method, it's more often into a method with a negated name like `if invalid_format ...`.
-* Ducktyping: some people implement `evenly_divisible_by` in Integer. Talk about the risks of ducktyping and talk about refinements. [link](https://spin.atomicobject.com/2017/12/29/monkey-patching-refinements)
+* Monkey Patching: some people implement `evenly_divisible_by` in Integer. Talk about the risks of monkey patching and talk about refinements. [link](https://spin.atomicobject.com/2017/12/29/monkey-patching-refinements)
 
 ### Mentor Research Notes
 
