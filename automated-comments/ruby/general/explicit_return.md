@@ -5,7 +5,7 @@ In Ruby, a method will return the result of the last evaluated statement. Explic
 For example, this will print `16` as the `multiply` method returns the result of `a * b`, its final expression.
 
 ```ruby
-def multiple(a,b)
+def multiple(a, b)
   a * b
 end
 
