@@ -50,7 +50,7 @@ numbers_to_letters = {
     }
 
 def rev(d: dict) -> dict:
-    return { ch:val for val in d for ch in d[val] if ch.isalpha() }
+    return { ch:val for val in d for ch in d[val].split(', ') }
 
 def score(word: str) -> int:
     letter_value = rev(numbers_to_letters)
