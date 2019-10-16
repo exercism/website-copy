@@ -11,3 +11,7 @@ Exercism is entirely open source and relies on the contributions of thousands of
 Exercism is designed to be fun and friendly, and we place a strong emphasis on empathetic communication. If you have any questions or concerns about Exercism, you can browse our [FAQs](/faqs) or [contact us](/contact).
 
 Sign up and have fun. Exercism is 100% free :)
+
+### Who owns and runs Exercism?
+
+Exercism is a not-for-profit company. It is legally based in the United Kingdom, with Company Registration Number [11733062](https://beta.companieshouse.gov.uk/company/11733062). It is "company limited by guarantee" which means there are no shareholders, and no individuals "own" the company. Instead, the company has trustees who are responsible for ensuring it meets its aims and objectives. The current trustees are Katrina Owen and Jeremy Walker, who are also the company's Directors. 

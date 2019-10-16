@@ -55,5 +55,21 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "For over a decade I've programmed as a hobby. In 2016 I started working as a web developer and receiving mentorship was a big part of what made that change possible. To me, mentoring people who are learning Javascript feels like a natural part of the progression and often brings me joy."
+  },
+  {
+    "github_username": "jocelo",
+    "name": "Alfredo Alonso",
+    "link_text": "Website",
+    "link_url": "https://jocelo.github.io/",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/849799?s=400&v=4",
+    "bio": "I'm a Frontend Developer working on {{js_library_or_framework_used_nowadays}}. I love the idea behind Exercism and I really enjoy helping others to learn and I belive that also helps to keep pushing my own knowledge. Feel free to reach out!"
+  },
+  {
+    "github_username": "jwhittle933",
+    "name": "Jonathan Whittle",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/41909513?s=400&u=0ccbc828139bc41537737aca564824de121a32c5&v=4",
+    "bio": "I'm a self-taught, full-stack developer based in Kentucky building front-end SPA's with React. Side projects in Vue and Express. B.A. in Philosophy, M.Div, working on a doctorate in Ancient Near Eastern Languages."
   }
 ]

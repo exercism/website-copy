@@ -6,5 +6,21 @@
     "link_url": "https://alxandr.me",
     "avatar_url": "https://avatars1.githubusercontent.com/u/112334?s=460&v=4",
     "bio": "I love programming, and do it both professionally and as a hobby. At work I do most javascript and typescript, but I've also done a lot of F# and C#."
+  },
+  {
+    "github_username": "akoenig",
+    "name": "André König",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a sofware architect & engineer and I love to share knowledge, because I think that everybody should be able to learn how to develop software."
+  },
+  {
+    "github_username": "archanid",
+    "name": "Archana Sriram",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "JavaScript and Node.js are my top programming languages. I can't imagine writing them without TypeScript. I'm a professional software engineer with over two decades of work experience. I love to teach and mentor."
   }
 ]

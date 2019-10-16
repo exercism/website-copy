@@ -2,7 +2,7 @@
   {
     "github_username": "smiller171",
     "name": "Scott Miller",
-    "link_text": "millergeek.xyz",
+    "link_text": null,
     "link_url": "https://millergeek.xyz",
     "avatar_url": "https://lh3.googleusercontent.com/-r5AE-FvfQNA/AAAAAAAAAAI/AAAAAAAAkFM/IqkzNYO-Cq4/s120-p-rw-no/photo.jpg",
     "bio": "Been learning to love JavaScript more and more over the last few years. Just trying to keep learning an help others."
@@ -55,5 +55,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "JavaScript has been part of my day-to-day job for over 7 years -- A love-hate relationship"
+  },
+  {
+    "github_username": "sawyerDeveloper",
+    "name": "Anthony Sawyer",
+    "link_text": "GitHub Profile",
+    "link_url": "https://github.com/sawyerDeveloper/",
+    "avatar_url": "https://avatars.githubusercontent.com/sawyerDeveloper",
+    "bio": "I have been a developer for over 16 years in gaming, big data, enterprise and mobile. I am here because teaching software development is a passion of mine."
   }
 ]

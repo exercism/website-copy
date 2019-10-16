@@ -34,7 +34,7 @@
   {
     "github_username": "alexZielonko",
     "name": "Alex Zielonko",
-    "link_text": "github.com/alexZielonko",
+    "link_text": null,
     "link_url": "https://github.com/alexZielonko",
     "avatar_url": "https://avatars1.githubusercontent.com/u/5274697?s=460&v=4",
     "bio": "I'm one part professional developer and two parts programming enthusiast, shaken with a liberal dash of pragmatism."
@@ -42,9 +42,33 @@
   {
     "github_username": "aibrahim3546",
     "name": "Ahmad Ibrahim",
-    "link_text": "https://aibrahim3546.github.io/",
+    "link_text": null,
     "link_url": "https://aibrahim3546.github.io/",
     "avatar_url": null,
     "bio": "I am a fan of javascript. I have been working with ReactJs for a year and yeah I am really good at front-end development. Also Good at NodeJs and React Native"
+  },
+  {
+    "github_username": "akoenig",
+    "name": "André König",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a sofware architect & engineer and I love to share knowledge, because I think that everybody should be able to learn how to develop software."
+  },
+  {
+    "github_username": "archanid",
+    "name": "Archana Sriram",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "JavaScript and Node.js are my top programming languages. I'm a professional software engineer with over two decades of work experience. I love to teach and mentor."
+  },
+  {
+    "github_username": "AndyANZHENG",
+    "name": "Andy An",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I use JavaScript (React) at work and did Java, Python, PHP in the past. I'm always excited to learn and help!"
   }
 ]

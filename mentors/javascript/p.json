@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a full stack developer working in Wroclaw, Poland. Currently I'm working with JavaScript and React."
+  },
+  {
+    "github_username": "philippmeissner",
+    "name": "Philipp Meissner",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a full-time software developer for ZEIT.IO GmbH, mostly focused on frontend using frameworks like Angular (1-8), Vue and even Elm. On top of that I am quite familiar with Ruby on Rails and NodeJS when it comes to backend."
   }
 ]

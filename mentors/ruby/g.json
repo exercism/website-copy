@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "github_username": "Garllon",
+    "name": "Bennet Palluthe",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Ruby, because it is pretty and beautiful and the nicest language in the world."
+  },
+  {
+    "github_username": "goalaleo",
+    "name": "Leo Kiiski",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I build Ruby on Rails backends professionally. Ruby is my main language, and I really enjoy its expressiveness. I'd like to learn Haskell and Rust, and get better at shell scripting"
+  }
+]

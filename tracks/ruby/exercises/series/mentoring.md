@@ -12,7 +12,7 @@ class Series
 
   def slices(span)
     raise ArgumentError unless span <= numerals.size
-    numerals.each_cons(span).map(|slice| slice.join )
+    numerals.each_cons(span).map{|slice| slice.join}
   end
 
   private
@@ -34,7 +34,7 @@ and to the rubydocs [Enumerable](https://ruby-doc.org/core/Enumerable.html) with
 ### Talking points
 - `each_cons` instead of an iterator `with_index`: In Ruby, you rarely have to write iterators that need to keep track of the index. Enumerable has powerful methods that do that for us.
 - `chars`: instead of `split('')`   
-- `attr_reader`: instead of the instance variable (Explained here:)[https://ivoanjo.me/blog/2017/09/20/why-i-always-use-attr_reader-to-access-instance-variables]
+- `attr_reader`: instead of the instance variable, [explained here](https://ivoanjo.me/blog/2017/09/20/why-i-always-use-attr_reader-to-access-instance-variables).
 - `private` attr_reader: Following the 'rule' for encapsulation: if it doesn't need to be public, make it private. [This link](http://ruby-for-beginners.rubymonstas.org/writing_classes/state_and_behaviour.html) may come in handy for a first introduction. 
 - `unless` , inline: With `unless` instead of `if`, we can show what "good" looks like for the conditional statement.
 - `error`: Custom error message? (Only if the first submission meets the Minimal Solution.)

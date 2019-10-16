@@ -15,13 +15,20 @@
     "avatar_url": null,
     "bio": "Being on the language since day 0 and used it for all sorts of tasks, from video games, to robotics. I love to network and help."
   },
- {
-    "github_username": "ChrisPritchard",
-    "name": "Christopher Pritchard",
-    "link_text": null,
-    "link_url": null,
-    "avatar_url": null,
-    "bio": "I've been a professional C# developer for 15 years now. While I generally use F# personally, C# is my bread-and-butter and is a beautiful language."
-}
+  {
+    "github_username": "chaisstar",
+    "name": "Vladyslav Balan",
+    "link_text": "Medium page",
+    "link_url": "https://medium.com/@chaisstar19",
+    "avatar_url": "https://miro.medium.com/fit/c/128/128/2*yx4DpH7FrYM8PucaZXNrVw.jpeg",
+    "bio": "I use C# every day at work for building web application. And I believe, that the best way to learn something new is to teach someone"
+  },
+  {
+    "github_username": "ceddlyburge",
+    "name": "Cedd Burge",
+    "link_text": "Blog Posts",
+    "link_url": "https://medium.com/@cuddlyburger",
+    "avatar_url": "https://github.com/ceddlyburge.png",
+    "bio": "I'm a software lead / architect / manager type thing and I have a strong focus on code quality. C# is an excellent general purpose language, with a rich and mature ecosystem. .Net Core has brought cross platform development and a stronger focus on web development."
+  }
 ]
-

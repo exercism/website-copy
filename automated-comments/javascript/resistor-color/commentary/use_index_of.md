@@ -1,0 +1,1 @@
+The analyzer expected `indexOf`, instead of  `%{current}`.

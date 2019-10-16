@@ -8,11 +8,11 @@
     "bio": "RHCE currently aiming for RHCA. I'm spending my best years in a console, so I know a thing or two about Linux :). Enjoy working for a small company where I automate the process of making Linux distro. Some folks call me DevOps."
   },
   {
-    "github_username": "astoehr",
-    "name": "Andrew Stoehr",
-    "link_text": null,
-    "link_url": null,
+    "github_username": "andoniaf",
+    "name": "Andoni Alonso",
+    "link_text": "LinkedIn",
+    "link_url": "https://www.linkedin.com/in/andoniaf",
     "avatar_url": null,
-    "bio": "Professional Software Engineer. Whenever I have something I need to automate, Bash is one of my go-tos - its flexibility and interesting syntax make it one of my favorite languages to write. Having direct access to command-line utilities within scripts makes Bash appealing by itself, but the language is so much more than just that. I look forward to helping others learn it!"
+    "bio": "SRE that loves work from the console. Some people say that I have a shellscript for everything. Always learning."
   }
 ]

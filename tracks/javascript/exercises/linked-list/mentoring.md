@@ -22,18 +22,6 @@ export class LinkedList {
   }
 
   push(value) {
-    const element = new Node({ value, next: this.head })
-
-    if (this.head) {
-      this.head.prev = element
-    } else {
-      this.tail = element
-    }
-
-    this.head = element
-  }
-
-  unshift(value) {
     const element = new Node({ value, prev: this.tail })
 
     if (this.tail) {
@@ -45,24 +33,19 @@ export class LinkedList {
     this.tail = element
   }
 
-  pop() {
-    if (!this.head) {
-      throw new Error('list is empty')
-    }
+  unshift(value) {
+    const element = new Node({ value, next: this.head })
 
-    const { value } = this.head
-
-    if (this.head.next) {
-      this.head = this.head.next
-      this.head.prev = null
+    if (this.head) {
+      this.head.prev = element
     } else {
-      this.clear()
+      this.tail = element
     }
 
-    return value
+    this.head = element
   }
 
-  shift() {
+  pop() {
     if (!this.tail) {
       throw new Error('list is empty')
     }
@@ -72,6 +55,23 @@ export class LinkedList {
     if (this.tail.prev) {
       this.tail = this.tail.prev
       this.tail.next = null
+    } else {
+      this.clear()
+    }
+
+    return value
+  }
+
+  shift() {
+    if (!this.head) {
+      throw new Error('list is empty')
+    }
+
+    const { value } = this.head
+
+    if (this.head.next) {
+      this.head = this.head.next
+      this.head.prev = null
     } else {
       this.clear()
     }
@@ -100,16 +100,16 @@ export class LinkedList {
         continue
       }
 
-      if (element.next) {
-        element.next.prev = element.prev
-      } else {
-        this.tail = this.tail.prev
-      }
-
       if (element.prev) {
         element.prev.next = element.next
       } else {
         this.head = this.head.next
+      }
+
+      if (element.next) {
+        element.next.prev = element.prev
+      } else {
+        this.tail = this.tail.prev
       }
 
       break

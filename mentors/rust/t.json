@@ -13,12 +13,12 @@
     "link_text": "thelostlambda.xyz",
     "link_url": "http://thelostlambda.xyz/",
     "avatar_url": null,
-    "bio": "A functional programmer who loves Haskell, Lisp, Rust, and Elixir."
+    "bio": "Rust manages to meld low-level programming with high-level abstractions without any of the tradeoffs. Here to help in the inaugural battle against the borrow-checker and to foster the inner Rustacean in all of us."
   },
   {
     "github_username": "tekerson",
     "name": "Brenton Alker",
-    "link_text": "github.com/tekerson",
+    "link_text": null,
     "link_url": "https://github.com/tekerson",
     "avatar_url": "https://avatars0.githubusercontent.com/u/83486?s=200",
     "bio": "Rust brings an expressive type-system to low-level perfomance and portability. The WASM support ties in particularly well with web development where I spend most of my time and I'm excited to join others on this learning path."
@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Although rust does have a steeper learning curve than many other languages, once you understand it, it is a truly incredible language."
+  },
+  {
+    "github_username": "tohnmeister",
+    "name": "Tonni Tielens",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love learning and I love teaching others. I believe Rust might be the next big thing in systems programming for its enforced memory safety and speed."
   }
 ]

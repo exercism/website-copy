@@ -29,12 +29,15 @@ isLeapYear year
   | year `rem` 100 /= 0 = True
   | year `rem` 400 /= 0 = False
   | otherwise           = True
-
-isDivisibleBy :: Integer -> Integer -> Bool
-isDivisibleBy x n = x `rem` n == 0
 ```
 
 This solution evaluates the three conditions in an optimal order.
+
+```haskell
+import Data.Time.Calendar (isLeapYear)
+```
+
+This solution assumes that `time` has been added as a dependency in package.yaml.
 
 ### Common suggestions
 
@@ -55,7 +58,7 @@ if p then True else q
 if p then q else False
 ```
 
-  and so on. These can always be replaced by simpler expressions, or guards.
+  and so on. These can always be replaced by simpler expressions, or guards. (For example: The expression `if p then q else False` can and should be replaced by the equivalent expression `p && q`.)
 
 - Overuse of parentheses: Some change what's evaluated while others are redundant. This can be triggered by:
   - Not knowing the precedence rules of various operators, infixed functions and function application

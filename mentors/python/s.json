@@ -91,5 +91,39 @@
     "avatar_url": null,
     "bio":
       "I am a system programmer in JuiceFS. Python is my favorite programming language and I have been using it for >9 years. I hope I can help you pick up Python faster."
+  },
+  {
+    "github_username": "Stigjb",
+    "name": "Stig Johan Berggren",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I'm using Python for data science/machine learning and personal projects. I like the language for the great package ecosystem and the expressive and readable code."
+  },
+  {
+    "github_username": "Sencudra",
+    "name": "Vlad Tarasevich",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio":
+      "I'm a student at HSE university in Moscow and an intern at Kaspersky Lab. Python is one of my most favorite programming languages since it's simple and easy to use on daily basis." 
+  },
+  {
+    "github_username": "shimst3r",
+    "name": "Nils Müller",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I love Python for its accessibility, its welcoming community, and its wide area of application. I've used it both professionally and for research."
+  },
+  {
+    "github_username": "SimaSk",
+    "name": "Simona Ziauke",
+    "link_text": "",
+    "link_url": "",
+    "avatar_url": null,
+    "bio": "I am using Python for personal projects. Python seems to be providing powerful solutions that are simple to understand."
   }
 ]

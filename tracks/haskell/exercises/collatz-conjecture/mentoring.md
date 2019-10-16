@@ -3,7 +3,7 @@
 ```haskell
 step :: Integer -> Integer
 step n
-    | even n    = n `rem` 2
+    | even n    = n `quot` 2
     | otherwise = 3 * n + 1
 
 collatz :: Integer -> Maybe Integer
@@ -29,9 +29,9 @@ three items with standard Haskell functionality: `iterate`, `takeWhile` and
 `length`.
 
 ### Talking points
-- When dividing a number, many students seem to go for `mod` even though `rem`
+- When dividing a number, many students seem to go for `div` even though `quot`
 is a better choice here. This is a good opportunity to discuss the merits of
-`quot` and `rem` over `div` and `mod.
+`quot` and `rem` over `div` and `mod`.
 
 - Since `collatz` needs to yield an `Integer` (instead of an `Int`), it's
 necessary to somehow convert the value returned by `length` into an `Integer`.

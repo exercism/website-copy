@@ -15,12 +15,20 @@
     "avatar_url": null,
     "bio": "Polyglot developer, loves programming, constantly learning!"
   },
-    {
+  {
     "github_username": "karthiknayak",
     "name": "Karthik Nayak",
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
     "bio": "Comming from C, Go has recently been my go-to language. I've been using it for my personaly projects and recently introduced it at my workspace."
+  },
+  {
+    "github_username": "krhubert",
+    "name": "Hubert Krauze",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": " Go developer with years of experience in open source projects. Go is easy and fun the same as teaching it."
   }
 ]

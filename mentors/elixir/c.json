@@ -21,7 +21,7 @@
     "link_text": null,
     "link_url": "https://devrantsblog.wordpress.com",
     "avatar_url": "https://avatars0.githubusercontent.com/u/1099999?s=460&v=4",
-    "bio": "I'm a long-time full-stack web developer in a range of languages" 
+    "bio": "I'm a long-time full-stack web developer in a range of languages. I mentor Elixir to allow me to teach and learn from the students." 
   },
   {
     "github_username": "costaraphael",
@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": "https://avatars1.githubusercontent.com/u/7742817?s=460&v=4",
     "bio": "I'm an Engineer/Teacher using Elixir at my day job and in my side projects as well. I gave talks on Elixir and functional programming at some events, one of them being ElixirConf EU." 
+  },
+  {
+    "github_username": "chvanikoff",
+    "name": "Roman Chvanikov",
+    "link_text": null,
+    "link_url": "https://medium.com/@chvanikoff",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/452592?s=460&v=4",
+    "bio": "I'm a long-time OTP developer (Erlang/Elixir with a strong focus on Elixir for the past 4 years) and will be glad to help anybody to dive into the languages."
   }
 ]

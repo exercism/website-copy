@@ -1,6 +1,4 @@
-# Terms of Service
-
-Last Revised: January 2019
+Last Revised: April 2019
 
 ## Overview
 
@@ -8,7 +6,7 @@ Exercism (also referred to as exercism.io) is an online platform designed to hel
 
 Our platform comprises of a web site is located at https://exercism.io (and associated subdomains) and a command line application (CLI).
 
-Exercism is run and managed by Exercism Inc. The following Terms of Service (these **Terms**) are an agreement between **Exercism, Inc** and you, and govern your permitted use of our **Platform**.
+Exercism is run and managed by Exercism, a not-profit-company. The following Terms of Service (these **Terms**) are an agreement between **Exercism** and you, and govern your permitted use of our **Platform**.
 
 You might also want to read:
 
@@ -32,7 +30,7 @@ operational, but we cannot offer any guarantees of this.
 
 ## In detail
 
-Exercism is run and managed by Exercism, Inc ("We", "Us"), a corporation of Delaware. The following Terms of Service (these **Terms**) are an agreement between **Exercism, Inc** and you, and governs your permitted use of our **Platform**.
+Exercism is run and managed by Exercism ("We", "Us"), a not-profit-company registered in the UK with Company Number 11733062. The following Terms of Service (these **Terms**) are an agreement between **Exercism** and you, and governs your permitted use of our **Platform**.
 
 Any clause headings, numbers, and/or emphasis in these Terms are for ease of reference only and shall not be taken into account in the construction or interpretation of the clauses to which they refer.
 
@@ -102,7 +100,7 @@ We are committed to Open Source, and as a result, many of the resources on our P
 
 #### Our Content
 
-All materials displayed on our Website and/or Platform are Copyright **Exercism, Inc**.
+All materials displayed on our Website and/or Platform are Copyright **Exercism**.
 
 Where a resource does not appear to have a clear licensing statement, we would recommend that you check our GitHub source-code repositories. You should not assume that all content on our Platform is openly licensed, but it generally will be.
 
@@ -116,7 +114,7 @@ The primary purpose of the Platform is to provide a space where individuals can 
 
 When you use our Platform, you will be presented with a series of exercises for you to download and solve, and be invited to upload your **Solution** (potentially as a series of improvements, each named an **Iteration**) for review.
 
-You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism, Inc the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
+You agree that all content (**User Contributed Content**) that you have previously uploaded, or subsequently upload, to the Platform -- including, without limitation, your Solution and Iteration content -- will be licensed to Exercism on worldwide, royalty-free, non-exclusive, perpetual basis. You grant Exercism the perpetual and irrevocable right and license to process, copy, distribute and to commercially exploit all such User Contributed Content that you contribute. You should understand that this right will persist even if your User Contributed Content is subsequently removed by you OR if you subsequently delete your account on our Platform.
 
 Using our right to license the content, we will distribute your User Contributed Content under the terms of the Creative Commons (CC BY-SA) licence. This means that any third parties using or adapting your content should attribute Exercism as the source. The **CC BY-SA** Creative Commons license terms are explained in more detail below.
 
@@ -170,6 +168,8 @@ If you believe that content on our Platform violates any laws or regulations, Yo
 We try to minimise the amount of personal data we hold, and where we do store and capture personal information, this will be governed by our Privacy Policy and such data will only be used for the purposes it was collected for.
 
 Knowingly providing false personal information is a breach of these Terms and might result in termination of your account.
+
+When you delete your account, we erase all the personal details from your account. This is an irreversal process, so please be sure before you delete your account. Your solutions and any comments made as a mentor will still remain the Platform but will be anonymised. 
 
 ### Advertising and Sponsorship
 

@@ -38,5 +38,29 @@
   "link_url": null,
   "avatar_url": "https://secure.gravatar.com/avatar/67152dcbd36f6e8c926371c3ebb4ea3f?size=800",
   "bio": "I'm a Ruby on Rails developer who thinks Ruby and the entire ecosystem is glorious. I've had a pull request merged into Rails, and love finding opportunities to contribute to open source."
+  },
+  {
+    "github_username": "codebender",
+    "name": "Matthew Bender",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/987305",
+    "bio": "I've worked with Ruby professionally for over 10 years now. The Ruby community is so incredible and I'm happy to be giving back as a mentor."
+  },
+  {
+    "github_username": "CuriousPhysicist",
+    "name": "Andrew Hampson",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/24303613",
+    "bio": "I am a professional Ruby-on-Rails developer, programming enthusiast and have been programming in Ruby since 2016."
+  },
+  {
+    "github_username": "cnovoab",
+    "name": "Claudio Novoa",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/3586587",
+    "bio": "I've been using Ruby with and without Rails professionally since 2015. Love to help anyone who wants to learn this awesome language."
   }
 ]

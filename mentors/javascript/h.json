@@ -30,5 +30,13 @@
     "link_url": "https://github.com/hutcho66",
     "avatar_url": null,
     "bio": "I'm a primarily back-end developer who uses JavaScript as a day to day language. I'm also learning Java myself (for a project at work) and am starting to use TypeScript on the side."
+  },
+  {
+    "github_username": "hihiandrew",
+    "name": "Andrew Reis",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/hihiandrew",
+    "avatar_url": null,
+    "bio": "Hi! I am a full stack software developer and I love learning and solving problems. I currently am working on a number of javascript-centric projects and learning C++."
   }
 ]

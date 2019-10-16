@@ -27,16 +27,8 @@ export class Cipher {
     );
   }
 
-  static validateKey(key) {
-    if (VALID_KEY_PATTERN.test(key)) {
-      return key;
-    }
-
-    throw new Error('Bad key');
-  }
-
   constructor(key) {
-    this.key = (key === undefined && Cipher.generateRandomKey()) || Cipher.validateKey(key);
+    this.key = (key === undefined && Cipher.generateRandomKey()) || key;
     this.encode = this.process.bind(this, 1);
     this.decode = this.process.bind(this, -1);
   }
@@ -65,9 +57,6 @@ export class Cipher {
 Encourage extracting constants, instead of recreating alphabets or constants over and over.
 - Instead of `ALPHABET`, `'a'.charCodeAt(0)` and `'z'.charCodeAt(0)` can be used.
 - Discourage cryptic constant names, see suggestions.
-
-### Key validation
-- Discourage `indexOf` and `includes`, see suggestions.
 
 ### Key generation
 Using `Array.from` with a `mapFn` (slower, but idiomatic with streams)
@@ -105,7 +94,6 @@ Using `String#split` (slower, but idiomatic with streams):
 ## Common suggestions
 - When going for performance, at time of writing these notes, a `for` loop with string concatenation, _always_ trumps any form of `String#split` + `Array#join`, `Array#map` or `Array#reduce`: [Benchmarks](https://run.perf.zone/view/Random-key-generation-1542819336492).
 - It's perfectly fine if the static methods are actually `const` or named `function` outside of the class.
-- In validation: replace `includes` over each character by a `charCodeAt` between check, as `includes` is `O(n)` and validation then is `O(n*m)` where `m` is the alphabet length.
 - In transformation: replace `indexOf(alphabet)` and `indexOf(key)` with `charCodeAt(0)`, as `includes` is `O(n)` and transformation then is `O(n*m)` where `m` is the alphabet length / key length.
 - In encoding / decoding, make sure they clean up the functions so much that they are exactly the same except for a single `-` and `+` for shifting. Then you can reduce that via the talking points.
 

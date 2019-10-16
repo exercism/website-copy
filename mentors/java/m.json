@@ -62,5 +62,21 @@
   "link_url": null,
   "avatar_url": null,
   "bio": "Mostly a Java developer, interested in solving problems and always looking for ways to learn new things. I'm also into cross-country skiing!"
-}
+},
+{
+  "github_username": "MindLabor",
+  "name": "Samuel Braun",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "My first programming language was Java. At the beginning it was quite challenging to write some code that does actually make sense. After a few days however, it became easier and fun to mess around with."
+},
+{
+  "github_username": "maly7",
+  "name": "Paul Aly",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "I've been developing in Java Professionaly for 5 years now. I'm passionate about writing clean code and learning new programming languages."
+ }
 ]

@@ -1,0 +1,12 @@
+type/analyzer-comments:
+- automated-comments/**/*.md
+
+type/copy:
+- pages/**/*
+- pages/*
+
+type/mentor-bios:
+- mentors/*/[0-9a-z].json
+
+type/mentor-notes:
+- tracks/*/exercises/*/mentoring.md
