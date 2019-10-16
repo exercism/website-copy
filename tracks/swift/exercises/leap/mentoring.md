@@ -52,11 +52,11 @@ year.calendarYear = 2009
 year.isLeapYear // this is still true
 ```
 
-The issue above can be fixed by changin `var` to `let`:
+The issue above can be fixed by changing `var` to `let`:
 ```swift
 let calendarYear: Int
 ```
-So i would suggest to start the code with ``` let ``` and ``` struct ```.
+So I would suggest to start the code with ``` let ``` and ``` struct ```.
 
 ## Talking Points
 
