@@ -32,6 +32,11 @@ end
 
 ### Common suggestions
 
+#### Hardcoding test data
+
+As first real exercise on the track, students will frequently hardcode test data to get to a solution.
+They should be recommended to find a more general solution. 
+
 #### `is_shouting`
 
 If a solution uses names like `is_shouting` and `is_question`,
@@ -53,13 +58,14 @@ This exercise can be solved without regular expressions and a student could be e
 
 #### Hint functions for the truely stuck
 
-https://hexdocs.pm/elixir/String.html#trim/1
-https://hexdocs.pm/elixir/String.html#ends_with?/2
-https://hexdocs.pm/elixir/String.html#downcase/2
-https://hexdocs.pm/elixir/String.html#upcase/2
+- [`String#trim/1`](https://hexdocs.pm/elixir/String.html#trim/1)
+- [`String#ends_with?/2`](https://hexdocs.pm/elixir/String.html#ends_with?/2)
+- [`String#downcase/2`](https://hexdocs.pm/elixir/String.html#downcase/2)
+- [`String#upcase/2`](https://hexdocs.pm/elixir/String.html#upcase/2)
+- `String.upcase(input) != String.downcase(input)` if there is a letter present.
 
 #### Style guide
 
 This is the first time on the track that students get to define their own functions and frequently trip over naming conventions.
 
-https://github.com/christopheradams/elixir_style_guide
+- [The Elixir Style Guide](https://github.com/christopheradams/elixir_style_guide)
