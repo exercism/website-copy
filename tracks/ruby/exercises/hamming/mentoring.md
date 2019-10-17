@@ -167,7 +167,7 @@ either an empty string or empty regex. Turns out there's already a built-in
 method for splitting a string into it's characters: `String#chars`.
 
 *You don't need to split the string into characters to iterate over it though.*
-That's why Ruby also provides `each_char` (which returns an iterator, not an
+That's why Ruby also provides `each_char` (which returns an Enumerator, not an
 Array).
 
 ## Talking points
