@@ -119,7 +119,7 @@ can be mentioned to show how Sum() handles overflows and there may be scope
 to position this earlier in the solution for a fast and more informative fail.  Alternatively long or perhaps
  BigInteger types can be employed to handle issues with values greater
  than int.MaxValue.
- - Not everyone likes them, but it might be useful to suggest writing the `SumOfMultiples` method (see _LINQ (Performant)_) as an [expression-bodied method](https://docs.microsoft.contm/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
+ - Not everyone likes them, but it might be useful to suggest writing the `SumOfMultiples` method (see _LINQ (Performant)_) as an [expression-bodied method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
 
 
 TODO a bullet proof solution for signed ints.
