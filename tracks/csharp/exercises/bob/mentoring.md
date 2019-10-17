@@ -116,4 +116,4 @@ public static class Bob
 ### Talking points
 
 - It is not uncommon for students to use variables to prevent the yelling or question logic from being executed more than once. While this is a valid point, performance is not critical in Exercism.
-- Not everyone likes them, but it might be useful to suggest writing the helper methods as [expression-bodied methods](https://docs.microsoft.contm/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
+- Not everyone likes them, but it might be useful to suggest writing the helper methods as [expression-bodied methods](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.
