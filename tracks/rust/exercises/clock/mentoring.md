@@ -110,10 +110,8 @@ and [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#derivable
 If they visibly lament the behavior of `%` on negative arguments:
 
 ```markdown
-The standard library does provide a method called [`rem_euclid`] that produces a
-non-negative result, but it is currently unstable.  We can help test it out on a
-nightly version of the compiler by adding a `#![feature]` flag as shown in the
-method's documentation.
+The standard library provides a method called [`rem_euclid`] that produces a
+non-negative result, this was made stable in Rust 1.38.
 
 [`rem_euclid`]: https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid
 ```
