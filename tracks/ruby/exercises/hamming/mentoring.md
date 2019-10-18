@@ -7,12 +7,13 @@ to some of its features.
 ### Reasonable Solutions
 
 There are three strategies for the **iteration**. In descending order of popularity with mentors:
- 
-Hybrid approach 
+
+Hybrid approach
 1. Iterating through both strings simultaneously via `Enumerable#zip`;
 2. Iterating explicit indices using a `Range`, `Integer#upto`, or `Integer#times`;
 3. A hybrid approach with `Enumerable#each_with_index`, iterating over one of the strings while also
    tracking the index to find the equivalent character in the other string. Uses `Enumerable#each_with_index`.
+   (see notes below on `chars` vs `each_char`)
 
 **Counting** on the other hand really only has one good solution: using
 `Enumerable#count` with a block.
@@ -40,29 +41,29 @@ class Hamming
   end
 end
 ```
-Pros: avoids indices entirely  
+Pros: avoids indices entirely
 Cons: needs to convert the string to an array
 
 Strategy 2: String Power
- 
-```ruby 
-    (0...strand1.length).count { |i| strand1[i] != strand2[i] }
-```
-Pros: uses string directly; no array conversion needed;   
-Cons: requires indices.
-
-Strategy 3: Each with index
 
 ```ruby
-    strand1.chars.each_with_index.count {|letter, index| letter != strand2[index] }
+    (0...strand1.length).count { |i| strand1[i] != strand2[i] }
 ```
-Pros: more intuitive? (students seem to pick this often);  
-Cons: requires both indices and converting to arrays, so it's kind of the worst of both worlds from 1 and 2 😛 . 
+Pros: uses string directly; no array conversion needed;
+Cons: requires indices.
+
+Strategy 3: Each char and with index
+
+```ruby
+    strand1.each_char.with_index.count {|letter, index| letter != strand2[index] }
+```
+Pros: more intuitive? (students seem to pick this often);
+Cons: requires indices.
 
 
 ### Mentoring flow
 
-Most students start at either steps 1 or 2. 
+Most students start at either steps 1 or 2.
 
 1. If student used `#each`, `for`, `while`, or `until`, challenge them to
    eliminate the manual index management (using one of the iteration strategies
@@ -92,7 +93,7 @@ final round at the end.
 
 - No matter how important Naming Things is, Hamming is not the best place to discuss the naming of the parameters,
 because there is no solution that seems to satisfy everyone, while a lot of people have strong opinions
-on it. The following few core exercises offer plenty opportunity to discuss naming.  
+on it. The following few core exercises offer plenty opportunity to discuss naming.
 
 
 ### Too weak Enumerable
@@ -164,6 +165,10 @@ is such a common operation that there is a dedicated method for it:
 Students commonly try to turn a string into characters using `String#split` and
 either an empty string or empty regex. Turns out there's already a built-in
 method for splitting a string into it's characters: `String#chars`.
+
+*You don't need to split the string into characters to iterate over it though.*
+That's why Ruby also provides `each_char` (which returns an Enumerator, not an
+Array).
 
 ## Talking points
 
