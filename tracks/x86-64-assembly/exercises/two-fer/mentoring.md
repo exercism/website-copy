@@ -27,9 +27,9 @@ Using the `rep movsb` instructions:
 
 ### Common errors
 
-- Forgetting to save registers. Registers `rbp`, `rbx` and `r12` through `r15` “belong” to the calling function and the called function is required to preserve their values. In other words, a called function must preserve these registers’ values for its caller (Matz, Hubička, Jaeger, & Mitchell, 2014, p. 15). Depending on which registers the caller is using, the tests might still pass.
+- Forgetting to save registers. "Registers `%rbp`, `%rbx` and `%r12` through `%r15` 'belong' to the calling function and the called function is required to preserve their values. In other words, a called function must preserve these registers’ values for its caller" (Matz, Hubička, Jaeger, & Mitchell, 2014, p. 15). Depending on which registers the caller is using, the tests might still pass.
 
-- Forgetting return. A function declaration must end with `ret`. The execution will continue in the code after the procedure if there is no `ret` (Fog, 2019, p. 10).
+- "Forgetting return. A function declaration must end with . . . `RET`. . . . The execution will continue in the code after the procedure if there is no `RET`" (Fog, 2019, p. 10).
 
 ### Common suggestions
 
@@ -59,7 +59,7 @@ Using the `rep movsb` instructions:
     .loop_end:
     ```
 
-    "The most important problem with the loop is that there are two jump instructions. We can eliminate one jump from the loop by putting the branch instruction in the end" (Fog, 2019, p. 88):
+    "The most important problem with the loop . . . is that there are two jump instructions. We can eliminate one jump from the loop by putting the branch instruction in the end" (Fog, 2019, p. 89):
 
     ```nasm
         movzx edx, byte [rdi]
