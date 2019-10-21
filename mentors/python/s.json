@@ -125,5 +125,13 @@
     "link_url": "",
     "avatar_url": null,
     "bio": "I am using Python for personal projects. Python seems to be providing powerful solutions that are simple to understand."
+  },
+  {
+    "github_username": "simonbcodes",
+    "name": "Simon Bukin",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a software developer most interested in backend web technologies and data. I've been a tutor for Python at my university and am happy to be a mentor here at Exercism."
   }
 ]
