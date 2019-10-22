@@ -39,63 +39,41 @@ This is less prone to error, and the editing is straightforward,
 and illustrates an important idea.
 
 ```python
-numbers_to_letters = {
-    1 : 'A, E, I, O, U, L, N, R, S, T',
-    2 : 'D, G',
-    3 : 'B, C, M, P',
-    4 : 'F, H, V, W, Y',
-    5 : 'K',
-    8 : 'J, X',
-    10: 'Q, Z'
-    }
-
-def rev(d: dict) -> dict:
-    return { ch:val for val in d for ch in d[val].split(', ') }
+LETTERS_AND_SCORES = (
+#    Letter                           Value
+    ('A, E, I, O, U, L, N, R, S, T',    1),
+    ('D, G',                            2),
+    ('B, C, M, P',                      3),
+    ('F, H, V, W, Y',                   4),
+    ('K',                               5),
+    ('J, X',                            8),
+    ('Q, Z',                            10)
+)
+    
+LETTERS_TO_SCORES = { 
+    ch: score for letters, score in LETTERS_AND_SCORES 
+                    for ch in letters.split(', ') 
+}
 
 def score(word: str) -> int:
-    letter_value = rev(numbers_to_letters)
-    return sum( [ letter_value[ch] for ch in word.upper() ] )
+    return sum( LETTERS_TO_SCORES[ch] for ch in word.upper()  )
 ```
 
 ### Common Suggestions
 
 This is a good place to introduce a number of ideas:
-Comprehensions, the use a dictionary to rapidly 
-map between letters and values, and inverting a dictionary. 
+Comprehensions (both dictionary, and generator given to the sum), 
+the use a dictionary to rapidly map between letters and values, 
+and inverting a "dictionary". 
 
 
 ### Talking points
 
 The presented solution uses global variables, 
 without making a great case for them. 
-Evertyhing could be declared inside the function,
-since we recompute the dictionary each time score() is called.
+Everything could be declared inside the function.
 
-You could make a case for creating the reversed dictionary once,
-using the Singleton pattern.  
-
-```python
-numbers_to_letters = {
-    1: 'A, E, I, O, U, L, N, R, S, T',
-    2: 'D, G',
-    3: 'B, C, M, P',
-    4: 'F, H, V, W, Y',
-    5: 'K',
-    8: 'J, X',
-    10: 'Q, Z'
-    }
-
-letter_value = {}
-
-# Invert a dictionary
-def rev(d: dict) -> dict:
-    return {ch: val for val, text in d.items() for ch in text if ch.isalpha()}
+Since we recompute the dictionary each time score() is called, 
+You could make a case for creating the reversed dictionary once.  
 
 
-def score(word: str) -> int:
-    global letter_value
-    if len(letter_value) == 0:
-        letter_value = rev(numbers_to_letters)
-
-    return sum([letter_value[ch] for ch in word.upper()])
-```
