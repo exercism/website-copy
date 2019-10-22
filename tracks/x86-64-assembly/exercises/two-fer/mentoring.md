@@ -1,6 +1,6 @@
 ### Reasonable solutions
 
-Using a hand-rolled loop:
+#### Hand-rolled loop
 
 ```nasm
     movzx edx, byte [rdi]
@@ -16,7 +16,7 @@ Using a hand-rolled loop:
 .loop_end:
 ```
 
-Using the `rep movsb` instructions:
+#### Using `rep movsb` instructions
 
 ```nasm
     mov rdi, rsi
@@ -27,9 +27,15 @@ Using the `rep movsb` instructions:
 
 ### Common errors
 
-- Forgetting to save registers. "Registers `%rbp`, `%rbx` and `%r12` through `%r15` 'belong' to the calling function and the called function is required to preserve their values. In other words, a called function must preserve these registers’ values for its caller" (Matz, Hubička, Jaeger, & Mitchell, 2014, p. 15). Depending on which registers the caller is using, the tests might still pass.
+- Forgetting to save registers.
 
-- "Forgetting return. A function declaration must end with . . . `RET`. . . . The execution will continue in the code after the procedure if there is no `RET`" (Fog, 2019, p. 10).
+    > Registers `%rbp`, `%rbx` and `%r12` through `%r15` “belong” to the calling function and the called function is required to preserve their values. In other words, a called function must preserve these registers’ values for its caller. (Matz, Hubička, Jaeger, & Mitchell, 2014, p. 15)
+
+    Depending on which registers the caller is using, the tests might still pass.
+
+- Forgetting return.
+
+    > A function declaration must end with . . . `RET`. . . . The execution will continue in the code after the procedure if there is no `RET`. (Fog, 2019, p. 10)
 
 ### Common suggestions
 
@@ -39,51 +45,61 @@ Using the `rep movsb` instructions:
 
 - If they are using the data segment (`.data`) for constants, suggest to use the read-only data segment (`.rodata`).
 
-- Prefer `lea rax, [rel symbol]` over `mov rax, symbol`. "There is absolutely no reason to use absolute addresses for simple memory operands. Rip-relative addresses make instructions shorter, they eliminate the need for relocation at load time, and they are safe to use in all systems" (Fog, 2019, p. 21).
+- Prefer `lea rax, [rel symbol]` over `mov rax, symbol`.
 
-- Clearing the direction flag using `cld` is redundant. "The direction flag `DF` in the `%rFLAGS` register must be clear (set to “forward” direction) on function entry and return" (Matz, Hubička, Jaeger, & Mitchell, 2014, p. 15)
+    > There is absolutely no reason to use absolute addresses for simple memory operands. Rip-relative addresses make instructions shorter, they eliminate the need for relocation at load time, and they are safe to use in all systems. (Fog, 2019, p. 21)
+
+- Clearing the direction flag using `cld` is redundant.
+
+    > The direction flag `DF` in the `%rFLAGS` register must be clear (set to “forward” direction) on function entry and return. (Matz, Hubička, Jaeger, & Mitchell, 2014, p. 15)
 
 - Minimize loop overhead. Example:
 
-    ```nasm
-    .loop_start:
-        movzx edx, byte [rdi]
-        test dl, dl
-        je .loop_end
-        add rdi, 1
-        mov byte [rsi], dl
-        add rsi, 1
-        movzx edx, byte [rdi]
-        test dl, dl
-        jmp .loop_start
-    .loop_end:
-    ```
+  ```nasm
+  .loop_start:
+      movzx edx, byte [rdi]
+      test dl, dl
+      je .loop_end
+      add rdi, 1
+      mov byte [rsi], dl
+      add rsi, 1
+      movzx edx, byte [rdi]
+      test dl, dl
+      jmp .loop_start
+  .loop_end:
+  ```
 
-    "The most important problem with the loop . . . is that there are two jump instructions. We can eliminate one jump from the loop by putting the branch instruction in the end" (Fog, 2019, p. 89):
+    > The most important problem with the loop . . . is that there are two jump instructions. We can eliminate one jump from the loop by putting the branch instruction in the end: (Fog, 2019, p. 89)
 
-    ```nasm
-        movzx edx, byte [rdi]
-        test dl, dl
-        je .loop_end
-    .loop_start:
-        add rdi, 1
-        mov byte [rsi], dl
-        add rsi, 1
-        movzx edx, byte [rdi]
-        test dl, dl
-        jne .loop_start
-    .loop_end:
-    ```
+  ```nasm
+      movzx edx, byte [rdi]
+      test dl, dl
+      je .loop_end
+  .loop_start:
+      add rdi, 1
+      mov byte [rsi], dl
+      add rsi, 1
+      movzx edx, byte [rdi]
+      test dl, dl
+      jne .loop_start
+  .loop_end:
+  ```
 
 ### Optimizations
 
-- Prefer `movzx edx, byte [rdi]` over `mov dl, byte [rdi]`. "Prevent false dependences by writing to a full register rather than a partial register" (Fog, 2019, p. 62).
+- Prefer `movzx edx, byte [rdi]` over `mov dl, byte [rdi]`.
 
-- Prefer `add/sub` over `inc/dec`. "The `INC` and `DEC` instructions are inefficient on some CPUs because they write to only part of the flags register (excluding the carry flag). Use `ADD` or `SUB` instead to avoid false dependences or inefficient splitting of the flags register" (Fog, 2019, p. 62).
+    > Prevent false dependences by writing to a full register rather than a partial register. (Fog, 2019, p. 62)
+
+- Prefer `add/sub` over `inc/dec`.
+
+    > The `INC` and `DEC` instructions are inefficient on some CPUs because they write to only part of the flags register (excluding the carry flag). Use `ADD` or `SUB` instead to avoid false dependences or inefficient splitting of the flags register. (Fog, 2019, p. 62)
 
 - Prefer `test dl, dl` over `cmp dl, 0` to reduce the size of the code.
 
-- Make conditional jumps most often not taken. "The efficiency and throughput for not-taken branches is better than for taken branches on most processors. Therefore, it is good to place the most frequent branch first" (Fog, 2019, p. 68).
+- Make conditional jumps most often not taken.
+
+    > The efficiency and throughput for not-taken branches is better than for taken branches on most processors. Therefore, it is good to place the most frequent branch first (Fog, 2019, p. 68)
 
 ### References
 
