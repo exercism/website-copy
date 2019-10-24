@@ -5,7 +5,7 @@ This exercise explores string testing:
 ### Reasonable solutions
 
 This exercise can be approached with regular expressions, using the `String`
-prototype, or a combination of both. Below are consise solutions for either but
+prototype, or a combination of both. Below are concise solutions for either but
 combinations are valid too, as long as they make sense:
 
 - `isSilence`: Has no letters, digits or punctuation (ignoring whitespace).
