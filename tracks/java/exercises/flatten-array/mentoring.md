@@ -1,5 +1,6 @@
 ### Reasonable Solutions
 
+Stream-based solution:
 ```java
 import java.util.List;
 import java.util.stream.Stream;
@@ -22,3 +23,28 @@ public class Flattener {
     }
 }
 ```
+
+Loop-based solution:
+````java
+import java.util.ArrayList;
+import java.util.List;
+
+class Flattener {
+
+    public List<?> flatten(List<?> list) {
+        final List<Object> newList = new ArrayList<>();
+
+        for (Object item : list) {
+            if (item != null) {
+                if (item instanceof List<?>) {
+                    newList.addAll(flatten((List<Object>) item));
+                }
+                else{
+                    newList.add(item);
+                }
+            }
+        }
+        return newList;
+    }
+}
+``
