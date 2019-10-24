@@ -63,7 +63,7 @@ def score(word: str) -> int:
 
 This is a good place to introduce a number of ideas:
 Comprehensions (both dictionary, and generator given to the sum), 
-the use a dictionary to rapidly map between letters and values, 
+the use of a dictionary to rapidly map between letters and values, 
 and inverting a "dictionary". 
 
 
