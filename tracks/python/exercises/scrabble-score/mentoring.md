@@ -5,12 +5,12 @@ In Scrabble, rare letters are worth more than common letters.
 
 ### Reasonable solutions
 	
-The basic solution has two parts: building a dictionary called
-letter_value here, and using it. Using it is quite simple:
+The basic solution has two parts: defining a global dictionary using a 
+dictionary literal called LATTER_VALUE, and using it. Using it is quite simple:
 
 ```python
 def score(word: str) -> int:
-    return sum( [ letter_value[ch] for ch in word.upper() ] )
+    return sum( [ LATTER_VALUE[ch] for ch in word.upper() ] )
 ```
 
 You will see solutions that need to traverse
@@ -38,6 +38,31 @@ to get a mapping from letters to their value in the game.
 This is less prone to error, and the editing is straightforward, 
 and illustrates an important idea.
 
+
+```python
+LETTERS_AND_SCORES = {
+    1 : 'A, E, I, O, U, L, N, R, S, T',
+    2 : 'D, G',
+    3 : 'B, C, M, P',
+    4 : 'F, H, V, W, Y',
+    5 : 'K',
+    8 : 'J, X',
+    10: 'Q, Z'
+}
+    
+LETTERS_TO_SCORES = { 
+    ch: score for score, letters  in LETTERS_AND_SCORES 
+                    for ch in letters.split(', ') 
+}
+
+def score(word: str) -> int:
+    return sum( LETTERS_TO_SCORES[ch] for ch in word.upper()  )
+```
+
+An arguably more readable and more resource efficient representation
+would employ a tuple of tuples instead of a dictionary for the original 
+table:
+
 ```python
 LETTERS_AND_SCORES = (
 #    Letter                           Value
@@ -54,9 +79,6 @@ LETTERS_TO_SCORES = {
     ch: score for letters, score in LETTERS_AND_SCORES 
                     for ch in letters.split(', ') 
 }
-
-def score(word: str) -> int:
-    return sum( LETTERS_TO_SCORES[ch] for ch in word.upper()  )
 ```
 
 ### Common Suggestions
@@ -75,5 +97,9 @@ Everything could be declared inside the function.
 
 Since we recompute the dictionary each time score() is called, 
 You could make a case for creating the reversed dictionary once.  
+
+A downside for the suggested inversion approach is having an import 
+runtime cost, whereas using dictionary literal directly without the 
+dictionary inversion is more efficient.
 
 
