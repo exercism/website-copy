@@ -6,7 +6,7 @@ In Scrabble, rare letters are worth more than common letters.
 ### Reasonable solutions
 	
 The basic solution has two parts: defining a global dictionary using a 
-dictionary literal called LATTER_VALUE, and using it. Using it is quite simple:
+dictionary literal called LETTER_VALUE, and using it. Using it is quite simple:
 
 ```python
 def score(word: str) -> int:
