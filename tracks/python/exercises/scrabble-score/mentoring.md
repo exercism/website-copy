@@ -51,7 +51,7 @@ LETTERS_AND_SCORES = {
 }
     
 LETTERS_TO_SCORES = { 
-    ch: score for score, letters  in LETTERS_AND_SCORES 
+    ch: score for score, letters in LETTERS_AND_SCORES.items()
                     for ch in letters.split(', ') 
 }
 
