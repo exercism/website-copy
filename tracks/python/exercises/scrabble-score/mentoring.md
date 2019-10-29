@@ -10,7 +10,7 @@ dictionary literal called LATTER_VALUE, and using it. Using it is quite simple:
 
 ```python
 def score(word: str) -> int:
-    return sum( [ LATTER_VALUE[ch] for ch in word.upper() ] )
+    return sum( [ LETTER_VALUE[ch] for ch in word.upper() ] )
 ```
 
 You will see solutions that need to traverse
