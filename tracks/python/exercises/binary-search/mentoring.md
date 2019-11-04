@@ -67,4 +67,18 @@ def binary_search(list_of_numbers, number):
 ### Talking points
 - Using a single variable to track where the midpoint is on each iteration is not enough, because you also need to track how long the current sub-list is.
 - You can represent the high end of the range as the last index where the value could be (inclusive), or one past that (exclusive).  The exclusive approach seems more natural in Python, because that's the way slicing works.
+- There's a builtin binary seach functionality in python called bisect:
+
+```python
+import bisect
+
+
+def binary_search(list_of_numbers, number):
+    idx = bisect.bisect_left(list_of_numbers, number)
+    if idx == len(list_of_numbers):
+        raise ValueError("number not found")
+    if list_of_numbers[idx] == number:
+        return idx
+    raise ValueError("number not found")
+```
 
