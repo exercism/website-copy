@@ -75,10 +75,8 @@ import bisect
 
 def binary_search(list_of_numbers, number):
     idx = bisect.bisect_left(list_of_numbers, number)
-    if idx == len(list_of_numbers):
-        raise ValueError("number not found")
-    if list_of_numbers[idx] == number:
-        return idx
+    if idx != len(list_of_numbers) and list_of_numbers[idx] == number:
+	     return idx
     raise ValueError("number not found")
 ```
 
