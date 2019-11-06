@@ -46,5 +46,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I've been working with Ruby for several years as a developer, architect and team leader. It's my favorite language, it's very beautiful and simple. I's really was created to 'Make programmers happy' as Matz said."
+  },
+  {
+    "github_username": "felixbuenemann",
+    "name": "Felix Bünemann",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I started using Ruby about 8 years ago and immediately fell in love. I like to give back by teaching others about it."
   }
 ]
