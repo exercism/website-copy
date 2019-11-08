@@ -82,3 +82,51 @@ def numerals(number, acc \\ "") do
   # ...
 end
 ```
+
+#### Map keys are not ordered
+
+Some students create a map of integers to roman numerals, and then take the keys, assuming they are ordered. Such an approach would look like this:
+
+```elixir
+defmodule RomanNumerals do
+  @integer_to_roman %{
+    1 => "I",
+    4 => "IV",
+    5 => "V",
+    9 => "IX",
+    10 => "X",
+    40 => "XL",
+    50 => "L",
+    90 => "XC",
+    100 => "C",
+    400 => "CD",
+    500 => "D",
+    900 => "CM",
+    1000 => "M"
+  }
+ 
+ # ...
+
+  def numeral(number, roman_temp) do
+    Map.keys(@integer_to_roman)
+    |> Enum.reverse()
+    |> Enum.find(fn key -> number - key >= 0 end)
+    |> # more code ...
+  end
+end
+```
+
+While map keys most of the time seems to have a stable order, in reality they don't. The student could be pointed to the [documentation of the Map module](https://hexdocs.pm/elixir/Map.html) that state:
+
+> ```elixir
+> %{"one" => :two, 3 => "four"}
+> %{3 => "four", "one" => :two}
+> ```
+>
+> Key-value pairs in a map do not follow any order (that's why the printed map in the example above has a different order than the map that was created).
+
+To get rid of the problem, the student should sort the keys explicitly:
+```elixir
+Map.keys(@integer_to_roman)
+|> Enum.sort_by(& -1 * &1)
+```
