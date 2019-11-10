@@ -110,7 +110,6 @@ defmodule RomanNumerals do
   def numeral(number, roman_temp) do
     Map.keys(@integer_to_roman)
     |> Enum.reverse()
-    |> Enum.find(fn key -> number - key >= 0 end)
     |> # more code ...
   end
 end
@@ -125,7 +124,7 @@ While map keys most of the time seems to have a stable order, in reality they do
 >
 > Key-value pairs in a map do not follow any order (that's why the printed map in the example above has a different order than the map that was created).
 
-To get rid of the problem, the student should sort the keys explicitly:
+To get rid of the problem, the student should use an ordered data structure, like a list of tuples (see first reasonable solution), or sort the keys explicitly:
 ```elixir
 Map.keys(@integer_to_roman)
 |> Enum.sort_by(& -1 * &1)
