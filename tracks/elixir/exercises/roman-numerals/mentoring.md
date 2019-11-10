@@ -127,5 +127,5 @@ While map keys most of the time seems to have a stable order, in reality they do
 To get rid of the problem, the student should use an ordered data structure, like a list of tuples (see first reasonable solution), or sort the keys explicitly:
 ```elixir
 Map.keys(@integer_to_roman)
-|> Enum.sort_by(& -1 * &1)
+|> Enum.sort(&>=/2)
 ```
