@@ -133,5 +133,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a software developer most interested in backend web technologies and data. I've been a tutor for Python at my university and am happy to be a mentor here at Exercism."
+  },
+  {
+    "github_username": "sswingle",
+    "name": "Scott Swingle",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I enjoy using Python for work and fun.  There's no other language that allows me to go from an idea to working code as fast."
   }
 ]
