@@ -18,7 +18,7 @@ isLeapYear year =
 
 The complicated if statement is a bit of a problem, as it is hard to describe in language, and hence talking about the code with others is difficult.
 
-Using a case statement turns the if statement in to a truth table, and is probably a bit clearer, but at the expense of some extra code:
+Using a case statement turns the if statement in to something like a truth table, and is probably a bit clearer, but at the expense of some extra code. Such solutions are still not ideal, because the chunks of True's and False's are separated from their source, so you have to move your eyes back and forth between the table and the "table header".
 
 ```elm
 isLeapYear : Int -> Bool
