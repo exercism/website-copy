@@ -63,24 +63,6 @@ isLeapYear year =
 			False
 ```
 
-It is possible to go even further with the describability of the logic, using code like this:
-
-```elm
-isLeapYear : Int -> Bool
-isLeapYear year =
-	let
-		...
-	in
-		if is400YearSpecialCase then
-			True
-
-		else if is100YearSpecialCase then
-			False
-
-		else 
-			defaultCase
-```
-
 ### Common suggestions
 
 Discussing the various options around the describability of the solution is worthwhile. The calculation of leap years is not going to change any time soon, so there is definitely an argument that the complicated conditional statement is ok. However most code deals with business logic, which changes much more frequently, and so the trade off's are different.
