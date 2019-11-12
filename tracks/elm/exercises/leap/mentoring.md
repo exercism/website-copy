@@ -13,11 +13,7 @@ isLeapYear year =
         divisibleBy number = 
             Basics.remainderBy number year == 0         
     in
-        (
-            divisibleBy 4 && 
-            not (divisibleBy 100)
-        )
-        || divisibleBy 400
+        divisibleBy 4 && (not (divisibleBy 100) || divisibleBy 400)
 ```
 
 The complicated if statement is a bit of a problem, as it is hard to describe in language, and hence talking about the code with others is difficult.
