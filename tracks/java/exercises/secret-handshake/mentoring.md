@@ -71,3 +71,35 @@ class HandshakeCalculator {
     }
 }
 ```
+#### Using bit shift operators
+
+`HandshakeCalculator.java`
+```java
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+class HandshakeCalculator {
+
+    List<Signal> calculateHandshake(int number) {
+        List<Signal> result = new LinkedList<>();
+        if (number % 2 != 0) {
+            result.add(Signal.WINK);
+        }
+        if ((number >> 1) % 2 != 0) {
+            result.add(Signal.DOUBLE_BLINK);
+        }
+        if ((number >> 2) % 2 != 0) {
+            result.add(Signal.CLOSE_YOUR_EYES);
+        }
+        if ((number >> 3) % 2 != 0) {
+            result.add(Signal.JUMP);
+        }
+        if ((number >> 4) % 2 != 0) {
+            Collections.reverse(result);
+        }
+        return result;
+    }
+
+}
+```
