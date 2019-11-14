@@ -8,7 +8,7 @@ isLeapYear year = year `mod` 4 == 0 &&
 
 Many students submit this solution. Some leave out the parenthesis.
 
-Some place the parenthesis inefficiently causing an unnecessary `mod` 400 check.
+Some place the parenthesis inefficiently, causing an unnecessary `mod` 400 check.
 
 Some place unnecessarily many parentheses.
 
@@ -44,7 +44,7 @@ isDivisibleBy x n = x `rem` n == 0
 
 Some students explore the use of guards.
 
-Some uses of guards in this exercise become questionable.
+Some uses of guards in this exercise are questionable.
 
 ```haskell
 isLeapYear :: Integer -> Bool
@@ -66,7 +66,7 @@ isLeapYear year
 
 This solution evaluates the three conditions in an optimal order at the cost of readability.
 
-Since guards may be introduced to improve readability, this seems a little counterproductive.
+Since guards may be introduced to improve readability, this solution seems a little counterproductive.
 
 ```haskell
 import Data.Time.Calendar (isLeapYear)
@@ -87,7 +87,7 @@ This solution assumes that `time` has been added as a dependency in package.yaml
     | otherwise = False
   ```
 
-  since nothing is gained from the use of guards here. Some variations with
+  ... as nothing is gained from the use of guards here. Some variations with
   fewer than one guard per criterium have defensible goals, e.g. wanting to
   avoid literal `True` and `False`:
 
@@ -99,8 +99,8 @@ This solution assumes that `time` has been added as a dependency in package.yaml
     | otherwise = year `mod` 4 == 0
   ```
 
-  This strategy tries to avoid depending on the order of evaluating guards, but
-  checks the same multiple times.  Perhaps here it is better to revert to
+  This strategy tries to avoid to depend on the order of evaluating guards, but
+  checks the predicate multiple times.  Perhaps here it is better to revert to
   if-then-else, or split the guards into one per predicate, or use some other
   solution strategy.
 
