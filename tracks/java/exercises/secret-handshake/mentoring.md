@@ -1,73 +1,80 @@
+### Points to consider in this task
+* binary numeral system understanding
+* Java bitwise operators usage
+* Java enum `ordinal` and `values` methods usage
+
+### Bad practices
+* converting number to binary string and parsing resulting string char by char 
+
 ### Reasonable solutions
 
-#### Using the `ordinal()` method to check the bits
+#### Using the `ordinal`, `values` methods to calculate a bit mask
 
+`HandshakeCalculator.java`
 ```java
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 class HandshakeCalculator {
 
+    private static final int REVERSE_MASK = (int) Math.pow(2, 4);
+
     List<Signal> calculateHandshake(int number) {
-        List<Signal> result = new ArrayList<Signal>();
-
+        List<Signal> result = new LinkedList<>();
         for (Signal signal : Signal.values()) {
-            if (bitIsSet(number, signal.ordinal())) {
-                result.add(signal);
-            }
+            int bitMask = (int) Math.pow(2, signal.ordinal());
+            if ((number & bitMask) == bitMask) result.add(signal);
         }
-
-        if (bitIsSet(number, 4)) {
+        if ((number & REVERSE_MASK) == REVERSE_MASK) {
             Collections.reverse(result);
         }
-
         return result;
     }
-    
-    // NOTE: there are multiple ways to check if the bit is set
-    boolean bitIsSet(int number, int position) {
-        return ((number >> position) & 1) == 1;
-    }
+
 }
 ```
 
-#### Modifying the Signal enum
+#### Modifying enum to store a bit mask
 
-`Signal.java`:
+`Signal.java`
 ```java
 enum Signal {
-    WINK(1), DOUBLE_BLINK(1 << 1), CLOSE_YOUR_EYES(1 << 2), JUMP(1 << 3), REVERSE(1 << 4);
 
-    private final int bitmask;
-    Signal(int bitmask) { this.bitmask = bitmask; }
+    WINK(1), DOUBLE_BLINK(2), CLOSE_YOUR_EYES(4), JUMP(8);
 
-    boolean isPresent(int number) {
-        return (number & bitmask) == bitmask;
+    private int bitMask;
+
+    Signal(int bitMask) {
+        this.bitMask = bitMask;
+    }
+
+    public boolean isSignalAcceptable(int number) {
+        return (number & this.bitMask) == bitMask;
     }
 }
 ```
 
 `HandshakeCalculator.java`
 ```java
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class HandshakeCalculator {
 
-    List<Signal> calculateHandshake(int number) {
-        List<Signal> handshake = new ArrayList<Signal>();
+    private static final int REVERSE_MASK = 16;
 
-        for (Signal signal : Signal.values()) {
-            if (signal.isPresent(number)) {
-                handshake.add(signal);
-            }
-        }
-        if (handshake.remove(Signal.REVERSE)) {
-            Collections.reverse(handshake);
-        }
-        return handshake;
+    List<Signal> calculateHandshake(int number) {
+        List<Signal> result = Arrays.stream(Signal.values())
+                .filter(signal -> signal.isSignalAcceptable(number))
+                .collect(Collectors.toList());
+
+        if ((number & REVERSE_MASK) == REVERSE_MASK) Collections.reverse(result);
+
+        return result;
     }
+
 }
 ```
