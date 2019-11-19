@@ -25,6 +25,16 @@
     rep movsb
 ```
 
+#### Using the C standard library
+
+```nasm
+    mov rdx, rdi
+    xor eax, eax
+    mov rdi, rsi
+    lea rsi, [rel format]
+    call sprintf wrt ..plt
+```
+
 ### Common errors
 
 - Forgetting to save registers.
@@ -36,6 +46,10 @@
 - Forgetting return.
 
     > A function declaration must end with . . . `RET`. . . . The execution will continue in the code after the procedure if there is no `RET`. (Fog, 2019, p. 10)
+
+- Forgetting stack alignment.
+
+    > The stack pointer must point to an address divisible by 16 before any call statement (Fog, 2019, p. 10)
 
 ### Common suggestions
 
@@ -89,7 +103,7 @@
 
 - Prefer `movzx edx, byte [rdi]` over `mov dl, byte [rdi]`.
 
-    > Prevent false dependences by writing to a full register rather than a partial register. (Fog, 2019, p. 62)
+    > Prevent false dependences by writing to a full register rather than a partial register. (Fog, 2019, p. 61-62)
 
 - Prefer `add/sub` over `inc/dec`.
 
@@ -100,6 +114,10 @@
 - Make conditional jumps most often not taken.
 
     > The efficiency and throughput for not-taken branches is better than for taken branches on most processors. Therefore, it is good to place the most frequent branch first (Fog, 2019, p. 68)
+
+- Eliminating calls.
+
+    > It is possible to replace a call followed by a return by a jump (Fog, 2019, p. 68)
 
 ### References
 
