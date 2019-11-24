@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have more than 10 years of production experience. I love Go/Ruby because of its friendly and active community. Nothing is impossible when you do what you love! Happy coding!"
+  },
+  {
+    "github_username": "labsvisual",
+    "name": "Shreyansh Pandey",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/labsvisual",
+    "avatar_url": "https://avatars.githubusercontent.com/labsvisual",
+    "bio": "Golang has been a saviour in my line of work; the extensibility, the ease of use... everything is absolutely fantastic. Go's specific choices on strict, inherent linting rules let you focus on your business logic and not on which format is the best. Go is my weapon of choice in all things SRE and financial tech."
   }
 ]
