@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "calamari",
+    "name": "Georg Tavonius",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a professional freelance developer who mainly writes JavaScript and Ruby. And that almost every day. But I don't stop there. Currently I am also training myself in Rust & Go thanks to exercism.io."
+  },
+  {
     "github_username": "cmac2454",
     "name": "Cameron MacDonald",
     "link_text": "GitLab",
