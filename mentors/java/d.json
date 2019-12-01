@@ -54,5 +54,13 @@
     "link_url": "https://twitter.com/nano_repka",
     "avatar_url": null,
     "bio": "I am a software developer, with the main focus on Java. Clean code, proper tests, best practices ♥."
+  },
+  {
+    "github_username": "d-r-q",
+    "name": "Aleksey Zhidkov",
+    "link_text": "Twitter",
+    "link_url": "https://twitter.com/d__r_q",
+    "avatar_url": null,
+    "bio": "I have been programming in java since 2003. Over the years I have taked part in projects in many different areas from settop boxes firmware, to big data to JVM implementation."
   }
 ]
