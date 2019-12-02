@@ -4,8 +4,8 @@ _Acronym_ is meant for practicing with `String#scan`.
 
 ```ruby
 module Acronym
-  def self.abbreviate(fullname)
-    fullname.scan(/\b[a-zA-Z]/).join.upcase
+  def self.abbreviate(full_name)
+    full_name.scan(/\b[a-zA-Z]/).join.upcase
   end
 end
 ```
