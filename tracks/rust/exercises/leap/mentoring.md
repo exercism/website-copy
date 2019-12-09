@@ -12,9 +12,9 @@ pub fn is_leap_year(year):
 - order of operations matter:
   - 75% of all years *cannot* be leap years because they are not mulitples of 4;
     test `year % 4 == 0` first
-  - 98.97% of all years that are multiples of 4 are not multiples of 100; test
+  - 98.97% of all leap years are multiples of 4 that are not multiples of 100; test
     `year % 100 != 0` second
-  - 1.03% of all years that are multiples of 4 are also multiples of 100 and
+  - 1.03% of all leap years are multiples of 4 that are also multiples of 100 and
     400; test `year % 400 == 0` third
 - order of evaluation matters:
 

@@ -18,8 +18,8 @@ Copied from the Python notes by @yawpitch :
   - a year is a multiple of 4, 100, and 400
 - _Order of operations_ matter:
   - 75% of all years *cannot* be leap years because they are not multiples of 4; test `year % 4 == 0` first
-  - 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 != 0` second
-  - 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 == 0` third
+  - 98.97% of all leap years are multiples of 4 that are not multiples of 100; test `year % 100 != 0` second
+  - 1.03% of all leap years are multiples of 4 that are also multiples of 100 and 400; test `year % 400 == 0` third
 - _Order of evaluation_ matters:
   With Ruby's logical operator precedence in `year % 4 == 0 && year % 100 != 0 || year % 400 == 0`, a year that's not evenly divisible by 4 will not be evaluated for `% 100` but will jump to the evaluation of `% 400`.
 - Eliminate duplicate work; no year should ever have to be checked multiple times for the same condition
