@@ -1,11 +1,10 @@
 [
   {
-  "github_username": "logankilpatrick",
-  "name": "Logan Kilpatrick",
-  "link_text": null,
-  "link_url": "https://github.com/logankilpatrick",
-  "avatar_url": null,
-  "bio": "I started using Julia when I was getting started as a Software Engineering Intern at NASA. Since then, I have gone on to Intern with Julia Computing on the PumasAI project, win a new Julia Language contributor award for 2019, and authored a few small packages. The Julia programming language and community are incredible. I am looking forward to helping more in the future."
-}
-
+    "github_username": "logankilpatrick",
+    "name": "Logan Kilpatrick",
+    "link_text": null,
+    "link_url": "https://github.com/logankilpatrick",
+    "avatar_url": null,
+    "bio": "I started using Julia when I was getting started as a Software Engineering Intern at NASA. Since then, I have gone on to Intern with Julia Computing on the PumasAI project, win a new Julia Language contributor award for 2019, and authored a few small packages. The Julia programming language and community are incredible. I am looking forward to helping more in the future."
+  }
 ]
