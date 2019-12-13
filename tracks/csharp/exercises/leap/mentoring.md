@@ -46,7 +46,7 @@ public static class Leap
 ### Talking points
 - _order of operation_ matters:
   - 75% of all years *cannot* be leap years because they are not multiples of 4; test `year % 4 == 0` first
-  - 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 != 0` second
-  - 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 == 0` third
+  - 98.97% of all leap years are multiples of 4 that are not multiples of 100; test `year % 100 != 0` second
+  - 1.03% of all leap years are multiples of 4 that are also multiples of 100 and 400; test `year % 400 == 0` third
 - _order of evaluation_ matters: Refer to [Operator precedence](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#conditional-and-operator). In C# logical AND (`&&`) always goes before logical OR (`||`). Adding parentheses clears up any confusion, and groups the second and third test together.
 - Not everyone likes them, but it might be useful to suggest writing the `IsLeapYear` method as an [expression-bodied method](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods), as it is perfect for these kinds of small methods.

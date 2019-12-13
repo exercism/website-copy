@@ -35,8 +35,8 @@ A student may explicitly type the return value as `boolean`.
 - `tslint` will _not_ warn when mixing `&&` and `||`, which ís a feature of `eslint`, adding parentheses here is recommended:
   - _order of operation_ matters:
     - 75% of all years *cannot* be leap years because they are not multiples of 4; test `year % 4 === 0` first
-    - 98.97% of all years that are multiples of 4 are not multiples of 100; test `year % 100 !== 0` second
-    - 1.03% of all years that are multiples of 4 are also multiples of 100 and 400; test `year % 400 === 0` third
+    - 98.97% of all leap years are multiples of 4 that are not multiples of 100; test `year % 100 !== 0` second
+    - 1.03% of all leap years are multiples of 4 that are also multiples of 100 and 400; test `year % 400 === 0` third
     - A student might be missing parentheses:
       ```typescript
       return year % 4 == 0 && year % 100 != 0 || year % 400 == 0
