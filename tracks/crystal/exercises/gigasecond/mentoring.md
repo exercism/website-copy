@@ -1,6 +1,6 @@
 ### Reasonable Solutions
 
-There does not seem to be any fitter method than `Time#+`.
+The time difference can be calculated using `Time#+(Time::Span)` or `Time#shift(seconds: Int)`.
 
 ```crystal
 module Gigasecond
@@ -18,4 +18,4 @@ end
 
 ### Style
 
-Using `Integer#seconds` is preferable to any alternatives. Using type annotation in the method signature is not required, but could be a talking point at the mentor's discretion. Crystal's source code generally omits such annotation, but annotation can be useful in larger projects, and for debugging purposes. Using either `1e9` or `1_000_000_000` is preferable to `1000000000`. Storing that value in a constant is arguably preferable.
+Using `Integer#seconds` to get a `Time::Span` instance is preferable to any alternatives. Using type annotation in the method signature is not required, but could be a talking point at the mentor's discretion. Crystal's source code generally omits such annotation, but annotation can be useful in larger projects, and for debugging purposes. Using either `1e9` or `1_000_000_000` is preferable to `1000000000`. Storing that value in a constant is arguably preferable.
