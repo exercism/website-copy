@@ -61,7 +61,7 @@ harder to comprehend. Take note that this is a possibility, and a valid one.
 #### Converting to base 10
 
 There are various approaches, but the two most concise ones, derived from
-compsci and mathematics, is as follows:
+compsci and mathematics, are as follows:
 
 ```javascript
 digits.reduce((result, digit) => result * inputBase + digit, 0);
