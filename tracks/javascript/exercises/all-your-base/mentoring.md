@@ -46,7 +46,7 @@ export function convert(digits, base, nextBase) {
 }
 ```
 
-There are various way to approach this exercise. In general, it should consist
+There are various ways to approach this exercise. In general, it should consist
 of the following elements:
 
 - validating the input
