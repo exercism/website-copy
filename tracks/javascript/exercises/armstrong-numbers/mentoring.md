@@ -43,5 +43,5 @@ callback.
 
 - Its more idiomatic to explicitly convert to a string, instead of using `+ ''`
 - Instead of using `.map(n => +n)`, the `Number` function can be passed in,
-  without an anonymous function.
+  without an anonymous function: `.map(Number)`.
 - Bookkeeping variables such as `result` are unnecessary. Suggest `.reduce`.
