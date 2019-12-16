@@ -7,9 +7,11 @@ The solution should consist of the following three steps:
 3. compare the input to the summation
 
 ```javascript
-const digits = [...input.toString(10)].map(Number)
-const n = digits.length
-return input === digits.reduce((result, digit) => result + digit ** n, 0)
+export function steps(input) {
+  const digits = [...input.toString(10)].map(Number)
+  const n = digits.length
+  return input === digits.reduce((result, digit) => result + digit ** n, 0)
+}
 ```
 
 #### Converting to a list of digits
