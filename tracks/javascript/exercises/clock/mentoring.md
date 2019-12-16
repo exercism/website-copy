@@ -37,7 +37,7 @@ function normalize(minutes) {
 }
 ```
 
-The above ignores the fact that `%` in JavaScript is _not_ module but
+The above ignores the fact that `%` in JavaScript is _not_ modulo but
 _remainder_, which deals differently with negative values. The alternative is
 to take the remainder twice:
 
