@@ -1,6 +1,6 @@
 ### Reasonable solution
 
-The most important thing is that the student has implement the algorithm(s)
+The most important thing is that the student has to implement the algorithm(s)
 themselves. This means no libraries and no `.toString(base)`.
 
 ```javascript
