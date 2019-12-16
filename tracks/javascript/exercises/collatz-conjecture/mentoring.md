@@ -1,7 +1,7 @@
 ### Reasonable solution
 
 The collatz conjecture has multiple approaches when it comes to implementation,
-and both a recursive as an iterative implementation can be idiomatic.
+both a recursive and an iterative implementation can be idiomatic.
 
 #### Recursive solution
 
