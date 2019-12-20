@@ -40,12 +40,10 @@ I use "www.rubular.com" whenever I want to check a regex.
 With `scan`, you avoid the multiple iteration. You also got rid of the intermediate variable 'xxx', that you needed to track stuff in your loop. That's called the Accumulator pattern. In general, eliminating the extra variable is considered best practice in Ruby.
 
 ### Passing Regular Expressions
-`/\b[a-zA-Z]/` # only returns first letters, not `_` (but completely ignores words starting with `_`)
 
-`\b[[:alpha:]]/` # same
-
-`/\b\w/` # close enough; but it would return `_` as a first 'word character'
-
-`/\b[[:word]]/` # same
-
-`/(?<!\p{Alpha})\p{Alpha}/` # finds first letters even with underscores in front of them (Note: we don't have tests for this case. The only reason we test for `'` is to ensure that `split` is not a equally good choice.)
+- `/\b[a-zA-Z]/` # only returns first letters, not `_` (but completely ignores words starting with `_`)
+- `\b[[:alpha:]]/` # same
+- `/\b\w/` # close enough; but it would return `_` as a first 'word character'
+- `/\b[[:word]]/` # same
+- `/(?<!\p{Alpha})\p{Alpha}/` # finds first letters even with underscores in front of them (Note: we don't have tests for this case. The only reason we test for `'` is to ensure that `split` is not a equally good choice.)
+- `/(?:\b|_)([[:alpha:]])/` # finds first letters even with underscores before and throughout, e.g., ""_Ruby_On_Rails_" as "ROR" and I10N as "I"
