@@ -60,7 +60,7 @@ Fun fact: Resistor Color Trio will actually use the third color, and will be a m
 
 ### Talking points
 - _string interpolation_ : if the student uses string interpolation to compose the value, challenge them to solve it with `map` and `join`. Approve if they don't want to do the challenge.
-- _`%w` notation_: for arrays of strings. Link to [styleguide](https://github.com/rubocop-hq/ruby-style-guide#percent-w)
+- _`%w` notation_: for arrays of strings. Link to the [style guide](https://rubystyle.guide/#percent-literals)
 - _chaining methods_ after a block (especially when people use a local variable for `join.to_i`
 - _`each` vs `map`_: this explains the difference: [each vs map](https://learn.onemonth.com/ruby-tutorial-map-vs-each/)
 - _variable vs constant_: this article explains just that: [var vs constant](https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_01/variables.html)
