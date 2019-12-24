@@ -107,6 +107,14 @@ generate impls of [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html)
 and [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#derivable).
 ```
 
+If they implement `to_string` manually:
+
+```markdown
+We can implement the [`Display`] trait for `Clock`, which contains an implementation of `to_string`. 
+
+[`Display`]: https://doc.rust-lang.org/std/fmt/trait.Display.html
+```
+
 If they visibly lament the behavior of `%` on negative arguments:
 
 ```markdown
