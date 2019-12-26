@@ -22,5 +22,13 @@
     "link_url": "https://dev.to/rrampage/",
     "avatar_url": null,
     "bio": "I use Python as a power-tool for quick prototyping and for data analysis."
+  },
+  {
+    "github_username": "rcardenes",
+    "name": "Ricardo Cárdenes",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been using Python since 2000 (1.5, 2.x, 3.x) for everything from system administration to assessing imaging detectors quality, through compiler toolchain helpers, and everything else in between."
   }
 ]
