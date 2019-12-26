@@ -1,4 +1,5 @@
 ### Points to consider in this task
+
 * binary numeral system understanding
 * Java bitwise operators usage
 * Java enum `ordinal` and `values` methods usage
