@@ -70,5 +70,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I use JavaScript (React) at work and did Java, Python, PHP in the past. I'm always excited to learn and help!"
+  },
+  {
+    "github_username": "gomesalexandre",
+    "name": "Alexandre Gomes",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/17035424?s=460&v=4",
+    "bio": "Full-Stack JavaScript developer. Lover of all things JS, TS, React and GraphQL. I enjoy learning by doing, and helping others learn the same way."
   }
 ]
