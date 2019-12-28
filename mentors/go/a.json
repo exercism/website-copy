@@ -1,5 +1,5 @@
 [
-   {
+  {
     "github_username": "aspanu",
     "name": "Adrian Spanu",
     "link_text": null,
@@ -15,7 +15,7 @@
     "avatar_url": null,
     "bio": "Full time backend engineer. Gopher."
   },
-   {
+  {
     "github_username": "as27",
     "name": "Andreas Schroepfer",
     "link_text": null,
@@ -23,7 +23,7 @@
     "avatar_url": null,
     "bio": "I love Go and the Go community. I am a software engineer with 10 years experience."
   },
-   {
+  {
     "github_username": "AnuchitO",
     "name": "Anuchit Prasertsang",
     "link_text": "GitHub",
@@ -46,5 +46,13 @@
     "link_url": "https://github.com/Alkanna",
     "avatar_url": "https://avatars1.githubusercontent.com/u/30343764?s=460&v=4",
     "bio": "Go is a beautiful language with an amazing community. I use it everyday working as a freelance developer for many clients."
+  },
+  {
+    "github_username": "andres-zartab",
+    "name": "Andrés Zarta",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Data Scientist with Operations Research background. Started learning Go to improve my software development skills and ended up loving it for its simplicity and amazing community."
   }
 ]
