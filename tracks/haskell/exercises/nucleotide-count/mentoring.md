@@ -103,15 +103,13 @@ separate definition of what a valid nucleotide is.
 import qualified Data.Map as M
 import           Data.Map (Map)
 
-import Control.Monad (mapM)
-import Data.Semigroup ((<>))
 import Text.Read (readEither)
 
 data Nucleotide = A | C | G | T
                 deriving (Eq, Ord, Show, Read, Enum, Bounded)
 
 nucleotideCounts :: String -> Either String (Map Nucleotide Int)
-nucleotideCounts = fmap (fillZeroes . frequencies) . mapM toNucleotide
+nucleotideCounts = fmap (fillZeroes . frequencies) . traverse toNucleotide
 
 frequencies :: [Nucleotide] -> Map Nucleotide Int
 frequencies ns = M.fromListWith (+) (zip ns [1,1..])
@@ -123,7 +121,7 @@ fillZeroes :: Map Nucleotide Int -> Map Nucleotide Int
 fillZeroes = (`M.union` empty)
 
 empty :: Map Nucleotide Int
-empty = M.fromListWith (+) (zip [minBound..] [0,0..]))
+empty = M.fromListWith (+) (zip [minBound..] [0,0..])
 ```
 
 This solution also uses monadic error handling, but via `mapM toNucleotide`,
