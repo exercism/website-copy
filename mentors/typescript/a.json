@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "JavaScript and Node.js are my top programming languages. I can't imagine writing them without TypeScript. I'm a professional software engineer with over two decades of work experience. I love to teach and mentor."
+  },
+  {
+    "github_username": "gomesalexandre",
+    "name": "Alexandre Gomes",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/17035424?s=460&v=4",
+    "bio": "Full-Stack JavaScript developer. Lover of all things JS, TS, React and GraphQL. I enjoy learning by doing, and helping others learn the same way."
   }
 ]
