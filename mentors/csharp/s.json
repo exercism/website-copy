@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a CS student, who uses C# because of its power. "
+  },
+  {
+    "github_username": "shaynuhcon",
+    "name": "Shayna Conner",
+    "link_text": "",
+    "link_url": "",
+    "avatar_url": "https://raw.githubusercontent.com/shaynuhcon/Avatars/master/p1.png",
+    "bio": "Professional C# / .NET developer here just out here sharing some knowledge."
   }
 ]
