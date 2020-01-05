@@ -109,7 +109,7 @@ data Nucleotide = A | C | G | T
                 deriving (Eq, Ord, Show, Read, Enum, Bounded)
 
 nucleotideCounts :: String -> Either String (Map Nucleotide Int)
-nucleotideCounts = fmap (fillZeroes . frequencies) . traverse toNucleotide
+nucleotideCounts = fmap (fillZeroes . frequencies) . mapM toNucleotide
 
 frequencies :: [Nucleotide] -> Map Nucleotide Int
 frequencies ns = M.fromListWith (+) (zip ns [1,1..])
