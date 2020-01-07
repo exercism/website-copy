@@ -4,5 +4,11 @@
     "name": "Lewis Clement",
     "avatar_url": "https://avatars1.githubusercontent.com/u/9721380?v=4",
     "bio": "After many years of writing hobby projects in C++ and school- and professional project in C# and JavaScript, my new go-to language has become Rust. As a perfect blend of a low-level language with high-level syntax features it's become the language I get most joy using, and hopefully I help others find enjoyment in it too."
-  }
+  },
+  {
+    "github_username": "lnds",
+    "name": "Eduardo Diaz",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/515492?s=40&v=4",
+    "bio": "I have more than 32 (1<<5) years programming, in C & C++ in my first years, later on Java, C# and Scala. My new passion is Rust. I love the blend between system programming and the functional paradigm. Also if you speak spanish, I'm here to help!. (Si hablas español te puedo ayudar ;)"
+  },
 ]
