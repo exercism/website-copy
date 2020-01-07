@@ -194,7 +194,7 @@ pub fn frequency(input: &[&str], worker_count: usize) -> HashMap<char, usize> {
 Thanks to the type system of Rust, if the solution compiles & passes all the tests, usually there's no data race in it. Students may however question the necessity of these apparently too restrictive constraints, and it's the mentors' responsibility to explain these concepts throughout:
 
 - Why std::thread::spawn requires all captured variables having 'static lifetime: thread in libstd is unscoped, they can live for arbitrarily long & outlive all lifetimes except 'static. It may be helpful to provide an historical note on scoped thread in pre-1.0 Rust and why it's removed: https://github.com/rust-lang/rust/issues/24292. An introduction to scoped thread in external crates (rayon or crossbeam) may also be helpful. 
-- What is Send and why std::thread::spawn requires all captured variables implement Send: for students got this far into the Rust track it's probably enough to direct them to the documentation of [std::sync::Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html). Nomicon also has [a chapter explaining data race](https://doc.rust-lang.org/nomicon/races.html).
+- What is Send and why std::thread::spawn requires all captured variables implement Send: for students who have gotten this far into the Rust track it's probably enough to direct them to the documentation of [std::sync::Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html). Nomicon also has [a chapter explaining data race](https://doc.rust-lang.org/nomicon/races.html).
 
 If they use channels to send the results out from the spawned threads:
 ```
