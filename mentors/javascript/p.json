@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a full-time software developer for ZEIT.IO GmbH, mostly focused on frontend using frameworks like Angular (1-8), Vue and even Elm. On top of that I am quite familiar with Ruby on Rails and NodeJS when it comes to backend."
+  },
+  {
+    "github_username": "pverdile",
+    "name": "Pietro Verdile",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a full-time software developer for ClickBus, mostly focused on frontend using frameworks like Vue and Symfony. On top of that I am quite familiar with Clojure, PHP and NodeJS when it comes to backend."
   }
 ]

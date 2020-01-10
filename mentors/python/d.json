@@ -14,6 +14,14 @@
     "bio": "Love python, easy to read and fun to write"
   },
   {
+    "github_username": "David-Guillot",
+    "name": "David Guillot",
+    "link_url": null,
+    "link_text": null,
+    "avatar_url": null,
+    "bio": "Working with Python/Django for 3 years now, after 6 years of PHP/Symfony. Loving Python straight-to-the-point philosophy. Mentoring to see many ways to code, and to share some best practices."
+  },
+  {
     "github_username": "dmand",
     "name": "Dimitri Prybysh",
     "link_url": "http://wontfix.fun/",
@@ -27,5 +35,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Python for it's simplicity and elegance. Readability counts!"
+  },
+  {
+    "github_username": "DhanshreeA",
+    "name": "Dhanshree Arora",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Python is beautifully simple and astoundingly powerful! I love this language."
   }
 ]
