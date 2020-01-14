@@ -133,6 +133,38 @@ The `Enum` and `Bounded` instances along with `[minBound..]` are used to
 create a `Map` of zero entries without having to re-list the nucleotides
 from the data type definition.
 
+```haskell
+{-# LANGUAGE TupleSections #-}
+module DNA (nucleotideCounts, Nucleotide(..)) where
+
+import qualified Data.Map as Map
+import           Data.Map (Map)
+import           Data.Monoid (Sum(..))
+import           Text.Read (readEither)
+
+data Nucleotide = A | C | G | T
+  deriving (Eq, Ord, Show, Read, Enum, Bounded)
+
+nucleotideCounts :: String -> Either String (Map Nucleotide Int)
+nucleotideCounts = fmap frequencies . traverse toNucleotide
+
+toNucleotide :: Char -> Either String Nucleotide
+toNucleotide c = readEither [c] <> Left [c]
+
+frequencies :: [Nucleotide] -> Map Nucleotide Int
+frequencies = fmap getSum . (<> zeroMap) . frequencies'
+  where
+    frequencies' :: [Nucleotide] -> Map Nucleotide (Sum Int)
+    frequencies' = Map.unionsWith (<>) . fmap (`Map.singleton` 1)
+
+    zeroMap :: Map Nucleotide (Sum Int)
+    zeroMap = Map.fromList $ fmap (,mempty) [minBound..]
+```
+
+This solution uses the `Sum` monoid and `Map.unionsWith (<>)` instead of
+`Map.fromListWith (+)`. Here `mempty = Sum 0`. This is mostly an example of
+how one can explore monoids.
+
 ### Common suggestions
 
 - Avoid explicit recursion.
