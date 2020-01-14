@@ -165,6 +165,46 @@ This solution uses the `Sum` monoid and `Map.unionsWith (<>)` instead of
 `Map.fromListWith (+)`. Here `mempty = Sum 0`. This is mostly an example of
 how one can explore monoids.
 
+```haskell
+{-# LANGUAGE TupleSections #-}
+module DNA (nucleotideCounts, Nucleotide(..)) where
+
+import qualified Data.Map as Map
+import           Data.Map (Map)
+import           Data.Validation (Validation, fromEither)
+import           Text.Read (readEither)
+
+data Nucleotide = A | C | G | T
+  deriving (Eq, Ord, Show, Read, Enum, Bounded)
+
+nucleotideCounts :: String -> Validation String (Map Nucleotide Int)
+nucleotideCounts = fmap frequencies . traverse toNucleotide
+
+toNucleotide :: Char -> Validation String Nucleotide
+toNucleotide c = fromEither $ readEither [c] <> Left [c]
+
+frequencies :: [Nucleotide] -> Map Nucleotide Int
+frequencies = (`Map.union` zeroMap) . Map.fromListWith (+) . (`zip` [1,1..])
+
+zeroMap :: Map Nucleotide Int
+zeroMap = Map.fromList $ map (,0) [minBound..]
+```
+
+This solution uses the [`validation`][validation] package's `Validation`, a
+data type like `Either` but with an accumulating `Applicative`. It is
+comparable to `Errors` in the module `Control.Applicative.Lift` of package
+[`transformers`][transformers].
+
+This sample solution is not compatible with the test suite because it
+mentions `Right` instead of `Success`, but demonstrates how gathering all
+errors rather than just the first is possible by simply changing the type.
+
+It also necessitates the use of `traverse` rather than `mapM` since
+`Validation` cannot be a `Monad`.
+
+[validation]: http://hackage.haskell.org/package/validation/docs/Data-Validation.html
+[transformers]: https://hackage.haskell.org/package/transformers/docs/Control-Applicative-Lift.html
+
 ### Common suggestions
 
 - Avoid explicit recursion.
