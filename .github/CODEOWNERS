@@ -40,7 +40,7 @@ tracks/nim/*                        @exercism/website-copy-nim
 tracks/objective-c/*                @exercism/website-copy-objective-c
 tracks/ocaml/*                      @exercism/website-copy-ocaml
 tracks/perl5/*                      @exercism/website-copy-perl5
-tracks/perl6/*                      @exercism/website-copy-perl6
+tracks/raku/*                       @exercism/website-copy-raku
 tracks/pharo-smalltalk/*            @exercism/website-copy-pharo-smalltalk
 tracks/php/*                        @exercism/website-copy-php
 tracks/plsql/*                      @exercism/website-copy-plsql
