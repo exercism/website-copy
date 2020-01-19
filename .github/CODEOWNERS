@@ -16,7 +16,7 @@ tracks/csharp/*                     @exercism/website-copy-csharp
 tracks/d/*                          @exercism/website-copy-d
 tracks/dart/*                       @exercism/website-copy-dart
 tracks/delphi/*                     @exercism/website-copy-delphi
-tracks/elisp/*                      @exercism/website-copy-elisp
+tracks/emacs-lisp/*                 @exercism/website-copy-emacs-lisp
 tracks/elixir/*                     @exercism/website-copy-elixir
 tracks/elm/*                        @exercism/website-copy-elm
 tracks/erlang/*                     @exercism/website-copy-erlang
