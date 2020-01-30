@@ -6,5 +6,13 @@
     "link_url" : "https://github.com/ningke",
     "avatar_url" : null,
     "bio" : "Rediscovering the new C++."
+  },
+  {
+    "github_username" : "nashirj",
+    "name" : "Nashir Janmohamed",
+    "link_text" : "Personal website",
+    "link_url" : "https://www.nashirj.com",
+    "avatar_url" : null,
+    "bio" : "I am a CS student with experience using C++ to complete university projects and write source code for robotics platforms. I hope to share my experience and learn in the process."
   }
 ]
