@@ -22,7 +22,7 @@ class HighScores
   end
 
   def personal_top_three
-    scores.sort.reverse.take(3)
+    scores.max(3)
   end
 
   def latest_is_personal_best?
@@ -36,7 +36,7 @@ end
 
 ### General
 - The instructions point to a beginner friendly explanation of instantiating a class: [Ruby for Beginners](http://ruby-for-beginners.rubymonstas.org/writing_classes/initializers.html). They also point to the Ruby docs for [Array](https://ruby-doc.org/core/Array.html).
-- `sort.reverse` is not very performant, but at this point in the track it's more important that students explore the standard libraries (and work with method chaining) than that they know how to optimize.
+- `sort.reverse` is not very performant, but no need to mention performance.  However, it is important that students know how to find the methods that are available.  If this is used, perhaps `take` is a good method to use, but `max` is better, as it does selection step for us.
 
 ### Talking points
 - `@scores` vs `scores`: This is the most important issue in this exercise. Beginners may _write_ the getter method/`attr_reader`, but _call_ the instance variable `@scores` still. This link explains some of the advantages of using the getter method internally in the class instead of directly referencing the instance variable: [LaunchSchool: accessor_methods](https://launchschool.com/books/oo_ruby/read/classes_and_objects_part1#accessormethodsinaction). It's recommended to link to this or your favorite explanation, instead of typing the solution for them.
