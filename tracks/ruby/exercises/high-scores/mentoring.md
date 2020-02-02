@@ -29,8 +29,8 @@ class HighScores
     latest == personal_best
   end
 end
-
 ```
+
 ### Reasonable variants
  - Using `attr_reader :scores` instead of the getter method `scores` is better, but no need to point them to `attr_reader` if they write the method `scores`.
 
