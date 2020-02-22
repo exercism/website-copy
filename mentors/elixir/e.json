@@ -14,5 +14,13 @@
     "link_url": "https://emottet.com",
     "avatar_url": "https://avatars1.githubusercontent.com/u/15970369?s=460&v=4",
     "bio": "I'm a curious developer. For me, Elixir is the language that allows me to write effective programs running on the Erlang virtual machine" 
+  },
+  {
+    "github_username": "enmasse",
+    "name": "Mats Alritzson",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I believe that functional programming is the future, and that Elixir and BEAM VM is a part of it." 
   }
 ]
