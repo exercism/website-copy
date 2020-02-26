@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "md-weber",
+    "name": "Max Weber",
+    "link_text": "Current Flutter Website",
+    "link_url": "https://md-weber.github.io/#/",
+    "avatar_url": "https://exercism-uploads.s3.eu-west-1.amazonaws.com/variants/4q7hxy2j3iwpo09asvjfvcnwwrl6/8018f2fd1658e95984b951351d3f617635811593e2b4e9a9e1910677605ead5f?response-content-disposition=inline%3B%20filename%3D%22Screenshot%202020-02-12%20at%2012.14.57.png%22%3B%20filename%2A%3DUTF-8%27%27Screenshot%25202020-02-12%2520at%252012.14.57.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZ5OU5BBS53YMED7V%2F20200226%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20200226T181849Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=284152c66fc78fc62108475a81380d4497e2672d3ce3b249ef15a4c726d48b70",
+    "bio": "Since the GoogleI/O 2019 I am fully entered the hype train of Flutter and could not stop since then. I started several projects since then and worked with Aqueduct and Dart a lot."
+  }
+]
