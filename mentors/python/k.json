@@ -6,5 +6,13 @@
     "link_url" : null,
     "avatar_url" : null,
     "bio" : "import this"
+  },
+  {
+    "github_username": "khoivan88",
+    "name": "Khoi Van",
+    "link_text": "My github",
+    "link_url": "https://github.com/khoivan88",
+    "avatar_url": null,
+    "bio": "I am a chemist, actually, and recently got into coding and enjoy how much it can dramatically improve other fields"
   }
 ]
