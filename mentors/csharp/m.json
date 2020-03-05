@@ -54,5 +54,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "ASP.NET Backend Developer"
+  },
+  {
+    "github_username": "mbernard",
+    "name": "Miguel Bernard",
+    "link_text": "My blog",
+    "link_url": "https://blog.miguelbernard.com",
+    "avatar_url": null,
+    "bio": "I have over 10 years of experience with Microsoft Technologies. Specialized with many things in the Microsoft ecosystem, including C#, F#, and Azure."
   }
 ]
