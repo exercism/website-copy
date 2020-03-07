@@ -12,7 +12,7 @@ dealing with the equality constraint.
 
 #### The state
 
-The internal clock state can either be moddeled as a single value, converting
+The internal clock state can either be modelled as a single value, converting
 the input `hours` to `minutes` or the input `minutes` to fractional `hours`, or
 as two separate values. This makes for a good talking point; it is often easier
 to deal with one value instead of two, and delay splitting them out until the
