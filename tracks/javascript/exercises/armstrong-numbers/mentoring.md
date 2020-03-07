@@ -3,7 +3,7 @@
 The solution should consist of the following three steps:
 
 1. convert the input `number` to a list of digits
-2. `reduce` the list of digits to a _sum_ of each digit to the power of the number of digitis
+2. `reduce` the list of digits to a _sum_ of each digit to the power of the number of digits
 3. compare the input to the summation
 
 ```javascript
