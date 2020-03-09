@@ -2,7 +2,7 @@
 
 ```elixir
 # String.split based approach
-defmodule Words do
+defmodule WordCount do
   @doc """
   Count the number of words in the sentence.
 
@@ -36,7 +36,7 @@ end
 
 ```elixir
 # Regex.scan based approach
-defmodule Words do
+defmodule WordCount do
   def count(sentence) do
     sentence
     |> String.downcase()
@@ -67,7 +67,7 @@ an alternative test case can be presented and the student asked to make this tes
 ```elixir
 test "Polish" do
   expected = %{"mam" => 1, "na" => 1, "imię" => 1, "łukasz" => 1}
-  assert Words.count("Mam na imię Łukasz") == expected
+  assert WordCount.count("Mam na imię Łukasz") == expected
 end
 ```
 
@@ -82,14 +82,14 @@ an alternative test case can be presented and the student asked to make this tes
 ```elixir
 test "question" do
   expected = %{"what" => 1, "is" => 1, "your" => 1, "name" => 1}
-  assert Words.count("What is your name?") == expected
+  assert WordCount.count("What is your name?") == expected
 end
 ```
 
 ```elixir
 test "spanish question" do
   expected = %{"habla" => 1, "usted" => 1, "inglés" => 1}
-  assert Words.count("¿Habla usted Inglés?") == expected
+  assert WordCount.count("¿Habla usted Inglés?") == expected
 end
 ```
 

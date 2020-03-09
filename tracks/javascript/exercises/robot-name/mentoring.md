@@ -55,9 +55,14 @@ export class Robot {
 ```
 
 Variations include:
-- generating a number between `10 and 36` and using `toString(36)` in order to get a letter
+- generating a number between `10` and `36` and using `toString(36)` in order to get a letter
 - generating each digit separately
 - using a `Hash` to keep track of `usedNames`
+
+Note: "predictable" in the requirement below does not imply crypto-strong randomness.
+There's no need to use the `crypto` API; either that or `Math.random()` is fine.
+
+> The names must be random: they should not follow a predictable sequence.
 
 For students going the extra mile, all names should be generated up front,
 shuffled and then sequentially accessed (pointer, pop or shift):
@@ -126,13 +131,13 @@ Variations include:
 - mutating the "possible names" array (popping / shifting / splicing)
 
 ### Common suggestions
-- If a student uses an `Array` instead of a `Set` or `Hash` for the `usedNames`, suggest them to change it
-- If a student is not correctly generating the names, suggest them to fix it
+- If a student uses an `Array` instead of a `Set` or `Hash` for the `usedNames`, suggest they change it
+- If a student is not correctly generating the names, suggest they fix it
 - If a student defines a setter explicitly, at least notify them that it's uncessary, but does allow for a custom error
 
 ### Talking points
 - See if they want to tackle the final test which generates all names:
-  - Stir them first towards why the tests take forever with a `rand` implementation
+  - Steer them first towards why the tests take forever with a `rand` implementation
   - Help them calculate how many names are possible and help them realise that this is a relatively small number
   - Suggest it to be exhaustive
 - What are the upsides vs downsides from both implementations

@@ -16,7 +16,7 @@ tracks/csharp/*                     @exercism/website-copy-csharp
 tracks/d/*                          @exercism/website-copy-d
 tracks/dart/*                       @exercism/website-copy-dart
 tracks/delphi/*                     @exercism/website-copy-delphi
-tracks/elisp/*                      @exercism/website-copy-elisp
+tracks/emacs-lisp/*                 @exercism/website-copy-emacs-lisp
 tracks/elixir/*                     @exercism/website-copy-elixir
 tracks/elm/*                        @exercism/website-copy-elm
 tracks/erlang/*                     @exercism/website-copy-erlang
@@ -40,7 +40,7 @@ tracks/nim/*                        @exercism/website-copy-nim
 tracks/objective-c/*                @exercism/website-copy-objective-c
 tracks/ocaml/*                      @exercism/website-copy-ocaml
 tracks/perl5/*                      @exercism/website-copy-perl5
-tracks/perl6/*                      @exercism/website-copy-perl6
+tracks/raku/*                       @exercism/website-copy-raku
 tracks/pharo-smalltalk/*            @exercism/website-copy-pharo-smalltalk
 tracks/php/*                        @exercism/website-copy-php
 tracks/plsql/*                      @exercism/website-copy-plsql

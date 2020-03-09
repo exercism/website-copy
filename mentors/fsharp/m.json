@@ -22,5 +22,13 @@
 	  "link_url": null,
 	  "avatar_url": null,
 	  "bio": "I have been getting in and out of F# for a while, although I haven't been able to use it on a production system yet. I love the syntax, the Hindley-Milner type system, and the use of indentation for scope. I have used other functional languages like Clojure (professionally) and Elixir."
+	},
+	{
+	  "github_username": "mbernard",
+	  "name": "Miguel Bernard",
+	  "link_text": "My blog",
+	  "link_url": "https://blog.miguelbernard.com",
+	  "avatar_url": null,
+	  "bio": "I have over 10 years of experience with Microsoft Technologies. Specialized with many things in the Microsoft ecosystem, including C#, F#, and Azure."
 	}
 ]
