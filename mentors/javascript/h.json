@@ -16,6 +16,14 @@
     "bio": "I'm a JavaScript developer and I think that mentoring is a great way to improve knowledge for the mentor and the mentees."
   },
   {
+    "github_username": "heypano",
+    "name": "Pano Papadatos",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/heypano",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1577139?s=400&u=fc1f057d094eb40e960cd55d984aec66983a358a&v=4",
+    "bio": "I'm a frontend developer in Maryland USA with experience in other areas as well (full stack, games, devOps etc). I am very interested in frontend architecture and user experience and I am most experienced in JavaScript (+ HTML + [S]CSS)"
+  },
+  {
     "github_username": "hieuunguyeen",
     "name": "Hieu Nguyen",
     "link_text": "GitHub",
