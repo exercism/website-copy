@@ -1,6 +1,7 @@
 ### Concepts
 
 - stack or recursion
+- `HashMap`s and `HashSet`s
 
 ### Reasonable solutions
 
@@ -69,3 +70,9 @@ pub fn brackets_are_balanced(string: &str) -> bool {
     expected.is_empty()
 }
 ```
+
+### Common Suggestions
+
+- Suggest utilizing a `HashSet` or `HashMap` to hold opening and closing brackets for easy fetching in the situation that a submission manually checks for them. 
+- A `HashSet` of opening brackets can be easily generated from a `HashMap` of bracket pairs with `pairs().keys().cloned().collect()`; likewise a `HashSet` of closing brackets can be easily generated with `pairs().values().cloned().collect()`. 
+- Use a stack to facilitate the LIFO ordering of brackets needed to ascertain whether a string is balanced or not.
