@@ -3,7 +3,7 @@
 - derive macro: [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html) and [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#derivable)
 - [struct](https://doc.rust-lang.org/std/keyword.struct.html)
 - [constants](https://doc.rust-lang.org/std/keyword.const.html)
-- [implmentations](https://doc.rust-lang.org/std/keyword.impl.html)
+- [implementations](https://doc.rust-lang.org/std/keyword.impl.html)
 - traits: [Display](https://doc.rust-lang.org/std/fmt/trait.Display.html)
 
 ### Reasonable solutions
@@ -11,6 +11,7 @@
 A reasonable solution should:
 
 * Use `#[derive]`
+* Not re-`use` the [Rust prelude](https://doc.rust-lang.org/std/prelude/index.html).
 * Implement `fmt::Display`
 * Reuse logic by implementing `Clock::add_minutes` in terms of `Clock::new`, or vice versa.
 * Use `%` instead of a loop.
@@ -107,10 +108,21 @@ generate impls of [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html)
 and [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#derivable).
 ```
 
+If they `use std::cmp::PartialEq` or `std::result::Result`, which are both
+included in the [Rust prelude]:
+
+```markdown
+It is good to be explicit, but the [Rust prelude] already brings common modules
+into scope so that you do not have to `use` them again.
+
+[Rust prelude]: https://doc.rust-lang.org/std/prelude/index.html
+```
+
 If they implement `to_string` manually:
 
 ```markdown
-We can implement the [`Display`] trait for `Clock`, which contains an implementation of `to_string`. 
+We can implement the [`Display`] trait for `Clock`, which contains an implementation
+of `to_string`. 
 
 [`Display`]: https://doc.rust-lang.org/std/fmt/trait.Display.html
 ```
@@ -134,7 +146,7 @@ private implementation detail.
 If there are patterns like `((a % b) + b) % b` in `Clock::new` or `Clock::add_minutes`:
 
 ````markdown
-This can be pulled out into a helper function to help keep the methods of `Clock` cleaner.
+This can be pulled out into a helper function to keep the methods of `Clock` cleaner.
 For example:
 
 ```rust
