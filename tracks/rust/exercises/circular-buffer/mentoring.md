@@ -172,4 +172,33 @@ impl<T> CircularBuffer<T> {
 
 ### Common Suggestions
 
-TODO
+- Usage of `unwrap` should be as minimal as possible, preferably non-existent if we can help it. Take the following implementation of the `read` function that calls `unwrap`:
+```rust
+fn read(&mut self) -> Result<T, Error> {
+  match &self.buffer[self.read_index] {
+    Some(_) => {
+      let old_index = self.read_index;
+      self.update_read_index();
+      Ok(self.buffer[old_index].take().unwrap())
+    },
+    None => Err(Error::EmptyBuffer),
+  }
+}
+```
+
+How can we eliminate the `unwrap` call on `take`? The handy `ok_or` method is a prime candidate. This implementation can be restructured into something like this:
+```rust
+fn read(&mut self) -> Result<T, Error> {
+  self.buffer[self.read_index]
+    .take()
+    .ok_or(Error::EmptyBuffer)
+    .map(|element| {
+      self.update_read_index();
+      element
+    })
+}
+```
+
+While the first implementation is unlikely to ever actually panic due to the `unwrap` call due to how it's structured, imparting strategies for how to limit usage of `unwrap` will certainly be beneficial to the student(s). 
+
+- Logically distinct operations such as advancing the read index and advancing the write index should be relegated to their own functions to help with code readability, organization, and to adhere to the DRY principle. 
