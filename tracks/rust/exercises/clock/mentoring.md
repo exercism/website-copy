@@ -14,7 +14,7 @@ A reasonable solution should:
 * Not re-`use` the [Rust prelude](https://doc.rust-lang.org/std/prelude/index.html).
 * Implement `fmt::Display`
 * Reuse logic by implementing `Clock::add_minutes` in terms of `Clock::new`, or vice versa.
-* Use `%` instead of a loop.
+* Use `%` or [`rem_euclid`] instead of a loop.
 * Keep implementation details private.
 * Have clean logic for performing the modulus.
 * Have an extremely simple `fmt::Display` impl.
@@ -68,7 +68,6 @@ fn reduced_minutes(minutes: i32) -> i32 {
 For a clock that stores both minutes and hours (this is generally trickier):
 
 ```rust
-#![feature(euclidean_division)]
 use std::fmt;
 
 #[derive(Debug, PartialEq)]
@@ -127,13 +126,15 @@ of `to_string`.
 [`Display`]: https://doc.rust-lang.org/std/fmt/trait.Display.html
 ```
 
-If they visibly lament the behavior of `%` on negative arguments:
+Using % and / is fine, but if they seem to visibly struggle with them in the code, [`rem_euclid`] and [`div_euclid`] can help:
 
 ```markdown
-The standard library provides a method called [`rem_euclid`] that produces a
-non-negative result, this was made stable in Rust 1.38.
+Instead of % or /, you can use the integer method [`rem_euclid`] which returns
+non-negative results, or [`div_euclid`] for Euclidean division. These were
+made stable in Rust 1.38.
 
 [`rem_euclid`]: https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid
+[`div_euclid`]: https://doc.rust-lang.org/std/primitive.i32.html#method.div_euclid
 ```
 
 If a helper function is `pub`:
@@ -146,7 +147,8 @@ private implementation detail.
 If there are patterns like `((a % b) + b) % b` in `Clock::new` or `Clock::add_minutes`:
 
 ````markdown
-This can be pulled out into a helper function to keep the methods of `Clock` cleaner.
+This code can be pulled out into a helper function to help keep the methods of
+`Clock` cleaner.
 For example:
 
 ```rust
@@ -164,23 +166,6 @@ Let's take this a step further and add a unit test for your `rem_floor` function
 
 Notice you are allowed to put `#[test]` functions alongside the rest of your
 code (i.e. in `src/lib.rs`), where they can see and test private functions.
-```
-
-If it looks like they could benefit from learning about floored or Euclidean division (e.g. they have a helper function for the modulus but it is very specialized):
-
-```markdown
-Your `reduced_minutes` function is a nice, clean way to solve the problem,
-but there is a more general concept you might find useful here.
-The reason that the `%` operator in Rust can return a negative result is because
-`/` in Rust is defined to round towards zero.  But there are other ways to define
-integer division that produce a positive result, such as floored division/modulus
-or Euclidean division/modulus.
-
-We can try implementing one of these modulus functions, or alternatively, we can
-help test out the (currently unstable) implementation of [`rem_euclid`] in the
-standard library.
-
-[`rem_euclid`]: https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid
 ```
 
 It turns out that this problem is generally trickier to solve if the clock stores both hours and minutes. If their logic is hopelessly complicated and you're not sure where else to begin:
