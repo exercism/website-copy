@@ -11,6 +11,7 @@ A reasonable solution should:
 - Use [`chars`](https://doc.rust-lang.org/std/primitive.str.html#method.chars) to iterate over characters in a string
 - Sort the chars of a string with [`sort`](https://doc.rust-lang.org/std/vec/struct.Vec.html#method.sort)
 - Use [`filter`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.filter) to find the strings that satisfy the criteria
+- Use [`to_lowercase`](https://doc.rust-lang.org/std/primitive.char.html#method.to_lowercase) or [`to_uppercase`](https://doc.rust-lang.org/std/primitive.char.html#method.to_uppercase) to normalize the input strings
 
 ### Examples
 
