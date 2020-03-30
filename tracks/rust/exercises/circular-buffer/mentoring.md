@@ -1,7 +1,7 @@
 ### Concepts
 
 - [Defining Error Types](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html)
-- [Trait Bounds](https://doc.rust-lang.org/rust-by-example/generics/bounds.html)
+- Implementing a Generic Container
 
 ### Reasonable Solutions
 
@@ -202,7 +202,7 @@ fn read(&mut self) -> Result<T, Error> {
 }
 ```
 
-While the first implementation is unlikely to ever actually panic due to the `unwrap` call due to how it's structured, imparting strategies for how to limit usage of `unwrap` will certainly be beneficial to the student(s). 
+While the first implementation is unlikely to ever actually panic as a result of the `unwrap` call due to how it's structured, imparting strategies for how to limit usage of `unwrap` will certainly be beneficial to students. 
 
 #### Keeping Implementation DRY
 Logically distinct operations such as advancing the read index and advancing the write index should be relegated to their own functions to help with code readability, organization, and to adhere to the DRY principle. 
