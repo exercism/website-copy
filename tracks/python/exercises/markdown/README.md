@@ -16,28 +16,23 @@ def format_header(line):
         hashes, text = match.groups()
         num = len(hashes)
         return f'<h{num}>{text}</h{num}>'
-    line = re.sub(r'^(#{1,6}) (.*)', replacement, line)
-    return line
+    return re.sub(r'^(#{1,6}) (.*)', replacement, line)
 
 
 def format_bold(curr):
-    curr = re.sub(r'__(.*?)__', r'<strong>\1</strong>', curr)
-    return curr
+    return re.sub(r'__(.*?)__', r'<strong>\1</strong>', curr)
 
 
 def format_italic(curr):
-    curr = re.sub(r'_(.*?)_', r'<em>\1</em>', curr)
-    return curr
+    return re.sub(r'_(.*?)_', r'<em>\1</em>', curr)
 
 
 def format_list_item(line):
-    line = re.sub(r'^\* (.*)', r'<li>\1</li>', line)
-    return line
+    return re.sub(r'^\* (.*)', r'<li>\1</li>', line)
 
 
 def format_paragraph(line):
-    m = re.match('<h|<ul|<p|<li', line)
-    if not m:
+    if not re.match('<h|<ul|<p|<li', line):
         line = f'<p>{line}</p>'
     return line
 
