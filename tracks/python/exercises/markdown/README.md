@@ -1,12 +1,12 @@
 ### Problem and challenges
-	
-The markdown exercise asks the student to refactor some code. The original code is 
-hard to follow; it is constructed of a single `for` loop, has many nested 
-conditionals, and meaningless variable names. The goal is for them to produce 
+
+The markdown exercise asks the student to refactor some code. The original code is
+hard to follow; it is constructed of a single `for` loop, has many nested
+conditionals, and meaningless variable names. The goal is for them to produce
 improved code that still passes the tests.
-	
+
 ### Reasonable solution
-	
+
 ```python
 import re
 
@@ -76,11 +76,11 @@ easier for the reader, while still passing all the tests. The new solution shoul
 
 ### Talking points
 
-- Conditional statements make reading and understanding a solution harder. The original code has 
+- Conditional statements make reading and understanding a solution harder. The original code has
 17 conditional statements, and that should be significantly reduced.
 - Functions should be small and have a clear purpose with a clear name.
 - Repeated string concatenation to build up the result is inefficient. It is more efficient to build up a list of lines and then concatenate them all at once. That can also make some of the other changes easier.
-- Variable names should be descriptive and unique (the original code used single letter names and the meaning of a variable 
+- Variable names should be descriptive and unique (the original code used single letter names and the meaning of a variable
 changed throughout the code.)
 - Duplication should be minimized.
 - `re.sub` is more concise and efficient for replacing strings than using `re.match` and building up a new string. It also handles multiple substitutions in a single line.
