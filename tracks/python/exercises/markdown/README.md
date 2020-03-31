@@ -80,6 +80,7 @@ Many possible solutions to this problem exist. The primary goal is to make compr
 easier for the reader, while still passing all the tests. The new solution should aim to refactor the existing code, but should not be a complete rewrite. A significant increment towards readability could use the same basic approach and reuse some of the code if possible. 
 	
 ### Talking points
+
 - Conditional statements make reading and understanding a solution harder. The original code has 
 17 conditional statements, and that should be significantly reduced.
 - Functions should be small and have a clear purpose with a clear name.
