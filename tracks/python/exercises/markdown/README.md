@@ -66,8 +66,8 @@ def group_list_items(old_lines):
 
 def parse(markdown):
     # Note: the markdown is separated by line, but the tests assume the HTML is all a single line
-    markdown_lines = markdown.split('\n')
-    html_lines = group_list_items([convert_line(line) for line in markdown_lines])
+    markdown_lines = markdown.splitlines()
+    html_lines = group_list_items(convert_line(line) for line in markdown_lines)
     return ''.join(html_lines)
 ```
 
