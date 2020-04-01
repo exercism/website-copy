@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I use R in my work quite frequently and was introduced a long time ago when i was in grad school. I love the flexibility and readability of the language and would love to help others!"
-  }
+  },
+  {
+  "github_username": "jeff-m-sullivan",
+  "name": "Jeff Sullivan",
+  "link_text": null,
+  "link_url": null,
+  "avatar_url": null,
+  "bio": "I do a lot of work in R as a data-science-ish consultant in health economics. I picked up R after getting frustrated with Stata's lack of real programming functionality."
+}
 ]
