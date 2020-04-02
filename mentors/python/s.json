@@ -1,4 +1,3 @@
-
 [
   {
     "github_username": "ser1us",
@@ -6,41 +5,40 @@
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
-    "bio":
-      "Python has something for everyone. Like functional programming? Check. Like OOP? Check. Need multiple inheritance? Check. I use it for web apps (Django) and - more recently - for machine learning, it's awesome!"
+    "bio": "Python has something for everyone. Like functional programming? Check. Like OOP? Check. Need multiple inheritance? Check. I use it for web apps (Django) and - more recently - for machine learning, it's awesome!"
   },
- {
-  "github_username": "slahmar",
-  "name": "Salomé Lahmar",
-  "link_text": null,
-  "link_url": null,
-  "avatar_url": null,
-  "bio": "Python is my favorite language because it's easy to learn and easy to write, and really explicit and concise. It's also great for machine learning enthusiasts!"
+  {
+    "github_username": "slahmar",
+    "name": "Salomé Lahmar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Python is my favorite language because it's easy to learn and easy to write, and really explicit and concise. It's also great for machine learning enthusiasts!"
   },
- {
-      "github_username": "sebito91",
-      "name": "Sebastian Borza",
-      "link_text": null,
-      "link_url": null,
-      "avatar_url": null,
-      "bio": "I'm a Canadian (based in Chicago) freelance golang, C and python developer working on projects within the gaming, finance and data-science worlds respectively. My favorite freetime task is coding challenges and I'm more than happy to help people talk through solutions!"
-    },
-    {
-      "github_username": "Seenivasanseeni",
-      "name": "Seeni",
-      "link_text": "",
-      "link_url": "",
-      "avatar_url": "",
-      "bio": "I am Indian student developer working in Deep Learning with python. I work on python for almost all of my projects. Other languages i Use are javascript , c++ "
-    },
-	{
-  "github_username": "schmerziel",
-  "name": "Steven Hans",
-  "link_text": null,
-  "link_url": null,
-  "avatar_url": null,
-  "bio": "Everytime I wanted to do some quick automation I always choose python because it is simple, relatively easy, and fast enough to do the automation. This has saved me a lot of painful time if I were to do it myself manually. I also like java and currently learning some C."
-	},
+  {
+    "github_username": "sebito91",
+    "name": "Sebastian Borza",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a Canadian (based in Chicago) freelance golang, C and python developer working on projects within the gaming, finance and data-science worlds respectively. My favorite freetime task is coding challenges and I'm more than happy to help people talk through solutions!"
+  },
+  {
+    "github_username": "Seenivasanseeni",
+    "name": "Seeni",
+    "link_text": "",
+    "link_url": "",
+    "avatar_url": "",
+    "bio": "I am Indian student developer working in Deep Learning with python. I work on python for almost all of my projects. Other languages i Use are javascript , c++ "
+  },
+  {
+    "github_username": "schmerziel",
+    "name": "Steven Hans",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Everytime I wanted to do some quick automation I always choose python because it is simple, relatively easy, and fast enough to do the automation. This has saved me a lot of painful time if I were to do it myself manually. I also like java and currently learning some C."
+  },
   {
     "github_username": "sandordargo",
     "name": "Sandor Dargo",
@@ -71,8 +69,7 @@
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
-    "bio":
-      "Have been using Python for ~5 years for machine learning, deep learning, computer vision, data science and quick scripting purposes"
+    "bio": "Have been using Python for ~5 years for machine learning, deep learning, computer vision, data science and quick scripting purposes"
   },
   {
     "github_username": "swalladge",
@@ -80,8 +77,7 @@
     "link_text": "Website",
     "link_url": "https://swalladge.id.au",
     "avatar_url": null,
-    "bio":
-      "Python was the first language I learnt when I started programming several years ago. Since then I have used it extensively for uni projects, web, scripting, and pretty much everything else. Excited to be able to help mentor new pythonistas!"
+    "bio": "Python was the first language I learnt when I started programming several years ago. Since then I have used it extensively for uni projects, web, scripting, and pretty much everything else. Excited to be able to help mentor new pythonistas!"
   },
   {
     "github_username": "suzaku",
@@ -89,8 +85,7 @@
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
-    "bio":
-      "I am a system programmer in JuiceFS. Python is my favorite programming language and I have been using it for >9 years. I hope I can help you pick up Python faster."
+    "bio": "I am a system programmer in JuiceFS. Python is my favorite programming language and I have been using it for >9 years. I hope I can help you pick up Python faster."
   },
   {
     "github_username": "Stigjb",
@@ -98,8 +93,7 @@
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
-    "bio":
-      "I'm using Python for data science/machine learning and personal projects. I like the language for the great package ecosystem and the expressive and readable code."
+    "bio": "I'm using Python for data science/machine learning and personal projects. I like the language for the great package ecosystem and the expressive and readable code."
   },
   {
     "github_username": "Sencudra",
@@ -107,8 +101,7 @@
     "link_text": null,
     "link_url": null,
     "avatar_url": null,
-    "bio":
-      "I'm a student at HSE university in Moscow and an intern at Kaspersky Lab. Python is one of my most favorite programming languages since it's simple and easy to use on daily basis." 
+    "bio": "I'm a student at HSE university in Moscow and an intern at Kaspersky Lab. Python is one of my most favorite programming languages since it's simple and easy to use on daily basis."
   },
   {
     "github_username": "shimst3r",
@@ -141,5 +134,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I enjoy using Python for work and fun.  There's no other language that allows me to go from an idea to working code as fast."
+  },
+  {
+    "github_username": "pyropy",
+    "name": "Srdjan Stankovic",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://i.ibb.co/0K23gR2/profileimg.jpg",
+    "bio": "I fell in love with Python and I keep loving it more with each day. I enjoy sharing knowledge!"
   }
 ]
