@@ -16,6 +16,14 @@
     "bio": "Rust is a refreshing alternative to C, C++ and golang.  I find it elegant, relatively concise and very interesting to use.  I've not used in professionally, yet, but have many years of C, JavaScript and Python under my belt."
   },
   {
+    "github_username": "alexschrod",
+    "name": "Alexander Krivács Schrøder",
+    "link_text": "Personal Website",
+    "link_url": "https://alexanderschroeder.net",
+    "avatar_url": null,
+    "bio": "After the initial struggles with lifetimes and getting away from thinking in traditional object oriented ways, like inheritance and polymorphism, I fell completely in love with Rust and its community, and would be happy using nothing else for the rest of time."
+  },
+  {
     "github_username": "Aloso",
     "name": "Ludwig Stecher",
     "link_text": null,
