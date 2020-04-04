@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "jr0cket",
+    "name": "John Practicalli Stevenson",
+    "link_text": "Practicalli",
+    "link_url": "https://practicalli.github.io/",
+    "avatar_url": "https://twitter.com/jr0cket/photo",
+    "bio": "Software engineer for 22+ years, last 3 years with Clojure. Learning Clojure since 2012 and now broadcast and write books."
+  },
+  {
     "github_username": "jgomo3",
     "name": "Jesús Gómez",
     "link_text": null,
