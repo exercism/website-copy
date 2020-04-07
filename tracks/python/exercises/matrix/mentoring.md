@@ -33,7 +33,7 @@ community area.
 
 We should encourage students to move from strings to integers in __init__. 
 While there are no test cases with non-integers,
-point out that if the input containted bad data,
+point out that if the input contained bad data,
 you would want the constructor to fail, rather 
 than failing at row() or column()
 
