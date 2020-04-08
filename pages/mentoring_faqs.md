@@ -3,6 +3,9 @@ Here we have collated a list of the questions asked frequently by mentors.
 ### How do I get started with Mentoring?
 Once you've become a mentor via the [become a mentor](https://exercism.io/become-a-mentor) page, you can access your [mentor dashboard](https://exercism.io/mentor/dashboard) at any time. When you joined you should have received an invitation to our Slack Room. You can find more instructions in the [start-here channel on Slack](https://exercism-mentors.slack.com/archives/CBDA9LMDF/p1529968977000336).
 
+### What is the goal of mentoring a solution?
+The purpose of Exercism is to improve programming language _fluency_ rather than proficiency. In this sense, fluency is the ability to "speak" the language, to read and write code in it that communicates with other programmers and the machine. Our goal is to teach someone to write code in that language like a "native" programmer in that language would. Proficiency is the ability to write real-world programs using a language - e.g. understanding the standard library, the ecosystem, displaying technical rigor or algorithmic competency.
+
 ### What should I do if I don't know how to give feedback on a solution?
 If you're not sure what feedback to give, paste a link to the solution (e.g. `https://exercism.io/mentor/solutions/...`) on the relevant language channel on Slack and brainstorm some ideas with other mentors.
 
