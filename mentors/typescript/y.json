@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I got introduced to Typescript through the Angular 2 alpha and since then, I've been using it for projects at and outside of work. I'm a huge fan of the typing system and miss it when I'm working in other languages."
+  },
+  {
+    "github_username": "yyyc514",
+    "name": "Josh Goebel",
+    "link_text": "Blog: Running Blind",
+    "link_url": "http://runningblind.com/",
+    "avatar_url": null,
+    "bio" :" I mostly write Ruby on Rails professionally but for fun (and possibly profit one day) I dabble with Elixir, TypeScript, Arduino, and such. I’m really digging both TypeScript and Vim lately."
   }
 ]
