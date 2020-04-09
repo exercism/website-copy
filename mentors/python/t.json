@@ -54,5 +54,13 @@
     "link_url": "https://utkarshraghav.ml/",
     "avatar_url": "https://avatars2.githubusercontent.com/u/43128146?s=400&u=c3da97990119ebf1c98962a1f99271600e67a31c&v=4",
     "bio": "I love Python for its simplicity and consistency. I have been using Python for about 3 years now and have used it for Open source projects, building complex APIs for my Android applications and a lot many things. I would like to give back to the programming community that helped me when I was just getting started by mentoring and helping others in their journey." 
+  },
+  {
+    "github_username": "tony-cox",
+    "name": "Tony Cox",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have been a webserver back end Python dev for about 6 years. I love Python for both its low barrier to entry and its broad scope of what it can be used for." 
   }
 ]
