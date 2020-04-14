@@ -83,8 +83,8 @@ def count_words(sentence):
     word_regex = re.compile(
         r"""
                 [0-9]+              # A number...
-            |   [a-z]+ ' [a-z]+     # or a word with an apostrophy...
-            |   [a-z]+              # or a word without an apostrophy.
+            |   [a-z]+ ' [a-z]+     # or a word with an apostrophe...
+            |   [a-z]+              # or a word without an apostrophe.
         """,
         re.VERBOSE
     )
