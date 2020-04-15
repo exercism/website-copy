@@ -74,6 +74,25 @@ a List Comprehension.
 Since we consume all the contents, the
 Generator isn't any better than a List Comprehension.
 
+Perhaps a simpler method yet is to explicitly match the three kinds of word described in the problem instructions, and use `re.findall` to extract a list of non-overlapping words that match this pattern. The `re.VERBOSE` flag can be used to produce a more readable regular expression with comments.
+
+```python
+import re, collections
+
+def count_words(sentence):
+    word_regex = re.compile(
+        r"""
+                [0-9]+              # A number...
+            |   [a-z]+ ' [a-z]+     # or a word with an apostrophe...
+            |   [a-z]+              # or a word without an apostrophe.
+        """,
+        re.VERBOSE
+    )
+    return collections.Counter(word_regex.findall(sentence.lower()))
+```
+
+It can be helpful to document regular expressions in this manner, as their dense syntax can be obscure. A potential source of trouble is the ordering of the three sub-expressions: the regular expression `[0-9]+|[a-z]+|[a-z]+'[a-z]+` will not work as the sub-expression `[a-z]+` will produce a match prematurely (before `[a-z]+'[a-z]+` has been tested).
+
 ### Common Suggestions
 
 Regular Expressions are very useful in pruning the 
