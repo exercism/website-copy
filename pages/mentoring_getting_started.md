@@ -34,7 +34,7 @@ Mentor Notes show one or more variants of acceptable solutions. Some also list c
 
 ### 7. Mentoring Tips: early exercises
 - When the logic in the solution does not meet the standards, give them one step to work on. It pays off to start with the most important thing. In these early exercises, try not to explain the Why's of the language. Link to tutorials or blogs aimed at beginners in the language that shows _how_ things are done. Even when it's showing the solution to the exercise ad verbatim.
-- When it's only syntax things, you may approve the solution and list the issues. You may want to link to a style guide if that's available in your language. As opinions on style tend do differ a bit ;-), make it a suggestion, not a rule.
+- When it's only syntax things, you may approve the solution and list the issues. You may want to link to a style guide if that's available in your language. As opinions on style tend to differ a bit ;-), make it a suggestion, not a rule.
 (For instance: "Unless you have strong opinions on style, I'd recommend following the Style Guide.")
 We don't enforce a particular style guide; being consistent is the main concern here.
 - In the next iteration, follow the pace of the student. When they changed only one thing, and didn't take into account the effect of that one change on the rest of the code, just give them one step more. When the one step lead to more in-depth changes, take it from there.
