@@ -1,7 +1,7 @@
 ### Reasonable solutions
 ```cpp
-#if !defined(_SPACE_AGE_H_)
-#define _SPACE_AGE_H_
+#if !defined(SPACE_AGE_H)
+#define SPACE_AGE_H
 
 #include <cstdint>
 
@@ -29,7 +29,7 @@ namespace space_age
     };
 }
 
-#endif // _SPACE_AGE_H_
+#endif // SPACE_AGE_H
 ```
 ```cpp
 #include "space_age.h"
