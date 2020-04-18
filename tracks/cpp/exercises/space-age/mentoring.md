@@ -25,7 +25,7 @@ namespace space_age
     private:
         enum class planet : int64_t;
         double on_planet(const planet p) const;
-        const int64_t _seconds;
+        int64_t _seconds;
     };
 }
 
@@ -104,9 +104,18 @@ namespace space_age
 }
 ```
 ### Common suggestions
- * Save seconds as a const in the class
+ * Make sure the data type is big enough to store a 33 bit value (needed for neptune)
+ * Make sure the data type is consistent (constructor, class member and return type from `seconds()`)
+ * Constants should be static.
+ * Arguments with names that indicate the units used.
  * Use `constexpr` for the functions.
 ### Talking points
+ * `explicit` constructor so you don't accidently do a type casting. [examples](https://en.cppreference.com/w/cpp/language/explicit).
+ * Prefer intialization over assinment. [Good explanation](https://stackoverflow.com/a/7350783)
+ * Being explicit about units.
+ * `signed` vs. `unsigned`.
+ ** `unsigned` can give some suprising results. [example](isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es102-use-signed-types-for-arithmetic)
+ * `double` vs. `float`
  * Implementation in header:
  ** This will turn the functions to be implicitly inline, and allow the compiler to do some optimizations on these very small functions.
  ** This also means that every change in the implementation will require a recompile, and will create longer compile time.
