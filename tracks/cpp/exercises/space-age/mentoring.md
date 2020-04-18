@@ -38,14 +38,14 @@ namespace space_age
 {
     enum class space_age::planet : int64_t
     {
-        EARTH = 31557600,
-        MERCURY = 7600544,
-        VENUS = 19414149,
-        MARS = 59355036,
-        JUPITER = 374355660,
-        SATURN = 929292360,
-        URANUS = 2651370000,
-        NEPTUNE = 5200418600,
+        Earth = 31557600,
+        Mercury = 7600544,
+        Venus = 19414149,
+        Mars = 59355036,
+        Jupiter = 374355660,
+        Saturn = 929292360,
+        Uranus = 2651370000,
+        Neptune = 5200418600,
     };
 
     space_age::space_age(const int64_t seconds)
@@ -64,42 +64,42 @@ namespace space_age
 
     double space_age::on_earth() const
     {
-        return on_planet(planet::EARTH);
+        return on_planet(planet::Earth);
     }
 
     double space_age::on_mercury() const
     {
-        return on_planet(planet::MERCURY);
+        return on_planet(planet::Mercury);
     }
 
     double space_age::on_venus() const
     {
-        return on_planet(planet::VENUS);
+        return on_planet(planet::Venus);
     }
 
     double space_age::on_mars() const
     {
-        return on_planet(planet::MARS);
+        return on_planet(planet::Mars);
     }
 
     double space_age::on_jupiter() const
     {
-        return on_planet(planet::JUPITER);
+        return on_planet(planet::Jupiter);
     }
 
     double space_age::on_saturn() const
     {
-        return on_planet(planet::SATURN);
+        return on_planet(planet::Saturn);
     }
 
     double space_age::on_uranus() const
     {
-        return on_planet(planet::URANUS);
+        return on_planet(planet::Uranus);
     }
 
     double space_age::on_neptune() const
     {
-        return on_planet(planet::NEPTUNE);
+        return on_planet(planet::Neptune);
     }
 }
 ```
