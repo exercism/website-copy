@@ -10,9 +10,9 @@ namespace space_age
     class space_age final
     {
     public:
-        explicit space_age(const uint64_t seconds);
+        explicit space_age(const int64_t seconds);
         
-        uint64_t seconds() const;
+        int64_t seconds() const;
         double on_earth() const;
         double on_mercury() const;
         double on_venus() const;
@@ -23,9 +23,9 @@ namespace space_age
         double on_neptune() const;
 
     private:
-        enum class planet : uint64_t;
+        enum class planet : int64_t;
         double on_planet(const planet p) const;
-        const uint64_t _seconds;
+        const int64_t _seconds;
     };
 }
 
@@ -36,7 +36,7 @@ namespace space_age
 
 namespace space_age
 {
-    enum class space_age::planet : uint64_t
+    enum class space_age::planet : int64_t
     {
         EARTH = 31557600,
         MERCURY = 7600544,
@@ -48,18 +48,18 @@ namespace space_age
         NEPTUNE = 5200418600,
     };
 
-    space_age::space_age(const uint64_t seconds)
+    space_age::space_age(const int64_t seconds)
     : _seconds(seconds)
     { }
 
-    uint64_t space_age::seconds() const
+    int64_t space_age::seconds() const
     {
         return _seconds;
     }
 
     double space_age::on_planet(const planet p) const
     {
-        return _seconds * 1.0 / static_cast<uint64_t>(p);
+        return _seconds * 1.0 / static_cast<int64_t>(p);
     }
 
     double space_age::on_earth() const
