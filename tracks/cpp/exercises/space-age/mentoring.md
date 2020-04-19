@@ -119,3 +119,6 @@ namespace space_age
  * Implementation in header:
  ** This will turn the functions to be implicitly inline, and allow the compiler to do some optimizations on these very small functions.
  ** This also means that every change in the implementation will require a recompile, and will create longer compile time.
+ * `const` on seconds
+ ** We don't want to change it, so we can declare it const so we don't accidenlty do something stupid.
+ ** This won't allow us to use the assignment operator. Not needed for the exercise, but might be unintented.
