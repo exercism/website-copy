@@ -1,6 +1,6 @@
 # Hamming
 
-_Hamming_ is the first exercise in the Go track that requieres to use a `for` loop and creation of an `error`.
+_Hamming_ is the first exercise in the Go track that requires to use a `for` loop and creation of an `error`.
 Although this is about `for` loops students that submit working solutions have that nailed.
 
 ### Reasonable Solutions
