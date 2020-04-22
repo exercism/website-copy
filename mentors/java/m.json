@@ -79,12 +79,12 @@
   "avatar_url": null,
   "bio": "I've been developing in Java Professionaly for 5 years now. I'm passionate about writing clean code and learning new programming languages."
  },
-{
-  "github_username": "mbolis",
-  "name": "Marco Bolis",
-  "link_text": null,
-  "link_url": null,
-  "avatar_url": null,
-  "bio": "I've been writing OO Java code for the last ten years or so. I also know a couple other languages and paradigms. I believe one should learn to think their code from many POVs. And dream big."
- }
+  {
+    "github_username": "mbolis",
+    "name": "Marco Bolis",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been writing OO Java code for the last ten years or so. I also know a couple other languages and paradigms. I believe one should learn to think their code from many POVs. And dream big."
+  }
 ]
