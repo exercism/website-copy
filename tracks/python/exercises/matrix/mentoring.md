@@ -10,9 +10,9 @@ to write methods row() and column().
 ```python
 class Matrix(object):
 
-    def __init__(self, text: str):
+    def __init__(self, matrix_string: str):
         self.rows = [[int(s) for s in word.split()]
-                     for word in text.split('\n')]
+                     for word in matrix_string.split('\n')]
 
     def row(self, index: int) -> list:
         return self.rows[index - 1].copy()
