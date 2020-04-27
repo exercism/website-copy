@@ -165,7 +165,7 @@ integer division that produce a positive result, such as floored division/modulu
 or Euclidean division/modulus.
 
 We can try implementing one of these modulus functions, or alternatively, we can
-help test out the (currently unstable) implementation of [`rem_euclid`] in the
+use the implementation of [`rem_euclid`] in the
 standard library.
 
 [`rem_euclid`]: https://doc.rust-lang.org/std/primitive.i32.html#method.rem_euclid
