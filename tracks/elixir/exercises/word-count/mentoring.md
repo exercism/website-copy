@@ -56,7 +56,18 @@ defmodule WordCount do
   end
 end
 ```
+```elixir
+# Utilizing Enum.frequencies
+defmodule WordCount do
 
+  def count(sentence) do
+    Regex.scan(~R"[[:alnum:]-]+"u, String.downcase(sentence))
+    |> List.flatten
+    |> Enum.frequencies
+  end
+  
+end
+```
 ### Common suggestions
 
 #### German `öüä`
