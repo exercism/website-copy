@@ -86,5 +86,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": null
+  },
+  {
+    "github_username": "mrslwiseman",
+    "name": "Matt Wiseman",
+    "link_text": "GitHub Profile",
+    "link_url": "https://github.com/mrslwiseman",
+    "avatar_url": null,
+    "bio": "Self taught, career changer. Big believer in self directed learning and mentorship. I'm a backend nodeJS developer currently working for an online casino and sports betting platform."
   }
 ]
