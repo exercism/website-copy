@@ -11,6 +11,26 @@ We don't need to bikeshed on this too long. Just prompt them to improve their co
 - Obviously you can do as you please, but it is conventional to have one space either side of each operator: ``year % 400 == 0``.
 - Consider writing a truth table for this exercise and see if you can work out what the simplest predicates are and how they could be combined with ``&&`` and ``||``
 
+Example truth table:
+
+```
+Let:
+
+p = year % 4 == 0
+q = year % 100 == 0
+r = year % 400 == 0
+
+o = is the desired output
+
+p q r | o
+0 0 0 | 0
+1 0 0 | 1
+...
+1 1 1 | 1
+
+```
+
+The idea is that you 1) work out what predicates you need and 2) notice that you can construct the output with p && !q || r.
 
 ### Talking points
 
