@@ -22,5 +22,13 @@
         "link_url": "http://github.com/gokulchittaranjan",
         "avatar_url": null,
         "bio": "Have over a decade of experience working with Python."
+    },
+    {
+        "github_username": "galambi",
+        "name": "Galam Bocskam",
+        "link_text": "",
+        "link_url": null,
+        "avatar_url": "",
+        "bio": "I was a data scientist professionally for 7 years, using python. Then I dropped the modelling stuff and have spent the last 2 years focusing on becoming a better software developer. Currently working in Java, Go, Python."
     }
 ]
