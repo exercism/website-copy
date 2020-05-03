@@ -76,5 +76,4 @@ end
 
 ### Talking points
 
-- You can make this a fair bit faster if you trust the string is ASCII and use codeunits() and some unsigned integer arithmetic. Unsigned int literals look like 0xF1 or 0b11110001
-- You can probably use the ASCIIStr and ASCIIChar types from the Strs.jl ecosystem to do the same without being quite so messy
+- Iterating a string is slow because it's a variable length encoding. If you're iterating something with elements of a fixed size (a vector of UInt8s or an ASCIIStr (Strs.jl), perhaps), this can be faster.
