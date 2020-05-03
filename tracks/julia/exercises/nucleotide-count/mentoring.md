@@ -21,9 +21,33 @@ function count_nucleotides(strand)
 end
 ```
 
+If single-core speed is of the essence, a pattern like this may perform better.
+
 ```julia
 function count_nucleotides(strand)
-    counts = Dict(count(==(base), strand) for base in "ACGT")
+    ca = cc = cg = ct = 0
+    for nuc in strand
+        if nuc == 'A'
+            ca += 1
+        elseif nuc == 'C'
+            cc += 1
+        elseif nuc == 'G'
+            cg += 1
+        elseif nuc == 'T'
+            ct += 1
+        else
+            throw(DomainError(nuc, "only A, C, G and T are valid nucleotides"))
+        end
+    end
+    return Dict('A' => ca, 'C' => cc, 'G' => cg, 'T' => ct)
+end
+```
+
+While this solution is easy to make threaded or parallel by e.g. replacing `count` with `ThreadsX.count()`
+
+```julia
+function count_nucleotides(strand)
+    counts = Dict(base => count(==(base), strand) for base in "ACGT")
     if sum(values(counts)) != length(strand)
         throw(DomainError(strand, "only A, C, G and T are valid nucleotides"))
     end
