@@ -62,5 +62,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have been a webserver back end Python dev for about 6 years. I love Python for both its low barrier to entry and its broad scope of what it can be used for." 
+  },
+  {
+    "github_username": "tklarryonline",
+    "name": "Luan Nguyen",
+    "link_text": "LinkedIn",
+    "link_url": "https://www.linkedin.com/in/tklarryonline/",
+    "avatar_url": "https://www.dropbox.com/s/tjwyw81intjlnnx/2.jpg",
+    "bio": "I am a full-stack software engineer using Python and JavaScript for over 5 years. I love doing things with Python and want to give back to the community."
   }
 ]
