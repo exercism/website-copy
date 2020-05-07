@@ -16,7 +16,7 @@ Canonical solution using the `max()` built-in to return `personal_best()`, and r
     def personal_best(scores):
         return max(scores)
 
-    def personal_top_three(self):
+    def personal_top_three(scores):
         return sorted(scores, reverse=True)[:3]
 ```
 
