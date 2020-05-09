@@ -55,3 +55,26 @@ update an entry.
 
 In any case, this isn't a topic to burden a beginner with, 
 but you may want to comment about it if you see it in the solution. 
+
+### Separation of Concerns
+
+You will see solutions where the student has split `matrix_string` in the constructor, then done the actual construction of the matrix in the getters.
+
+```
+class Matrix:
+    def __init__(self, matrix_string):
+        self.matrix = matrix_string.split('\n')
+
+    def row(self, index):
+        return list(map(int, self.matrix[index - 1].split(' ')))
+
+    def column(self, index):
+        column = []
+        for row in self.matrix:
+            column.append(int(row.split(' ')[index - 1]))
+        return column
+```
+
+You should explain SoC to your student, and ask them to submit another iteration where the getters (`row`, `column`) do their one job - interrogate the matrix in `self` for the data requested.
+
+There's a bit of ambiguity as to whether the constructor should also construct the matrix in such a way that `column` can be retrived with something like `return self.columns[index - 1]`. It's probably not important enough to decline approval if they've taken that route, although I'd ask where that ends. If we want to retrieve the top-left value, or the bottom right, do we write another constructor line to store that in `self`? I'd argue not, but it's fairly subjective.
