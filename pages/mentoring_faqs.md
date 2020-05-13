@@ -16,7 +16,7 @@ In the meantime, here are some recommended resources:
 
 - [The Science and Art of Receiving Feedback Well](https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well-ebook/dp/B00DMCV0XE/)
 - [Unlearning Toxic Behaviours in a Code Review Culture - Conference talk by Sandya Sankarram](https://drive.google.com/file/d/1ROZA9yKpEa8suiqVXtPO0IJtqa95SOjE/view) and related [Blog Post](https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c)
-- [How Positive and Negative Feedback Motivate Goal Pursuit](https://faculty.chicagobooth.edu/ayelet.fishbach/research/FEF%20Compass%202010.pdf)
+- How Positive and Negative Feedback Motivate Goal Pursuit
 - The #mentor-the-mentor channel on Slack, where you can learn to be an amazing mentor from other amazing mentors.
 
 In general, behaviours to avoid:
