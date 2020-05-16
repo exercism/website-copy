@@ -162,6 +162,19 @@ know that there are efficient algorithms for working with already-sorted data.
 Since this exercise naturally allows you to keep your database in the 
 appropriate sort order from moment zero, they may be worth looking into.
 
+#### Beware of giving back direct access to mutable objects
+
+In the dictionary-style solutions quite a few students will reflexively add 
+a `return` statement at the bottom of **School.add_student** that returns 
+either the database or the grade the student was inserted in. If those are
+mutable structures then the student has inadvertently given the caller the
+ability to directly mutate the data.
+
+Another approach to trying to solve the mutability issue is to use the
+`@property` decorator to make a "read-only" getter that itself returns 
+the underlying data: this stops the caller from _assigning_ to that name,
+it stops no one from mutating the object that name refers to.
+
 ### Common Suggestions
 
 This is a good place to introduce a number of ideas:
