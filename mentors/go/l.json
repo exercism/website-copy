@@ -22,5 +22,13 @@
     "link_url": "https://github.com/labsvisual",
     "avatar_url": "https://avatars.githubusercontent.com/labsvisual",
     "bio": "Golang has been a saviour in my line of work; the extensibility, the ease of use... everything is absolutely fantastic. Go's specific choices on strict, inherent linting rules let you focus on your business logic and not on which format is the best. Go is my weapon of choice in all things SRE and financial tech."
-  }
+  },
+  {
+     "github_username": "lamkimphu258",
+     "name": "Lâm Kim Phú",
+     "link_text": null,
+     "link_url": null,
+     "avatar_url": null,
+     "bio": "I love Go for its simplicity and consistency. I hope that I can help everyone who want to learn Go."
+   },
 ]
