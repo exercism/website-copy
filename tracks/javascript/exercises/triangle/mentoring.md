@@ -47,7 +47,7 @@ export class Triangle {
 }
 ```
 
-A wise student would would use `.sort` to simplify logics.
+A wise student would use `.sort` to simplify logics.
 
 Also, some students add test cases for degenerate triangles and implement a method to check that.
 
