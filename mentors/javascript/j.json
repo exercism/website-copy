@@ -1,5 +1,4 @@
 [
-  
   {
     "github_username": "jamesgeorge007",
     "name": "James George",
@@ -71,5 +70,13 @@
     "link_url": null,
     "avatar_url": "https://avatars1.githubusercontent.com/u/41909513?s=400&u=0ccbc828139bc41537737aca564824de121a32c5&v=4",
     "bio": "I'm a self-taught, full-stack developer based in Kentucky building front-end SPA's with React. Side projects in Vue and Express. B.A. in Philosophy, M.Div, working on a doctorate in Ancient Near Eastern Languages."
+  },
+  {
+    "github_username": "jessesingleton",
+    "name": "Jesse George Singleton",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/JesseSingleton",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/17176370?s=460&u=b4fb14bf621404163f6abe4325850814b57d9a88&v=4",
+    "bio": "I'm a Full Stack Software Engineer living and working in London. PWA/SSG enthusiast. Mainly working with JavaScript/C#/GatsbyJS. Loves arrow functions. Hates empty spaces."
   }
 ]
