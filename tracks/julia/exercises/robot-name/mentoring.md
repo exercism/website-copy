@@ -43,14 +43,31 @@ const names = shuffle!(Int32[0:26^2 * 10^3 - 1;])
 mutable struct Robot
     # Robots are comfortable with integer names ;)
     id::Int32
+
+    """
+        Robot()
+
+    Construct a robot with a unique name within its class.
+    """
     Robot() = new(mint_id())
 end
 
+
+"""
+    mint_id()
+
+Return a unique robot id. If there are none left, error.
+"""
 function mint_id()
     isempty(names) ? error("No unique identifiers left!") : pop!(names)
 end
 
-"Convert an integer name to a human-friendly name"
+
+"""
+    id2name(id)
+
+Convert an integer name to a human-friendly name.
+"""
 function id2name(id)
     id, c1 = divrem(id, 26)
     id, c2 = divrem(id, 26)
@@ -62,11 +79,23 @@ function id2name(id)
                  string.((d1, d2, d3))...))
 end
 
+
+"""
+    reset!(instance::Robot)
+
+Factory-reset this robot, assigning it a new unique name.
+"""
 function reset!(instance::Robot)
     instance.id = mint_id()
     instance
 end
 
+
+"""
+    name(instance::Robot)
+
+Return this robot's name.
+"""
 function name(instance::Robot)
     id2name(instance.id)
 end
