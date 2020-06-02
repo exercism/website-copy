@@ -51,6 +51,18 @@ A wise student might use `.sort` to simplify the Triangle Inequality rule logic.
 
 Also, some students add test cases for degenerate triangles and implement a method to check that.
 
+Students use of higher-level concepts (like # of matching sides) is also a reasonable solution and a worthy discussion point for this exercise.
+
+```javascript
+isEquilateral() {
+  return this.isValid() && this.matchingSides() === 3
+}
+
+matchingSides() { 
+  // function to calculate the number of matching sides 
+}
+```
+
 #### Approvability
 
 Some students would use `Set` to solve Triangle exercise and they're also okay if using properly.
