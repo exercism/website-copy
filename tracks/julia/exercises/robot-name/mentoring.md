@@ -5,11 +5,11 @@ But there's also some trickyness in the problem, too.
 
 Julia things to get right
 
-- fields should have explicit types (structs with `Any` fields are slower, ref Julia performance guide)
+- fields should have explicit types (structs with `Any` fields are slower, ref [Julia performance guide](https://docs.julialang.org/en/v1/manual/performance-tips/index.html))
 
 Solutions should ideally give an error if they run out of names (instead of looping forever or issuing duplicate names).
 
-There are broadly three ways of solving this (in ascending goodness):
+There are broadly four ways of solving this (in ascending goodness):
 
 1. Generate a random name, but don't worry about collision at all
 2. Generate a random names until you get one that you haven't seen before
