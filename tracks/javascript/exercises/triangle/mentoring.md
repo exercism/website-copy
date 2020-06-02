@@ -51,7 +51,7 @@ A wise student might use `.sort` to simplify the Triangle Inequality rule logic.
 
 Also, some students add test cases for degenerate triangles and implement a method to check that.
 
-Students use of higher-level concepts (like # of matching sides) is also a reasonable solution and a worthy discussion point for this exercise.
+Students use of higher-level concepts (like number of matching sides) is also a reasonable solution and a worthy discussion point for this exercise.
 
 ```javascript
 isEquilateral() {
