@@ -26,7 +26,9 @@ end
 ````
 
 ````
-cmcaine's solution, with memoization
+cmcaine's solution, with a table lookup.
+
+This is unnecessarily fast, but I wanted to introduce the idea and emphasise that the domain of this function is very small, so it is quite practical to just store every output.
 
 ```julia
 function _secret_handshake(code)
@@ -44,10 +46,10 @@ function _secret_handshake(code)
 end
 
 # Memoize
-const lookup = [_secret_handshake(code) for code in 0:0b11111]
+const HANDSHAKES = [_secret_handshake(code) for code in 0:0b11111]
 
 # If we were allowed to return tuples, we wouldn't need the copy()
-secret_handshake(code) = copy(lookup[(code & 0x1f) + 1])
+secret_handshake(code) = copy(HANDSHAKES[(code & 0x1f) + 1])
 ```
 ````
 
@@ -55,7 +57,7 @@ Some interesting solutions showing some Julia functions and features students
 may not be aware of:
 
 ````
-gevis' solution
+gevis' solution, showing logical indexing and broadcasting.
 
 ```julia
 function secret_handshake(n::Integer)
@@ -68,7 +70,9 @@ end
 ````
 
 ````
-Samyak's solution
+Samyak's solution, with a nice, simple for loop.
+
+Declaring `actions` as a const outside of the function avoids allocating it each time, but this could also be avoided by declaring `actions` within the function as a tuple.
 
 ```julia
 const actions = ["wink", "double blink", "close your eyes", "jump"]
