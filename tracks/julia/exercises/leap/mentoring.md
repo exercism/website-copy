@@ -7,9 +7,9 @@ We don't need to bikeshed on this too long. Just prompt them to improve their co
 
 (Formatted so you can copy and paste easily)
 
-- Whenever you have an expression like ``if condition; return true; else; return false``, you can rewrite it as ``return condition``.
-- Obviously you can do as you please, but it is conventional to have one space either side of each operator: ``year % 400 == 0``.
-- Consider writing a truth table for this exercise and see if you can work out what the simplest predicates are and how they could be combined with ``&&`` and ``||``
+- Whenever you have an expression like \`if condition; return true; else; return false\`, you can rewrite it as \`return condition\`.
+- Obviously you can do as you please, but it is conventional to have one space either side of each operator: \`year % 400 == 0\`.
+- Consider writing a truth table for this exercise and see if you can work out what the simplest predicates are and how they could be combined with \`&&\` and \`||\`
 
 Example truth table:
 
@@ -34,4 +34,4 @@ The idea is that you 1) work out what predicates you need and 2) notice that you
 
 ### Talking points
 
-- You might be interested to see the Julia standard library's solution: ``using Dates; @edit isleapyear(4)``
+- You might be interested to see the Julia standard library's solution: \`using Dates; @edit isleapyear(4)\`

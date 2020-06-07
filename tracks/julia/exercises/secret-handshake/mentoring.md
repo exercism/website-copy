@@ -1,6 +1,6 @@
 ### Common suggestions
 
-- Consider bitwise operators?
+- Perhaps this would be better with bitwise operators? Have you tried that yet?
 
 
 ### Example solution
