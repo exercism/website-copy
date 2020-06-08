@@ -28,7 +28,7 @@ export class ResistorColor {
 }
 ```
 
-### Common suggestions
+### Common Suggestions
 
 - The student should create an array containing the list of color strings. This should be `private` and `readonly`.
 
