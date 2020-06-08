@@ -1,4 +1,3 @@
-
 ### Reasonable Solutions
 
 ```typescript
@@ -19,13 +18,10 @@ export class ResistorColor {
     
     const result = this.colors
       .slice(0, this.MINIMUM_ACCEPTABLE_COLORS)
-      .reduce(
-        (accumulator: string, current: string) =>
-          `${accumulator}${this.Colors.indexOf(current)}`,
-          ''
-      );
+      .map((c) => this.Colors.indexOf(c))
+      .join('')
 
-    return parseInt(result);
+    return Number(result);
 
   }
 
@@ -36,7 +32,7 @@ export class ResistorColor {
 
 - The student should create an array containing the list of color strings. This should be `private` and `readonly`.
 
-- Look for an opportunity to put the access modifier `private` keyword in the contructor for the shorthand way of assigning it to an instance variable.
+- Look for an opportunity to put the access modifier `private` keyword in the constructor for the shorthand way of assigning it to an instance variable.
 
 - Ensure the student checks for the error case early on as to short-circuit the program as quickly as possible.
 
@@ -44,4 +40,6 @@ export class ResistorColor {
 
 - Ensure the student uses proper type annotations, but consider suggesting they omit the types in "obvious" cases (such as when immediately assigning the variable to concrete value).
 
-- Any final comments on chosen names, formatting, unncessary code / comments / console.log's
+- Any final comments on chosen names, formatting, unnecessary code / comments / console.log's
+
+- If the student uses `parseInt(n)`, consider recommending the faster `Number(n)` syntax.
