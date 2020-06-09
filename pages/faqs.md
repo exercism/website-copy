@@ -20,7 +20,8 @@ To learn more about what it means for the devil to be in the details, check out 
 ## The Basics
 
 ### I'm lost. Where do I go?
-You're in luck. Here's a [step-by-step guide](https://teams.exercism.io/getting-started) to get you started.
+You're in luck. Here's a [step-by-step guide](https://exercism.io/getting-started) to get you started.
+
 
 If something is still really unclear for you or not working then it might be the same for others so we'd appreciate your suggestions. Refer to [Opening an Issue](#opening-an-issue) below for instructions on how you can help us help others.
 
