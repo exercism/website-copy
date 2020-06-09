@@ -70,7 +70,7 @@ Please check our [Code of Conduct](https://exercism.io/code-of-conduct) for more
 ## Improving Exercism
 
 ### This is great! How do I get involved?
-There are a few different ways - becoming a mentor, managing a language track or reporting (or addressing!) issues on GitHub. You can see more on the [How to Contribute page](https://exercism.io/contribute). Version 3 of Exercism is also being built right now and needs help from track maintainers. The [v3 repository](https://github.com/exercism/v3) has more information.
+There are a few different ways - becoming a mentor, managing a language track or reporting (or addressing!) issues on GitHub. You can see more on the [How to Contribute page](https://exercism.io/contribute). Version 3 of Exercism is also being built right now and needs lots of help. The [v3 repository](https://github.com/exercism/v3) has more information.
 
 ### How do new language tracks get added to the site?
 A new language track gets created when a member of the community takes the lead on it and becomes a maintainer of the track. If you'd like to get involved in helping set one up, there are [instructions here](https://github.com/exercism/request-new-language-track/blob/master/README.md).
