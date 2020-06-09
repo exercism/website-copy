@@ -23,7 +23,8 @@ To learn more about what it means for the devil to be in the details, check out 
 You're in luck. Here's a [step-by-step guide](https://exercism.io/getting-started) to get you started.
 
 
-If something is still really unclear for you or not working then it might be the same for others so we'd appreciate your suggestions. Refer to [Opening an Issue](#opening-an-issue) below for instructions on how you can help us help others.
+If something is still unclear for you or not working then it might be the same for others so we'd appreciate you letting us know. Refer to [Opening an Issue](#opening-an-issue) below for instructions on how you can help us help others.
+
 
 ### I get the error "Sorry, we could not authenticate you from GitHub" when trying to log in. What should I do?
 This means that GitHub isn't willing to verify who you are. That can be because you chose not to give permission or it might be because your GitHub account is not properly configured. A common problem is that you haven't verified your email address on GitHub. You can check that in your [GitHub email settings](https://github.com/settings/emails).
