@@ -1,6 +1,10 @@
-## Things to watch out for
+## Common suggestions
 
-- It is preferred to use \``value(m)`\` rather than \``m.value`\` because fields are generally considered private in Julia. You can import it from Dates with \``using Dates: value`\`
+- It is preferred to use \``value(m)`\` rather than \``m.value`\` because fields are generally considered private in Julia. Defining an API in terms of functions makes it much easier for other structs to implement your interface or for you to refactor your stuff. You can import the function from Dates with \``using Dates: value`\`
+- \``lpad`\` is totally fine, but if you're already familiar with the \`printf\` language from C or elsewhere, you might like to take a look at the \`Printf\` stdlib
+
+
+## Things to watch out for
 
 If the student has a field for both hours and minutes, then
 the trickiest case is when minutes are less than and not a multiple of 60 (e.g. -61).
@@ -9,6 +13,7 @@ Students often end up doing something quite convoluted to solve this.
 Students often use `%` or `rem` and a subtraction when `mod` is probably what they want.
 
 Your humble correspondent thinks that this is best solved by converting the hours to minutes, as is done in OTDE's solution below.
+
 
 ## Fun tricks
 
