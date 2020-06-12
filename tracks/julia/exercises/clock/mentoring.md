@@ -97,7 +97,7 @@ Base.show(io::IO, clock::Clock) =
 ```
 ````
 
-bovine3dom's solution which avoids the subtraction in dbalman's soltion by using floor division:
+bovine3dom's solution which avoids the subtraction in dbalman's solution by using floor division:
 
 ````
 ```julia
