@@ -1,6 +1,8 @@
 ### Common suggestions
 
 - Perhaps this would be better with bitwise operators? Have you tried that yet?
+- You can save some allocations if you use a tuple rather than a vector. If you would like to do that, just swap those [] for ().
+- \``reverse!`\` is an in-place variant on \``reverse`\` that you might prefer to use to reduce allocations.
 
 
 ### Example solution
@@ -49,7 +51,7 @@ end
 const HANDSHAKES = [_secret_handshake(code) for code in 0:0b11111]
 
 # If we were allowed to return tuples, we wouldn't need the copy()
-secret_handshake(code) = copy(HANDSHAKES[(code & 0x1f) + 1])
+secret_handshake(code) = copy(HANDSHAKES[(code & 0b11111) + 1])
 ```
 ````
 
@@ -58,6 +60,7 @@ may not be aware of:
 
 ````
 gevis' solution, showing logical indexing and broadcasting.
+They could also have used `digits(Bool, n; base=2, pad=5)` and avoided the broadcast.
 
 ```julia
 function secret_handshake(n::Integer)
