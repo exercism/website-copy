@@ -1,6 +1,6 @@
 ## Things to watch out for
 
-- It is preferred to use \``value(m)`\` rather than \``m.value`\`. Fields are generally considered private in Julia. You can import \``value`\` from Dates.
+- It is preferred to use \``value(m)`\` rather than \``m.value`\` because fields are generally considered private in Julia. You can import it from Dates with \``using Dates: value`\`
 
 If the student has a field for both hours and minutes, then
 the trickiest case is when minutes are less than and not a multiple of 60 (e.g. -61).
