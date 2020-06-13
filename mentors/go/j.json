@@ -22,5 +22,13 @@
     "link_url": "https://www.linkedin.com/in/jaime-m88/",
     "avatar_url": "http://2.gravatar.com/avatar/1b270f85560f475fb57ff4d999587978?size=800",
     "bio": "I first started working with Go over 4 years ago writing REST APIs, I fell in love! I have been working with it ever since. I love spreading the Go-love, I hope can do that here too!"
+  },
+  {
+    "github_username": "jtxyz",
+    "name": "Joseph Taylor",
+    "link_text": "LinkedIn",
+    "link_url": "https://www.linkedin.com/in/joetayl0r/",
+    "avatar_url": "https://www.gravatar.com/avatar/0dd5f66a0024ab5822d7afdd53273fc7.jpg?s=224",
+    "bio": "I've been a professional software engineer since 2009 and I've benefited from the support of so many people over the years. Hoping to give something back to the community by mentoring here!"
   }
 ]
