@@ -104,3 +104,63 @@ function name(instance::Robot)
 end
 ```
 ````
+
+The solution above generates the names and shuffles them in advance,
+which is the key concept for a constant-time solution.
+One issue with this technique is that the pregenerated names use quite a lot of memory if you encode them as strings,
+fortunately, we can reduce the memory footprint by encoding the names differently.
+
+While this particular technique probably won't transfer to many other problems,
+it is often useful to consider the tradeoffs of different ways of representing information.
+
+Converting names to integers and back again might seem tricky at first.
+A decent intuition is that the names are a number, but in an inconsistent base.
+Just as 153 is 3 + 5 * 10 + 1 * 100,
+"AC5" could be interpreted as a number with two digits in base 26 and one in base 10:
+0 + 2 * 26 + 5 * 26 * 10
+(I'm interpreting 'A' as 0 here, and I'm treating the number as little-endian, both are arbitrary choices).
+
+Worked example:
+
+````
+```julia
+name = "AB123"
+tup = (0, 1, 1, 2, 3)
+int = 0 +
+      1 * 26 +
+      1 * 26^2 +
+      2 * 26^2 * 10 +
+      3 * 26^2 * 10^2
+```
+````
+
+You can convert the integers back into a name by repeated division:
+
+````
+```julia
+"""
+    id2name(id)
+
+Convert an integer name to a human-friendly name.
+"""
+function id2name(id)
+    id, c1 = divrem(id, 26)
+    id, c2 = divrem(id, 26)
+    id, d1 = divrem(id, 10)
+    d3, d2 = divrem(id, 10)
+    return join(('A' + c1,
+                 'A' + c2,
+                 d1, d2, d3))
+end
+
+# and the inverse
+function name2id(name)
+    id = name[1] - 'A'
+    id += (name[2] - 'A') * 26
+    id += parse(Int, name[3]) * 26^2
+    id += parse(Int, name[4]) * 26^2 * 10
+    id += parse(Int, name[5]) * 26^2 * 10^2
+    id
+end
+```
+````
