@@ -134,5 +134,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I enjoy using Python for work and fun.  There's no other language that allows me to go from an idea to working code as fast."
+  },
+  {
+    "github_username": "skhillon",
+    "name": "Sarthak Khillon",
+    "link_text": "Website",
+    "link_url": "http://skhillon.me/",
+    "avatar_url": null,
+    "bio": "I like Python for development speed and readability. I've used it for data science, web scraping, and as a backend language for my projects. I'm excited to help mentor new Python programmers!"
   }
 ]
