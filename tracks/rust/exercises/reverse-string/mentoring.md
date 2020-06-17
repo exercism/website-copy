@@ -71,11 +71,11 @@ If they use variable(s):
 We can `.collect()` directly into a `String` without storing the data in a variable.
 ```
 
-If they use a mutatable variable and loop:
+If they use a mutable variable and loop:
 ```
 I'm glad you figured out a solution!
 
-The methodology of creating a mutatable variable and modifying it from a loop is an antiquated way of thinking, though.
+The methodology of creating a mutable variable and modifying it from a loop is an antiquated way of thinking, though.
 
 We can do this in a more Rust-like/idiomatic and concise manner by just using iterators and chained method calls :)
 
