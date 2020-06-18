@@ -20,8 +20,7 @@ Ideally within a week of a learner submitting their solution to help maintain th
 If you're not sure what feedback to give, paste a link to the solution (e.g. `https://exercism.io/mentor/solutions/...`) on the relevant language channel on Slack and brainstorm some ideas with other mentors.
 
 ### How can I improve my mentoring skills?
-This is something we're extremely
-passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples. Eventually we hope to have a guide for each track.
+This is something we're extremely passionate about helping you with and we are in the process of writing some awesome guides on giving great feedback with lots of examples. Eventually we hope to have a guide for each track.
 
 In the meantime, here are some recommended resources:
 
