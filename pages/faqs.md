@@ -22,15 +22,16 @@ To learn more about what it means for the devil to be in the details, check out 
 ### I'm lost. Where do I go?
 You're in luck. Here's a [step-by-step guide](https://exercism.io/getting-started) to get you started.
 
-
 If something is still unclear for you or not working then it might be the same for others so we'd appreciate you letting us know. Refer to [Opening an Issue](#opening-an-issue) below for instructions on how you can help us help others.
-
 
 ### I get the error "Sorry, we could not authenticate you from GitHub" when trying to log in. What should I do?
 This means that GitHub isn't willing to verify who you are. That can be because you chose not to give permission or it might be because your GitHub account is not properly configured. A common problem is that you haven't verified your email address on GitHub. You can check that in your [GitHub email settings](https://github.com/settings/emails).
 
 ### How do I delete my account?
 You can delete your account by following the link at the bottom of your [settings page](https://exercism.io/my/settings). If your issue is with emails and notifications you can adjust that in [your personal preferences](https://exercism.io/my/settings/preferences/edit).
+
+### What happened to my Team from the old site?
+We now have a [dedicated Teams site](https://teams.exercism.io).
 
 ## Exercism Command-line Client
 
@@ -80,9 +81,6 @@ A new language track gets created when a member of the community takes the lead 
 ### Why are issues taking a while to get resolved?
 Version 3 of Exercism is being actively worked on, which means that contributors and maintainers are splitting their time between the current version (V2) and the next.
 
-### What happened to my Team from the old site?
-We have a brand new dedicated Teams website coming soon. We will tweet out as soon as it's launched. Follow us at [@exercism_io](https://twitter.com/exercism_io).
-
 ## Opening an Issue
 
 Before submitting an issue, be sure to check the relevant GitHub issue tracker to see if it has already been reported or resolved:
@@ -102,9 +100,13 @@ Make sure to include the following information:
   1. Instructions on how to reproduce the issue
   1. If applicable, reference to any related issue using its issue number (formatted like #1203)
 
-### What if there is an issue with instructions or language on the website?
-  If you have spotted a typo or if you have a suggestion for clearer language or instructions, then [create an issue for Exercism Website Copy](https://github.com/exercism/website-copy/issues/new) with the following information:
+### What if there is an issue with language on the website?
+  If your issue pertains to an exercise in your language track, then please find the correct language track [from this list](https://github.com/search?q=topic%3Aexercism-track+org%3Aexercism+fork%3Atrue) and submit an issue there. Please specify if the issue is with the instructions or something language specific, using the template below.
+  
+  If you have spotted a typo or if you have a suggestion for clearer language or instructions on the general website, then [create an issue for Exercism Website Copy](https://github.com/exercism/website-copy/issues/new) with the following information:
 
   1. Link to the page where the issue is
   1. Explanation of what the mistake is or what is unclear
   1. Your proposed change
+  
+  
