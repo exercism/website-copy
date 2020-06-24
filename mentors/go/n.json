@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "github_username": "NautiluX",
+    "name": "Manuel Dewald",
+    "link_text": "Blog",
+    "link_url": "https://ntlx.org",
+    "avatar_url": null,
+    "bio": "Developing Go for fun and profit at Red Hat"
+  }
+]
