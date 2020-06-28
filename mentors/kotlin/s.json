@@ -22,5 +22,13 @@
         "link_url": null,
         "avatar_url": null,
         "bio": "After being stuck with Java for 8 years, Kotlin was the fresh breath of joy I needed."
+    },
+    {
+        "github_username": "sup95",
+        "name": "Supriya Srivatsa",
+        "link_text": "Twitter",
+        "link_url": "https://twitter.com/SupriyaSrivatsa",
+        "avatar_url": "https://twitter.com/SupriyaSrivatsa/photo",
+        "bio": "I love how pragmatic Kotlin is, and the elegance it brings with it. I've worked with Kotlin on Android and backend systems, and always appreciate how concise yet expressive the language is. Always a joy programming in Kotlin!"
     }
 ]
