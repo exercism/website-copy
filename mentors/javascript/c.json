@@ -54,5 +54,13 @@
     "link_url": "https://blog.ekohordan.com",
     "avatar_url": null,
     "bio": "I am a full stack software developer with experience primarily in the JavaScript stack."
+  },
+  {
+    "github_username": "cema-sp",
+    "name": "Semyon Pisarev",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I enjoy mentoring developers. Have years of hands-on experience in Code Reviews, Architecture, Ruby, JavaScript."
   }
 ]
