@@ -29,7 +29,7 @@ class Gigasecond {
 - Define a constant (`static final`) for gigasecond.
 - Use [Java 7 Underscores in Numeric Literals](https://docs.oracle.com/javase/7/docs/technotes/guides/language/underscores-literals.html) to make the gigasecond constant easier to read.
   - Other good solutions are `(long) 1e9` (for those used to scientific notation) and `1000 * 1000 * 1000` (for those who are stuck with Java 6).
-- Use constructor chaining to avoid code duplication.
+- Use [constructor chaining](https://beginnersbook.com/2013/12/java-constructor-chaining-with-example/) to avoid code duplication.
 - Use [`LocalDate.atStartOfDay()`](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#atStartOfDay--) to convert a `LocalDate` to a `LocalDateTime`.
 
 
