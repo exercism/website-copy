@@ -111,7 +111,7 @@ namespace space_age
  * Use `constexpr` for the functions.
 ### Talking points
  * `explicit` constructor so you don't accidently do a type casting. [examples](https://en.cppreference.com/w/cpp/language/explicit).
- * Prefer intialization over assinment. [Good explanation](https://stackoverflow.com/a/7350783)
+ * Prefer initialization over assignment. [Good explanation](https://stackoverflow.com/a/7350783)
  * Being explicit about units.
  * `signed` vs. `unsigned`.
  ** `unsigned` can give some suprising results. [example](isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es102-use-signed-types-for-arithmetic)
