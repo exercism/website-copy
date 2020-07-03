@@ -114,7 +114,7 @@ namespace space_age
  * Prefer initialization over assignment. [Good explanation](https://stackoverflow.com/a/7350783)
  * Being explicit about units.
  * `signed` vs. `unsigned`.
- ** `unsigned` can give some suprising results. [example](isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es102-use-signed-types-for-arithmetic)
+   * `unsigned` can give some surprising results. [example](isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es102-use-signed-types-for-arithmetic)
  * `double` vs. `float`
  * Implementation in header:
    * This will turn the functions to be implicitly inline, and allow the compiler to do some optimizations on these very small functions.
