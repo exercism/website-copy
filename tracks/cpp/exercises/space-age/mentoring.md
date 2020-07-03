@@ -59,7 +59,7 @@ namespace space_age
 
     double space_age::on_planet(const planet p) const
     {
-        return _seconds * 1.0 / static_cast<std::int64_t>(p);
+        return static_cast<double>(_seconds) / static_cast<std::int64_t>(p);
     }
 
     double space_age::on_earth() const
