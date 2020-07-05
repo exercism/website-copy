@@ -14,5 +14,13 @@
         "link_url": "http://howtosurviveasaprogrammer.blogspot.com",
         "avatar_url": null,
         "bio": "I'm working with cpp with years and I'm really fighting to achieve a better code quality all around the world, so I'm happy to help"
-    } 
+    },
+    {
+        "github_username": "llcoolsouder",
+        "name": "Lonnie Souder II",
+        "link_text": null,
+        "link_url": null,
+        "avatar_url": null,
+        "bio": "I've been working with C++ for 6 years now, and it is my main weapon at work where I focus on algorithm optimization for computer vision applications. I also have an interest in AR/VR, computer graphics, and gaming."
+    }
 ]
