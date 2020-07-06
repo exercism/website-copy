@@ -31,6 +31,10 @@ namespace leap {
   - a year is a multiple of 4, 100, and 400
 - Don't use `if`/`else` branching to return a `bool`. Just return a boolean expression.
 - Don't try to rely on order of operations too much. Just use parentheses to make everything obvious.
-
+- Make sure you enabled **all** tests.
 
 ### Talking points
+- Argument name vs no argument name in declaration
+- Meaningful argument names
+- Using `unsigned` integer types
+- `!(year % 4)` vs `year % 4 == 0`
