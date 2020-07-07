@@ -1,6 +1,6 @@
 _This page deals with the various individual tasks that the team are focused on. Before reading this, you may be interested in reading about [Exercism's Strategy](/strategy) to place the items below in context._
 
-This is a rough roadmap for Exercism. It is split into our short term goals (<12months) and our longer-term goals, which will be dependant on the success of our short-term objectives. Each section is split roughly in priority order, and sections are ordered as per our general priorities.
+This is a rough roadmap for Exercism. It is split into our short term goals (<12 months) and our longer-term goals, which will be dependant on the success of our short-term objectives. Each section is split roughly in priority order, and sections are ordered as per our general priorities.
 
 ## Short-term goals
 
@@ -15,7 +15,7 @@ This is a rough roadmap for Exercism. It is split into our short term goals (<12
 
 ### Curriculum
 
-We are actively working to explore what an exemplar syllabus would look like for the Ruby track, considering things such as  learning pathways, goals, mentoring-burden. We will then explore where the gaps are and what new exercises might be created as part of this. Once we have made some basic progress we will widen the discussion to include a small set of sample tracks with active maintainers.
+We are actively working to explore what an exemplar syllabus would look like for the Ruby track, considering things such as learning pathways, goals, mentoring-burden. We will then explore where the gaps are and what new exercises might be created as part of this. Once we have made some basic progress we will widen the discussion to include a small set of sample tracks with active maintainers.
 
 ### Mentoring Tools
 
@@ -37,13 +37,13 @@ We are actively working to explore what an exemplar syllabus would look like for
 
 ### Profiles and public solutions
 
-- **Allow users to change which iteraton is published:** At the moment only the most recent submisison is published. We will allow users to choose any of the iterations to make public.
+- **Allow users to change which iteration is published:** At the moment only the most recent submission is published. We will allow users to choose any of the iterations to make public.
 - **Allow deletion of iterations:** Often people submit iterations by default. This will allow people to delete them. [#3848](https://github.com/exercism/exercism/issues/3848)
 - **Add display name option:** [4365](https://github.com/exercism/exercism/issues/4365)
 - **Enable commenting on community solutions:** We are going to let people decide whether want comments enable on a per solution basis.
 
 ### Maintainer Tools
-We want to update the new website to allow for an easy and pleasent experience for track maintainers and will build out tools within the UI to allow them to more easily experiment with track setups.
+We want to update the new website to allow for an easy and pleasant experience for track maintainers and will build out tools within the UI to allow them to more easily experiment with track setups.
 
 ### Accessibility
 
@@ -65,7 +65,7 @@ We see this as a long-term goal and not something that will be implemented in th
 
 ### Automated code analysis of submissions
 
-We used to have a bot called Rikki that used the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) to work out what anti-patterns were being used and provide an automatic comment. We want to evolve this to provide a suggested comment to mentors that they can give to students (we may sometimes choose to make it automatic - we need to explore this futher). We imagine using a mixture of Machine Learning and AST analysis to do this and will probably prototype it on 1-3 tracks first.
+We used to have a bot called Rikki that used the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) to work out what anti-patterns were being used and provide an automatic comment. We want to evolve this to provide a suggested comment to mentors that they can give to students (we may sometimes choose to make it automatic - we need to explore this further). We imagine using a mixture of Machine Learning and AST analysis to do this and will probably prototype it on 1-3 tracks first.
 
 ## Long-term goals
 
@@ -75,4 +75,4 @@ Remove the requirement to install the CLI allow people to complete the exercises
 
 ### Multilingual support
 
-We really want to support multiple languages, but doing this is a huge, complex project, which would involve translating the exercises, website, etc as well as being able to recruit mentors into a specific language. We're currently exploring what a first stage of this might look like for PT-BR [here](https://github.com/exercism/exercism/issues/4207).
+We really want to support multiple languages, but doing this is a huge, complex project, which would involve translating the exercises, website, etc., as well as being able to recruit mentors into a specific language. We're currently exploring what a first stage of this might look like for PT-BR [here](https://github.com/exercism/exercism/issues/4207).
