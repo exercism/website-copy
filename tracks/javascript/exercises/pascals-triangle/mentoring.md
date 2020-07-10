@@ -19,8 +19,9 @@ export const rows = levels => {
 
 ```javascript
 export const rows = size => {
-  if (size === 0)
+  if (size === 0) {
     return [];
+  }
 
   const result = [[1]];
 
