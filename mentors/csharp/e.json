@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": "https://www.gravatar.com/avatar/0b9f5cb6ffe4257a0a2167fa4106e6f7.jpg",
     "bio": "I'm a programmer and I've been working as a professional since 2009. Generally, I worked with Microsoft technologies. I have developed various projects including e-commerce, e-learning, job finding site and industrial automation."
+  },
+  {
+    "github_username": "echen805",
+    "name": "Edward Chen",
+    "link_text": "Personal Site",
+    "link_url": "https://edward-chen.com",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/4022057",
+    "bio": "I'm a developer that mostly works in C# and have been working with it since 2017. Given all the resources that we have, I want to help and give back to the community that has helped me so much."
   }
 ]
