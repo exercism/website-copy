@@ -16,6 +16,14 @@
     "bio": "I am a software engineer with a passion for testing. If you have any questions about the track or the language in general, feel free to ask; I'd love to hear them."
   },
   {
+    "github_username": "jamessouth",
+    "name": "James South",
+    "link_text": "My GitHub",
+    "link_url": "https://github.com/jamessouth",
+    "avatar_url": null,
+    "bio": "I'm looking for my first job! I love working with Go, I'm about 2/3 through the Go track, and I have started contributing Go exercises for Exercism v3."
+  },
+  {
     "github_username": "jaimemartinez88",
     "name": "Jaime Martinez",
     "link_text": "LinkedIn",
