@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I like to talk about code."
+  },
+  {
+    "github_username": "mikemurray86",
+    "name": "Mike Murray",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I use python to manage infrastructure an an enterprise environment as well as for any side projects that catch my attention."
   }
 ]
