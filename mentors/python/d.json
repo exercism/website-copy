@@ -51,5 +51,13 @@
     "link_url": "http://diptokarmakar.me/",
     "avatar_url": null,
     "bio": "I love to do programming with python and build new things with solving the problems. Besides that also explore new things."
+  },
+  {
+    "github_username": "dustin-heckmann",
+    "name": "Dustin Heckmann",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been writing Python code for 10+ years. I value clean, readable code and Python helps me achieve this."
   }
 ]
