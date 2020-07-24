@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love python and is the main programming language that I use in everyday, it's easy and beautiful language. I want to help everyone write more pythonic codes!"
+  },
+  {
+    "github_username": "Lord-sarcastic",
+    "name": "Ayodeji Adeoti",
+    "link_text": "Github",
+    "link_url": "https://github.com/Lord-sarcastic",
+    "avatar_url": null,
+    "bio": "Python is my natural go-to language for a lot of things. I translate lots of its concepts into other languages. I believe everyone needs a language that can really 'clear' their head when working."
   }
 ]
