@@ -62,5 +62,13 @@
     "link_url": "https://github.com/CloudySnake",
     "avatar_url": null,
     "bio": "I am a Python Data Engineer who loves all things AWS, especially serverless. The ease with which you can do things with Python is one of the reasons I love it.  Looking forward to sharing some knowledge and learning new things with exercism"
+  },
+  {
+    "github_username": "corebreaker",
+    "name": "Frederic Meyer",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://www.gravatar.com/avatar/94f2c7b7448e27de9b811d5d5d1fed59?s=128",
+    "bio": "French developper for more than 20 years in Management Systems, i was insterested in several languages and technologies like C++, Java, PHP, etc. I used Python in many projected, i admit that it offer a solution quicky to many problems."
   }
 ]
