@@ -70,5 +70,13 @@
     "link_url": "https://www.linkedin.com/in/tklarryonline/",
     "avatar_url": "https://www.dropbox.com/s/tjwyw81intjlnnx/2.jpg",
     "bio": "I am a full-stack software engineer using Python and JavaScript for over 5 years. I love doing things with Python and want to give back to the community."
+  },
+  {
+    "github_username": "The-Heyman",
+    "name": "Alex Heyman",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I have 3 years experience in Python and still learning to improve. I currently work as a cloud automation engineer at Maersk in Copenhagen, Denmark. I am here to help you succeed in your python journey!" 
   }
 ]
