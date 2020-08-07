@@ -37,7 +37,10 @@ rotate(n, itr) = map(c -> rotate(n, c), itr)
 
 Breakdown of `'a' + (c - 'a' + n) % 26`:
 
-- This works because adding an `Integer` to a `Char` returns a `Char` shifted by the integer.
+This works because:
+
+1. subtracting one character from another gives the distance between them as an `Int`
+1. adding an `Integer` to a `Char` returns a `Char` shifted by the integer
 
 ````
 ```
