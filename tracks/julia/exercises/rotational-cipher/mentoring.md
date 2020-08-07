@@ -49,7 +49,9 @@ Breakdown of `'a' + (c - 'a' + n) % 26`:
 ```
 'a' + (c - 'a' + n) % 26
 └┬┘   └────────┬───────┘
- │             └─ returns an Int that specifies how much the character needs to be shifted compared to the beginning of the alphabet ('a').
+ │             └─ returns an Int that specifies how much the
+ │                character needs to be shifted compared to
+ │                the beginning of the alphabet ('a').
  └─ The beginning/base of the alphabet.
 ```
 ````
