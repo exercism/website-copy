@@ -38,5 +38,13 @@
     "link_url": "https://medium.com/@chvanikoff",
     "avatar_url": "https://avatars2.githubusercontent.com/u/452592?s=460&v=4",
     "bio": "I'm a long-time OTP developer (Erlang/Elixir with a strong focus on Elixir for the past 4 years) and will be glad to help anybody to dive into the languages."
+  },
+  {
+    "github_username": "ChristianTovar",
+    "name": "Christian Tovar",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a backend engineer interested in distributed systems and functional programming. Elixir has become my favorite programming language due to it's elegant syntax, resilience and performance. I hope to keep using it profesionally for many years and have the chance to experience how it's ecosystem expands as the years go on."
   }
 ]

@@ -28,6 +28,7 @@ Variations include:
 - Using query time sort (`grade`)
 - Using destructuring or `.concat` to duplicate `roster`/`grade`
 - Using `JSON.parse(JSON.stringify(...))` to deep clone the `roster`
+- Using `Object.entries` instead of `Object.keys`
 
 ### Common suggestions
 

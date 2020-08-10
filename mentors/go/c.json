@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": "https://avatars0.githubusercontent.com/u/987305",
     "bio": "I'm a backend engineer and a long time rubyist turned gopher. I have really enjoyed learning Go and embraced its simplicity."
+  },
+  {
+    "github_username": "corebreaker",
+    "name": "Frederic Meyer",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://www.gravatar.com/avatar/94f2c7b7448e27de9b811d5d5d1fed59?s=128",
+    "bio": "French developper for more than 20 years in Management Systems, i was insterested in several languages and technologies like C++, Java, PHP, etc. I found out the GoLang and i enjoyed its simplicity for solving complex problems."
   }
 ]

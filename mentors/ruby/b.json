@@ -31,5 +31,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Mohnish is a programmer who cares about - programming as a craft, mentorship, diversity, inclusiveness and empathy. Away from work, he enjoys contributing to open source, blogging, and has even organized Ruby user group meetups in the past. He's also learning more of Elixir whenever he gets an opportunity."
+  },
+  {
+    "github_username": "biancapower",
+    "name": "Bianca Power",
+    "link_text": "biancapower.com",
+    "link_url": "https://biancapower.com/",
+    "avatar_url": "https://assets.gitlab-static.net/uploads/-/system/user/avatar/6181646/avatar.png",
+    "bio": "Passionate about Ruby, Open Source, vim and git. I love helping people learn how to code, and am privileged to help people shift careers into tech through my role as a bootcamp educator at Coder Academy, Sydney."
   }
 ]

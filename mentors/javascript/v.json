@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Geek at heart who loves solving complex problems and creating clean, easy to use applications"
+  },
+  {
+    "github_username": "vunderkind",
+    "name": "Justin Irabor",
+    "link_text": "Portfolio",
+    "link_url": "https://justinirabor.com",
+    "avatar_url": null,
+    "bio": "Functional programmer in the streets, creative coder in the sheets. Looking to help while learning!"
   }
 ]

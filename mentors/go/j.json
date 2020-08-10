@@ -16,11 +16,27 @@
     "bio": "I am a software engineer with a passion for testing. If you have any questions about the track or the language in general, feel free to ask; I'd love to hear them."
   },
   {
+    "github_username": "jamessouth",
+    "name": "James South",
+    "link_text": "My GitHub",
+    "link_url": "https://github.com/jamessouth",
+    "avatar_url": null,
+    "bio": "I'm looking for my first job! I love working with Go, I'm about 2/3 through the Go track, and I have started contributing Go exercises for Exercism v3."
+  },
+  {
     "github_username": "jaimemartinez88",
     "name": "Jaime Martinez",
     "link_text": "LinkedIn",
     "link_url": "https://www.linkedin.com/in/jaime-m88/",
     "avatar_url": "http://2.gravatar.com/avatar/1b270f85560f475fb57ff4d999587978?size=800",
     "bio": "I first started working with Go over 4 years ago writing REST APIs, I fell in love! I have been working with it ever since. I love spreading the Go-love, I hope can do that here too!"
+  },
+  {
+    "github_username": "jtxyz",
+    "name": "Joseph Taylor",
+    "link_text": "LinkedIn",
+    "link_url": "https://www.linkedin.com/in/joetayl0r/",
+    "avatar_url": "https://www.gravatar.com/avatar/0dd5f66a0024ab5822d7afdd53273fc7.jpg?s=224",
+    "bio": "I've been a professional software engineer since 2009 and I've benefited from the support of so many people over the years. Hoping to give something back to the community by mentoring here!"
   }
 ]

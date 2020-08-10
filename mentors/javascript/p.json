@@ -30,5 +30,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a full-time software developer for ClickBus, mostly focused on frontend using frameworks like Vue and Symfony. On top of that I am quite familiar with Clojure, PHP and NodeJS when it comes to backend."
+  },
+  {
+    "github_username": "Phil-Reck",
+    "name": "Philip Matunda",
+    "link_text": null,
+    "link_url": "https://philipmatunda.netlify.com",
+    "avatar_url": null,
+    "bio": "I'm a final year student at Kabarak University, where I also mentor Web Developer Student. I love solving problems, I'm specialized in Front-end Development. I also love Javascript, I'm happy to learn/share new things always:)"
   }
 ]
