@@ -225,6 +225,8 @@ Check the installed version with:
 exercism version
 ```
 
+It should be at least version 3.x
+
 If you do not have sudo access, you will need to [[install via source code-&gt;Linux tarball]].
 
 If you don't have snap installed on your system, you can [follow this tutorial](https://tutorials.ubuntu.com/tutorial/basic-snap-usage). If you are not familiar with snaps, you may want to [learn more about them](https://www.fosslinux.com/10380/what-are-snaps-and-how-to-install-it-on-various-linux-distributions.htm) and [how to manage them](https://hackernoon.com/managing-ubuntu-snaps-the-stuff-no-one-tells-you-625dfbe4b26c).
@@ -790,7 +792,7 @@ In order to for us to run the exercism program from anywhere in our terminal, we
 In your terminal, paste in the following to create the `bin` folder:
 
 ```
-echo "export PATH=~/bin:$PATH" &gt;&gt; ~/.bash_profile
+echo 'export PATH=~/bin:$PATH' &gt;&gt; ~/.bash_profile
 ```
 
 To verify if the `$PATH` variable was updated, paste the following command in your terminal:
@@ -863,7 +865,8 @@ Also, all computers with more than 4 GB of memory has to have a 64 bit processor
 To install exercism via Homebrew run:
 
 ```
-brew update &amp;&amp; brew install exercism
+brew update
+brew install exercism
 ```
 
 To install manually, download the appropriate version of exercism based on your processor architecture at the &lt;a href="https://github.com/exercism/cli/releases/latest" target="_blank"&gt;releases page&lt;/a&gt;, then extract the archive and put the binary in your path.
@@ -873,6 +876,8 @@ Check the installed version with:
 ```
 exercism version
 ```
+
+It should be at least version 3.x
 
 ----
 ## Have you installed Exercism on your computer?
