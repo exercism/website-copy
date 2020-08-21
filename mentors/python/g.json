@@ -30,5 +30,13 @@
         "link_url": null,
         "avatar_url": "",
         "bio": "I was a data scientist professionally for 7 years, using python. Then I dropped the modelling stuff and have spent the last 2 years focusing on becoming a better software developer. Currently working in Java, Go, Python."
+    },
+    {
+        "github_username": "grrlic",
+        "name": "Constantius Neil",
+        "link_text": "DEV.to",
+        "link_url": "https://dev.to/grrlic",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/18105757?s=460&u=f7cdb5c190ce4f41df58c59cc3f79f1b1085813e&v=4",
+        "bio": "Discendo Discimus. Forwarding after digesting."
     }
 ]
