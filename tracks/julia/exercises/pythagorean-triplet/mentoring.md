@@ -29,7 +29,7 @@ end
 
 Telling Julia the type of `triplets` allows it to store the values without indirection. Without an annotation some (all?) version of Julia will type `triplets` as `Vector{Any}`, which means a vector of pointers to heap-allocated objects, which is slower.
 
-We could tighten up the bounds above, if we wanted:
+A small improvement is to tighten up the loop bounds using some simple arithmetic and ceiling division (`cld`):
 
 ```
     # Lower bound because the smallest triple is 3, 4, 5.
@@ -38,7 +38,7 @@ We could tighten up the bounds above, if we wanted:
         for b in a+1:cld(2n, 3)
 ```
 
-A linear time algorithm derived by solving some simultaneous equations:
+This linear time algorithm derived by solving some simultaneous equations is a much greater improvement:
 
 ````
 ```julia
