@@ -60,8 +60,11 @@ function pythagorean_triplets(n)
         b = (n^2 - 2n * a) / (2 * (n - a))
         if a < b && isinteger(b)
             c = n - a - b
-            # TODO: prove that b < c to remove this check.
-            b < c && push!(triplets, (a, b, c))
+            # Proof that b < c:
+            # Let b = c. Then a^2 + b^2 = c^2 ≡ a^2 = 0 but we know that a ≠ 0.
+            # Let b > c. a^2 + b^2 = c^2 ≡ a^2 = c^2 - b^2.
+            #    If b > c, a^2 < 0, but that is impossible for real numbers.
+            push!(triplets, (a, b, c))
         end
     end
     return sort!(triplets)
