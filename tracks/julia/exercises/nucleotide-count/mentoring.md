@@ -54,7 +54,7 @@ While this solution is easy to make threaded or parallel by e.g. replacing `coun
 ````
 ```julia
 function count_nucleotides(strand)
-    counts = Dict(base => count(==(base), strand) for base in "ACGT")
+    counts = Dict((base => count(==(base), strand)) for base in "ACGT")
     if sum(values(counts)) != length(strand)
         throw(DomainError(strand, "only A, C, G and T are valid nucleotides"))
     end
