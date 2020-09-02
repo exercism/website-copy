@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a software engineer, educator and perpetual optimist.  I've been programming in Ruby professionally for over 10 years, and taught Ruby/Rails for 4 of those years." 
+  },
+  {
+    "github_username": "EmilieHumbert",
+    "name": "Emilie Humbert",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a self-taught front-end developer working mainly with JavaScript and React. I believe that learning is a lifelong process and would love to help others on their journey."
   }
 ]
