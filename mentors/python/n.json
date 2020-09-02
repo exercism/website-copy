@@ -54,5 +54,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I think Python is a great language for doing everyday tasks, improving mental models fundamental to computer science, and implementing really cool projects.  I use it every day, and encourage others to start thinking about how it can improve their lives."
+  },
+  {
+    "github_username": "n8henrie",
+    "name": "Nathan Henrie",
+    "link_text": "n8henrie.com",
+    "link_url": "https://n8henrie.com",
+    "avatar_url": null,
+    "bio": "I am a non-tech professional that picked up Python as my first programming language, mostly out of curiousity. 10 years later, it has become a tool that I use regularly for data processing, home automation, small webapps, and general scripting."
   }
 ]
