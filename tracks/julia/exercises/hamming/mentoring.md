@@ -15,7 +15,7 @@ end
 ```
 ````
 
-There's a nice solution with mapreduce, too, especially nice because mapreduce makes it easy to iterate multiple collections at the same time.
+There's a nice solution with mapreduce, too, especially nice because mapreduce makes it easy to iterate multiple collections at the same time without `zip`.
 
 ````
 [OTDE's solution](https://exercism.io/tracks/julia/exercises/hamming/solutions/eb84c62622fd41c0b92ddfae03ef9f01)
