@@ -22,7 +22,7 @@ There's a nice solution with mapreduce, too, especially nice because mapreduce m
 
 ```julia
 function distance(s1, s2)
-    length(s1) != length(s2) && throw(ArgumentError("Sequences must have the same length"))
+    length(s1) ≠ length(s2) && throw(ArgumentError("Sequences must have the same length"))
     mapreduce(≠, +, s1, s2, init = 0)
 end
 ```
