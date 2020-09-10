@@ -15,14 +15,14 @@ end
 ```
 ````
 
-There's a nice solution with mapreduce, too, especially nice because mapreduce makes it easy to iterate multiple collections at the same time.
+There's a nice solution with mapreduce, too, especially nice because mapreduce makes it easy to iterate multiple collections at the same time without `zip`.
 
 ````
 [OTDE's solution](https://exercism.io/tracks/julia/exercises/hamming/solutions/eb84c62622fd41c0b92ddfae03ef9f01)
 
 ```julia
 function distance(s1, s2)
-    length(s1) != length(s2) && throw(ArgumentError("Sequences must have the same length"))
+    length(s1) ≠ length(s2) && throw(ArgumentError("Sequences must have the same length"))
     mapreduce(≠, +, s1, s2, init = 0)
 end
 ```
