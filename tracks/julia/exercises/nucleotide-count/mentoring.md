@@ -5,6 +5,14 @@ Students that use four counting variables rather than mutating a dict should be 
 We shouldn't require the mutating-a-dict strategy because it's actually pretty slow.
 
 
+### Common suggestions
+
+(Formatted so you can copy and paste easily)
+
+- Btw, you can initialise the Dict with a generator, if you like: \`Dict(base => 0 for base in "ACGT")\`
+- In Julia, the properties of objects are generally considered private unless documented otherwise, so we generally prefer \`value in keys(dict)\` or \`haskey(dict, value)\` over \`value in dict.keys\`
+
+
 ### Example solutions
 
 Straightforward solution. Easily understood, but quite slow because it will compute the hash of a character twice on each iteration.
@@ -29,7 +37,7 @@ We can get some speedup with a simple stack of if/elseifs like this:
 
 ````
 ```julia
-function count_nucleotides(strand)
+function count_nucleotides2(strand)
     ca = cc = cg = ct = 0
     for nuc in strand
         if nuc == 'A'
@@ -53,7 +61,7 @@ While this solution is easy to make threaded or parallel by e.g. replacing `coun
 
 ````
 ```julia
-function count_nucleotides(strand)
+function count_nucleotides3(strand)
     counts = Dict((base => count(==(base), strand)) for base in "ACGT")
     if sum(values(counts)) != length(strand)
         throw(DomainError(strand, "only A, C, G and T are valid nucleotides"))
@@ -63,15 +71,19 @@ end
 ```
 ````
 
+It can be surprising to some people that this solution using `count(==(base), strand)` iterates `strand` 4 times and is about as fast (or faster) as the solutions above that iterate `strand` only once.
+This is because the complexity of your loop body matters.
+In this case, we swap one iteration of a moderately complex loop body for four iterations of a very simple loop body.
+
 This solution, though perhaps a little harder to understand, is much faster at the price of just a little memory use:
 
 ````
 ```julia
-function count_nucleotides(strand)
+function count_nucleotides4(strand)
     utf8 = transcode(UInt8, strand)
     counts = zeros(Int, 256)
-    for byte in utf8
-        @inbounds counts[byte + 1] += 1
+    @inbounds for byte in utf8
+        counts[byte + 1] += 1
     end
     result = Dict(base => counts[Int(base) + 1] for base in "ACGT")
     if sum(values(result)) != length(utf8)
@@ -81,10 +93,3 @@ function count_nucleotides(strand)
 end
 ```
 ````
-
-### Common suggestions
-
-(Formatted so you can copy and paste easily)
-
-- Btw, you can initialise the Dict with a generator, if you like: \`Dict(base => 0 for base in "ACGT")\`
-- In Julia, the properties of objects are generally considered private unless documented otherwise, so we generally prefer \`value in keys(dict)\` or \`haskey(dict, value)\` over \`value in dict.keys\`
