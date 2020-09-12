@@ -22,7 +22,7 @@ export default class TwoFer {
 
 #### Property on the default export object
 
-```javascript
+```typescript
 export default {
   twoFer(name: string = 'you'): string {
     return `One for ${name}, one for me.`
@@ -50,7 +50,7 @@ approve the submission and tell the student they can move on or improve:
 
 This is the first mentored exercise, so you may use this to determine a
 student's skill, help them set up their test suite, and generally point out
-certain things. In the JavaScript track, this exercise is not meant to be a
+certain things. In the TypeScript track, this exercise is not meant to be a
 barrier so in general, don't be harsh but set the tone for the rest of the
 mentored track.
 
@@ -59,7 +59,7 @@ exercise is to have them remove any conditional _and_ use a template literal.
 
     Hi there {name},
 
-    Congrats on submitting your first exercise for the JavaScript
+    Congrats on submitting your first exercise for the TypeScript
     track. I have a few comments for you:
 
     - In TypeScript, the result of an expression can be returned!
