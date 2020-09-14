@@ -66,7 +66,7 @@ Just R13:
 ````
 ```julia
 macro R13_str(s)
-    :(rotate(13, $s))
+    rotate(13, s)
 end
 ```
 ````
