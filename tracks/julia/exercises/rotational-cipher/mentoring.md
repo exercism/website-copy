@@ -77,7 +77,7 @@ All of the macros done with a for loop:
 ```julia
 for n in 0:26
     @eval macro $(Symbol(:R, n, :_str))(s)
-        :(rotate($$n, $s))
+        rotate($n, s)
     end
 end
 ```
