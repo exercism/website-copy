@@ -23,7 +23,7 @@ const isAsking = message => /\?\s*$/.test(message)
 ```javascript
 const isSilence = message => message.trim() === ''
 const isShouting = message => message.toUpperCase() === message && message.toLowerCase() !== message
-const isAsking = message => message.trim()[message.length - 1] === '?'
+const isAsking = message => message.trim().endsWith("?")
 ```
 
 #### Composition
