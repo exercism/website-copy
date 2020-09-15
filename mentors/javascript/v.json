@@ -30,5 +30,13 @@
     "link_url": "https://justinirabor.com",
     "avatar_url": null,
     "bio": "Functional programmer in the streets, creative coder in the sheets. Looking to help while learning!"
+  },
+  {
+    "github_username": "VedantWankhade",
+    "name": "Vedant Wankhade",
+    "link_text": "Github Profile",
+    "link_url": "https://github.com/VedantWankhade",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/54671950?s=400&u=2f928bc87826a0b528ae9c39b80f63a584ed696d&v=4",
+    "bio": "A night owl who likes to code in a strongly typed language. Loves contrubuting to the opensource."
   }
 ]
