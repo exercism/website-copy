@@ -35,6 +35,7 @@ namespace leap {
 - Make sure you enabled **all** tests.
 
 ### Talking points
+
 - Argument name vs no argument name in declaration
 - Meaningful argument names
 - Using `unsigned` integer types
