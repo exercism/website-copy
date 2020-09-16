@@ -56,6 +56,7 @@ defmodule WordCount do
   end
 end
 ```
+
 ```elixir
 # Utilizing Enum.frequencies
 defmodule WordCount do
