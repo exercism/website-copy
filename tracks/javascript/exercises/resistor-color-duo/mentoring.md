@@ -13,7 +13,7 @@ const COLORS = [
 const colorCode = (color) => COLORS.indexOf(color)
 // END OF NOTE
 
-export function value([tens, ones]) {
+export function decodedValue([tens, ones]) {
   return colorCode(tens) * 10 + colorCode(ones)
 }
 ```
@@ -21,7 +21,7 @@ export function value([tens, ones]) {
 A student may choose to use numeric indexing instead of destructuring:
 
 ```javascript
-export function value(colors) {
+export function decodedValue(colors) {
   return colorCode(colors[0]) * 10 + colorCode(colors[1])
 }
 ```
@@ -54,7 +54,7 @@ export const COLORS = [
   'grey', 'white',
 ];
 
-export function value(colors) {
+export function decodedValue(colors) {
   return colors
     .reverse()
     .slice(0, 2)
@@ -80,7 +80,7 @@ export const COLORS = [
   'grey', 'white',
 ];
 
-export function value(colors) {
+export function decodedValue(colors) {
   return Number(`${colorCode(colors[0])}${colorCode(colors[1])}`)
 }
 ```
@@ -88,7 +88,7 @@ export function value(colors) {
 But this type juggling is unnecessary. Approve it, but recommend them to use math instead:
 
 ```javascript
-export const value = (bands) => colorCode(bands[0]) * 10 + colorCode(bands[1])
+export const decodedValue = (bands) => colorCode(bands[0]) * 10 + colorCode(bands[1])
 ```
 
 ### Common suggestions
@@ -105,7 +105,7 @@ the stricter `Number(...)` function.
 
 ```javascript
 // BAD example
-export function value(colors) {
+export function decodedValue(colors) {
   return parseInt(
     colors.slice(0, 2)
           .map(color => colorCode(color))
@@ -122,7 +122,7 @@ If a student is using `map` followed by a `reduce` to build the string of digits
 
 ```javascript
 // BAD example
-export function value(colors) {
+export function decodedValue(colors) {
   return Number(
     colors.slice(0, 2)
           .map(color => colorCode(color).toString())
@@ -141,7 +141,7 @@ for you.
 
 ```javascript
 // BAD example
-export function value(colors) {
+export function decodedValue(colors) {
   return Number(
     colors.slice(0, 2)
           .map(color => colorCode(color).toString())
@@ -159,7 +159,7 @@ Some students may "re-discover" the implementation of `resistor-color`:
 ```js
 const COLORS = [ ... ]
 
-export function value(colors) {
+export function decodedValue(colors) {
   return COLORS.indexOf(colors[0]) * 10 + COLORS.indexOf(colors[1])
 }
 ```
