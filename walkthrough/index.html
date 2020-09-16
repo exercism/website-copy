@@ -42,7 +42,9 @@ After hitting the `Enter` key, you should see a notification from the CLI that a
 ### Important: The token above should be treated like a password and not be shared with anyone.
 
    For this reason, you can delete it from your shell history, if you are using Bash, by running:
-   `for X in $(history | grep "exercism configure --token=" | grep -v grep | cut -d ' ' -f1) do; history -d $X; done`
+   ```bash
+   for X in $(history | grep "exercism configure --token=" | grep -v grep | cut -d ' ' -f1) do; history -d $X; done
+   ```
 
 
 When asking for help that involves a command, remove your token before sharing the command.
