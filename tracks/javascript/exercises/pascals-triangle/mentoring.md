@@ -26,7 +26,7 @@ export const rows = size => {
   const result = [[1]];
 
   for (let y = 1; y < size; y++) {
-    let lastRow = [];
+    const lastRow = [];
 
     for (let x = 0; x <= y; x++) {
       const up = result[y - 1];
