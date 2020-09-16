@@ -68,6 +68,7 @@ defmodule WordCount do
   
 end
 ```
+
 ### Common suggestions
 
 #### German `öüä`
