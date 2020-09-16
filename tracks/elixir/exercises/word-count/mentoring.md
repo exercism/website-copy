@@ -66,7 +66,6 @@ defmodule WordCount do
     |> List.flatten
     |> Enum.frequencies
   end
-  
 end
 ```
 
