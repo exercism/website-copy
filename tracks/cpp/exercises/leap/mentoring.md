@@ -26,6 +26,7 @@ namespace leap {
 ```
 
 ### Common suggestions
+
 - There are just two cases that return `true`:
   - a year is a multiple of 4 *and not** 100
   - a year is a multiple of 4, 100, and 400
