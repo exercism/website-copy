@@ -3,7 +3,7 @@
 - Iterators
 - Iterator Methods
 - Pattern matching
-- modelling a problem with the type system
+- Modelling a problem with the type system
 
 ### Reasonable Solutions
 
@@ -225,8 +225,8 @@ pub fn winning_hands<'a>(hands: &[&'a str]) -> Option<Vec<&'a str>> {
 
 #### No need to store a reference to the given string
 
-storing hand_str inside the Hand struct adds overhead and isn't necessary. It's better to filter on the given hands argument to return the winning hands.
+Storing hand_str inside the Hand struct makes an allocation and isn't necessary. Filtering on the given hands argument to return the winning hands will save those string allocations.
 
 #### Using complex logic to determine the hand category
 
-a lot of students will go into 10-20 lines logic trying to determine the number of pairs, the number of triples... That logic can usually be replaced with collecting ranks into a hashmap and pattern macthing on it.
+Many students will go into 10-20 lines logic trying to determine the existence and the number of pairs, triples, and quadruple. That logic can usually be replaced with collecting ranks into a `Hashmap` and pattern macthing on it.
