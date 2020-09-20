@@ -62,5 +62,13 @@
     "link_url": "https://n8henrie.com",
     "avatar_url": null,
     "bio": "I am a non-tech professional that picked up Python as my first programming language, mostly out of curiousity. 10 years later, it has become a tool that I use regularly for data processing, home automation, small webapps, and general scripting."
+  },
+  {
+    "github_username": "nahuakang",
+    "name": "Nahua Kang",
+    "link_text": null,
+    "link_url": "https://nahua.dev",
+    "avatar_url": null,
+    "bio": "I am a self-taught programmer with a background in liberal arts. I work with Python professionally in the intersection between software development and deep learning. In my spare time, I also play with Go, Rust, and Swift."
   }
 ]
