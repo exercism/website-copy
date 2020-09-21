@@ -62,5 +62,13 @@
     "link_url": null,
     "avatar_url": "https://avatars1.githubusercontent.com/u/3586587",
     "bio": "I've been using Ruby with and without Rails professionally since 2015. Love to help anyone who wants to learn this awesome language."
+  },
+  {
+    "github_username": "coolbrg",
+    "name": "Budh Ram Gurung",
+    "link_text": "BRG Trainings",
+    "link_url": "https://freelancerbrg.com",
+    "avatar_url": "https://pbs.twimg.com/profile_images/1305133351569825792/hMQnFblq_400x400.jpg",
+    "bio": "A self-taught engineer who is now an IT Teacher, Mentor, Full Stack Engineer, avid Open Source contributor and researcher."
   }
 ]
