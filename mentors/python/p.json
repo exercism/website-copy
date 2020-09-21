@@ -70,5 +70,13 @@
     "link_url": "https://www.youtube.com/channel/UC5141Zas3CxweFHxSW8fbKg",
     "avatar_url": null,
     "bio": "Python was one of the first languages I had ever learned, and it taught me that code can be beautiful and fun to write. I'm a big fan of Python, but also a big fan of sharing knowledge. I'm not an expert, but I'm more than happy to help people out in a Python adventure of their own!"
+  },
+  {
+    "github_username": "psukys",
+    "name": "Paulius Šukys",
+    "link_text": "Website",
+    "link_url": "https://www.sukys.eu",
+    "avatar_url": null,
+    "bio": "Software engineer using Python as second-best language for everything"
   }
 ]
