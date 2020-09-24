@@ -5,7 +5,6 @@ New concepts: Iterating over an array (preferably with `each_cons`, avoid `each_
 ```ruby
 
 class Series
-
   def initialize(numerals)
     @numerals = numerals.chars
   end
