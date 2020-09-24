@@ -34,13 +34,13 @@ and to the rubydocs [Enumerable](https://ruby-doc.org/core/Enumerable.html) with
 
 ### Talking points
 - `each_cons` instead of an iterator `with_index`: In Ruby, you rarely have to write iterators that need to keep track of the index. Enumerable has powerful methods that do that for us.
-- `chars`: instead of `split('')`   
+- `chars`: instead of `split('')`.
 - `each_char`: if an `Array` is not specifically necessary or wanted.
 - `attr_reader`: instead of the instance variable, [explained here](https://ivoanjo.me/blog/2017/09/20/why-i-always-use-attr_reader-to-access-instance-variables).
 - `private` attr_reader: Following the 'rule' for encapsulation: if it doesn't need to be public, make it private. [This link](http://ruby-for-beginners.rubymonstas.org/writing_classes/state_and_behaviour.html) may come in handy for a first introduction. 
 - `unless` , inline: With `unless` instead of `if`, we can show what "good" looks like for the conditional statement.
 - `error`: Custom error message? (Only if the first submission meets the Minimal Solution.)
-- `map(&:join)`: instead of map with block, but at this point in the track it's okay to just accept it if students use it, no need to require it or dive into the subject of `Symbol#to_proc`  
+- `map(&:join)`: instead of map with block, but at this point in the track it's okay to just accept it if students use it, no need to require it or dive into the subject of `Symbol#to_proc`.
 - `each_char`: may be preferable over `chars` as it returns an `Enumerator` that will yield each character without creating an intermediate `Array`. More: `String#chars` with a block has a deprecation warning in more recent Ruby versions. `str.chars` is a shorthand for `str.each_char.to_a`.
 
 ### Mentor Research
