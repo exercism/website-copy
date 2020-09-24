@@ -26,6 +26,7 @@ end
     @numerals = numerals.chars
   ```
 - For more advanced students favor `each_char` over `chars`. See details at the "Talking points".
+- Ampersand syntax is a bonus point. `map(&:join)`.
 
 ### General 
 - The Instructions point to a beginner friendly [explanation of iterating in Ruby:](http://jeromedalbert.com/ruby-how-to-iterate-the-right-way/)
