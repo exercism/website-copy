@@ -21,7 +21,7 @@ end
 
 ### Reasonable variants
 - Do the splitting in the slices method: 
-  ```
+  ```ruby
     @numerals = numerals.chars
   ```
 - For more advanced students favor `each_char` over `chars`. See details at the "Talking points".
