@@ -1,3 +1,24 @@
+### Most common first attempt
+
+This is the most common solution by beginners to the leap year problem.
+Nudge the student towards the more concise solution by letting them know
+they can replace the 3 IF and 4 return statements with zero IF statements and a single return.
+This is done by using the logical operators OR & AND.
+
+```python
+def leap_year(year):
+    if year % 4 == 0: 
+        if year % 100 == 0: 
+            if year % 400 == 0: 
+                return True
+            else: 
+                return False
+        else: 
+             return True
+    else: 
+        return False
+```
+
 ### Reasonable solutions
 
 This is a nice, concise, very efficient solution:
