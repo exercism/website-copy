@@ -1,3 +1,6 @@
+*********************HEY FOLKS , WELCOME HERE********************* 
+
+
 # Copy for the Exercism website
 
 A repository for the copy used on [Exercism's website](https://exercism.io). This repository is directly read into the site at periodic intervals.
