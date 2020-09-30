@@ -33,3 +33,9 @@ Here's an example for [Ruby's Isogram](https://github.com/exercism/website-copy/
 ![Create a new file](http://g.recordit.co/96zCDgEkfG.gif)
 
 </details>
+
+### Facts 
+
+Software developer Katrina Owen created Exercism while she was teaching programming at Jumpstart Labs.The platform was developed as an internal tool to solve the problem of her own students not receiving feedback on the coding problems they were practicing. Katrina put the site publicly online and found that people were sharing it with their friends, practicing together and giving each other feedback. Within 12 months, the site had organically grown to see over 6,000 users had submitted code or feedback, and hundreds of volunteers contribute to the languages or tooling on the platform.
+
+In July 2018, the site was relaunched with a new design and centred around a formal mentoring mode
