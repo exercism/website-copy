@@ -100,7 +100,8 @@ I could also have used `nothing` and provided a function like `skipnothing(xs) =
 
 ````
 By cmcaine, inspired by
-[halfdan](https://exercism.io/tracks/julia/exercises/atbash-cipher/solutions/419b6f4d04974a63b7f8531e8ad2808c):
+[halfdan](https://exercism.io/tracks/julia/exercises/atbash-cipher/solutions/419b6f4d04974a63b7f8531e8ad2808c)
+and
 [OTDE](https://exercism.io/tracks/julia/exercises/atbash-cipher/solutions/330cb9e444c2403c898275e71da07caa)'s
 solutions.
 
