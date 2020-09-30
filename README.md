@@ -28,7 +28,7 @@ Please use `###` for headings and try to keep to a structure of:
 Here's an example for [Ruby's Isogram](https://github.com/exercism/website-copy/blob/master/tracks/ruby/exercises/isogram/mentoring.md).
 
 <details>
-<summary>This is how you create a new file:</summary>
+<summary>This is how you create a new file.</summary>
 
 ![Create a new file](http://g.recordit.co/96zCDgEkfG.gif)
 
