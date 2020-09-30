@@ -29,6 +29,7 @@ Here's an example for [Ruby's Isogram](https://github.com/exercism/website-copy/
 
 <details>
 <summary>This is how you create a new file:</summary>
+  <summary> Thanks for reading : </summary>
 
 ![Create a new file](http://g.recordit.co/96zCDgEkfG.gif)
 
