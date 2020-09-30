@@ -5,9 +5,9 @@ Last Revised: April 2019
 
 Exercism (also referred to as exercism.io) is an online platform designed to help you improve your coding skills through practice and mentorship.
 
-Our platform comprises of a web site is located at https://exercism.io (and associated subdomains) and a command line application (CLI).
+Our platform comprises of a web site, located at https://exercism.io (and associated subdomains) and a command line application (CLI).
 
-We’re deeply committed to providing you with a safe and secure online platform for you to develop your
+We’re deeply committed in providing you with a safe and secure online platform for you to develop your
 software coding skills.
 
 Exercism is run and managed by Exercism ("We", "Us"), a not-profit-company registered in the UK with Company Number 11733062. You might also want to read:
@@ -17,8 +17,8 @@ Exercism is run and managed by Exercism ("We", "Us"), a not-profit-company regis
 
 Our approach to your privacy is very straightforward to understand.
 
-1. We do not collect more personal information than we need
-2. We will not share any data you give us (e.g. your email address) with other third parties
+1. We do not collect more personal information than we need.
+2. We will not share any valueable data you give us (e.g. your email address) with other third parties.
 3. We use tools like Google Analytics and Hotjar to understand how you use the site. The information from these tools is only used to make the site better.
 4. We try to give you as much control about what information you share. For instance, we offer facilities to have an anonymous handle/user name if you want, and we don't require you to create a public profile.
 
