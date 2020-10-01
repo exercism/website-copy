@@ -15,7 +15,7 @@ We shouldn't require the mutating-a-dict strategy because it's actually pretty s
 
 ### Example solutions
 
-Straightforward solution. Easily understood, but quite slow because it will compute the hash of a character twice on each iteration.
+Straightforward solution. Easily understood, but a bit slow because it will compute the hash of a character twice on each iteration (though any of these solutions is plenty fast enough for even pretty large inputs!).
 
 ````
 ```julia
