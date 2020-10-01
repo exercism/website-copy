@@ -19,7 +19,7 @@ The structure within the repository is: `/tracks/$track_id/exercises/$exercise_s
 - We'll be offering some mentors write permissions to the repo so that they can merge PRs without waiting for us to check everything.
 - You'll find a button to display the Mentor Notes when you start mentoring a submission, if notes are available for that exercise.  
 
-Please use `###` for headings and try to keep to a structure of:
+Please use `###` for headings and try to keep to a structure of:-
 
 - **Reasonable solutions:** 1+ solutions that solve this problem well.
 - **Common suggestions:** Good suggestions specific to this exercise. Good lessons that emerge from it.
