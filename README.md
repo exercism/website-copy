@@ -2,7 +2,7 @@
 
 A repository for the copy used on [Exercism's website](https://exercism.io). This repository is directly read into the site at periodic intervals.
 
-## Contributing
+## Contributing to Community
 
 Good copy and documentation is just as important as good code so we are massively grateful for contributions to this repository.
 
