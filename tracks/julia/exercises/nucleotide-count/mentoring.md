@@ -31,11 +31,9 @@ function count_nucleotides(strand)
     return counter
 end
 ```
-````
 
 We can get some speedup with a simple stack of if/elseifs like this:
 
-````
 ```julia
 function count_nucleotides2(strand)
     ca = cc = cg = ct = 0
@@ -55,11 +53,9 @@ function count_nucleotides2(strand)
     return Dict('A' => ca, 'C' => cc, 'G' => cg, 'T' => ct)
 end
 ```
-````
 
 While this solution is easy to make threaded or parallel by e.g. replacing `count` with `ThreadsX.count()`:
 
-````
 ```julia
 function count_nucleotides3(strand)
     counts = Dict((base => count(==(base), strand)) for base in "ACGT")
@@ -69,7 +65,6 @@ function count_nucleotides3(strand)
     counts
 end
 ```
-````
 
 It can be surprising to some people that this solution using `count(==(base), strand)` iterates `strand` 4 times and is about as fast (or faster) as the solutions above that iterate `strand` only once.
 This is because the complexity of your loop body matters.
@@ -77,7 +72,6 @@ In this case, we swap one iteration of a moderately complex loop body for four i
 
 This solution, though perhaps a little harder to understand, is much faster at the price of just a little memory use:
 
-````
 ```julia
 function count_nucleotides4(strand)
     utf8 = transcode(UInt8, strand)
@@ -92,4 +86,15 @@ function count_nucleotides4(strand)
     result
 end
 ```
+
+Its speed comes from three sources:
+
+1. Iterating a vector of bytes instead of characters (though this algorithm is still unicode-safe).
+   This is faster because iterating characters from a string involves scanning the same vector of bytes but also doing a little work every iteration to establish if the current byte is the start of a multibyte sequence (and, if so to reassemble that sequence into its proper 32 bit character).
+2. The loop body is extremely simple and fast on x86 processors (a load, an addition and a store) and branchless (there are no conditionals within the loop body).
+   Branchless code is often faster because branching hinders CPU instruction level parallelism and stops compilers using "Single Instruction Multiple Data" (SIMD) instructions (though this loop body can't benefit from SIMD anyway).
+3. Bounds checks are turned off with `@inbounds`, this removes some hidden branches (normally every array access in Julia has a little check that the index is valid first).
+   We can trivially prove that all indexes will be valid because a UInt8 has values ranging from 0:255 and the array we're indexing has indexes 1:256. The `+ 1` is there to make those two ranges line up.
+
+Finally, one neat thing is that `transcode(UInt8, strand)`, which yields a read-only vector of UTF-8 bytes from our string, is free for the `String` type because it is already encoded as UTF-8 so the compiler will not emit any code for that call. If we were given a third party string that was not UTF-8 compatible (perhaps encoded as UTF-32) then it would have to do more work and we might be better off defining a different method for that type using the `count_nucleotides2` algorithm or similar.
 ````
