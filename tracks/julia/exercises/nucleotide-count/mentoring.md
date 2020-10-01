@@ -177,6 +177,7 @@ L288:
 ```
 
 </details>
+<br />
 
 Finally, one neat thing is that `transcode(UInt8, strand)`, which yields a read-only vector of UTF-8 bytes from our string, is free for the `String` type because it is already encoded as UTF-8 so the compiler will not emit any code for that call. If we were given a third party string that was not UTF-8 compatible (perhaps encoded as UTF-32) then it would have to do more work and we might be better off defining a different method for that type using the `count_nucleotides2` algorithm or similar.
 ````
