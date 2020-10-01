@@ -1,8 +1,8 @@
-# Copy for the Exercism website
+# Notes for the Exercism website
 
 A repository for the copy used on [Exercism's website](https://exercism.io). This repository is directly read into the site at periodic intervals.
 
-## Contributing
+## Contributions
 
 Good copy and documentation is just as important as good code so we are massively grateful for contributions to this repository.
 
@@ -11,7 +11,7 @@ Good copy and documentation is just as important as good code so we are massivel
 
 Thank you! :blue_heart:
 
-## Mentor notes
+## Special Mentor notes
 
 The structure within the repository is: `/tracks/$track_id/exercises/$exercise_slug/mentoring.md`.
 
