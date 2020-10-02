@@ -8,6 +8,23 @@
 ### Example solution
 
 ````
+pdb5627's solution (slightly edited)
+
+This short and simple solution is fast, extremely easy to read, and clearly demonstrates the bitwise operations that most solutions use.
+Four of the lines are obviously very similar to each other and it's totally fine to write code that is "unrolled" like this.
+
+```julia
+function secret_handshake(n)
+    s = []
+    n & 1 > 0 && push!(s, "wink")
+    n & 2 > 0 && push!(s, "double blink")
+    n & 4 > 0 && push!(s, "close your eyes")
+    n & 8 > 0 && push!(s, "jump")
+    n & 16 > 0 && reverse!(s)
+    return s
+end
+```
+
 cmcaine's solution
 
 ```julia
@@ -75,7 +92,8 @@ end
 ````
 Samyak's solution, with a nice, simple for loop.
 
-Declaring `actions` as a const outside of the function avoids allocating it each time, but this could also be avoided by declaring `actions` within the function as a tuple.
+Declaring `actions` as a const outside of the function avoids allocating it each time.
+If the tests accepted tuples of strings instead of just vectors then we could have declared `actions` within the function as a tuple instead.
 
 ```julia
 const actions = ["wink", "double blink", "close your eyes", "jump"]
