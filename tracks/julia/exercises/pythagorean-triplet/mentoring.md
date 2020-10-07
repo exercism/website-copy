@@ -32,7 +32,7 @@ By contrast, annotating with an immutable type (which by definition will be of k
 
 A small improvement is to tighten up the loop bounds using some simple arithmetic and floor division (`fld`):
 
-```
+```julia
     # Lower bound because the smallest triple is 3, 4, 5.
     # Upper bounds implied by a < b < c && a + b + c == n.
     for a in 3:fld(n, 3)
