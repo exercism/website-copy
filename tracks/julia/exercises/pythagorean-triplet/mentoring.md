@@ -5,9 +5,9 @@
 
 ## Example solutions
 
-A O(n^2) time algorithm:
-
 ````
+A O(n²) time algorithm:
+
 ```julia
 """
     pythagorean_triplets(n)
@@ -26,7 +26,6 @@ function pythagorean_triplets(n)
     return triplets
 end
 ```
-````
 
 Telling Julia the type of `triplets` allows it to store the values without indirection. Without an annotation some (all?) version of Julia will type `triplets` as `Vector{Any}`, which means a vector of pointers to heap-allocated objects, which is slower.
 By contrast, annotating with an immutable type (which by definition will be of known size) allows Julia to simply store the items one after the other without indirection.
@@ -42,7 +41,6 @@ A small improvement is to tighten up the loop bounds using some simple arithmeti
 
 To really go fast, we need a linear time algorithm, and this one derived by solving some simultaneous equations is a much greater improvement:
 
-````
 ```julia
 """
     pythagorean_triplets(n)
