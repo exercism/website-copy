@@ -94,7 +94,9 @@ function is_triangle(sides)
 end
 ```
 
-xyshell eliminated the double sort to get okay performance, which is neat:
+xyshell eliminated the double sort to get okay performance, which is neat.
+But now `is_equilateral` mutates its input argument and doesn't have a `!` at the end of its name, so that's a bit dangerous:
+other Julians might use this code under the assumption that the input will not be mutated and then get strange bugs.
 
 ```julia
 function is_valid!(sides)
