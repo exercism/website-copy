@@ -74,7 +74,7 @@ We can improve this solution slightly by tightening up the loop bounds using som
 > Note: you can come up with even tighter bounds than these. Share your working with your mentor if you do!
 
 The intuition on upper bounds is that if we were working with real numbers, the biggest `a` can be is `n/3 - ε`,
-where `ε` is the smallest real number,
+where `ε` is the smallest real number greater than 0,
 because `b` and `c` must both be larger.
 Similarly, the biggest `b` can be is `n/2 - ε` because `c` must be larger than it.
 
