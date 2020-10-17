@@ -10,7 +10,7 @@ We don't need to bikeshed on this too long. Just prompt them to improve their co
 - Whenever you have an expression like \`if condition; return true; else; return false\`, you can rewrite it as \`return condition\`.
 - Obviously you can do as you please, but it is conventional to have one space either side of each operator: \`year % 400 == 0\`.
 - Consider writing a truth table for this exercise and see if you can work out what the simplest predicates are and how they could be combined with \`&&\` and \`||\`
-- Prefer \`&&\` and \`||\` over \`&\` and \`|\` to benefit from \[short-circuiting\](https://docs.julialang.org/en/v1/manual/control-flow/#Short-Circuit-Evaluation).
+- Prefer \`&&\` and \`||\` over \`&\` and \`|\` to benefit from \[short-circuiting\](https://docs.julialang.org/en/v1/manual/control-flow/#Short-Circuit-Evaluation). It will not evaluate the whole expression but only the expressions that are necessary to determine the result of the entire chain.
 
 Example truth table:
 
