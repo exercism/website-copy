@@ -58,9 +58,13 @@ end
 
 Calculating c from a and b clearly eliminates a huge number of iterations and is the main reason for the speedup.
 
-A much more modest improvement is achieved by telling Julia the type of `triplets` so that it can store the values without indirection.
-Without an annotation some (all?) version of Julia will type `triplets` as `Vector{Any}`, which means a vector of pointers to heap-allocated objects, which is slower.
-Annotating with an immutable type like we have done (which by definition will be of known size) allows Julia to simply store the items one after the other without indirection.
+We have also told Julia the type of `triplets` in this version.
+Without an annotation Julia will type `triplets` as `Vector{Any}`, which means a vector of pointers to heap-allocated objects.
+Annotating with an immutable type, which by definition will be of known size,
+[allows Julia to simply store the items one after the other without indirection](https://docs.julialang.org/en/v1/manual/performance-tips/index.html#man-performance-abstract-container).
+
+This will make almost no difference to the speed of this particular function because the number of `push!`s are very small compared to other operations,
+but it would help _type inference_ in functions using the output of `pythagorean_triplets(x)`, which is often useful.
 
 We can improve this solution slightly by tightening up the loop bounds using some simple arithmetic and floor division (`fld`):
 
