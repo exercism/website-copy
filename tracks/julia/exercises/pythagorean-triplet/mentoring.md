@@ -6,7 +6,36 @@
 ## Example solutions
 
 ````
-A O(n²) time algorithm:
+There are three reasonably common solutions to this problem, a cubic time solution, a quadratic time solution and a linear time solution.
+
+__Cubic time solution__
+
+Just iterate over a, b, and c.
+This solution is very simple, but really is too slow.
+So much so that the tests are unlikely to run in a reasonable time :)
+
+```julia
+"""
+    pythagorean_triplets(n)
+
+Find all positive integer triplets `(a, b, c)` s.t. `a + b + c = n` and
+`a < b < c` and `a^2 + b^2 == c^2`.
+"""
+function pythagorean_triplets(n)
+    triplets = []
+    for a in 1:n
+        for b in a+1:n
+            for c in b+1:n
+                a^2 + b^2 == c^2 && push!(triplets, (a, b, c))
+            end
+        end
+    end
+    return triplets
+end
+```
+
+
+__Quadratic time algorithm__
 
 ```julia
 """
@@ -27,17 +56,34 @@ function pythagorean_triplets(n)
 end
 ```
 
-Telling Julia the type of `triplets` allows it to store the values without indirection. Without an annotation some (all?) version of Julia will type `triplets` as `Vector{Any}`, which means a vector of pointers to heap-allocated objects, which is slower.
-By contrast, annotating with an immutable type (which by definition will be of known size) allows Julia to simply store the items one after the other without indirection.
+Calculating c from a and b clearly eliminates a huge number of iterations and is the main reason for the speedup.
 
-A small improvement is to tighten up the loop bounds using some simple arithmetic and floor division (`fld`):
+A much more modest improvement is achieved by telling Julia the type of `triplets` so that it can store the values without indirection.
+Without an annotation some (all?) version of Julia will type `triplets` as `Vector{Any}`, which means a vector of pointers to heap-allocated objects, which is slower.
+Annotating with an immutable type like we have done (which by definition will be of known size) allows Julia to simply store the items one after the other without indirection.
+
+We can improve this solution slightly by tightening up the loop bounds using some simple arithmetic and floor division (`fld`):
 
 ```julia
     # Lower bound because the smallest triple is 3, 4, 5.
     # Upper bounds implied by a < b < c && a + b + c == n.
-    for a in 3:fld(n, 3)
-        for b in a+1:fld(2n, 3)
+    for a in 3:fld(n, 3)-1
+        for b in a+1:fld(n, 2)-1
 ```
+
+> Note: you can come up with even tighter bounds than these. Share your working with your mentor if you do!
+
+The intuition on upper bounds is that if we were working with real numbers, the biggest `a` can be is `n/3 - ε`,
+where `ε` is the smallest real number,
+because `b` and `c` must both be larger.
+Similarly, the biggest `b` can be is `n/2 - ε` because `c` must be larger than it.
+
+When we move that to the Integers, we observe that the maximum remainder of `n/3` is 2.
+We already know that the biggest `a` can be is  when `a`, `b`, and `c` are as close as possible, so that gives us something like this: `fld(n, 3) - 1 < fld(n, 3) + x < fld(n, 3) + y` where `x < y && -1 + x + y < 2`.
+Similarly, the biggest remainder of `n/2` is 1, so the largest `b` can be is when our variables are something like `1 < fld(n, 2) - 1 < fld(n, 2) + 1`, so an upper bound on `b` is `fld(n, 2) - 1`.
+
+
+__Linear time algorithm__
 
 To really go fast, we need a linear time algorithm, and this one derived by solving some simultaneous equations is a much greater improvement:
 
@@ -53,7 +99,7 @@ function pythagorean_triplets(n)
     triplets = NTuple{3, Int}[]
     # Lower bound because the smallest triple is 3, 4, 5.
     # Upper bound implied by a < b < c && a + b + c == n.
-    for a in 3:fld(n, 3)
+    for a in 3:fld(n, 3)-1
         # Derived by eliminating c from these simultaneous
         # equations and solving for b:
         #     a^2 + b^2 = c^2
