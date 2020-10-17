@@ -6,7 +6,8 @@
 ## Example solutions
 
 ````
-There are three reasonably common solutions to this problem, a cubic time solution, a quadratic time solution and a linear time solution.
+There are three reasonably common solutions to this problem, a cubic time solution, a quadratic time solution and a linear time solution
+(if those terms are unclear to you, you might like to read about [time complexity](https://en.wikipedia.org/wiki/Time_complexity)).
 
 __Cubic time solution__
 
@@ -56,7 +57,7 @@ function pythagorean_triplets(n)
 end
 ```
 
-Calculating c from a and b clearly eliminates a huge number of iterations and is the main reason for the speedup.
+Calculating `c` from `a` and `b` clearly eliminates a huge number of iterations making this significantly faster than the previous solution.
 
 We have also told Julia the type of `triplets` in this version.
 Without an annotation Julia will type `triplets` as `Vector{Any}`, which means a vector of pointers to heap-allocated objects.
