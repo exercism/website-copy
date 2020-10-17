@@ -78,7 +78,7 @@ where `ε` is the smallest real number,
 because `b` and `c` must both be larger.
 Similarly, the biggest `b` can be is `n/2 - ε` because `c` must be larger than it.
 
-When we move that to the Integers, we observe that the maximum remainder of `n/3` is 2.
+When we move that to the integers, we observe that the maximum remainder of `n/3` is 2.
 We already know that the biggest `a` can be is  when `a`, `b`, and `c` are as close as possible, so that gives us something like this: `fld(n, 3) - 1 < fld(n, 3) + x < fld(n, 3) + y` where `x < y && -1 + x + y < 2`.
 Similarly, the biggest remainder of `n/2` is 1, so the largest `b` can be is when our variables are `1 < fld(n, 2) - 1 < fld(n, 2) + 1`, so an upper bound on `b` is `fld(n, 2) - 1`.
 
