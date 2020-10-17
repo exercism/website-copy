@@ -40,7 +40,7 @@ function raindrops(n)
 end
 ```
 
-pdb5627's solution
+[pdb5627's solution](https://exercism.io/tracks/julia/exercises/raindrops/solutions/6d75e061da90439c8d38b38e1ad8c53c)
 
 Another simple, concise solution.
 
