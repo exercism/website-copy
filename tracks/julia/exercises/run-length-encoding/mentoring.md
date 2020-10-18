@@ -1,7 +1,7 @@
 ## Common comments
 
 - You might not know that repeatedly concatenating strings like this causes a lot of strings to be allocated (they are not appended in place). If you want to avoid that you can use an `IOBuffer` or (less efficiently) a vector of `Char`.
-- Using `isnumeric` is safe here because the input is defined quite restrictively, but in general it is not a good idea if what you really mean is `'0' <= c <= '9'` because `isnumeric` matches a lot more characters and is a lot slower. `isdigit` is a safe alternative.
+- Using `isnumeric` is safe here because the input is defined quite restrictively, but in general it is not a good idea if what you really mean is `'0' <= c <= '9'` because `isnumeric` matches a lot more characters, e.g. `¾` or `௰`, and is a lot slower. `isdigit` is a safe alternative.
 
 
 ## Example solutions
