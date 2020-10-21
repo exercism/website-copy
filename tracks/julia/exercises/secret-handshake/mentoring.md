@@ -15,7 +15,7 @@ Four of the lines are obviously very similar to each other and it's totally fine
 
 ```julia
 function secret_handshake(n)
-    s = []
+    s = String[]
     n & 1 > 0 && push!(s, "wink")
     n & 2 > 0 && push!(s, "double blink")
     n & 4 > 0 && push!(s, "close your eyes")
