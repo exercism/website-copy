@@ -173,3 +173,11 @@ It turns out that this problem is generally trickier to solve if the clock store
 ```markdown
 Here's a secret: This problem is easier to solve if the clock only stores minutes!
 ```
+
+The student may appreciate having explained how a struct literal can bypass the logic in a `new` function.
+
+```markdown
+There is an article on [`struct literals and constructors`] that explains how to prevent initialization by a struct literal. The struct literal concerns are not specifically related to this exercise but are to be considered when using structs in your own projects.
+
+[`struct literals and constructors`]: https://steveklabnik.com/writing/structure-literals-vs-constructors-in-rust
+```
