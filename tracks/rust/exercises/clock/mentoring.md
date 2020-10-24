@@ -177,6 +177,12 @@ Here's a secret: This problem is easier to solve if the clock only stores minute
 Upon passing the tests, the student may appreciate having explained how a struct literal can bypass the logic in a `new` function.
 
 ```markdown
+Another thing to consider is how the `Clock::new` function could be bypassed by initializing from a Clock literal, like so...
+```
+```rust
+let my_Clock = Clock {hours: -24, minutes:-1440};
+```
+```markdown
 There is an article on [`struct literals and constructors`] that explains how to prevent initialization by a struct literal. The struct literal concerns are not specifically related to this exercise but are to be considered when using structs in your own projects.
 
 [`struct literals and constructors`]: https://steveklabnik.com/writing/structure-literals-vs-constructors-in-rust
