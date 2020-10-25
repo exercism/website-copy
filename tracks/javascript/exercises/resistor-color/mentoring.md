@@ -25,7 +25,7 @@ const COLORS_MAP = {
   'green': 5,
   'blue': 6,
   'violet': 7,
-  'grey:': 8,
+  'grey': 8,
   'white': 9
 }
 
