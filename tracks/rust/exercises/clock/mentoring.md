@@ -97,6 +97,43 @@ impl fmt::Display for Clock {
 }
 ```
 
+For using the chrono crate, which was introduced in Gigasecond.
+
+```rust
+use chrono::{Duration, NaiveTime};
+use std::fmt;
+use std::fmt::Formatter;
+
+#[derive(Debug, PartialEq)]
+pub struct Clock {
+    time: NaiveTime,
+}
+
+impl Clock {
+    pub fn new(hours: i32, minutes: i32) -> Self {
+        Clock {
+            time: NaiveTime::from_hms(0, 0, 0)
+                + Duration::hours(hours as i64)
+                + Duration::minutes(minutes as i64),
+        }
+    }
+
+    pub fn add_minutes(&self, minutes: i32) -> Self {
+        Clock {
+            time: self.time + Duration::minutes(minutes as i64),
+        }
+    }
+}
+
+impl fmt::Display for Clock {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        let formatted_time = &self.time.format("%H:%M").to_string();
+
+        write!(f, "{}", formatted_time)
+    }
+}
+```
+
 ### Common Suggestions
 
 If they implement Debug or PartialEq manually:
@@ -172,4 +209,13 @@ It turns out that this problem is generally trickier to solve if the clock store
 
 ```markdown
 Here's a secret: This problem is easier to solve if the clock only stores minutes!
+```
+
+If they didn't use the chrono crate
+
+```markdown
+Another approach to consider would be to use [`chrono::NaiveTime`] with [`chrono::Duration`]. The `chrono` crate was introduced in the Gigasecond exercise.
+
+[`chrono::NaiveTime`]: https://docs.rs/chrono/0.4.19/chrono/naive/struct.NaiveTime.html
+[`chrono::Duration`]: https://docs.rs/chrono/0.4.19/chrono/struct.Duration.html
 ```
