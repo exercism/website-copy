@@ -1,6 +1,6 @@
 ### Installation
 
-The best way to get started with the CLI is to use our [Interactive Walkthrough](https://exercism.io/cli-walkthrough). That will take you down the right path depending on your operating system, experience with the command line, etc, and will get your CLI configured.
+The Exercism command line interface (CLI) is a tool that can download exercises, show your progress through a track, and submit your solutions - all from within your terminal. The best way to get started with the CLI is our [Interactive Walkthrough](https://exercism.io/cli-walkthrough). It guides you down the right path depending on your operating system, experience with the command line, etc, and will get your CLI configured.
 
 If you just want to download the CLI manually and work out how to use it, you can download and install it from [GitHub](https://github.com/exercism/cli/releases/latest). However, please note that we ask that you work through the [Interactive Walkthrough](https://exercism.io/cli-walkthrough) before opening any support requests.
 
