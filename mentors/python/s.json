@@ -150,5 +150,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am an aspiring software developer and a graduate in Electronics and Instrumentation.I love coding in Python. Eager to help the open source community :) "
+  },
+  {
+    "github_username": "scortino",
+    "name": "Stefano Cortinovis",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I automate boring stuff using Python."
   }
 ]
