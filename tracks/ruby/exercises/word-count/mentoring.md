@@ -25,6 +25,21 @@ end
 
 ```
 
+In Ruby 2.7
+```ruby
+class Phrase
+  WORD_REGEX = /\b[\w']+\b/
+
+  def initialize(phrase)
+    @phrase = phrase.downcase.scan(WORD_REGEX)
+  end
+
+  def word_count
+    @phrase.tally
+  end
+end
+```
+
 ### Reasonable Variants
 - `reduce`/`inject` for counting: see [this explanation](https://technology.customink.com/blog/2014/10/14/better-hash-injection-using-each-with-object/) why to prefer each_with_object, especially as an after-approval challenge. 
 
