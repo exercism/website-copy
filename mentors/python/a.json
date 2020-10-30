@@ -110,5 +110,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Python programmer with 10+ years in software development who believes programming is an art. I love to explore new tools/technologies and I enjoy helping others and share my experience of becoming a Pythonista."
+  }, 
+  {
+    "github_username": "antoniosaric",
+    "name": "Antonio Saric",
+    "link_text": "Personal page",
+    "link_url": "http://antoniosaric.herokuapp.com/index.html",
+    "avatar_url": "https://res.cloudinary.com/dqd4ouqyf/image/upload/v1603928611/antonio_saric_pic_1_jxdm6j.png",
+    "bio": "01000011 01101111 01100100 01101001 01101110 01100111 00100000 01110100 01101111 00100000 01100011 01101000 01100001 01101110 01100111 01100101 00100000 01110100 01101000 01100101 00100000 01110111 01101111 01110010 01101100 01100100"
   }
 ]
