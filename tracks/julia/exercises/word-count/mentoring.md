@@ -27,10 +27,10 @@ Dict{String,Int64} with 6 entries:
 
 **Split, then strip quotation**
 
-This solution, like all the others below uses "Regex".
+This solution, like all the others below uses "regex".
 Regex is a concise language for describing patterns in strings.
 
-In Julia, `r"foo"` constructs a Regex at compilation time using the `@r_str` macro.
+In Julia, `r"foo"` constructs a `Regex` object at compilation time using the `@r_str` macro.
 
 ```julia
 function wordcount(input)
@@ -50,10 +50,10 @@ end
 This solution uses a regex, but you could equally do something like:
 
 ```julia
-split(input, c -> !(isalnum(c) || c == '''); keepempty=false)
+split(input, c -> !(isletter(c) || isdigit(c) || c == '''); keepempty=false)
 ```
 
-Using `keepempty` because unlike the Regex (which can match many characters at once), this would return many empty strings for long runs of whitespace or punctuation.
+Using `keepempty` because unlike the regex (which can match many characters at once), this would return many empty strings for long runs of whitespace or punctuation.
 
 **Find each word with regex without splitting the input**
 
@@ -65,8 +65,8 @@ For what it is worth, traditional word counting code like `wc` treat a mix of le
 ```julia
 function wordcount(input)
     counts = Dict{String, Int}()
-    # Unicode version matching any letters or numbers: r"\pL+'\pL|\pL+|\pN+"
-    for m in eachmatch(r"[A-Za-z]+'[A-Za-z]|[A-Za-z]+|[0-9]+", input)
+    # Unicode version matching any letters or numbers: r"\pL+'\pL+|\pL+|\pN+"
+    for m in eachmatch(r"[A-Za-z]+'[A-Za-z]+|[A-Za-z]+|[0-9]+", input)
         word = lowercase(m.match)
         counts[word] = get(counts, word, 0) + 1
     end
@@ -79,8 +79,8 @@ Same as above, but we lowercase `input` all in one go, so we can have a `Dict` o
 ```julia
 function wordcount(input)
     counts = Dict{SubString{typeof(input)}, Int}()
-    # Unicode version matching any letters or numbers: r"\pL+'\pL|\pL+|\pN+"
-    for m in eachmatch(r"[A-Za-z]+'[A-Za-z]|[A-Za-z]+|[0-9]+", lowercase(input))
+    # Unicode version matching any letters or numbers: r"\pL+'\pL+|\pL+|\pN+"
+    for m in eachmatch(r"[A-Za-z]+'[A-Za-z]+|[A-Za-z]+|[0-9]+", lowercase(input))
         word = m.match
         counts[word] = get(counts, word, 0) + 1
     end
@@ -97,7 +97,7 @@ Inspired by mentoring rezaeir's solution.
 
 If you don't know what a "word-boundary" is in regex,
 [this stack overflow post might help](https://stackoverflow.com/questions/4541573/what-are-non-word-boundary-in-regex-b-compared-to-word-boundary)
-(Note, though that character classes in Julia Regexes include unicode characters by default. e.g. `\w` matches `[\pL\pN_]` (all characters that are letters or numbers, and underscore). Search the PCRE `man` page for `PCRE_UCP` for more information).
+(Note, though that character classes in Julia regexes include unicode characters by default. e.g. `\w` matches `[\pL\pN_]` (all characters that are letters or numbers, and underscore). Search the PCRE `man` page for `PCRE_UCP` for more information).
 
 ```julia
 function wordcount(sentence)
