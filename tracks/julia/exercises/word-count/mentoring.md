@@ -137,6 +137,8 @@ end
 ```
 It's possible to create the dictionary more efficiently with the `countmap` function from `StatsBase` (which only hashes the key once per check). With countmap, you can code-golf the above into:
 ```julia
+using StatsBase: countmap
+
 wordcount_withstatsbase(sentence) = countmap(filter!(!isempty, strip.(ispunct, split(lowercase(sentence)))))
 ```
 
