@@ -153,41 +153,35 @@ function wordcount(input)
     iswordchar(c) = !ispunct(c) && !isspace(c)
 
     in_word = false
-    j = 0
+    prev = 0
+    lastind = lastindex(input)
     for i in eachindex(input)
         c = input[i]
-
-        if i == lastindex(input)
-            # last-character is a special case, because there is no need
-            # for a lookahead and we may need to record the last word.
-            j = in_word ? j : i
+        # last-character is a special case, because there is no need
+        # for a lookahead and we may need to record a one-char word.
+        if i == lastind
+            prev = in_word ? prev : i
             i = iswordchar(c) ? i : i-1
-            if j <= i
-                k = SubString(input, j:i)
+            if prev <= i
+                k = SubString(input, prev:i)
                 d[k] = get(d, k, 0) + 1
             end
-
-
+        # if `c` is a word character and we're not already in a word,
+        # then this character marks the start of a new word. If we are
+        # in a word, continue iterating.
         elseif iswordchar(c)
-            # if `c` is a word character and we're not already in a word,
-            # then this character marks the start of a new word. If we are
-            # in a word, continue iterating.
             if !in_word
                 in_word = true
-                j = i
+                prev = i
             end
-
+        # If `c` is not a word character, but we are in a word, then the
+        # previous character might mark the end of a word,
         elseif in_word
-            # If `c` is not a word character, but we are in a word, then the
-            # previous character may mark the end of a word, unless `c == ''',
-            # in which case we could be in a contraction.
-
-            # A contraction is a ' character followed immediately by a word
-            # character. If that's the case, we shouldn't record the word yet.
+            # We might be in a contraction
             c == ''' && iswordchar(input[nextind(input, i)]) && continue
 
             in_word = false
-            k = SubString(input, j:i-1)
+            k = SubString(input, prev:i-1)
             d[k] = get(d, k, 0) + 1
         end
     end
