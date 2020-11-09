@@ -145,7 +145,7 @@ wordcount_withstatsbase(sentence) = countmap(filter!(!isempty, strip.(ispunct, s
 
 ** Totally manual ** 
 
-This method iterates through the string one character at a time and switches behavior at word boundaries (when `iswordchar` changes from true to false or false to true). The dictionary has `SubString` keys in this version, which are like the string equivalent of Array `views`. It is about 20% faster than the StatsBase version on small inputs like those in the tests (performance is almost identicaly for inputs without thousands of characters). It's about 1.5x-2x faster than the next-fastest regex version, likely owing to the smaller number of allocations.
+This method iterates through the string one character at a time and switches behavior at word boundaries (when `iswordchar` changes from true to false or false to true). The dictionary has `SubString` keys in this version, which are like the string equivalent of Array `views`. It is about 20% faster than the StatsBase version on small inputs like those in the tests. It's about 1.5x-2x faster than the next-fastest regex version, likely owing to the smaller number of allocations.
 ```julia
 function wordcount(input)
     input = lowercase(input)
