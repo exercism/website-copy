@@ -121,4 +121,72 @@ function wordcount(sentence)
 end
 ```
 
+** Without Regex ** 
+
+This solution doesn't use a regex at all. It uses the default split behavior (which checks for `isspace` characters) and then strips punctuation characters left over on the "outside" of words. Filtering hoas to come after stripping in case the strip operation itself left an empty string.
+```julia
+function wordcount(sentence)
+    words = strip.(ispunct, split(lowercase(sentence)))
+    filter!(!isempty, words)
+    d = Dict{eltype(words), Int}()
+    for w in words
+        d[w] = get(d, w, 0) + 1
+    end
+    d
+end
+```
+It's possible to create the dictionary more efficiently with the `countmap` function from `StatsBase` (which only hashes the key once per check). With countmap, you can code-golf the above into:
+```julia
+using StatsBase: countmap
+
+wordcount_withstatsbase(sentence) = countmap(filter!(!isempty, strip.(ispunct, split(lowercase(sentence)))))
+```
+
+
+** Totally manual ** 
+
+This method iterates through the string one character at a time and switches behavior at word boundaries (when `iswordchar` changes from true to false or false to true). The dictionary has `SubString` keys in this version, which are like the string equivalent of Array `views`. It is about 20% faster than the StatsBase version on small inputs like those in the tests. It's about 1.5x-2x faster than the next-fastest regex version, likely owing to the smaller number of allocations.
+```julia
+function wordcount(input)
+    input = lowercase(input)
+    d = Dict{SubString{typeof(input)}, Int}()
+    iswordchar(c) = !ispunct(c) && !isspace(c)
+
+    in_word = false
+    prev = 0
+    lastind = lastindex(input)
+    for i in eachindex(input)
+        c = input[i]
+        # last-character is a special case, because there is no need
+        # for a lookahead and we may need to record a one-char word.
+        if i == lastind
+            prev = in_word ? prev : i
+            i = iswordchar(c) ? i : i-1
+            if prev <= i
+                k = SubString(input, prev:i)
+                d[k] = get(d, k, 0) + 1
+            end
+        # if `c` is a word character and we're not already in a word,
+        # then this character marks the start of a new word. If we are
+        # in a word, continue iterating.
+        elseif iswordchar(c)
+            if !in_word
+                in_word = true
+                prev = i
+            end
+        # If `c` is not a word character, but we are in a word, then the
+        # previous character might mark the end of a word,
+        elseif in_word
+            # We might be in a contraction
+            c == ''' && iswordchar(input[nextind(input, i)]) && continue
+
+            in_word = false
+            k = SubString(input, prev:i-1)
+            d[k] = get(d, k, 0) + 1
+        end
+    end
+    d
+end
+```
+
 `````
