@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I love Rust and JavaScript. Exploring WebAssembly in my free time."
+  },
+  {
+    "github_username": "PaulDance",
+    "name": "Paul Mabileau",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "My programming background mainly consists of Python, Java and C, but I also have dabbled in Scheme, OCaml and PHP. Lately, I have been sniffing plenty of Rust with the help of Exercism and some side projects. For me, Rust reunites the essentials: low-level concerns, efficient memory management and higher-level abstractions, so I really feel I have finally found my home there."
   }
 ]
