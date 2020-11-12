@@ -38,7 +38,7 @@ main () {
 
   hamming=0;
   for (( i = 0; i < ${#1}; i++ )); do
-    [[ "${1:i:1}" != "${2:i:1}" ]] && ((++hamming))
+    [[ "${1:i:1}" != "${2:i:1}" ]] && (( ++hamming ))
   done
 
   echo "$hamming"
@@ -76,8 +76,8 @@ main "$@"
 
 * Suggest creating a counter to gather hammingDistance
 1) let "hammingDistance+=1"
-2) counter=0; ((++counter));
-3) counter=0; counter=(($counter+1));
+2) counter=0; (( ++counter ));
+3) counter=0; counter=(( $counter+1 ));
 
 * Suggest Quote the right-hand side of == in [[ ]] to prevent glob matching, the left hand side can be quoted too.
 ```
