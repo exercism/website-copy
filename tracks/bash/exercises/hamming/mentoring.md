@@ -57,20 +57,31 @@ main "$@"
 3) counter=0; counter=(( $counter+1 ));
 
 * Suggest to quote the right-hand side of == in [[ ]] to prevent glob matching, the left hand side can be quoted too.
-```
-bash hamming.sh 'AAA' 'A?A'
 
+```bash
+@test "expose subtle '[[ \$x == \$y ]]' bug" {
+  [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+  run bash hamming.sh 'AAA' 'A?A'
+  (( status == 0 ))
+  [[ $output == "1" ]]
+}
+```
+output:
+```
 ✗ expose subtle '[[ $x == $y ]]' bug
    (in test file hamming_test.sh, line 92)
      `(( status == 0 ))' failed
 ```
-
 Problem line of code: 
 ```bash
+a=$1
+b=$2
 [[ ${a:i:1} == ${b:i:1} ]] || count+=1
 ```
 Potential fix:
 ```bash
+a=$1
+b=$2
 [[ "${a:i:1}" == "${b:i:1}" ]] || count+=1
 ```
 
