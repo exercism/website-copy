@@ -1,5 +1,4 @@
 ### Reasonable Solutions
-
 ```bash
 #!/usr/bin/env bash
 main () {
@@ -47,9 +46,7 @@ main () {
 main "$@"
 ```
 
-
 ### Common Suggestions
-
 * Suggest using a for loop in bash or other [looping constructs](https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs) https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs
 
 * Suggest using [Parameter Expansion - Substring Extraction](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) to access the index of the string. https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
@@ -59,9 +56,9 @@ main "$@"
 2) counter=0; (( ++counter ));
 3) counter=0; counter=(( $counter+1 ));
 
-* Suggest Quote the right-hand side of == in [[ ]] to prevent glob matching, the left hand side can be quoted too.
+* Suggest to quote the right-hand side of == in [[ ]] to prevent glob matching, the left hand side can be quoted too.
 ```
-run bash hamming.sh 'AAA' 'A?A'
+bash hamming.sh 'AAA' 'A?A'
 
 ✗ expose subtle '[[ $x == $y ]]' bug
    (in test file hamming_test.sh, line 92)
@@ -77,17 +74,13 @@ Potential fix:
 [[ "${a:i:1}" == "${b:i:1}" ]] || count+=1
 ```
 
-
 ### Talking Points
-
 * `if`/`else` used instead of List Constructs.
 
 Because conditionals are needed. If the
 student uses `if`/`else` it's an opportunity to talk about the list constructs for a more concise answer. `&&`/`||` The and list and or list constructs provide a means of processing a number of commands consecutively. These can effectively replace complex nested if/then or even case statements. [List Constructs](https://tldp.org/LDP/abs/html/list-cons.html#LISTCONSREF)
 
 ### General Guidelines
-
-
 * there are unquoted variables
 
 ```md
