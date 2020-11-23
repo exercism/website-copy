@@ -21,15 +21,16 @@ main "$@"
 - use "$#" to get number of arguments
 This will even handle the whitespace tests, such as:
 
-```
+\```shell
 bash proverb.sh "rusty nail" "horse shoe"
-
+\```
 output:
 
+\```
 $# = 2
 $1 = "rusty nail"
 $2 = "horse shoe"
-```
+\```
 
 ### Talking points
 - Suggest using [Indirect Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) `"${!index}"` to dynamically access the shell argument. https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
