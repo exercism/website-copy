@@ -77,8 +77,7 @@ Potential fix:
 ### Talking Points
 * `if`/`else` used instead of List Constructs.
 
-Because conditionals are needed. If the
-student uses `if`/`else` it's an opportunity to talk about the list constructs for a more concise answer. `&&`/`||` The and list and or list constructs provide a means of processing a number of commands consecutively. These can effectively replace complex nested if/then or even case statements. [List Constructs](https://tldp.org/LDP/abs/html/list-cons.html#LISTCONSREF)
+Because conditionals are needed. If the student uses `if`/`else` it's an opportunity to talk about the list constructs for a more concise answer. `&&`/`||` The and list and or list constructs provide a means of processing a number of commands consecutively. These can effectively replace complex nested `if`/`then`  or even case statements. [List Constructs](https://tldp.org/LDP/abs/html/list-cons.html#LISTCONSREF)
 
 ### General Guidelines
 * there are unquoted variables
