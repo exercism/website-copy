@@ -87,7 +87,7 @@ b=$2
 ### Talking Points
 * List Constructs used instead of `if`/`else`
 
-The `&&` and `||` in bash are short-circuit logical operators. They quit evaluating as soon as possible.
+The `&&` and `||` in bash are short-circuit logical operators. They stop evaluating as soon as possible.
 
 `a && b` will only run b if a is true. `a || b` will only run b if a is false. `a || b || c` will stop as soon as anything is true. `a && b || c` will run a and ... b or c or both!! This is why a full blown if-else is often a good idea.
 
