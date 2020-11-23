@@ -122,7 +122,7 @@ in unexpected ways.
 * there is no shebang
 
 ```md
-There is no  shebang on the top line. This means if you `chmod +x` your
+There is no shebang on the top line. This means if you `chmod +x` your
 script, you can't control what shell is used to run it! Also, it makes it
 harder for another person to see that the script is written for Bash.
 ```
