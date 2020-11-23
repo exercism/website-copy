@@ -57,7 +57,6 @@ main "$@"
 3) counter=0; counter=(( $counter+1 ));
 
 * Suggest to quote the right-hand side of == in [[ ]] to prevent glob matching, the left hand side can be quoted too.
-
 ```bash
 @test "expose subtle '[[ \$x == \$y ]]' bug" {
   [[ $BATS_RUN_SKIPPED == "true" ]] || skip
@@ -86,6 +85,12 @@ b=$2
 ```
 
 ### Talking Points
+* List Constructs used instead of `if`/`else`
+
+The `&&` and `||` in bash are short-circuit logical operators. They quit evaluating as soon as possible.
+
+`a && b` will only run b if a is true. `a || b` will only run b if a is false. `a || b || c` will stop as soon as anything is true. `a && b || c` will run a and ... b or c or both!! This is why a full blown if-else is often a good idea.
+
 * `if`/`else` used instead of List Constructs.
 
 Because conditionals are needed. If the student uses `if`/`else` it's an opportunity to talk about the list constructs for a more concise answer. `&&`/`||` The and list and or list constructs provide a means of processing a number of commands consecutively. These can effectively replace complex nested `if`/`then`  or even case statements. [List Constructs](https://tldp.org/LDP/abs/html/list-cons.html#LISTCONSREF)
