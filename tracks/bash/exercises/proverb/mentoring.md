@@ -18,7 +18,7 @@ main "$@"
 ```
 
 ### Common suggestions
-- use "$#" to get number of arguments
+- use `"$#"` to get number of arguments
 This will even handle the whitespace tests, such as:
 
 \```shell
