@@ -1,4 +1,5 @@
 ### Reasonable Solutions
+
 ```bash
 #!/usr/bin/env bash
 main () {
@@ -49,6 +50,7 @@ main "$@"
 ```
 
 ### Common Suggestions
+
 * Suggest using a for loop in bash or other [looping constructs](https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs) https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs
 
 * Suggest using [Parameter Expansion - Substring Extraction](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) to access the index of the string. https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
@@ -87,6 +89,7 @@ b=$2
 ```
 
 ### Talking Points
+
 * List Constructs used instead of `if`/`else`
 
 The `&&` and `||` in bash are short-circuit logical operators. They stop evaluating as soon as possible.
@@ -94,6 +97,7 @@ The `&&` and `||` in bash are short-circuit logical operators. They stop evaluat
 `a && b` will only run b if a is true. `a || b` will only run b if a is false. `a || b || c` will stop as soon as anything is true. `a && b || c` will run a and ... b or c or both!! This is why a full blown if-else is often a good idea.
 
 ### General Guidelines
+
 * Unquoted variables
 
 Always expand all expansions. If you fail to quote an expansion, one string might be split into multiple words by the shell parser. With `a='1 = 2'`, `[ "$a" ]` is true while `[ $a ]` is false.
