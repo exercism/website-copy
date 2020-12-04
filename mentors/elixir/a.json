@@ -46,5 +46,13 @@
     "link_url": null,
     "avatar_url": "https://s.gravatar.com/avatar/b95c8779b00dee0b7c47de5a5d9e2ce4?s=254&r=g",
     "bio": "I started as C programmer and had my time with the different app development tools coding in many languages (PHP, Python, Java, Swift, JavaScript, Dart ...). I always felt  that I'm missing somthing in my toolset until I found Elixir."
+  },
+  {
+    "github_username": "Abat",
+    "name": "Abat Shakenov",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://pbs.twimg.com/profile_images/848892850175606784/76Pb5BO8_400x400.jpg",
+    "bio": "I like Elixir"
   }
 ]
