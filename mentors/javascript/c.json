@@ -78,5 +78,13 @@
     "link_url": "https://github.com/CodingGreen",
     "avatar_url": null,
     "bio": "I've been programming for 9 years and in my current job purely in Javascript. I've worked on mostly node.js and react with functional programming being my preferred style."
+  },
+  {
+    "github_username": "CodeZeus-dev",
+    "name": "Constantine Akritides",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a Makers Academy student in London and a Junior Software Engineer, currently coding in Javascript, Ruby, and C#. I am willing to help and mentor my fellow devs and I usually follow a TDD/BDD approach."
   }
 ]
