@@ -36,7 +36,6 @@ end
     end
   ```
   Note that `Symbol#to_proc` is a new concept in the track.
-   
 
 ### General
 - This is the first exercise where students practice with avoiding the Accumulator Pattern (with a counter variable)! It's an important goal of this exercise. 
