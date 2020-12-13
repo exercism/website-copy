@@ -35,8 +35,8 @@ end
       words.group_by(&:itself).transform_values(&:count)  
     end
   ```
-  Note that `Symbol#to_proc` is a new concept in the track.
-
+  Note that `Symbol#to_proc` is a new concept in the track. 
+ 
 ### General
 - This is the first exercise where students practice with avoiding the Accumulator Pattern (with a counter variable)! It's an important goal of this exercise. 
 - Solutions with `each`, `for` or others are not considered approvable (at least not in a first submission and/or without addressing it).
