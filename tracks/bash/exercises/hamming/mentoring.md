@@ -1,23 +1,25 @@
 ### Reasonable Solutions
+
 ```bash
 #!/usr/bin/env bash
 main () {
-  (( "$#" == 2 )) || {
+  local -i count
+
+  if (( "$#" != 2 )); then
       echo "Usage: hamming.sh <string1> <string2>"
-      exit 1
-  }
+      return 1
+  fi
   
   # Regular vars are easier to read when doing fancy parameter expansion.
   a=$1 b=$2 
   
-  (( "${#a}" == "${#b}" )) || {
+  if (( "${#a}" != "${#b}" )); then
       echo "left and right strands must be of equal length"
-      exit 1
-  }
+      return 1
+  fi
 
-  declare -i count
   for (( i = 0; i < "${#a}"; i++ )); do
-    [[ "${a:i:1}" == "${b:i:1}" ]] || count+=1
+    [[ "${a:i:1}" != "${b:i:1}" ]] && count+=1
   done
 
   printf '%d\n' "$count"
@@ -32,6 +34,7 @@ main () {
         echo "Usage: hamming.sh <string1> <string2>"
         exit 1
     fi
+
     if (( ${#1} != ${#2} )); then
         echo "left and right strands must be of equal length"
         exit 1
@@ -47,14 +50,15 @@ main "$@"
 ```
 
 ### Common Suggestions
+
 * Suggest using a for loop in bash or other [looping constructs](https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs) https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs
 
 * Suggest using [Parameter Expansion - Substring Extraction](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) to access the index of the string. https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
 
 * Suggest creating a counter to gather hammingDistance
-1) let "hammingDistance+=1"
-2) counter=0; (( ++counter ));
-3) counter=0; counter=(( $counter+1 ));
+1) local -i hammingDistance; "hammingDistance+=1"
+2) counter=0; (( ++counter ))
+3) counter=0; counter=$(( counter + 1 ))
 
 * Suggest to quote the right-hand side of == in [[ ]] to prevent glob matching, the left hand side can be quoted too.
 ```bash
@@ -85,25 +89,25 @@ b=$2
 ```
 
 ### Talking Points
+
 * List Constructs used instead of `if`/`else`
 
 The `&&` and `||` in bash are short-circuit logical operators. They stop evaluating as soon as possible.
 
 `a && b` will only run b if a is true. `a || b` will only run b if a is false. `a || b || c` will stop as soon as anything is true. `a && b || c` will run a and ... b or c or both!! This is why a full blown if-else is often a good idea.
 
-* `if`/`else` used instead of List Constructs.
-
-Because conditionals are needed. If the student uses `if`/`else` it's an opportunity to talk about the list constructs for a more concise answer. `&&`/`||` The and list and or list constructs provide a means of processing a number of commands consecutively. These can effectively replace complex nested `if`/`then`  or even case statements. [List Constructs](https://tldp.org/LDP/abs/html/list-cons.html#LISTCONSREF)
-
 ### General Guidelines
-* there are unquoted variables
+
+* Unquoted variables
+
+Always expand all expansions. If you fail to quote an expansion, one string might be split into multiple words by the shell parser. With `a='1 = 2'`, `[ "$a" ]` is true while `[ $a ]` is false.
 
 ```md
-On LN you have an unquoted variable! That can lead to unexpected behavior.
+On line <line number> you have an unquoted variable! That can lead to unexpected behavior.
 Try this for instance: `$ bash ./two_fer.sh "a -o -n a"`
 ```
 
-* there is no `main` function
+* No `main` function
 
 ```md
 Generally, you should encapsulate the main body of your script in a `main`
@@ -119,7 +123,7 @@ In bash, prefer `[[`/`]]` over `[`/`]`. It's more powerful than `[`/`]` and less
 in unexpected ways.
 ```
 
-* there is no shebang
+* No shebang
 
 ```md
 There is no shebang on the top line. This means if you `chmod +x` your
@@ -127,9 +131,9 @@ script, you can't control what shell is used to run it! Also, it makes it
 harder for another person to see that the script is written for Bash.
 ```
 
-* boilerplate comments are left in
+* Boilerplate comments are left in
 
 ```md
-It would be nice if you removed the boiler plate comments, to make it easier
+It would be nice if you removed the boiler plate comments to make it easier
 to read your code.
 ```
