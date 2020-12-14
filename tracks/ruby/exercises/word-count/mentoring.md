@@ -51,12 +51,12 @@ http://www.rubular.com/
 - `intermediate steps to strip quotes`: One strategy people use to catch quoted words is an intermediate step like 'strip_quotes'. Suggest to solve it within the RegEx. 
 - Constant: Storing the RegEx in a Constant.
 - The goal of separating the preparing of the input from the processing itself.
-- Do's and don'ts in initializers.  
+- Do's and don'ts in initializers.
+- Can the [Enumerable#tally](https://ruby-doc.org/core-2.7.2/Enumerable.html#method-i-tally) method introduced in ruby 2.7 do the work for us
 
 ### Research Notes 
 Passing regular expressions:
 - `/\b[\w']+\b/`
 - `/\b[[:alnum:]']+\b/`
 - `/\b[[:word:]']+\b/`
-
 
