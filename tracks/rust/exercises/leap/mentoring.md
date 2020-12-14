@@ -30,8 +30,8 @@ pub fn is_leap_year(year):
 ### Talking points
 - it's very helpful to internalize the rules Rust uses for [expression
   order](https://doc.rust-lang.org/reference/expressions.html#expression-precedence)
-- there is no compile time penalty of binding parts of the boolean expression to
-  a meaningful name and combine the afterwards
+- there is no run time penalty from binding parts of the boolean expression to
+  a meaningful name and combining them afterwards
 
 ### Benchmark code
 
