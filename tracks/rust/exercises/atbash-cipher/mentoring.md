@@ -134,6 +134,94 @@ pub fn decode(cipher: &str) -> String {
 }
 ```
 
+```rust
+mod separate {
+    use itertools::Itertools;
+    use std::iter::FromIterator;
+
+    pub trait Separate<'a, I, T, O>
+    where
+        I: IntoIterator<Item = T>,
+        T: Copy,
+        O: FromIterator<T>,
+    {
+        /// Separate a stream into groups, inserting a copy of T between each.
+        /// Then collect it.
+        ///
+        /// This is a fused iterator.
+        //
+        // While it would be nice not to need to collect the output, just return
+        // `impl Iterator<Item=T>` instead of `O`, the lifetimes of the chunk
+        // iterators make that impossible.
+        fn separate(self, group_sep: T, group_size: usize) -> O;
+    }
+
+    // Strictly speaking, this is not a single-allocation operation: we create
+    // two boxed trait objects. However, rustc should be smart enough to ensure
+    // that those boxes are reused; in the end, this allocates two constant-size
+    // box pointers, plus the output object.
+    impl<'a, I, T, O> Separate<'a, I, T, O> for I
+    where
+        I: 'a + IntoIterator<Item = T>,
+        <I as IntoIterator>::IntoIter: 'a,
+        T: 'a + Copy + PartialEq,
+        O: FromIterator<T>,
+    {
+        fn separate(self, group_sep: T, group_size: usize) -> O {
+            self.into_iter()
+                .fuse()
+                .chunks(group_size)
+                .into_iter()
+                .map(|chunk| {
+                    let d: Box<dyn Iterator<Item = T>> = Box::new(chunk);
+                    d
+                })
+                .interleave_shortest(std::iter::repeat(std::iter::once(group_sep)).map(|cyc| {
+                    let d: Box<dyn Iterator<Item = T>> = Box::new(cyc);
+                    d
+                }))
+                .flatten()
+                .with_position()
+                .filter_map(move |pos| {
+                    use itertools::Position::*;
+                    match pos {
+                        Only(c) => Some(c),
+                        First(c) => Some(c),
+                        Middle(c) => Some(c),
+                        Last(c) if c != group_sep => Some(c),
+                        _ => None,
+                    }
+                })
+                .collect()
+        }
+    }
+}
+
+use separate::Separate;
+
+fn transpose(c: char) -> Option<char> {
+    if !c.is_ascii_alphanumeric() {
+        return None;
+    }
+    Some(if c.is_ascii_alphabetic() {
+        let c = c.to_ascii_lowercase() as u8;
+        (b'z' - (c - b'a')) as char
+    } else {
+        c
+    })
+}
+
+/// "Encipher" with the Atbash cipher.
+pub fn encode(plain: &str) -> String {
+    plain.chars().flat_map(transpose).separate(' ', 5)
+}
+
+/// "Decipher" with the Atbash cipher.
+pub fn decode(cipher: &str) -> String {
+    cipher.chars().flat_map(transpose).collect()
+}
+```
+
 ### Example Comments
 
 If they're not using ascii specific char functions.
