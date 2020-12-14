@@ -59,8 +59,10 @@ breaking solutions with arrow functions and a `this` inside.
 If a student is on an older version, kindly suggest they update to the newer test suite.
 
 ### Common suggestions
-- If they use the unary `+` to convert to a number, show them `Number(val)` which explicitly converts `val` to a
+- If they use the unary `+` or parseFloat to convert to a number, show them `Number(val)` which explicitly converts `val` to a
   number.
+Here is a good example of when to make this decision:
+[https://stackoverflow.com/a/13676265/5283424](https://stackoverflow.com/a/13676265/5283424)
  - If they round via `Math.round(age * 100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed).
 
 

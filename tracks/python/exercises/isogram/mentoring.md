@@ -69,7 +69,6 @@ s = ''.join(result)
 The Counter collection provides a simple way to solve the problem:
 
 ```python
-import string
 import collections
 
 def is_isogram(string):
@@ -81,8 +80,10 @@ def is_isogram(string):
         return True
 
     c = collections.Counter(word)
-    for letter, count in c.most_common(1):
-        return count == 1
+    
+    letter, count = c.most_common(1)[0]
+    
+    return count == 1
 ```
 
 ##### Defective Solution using Handcrafted Counters 
@@ -120,8 +121,6 @@ This idiom is best rewritten using sets or lists to hold the previous characters
 A similar idea can be implemented with sets:
 
 ```python
-import string
-
 def is_isogram(string):
     string = string.lower()
 

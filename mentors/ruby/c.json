@@ -70,5 +70,13 @@
     "link_url": "https://freelancerbrg.com",
     "avatar_url": "https://pbs.twimg.com/profile_images/1305133351569825792/hMQnFblq_400x400.jpg",
     "bio": "A self-taught engineer who is now an IT Teacher, Mentor, Full Stack Engineer, avid Open Source contributor and researcher."
+  },
+  {
+    "github_username": "CROUZET",
+    "name": "Henri Crouzet",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/6324183",
+    "bio": "DevOps developer at Oui.SNCF (France) since 2014. From Java to Ruby by accident, a marvelous accident!"
   }
 ]

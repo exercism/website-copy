@@ -27,6 +27,26 @@ public class DifferenceOfSquaresCalculator {
     }
 }
 ```
+
+Simple solution (single iteration):
+```java
+public class DifferenceOfSquaresCalculator {
+    int square(n) {
+        return n * n;
+    }
+
+    int computeDifferenceOfSquares(int number) {
+        int sum = 0;
+        int sumOfSquares = 0;
+        for (int i = 1; i <= number; i++) {
+            sum += i;
+            sumOfSquares += square(i);
+        }
+        return square(sum) - sumOfSquares;
+    }
+}
+```
+
 Functional solution:
 
 ```java
