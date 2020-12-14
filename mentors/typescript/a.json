@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "JavaScript and Node.js are my top programming languages. I can't imagine writing them without TypeScript. I'm a professional software engineer with over two decades of work experience. I love to teach and mentor."
+  },
+  {
+    "github_username": "adriantombu",
+    "name": "Adrian Tombu",
+    "link_text": "My personnal website",
+    "link_url": "https://otso.fr/",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/383297?s=460&u=6b360b8a3cc059d8180b692d8e85f4a73bb9ee91&v=4",
+    "bio": "I'm a freelance senior backend developer specialized in Node.js & Go. I've been using TypeScript on top of Node.js for years now. I love helping people: I think knowledge is a gift and we should share it to everyone."
   }
 ]
