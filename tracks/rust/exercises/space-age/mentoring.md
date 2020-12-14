@@ -114,3 +114,19 @@ impl Planet for Neptune {
     const YEAR_LENGTH: f64 = 164.791_32;
 }
 ```
+
+### Common Suggestions
+
+Upon passing the tests, the student may appreciate being introduced to macros with this exercise.
+
+```markdown
+Another approach to consider is how the use of a macro could reduce the boilerplate for this exercise. For instance, [`a macro can implement a trait for multiple types at once`], though it is fine to implement `years_during` in the Planet trait itself. In the community solutions you may see a macro defining both the structs and their implementations.
+
+Info to get started with macros can be found [`here`] and [`here`].
+
+
+[`a macro can implement a trait for multiple types at once`]: https://stackoverflow.com/questions/39150216/implementing-a-trait-for-multiple-types-at-once
+[`here`]: https://doc.rust-lang.org/rust-by-example/macros/syntax.html
+[`here`]: https://doc.rust-lang.org/1.7.0/book/macros.html
+
+```
