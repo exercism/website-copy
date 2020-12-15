@@ -45,5 +45,5 @@ $2 = "horse shoe"
 
 - Multiple Initialized loop-variables can be added to the loop initializer using a comma.
 
-Note, if the variables are not part of the control flow they should be excluded from the loop initializer.<br/>
+Note, if the variables are not part of the control flow they should be excluded from the loop initializer.
 In this case, both `currentNounIndex`, and `nextNounIndex` are part of the control flow and each iteration both variables are incremented by 1.
