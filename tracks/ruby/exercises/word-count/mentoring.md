@@ -44,9 +44,13 @@ Note that `Symbol#to_proc` is a new concept in the track.
 
 - This is the first exercise where students practice with avoiding the Accumulator Pattern (with a counter variable)! It's an important goal of this exercise.
 - Solutions with `each`, `for` or others are not considered approvable (at least not in a first submission and/or without addressing it).
-- The RegEx gets complicated in the last test, where it should catch both `"large"` and `'large'` ` => { large: 2 }`. 
-As long as they got something that catches a word with or without `'`, it's fine to give away the last step for free.  
-http://www.rubular.com/ 
+- The RegEx gets complicated in the last test, where it should catch both `"large"` and `'large'` ` => { large: 2 }`.
+As long as they got something that catches a word with or without `'`, it's fine to give away the last step for free.
+
+Ruby specific regular expression resources:
+
+- http://www.rubular.com/
+- https://ruby-doc.org/core-2.7.2/Regexp.html
 
 ### Talking points
 
