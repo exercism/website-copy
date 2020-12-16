@@ -1,6 +1,12 @@
 type/analyzer-comments:
 - automated-comments/**/*.md
 
+type/ci:
+- .github/workflows/**/*
+- .github/actions/**/*
+- .github/**/*.yml
+- .github/**/*.json
+
 type/copy:
 - pages/**/*
 - pages/*
@@ -10,3 +16,116 @@ type/mentor-bios:
 
 type/mentor-notes:
 - tracks/*/exercises/*/mentoring.md
+
+# Tracks
+
+track/bash:
+- **/bash/**/*
+
+track/c:
+- **/c/**/*
+
+track/common-lisp:
+- **/common-lisp/**/*
+
+track/cpp:
+- **/cpp/**/*
+
+track/csharp:
+- **/csharp/**/*
+
+track/dart:
+- **/dart/**/*
+
+track/delphi:
+- **/delphi/**/*
+
+track/elixir:
+- **/elixir/**/*
+
+track/elm:
+- **/elm/**/*
+
+track/emacs-lisp:
+- **/emacs-lisp/**/*
+
+track/erlang:
+- **/erlang/**/*
+
+track/factor:
+- **/factor/**/*
+
+track/fsharp:
+- **/fsharp/**/*
+
+track/go:
+- **/go/**/*
+
+track/haskell:
+- **/haskell/**/*
+
+track/j:
+- **/j/**/*
+
+track/java:
+- **/java/**/*
+
+track/javascript:
+- **/javascript/**/*
+
+track/julia:
+- **/julia/**/*
+
+track/kotlin:
+- **/kotlin/**/*
+
+track/nim:
+- **/nim/**/*
+
+track/ocaml:
+- **/ocaml/**/*
+
+track/perl5:
+- **/perl5/**/*
+
+track/pharo-smalltalk:
+- **/pharo-smalltalk/**/*
+
+track/purescript:
+- **/purescript/**/*
+
+track/python:
+- **/python/**/*
+
+track/r:
+- **/r/**/*
+
+track/raku:
+- **/raku/**/*
+
+track/racket:
+- **/racket/**/*
+
+track/reasonml:
+- **/reasonml/**/*
+
+track/ruby:
+- **/ruby/**/*
+
+track/rust:
+- **/rust/**/*
+
+track/scala:
+- **/scala/**/*
+
+track/scheme:
+- **/scheme/**/*
+
+track/swift:
+- **/swift/**/*
+
+track/typescript:
+- **/typescript/**/*
+
+track/x86-64-assembly:
+- **/x86-64-assembly/**/*
