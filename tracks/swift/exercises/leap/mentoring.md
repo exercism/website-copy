@@ -28,6 +28,37 @@ extension Int {
 - It may be more readable to return the results of boolean expressions, instead
   of explicit `true` or `false` (see example below).
 
+#### Prefer immutability over mutability
+
+Given the following solution
+
+```swift 
+class Year {
+    var calendarYear: Int
+    var isLeapYear: Bool
+    
+    init(calendarYear: Int) {
+        self.calendarYear = calendarYear;
+        
+        self.isLeapYear = ((calendarYear % 4 == 0) && (calendarYear % 100 != 0) || (calendarYear % 400 == 0));
+    }
+}
+```
+Below Code breaks
+```swift
+let year = Year(calendarYear:2004)
+year.isLeapYear // this is true, 
+// Since it is class i can mutate its value
+year.calendarYear = 2009
+year.isLeapYear // this is still true
+```
+
+The issue above can be fixed by changing `var` to `let`:
+```swift
+let calendarYear: Int
+```
+So I would suggest to start the code with `let` and `struct`.
+
 ### Talking Points
 
 - If initializing a `struct` or `class` based on a `let` property, is a computed
@@ -57,5 +88,4 @@ struct Year {
     }
 }
 ```
-
 
