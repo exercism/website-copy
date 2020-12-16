@@ -57,9 +57,9 @@ The issue above can be fixed by changing `var` to `let`:
 ```swift
 let calendarYear: Int
 ```
-So I would suggest to start the code with ``` let ``` and ``` struct ```.
+So I would suggest to start the code with `let` and `struct`.
 
-## Talking Points
+### Talking Points
 
 - If initializing a `struct` or `class` based on a `let` property, is a computed
   property necessary? It will recompute the result even though the value never
@@ -88,5 +88,4 @@ struct Year {
     }
 }
 ```
-
 
