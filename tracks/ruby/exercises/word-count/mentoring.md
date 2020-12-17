@@ -51,7 +51,7 @@ http://www.rubular.com/
 
 - `inject`/`reduce`: see note under Reasonable Variants.
 - Extracting the preparation of the input into a separate (private) method.
-- `intermediate steps to strip quotes`: One strategy people use to catch quoted words is an intermediate step like 'strip_quotes'. Suggest to solve it within the RegEx.
+- Intermediate steps to strip quotes: One strategy people use to catch quoted words is an intermediate step like 'strip_quotes'. Suggest to solve it within the RegEx.
 - Constant: Storing the RegEx in a Constant.
 - The goal of separating the preparing of the input from the processing itself.
 - Do's and don'ts in initializers.
