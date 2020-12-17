@@ -55,7 +55,7 @@ http://www.rubular.com/
 - Constant: Storing the RegEx in a Constant.
 - The goal of separating the preparing of the input from the processing itself.
 - Do's and don'ts in initializers.
-- Can the [Enumerable#tally](https://ruby-doc.org/core-2.7.2/Enumerable.html#method-i-tally) method introduced in ruby 2.7 do the work for us
+- Can the [Enumerable#tally](https://ruby-doc.org/core-2.7.2/Enumerable.html#method-i-tally) method introduced in Ruby 2.7 do the work for us
 
 Passing regular expressions:
 - `/\b[\w']+\b/`
