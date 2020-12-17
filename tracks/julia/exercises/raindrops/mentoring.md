@@ -111,15 +111,30 @@ The following three solutions are slower but make use of concatentaion so as to 
 
 **Compact**
 
+Both of the folllowing are compact and pretty fast, at least among the concatenating solutions. The choice of benchmark makes a big difference to which one of the two is deemed faster.
+
 ```julia
 function raindrops(number)
     s = ""
-    # Using = rather than *= seems to improve performance a lot here
+    # Using = rather than *= improves performance, according to some benchmarks
     number % 3 == 0 && (s = "Pling").
     number % 5 == 0 && (s *= "Plang")
     number % 7 == 0 && (s *= "Plong")
     isempty(s) && (s = string(number))
     return s
+end
+```
+
+[ScottPJones' solution](https://exercism.io/tracks/julia/exercises/raindrops/solutions/05647a0a81ab43fdacf8f872d113df51)
+
+```julia
+function raindrops(number::Real)
+    f3 = number % 3 == 0
+    f5 = number % 5 == 0
+    f7 = number % 7 == 0
+    ((f3 | f5 | f7)
+     ? string(f3 ? "Pling" : "", f5 ? "Plang" : "", f7 ? "Plong" : "")
+     : string(number))
 end
 ```
 
