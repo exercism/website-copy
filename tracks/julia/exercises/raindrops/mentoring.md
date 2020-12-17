@@ -4,17 +4,12 @@
 - Prefer a tuple or vector of pairs to a Dict. There's no need to add values to the Dict or lookup items by key, so a simpler container is better.
 - If performance matters, constructing strings is slow! Profiling shows that `string(number)` and string concatenation are the biggest time sinks. Branching / lookup and remainder calculation are blazingly fast by comparison.
 
-
-## Fast lookup / tree solutions
-
 ````
 You can solve this exercise a great number of ways. The fastest solutions avoid constructing new strings unless they have to and instead return one of several statically allocated strings. Simpler or more flexible solutions construct strings through concatenation.
 
 The example solutions below are roughly in run time order (fastest first), but all of them are satisfactory solutions to the problem. If you're a performance enthusiast, you can see [Luapulu's Solution](https://exercism.io/tracks/julia/exercises/raindrops/solutions/00c5eeb0e6b84b0c98a1e31ccaaca821) for benchmark results :)
 
-## Fast solutions
-
-### if / else
+**if / else tree**
 
 ```julia
 function raindrops(number)
@@ -54,7 +49,7 @@ function raindrops(number)
 end
 ```
 
-### Switch
+**Switch**
 
 A slightly slower version formatted as a single switch rather than a tree.
 
@@ -85,7 +80,7 @@ end
 ```
 
 
-### Lookup
+**Lookup**
 
 You can also use a lookup table, though this is slower than both the switch and if/else tree.
 
@@ -112,30 +107,23 @@ function raindrops(number)
 end
 ```
 
-## More readable but slower solutions
+The following three solutions are slower but make use of concatentaion so as to be more concise, readable or extendable.
 
-These solutions are slower but make use of concatentaion so as to be more concise, readable or extendable.
-
-### Fast and concise
-
-This is slower than any of the fast solutions, but not by much.
+**Compact**
 
 ```julia
 function raindrops(number)
     s = ""
-    
-    # The '=' rather than '*=' improves performance a lot!
-    number % 3 == 0 && (s = "Pling")
+    # Using = rather than *= seems to improve performance a lot here
+    number % 3 == 0 && (s = "Pling").
     number % 5 == 0 && (s *= "Plang")
     number % 7 == 0 && (s *= "Plong")
-
     isempty(s) && (s = string(number))
-
     return s
 end
 ```
 
-## Extendable
+**Extendable**
 
 [cmcaine's solution](https://exercism.io/tracks/julia/exercises/raindrops/solutions/d558034438c64bb9a949f90cfcdaad6a)
 
@@ -152,9 +140,9 @@ function raindrops(n)
 end
 ```
 
-## IOBuffer
+**IOBuffer**
 
-Using an `IOBuffer`, as in the following example, is one of the slowest available solutions. Although this pattern is common for creating strings on the fly in julia, it's very slow in this case.
+Using an `IOBuffer` to create a string on the fly is a common pattern in julia. However, in this case, it tends to be rather slow compared to the other solutions.
 
 ```julia
 function raindrops(number)
