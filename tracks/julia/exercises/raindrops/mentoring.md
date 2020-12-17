@@ -2,14 +2,19 @@
 
 - Unrolled solutions are fine, don't require that students use loops or reduction or whatever.
 - Prefer a tuple or vector of pairs to a Dict. There's no need to add values to the Dict or lookup items by key, so a simpler container is better.
-- If performance matters, strings are slow! Profiling shows that `string(number)` and string concatenation are the biggest time sinks. Branching / lookup and remainder calculation are blazingly fast by comparison.
+- If performance matters, constructing strings is slow! Profiling shows that `string(number)` and string concatenation are the biggest time sinks. Branching / lookup and remainder calculation are blazingly fast by comparison.
 
 
 ## Fast lookup / tree solutions
 
-Example solutions, roughly in order of performance. See [Luapulu's Solution](https://exercism.io/tracks/julia/exercises/raindrops/solutions/00c5eeb0e6b84b0c98a1e31ccaaca821) for benchmark results.
+````
+You can solve this exercise a great number of ways. The fastest solutions avoid constructing new strings unless they have to and instead return one of several statically allocated strings. Simpler or more flexible solutions construct strings through concatenation.
 
-### Fastest
+The example solutions below are roughly in run time order (fastest first), but all of them are satisfactory solutions to the problem. If you're a performance enthusiast, you can see [Luapulu's Solution](https://exercism.io/tracks/julia/exercises/raindrops/solutions/00c5eeb0e6b84b0c98a1e31ccaaca821) for benchmark results :)
+
+## Fast solutions
+
+### if / else
 
 ```julia
 function raindrops(number)
