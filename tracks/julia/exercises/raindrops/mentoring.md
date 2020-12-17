@@ -116,7 +116,7 @@ Both of the folllowing are compact and pretty fast, at least among the concatena
 ```julia
 function raindrops(number)
     s = ""
-    # Using = rather than *= improves performance, according to some benchmarks
+    # Using = instead of *= improves performance by avoiding string construction a third of the time
     number % 3 == 0 && (s = "Pling").
     number % 5 == 0 && (s *= "Plang")
     number % 7 == 0 && (s *= "Plong")
