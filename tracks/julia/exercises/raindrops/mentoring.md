@@ -173,7 +173,9 @@ The following three solutions are slower but make use of concatentaion so as to 
 
 **Compact**
 
-This solution is almost as fast in the average case as the solutions above because it avoids one string concatenation in the common case that `number` is divisible by 3. When `number` is divisible by 3, but not 5 and 7, the statically allocated string "Pling" is returned almost instantly.
+This solution is short, easy to read and almost as fast in the average case as the solutions above!
+It is fast because it avoids one string concatenation in the common case that `number` is divisible by 3
+and when `number` is divisible by 3, but not 5 and 7, the statically allocated string "Pling" is returned almost instantly.
 
 ```julia
 function raindrops(number)
