@@ -20,8 +20,7 @@ main () {
   fi
 }
 main "$@"
-```
-```bash
+
 #!/usr/bin/env bash
 main () {
   [[ -n $1 ]] || exit 1
@@ -34,10 +33,8 @@ main () {
   # requires bash >= 4.0 to capitalize output
   printf "%s\n" ${output^^}
 }
-
 main "$@"
-```
-```bash
+
 #!/usr/bin/env bash
 main () {
   IFS=' !"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
@@ -51,7 +48,6 @@ main () {
   unset acronym;
   unset IFS;
 }
-
 main "$@";
 ```
 
@@ -62,6 +58,7 @@ main "$@";
 * Loop will work with an array or a string seperated by spaces.  [looping constructs](https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs) https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html#Looping-Constructs
 
 * An array to use a for loop can be created with read:
+
 ```bash
 IFS=' !"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
 read -r -a array <<< "$*";
