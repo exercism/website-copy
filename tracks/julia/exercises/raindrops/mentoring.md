@@ -138,81 +138,26 @@ function raindrops(number)
 end
 ```
 
-
-**Switch**
-
-A slightly slower version formatted as a single switch rather than a tree of ifs.
-
-```julia
-function raindrops(number)
-    f3 = number % 3 == 0
-    f5 = number % 5 == 0
-    f7 = number % 7 == 0
-
-    if f3 & f5 & f7
-        "PlingPlangPlong"
-    elseif f3 & f5 & !f7
-        "PlingPlang"
-    elseif f3 & !f5 & f7
-        "PlingPlong"
-    elseif f3 & !f5 & !f7
-        "Pling"
-    elseif !f3 & f5 & f7
-        "PlangPlong"
-    elseif !f3 & f5 & !f7
-        "Plang"
-    elseif !f3 & !f5 & f7
-        "Plong"
-    else
-        string(number)
-    end
-end
-```
-
 The following three solutions are slower but make use of concatentaion so as to be more concise, readable or extendable.
 
 **Compact**
 
-This solution is short, easy to read and almost as fast in the average case as the solutions above!
-It is fast because it avoids one string concatenation in the common case that `number` is divisible by 3
-and when `number` is divisible by 3, but not 5 and 7, the statically allocated string "Pling" is returned almost instantly.
+This solution is short, easy to read and almost fast as the solutions above in the average case!
+It is fast because it avoids string concatenation in most cases, except where the number is divisible by both 7 and 3 or 5.
 
 ```julia
 function raindrops(number)
-    s = ""
-    # The first equals here lets us avoid
-    # dynamically allocating a string in the
-    # case that number is only divisible by 3.
-    number % 3 == 0 && (s = "Pling")
-    number % 5 == 0 && (s *= "Plang")
-    number % 7 == 0 && (s *= "Plong")
-    isempty(s) && (s = string(number))
-    return s
+    (f3 = number % 3 == 0) && (s = "Pling")
+    (f5 = number % 5 == 0) && (s = f3 ? "PlingPlang" : "Plang")
+
+    # notice that here is the only place where we have to concatenate strings
+    (f7 = number % 7 == 0) && (s = f3 | f5 ? string(s, "Plong") : "Plong")
+
+    # We could also use the short circuiting || operator,
+    # but the bitwise | is simpler and has virtually no performance consequence here.
+    return f3 | f5 | f7 ? s : string(number)
 end
 ```
-
-Try changing `s = "Pling"` to `s *= "Pling"` and benchmarking with 3, 14, and 15 to see what's going on.
-
-<details>
-<summary>Expected benchmark results and explanation</summary>
-
-raindrops3a is the version with `s *= "Pling"`.
-
-```julia
-using BenchmarkTools
-
-@btime raindrops3($(3))         # 0 allocations
-@btime raindrops3a($(3))        # 1 allocation
-
-# 14 is not divisible by 3, so there's no difference here.
-@btime raindrops3($(14))        # 1 allocation
-@btime raindrops3a($(14))       # 1 allocation
-
-# 15 is divisible by 3 and 5 and we can still avoid the first allocation.
-@btime raindrops3($(15))        # 1 allocation
-@btime raindrops3a($(15))       # 2 allocations
-```
-</details>
 
 
 **Extendable**
