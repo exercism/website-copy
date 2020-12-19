@@ -12,7 +12,7 @@ A reasonable solution should:
 - Use [.chars()](https://doc.rust-lang.org/std/primitive.str.html#method.chars),
 [.rev()](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rev), and
 [.collect()](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect)
-- Be explicit with `.collect()` by using the turbofish operator `::<>`
+- No need to be explicit with `.collect()` by using the turbofish operator `::<>` because the collected type is in the type signature.
 - Not use other iterators or iterator methods like `.into_iter()` or
 `.flat_map()`
 - Not use variables or loops
@@ -29,7 +29,7 @@ The documentation for this method can be found [here](https://unicode-rs.github.
 
 ```rust
 pub fn reverse(input: &str) -> String {
-    input.chars().rev().collect::<String>()
+    input.chars().rev().collect()
 }
 ```
 
@@ -39,17 +39,11 @@ pub fn reverse(input: &str) -> String {
 use unicode_segmentation::UnicodeSegmentation;
 
 pub fn reverse(input: &str) -> String {
-    input.graphemes(true).rev().collect::<String>()
+    input.graphemes(true).rev().collect()
 }
 ```
 
 ### Common Suggestions
-
-If they don't use the turbofish operator:
-```
-It's best to be explicit with generics such as `.collect()` by using the turbofish operator `::<>` to specify what type we want to build. With
-more code, it makes it easier to simply look at the collect instead of having to find the function's signature.
-```
 
 If they use other iterators:
 ```
