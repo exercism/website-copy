@@ -26,14 +26,14 @@ A valid string will:
 The transformation is:
 
  - Every second digit, counting the rightmost digit as first, is doubled
- - If a doubled digit is greater than 9, subtract 9 from it.
+ - If a doubled digit is greater than 9, subtract 9 from it
 """
 ```
 
 
 **Iterate backwards**
 
-The simplest way to solve this exercise is to just iterate over the string backwards:
+The simplest way to solve this exercise is to iterate over the string backwards:
 
 ```julia
 function luhn1(str)
