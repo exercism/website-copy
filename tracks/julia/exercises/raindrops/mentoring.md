@@ -52,28 +52,23 @@ bar(x) = x < 10 ? 10 : log(x)
 If you want to benchmark lots of variants of the same function, you can define them as `raindrops1`, `raindrops2`, etc. and do some simple code generation like this:
 
 ```julia
-for i in 1:8
-   print("$i: ")
-   @btime foreach($(Symbol(:raindrops, i)), 1:1000)
-end
-```
-
-```
-1:   20.100 μs (914 allocations: 42.84 KiB)
-2:   85.000 μs (4457 allocations: 233.03 KiB)
-3:   27.800 μs (1256 allocations: 53.53 KiB)
-4:   24.300 μs (914 allocations: 42.84 KiB)
-5:   21.600 μs (914 allocations: 42.84 KiB)
-6:   35.700 μs (1457 allocations: 59.81 KiB)
-7:   47.600 μs (1589 allocations: 63.94 KiB)
-8:   86.500 μs (4457 allocations: 233.03 KiB)
+julia> for i in 1:6
+          print("$i: ")
+          @btime foreach($(Symbol(:raindrops, i)), 1:1000)
+       end
+1:   23.200 μs (914 allocations: 42.84 KiB)
+2:   26.630 μs (914 allocations: 42.84 KiB)
+3:   26.049 μs (914 allocations: 42.84 KiB)
+4:   39.234 μs (1256 allocations: 53.53 KiB)
+5:   62.621 μs (1589 allocations: 63.94 KiB)
+6:   99.853 μs (4457 allocations: 233.03 KiB)
 ```
 </details>
 
 **if / else tree**
 
 ```julia
-function raindrops(number)
+function raindrops1(number)
     f3 = number % 3 == 0
     f5 = number % 5 == 0
     f7 = number % 7 == 0
@@ -116,7 +111,7 @@ end
 A lookup table is another good option.
 
 ```julia
-function raindrops(number)
+function raindrops2(number)
     i = 0
     i |= (number % 3 == 0)       # 001
     i |= (number % 5 == 0) << 1  # 010
@@ -144,7 +139,7 @@ end
 A slightly slower version formatted as a single switch rather than a tree of ifs.
 
 ```julia
-function raindrops(number)
+function raindrops3(number)
     f3 = number % 3 == 0
     f5 = number % 5 == 0
     f7 = number % 7 == 0
@@ -178,7 +173,7 @@ It is fast because it avoids one string concatenation in the common case that `n
 and when `number` is divisible by 3, but not 5 and 7, the statically allocated string "Pling" is returned almost instantly.
 
 ```julia
-function raindrops(number)
+function raindrops4(number)
     s = ""
     # The first equals here lets us avoid
     # dynamically allocating a string in the
@@ -201,16 +196,16 @@ raindrops3a is the version with `s *= "Pling"`.
 ```julia
 using BenchmarkTools
 
-@btime raindrops3($(3))         # 0 allocations
-@btime raindrops3a($(3))        # 1 allocation
+@btime raindrops4($(3))         # 0 allocations
+@btime raindrops4a($(3))        # 1 allocation
 
 # 14 is not divisible by 3, so there's no difference here.
-@btime raindrops3($(14))        # 1 allocation
-@btime raindrops3a($(14))       # 1 allocation
+@btime raindrops4($(14))        # 1 allocation
+@btime raindrops4a($(14))       # 1 allocation
 
 # 15 is divisible by 3 and 5 and we can still avoid the first allocation.
-@btime raindrops3($(15))        # 1 allocation
-@btime raindrops3a($(15))       # 2 allocations
+@btime raindrops4($(15))        # 1 allocation
+@btime raindrops4a($(15))       # 2 allocations
 ```
 </details>
 
@@ -222,7 +217,7 @@ using BenchmarkTools
 A solution (over?)designed to be easily extended or changed if the `noises` spec changed. Some similar solutions use a `Dict` rather than a tuple, but a tuple of pairs is simpler and more efficient if you do not want to look up values by key.
 
 ```julia
-function raindrops(n)
+function raindrops5(n)
     noises = (3 => "Pling", 5 => "Plang", 7 => "Plong")
     acc = ""
     for (factor, noise) in noises
@@ -237,7 +232,7 @@ end
 Using an `IOBuffer` to create a string on the fly is a common pattern in julia. However, in this case, it tends to be rather slow compared to the other solutions.
 
 ```julia
-function raindrops(number)
+function raindrops6(number)
     buf = IOBuffer(sizehint=15)
 
     number % 3 == 0 && write(buf, "Pling")
