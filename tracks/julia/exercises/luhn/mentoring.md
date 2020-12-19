@@ -80,7 +80,7 @@ function luhn2(str)
     len = 0
     for byte in Iterators.reverse(transcode(UInt8, str))
         x = byte - UInt8('0')
-        if 0 <= byte < 10
+        if 0 <= x < 10
             len += 1
             acc += iseven(len) ? (2x < 10 ? 2x : 2x-9) : x
         elseif byte != UInt8(' ')
