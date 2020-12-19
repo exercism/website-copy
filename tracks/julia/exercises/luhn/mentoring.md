@@ -8,6 +8,7 @@
 
 ## Example solutions
 
+````
 A good docstring will look something like this:
 
 ```julia
@@ -138,7 +139,7 @@ Which is correct, but a bit slow :)
 
 You might be tempted to do something like this:
 
-```
+```julia
 str = replace(str, ' ' => "")
 all(isdigit, str) || return false
 
@@ -149,3 +150,4 @@ ds = parse.(Int, collect(str))
 
 You can get the right answer, but this way you'll end up allocating two collections: a new string and a vector of integer digits.
 It's faster to only allocate one collection and fastest to allocate zero :)
+````
