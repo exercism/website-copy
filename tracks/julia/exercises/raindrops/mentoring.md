@@ -56,15 +56,18 @@ julia> for i in 1:6
           print("$i: ")
           @btime foreach($(Symbol(:raindrops, i)), 1:1000)
        end
-1:   19.511 μs (914 allocations: 42.84 KiB)
-2:   21.166 μs (914 allocations: 42.84 KiB)
-3:   21.845 μs (914 allocations: 42.84 KiB)
-4:   37.608 μs (1589 allocations: 63.94 KiB)
-5:   31.062 μs (1256 allocations: 53.53 KiB)
-6:   21.833 μs (980 allocations: 44.91 KiB)
-7:   47.231 μs (1589 allocations: 63.94 KiB)
-8:   77.441 μs (4457 allocations: 233.03 KiB)
+1:   19.511 μs (914 allocations: 42.84 KiB)    # if tree
+2:   21.166 μs (914 allocations: 42.84 KiB)    # lookup
+3:   21.845 μs (914 allocations: 42.84 KiB)    # switch
+4:   37.608 μs (1589 allocations: 63.94 KiB)   # compact v1
+5:   31.062 μs (1256 allocations: 53.53 KiB)   # compact v2
+6:   21.833 μs (980 allocations: 44.91 KiB)    # compact v3 
+7:   47.231 μs (1589 allocations: 63.94 KiB)   # extendable
+8:   77.441 μs (4457 allocations: 233.03 KiB)  # IOBuffer
 ```
+
+Note, that your times may vary from these.
+
 </details>
 
 **if / else tree**
