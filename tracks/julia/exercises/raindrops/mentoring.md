@@ -52,28 +52,25 @@ bar(x) = x < 10 ? 10 : log(x)
 If you want to benchmark lots of variants of the same function, you can define them as `raindrops1`, `raindrops2`, etc. and do some simple code generation like this:
 
 ```julia
-for i in 1:8
-   print("$i: ")
-   @btime foreach($(Symbol(:raindrops, i)), 1:1000)
-end
-```
-
-```
-1:   20.100 μs (914 allocations: 42.84 KiB)
-2:   85.000 μs (4457 allocations: 233.03 KiB)
-3:   27.800 μs (1256 allocations: 53.53 KiB)
-4:   24.300 μs (914 allocations: 42.84 KiB)
-5:   21.600 μs (914 allocations: 42.84 KiB)
-6:   35.700 μs (1457 allocations: 59.81 KiB)
-7:   47.600 μs (1589 allocations: 63.94 KiB)
-8:   86.500 μs (4457 allocations: 233.03 KiB)
+julia> for i in 1:6
+          print("$i: ")
+          @btime foreach($(Symbol(:raindrops, i)), 1:1000)
+       end
+1:   19.511 μs (914 allocations: 42.84 KiB)
+2:   21.166 μs (914 allocations: 42.84 KiB)
+3:   21.845 μs (914 allocations: 42.84 KiB)
+4:   37.608 μs (1589 allocations: 63.94 KiB)
+5:   31.062 μs (1256 allocations: 53.53 KiB)
+6:   21.833 μs (980 allocations: 44.91 KiB)
+7:   47.231 μs (1589 allocations: 63.94 KiB)
+8:   77.441 μs (4457 allocations: 233.03 KiB)
 ```
 </details>
 
 **if / else tree**
 
 ```julia
-function raindrops(number)
+function raindrops1(number)
     f3 = number % 3 == 0
     f5 = number % 5 == 0
     f7 = number % 7 == 0
@@ -116,7 +113,7 @@ end
 A lookup table is another good option.
 
 ```julia
-function raindrops(number)
+function raindrops2(number)
     i = 0
     i |= (number % 3 == 0)       # 001
     i |= (number % 5 == 0) << 1  # 010
@@ -138,26 +135,126 @@ function raindrops(number)
 end
 ```
 
-The following three solutions are slower but make use of concatentaion so as to be more concise, readable or extendable.
+
+**Switch**
+
+A slightly slower solution formatted as a single switch rather than a tree of ifs.
+
+```julia
+function raindrops3(number)
+    f3 = number % 3 == 0
+    f5 = number % 5 == 0
+    f7 = number % 7 == 0
+
+    if f3 & f5 & f7
+        "PlingPlangPlong"
+    elseif f3 & f5 & !f7
+        "PlingPlang"
+    elseif f3 & !f5 & f7
+        "PlingPlong"
+    elseif f3 & !f5 & !f7
+        "Pling"
+    elseif !f3 & f5 & f7
+        "PlangPlong"
+    elseif !f3 & f5 & !f7
+        "Plang"
+    elseif !f3 & !f5 & f7
+        "Plong"
+    else
+        string(number)
+    end
+end
+```
+
+The following solutions are slower but make use of concatentaion so as to be more concise, readable or extendable.
 
 **Compact**
 
-This solution is short, easy to read and almost fast as the solutions above in the average case!
-It is fast because it avoids string concatenation in most cases, except where the number is divisible by both 7 and 3 or 5.
+This solution is short and easy to read.
 
 ```julia
-function raindrops(number)
-    (f3 = number % 3 == 0) && (s = "Pling")
-    (f5 = number % 5 == 0) && (s = f3 ? "PlingPlang" : "Plang")
-
-    # notice that here is the only place where we have to concatenate strings
-    (f7 = number % 7 == 0) && (s = f3 | f5 ? string(s, "Plong") : "Plong")
-
-    # We could also use the short circuiting || operator,
-    # but the bitwise | is simpler and has virtually no performance consequence here.
-    return f3 | f5 | f7 ? s : string(number)
+function raindrops4(number)
+    s = ""
+    number % 3 == 0 && (s *= "Pling")
+    number % 5 == 0 && (s *= "Plang")
+    number % 7 == 0 && (s *= "Plong")
+    isempty(s) && (s = string(number))
+    return s
 end
 ```
+
+It turns out we can also make this solution quite performant by avoiding some string concatenations.
+We can start by avoiding concatenation of "" and "Pling" in the case that a number is divisble by 3.
+In fact, this little trick increases performance significantly, because for every third number we
+can save one concatenation and for every number divisble by 3, but not by 5 or 7, the function just
+returns the static "Pling" with no concatenation at all!
+
+```julia
+function raindrops5(number)
+    s = ""
+    # The first equals here lets us avoid
+    # dynamically allocating a string in the
+    # case that number is only divisible by 3.
+    number % 3 == 0 && (s = "Pling")
+    number % 5 == 0 && (s *= "Plang")
+    number % 7 == 0 && (s *= "Plong")
+    isempty(s) && (s = string(number))
+    return s
+end
+```
+
+We can continue this idea of reducing concatenations to further improve performance.
+
+```julia
+function raindrops6(n)
+    (f3 = n % 3 == 0) && (s = "Pling")
+    (f5 = n % 5 == 0) && (s = f3 ? "PlingPlang" : "Plang")
+    # To replace all concatenations,
+    # the next line would have to contain another layer of branching
+    # At that point you might as well use the full if tree solution
+    (f7 = n % 7 == 0) && (s = f3 | f5 ? string(s, "Plong") : "Plong")
+    return f3 | f5 | f7 ? s : string(n)
+end
+```
+
+This solution retains the structure and compactness of the previous solutions, but achieves very
+good performance (similar to switch) because string concatenation is only required for numbers divisble by 3 and/or 5
+and 7. 
+
+<details>
+<summary>Expected benchmark results and explanation</summary>
+
+Let us compare raindrops4, raindrops5 and raindrops6, the three versions of our compact solution.
+For overall benchmarks, see the aside on benchmarking raindrops above.
+
+```julia
+using BenchmarkTools
+
+# 4 hast to concatenate "" and "Pling", 5 and 6 don't.
+# 6 is slightly faster because it doesn't use the isempty function.
+@btime raindrops4($(3))         # 1 allocation
+@btime raindrops5($(3))         # 0 allocations, much faster than 4
+@btime raindrops6($(3))         # 0 allocations, slightly faster than 5
+
+# 14 is not divisible by 3, so 5 has no advantage over 4.
+# 14 is divisble by 7 only, meaning raindrops6 can return the static "Plong" with no concatenations
+@btime raindrops4($(14))        # 1 allocation
+@btime raindrops5($(14))        # 1 allocation
+@btime raindrops6($(14))        # 0 allocations, much faster
+
+# 15 is divisible by 3 and 5, so solution 5 can still avoid the first concatenation of "" and "Pling"
+# It can't avoid the concatenation to "PlingPlang", which solution 6 can
+@btime raindrops4($(15))        # 2 allocations
+@btime raindrops5($(15))        # 1 allocations, faster
+@btime raindrops6($(15))        # 0 allocations, even faster
+
+# Since 35 has factors 5 and 7, solutions 4 and 5 both require two concatenations.
+# Solution 6 hass to concatenate only "Plang" and "Plong"
+@btime raindrops4($(35))        # 2 allocations, slow
+@btime raindrops5($(35))        # 2 allocations, slow
+@btime raindrops6($(35))        # 1 allocation, less slow
+```
+</details>
 
 
 **Extendable**
@@ -167,7 +264,7 @@ end
 A solution (over?)designed to be easily extended or changed if the `noises` spec changed. Some similar solutions use a `Dict` rather than a tuple, but a tuple of pairs is simpler and more efficient if you do not want to look up values by key.
 
 ```julia
-function raindrops(n)
+function raindrops7(n)
     noises = (3 => "Pling", 5 => "Plang", 7 => "Plong")
     acc = ""
     for (factor, noise) in noises
@@ -182,7 +279,7 @@ end
 Using an `IOBuffer` to create a string on the fly is a common pattern in julia. However, in this case, it tends to be rather slow compared to the other solutions.
 
 ```julia
-function raindrops(number)
+function raindrops8(number)
     buf = IOBuffer(sizehint=15)
 
     number % 3 == 0 && write(buf, "Pling")
