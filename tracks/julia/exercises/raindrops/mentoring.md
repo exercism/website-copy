@@ -233,8 +233,8 @@ For overall benchmarks, see the aside on benchmarking raindrops above.
 ```julia
 using BenchmarkTools
 
-# 4 hast to concatenate "" and "Pling", 5 and 6 don't.
-# 6 is slightly faster because it doesn't use the isempty function.
+# raindrops4 has to concatenate "" and "Pling", 5 and 6 don't.
+# raindrops6 is slightly faster because it doesn't use the isempty function.
 @btime raindrops4($(3))         # 1 allocation
 @btime raindrops5($(3))         # 0 allocations, much faster than 4
 @btime raindrops6($(3))         # 0 allocations, slightly faster than 5
@@ -252,7 +252,7 @@ using BenchmarkTools
 @btime raindrops6($(15))        # 0 allocations, even faster
 
 # Since 35 has factors 5 and 7, solutions 4 and 5 both require two concatenations.
-# Solution 6 hass to concatenate only "Plang" and "Plong"
+# Solution 6 has to concatenate only "Plang" and "Plong"
 @btime raindrops4($(35))        # 2 allocations, slow
 @btime raindrops5($(35))        # 2 allocations, slow
 @btime raindrops6($(35))        # 1 allocation, less slow
