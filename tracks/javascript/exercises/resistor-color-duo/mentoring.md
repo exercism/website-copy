@@ -43,7 +43,7 @@ should be regarded as such. **DO NOT** suggest them to add this import if they d
 #### Approvability
 
 The solution listed above as well as any of the solutions that divert from this listed directly below are
-approvable. Anything listed under **Common Suggesstions** is _not_.
+approvable. Anything listed under **Common Suggestions** is _not_.
 
 A student who uses a `reducer` on the `reverse` of the input. The solution below is such a solution. It's overly
 complex for the task at hand. You may approve it, but mentor them in order to simplify the solution.
