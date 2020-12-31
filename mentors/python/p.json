@@ -78,5 +78,13 @@
     "link_url": "https://www.sukys.eu",
     "avatar_url": null,
     "bio": "Software engineer using Python as second-best language for everything"
+  },
+  {
+    "github_username": "pmayd",
+    "name": "Michael Aydinbas",
+    "link_text": "Linkedin",
+    "link_url": "https://de.linkedin.com/in/michael-aydinbas",
+    "avatar_url": null,
+    "bio": "I am working at the intersection of data science and data engineering at an IT consultancy company. Python is my main programming language and with it I create data analysis pipelines, data science solutions and machine learning models and visualizations."
   }
 ]
