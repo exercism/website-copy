@@ -82,19 +82,12 @@ The `&&` and `||` in bash are short-circuit logical operators. They stop evaluat
 
 * Unquoted variables
 
-Always expand all expansions. If you fail to quote an expansion, one string might be split into multiple words by the shell parser. With `a='1 = 2'`, `[ "$a" ]` is true while `[ $a ]` is false.
-
-```md
-On line <line number> you have an unquoted variable! That can lead to unexpected behavior.
-Try this for instance: `$ bash ./two_fer.sh "a -o -n a"`
-```
+Always expand all expansions. Failing to quote an expansion, one string might be split into multiple words by the shell parser. With `a='1 = 2'`, `[ "$a" ]` is true while `[ $a ]` is false.
 
 * No `main` function
 
 ```md
-Generally, you should encapsulate the main body of your script in a `main`
-function, like you may remember from the Hello World exercise.  It
-encapsulates a chunk of logic in one function which is good practice for when
+It encapsulates a chunk of logic in one function which is good practice for when
 things get bigger.
 ```
 
@@ -107,15 +100,4 @@ in unexpected ways.
 
 * No shebang
 
-```md
-There is no shebang on the top line. This means if you `chmod +x` your
-script, you can't control what shell is used to run it! Also, it makes it
-harder for another person to see that the script is written for Bash.
-```
-
-* Boilerplate comments are left in
-
-```md
-It would be nice if you removed the boiler plate comments to make it easier
-to read your code.
-```
+* Remove boilerplate comments are left in
