@@ -14,7 +14,7 @@ We should encourage students to do so infrequently.
 We may want to convert case
 
 ```python
-result = ''
+result = ""
 
 for ch in word:
     if ch.lower() in matchingSet:
@@ -27,7 +27,7 @@ Rather than change case one letter at a time, it is better
 to change the whole word once
         
 ```python
-result = ''
+result = ""
 
 for ch in word.lower():
     if ch in matchingSet:
@@ -50,7 +50,7 @@ for ch in word.lower():
     if ch in matchingSet:
         result.append(ch)
 
-return ''.join(result)
+return "".join(result)
 ```
 
 #### Iterating and Indexing
@@ -64,7 +64,7 @@ Rather than
 result = []
 for i in range(len(string)):
     ch = string[i]
-    if ch.isalpha()
+    if ch.isalpha():
         result.append(ch)
 ```
 
@@ -73,7 +73,7 @@ encourage the students to say
 ```python
 result = []
 for ch in string:
-    if ch.isalpha()
+    if ch.isalpha():
         result.append(ch)
 ```
 
@@ -116,7 +116,7 @@ We can use the zip function to pair up the two strands:
 
 ```python
 count = 0
-for ch1, ch2 in zip(strand_a.lower(), strand_b.lower())
+for ch1, ch2 in zip(strand_a.lower(), strand_b.lower()):
     if ch1 != ch2:
         count = count + 1
 ```
@@ -135,14 +135,14 @@ Rather assembling our list of letters as we did above,
 ```python
 result = []
 for ch in string:
-    if ch.isalpha()
+    if ch.isalpha():
         result.append(ch)
 ```
 
 we can write the following list comprehension
 
 ```python
-result = [ ch for ch in string if ch.isalpha() ]
+result = [ch for ch in string if ch.isalpha()]
 ```
 
 #### Inclusion vs Exclusion
@@ -172,7 +172,7 @@ In Python, we do not need to declare the type of a variable.
 
 ```python
 for i in text:
-    if i.isalpha()
+    if i.isalpha():
         lst.append(i)
 ```
 
@@ -190,7 +190,7 @@ perhaps the solution could be clarified.
 def Hamming_distance(strand_a, strand_b):
     if len(strand_a) != len(strand_b):
         raise ValueError("Strands should be equal in length!")
-    return sum([len(set(pair))-1 for pair in zip(strand_a, strand_b)])
+    return sum([len(set(pair)) - 1 for pair in zip(strand_a, strand_b)])
 ````
 
 This works to compute the Hamming distance between two strands,
@@ -205,7 +205,7 @@ Encourage clarity in everything.
 def Hamming_distance(strand_a, strand_b):
     if len(strand_a) != len(strand_b):
         raise ValueError("Strands should be equal in length!")
-    return sum(1 for ch1, ch2 in zip(strand_a, strand_b) if ch1 != ch2])
+    return sum(1 for ch1, ch2 in zip(strand_a, strand_b) if ch1 != ch2)
 ```
 
 This makes clear that we are counting the number of pairs that don't match.
@@ -230,7 +230,7 @@ Consider the following example:
 
 ```python
 def distance(strand_a, strand_b):
-    if (len(strand_a) == len(strand_b)):
+    if len(strand_a) == len(strand_b):
         strand_a = strand_a.lower()
         strand_b = strand_b.lower()
         count = 0
@@ -239,7 +239,7 @@ def distance(strand_a, strand_b):
                 count = count + 1
         return count
     else:
-        raise ValueError('Strands must have the same length')
+        raise ValueError("Strands must have the same length")
 ```
 
 There are a number of issues here, but we are looking at one:
@@ -251,12 +251,12 @@ the problem, it is easier to understand in the following order.
 
 ```python
 def distance(strand_a, strand_b):
-    if (len(strand_a) != len(strand_b)):
-        raise ValueError('Strands must have the same length')
+    if len(strand_a) != len(strand_b):
+        raise ValueError("Strands must have the same length")
     else:
         strand_a = strand_a.lower()
         ...
 ```
 
-Of course, the else is optional at this point: Fat Elvis 
+Of course, the `else` is optional at this point: Fat Elvis 
 has left the building and we are all together on the happy path.  
