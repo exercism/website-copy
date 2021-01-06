@@ -40,7 +40,7 @@ As someone who is part of this community, you agree that:
 - We are collectively and individually committed to safety and inclusivity.
 - We have zero tolerance for abuse, harassment, or discrimination.
 - We respect people’s boundaries and identities.
-- We refrain from using language that can be considered offensive or oppressive (systemically or otherwise), eg. sexist, racist, homophobic, transphobic, ableist, classist, etc. - this includes (but is not limited to) various slurs.
+- We refrain from using language that can be considered offensive or oppressive (systemically or otherwise), eg. sexist, racist, homophobic, transphobic, ableist, classist, missionizing, etc. - this includes (but is not limited to) various slurs.
 - We avoid using offensive topics as a form of humour.
 - We keep our religious, politics and personal views private and not engage in statements, discussions, or missionizing about them. To avoid conflict or offense in community made up of people from multitude of backgrounds and belief-systems, we choose to keep Exercism free of discussions unrelated to programming or related topics. 
 
