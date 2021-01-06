@@ -32,7 +32,7 @@ Exercism should be a safe place for everybody regardless of
 - Physical appearance (including but not limited to body size)
 - Race
 - Age
-- Religion
+- Religion (or lack of religion)
 - Anything else you can think of.
 
 As someone who is part of this community, you agree that:
