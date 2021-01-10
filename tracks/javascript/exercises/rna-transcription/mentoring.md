@@ -33,7 +33,7 @@ return sequence.replace(/./g, (nucleotide) => /* */)
 
 Variations include replacing only the "known" nucleotides:
 ```javascript
-sequence.replace(/[CGAT]g/, (nucleotide) => /* */)
+sequence.replace(/[CGAT]/g, (nucleotide) => /* */)
 ```
 
 #### Note
