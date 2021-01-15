@@ -6,5 +6,13 @@
     "link_url": "https://www.galtsoft.com",
     "avatar_url": "https://www.gravatar.com/avatar/8dd1889ea61670f941f850038de93402?s=200",
     "bio": "I've been developing iOS apps since the iOS 3.0 days.  I learned  Swift when it first released with the help of exercism.io.  I enjoy helping others learning the language, I always seem to learn a bit more myself."
+  },
+  {
+    "github_username": "ailyntang",
+    "name": "Ai-Lyn Tang",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "After thinkng about becoming a coder for years, I made the switch in 2018 and absolutely love it. I'm now a full time iOS developer. Look forward to helping you on your Swift journey!"
   }
 ]
