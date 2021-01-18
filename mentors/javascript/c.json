@@ -86,5 +86,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I am a Makers Academy student in London and a Junior Software Engineer, currently coding in Javascript, Ruby, and C#. I am willing to help and mentor my fellow devs and I usually follow a TDD/BDD approach."
+  },
+  {
+    "github_username": "chskela",
+    "name": "Aleksey Chistyakov",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I've been programming for 4 years and in my current job purely in Javascript."
   }
 ]
