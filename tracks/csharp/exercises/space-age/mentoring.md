@@ -78,7 +78,7 @@ public class SpaceAge
 
 - The internal variable (storing the number of seconds) should be a `readonly` field, initialized in the constructor.
     
-- You may suggest writing the single-line methods as [expression-bodied methods]((https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)), as it is perfect for these kinds of small methods.
+- You may suggest writing the single-line methods as [expression-bodied methods](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition), as it is perfect for these kinds of small methods.
 
 ### Talking points
 
