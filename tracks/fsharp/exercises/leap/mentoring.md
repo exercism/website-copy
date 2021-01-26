@@ -35,4 +35,4 @@ let leapYear year =
 
 ### Talking points
 
-- Students often use parentheses, but as the `&&` operator has a [higher precedence](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#conditional-and-operator) than the `||` operator, this is not necessary.
+- Students often use parentheses, but as the `&&` operator has a [higher precedence](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#operator-precedence) than the `||` operator, this is not necessary.
