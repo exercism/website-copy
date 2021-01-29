@@ -46,6 +46,6 @@ public static class AccumulateExtensions
 
 ### Talking points
 
-- Per the restrictions in the [README](https://github.com/exercism/csharp/blob/master/exercises/accumulate/README.md#restrictions), the student is not allowed to use LINQ's `Select()` method.
+- Per the restrictions in the [README](https://github.com/exercism/csharp/blob/main/exercises/accumulate/README.md#restrictions), the student is not allowed to use LINQ's `Select()` method.
 
 

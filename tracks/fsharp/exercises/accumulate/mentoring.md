@@ -24,7 +24,7 @@ let accumulate func input =
 
 ### Talking points
 
-- Per the restrictions in the [README](https://github.com/exercism/fsharp/blob/master/exercises/accumulate/README.md#restrictions), the student is not allowed to use `List.map`, `List.fold` or similar functions.
+- Per the restrictions in the [README](https://github.com/exercism/fsharp/blob/main/exercises/accumulate/README.md#restrictions), the student is not allowed to use `List.map`, `List.fold` or similar functions.
 
 #### Tail recursion
 

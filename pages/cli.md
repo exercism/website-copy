@@ -7,7 +7,7 @@ If you just want to download the CLI manually and work out how to use it, you ca
 
 ### Upgrading from pre-v3
 
-If you have a previous version of the CLI and want to upgrade, please read [these instructions](https://github.com/exercism/website-copy/blob/master/pages/cli_v1_to_v2.md).
+If you have a previous version of the CLI and want to upgrade, please read [these instructions](https://github.com/exercism/website-copy/blob/main/pages/cli_v1_to_v2.md).
 
 ### Basic usage
 Run the help subcommand to get the full list of available commands.
