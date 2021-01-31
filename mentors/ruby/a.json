@@ -62,5 +62,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": null
-  }  
+  },
+  {
+    "github_username": "AJ8GH",
+    "name": "Adam Jonas",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Ruby and JavaScript engineer based in London and keen practioner of TDD and OOP."
+  }
 ]
