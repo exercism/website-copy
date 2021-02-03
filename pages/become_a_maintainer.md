@@ -1,12 +1,4 @@
-[tracks]: https://exercism.io/tracks
-[repositories]: https://github.com/exercism
-[triaging-issues]: https://github.com/exercism/docs/blob/main/you-can-help/triage-issues.md
-[reviewing-prs]: https://github.com/exercism/docs/blob/main/you-can-help/review-pull-requests.md
-[porting]: https://github.com/exercism/docs/blob/main/you-can-help/implement-an-exercise-from-specification.md
-[problem-specifications]: https://github.com/exercism/problem-specifications
-[blazon]: https://github.com/exercism/blazon
-[blazon-process]: https://github.com/exercism/docs/blob/main/you-can-help/improve-exercise-metadata.md
-[fixing-readmes]: https://github.com/exercism/docs/blob/main/language-tracks/exercises/anatomy/readmes.md
+# Become a maintainer
 
 The Exercism language tracks are a great way to get involved in:
 
@@ -70,11 +62,11 @@ keep in mind when implementing it.
 It's not always obvious how to get started contributing to a language track. As you get involved, help improve the
 README in the track repository.
 
-* Are there undocumented dependencies?
-* How do you run the tests? Is there a way to run all the tests for all the exercises?
-* Are there any naming conventions for files or types or classes or functions?
-* Is there any tooling that we're using? Linters?
-* Is there continuous integration? Are there any gotchas?
+- Are there undocumented dependencies?
+- How do you run the tests? Is there a way to run all the tests for all the exercises?
+- Are there any naming conventions for files or types or classes or functions?
+- Is there any tooling that we're using? Linters?
+- Is there continuous integration? Are there any gotchas?
 
 ## Improving the curriculum
 
@@ -92,8 +84,8 @@ The READMEs are generated, and all the details are explained [here][fixing-readm
 
 ### Changing exercise test suites
 
-* Did the test suite force you towards a certain solution? (It shouldn't.)
-* Did you come across a solution that passed the tests, but that had a bug?
+- Did the test suite force you towards a certain solution? (It shouldn't.)
+- Did you come across a solution that passed the tests, but that had a bug?
   (Maybe we're missing a test case.)
 
 The test suite is straight forward to find: look in the `exercises`
@@ -131,9 +123,9 @@ seems vastly more difficult than the previous one, or much easier, or boring.
 
 The order is decided by the `exercises` array in `config.json`.
 
-* If it's **too easy**, move it higher up in the array.
-* If it's **too hard**, move it further down in the array.
-* If two exercises are **too similar** then move one of them so that there are
+- If it's **too easy**, move it higher up in the array.
+- If it's **too hard**, move it further down in the array.
+- If two exercises are **too similar** then move one of them so that there are
   some different exercises between them.
 
 We can also deprecate an exercise by removing it from the `exercises` array
@@ -148,3 +140,13 @@ hard to figure out how to solve it anyway.
 In this case consider whether there's a blog post or some documentation that
 you could point people to, and add it to `$ROOT/exercises/$SLUG/.meta/hints.md` in the exercise directory
 in the language track. If the file doesn't exist, create a new one.
+
+[tracks]: https://exercism.io/tracks
+[repositories]: https://github.com/exercism
+[triaging-issues]: https://github.com/exercism/docs/blob/master/you-can-help/triage-issues.md
+[reviewing-prs]: https://github.com/exercism/docs/blob/master/you-can-help/review-pull-requests.md
+[porting]: https://github.com/exercism/docs/blob/master/you-can-help/implement-an-exercise-from-specification.md
+[problem-specifications]: https://github.com/exercism/problem-specifications
+[blazon]: https://github.com/exercism/blazon
+[blazon-process]: https://github.com/exercism/docs/blob/master/you-can-help/improve-exercise-metadata.md
+[fixing-readmes]: https://github.com/exercism/docs/blob/master/language-tracks/exercises/anatomy/readmes.md

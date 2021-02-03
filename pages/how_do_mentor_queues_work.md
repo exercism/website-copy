@@ -1,3 +1,5 @@
+# How mentor queues work
+
 Mentors are free to choose whichever submissions they want to mentor.
 Normally, though, they work through either a track's queue (e.g. all the Ruby submissions), or an exercise's queue (e.g. all the Ruby High-Scores submissions).
 

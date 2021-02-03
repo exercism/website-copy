@@ -1,3 +1,5 @@
+# Terms of Service
+
 Last Revised: April 2019
 
 ## Overview
