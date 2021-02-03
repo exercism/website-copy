@@ -1,8 +1,9 @@
-### What is it?
+# Autoamted Solution Analysis
+## What is it?
 
 We algorithmically analyse solutions to certain exercises to look for optimal solutions, which we can then instantly approve allowing students to move on to the next exercise without delay.
 
-### How does it work?
+## How does it work?
 
 We use a mixture of techniques to analyze solutions, but most centre around statically analysing the code that students submit. Each language has a different analyzer maintained by a different team, who may approach things in different ways. You may be interested in browsing the code to see how this works:
 - [C#](https://github.com/exercism/csharp-analyzer)

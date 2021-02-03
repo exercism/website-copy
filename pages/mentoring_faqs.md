@@ -1,3 +1,5 @@
+# Mentoring FAQs
+
 Here we have collated a list of the questions asked frequently by mentors. If you have a question that hasn't been answered here, please post it on the **[\#questions](https://exercism-team.slack.com/archives/CAQP7JL3T)** channel on Slack.
 
 ## Getting Started
