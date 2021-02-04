@@ -25,3 +25,4 @@ jobs:
         with:
           files: "."
           config_file: ".github/markdownlint.json"
+          ignore_files: "analyzer-comments/*"
