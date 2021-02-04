@@ -1,3 +1,5 @@
+# CLI v1 to v2
+
 If you haven't installed the new version of the command-line client (v3.x), please download the [latest release](https://github.com/exercism/cli/releases/latest). We recommend using our [interactive walkthrough](https://exercism.io/cli-walkthrough) to guide you through the installation and configuration process.
 
 The CLI for Windows is broken for versions prior to 3.0.5.

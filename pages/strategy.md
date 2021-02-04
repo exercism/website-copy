@@ -1,3 +1,5 @@
+# Strategy
+
 ## Introduction
 
 Exercism is a large complex project with thousands of contributors working across dozens of projects, all trying to achieve ambitious goals. It would quickly become overwhelming if we were all working towards making Exercism perfect, so to keep things manageable, we periodically determine the critical next step for Exercism to achieve its goals and then plan that into a strategy.  We present this using the OST framework - defining an **Objective**, which will aim to achieve with a **Strategy**, implemented by a series of **Tactics**.

@@ -1,12 +1,4 @@
-[tracks]: https://exercism.io/tracks
-[repositories]: https://github.com/exercism
-[triaging-issues]: https://github.com/exercism/docs/blob/master/you-can-help/triage-issues.md
-[reviewing-prs]: https://github.com/exercism/docs/blob/master/you-can-help/review-pull-requests.md
-[porting]: https://github.com/exercism/docs/blob/master/you-can-help/implement-an-exercise-from-specification.md
-[problem-specifications]: https://github.com/exercism/problem-specifications
-[blazon]: https://github.com/exercism/blazon
-[blazon-process]: https://github.com/exercism/docs/blob/master/you-can-help/improve-exercise-metadata.md
-[fixing-readmes]: https://github.com/exercism/docs/blob/master/language-tracks/exercises/anatomy/readmes.md
+# Become a maintainer
 
 The Exercism language tracks are a great way to get involved in:
 
@@ -148,3 +140,13 @@ hard to figure out how to solve it anyway.
 In this case consider whether there's a blog post or some documentation that
 you could point people to, and add it to `$ROOT/exercises/$SLUG/.meta/hints.md` in the exercise directory
 in the language track. If the file doesn't exist, create a new one.
+
+[tracks]: https://exercism.io/tracks
+[repositories]: https://github.com/exercism
+[triaging-issues]: https://github.com/exercism/docs/blob/master/you-can-help/triage-issues.md
+[reviewing-prs]: https://github.com/exercism/docs/blob/master/you-can-help/review-pull-requests.md
+[porting]: https://github.com/exercism/docs/blob/master/you-can-help/implement-an-exercise-from-specification.md
+[problem-specifications]: https://github.com/exercism/problem-specifications
+[blazon]: https://github.com/exercism/blazon
+[blazon-process]: https://github.com/exercism/docs/blob/master/you-can-help/improve-exercise-metadata.md
+[fixing-readmes]: https://github.com/exercism/docs/blob/master/language-tracks/exercises/anatomy/readmes.md

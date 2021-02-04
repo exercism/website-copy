@@ -1,29 +1,31 @@
-### Installation
+# CLI 
+
+## Installation
 
 The Exercism command line interface (CLI) is a tool that can download exercises, show your progress through a track, and submit your solutions - all from within your terminal. The best way to get started with the CLI is our [Interactive Walkthrough](https://exercism.io/cli-walkthrough). It guides you down the right path depending on your operating system, experience with the command line, etc, and will get your CLI configured.
 
 If you just want to download the CLI manually and work out how to use it, you can download and install it from [GitHub](https://github.com/exercism/cli/releases/latest). However, please note that we ask that you work through the [Interactive Walkthrough](https://exercism.io/cli-walkthrough) before opening any support requests.
 
 
-### Upgrading from pre-v3
+## Upgrading from pre-v3
 
 If you have a previous version of the CLI and want to upgrade, please read [these instructions](https://github.com/exercism/website-copy/blob/master/pages/cli_v1_to_v2.md).
 
-### Basic usage
+## Basic usage
 Run the help subcommand to get the full list of available commands.
 
 ```bash
 exercism help
 ```
 
-### Configuration
+## Configuration
 You need to tell the tool who you are. You can find your token in your [settings page](http://exercism.io/my/settings).
 
 ```
 exercism configure --token=YOUR_API_TOKEN
 ```
 
-### Troubleshooting
+## Troubleshooting
 
 Make sure you are on the latest version.
 

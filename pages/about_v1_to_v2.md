@@ -1,10 +1,12 @@
+# About v1 to v2 transition
+
 We've rebuilt Exercism from the ground up to provide a smoother, more in-depth experience. Exercism now has progression through tracks, more structured mentoring and a much better user interface.
 
 Below, we have outlined a few of the biggest changes. For even **more** details you can view [this document](https://github.com/exercism/v2-feedback). If you need help migrating solutions on your local system from v1 to v2, please [read this document](/cli-v1-to-v2).
 
 We are still working through lots of TODOs to get things right, so please bear with us, but we hope you find this new version more fun and useful than ever.
 
-### New branding
+## New branding
 
 There are aspects of the old logo and branding that we like, but we found that it doesn't express the most important thing about Exercism: this is a friendly, welcoming place focused on the humans.
 
@@ -16,7 +18,7 @@ We want to emphasize human connections and a supportive, friendly learning envir
 
 To this end we have designed a completely new logo, and a new design aesthetic.
 
-### Redesigned language tracks
+## Redesigned language tracks
 
 We have completely redesigned the experience around joining, participating in, and completing a language track.
 
@@ -49,7 +51,7 @@ Notice that we're not focusing on "artisans" as a core audience for the exercise
 
 That said, we believe that Exercism has a lot to offer artisans, and they are part of our core "mentor" audience, described in more detail below.
 
-### A new mentorship model
+## A new mentorship model
 Because learning can be such a vulnerable process, we decided after much deliberation to make the mentorship process private between the learner and their mentors. There are some giant trade-offs inherent in this choice, between helping people feel safe and supported, scaling mentorship, and making solutions available for others to learn from. We will be addressing some aspects of the old model of communal feedback and learning with the new teams interface.
 
 We have written in depth about the considerations we wrestled with and that led to this decision in the design document about code review.
@@ -62,7 +64,7 @@ In order to reduce the risk of learners feeling like they're at the bottom of a 
 
 Once a student has completed an exercise, they can decide whether or not to make it available to the broader Exercism community. If someone decides to make the solution available, they can also decide whether or not to include it in their public showcase.
 
-### Privacy features
+## Privacy features
 **Aliases:** People can choose on a track-by-track basis what avatar they want to use and what handle they want to go by. This means that people can use their Exercism username publicly in some tracks while remaining private in others. Logging in is now decoupled from GitHub, so the Exercism username may or may not be the same as their GitHub username. If someone chooses to use a handle that is different from their username, then we will make it clear to mentors that this is an alias.
 
 **Blocking:** People can choose to not interact with certain others. This goes for both learners who can opt out of certain mentors, and mentors who can choose to not work with certain learners. There are a number of reasons why people might want to not interact with someone, and they do not all reflect poorly on the person in question. We will however, be monitoring this data for outliers so that we can intervene if we are seeing behavior that is concerning.

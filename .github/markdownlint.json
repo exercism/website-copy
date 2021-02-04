@@ -1,0 +1,6 @@
+{
+    "default": false,
+    "heading-increment": true,
+    "first-line-heading": true,
+    "heading-style": "atx"
+}
