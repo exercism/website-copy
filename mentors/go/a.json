@@ -62,5 +62,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm an experienced engineer with a background in DevOps and current focus on Cybersecurity.  I enjoy Go and the community that supports it!"
-  }
+  },
+  {
+  "github_username": "aditek1105",
+  "name": "Aditya Tekur",
+  "link_text": "GitHub",
+  "link_url": "https://github.com/aditek1105",
+  "avatar_url": null,
+  "bio": "Not an expert by any means in Golang, but am open to learning everyday and providing valuable feedback to the people who are Go enthusiasts."
+}
 ]
