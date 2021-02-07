@@ -82,6 +82,13 @@ public static int Distance(string strand1, string strand2)
 }
 ```
 
+### A single line method using lambda operator
+
+```csharp
+public static int Distance(string first, string second) =>
+        (first.Length != second.Length) ? throw new ArgumentException() : (first.Length - Enumerable.Range(0, first.Length-1).Count(index => first[index] == second[index]));
+```
+
 Suggest that it might be useful to have the exceptional case handled first, as this is usually how C# methods are structured: error-handling first, than the regular implementation.
 
 The non-LINQ approach is almost twice as fast as the LINQ approach for long strands (say 1 billion letters)
