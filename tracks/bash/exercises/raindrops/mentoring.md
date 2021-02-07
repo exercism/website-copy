@@ -23,7 +23,7 @@ echo "${output:-$1}"
 
 ### Common Suggestions
 
-See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/master/tracks/bash/exercises/two-fer/mentoring.md) for some common suggestions.
+See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/main/tracks/bash/exercises/two-fer/mentoring.md) for some common suggestions.
 
 ### Talking Points
 

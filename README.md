@@ -29,7 +29,7 @@ Please use `###` for headings and try to keep to a structure of:
 - **Common suggestions:** Good suggestions specific to this exercise. Good lessons that emerge from it.
 - **Talking points:** Questions to challenge more advance learners with.
 
-Here's an example for [Ruby's Isogram](https://github.com/exercism/website-copy/blob/master/tracks/ruby/exercises/isogram/mentoring.md).
+Here's an example for [Ruby's Isogram](https://github.com/exercism/website-copy/blob/main/tracks/ruby/exercises/isogram/mentoring.md).
 
 <details>
 <summary>This is how you create a new file:</summary>

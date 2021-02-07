@@ -11,7 +11,7 @@ This has multiple benefits:
 - You'll have to solve the exercise in a way that passes the tests - and nothing more.
 - You can request mentoring ;-)
 
-As the queues for side exercises in the tracks are huge, time-to-mentor can be long. You can either mentor yourself by reading the [Mentor Notes](https://github.com/exercism/website-copy/tree/master/tracks) if those are available, or ask your fellow mentors in the Slack channel for their favorite solutions, or ask them to look at your solution. You may want to add that you're asking because you want to start mentoring that exercise.
+As the queues for side exercises in the tracks are huge, time-to-mentor can be long. You can either mentor yourself by reading the [Mentor Notes](https://github.com/exercism/website-copy/tree/main/tracks) if those are available, or ask your fellow mentors in the Slack channel for their favorite solutions, or ask them to look at your solution. You may want to add that you're asking because you want to start mentoring that exercise.
 
 ### 3. Mentor that exercise first
 - In your Mentor Dashboard, filter the list of exercises for your track and the one exercise. Work through a bunch of the submissions for this exercise. It'll give you a feel for the different kinds of students that you'll meet in your track, and you'll be suprised by the wide variety of solutions that people submit. We encourage you to be picky :-) Nothing wrong with discarding the submissions you don't feel confident about.
