@@ -1,4 +1,5 @@
-### What is Exercism?
+# About Exercism
+## What is Exercism?
 
 Exercism is an online platform designed to help you improve your coding skills through practice and mentorship. 
 
@@ -12,6 +13,6 @@ Exercism is designed to be fun and friendly, and we place a strong emphasis on e
 
 Sign up and have fun. Exercism is 100% free :)
 
-### Who owns and runs Exercism?
+## Who owns and runs Exercism?
 
 Exercism is a not-for-profit company. It is legally based in the United Kingdom, with Company Registration Number [11733062](https://beta.companieshouse.gov.uk/company/11733062). It is "company limited by guarantee" which means there are no shareholders, and no individuals "own" the company. Instead, the company has trustees who are responsible for ensuring it meets its aims and objectives. The current trustees are Katrina Owen and Jeremy Walker, who are also the company's Directors. 

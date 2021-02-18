@@ -1,4 +1,6 @@
-### Navigating the Mentor Dashboard
+# Mentoring Workflow
+
+## Navigating the Mentor Dashboard
 To get started with mentoring, log into your Exercism account and click on “Mentor Dashboard” in the main menu.
 
 ![menu](https://user-images.githubusercontent.com/5421823/42646491-efd24170-85f8-11e8-9284-87929f379f39.png)
@@ -11,7 +13,7 @@ The right hand side shows how many solutions you’ve mentored so far so you can
 
 Click on one of the solutions to start giving feedback. This will take you to the mentor feedback interface where you can write and submit your feedback.
 
-### Giving Mentor Feedback 
+## Giving Mentor Feedback 
 
 You can click the “Instructions” tab to remind yourself of what the exercise is about. These are the same instructions given to the learner. 
 
