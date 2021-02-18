@@ -52,6 +52,8 @@ You may see some solutions where the `difference` has been partially expanded an
 n111b111's solution:
 
 ````
+Using `evalpoly` makes this more efficient than most hand-written analytic solutions because `evalpoly` generates efficient code using [Horner's method](https://www.math10.com/en/algebra/horner.html).
+
 ```julia
 "Square the sum of the numbers up to the given number"
 square_of_sum(n::Int) = evalpoly(n, (0,0,1,2,1)) ÷ 4
