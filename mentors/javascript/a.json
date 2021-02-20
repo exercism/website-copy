@@ -126,5 +126,13 @@
     "link_url": "http://antoniosaric.herokuapp.com/index.html",
     "avatar_url": "https://res.cloudinary.com/dqd4ouqyf/image/upload/v1603928611/antonio_saric_pic_1_jxdm6j.png",
     "bio": "01000011 01101111 01100100 01101001 01101110 01100111 00100000 01110100 01101111 00100000 01100011 01101000 01100001 01101110 01100111 01100101 00100000 01110100 01101000 01100101 00100000 01110111 01101111 01110010 01101100 01100100"
+  },
+  {
+    "github_username": "amirhosseinab",
+    "name": "Amir Hossein Abdolkhalegh",
+    "link_text": "YouTube",
+    "link_url": "https://youtube.com/c/amirhosseinab",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1999772?s=460&u=d8976ddce419637ca5c0b3b8f979f4c47ea918df&v=4",
+    "bio": "I have enthusiasm for programming languages and web technologies, specially Golang, Rust, and JavaScript. Besides that, I enjoy designing illustrations."
   }
 ]
