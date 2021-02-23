@@ -84,6 +84,7 @@ public class Allergies
 ### Talking points
 
 - One could pre-compute the allergies in the constructor, to possibly improve performance when its methods are called a lot.
+- One could store the `mask` as a field and test with a bitmask in `IsAllergicTo()` instead of searching a list with `Contains(allergen)`.  This will provide better performance in a large dataset by reducing the number of comparisons from O(*n*) to O(*1*).
 
 #### Defining the bitmask
 
