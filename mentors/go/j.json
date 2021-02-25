@@ -38,5 +38,13 @@
     "link_url": "https://www.linkedin.com/in/joetayl0r/",
     "avatar_url": "https://www.gravatar.com/avatar/0dd5f66a0024ab5822d7afdd53273fc7.jpg?s=224",
     "bio": "I've been a professional software engineer since 2009 and I've benefited from the support of so many people over the years. Hoping to give something back to the community by mentoring here!"
+  },
+  {
+    "github_username": "jwhitt3r",
+    "name": "Jack Whitter-Jones",
+    "link_text": "My Website - Exiting Into Code",
+    "link_url": "https://exit.wtf/",
+    "avatar_url": null,
+    "bio": "I have been programming for over 4 years, where Go has become a true passion of mine. Go allows the flexibility for anyone new, intermediate, and advanced to create innovative solutions from the get go (pun somewhat intended)! "
   }
 ]
