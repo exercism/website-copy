@@ -1,5 +1,5 @@
 <!--
-This error is raised when the solution doesn't use guards
+This error is raised when the solution doesn't use guards at all
 -->
 
 Use [guards](https://hexdocs.pm/elixir/master/guards.html) to prevent `two_fer/1` from executing code with non-binary inputs.
