@@ -47,3 +47,7 @@ This is fine, so long as the student's solution touches upon the concepts listed
 #### Student's Solution Initializes a `HashMap` For Every Possible Anagram
 
 Your response to this depends on whether you feel this is overkill or not. Certainly the runtime will be more efficient than sorting every possible anagram instead, but on the other hand, sorting every possible anagram incurs a rather minimal runtime hit at the cost of a pretty significant memory saving. Ultimately, there can be an argument made for either side, though there seems to be a slight preference amongst more seasoned mentors for the lower memory overhead option. 
+
+### Going further
+
+If there's little to improve in the solution, you may suggest the student goes further by using the [`once_cell`](https://crates.io/crates/once_cell) crate to compute the sorted variant of the input only when it's first needed.
