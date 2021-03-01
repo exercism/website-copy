@@ -73,3 +73,18 @@ If they use `.pow()`:
 ```
 We don't need to use `.pow()`.
 ```
+
+If the `use` elements are out of alphabetical order the student may appreciate being introduced to `rustfmt`.
+```rust
+use chrono::{DateTime, Utc, Duration};
+```
+```markdown
+A minor style point is that `rustfmt`  will usually put `use` elements in alphabetical order. In larger programs with a lot of `use` statements it can be helpful to have them ordered alphabetically.
+```
+
+Whether they use a `const` or not, the student may appreciate being introduced to cargo-asm.
+```markdown
+Some coders may prefer to create a `const` with the gigasecond value and use that in `after`. I could see doing that if the value were used in multiple places, but since it's only used in one place in this short program I don't think it's really needed, though it's fine to do so. I'm told by several people that [`cargo-asm`] shows that either way compiles into the same assembly instructions.
+
+[`cargo-asm`]: https://crates.io/crates/cargo-asm
+```
