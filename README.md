@@ -1,6 +1,6 @@
 **This repo is no longer syncing to the v2 website. Mentor bios here are also deprecated. Any other content updates will appear on the v3 (staging or eventually production) website.**
 
---
+---
 
 # Copy for the Exercism website
 
