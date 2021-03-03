@@ -68,6 +68,17 @@ defmodule WordCount do
 end
 ```
 
+```elixir
+# Enum.frequencies_by/2 can do a lot of the legwork for you here
+defmodule WordCount do
+  def count(sentence) do
+    sentence
+    |> String.split(~r/[^[:alnum:]-]/u, trim: true)
+    |> Enum.frequencies_by(&String.downcase/1)
+  end
+end
+```
+
 ### Common suggestions
 
 #### German `öüä`
