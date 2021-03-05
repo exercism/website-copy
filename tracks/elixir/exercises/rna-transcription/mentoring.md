@@ -2,7 +2,7 @@
 
 ```elixir
 # Enum.map with case (and/or anonymous function) based approach
-defmodule RNATranscription do
+defmodule RnaTranscription do
   @spec to_rna([char]) :: [char]
   def to_rna(dna) do
     Enum.map(dna, fn nucleotide ->
@@ -19,7 +19,7 @@ end
 
 ```elixir
 # Enum.map from map of transformations
-defmodule RNATranscription do
+defmodule RnaTranscription do
   @transformations %{
     ?G => ?C,
     ?C => ?G,
@@ -38,7 +38,7 @@ end
 
 ```elixir
 # recursive function approach
-defmodule RNATranscription do
+defmodule RnaTranscription do
   @spec to_rna([char]) :: [char]
   def to_rna(dna), do: to_rna(dna, '')
 
@@ -54,7 +54,7 @@ end
 
 #### Use ?instead of 'char' for matches
 
-Using charlist ('A' -> 'U') forces you to iterate over the charlist and concate the list of charlists later. Using chars directly (?A -> ?U) circumvents creating lists of (char) lists.
+Using charlist ('A' -> 'U') forces you to iterate over the charlist and concatenate the list of charlists later. Using chars directly (?A -> ?U) circumvents creating lists of (char) lists.
 
 #### Use multiheaded anonymous function
 
