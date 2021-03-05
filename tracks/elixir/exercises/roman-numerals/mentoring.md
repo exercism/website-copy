@@ -1,7 +1,7 @@
 ### Reasonable solutions
 
 ```elixir
-defmodule Roman do
+defmodule RomanNumerals do
   @dict [
     {1000, "M"},
     {900, "CM"},
@@ -18,13 +18,13 @@ defmodule Roman do
     {1, "I"}
   ]
 
-  def numerals(number), do: do_numerals(number, "")
+  def numeral(number), do: do_numeral(number, "")
 
-  defp do_numerals(0, acc), do: acc
+  defp do_numeral(0, acc), do: acc
 
-  defp do_numerals(number, acc) do
+  defp do_numeral(number, acc) do
     {arabic, roman} = @dict |> Enum.find(fn {n, _} -> n <= number end)
-    numerals(number - arabic, acc <> roman)
+    do_numeral(number - arabic, acc <> roman)
   end
 end
 ```
@@ -35,27 +35,28 @@ possibility. For beginners who have the tendency to do pattern matching, this
 could be the first step to reach the solution above.
 
 ```elixir
-defmodule Roman do
-  def numerals(number), do: do_numerals(number, "")
+defmodule RomanNumerals do
+  def numeral(number), do: do_numeral(number, "")
 
-  defp do_numerals(number, acc) do
+  defp do_numeral(number, acc) do
     cond do
-      number >= 1000 -> do_numerals(number - 1000, acc <> "M")
-      number >= 900 -> do_numerals(number - 900, acc <> "CM")
-      number >= 500 -> do_numerals(number - 500, acc <> "D")
-      number >= 400 -> do_numerals(number - 400, acc <> "CD")
-      number >= 100 -> do_numerals(number - 100, acc <> "C")
-      number >= 90 -> do_numerals(number - 90, acc <> "XC")
-      number >= 50 -> do_numerals(number - 50, acc <> "L")
-      number >= 40 -> do_numerals(number - 40, acc <> "XL")
-      number >= 10 -> do_numerals(number - 10, acc <> "X")
-      number >= 9 -> do_numerals(number - 9, acc <> "IX")
-      number >= 5 -> do_numerals(number - 5, acc <> "V")
+      number >= 1000 -> do_numeral(number - 1000, acc <> "M")
+      number >= 900 -> do_numeral(number - 900, acc <> "CM")
+      number >= 500 -> do_numeral(number - 500, acc <> "D")
+      number >= 400 -> do_numeral(number - 400, acc <> "CD")
+      number >= 100 -> do_numeral(number - 100, acc <> "C")
+      number >= 90 -> do_numeral(number - 90, acc <> "XC")
+      number >= 50 -> do_numeral(number - 50, acc <> "L")
+      number >= 40 -> do_numeral(number - 40, acc <> "XL")
+      number >= 10 -> do_numeral(number - 10, acc <> "X")
+      number >= 9 -> do_numeral(number - 9, acc <> "IX")
+      number >= 5 -> do_numeral(number - 5, acc <> "V")
       number >= 4 -> acc <> "IV"
       number == 0 -> acc
-      true -> do_numerals(number - 1, acc <> "I")
+      true -> do_numeral(number - 1, acc <> "I")
     end
   end
+end
 ```
 
 ### Common suggestions
@@ -66,9 +67,9 @@ Most students attempt to do two definitions and use the first to invoke the
 second with an empty string as accumulator:
 
 ```elixir
-def numerals(number), do: numerals(number, "")
+def numeral(number), do: numeral(number, "")
 
-def numerals(number, acc) do
+def numeral(number, acc) do
   # ...
 end
 ```
@@ -78,7 +79,7 @@ However, it should be noted that with this approach, `numerals/2` cannot be
 private and the API with the second argument is exposed.
 
 ```elixir
-def numerals(number, acc \\ "") do
+def numeral(number, acc \\ "") do
   # ...
 end
 ```
