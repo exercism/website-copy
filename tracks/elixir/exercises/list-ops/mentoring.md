@@ -8,11 +8,11 @@ defmodule ListOps do
   # for adding numbers), but please do not use Kernel functions for Lists like
   # `++`, `--`, `hd`, `tl`, `in`, and `length`.
 
-  @spec count(list) :: non_neg_integer
-  def count(list), do: do_count(list, 0)
+  @spec length(list) :: non_neg_integer
+  def length(list), do: do_length(list, 0)
 
-  defp do_count([_h | t], total), do: do_count(t, total + 1)
-  defp do_count([], total), do: total
+  defp do_length([_h | t], total), do: do_length(t, total + 1)
+  defp do_length([], total), do: total
 
   @spec reverse(list) :: list
   def reverse(list), do: do_reverse(list, [])
@@ -33,9 +33,13 @@ defmodule ListOps do
   defp do_filter([], acc, _func), do: reverse(acc)
 
   @type acc :: any
-  @spec reduce(list, acc, (any, acc -> acc)) :: acc
-  def reduce([h | t], acc, func), do: reduce(t, func.(h, acc), func)
-  def reduce([], acc, _func), do: acc
+  @spec foldl(list, acc, (any, acc -> acc)) :: acc
+  def foldl([h | t], acc, func), do: foldl(t, func.(h, acc), func)
+  def foldl([], acc, _func), do: acc
+
+  @spec foldr(list, acc, (any, acc -> acc)) :: acc
+  def foldr([], acc, _), do: acc
+  def foldr([h | t], acc, f), do: f.(h, foldr(t, acc, f))
 
   @spec append(list, list) :: list
   def append(list1, list2), do: list1 |> reverse() |> do_append(list2)
@@ -44,7 +48,7 @@ defmodule ListOps do
   defp do_append([], list), do: list
 
   @spec concat([[any]]) :: [any]
-  def concat(list), do: list |> reverse() |> reduce([], &append/2)
+  def concat(list), do: list |> reverse() |> foldl([], &append/2)
 end
 ```
 
@@ -52,8 +56,7 @@ end
 
 #### Naming conventions
 
-This is the first problem that students need to use helper functions
-with a name similar to the public version.
+In this exercise students need to use helper functions with a name similar to the public version.
 
 They should name the private function the same name as the public functions,
 but starting with `do_`, according to the
