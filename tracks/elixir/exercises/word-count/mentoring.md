@@ -28,6 +28,32 @@ defmodule WordCount do
 end
 ```
 
+```elixir
+defmodule WordCount do
+  @trim_quotes_around_word ~r/\s'([^']+(?='))'/
+  @alphanumeric_chars_group ~r/[[:alnum:]-']+/u
+
+  def count(sentence) do
+    removed_quotes = Regex.replace(@trim_quotes_around_word, String.downcase("\s" <> sentence), "\s\\g{1}")
+
+    Regex.scan(@alphanumeric_chars_group, removed_quotes)
+    |> List.flatten()
+    |> Enum.frequencies()
+  end
+end
+```
+
+```elixir
+defmodule WordCount do
+  def count(sentence) do
+    sentence
+    |> String.split(~r/[^[:alnum:]-']/u, trim: true)
+    |> Enum.map(&String.trim(&1, "'"))
+    |> Enum.frequencies_by(&String.downcase/1)
+  end
+end
+```
+
 ### Common suggestions
 
 #### Special characters
