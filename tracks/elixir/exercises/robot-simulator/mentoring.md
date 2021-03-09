@@ -2,6 +2,7 @@
 
 #### Sample GenServer solution
 ```elixir
+defmodule RobotSimulator do
   defmodule Robot do
     @opaque t :: %Robot{direction: :north, position: {integer, integer}}
     defstruct direction: nil, position: nil
@@ -84,17 +85,19 @@ defmodule RobotSimulator do
   defguard is_direction(direction) when direction in @directions
   defguard is_position(x, y) when is_integer(x) and is_integer(y)
 
-  def create(direction \\ :north, {x, y} = position \\ {0, 0})
+  def create(direction \\ :north, position \\ {0, 0})
+
+  def create(direction, {x, y} = position)
       when is_direction(direction) and is_position(x, y) do
     %{position: position, direction: direction}
   end
 
-  def create(direction, {x, y} = position)
+  def create(direction, {x, y})
       when not is_direction(direction) and is_position(x, y) do
     {:error, "invalid direction"}
   end
 
-  def create(direction, _) do
+  def create(_, _) do
     {:error, "invalid position"}
   end
 
@@ -133,10 +136,10 @@ defmodule RobotSimulator do
   defp advance_position(position, direction) do
     direction
     |> direction_vector
-    |> addt(position)
+    |> add(position)
   end
 
-  defp addt({a, b}, {c, d}), do: {a + c, b + d}
+  defp add({a, b}, {c, d}), do: {a + c, b + d}
 
   defp direction_vector(:north), do: {0, 1}
   defp direction_vector(:south), do: {0, -1}
@@ -149,14 +152,9 @@ defmodule RobotSimulator do
   @spec position(robot :: any) :: {integer, integer}
   def position(%{position: p}), do: p
 end
-
 ```
 
 ### Common suggestions
-
-#### OTP
-
-The problem is marked as OTP but not a problem if not used.
 
 #### Use ```defguard``` or ```defguardp```
 

@@ -106,7 +106,10 @@ defmodule BankAccount do
   end
 
   @spec open_bank() :: account
-  def open_bank(), do: spawn(fn -> listen(self(), 0) end)
+  def open_bank() do
+    reply_to = self()
+    spawn(fn -> listen(reply_to, 0) end)
+  end
 
   @spec close_bank(account) :: true
   def close_bank(account), do: Process.exit(account, :kill)

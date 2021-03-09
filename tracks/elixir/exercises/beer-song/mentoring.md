@@ -68,9 +68,3 @@ is clearer than
 ```
 def  verse(number) when number == 0. do: ...
 ```
-
-#### Style guide
-
-This is the first time on the track that students get to define their own functions and frequently trip over naming conventions. Refer them to the [elixir style guide](https://github.com/christopheradams/elixir_style_guide).
-
-https://github.com/christopheradams/elixir_style_guide

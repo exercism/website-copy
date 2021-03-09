@@ -1,67 +1,42 @@
 ### Reasonable solutions
 
 ```elixir
-# String.split based approach
 defmodule WordCount do
-  @doc """
-  Count the number of words in the sentence.
-
-  Words are compared case-insensitively.
-  """
   @spec count(String.t()) :: map
   def count(sentence) do
     sentence
+    |> normalize()
     |> split
-    |> count_words
+    |> frequencies()
   end
 
-  defp split(sentence) do
-    word_delimiters = ~r/[^\p{L}0-9-]+/u
-
-    sentence
+  defp normalize(string) do
+    string
     |> String.downcase()
-    |> String.split(word_delimiters, trim: true)
+    |> String.replace("_", " ", global: true)
   end
 
-  defp count_words(word_list) do
-    word_list
-    |> Enum.reduce(%{}, &increment/2)
-  end
-
-  defp increment(word, map) do
-    Map.update(map, word, 1, &(&1 + 1))
-  end
-end
-```
-
-```elixir
-# Regex.scan based approach
-defmodule WordCount do
-  def count(sentence) do
-    sentence
-    |> String.downcase()
-    |> to_word_list()
-    |> to_word_count_map()
-  end
-
-  defp to_word_list(sentence) do
-    ~r/[[:alnum:]-]+/u
-    |> Regex.scan(sentence)
+  defp split(string) do
+    ~r/\b[\w'-]+\b/u
+    |> Regex.scan(string)
     |> List.flatten()
   end
 
-  defp to_word_count_map(word_list) do
-    update_count = fn word, acc -> Map.update(acc, word, 1, &(&1 + 1)) end
-    Enum.reduce(word_list, %{}, update_count)
+  defp frequencies(strings) do
+    Enum.frequencies(strings)
   end
 end
 ```
 
 ```elixir
-# Utilizing Enum.frequencies
 defmodule WordCount do
+  @trim_quotes_around_word ~r/\s'([^']+(?='))'/
+  @alphanumeric_chars_group ~r/[[:alnum:]-']+/u
+
   def count(sentence) do
-    Regex.scan(~r/[[:alnum:]-]+/u, String.downcase(sentence))
+    removed_quotes = Regex.replace(@trim_quotes_around_word, String.downcase("\s" <> sentence), "\s\\g{1}")
+
+    Regex.scan(@alphanumeric_chars_group, removed_quotes)
     |> List.flatten()
     |> Enum.frequencies()
   end
@@ -69,11 +44,11 @@ end
 ```
 
 ```elixir
-# Enum.frequencies_by/2 can do a lot of the legwork for you here
 defmodule WordCount do
   def count(sentence) do
     sentence
-    |> String.split(~r/[^[:alnum:]-]/u, trim: true)
+    |> String.split(~r/[^[:alnum:]-']/u, trim: true)
+    |> Enum.map(&String.trim(&1, "'"))
     |> Enum.frequencies_by(&String.downcase/1)
   end
 end
@@ -81,15 +56,15 @@ end
 
 ### Common suggestions
 
-#### German `öüä`
+#### Special characters
 
-If a solution explicitly lists German characters to make the German test case pass,
+If a solution explicitly lists German and Polish characters to make the German and Polish test cases pass,
 an alternative test case can be presented and the student asked to make this test pass too.
 
 ```elixir
-test "Polish" do
-  expected = %{"mam" => 1, "na" => 1, "imię" => 1, "łukasz" => 1}
-  assert WordCount.count("Mam na imię Łukasz") == expected
+test "French" do
+  expected = %{"un" => 1, "café" => 1, "s'il" => 1, "vous" => 1, "plaît" => 1}
+  assert WordCount.count("Un café s'il vous plaît") == expected
 end
 ```
 
@@ -100,13 +75,6 @@ is not a practical solution.
 
 If a solution explicitly lists all punctuation characters necessary to make the tests pass,
 an alternative test case can be presented and the student asked to make this test pass too.
-
-```elixir
-test "question" do
-  expected = %{"what" => 1, "is" => 1, "your" => 1, "name" => 1}
-  assert WordCount.count("What is your name?") == expected
-end
-```
 
 ```elixir
 test "spanish question" do
