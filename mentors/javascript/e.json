@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a self-taught front-end developer working mainly with JavaScript and React. I believe that learning is a lifelong process and would love to help others on their journey."
-  }
+  },
+  {
+    "github_username": "ericcchiu",
+    "name": "Eric Chiu",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a software engineer, workshop instructor, and jogger. I love JavaScript and Golang. Currently learning more about Golang and hope to use it to switch my NodeJS backend for Go."
+  }  
 ]
