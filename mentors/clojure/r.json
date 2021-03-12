@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Around 4 years of clojure experience. Author of aprint & debugger libs. Maintain awesome-clojure list and hope to get russian clojure.ru done right at some point (you can help!)"
+  },
+  {
+    "github_username": "ryanboldi",
+    "name": "Ryan Boldi",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Clojure and AI Enthusiast. I love helping people write more idiomatic code. I have been programming since I was 11 years old, but transitioned to Clojure more recently."
   }
 ]

@@ -11,6 +11,13 @@ This exercise is about re-implementing a common library function.
   (apply str (reduce conj '() s)))
 ```
 
+```clojure
+(ns reverse-string)
+
+(defn reverse-string [s]
+  (apply str (into '() s)))
+```
+
 ### Common suggestions
 
 ### Talking points
