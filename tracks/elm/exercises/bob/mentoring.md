@@ -8,7 +8,7 @@ There are some good and sensible opportunities to use point free style.
 
 There are also some general code quality things to discuss, such as keep related logic together and ordering the code by importance. Students should strive to communicate what the code does in as few lines as possible (preferably just the main function and argument names). They show also strive to communicate how it does it in as few lines as possible, preferably just the main function body.
 
-### Reasonable solutions
+## Reasonable solutions
 
 There are two main styles of solution.
 
@@ -18,7 +18,7 @@ The other involves pattern matching with helper functions to calculate `isYellin
 
 Either solution is acceptable, and generally as long as the tests pass it is ok to approve any solution which isn't truly terrible. Comments should be added for any suggested improvements or talking points.
 
-### Common suggestions
+## Common suggestions
 
 `isSilence` is easy to calculate and is probably best as `String.trim remark |> String.empty` or `String.trim >> String.empty` (point free style)
 
@@ -32,7 +32,7 @@ The domain concepts should be present in the code.
 
 Nested conditionals should be avoided, and excessive conditionals in general.
 
-### Talking points
+## Talking points
 
 Point free style can be easily and sensibly used for some of the functions, so is worth mentioning if the student hasn't done it.
 

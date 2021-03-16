@@ -1,10 +1,10 @@
 # Mentoring
 
-### New Concepts
+## New Concepts
 
 Hash (it's new here because Robot Name has been removed as a core exercise); constant; `each_with_object`: avoiding a separate accumulator variable.
 
-### Minimal solution for approval
+## Minimal solution for approval
 
 ```ruby
 class WordCount
@@ -28,7 +28,7 @@ class WordCount
 end
 ```
 
-### Reasonable Variants
+## Reasonable Variants
 
 - `reduce`/`inject` for counting: see [this explanation](https://technology.customink.com/blog/2014/10/14/better-hash-injection-using-each-with-object/) why to prefer each_with_object, especially as an after-approval challenge.
 
@@ -41,7 +41,7 @@ end
 ```
 Note that `Symbol#to_proc` is a new concept in the track.
 
-### General
+## General
 
 - This is the first exercise where students practice with avoiding the Accumulator Pattern (with a counter variable)! It's an important goal of this exercise.
 - Solutions with `each`, `for` or others are not considered approvable (at least not in a first submission and/or without addressing it).
@@ -49,7 +49,7 @@ Note that `Symbol#to_proc` is a new concept in the track.
 As long as they got something that catches a word with or without `'`, it's fine to give away the last step for free.
 http://www.rubular.com/
 
-### Talking points
+## Talking points
 
 - `inject`/`reduce`: see note under Reasonable Variants.
 - Extracting the preparation of the input into a separate (private) method.

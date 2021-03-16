@@ -1,13 +1,13 @@
 # Mentoring
 
-### Problem and challenges
+## Problem and challenges
 
 The markdown exercise asks the student to refactor some code. The original code is
 hard to follow; it is constructed of a single `for` loop, has many nested
 conditionals, and meaningless variable names. The goal is for them to produce
 improved code that still passes the tests.
 
-### Reasonable solution
+## Reasonable solution
 
 ```python
 import re
@@ -76,7 +76,7 @@ def parse(markdown):
 Many possible solutions to this problem exist. The primary goal is to make comprehending the code
 easier for the reader, while still passing all the tests. The new solution should aim to refactor the existing code, but need not be a complete rewrite. A significant increment towards readability could use the same basic approach and reuse some of the code if possible.
 
-### Talking points
+## Talking points
 
 - Conditional statements make reading and understanding a solution harder. The original code has
 17 conditional statements, and that should be significantly reduced.

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 There are lots of ways to solve this one. Methods that operate on the whole collection are preferred to iterative methods.
 
@@ -51,7 +51,7 @@ class Pangram
 end
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 The exercise does not require the instantiation of any objects, so this should be considered optional. However, this problem does divide itself into two operations, one of which is transforming the input into a usable form. There is a symmetry between that idea and the idea that initializers prepare objects for use. On the other hand, it's difficult to see other purposes for this instantiated object, and it does make the code longer. When no clear arguments present themselves in either direction, the matter may be left to the judgement of the mentor and the student, but a discussion of the issue is probably worthwhile.
 

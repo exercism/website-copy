@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 This problem hinges on how the scores are stored. The most common approach is to use an object with properties for `win`, `loss`, `total_points`, and to calculate these on-the-fly. Deferring the calculation by storing the scores in an array is a more concise approach:
 
@@ -132,14 +132,14 @@ end
 ```
 There's no reason to prefer either approach.
 
-### Common Suggestions
+## Common Suggestions
 
 * There are a number of ways to implement sorting, and the method returning the statistics block from the `Team` object can return a `Hash` instead of an `Array` if the student prefers: this makes sorting using `sort_by` more pleasant. Using a `<=>` method is probably more flexible and idiomatic.
 * Separating the `HEADINGS` from the table formatting allows for cleaner code.
 * Separating purely presentational code from the data model is preferable. Making a `Team#to_s` method should be discouraged.
 * Having a `Roster` class is not necessary, but the `each_with_object` line is much shorter if you do have it.
 
-### Talking Points
+## Talking Points
 
 Ruby is at its most powerful and expressive when the bulk of the problem logic is contained in `Enumerable` data structures. This problem can be done as a "one-liner", but breaking it into stateful objects and constants makes it much more legible, and provides the foundation for a more complete application. As much of the business logic as possible should be contained in the `Team` object.
 

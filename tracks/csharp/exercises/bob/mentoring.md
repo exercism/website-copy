@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using LINQ
+### Using LINQ
 
 ```csharp
 using System.Linq;
@@ -72,7 +72,7 @@ public static class Bob
 }
 ```
 
-#### Using regular expressions
+### Using regular expressions
 
 ```csharp
 using System.Text.RegularExpressions;

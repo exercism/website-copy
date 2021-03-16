@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Solution using `filter` and `exists` 
+### Solution using `filter` and `exists` 
 ```scala
 object SumOfMultiples {
   def sum(factors: Set[Int], limit: Int): Int =
@@ -12,7 +12,7 @@ object SumOfMultiples {
 }
 ```
 
-#### Solution using `flatMap`
+### Solution using `flatMap`
 ```scala
 object SumOfMultiples {
   def sum(factors: Set[Int], limit: Int): Int = 

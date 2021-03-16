@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 A concise solution will have the following elements:
 
@@ -17,7 +17,7 @@ hamming <- function(strand1, strand2) {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 - Point learners who use _many_ intermediate variables, or even a dataframe, or an accumulator(-like) pattern …
 ```r
@@ -34,7 +34,7 @@ but this also shifts the burden of formulating a useful message to the developer
 `stopifnot(… == …)` is more compact, and in case of an error, prints the exact comparison
 and its result.
 
-### Talking points
+## Talking points
 
 This exercise can be the starting point of using the [tidyverse](https://tidyverse.org):
 `strsplit(…)` [`%>%`](https://magrittr.tidyverse.org) `unlist()` avoids function nesting

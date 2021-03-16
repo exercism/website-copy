@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```elixir
 defmodule BinarySearch do
@@ -26,8 +26,8 @@ defmodule BinarySearch do
 end
 ```
 
-### Common suggestions
+## Common suggestions
 
-#### Do not use lists
+### Do not use lists
 
 The advantage of the binary search algorithm is its lower time complexity compared to linear search - O(log(n)) vs O(n). However, this is only achievable if a data structure with random access is used. Elixir tuples offer random access, but Elixir lists do not. The operation to just read the length of the list will have a higher time complexity than the algorithm is supposed to.

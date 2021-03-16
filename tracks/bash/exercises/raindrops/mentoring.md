@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 Short and sweet
 ```bash
@@ -23,11 +23,11 @@ done
 echo "${output:-$1}"
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/main/tracks/bash/exercises/two-fer/mentoring.md) for some common suggestions.
 
-### Talking Points
+## Talking Points
 
 * numerically indexed arrays
 * string concatentation `+=` operator

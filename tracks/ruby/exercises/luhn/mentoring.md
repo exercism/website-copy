@@ -2,7 +2,7 @@
 
 _Luhn_ is the last of the 'mid-level' exercises. It can be solved quite sophisticated; however, the minimal solution for approval is a variant with an instantiated class.
 
-### Minimal Solution for Approval
+## Minimal Solution for Approval
 
 ```ruby
 class Luhn
@@ -40,7 +40,7 @@ class Luhn
 end
 ```
 
-### Reasonable variants
+## Reasonable variants
 
 Well, this is Ruby, and almost everything can be done in several ways. Make sure to acknowledge the student's own preferences (given that's idiomatic Ruby).
 * _guard clause_: variants of `valid_format?(...) && valid_luhn_sum?(...)`
@@ -64,12 +64,12 @@ end
 ```
 * _advanced_ Seperate concerns in classes (input format, luhn_sum) (TODO: add notes) This is not the same as adding a LuhnValidator class.
 
-### General
+## General
 
 For over 50% of the solutions I have seen, the 'Instantiated Class' variant is _not_ a straightforward solution. Don't underestimate its learning potential.
 In the 'Instantiated Class' variant, almost every concept has been addressed in the preceding exercises; putting them all together, and recognizing them in the first place, turns out to be a challenge for the majority of the students. It pays off to involve those earlier exercises in your feedback.
 
-### Mentoring Strategy
+## Mentoring Strategy
 
 _First iteration: start with feedback on general design and pointing to Enumerable for the Luhn Calculation_
 * When people start with a Class and one Giant Class Method: start with just a suggestion to instantiate, without going into details.
@@ -84,7 +84,7 @@ _When that is finished_
 * Smaller refactorings, Ruby sweetness and implementation details
 
 
-### Common suggestions
+## Common suggestions
 * _Instantiating the class from a class method:_ When they don't know how, direct them to their Scrabble Score.
 * When people start with a Class and one Giant Class Method: start with a suggestion to instantiate. See Mentoring Strategy.
 * (I) Don't give `each_slice` away; I refer to the Series exercise instead "for inspiration on a similar solution".
@@ -94,7 +94,7 @@ If they don't get it to work, I invite them to go through their Series together 
 * Pay attention to the concepts that are introduced in the exercises that preceded Luhn;
 the value of Luhn is also that it requires students to use the things that they practiced in a much simpler 'environment' before.
 
-### Talking points
+## Talking points
 
 * _Extracting methods_, and _the order of methods._ The Minimal Solution above is at the maximum of the acceptable number of extracted methods. In a Luhn class, does the Luhn calculation deserve its own method?
 * _Handle spaces_:
@@ -111,10 +111,10 @@ the value of Luhn is also that it requires students to use the things that they 
   - `valid_format?` vs `invalid_format?`: When people extract the validation conditionals into a method, it's more often into a method with a negated name like `if invalid_format ...`.
 * Monkey Patching: some people implement `evenly_divisible_by` in Integer. Talk about the risks of monkey patching and talk about refinements. [link](https://spin.atomicobject.com/2017/12/29/monkey-patching-refinements)
 
-### Mentor Research Notes
+## Mentor Research Notes
 
 * `String@delete`: `.delete("\s")` does remove the space character `' '`, but not the regex `\s` characters like `\n` etc.
 
-### Changelog
+## Changelog
 
 Test data version 1.4.0 : Dec 2018

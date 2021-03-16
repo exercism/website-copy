@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```javascript
 const buildRow = (result, element, index, array) => {

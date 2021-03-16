@@ -2,7 +2,7 @@
 
 This exercise is supposed to have the student use `class` for data structures.
 
-### Reasonable solutions
+## Reasonable solutions
 ```javascript
 class Node {
   constructor({ value, next, prev }) {
@@ -127,7 +127,7 @@ Variations include the following
 - A student may traverse from `tail` backwards instead of `head` forwards.
 - A student may use a `NO_ELEMENT` element instead of `null` or `undefined` to indicate there is no element at `next` / `head` / `prev` / `tail`.
 
-#### Note about Array solutions
+### Note about Array solutions
 The current tests are _not_ enforcing this implementation to actually be a
 LinkedList, but the instructions clearly say you'll need to create a `Node` or
 `Element` data structure pointing to `next` and `prev`. The following _could_ be
@@ -153,7 +153,7 @@ Variations on this include array destructuring in the implementation of `pop`,
 `push` etc, or using a backing array inside the `LinkedList` class. See *common
 suggestions* for more information.
 
-#### Note about earlier versions
+### Note about earlier versions
 Earlier version had a different `Readme.MD` that pointed to using a `Deque`.
 This usually only confused students and has been removed.
 

@@ -4,7 +4,7 @@ This is a great opportunity to prepare for the track with attention to style con
 This is currently the first reviewed problem on the Python track, and serves to
 make sure the student understands unit testing and Test Driven Design.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 ```python
 def two_fer(name="you"):
@@ -16,7 +16,7 @@ def two_fer(name='you'):
     return f'One for {name}, one for me.'
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 - Suggest using a default value instead of any form of conditionals.
 - If the student is using Python 3? Suggest [Literal String Interpolation introduced with Python 3.6](https://www.python.org/dev/peps/pep-0498/).
@@ -25,7 +25,7 @@ def two_fer(name='you'):
 - Check indentation.
 - Printing vs. returning
 
-### Talking Points
+## Talking Points
 
 - Default values
 - String interpolation
@@ -34,7 +34,7 @@ def two_fer(name='you'):
 - Unit Tests. For some students this will be an introduction to the notion of unit tests.
   Make the case that these allow them to be productive while engaging with the problem.
 
-### Mentoring Notes
+## Mentoring Notes
 
 A friendly standard answer about how this can be done in one line, and a 'hint: use a different default value' to get rid of the conditionals, will be all you need for maybe 90% of the submissions.
 
@@ -62,12 +62,12 @@ When they can describe what is going wrong, you may wish to give
 them the term 'Default Arguments' and let them search, or give
 them a reference to your favorite article about default arguments.
 
-#### Editing the Tests
+### Editing the Tests
 
 You will see students who modify the tests to get them to pass.
 You should explain the function and importance of the tests.
 
-#### Test Driven Thinking
+### Test Driven Thinking
 
 The submission below passes all the tests, but misses the point.
 Ask what happens when Carol and Doug show up.
@@ -82,7 +82,7 @@ def two_fer(name=None):
         return 'One for you, one for me.'
 ```
 
-#### Variadic Argument List
+### Variadic Argument List
 
 We can use a variadic argument list to solve the problem
 

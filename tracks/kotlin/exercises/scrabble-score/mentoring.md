@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 ```kotlin
 object ScrabbleScore {
     fun scoreWord(input: String): Int =
@@ -19,7 +19,7 @@ object ScrabbleScore {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 * Use `when` instead of nested `if` expressions
 * In the `when` expression, group letters with the same value instead of creating one row per letter 
 * Remember to convert the letters to uppercase or compare with both lower and uppercase

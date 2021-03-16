@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 There are two general approaches:
 
@@ -12,7 +12,7 @@ want to model it as one or the other. Regardless of the approach taken, there
 are also different approaches to handle "roll-over", string formatting and
 dealing with the equality constraint.
 
-#### The state
+### The state
 
 The internal clock state can either be modelled as a single value, converting
 the input `hours` to `minutes` or the input `minutes` to fractional `hours`, or
@@ -20,7 +20,7 @@ as two separate values. This makes for a good talking point; it is often easier
 to deal with one value instead of two, and delay splitting them out until the
 clock should be formatted (`.toString()`).
 
-#### Normalisation
+### Normalisation
 
 Because the clock must handle roll over in both directions, the state(s) need
 to be normalised before its formattable, or can be tested for equality. The
@@ -56,7 +56,7 @@ If the first remainder results in a negative number, adding the "wrap-around"
 
 Both approaches are valid and idiomatic.
 
-#### Clock formatting
+### Clock formatting
 
 If the state is kept in two values, at time of formatting these values are
 correct. If the state is kept in one value, at time of formatting, the hours
@@ -76,7 +76,7 @@ function clockPad(number) {
 }
 ```
 
-#### Equality and sameness
+### Equality and sameness
 
 Since the description has a definition for sameness, one of the approaches is
 to implement `valueOf`, which would reduce the clock to the number of minutes
@@ -88,7 +88,7 @@ Finally, in this particular case, one may also compare the `string` (
 states that two clocks are equal if they have the same time, which can be
 represented by the `.toString()` value.
 
-#### Example
+### Example
 
 Given the `clockPad` and `normalize` "minutes" function from above, here is an
 idiomatic example of approaching this problem using immutability.

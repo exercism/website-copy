@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 There are two general approaches, either using regular expressions or `String` methods.
 
@@ -68,7 +68,7 @@ module Bob
 end
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 A `case` statement is probably recommended over `if`/`elsif`. As with many Exercism exercises, using an instantiated class is not a strict requirement, but probably useful if any helper methods (e.g. `shouting?`) are defined.
 

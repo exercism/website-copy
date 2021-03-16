@@ -9,12 +9,12 @@ Additionally there are many solutions but they all have cons and pros. The
 Javascript implementation is to generify the implementation using a map and the
 prototype, but that doesn't _quite_ work with the TypeScript typing system.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 A student may either assign `1` to the orbital period of Earth, or assign
 `31557600` and re-calculate every other period to be in seconds.
 
-#### Age given a period
+### Age given a period
 ```typescript
 const EARTH_YEAR_IN_S = 31557600
 
@@ -26,7 +26,7 @@ function ageInPeriod(period: Readonly<number>): number {
 A student may also round using `Math.round(age * 100) / 100` or explicitly
 calling `Number(string)` to cast.
 
-#### Conversion methods
+### Conversion methods
 There are many ways to implement this -- you should approve any method correctly
 using one of the three below, but note the pros and cons of using these methods.
 
@@ -145,7 +145,7 @@ between input and logic, but the con is that we can't rely on TS to make sure
 the implmentation of `SpaceAge` is correct, as the cast to `any` and then
 `SpaceAge` is necessary.
 
-#### Note about future versions
+### Note about future versions
 The JS  version of this exercise does mutate `instance.seconds`. With the
 addition of that test and behaviour, solutions with arrow functions and a `this`
 inside will break with the new tests. If a student is _not_ using `readonly` you

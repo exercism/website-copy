@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Solution using case objects
+### Solution using case objects
 
 ```scala
 object PerfectNumbers {
@@ -34,7 +34,7 @@ object NumberType {
 }
 ```
 
-#### Solution using `Enumeration`
+### Solution using `Enumeration`
 
 ```scala
 object PerfectNumbers {

@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
-#### using LINQ 
+### using LINQ 
 The exercise aims to teach two concepts: `List<T>` as a generic collection, combined with basic LINQ methods. 
 
 ```csharp

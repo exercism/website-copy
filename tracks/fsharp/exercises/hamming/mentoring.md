@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using Seq.sumBy
+### Using Seq.sumBy
 
 ```fsharp
 module Hamming
@@ -16,7 +16,7 @@ let distance (strand1: string) (strand2: string): int option =
         |> Some
 ```
 
-#### Using Seq.fold
+### Using Seq.fold
 
 ```fsharp
 module Hamming

@@ -4,7 +4,7 @@ This exercise introduces:
 - String reader via [`String#split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 - [`Array#map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-### Reasonable solutions
+## Reasonable solutions
 
 There are two ways to transpose the matrix. Either non-destructive:
 
@@ -50,7 +50,7 @@ export class Matrix {
 A student may use `parseInt` instead of `number`, and a student may use getters
 (`get rows() { return this.data }`) to make the transposing lazy.
 
-### Common suggestions
+## Common suggestions
 - If a student uses `foreach`, intermediary bookkeeping and `push`, suggest [`Array#map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 - If a student uses a dangerous version of transpose, suggest a non-destructive one, or make sure it's only ever called once.
 - If a student uses `map(arg => parseInt(arg))` or similar, explain they can drop the anonymous arrow function and pass in `Number` function directly, but not `parseInt` because that accepts two arguments and `Array#map` passes item index implicitly.
@@ -71,6 +71,6 @@ input.split('\n')
   })
 ```
 
-### Talking points
+## Talking points
 - Functions are first class citizens, so you can pass one to `Array#map` and it executes on each one
 - Immutability and side effects

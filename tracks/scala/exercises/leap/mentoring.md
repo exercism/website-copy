@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### With helper function
+### With helper function
 ```scala
 object Leap {
   def leapYear(year: Int): Boolean = {
@@ -13,7 +13,7 @@ object Leap {
 }
 ```
 
-#### Without helper function
+### Without helper function
 ```scala
 object Leap {
   def leapYear(year: Int): Boolean = {

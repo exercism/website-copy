@@ -6,7 +6,7 @@ This is also going to be the most common exercise that we are asked to mentor, s
 
 The goal of the exercise is to get acquainted with Go. This is often an excellent place to start introducing people to the tooling (`gofmt`, `golint`, `go doc`, `go vet`, etc).
 
-### Reasonable solutions
+## Reasonable solutions
 
 We don't have any clear guidelines around when to approve. Some people have been adding comments and approving straight away, others have been approving when the solution has a nice, Go-ish shape (a small conditional that isolates the smallest difference, and a single line of string formatting).
 
@@ -28,7 +28,7 @@ func ShareWith(name string) string {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 One mentor recommended to focus on a single thing, and only add other improvements as "food for thought" that the author can take with them as they move on to the next exercise.
 
@@ -61,13 +61,13 @@ The most common feedback revolves around:
 * Do they have comments that don't follow the linting guidelines? Suggest `golint`.
 * Do they have comments that pass `golint` but don't end with a period? Potentially point them to [CodeReviewComments](https://github.com/golang/go/wiki/CodeReviewComments#comment-sentences) wiki, which suggests that doc comments should be full sentences, ending with a period.
 
-### Talking points
+## Talking points
 
 Regarding the trade-off between `fmt.Sprintf` and `+`:
 * `fmt` is very common and idiomatic.
 * `+` is shorter and avoids an import.
 *  Using `fmt` takes over 5x longer (~400 ns/op) than `+` (~80 ns/op) as reported by `go test --bench .`. This may be too confusing for beginning programmers, and it's trivial in the context of this program, but if it seems apparent that you're mentoring an experienced programmer who's new to Go, it may be worth mentioning.
 
-### Mentoring Tools
+## Mentoring Tools
 
 * [Exalysis](https://github.com/exercism/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.

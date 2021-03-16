@@ -1,13 +1,13 @@
 # Mentoring
 
-### Problem and challenges
+## Problem and challenges
 	
 The Luhn problem asks the student to filter a string 
 of digits, and then perform a checksum. 
 Challenges include turning characters into ints, 
 and then transforming every other digit.
 	
-### Reasonable solutions
+## Reasonable solutions
 	
 The tests require the solution to filter the string.
 	
@@ -42,7 +42,7 @@ class Luhn(object):
             return (num_sum % 10) == 0
 ```
 	
-### Common Suggestions
+## Common Suggestions
 	
 The loop above would be clearer rewritten with enumerate().
 	
@@ -68,9 +68,9 @@ normal_nums_sum = sum(nums[-1::-2])
 return (doubled_sum + normal_nums_sum) % 10 == 0
 ```
 	
-### Talking points
+## Talking points
 	
-#### The doubling transformation
+### The doubling transformation
 	
 The transformation is almost (num  * 2) % 9, except that
 9 maps to 9 rather than 0. The transformation is
@@ -101,7 +101,7 @@ def luhn_lookup(index, digit, luhn_table=(0, 2, 4, 6, 8, 1, 3, 5, 7, 9)):
         return luhn_table[digit]
 ```
 	
-#### Summing via reduce()
+### Summing via reduce()
 	
 You will see solutions that use reduce() rather than sum(). While this works, it is more complex than needed.
 	

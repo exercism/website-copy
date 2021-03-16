@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 ```kotlin
 object BinarySearch {
@@ -32,5 +32,5 @@ object BinarySearch {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 * Use a second function to maintain state of the recursion.

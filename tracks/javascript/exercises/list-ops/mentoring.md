@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 This exercise has many _valid_ implementations, but also many suggestions that
 can be applied to implementations. This exercise is meant to be implemented
@@ -20,7 +20,7 @@ representation back to `values`.
 > *Note*: most implementations using `for` loops, also use `.length` on the
 > backing array, or the `array[indexer]`. You don't need either!
 
-#### Functional data type without backing array
+### Functional data type without backing array
 
 This is a representation of one of the most fundamental *cons* tructs in most
 functional languages called [`Cons`](https://en.wikipedia.org/wiki/Cons). It
@@ -143,7 +143,7 @@ dealing with the outside datatype (`Array`). Everything else is implemented on
 
 `List` returns this `Cons` type from its constructor.
 
-#### Alternative using List with backing array
+### Alternative using List with backing array
 
 The `Cons` concept is **not** a necessity. If we take the same rules of only
 using the language feature for constructing and destructing array, this can be
@@ -190,7 +190,7 @@ length() {
 It's important to note that in this implementation there are still no `for`
 loops, no use of the `length` property, no `push` etc.
 
-#### A note about foreach
+### A note about foreach
 
 There is no `forEach` in this solution, because it's not mandated by the tests.
 If a student uses `forEach` to iterate, instead of `foldl`, that's okay. If a

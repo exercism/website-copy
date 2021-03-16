@@ -1,9 +1,9 @@
 # Mentoring
 
-### Intro
+## Intro
 This is the first core exercise.
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```clojure
 (ns armstrong-numbers)
@@ -26,16 +26,16 @@ This is the first core exercise.
          (= num))))
 ```
 
-### Common suggestions
+## Common suggestions
 - Most users seem to split the number into digits by iterating a string and
   parsing characters. Suggest that this can be done arithmetically as well.
 - Often people use `Math/pow` which uses floating point arithmetics. Suggest
   using integer arithmetics and discuss the probems of comparing floating
   point values for equality.
 
-### Talking points
+## Talking points
 
-### Mentoring notes
+## Mentoring notes
 - If the user comes to Clojure without experience in functional programming,
   this is the first exercise, that requires him to think non-imperative, and
   probably his first contact with sequences.

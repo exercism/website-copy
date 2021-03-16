@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 Loop-based solution (using `%10`):
 ```java

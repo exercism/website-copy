@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```haskell
 import Data.Char (isDigit)
@@ -12,6 +12,6 @@ number xs = case filter isDigit xs of
     _                                                      -> Nothing
 ```
 
-### Common suggestions
+## Common suggestions
 - Most submissions attempt to parse the input string, but Haskell's pattern
 matching can be put to good use here!

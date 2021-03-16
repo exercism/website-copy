@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 The most important thing is that the student has to implement the algorithm(s)
 themselves. This means no libraries and no `.toString(base)`.
@@ -60,7 +60,7 @@ Note: the two conversion steps _can_ be reduced to a single step, by
 calculating the "base" between the two. However, this is usually somewhat
 harder to comprehend. Take note that this is a possibility, and a valid one.
 
-#### Converting to base 10
+### Converting to base 10
 
 There are various approaches, but the two most concise ones, derived from
 compsci and mathematics, are as follows:

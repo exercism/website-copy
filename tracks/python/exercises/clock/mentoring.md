@@ -1,11 +1,11 @@
 # Mentoring
 
-### Problem and Challenges
+## Problem and Challenges
 
 The solution must implement an object that stores
 minutes and hours, and can add or subtract minutes.
 
-#### Complications
+### Complications
 
 The usual contraints apply: 0 <= hours < 24 and
 0 <= minutes < 60.

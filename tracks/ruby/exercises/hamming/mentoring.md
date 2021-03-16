@@ -6,7 +6,7 @@ based on a condition.
 The `Enumerable` module contains fantastic tools to solve these problems. This is a great exercise to introduce students
 to some of its features.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 There are three strategies for the **iteration**. In descending order of popularity with mentors:
 
@@ -31,7 +31,7 @@ translate almost directly into the Ruby code:
 It's worthwhile pointing this out to students who use `#count` in their solutions. It's
 one of the things that's really nice about Ruby!
 
-### Examples
+## Examples
 Strategy 1: `zip`
 
 ```ruby
@@ -63,7 +63,7 @@ Pros: more intuitive? (students seem to pick this often);
 Cons: requires indices.
 
 
-### Mentoring flow
+## Mentoring flow
 
 Most students start at either steps 1 or 2.
 
@@ -82,7 +82,7 @@ Most students start at either steps 1 or 2.
 More details on particular pieces of feedback and good conversations to have in
 the _Common Suggestions_ and _Talking Points_ sections below.
 
-### Common Suggestions
+## Common Suggestions
 
 - By far the most common feedback revolves around eliminating the use of
 manually managed intermediate counter and index variables. In Ruby you should
@@ -98,7 +98,7 @@ because there is no solution that seems to satisfy everyone, while a lot of peop
 on it. The following few core exercises offer plenty opportunity to discuss naming.
 
 
-### Too weak Enumerable
+## Too weak Enumerable
 
 Many students will use `Array#each` to do the looping but have manual
 counter and index variables
@@ -137,7 +137,7 @@ Also it's worth scanning through the [`Enumerable`
 docs](https://ruby-doc.org/core-2.5.1/Enumerable.html).
 ```
 
-### Primitive looping
+## Primitive looping
 
 This one is similar to the "too weak enumerable" but uses a primitive construct
 like `for`, `while`, or `until` to do the looping. These are generally
@@ -149,7 +149,7 @@ a conversation on what's considered an idiomatic looping construct. In order to
 eliminate the intermediate variables the student will naturally move away from
 the primitive constructs.
 
-### Reducing +1
+## Reducing +1
 
 Many students will try to use `Enumerable#reduce`/`Enumerable#inject` to count
 the elements that don't match. While this is a good approach, reducing a
@@ -162,7 +162,7 @@ reduce(0) { |total, element| total + 1 if some_condition? }
 is such a common operation that there is a dedicated method for it:
 `Enumerable#count`.
 
-### String splitting
+## String splitting
 
 Students commonly try to turn a string into characters using `String#split` and
 either an empty string or empty regex. Turns out there's already a built-in

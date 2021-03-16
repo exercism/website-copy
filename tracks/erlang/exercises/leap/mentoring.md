@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using guards
+### Using guards
 
 ```erl
 leap_year(Y) when Y rem 400 =:= 0 -> true;
@@ -11,7 +11,7 @@ leap_year(Y) when Y rem   4 =:= 0 -> true;
 leap_year(Y) when is_integer(Y) -> false.
 ```
 
-#### Using a single expression
+### Using a single expression
 
 ```erl
 leap_year(Y) ->

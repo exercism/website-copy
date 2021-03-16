@@ -2,11 +2,11 @@
 
 Resistor Color Duo is the first core exercise after TwoFer.
 
-### New Concepts
+## New Concepts
 
 `Array`, `Array#index`, `map`, or `Hash`, `Hash#[]`; Constant, chaining methods
 
-### Minimal solution for approval
+## Minimal solution for approval
 
 * Using either an array of color names and reading the index as the value, or a hash of colors and values
 * Extracting the values in a `constant`, outside of the method
@@ -40,7 +40,7 @@ colors.take(2).map { |color| COLOR_CODES[color] }.join.to_i
 
 ```
 
-### Reasonable Variants
+## Reasonable Variants
 
 ```ruby
 
@@ -52,7 +52,7 @@ Plus:
 - Using a class or a module (no reason to discuss).
 - The color names as strings or symbols.
 
-### General
+## General
 
 Both array and hash have their pros and cons. A hash makes the mapping more explicit, while an array seems to better reflect the fact that a color band has a position plus a numerical value (the tens and ones). Some mentors have a strong preference for one over the other, but it's recommended to go with the solution the student starts with.
 
@@ -60,7 +60,7 @@ Same for the general approach, `join` or `positional approach`: go with the solu
 
 Fun fact: Resistor Color Trio will actually use the third color, and will be a more appropriate moment to talk about the pros and cons of both the data structure and the general approach.
 
-### Talking points
+## Talking points
 - _string interpolation_ : if the student uses string interpolation to compose the value, challenge them to solve it with `map` and `join`. Approve if they don't want to do the challenge.
 - _`%w` notation_: for arrays of strings. Link to the [style guide](https://rubystyle.guide/#percent-literals)
 - _chaining methods_ after a block (especially when people use a local variable for `join.to_i`
@@ -69,7 +69,7 @@ Fun fact: Resistor Color Trio will actually use the third color, and will be a m
 - _freeze_: this post has exactly the right level of information: [freeze](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html); no need to dive deeper into (im)mutability.
 
 
-### Changelog
+## Changelog
 2019 Aug 16 - Version 2.1 introduces a new test: an input of 3 colors should still return a 2 digit number, ignoring the third color
 
 2019 Jul 13 - Changed from side to core exercise

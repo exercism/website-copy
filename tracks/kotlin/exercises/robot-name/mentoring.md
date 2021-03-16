@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 Solution with `java.util.Random`:
 ```kotlin
@@ -68,7 +68,7 @@ class Robot {
 ```
 
 
-### Common suggestions
+## Common suggestions
 * Remember to save a global list with used names and to check newly generated names against it
 * You can either use `java.util.Random` object to generate random items or the more Kotlinish variant with `shuffle()`
 * Defining an extension method on `List<T>` or `Iterable<T>` to generate random elements makes your code very readable

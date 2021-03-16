@@ -5,7 +5,7 @@ Students are encouraged to find ways to keep track of unique characters found in
 
 As always, _Unformatted or unlinted code is a reason not to approve._
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```
 package isogram
@@ -29,7 +29,7 @@ func IsIsogram(word string) bool {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 **Storage**
 
@@ -99,11 +99,11 @@ and explain its advantages:
 
 To further support this point, we may refer the student to [Code: Align the happy path to the left edge](https://medium.com/@matryer/line-of-sight-in-code-186dd7cdea88).
 
-### Talking points
+## Talking points
 
 - The storage is being used as a [Set](<https://en.wikipedia.org/wiki/Set_(abstract_data_type)>), so some time can be spent with the student discussing pros and cons of this data structure.
   We can also reference [Finding whether a Go map key exists](https://bitfieldconsulting.com/golang/map-key-exists) for some examples of using `bool` maps as sets.
 
-### Mentoring Tools
+## Mentoring Tools
 
 - [Exalysis](https://github.com/exercism/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.

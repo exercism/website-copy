@@ -4,7 +4,7 @@ This is the third core exercise in the go track to receive feedback from a mento
 
 This may be an excellent place to talk about the go tooling again -- especially if the tools were not applied (`gofmt`, `golint`, etc).
 
-### Reasonable solutions
+## Reasonable solutions
 
 The exercise can be solved with `if` statements and `string` concatenation:
 
@@ -31,7 +31,7 @@ func Convert(i int) string {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 The most common feedback revolves around:
 
@@ -60,11 +60,11 @@ The most common feedback revolves around:
 * Do they have comments that don't follow the linting guidelines? Suggest `golint`.
 * Do they have comments that pass `golint` but don't end with a period? Potentially point them to [CodeReviewComments](https://github.com/golang/go/wiki/CodeReviewComments#comment-sentences) wiki, which suggests that doc comments should be full sentences, ending with a period.
 
-### Talking points
+## Talking points
 
 * `map` iteration order: See [specs](https://golang.org/ref/spec#For_statements). Since the order in which the map is iterated matters in this exercise a map is not a perfect fit here. If one wants to iterate, using a `for i := 3; i < 8; i += 2` or iterating a slice is a better fit.
 * `golint` as a great helper to write idiomatic go code and why it is so important for the go community: all go code looks the same, `godoc` uses comments to auto-create documentation, etc.
 
-### Mentoring Tools
+## Mentoring Tools
 
 * [Exalysis](https://github.com/exercism/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.

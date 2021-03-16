@@ -7,18 +7,18 @@ exercise, create a file (by checking the test) and figuring out how to work the
 - [`default values` for parameters][ref-default-parameter]
 - [`template literals`][ref-template-literal].
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 There is only one reasonable form of solution, where the method of exporting or
 defining the function can be different.
 
-#### Arrow function expression
+### Arrow function expression
 
 ```javascript
 export const twoFer = (name = 'you') => `One for ${name}, one for me.`
 ```
 
-#### Function declaration
+### Function declaration
 
 ```javascript
 export function twoFer(name = 'you') {
@@ -26,7 +26,7 @@ export function twoFer(name = 'you') {
 }
 ```
 
-#### Approvability
+### Approvability
 
 You should **_only approve_** this if it matches the solutions above, with a few
 exceptions where you may be lenient:

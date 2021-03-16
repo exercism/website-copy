@@ -1,11 +1,11 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - Option
 - Math
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -20,7 +20,7 @@ A good solution may go above and beyond and also do the following:
 - Break out the core logic of find into a variant that takes the perimeter as an argument
 - Introduce negative test cases.
 
-### Examples
+## Examples
 
 restricting iteration to only be over valid triangles
 
@@ -48,7 +48,7 @@ pub fn find(sum: u32) -> HashSet<[u32; 3]> {
 }
 ```
 
-### Example Comments
+## Example Comments
 
 If they dont use `pow`
 

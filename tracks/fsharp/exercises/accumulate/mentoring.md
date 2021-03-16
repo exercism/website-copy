@@ -1,14 +1,14 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using a list comprehension
+### Using a list comprehension
 
 ```csharp
 let accumulate func input = [ for x in input do yield func x ]
 ```
 
-#### Using an accumulator function
+### Using an accumulator function
 
 ```fsharp
 let accumulate func input = 

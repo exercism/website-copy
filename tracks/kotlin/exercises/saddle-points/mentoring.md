@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 ```kotlin
 class Matrix(val list: List<List<Int>>) {
 
@@ -19,6 +19,6 @@ class Matrix(val list: List<List<Int>>) {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 * Don't try solving everything in one function. Split the solution into several functions with expressive names.
 * You don't need to submit the `MatrixCoordinate` class

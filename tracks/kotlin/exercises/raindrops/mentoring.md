@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 ```kotlin
 object Raindrops {
     fun convert(num: Int): String = buildString {
@@ -27,6 +27,6 @@ object Raindrops {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 * The first solution uses [buildString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/build-string.html) to create a `StringBuilder` using provided `append`s and then converting it to String.
 * The second solution defines a map of numbers to strings and then use [filterKeys](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter-keys.html) which returns a map containing all key-value pairs with keys matching the given predicate.

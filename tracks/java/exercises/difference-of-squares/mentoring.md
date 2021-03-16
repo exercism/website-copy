@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 
 Simple solution:
@@ -98,6 +98,6 @@ public final class DifferenceOfSquaresCalculator {
 ```
 
 
-### Common suggestions
+## Common suggestions
 * Creating a function like `square(int input)` makes life slightly easier
 * Pointers to the closed-form formula can be found here: https://brilliant.org/wiki/sum-of-n-n2-or-n3/

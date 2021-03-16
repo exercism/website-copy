@@ -1,7 +1,7 @@
 # Mentoring
 
-### Reasonable solutions
-#### LINQ (Readable)
+## Reasonable solutions
+### LINQ (Readable)
 
 ```csharp
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ public static class SumOfMultiples
 }
 ```
 
-#### LINQ (Performant)
+### LINQ (Performant)
 By tweaking the algorithm we can get a more performant (albeit less readable)
 version as follows:
 
@@ -40,7 +40,7 @@ public static class SumOfMultiples
 }
 ```
 
-#### Custom LINQ Method
+### Custom LINQ Method
 An alternative that shows how you can roll your own LINQ methods to boost performance is below:
 
 ```csharp
@@ -69,7 +69,7 @@ public static class SumOfMultiples
 }
 ```
 
-#### Non-LINQ
+### Non-LINQ
 If the student is not yet ready for / comfortable with full-on LINQ then something along the following lines would be appropriate:
 
 ```csharp

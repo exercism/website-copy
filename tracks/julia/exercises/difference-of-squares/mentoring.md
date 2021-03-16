@@ -1,6 +1,6 @@
 # Mentoring
 
-### Common suggestions
+## Common suggestions
 
 - Use Gauss's formula:
 
@@ -10,13 +10,13 @@
 
 - `sum_of_squares = sum((1:n) .^ 2)`. This is correct, but it allocates an array (at least in Julia 1.4), can you see how to do this without allocation?
 
-### Talking points
+## Talking points
 
 - You might be interested to know that \`sum(1:n)\` already uses Gauss' formula. You can see this with \`@edit sum(1:n)\`
 - For integer division, students should use `÷` and not `/` (see [#138](https://github.com/exercism/julia/issues/138))
 
 
-### Example solutions
+## Example solutions
 
 Naive:
 
@@ -49,7 +49,7 @@ difference(n) = square_of_sum(n) - sum_of_squares(n)
 You may see some solutions where the `difference` has been partially expanded analytically, too.
 
 
-#### Interesting solutions:
+### Interesting solutions:
 
 n111b111's solution:
 

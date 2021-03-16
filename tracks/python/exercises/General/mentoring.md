@@ -1,17 +1,17 @@
 # Mentoring
 
-### General Notes for Mentoring Python
+## General Notes for Mentoring Python
 
 There are a number of issues that arise in 
 mentoring solutions.  This document is a place
 to address issues that transcend a particular problem.
 
-#### Strings
+### Strings
 
 Creating strings in Python is relatively slow.
 We should encourage students to do so infrequently.
 
-##### Changing Case
+#### Changing Case
 
 We may want to convert case
 
@@ -38,7 +38,7 @@ for ch in word.lower():
 return result
 ```
 
-##### Assembling Strings
+#### Assembling Strings
 
 The operation of adding two strings is slower
 than appending to a list.  It is faster to 

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 ```kotlin
 object HandshakeCalculator {
     fun calculateHandshake(n: Int) =

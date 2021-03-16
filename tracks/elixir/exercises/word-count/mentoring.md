@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```elixir
 defmodule WordCount do
@@ -56,9 +56,9 @@ defmodule WordCount do
 end
 ```
 
-### Common suggestions
+## Common suggestions
 
-#### Special characters
+### Special characters
 
 If a solution explicitly lists German and Polish characters to make the German and Polish test cases pass,
 an alternative test case can be presented and the student asked to make this test pass too.
@@ -73,7 +73,7 @@ end
 That should make the student realize that listing all special characters of a language they do not know
 is not a practical solution.
 
-#### Punctuation - `~r/[!@#$%:;^&*?]+/`
+### Punctuation - `~r/[!@#$%:;^&*?]+/`
 
 If a solution explicitly lists all punctuation characters necessary to make the tests pass,
 an alternative test case can be presented and the student asked to make this test pass too.
@@ -85,7 +85,7 @@ test "spanish question" do
 end
 ```
 
-#### `String.split` result includes empty strings
+### `String.split` result includes empty strings
 
 If the student handled a case for empty strings included in the output of `String.trim`,
 it can be suggested to use the `trim: true` option.
@@ -96,7 +96,7 @@ iex(4)> String.split("a  b  c  d", " ", trim: true)
 ["a", "b", "c", "d"]
 ```
 
-#### `regex = ~r/bla/`
+### `regex = ~r/bla/`
 
 If the student named their variable with a regular expression `regex` or something similar,
 it can be suggested that this is not a descriptive variable name.

@@ -3,7 +3,7 @@
 This exercise builds upon their knowledge of arrays from the previous exercise `resistor-color`. It's a natural
 extension and prepares them for `resistor-color-trio`.
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```javascript
 // NOTE: this is the solution to resistor-color, see notes below
@@ -31,18 +31,18 @@ export function decodedValue(colors) {
 A student may also use an arrow function expression instead of a function declaration, as well as using an implicit
 return instead of an explicit `return`.
 
-#### Previous versions
+### Previous versions
 
 Previously, it was possible to use `.map` or `.reduce` on the input and map/reduce over all values, but an extra test
 has been added that breaks these solutions. Solutions using `map` and `reduce` are still fine, but need to be
 prepended by a `slice` or `splice` to only get the first two values.
 
-#### Importing `resistor-color`
+### Importing `resistor-color`
 
 A student _may_ import their `colorCode` function from `../resistor-color/resistor-color`. This is perfectly fine and
 should be regarded as such. **DO NOT** suggest them to add this import if they don't have it.
 
-#### Approvability
+### Approvability
 
 The solution listed above as well as any of the solutions that divert from this listed directly below are
 approvable. Anything listed under **Common Suggestions** is _not_.

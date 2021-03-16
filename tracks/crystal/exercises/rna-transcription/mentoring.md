@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 There are two general approaches to this problem. Crystal has a more-or-less purpose-designed method for this problem in `String#tr`.
 ```crystal
@@ -27,7 +27,7 @@ end
 ```
 There are a variety of solutions which use a `Hash` to translate the characters, but `gsub` is the most concise of these.
 
-### Common Suggestions
+## Common Suggestions
 
 The problem does not require the creation of any kind of object, and given that the optimal solutions here consist of a single method call, the instantiation of an object is probably unjustifiable. Crystal recommends using `Struct` when possible for performance reasons, but `Module` works just as well; `Struct` is not a requirement.
 

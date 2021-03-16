@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 This is a nice, concise, very efficient solution:
 
@@ -27,7 +27,7 @@ namespace leap {
 }  // namespace leap
 ```
 
-### Common suggestions
+## Common suggestions
 
 - There are just two cases that return `true`:
   - a year is a multiple of 4 *and not** 100
@@ -36,7 +36,7 @@ namespace leap {
 - Don't try to rely on order of operations too much. Just use parentheses to make everything obvious.
 - Make sure you enabled **all** tests.
 
-### Talking points
+## Talking points
 
 - Argument name vs no argument name in declaration
 - Meaningful argument names

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 ```bash
 #!/usr/bin/env bash
@@ -53,7 +53,7 @@ main () {
 main "$@";
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 * Loop is not needed for the solution `printf "%c"` can be used to print the first characters of each element of an array. (see solution no.1) 
 
@@ -72,7 +72,7 @@ read -r -a array <<< "$*";
 
 * Suggest using [Parameter Expansion - Substring Extraction](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) to access the first character of each word string. https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
 
-### Talking Points
+## Talking Points
 
 * List Constructs used instead of `if`/`else`
 
@@ -80,7 +80,7 @@ The `&&` and `||` in bash are short-circuit logical operators. They stop evaluat
 
 `a && b` will only run `b` if `a` is true. `a || b` will only run `b` if `a` is false. `a || b || c` will stop as soon as anything is true. `a && b || c` will run `a` and ... `b` or `c` or both!! This is why a full blown if-else is often a good idea.
 
-### General Guidelines
+## General Guidelines
 
 * Unquoted variables
 

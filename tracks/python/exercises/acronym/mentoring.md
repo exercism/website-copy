@@ -1,11 +1,11 @@
 # Mentoring
 
-### Problem and challenges
+## Problem and challenges
 
 The problem requires the student to split a string at word boundaries,
 and select the first letter of each word.
 
-### Reasonable solutions
+## Reasonable solutions
 
 There are two characters that require special attention: 
 the hypen, used to tie together words such as "metal-oxide", 
@@ -23,7 +23,7 @@ def abbreviate(words):
     return ''.join(word[0] for word in words.split(' ') if word)
 ```
 
-#### Assembling Strings
+### Assembling Strings
 
 Some solutions will assemble the result string one character at a time:
 
@@ -44,7 +44,7 @@ def abbreviate(words):
 
 The student should be told about building lists and join() them.
 
-#### Regular Expressions
+### Regular Expressions
 
 Regular Expressions can help to prune the cruft.
 This version still uses string addition.

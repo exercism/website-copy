@@ -1,12 +1,12 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 There are two main ways to solve this:
 - using bitwise operations
 - converting to a bitstring and testing for `'1'`
 
-### Bitwise solution
+## Bitwise solution
 
 ```javascript
 const OPERATIONS = [
@@ -29,7 +29,7 @@ export function secretHandshake(sekret) {
 Note that the `sekret & 16` can also be written as `1 << 4` or `0b10000` or
 `0b00010000`
 
-#### Bitstring solution
+### Bitstring solution
 
 ```javascript
 const OPERATIONS = [

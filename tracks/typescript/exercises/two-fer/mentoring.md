@@ -7,12 +7,12 @@ the `.test` files. It's supposed to teach students:
 - [`default values` for parameters][ref-default-value]
 - [`template literals`][ref-template-literal].
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 There is only one reasonable form of solution, where the method of exporting or
 defining the function can be different.
 
-#### Static method on a class
+### Static method on a class
 
 ```typescript
 export default class TwoFer {
@@ -22,7 +22,7 @@ export default class TwoFer {
 }
 ```
 
-#### Property on the default export object
+### Property on the default export object
 
 ```typescript
 export default {
@@ -32,7 +32,7 @@ export default {
 }
 ```
 
-#### Approvability
+### Approvability
 
 You should **_only approve_** this if it matches the solutions above,
 with a few exceptions where you may be lenient:

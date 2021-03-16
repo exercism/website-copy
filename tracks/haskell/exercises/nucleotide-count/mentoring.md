@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```haskell
 import qualified Data.Map as Map
@@ -207,14 +207,14 @@ It also necessitates the use of `traverse` rather than `mapM` since
 [validation]: http://hackage.haskell.org/package/validation/docs/Data-Validation.html
 [transformers]: https://hackage.haskell.org/package/transformers/docs/Control-Applicative-Lift.html
 
-### Common suggestions
+## Common suggestions
 
 - Avoid explicit recursion.
 - Use guard-based or monadic error handling.
 - Aim for a declarative solution: One that describes the result rather than
   the algorithm.
 
-### Talking points
+## Talking points
 
 - Avoid explicit recursion by classifying the recursion scheme.
 - Use higher-order combinators for list recursion and error handling.

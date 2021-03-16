@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using LINQ to dynamically calculate the allergies
+### Using LINQ to dynamically calculate the allergies
 
 ```csharp
 using System;
@@ -37,7 +37,7 @@ public class Allergies
 }
 ```
 
-#### Using LINQ with precalculated values
+### Using LINQ with precalculated values
 
 ```csharp
 using System;

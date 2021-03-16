@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 ```typescript
 export class GradeSchool {
 
@@ -32,9 +32,9 @@ Variations include:
 - Using `JSON.parse(JSON.stringify(...))` to deep clone the `roster`
 - Using `Object.entries` instead of `Object.keys`
 
-### Common suggestions
+## Common suggestions
 
-### Talking points
+## Talking points
 - Insertion sort (insert time) vs sorting when outputting the roster (query time)
 - Methods of cloning (deep clone iteration, `slice()`, etc)
 - `Map` vs `{}` for backing

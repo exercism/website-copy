@@ -3,7 +3,7 @@
 _Hamming_ is the first exercise in the Go track that requires to use a `for` loop and creation of an `error`.
 Although this is about `for` loops students that submit working solutions have that nailed.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 This can be solved by using a loop with counter or a loop with `range`. This solution uses a `for .. range`:
 
@@ -30,7 +30,7 @@ func Distance(a, b string) (int, error) {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 It might be good to confirm this exercise as soon as the solution is within reasonable scope. That way 
 students can keep their enthusiasm and continue on the main track. Many students will respond to the
@@ -61,10 +61,10 @@ The most common feedback revolves around:
 **Speed: Did they add unnecessary code which slows down the execution time?**
 * Did they add a `if a == b` statement? This is not needed and will slow down considerably.
 
-### Talking points
+## Talking points
 
 * `rune` vs `byte` and why iterating over a string with `range` returns runes: [Strings, bytes, runes and characters in Go](https://blog.golang.org/strings)
 
-### Mentoring Tools
+## Mentoring Tools
 
 * [Exalysis](https://github.com/exercism/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.

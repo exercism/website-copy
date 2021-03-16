@@ -1,13 +1,13 @@
 # Mentoring
 
-### Problem and Challenges
+## Problem and Challenges
 
 The problem asks us to take an **int** and return a **str**.
 We need to map potential factors 3, 5, and 7 to Pling, Plang, and Plong.
 If the integer is not divisible by any of the factors, we must
 return a string representing the number in base 10.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 This exercise is an early core exercise and is intended to introduce
 simple concepts such as basic conditionals, modulo division, and string 
@@ -39,9 +39,9 @@ avoid prematurely burdening the beginner student with optimization
 2. similarly `if not number % 3` is slightly more efficient but will be
 less readable for many than `if number % 3 == 0`
 
-### Common Suggestions
+## Common Suggestions
 
-#### Simplify the return statement
+### Simplify the return statement
 
 The final **if**/**return** block can be simplified in several ways:
 
@@ -59,7 +59,7 @@ return str(result or number)
 Note that the final one will not involve a copy since the value of 
 **result** is always constrained enough to be interned.
 
-#### Leverage the ternary if
+### Leverage the ternary if
 
 ```python
 def convert(number: int) -> str:
@@ -75,7 +75,7 @@ def convert(number: int) -> str:
 Not everyone likes the ternary **if** syntax, but it's quite workable
 in this situation.
 
-#### Alternatively, use multiplication of a str
+### Alternatively, use multiplication of a str
 
 ```python
 def convert(number: int) -> str:
@@ -92,7 +92,7 @@ This helps introduce the **bool** type and the fact that it's just a
 numerical value. It also introduces the idea that a **str** can be
 multiplied. The caveat is that the parentheses are required.
 
-#### Use an iterable data structure
+### Use an iterable data structure
 
 The approaches above all involve some repetition, and so would become 
 unwieldy and difficult to maintain if the number of different factors 
@@ -103,7 +103,7 @@ is debatable, but were it an issue then a more maintainable approach
 would be to use one of the many iterable data structures provided by 
 Python's builtins via a _comprehension_.
 
-##### Use tuple / list
+#### Use tuple / list
 
 ```python
 DROPS = (
@@ -129,7 +129,7 @@ Notice that a _generator comprehension_ is used to feed **str.join** rather
 than a _list comprehension_; again either form is acceptable, but this saves 
 a small amount of memory and is slightly easier to read.
 
-##### Use dict
+#### Use dict
 
 ```python
 DROPS = {
@@ -158,7 +158,7 @@ additional memory overhead exists.
 strengths are used; a dict is meant to provide fast membership testing, but 
 that's not an issue here. As used it's just a more expensive list / tuple.
 
-##### Use enum.Enum
+#### Use enum.Enum
 
 ```python
 from enum import Enum

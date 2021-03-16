@@ -4,7 +4,7 @@ This exercise explores string testing:
 - `RegExp`
 - `String` index accessor
 
-### Reasonable solutions
+## Reasonable solutions
 
 This exercise can be approached with regular expressions, using the `String`
 prototype, or a combination of both. Below are concise solutions for either but
@@ -14,21 +14,21 @@ combinations are valid too, as long as they make sense:
 - `isShouting`: All letters are uppercase, and there is at least one letter.
 - `isAsking`: Ends with a question mark (ignoring whitespace).
 
-#### Regular expressions
+### Regular expressions
 ```javascript
 const isSilence = message => /^\s*$/.test(message)
 const isShouting = message => /^[^A-Za-z]*[A-Z]+(?:[^a-z]*)$/.test(message)
 const isAsking = message => /\?\s*$/.test(message)
 ```
 
-#### String prototype
+### String prototype
 ```javascript
 const isSilence = message => message.trim() === ''
 const isShouting = message => message.toUpperCase() === message && message.toLowerCase() !== message
 const isAsking = message => message.trim().endsWith("?")
 ```
 
-#### Composition
+### Composition
 ```javascript
 export const hey = (message) => {
   if (isSilence(message)) {
@@ -66,7 +66,7 @@ Alternatively a student can compose the rules before and iteratively check them:
   return 'Whatever'
 ```
 
-#### Note about earlier versions
+### Note about earlier versions
 The response `"Calm down, I know what I'm doing!"` was added later and earlier
 solutions did not require nesting of the tests. The extra response makes it
 more interesting in some languages, but in JavaScript it doesn't.

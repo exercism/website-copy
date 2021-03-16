@@ -1,11 +1,11 @@
 # Mentoring
 
-### Mentor guidance
+## Mentor guidance
 
 We don't need to bikeshed on this too long. Just prompt them to improve their code if they do something needlessly convoluted. `if` statements are okay, but consider prompting them with the first or third suggestions.
 
 
-### Common suggestions
+## Common suggestions
 
 (Formatted so you can copy and paste easily)
 
@@ -35,11 +35,11 @@ p q r | o
 
 The idea is that you 1) work out what predicates you need and 2) notice that you can construct the output with p && !q || r.
 
-### Talking points
+## Talking points
 
 - You might be interested to see the Julia standard library's solution: \`using Dates; @edit isleapyear(4)\`
 
-### Analyser
+## Analyser
 
 If you want to, you can use the following function in the REPL to run a semi-automatic analyser:
 

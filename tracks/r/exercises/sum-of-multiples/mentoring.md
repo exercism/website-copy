@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 This is a nice, concise, efficient solution:
 
@@ -11,7 +11,7 @@ sum_of_multiples <- function(factors, limit) {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 - Point learners who use a `for` loop to the alternative `apply` or `map` function families
     + For example, explained by one of these:
@@ -23,7 +23,7 @@ sum_of_multiples <- function(factors, limit) {
     + The code's intention can be expressed better by a better `func` name.
 
 
-### Talking points
+## Talking points
 
 `microbenchmark` can be used to compare the performance of different function variants, which in turn should support the argument that a `for` loop falls behind for large vectors.
 

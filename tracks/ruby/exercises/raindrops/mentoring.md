@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 - the first solution uses a mutable string
 
@@ -49,7 +49,7 @@ module Raindrops
 end
 ```
 
-### Common suggestions
+## Common suggestions
 
 - Using the `prime` library rather than manually calculating doesn't make sense if we consider that prime is only suggested via examples given, but not by specification, as the specification stated is "factors".
 - Using `select`.

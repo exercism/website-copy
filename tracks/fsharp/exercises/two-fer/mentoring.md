@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using Option.defaultValue
+### Using Option.defaultValue
 
 ```fsharp
 module TwoFer
@@ -13,7 +13,7 @@ let twoFer (input: string option): string =
     |> sprintf "One for %s, one for me."
 ```
 
-#### Using defaultArg
+### Using defaultArg
 
 ```fsharp
 module TwoFer

@@ -1,13 +1,13 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - [&str](https://doc.rust-lang.org/std/primitive.str.html)
 - [String](https://doc.rust-lang.org/std/string/struct.String.html)
 - [Iterators](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
 - [Iterator Methods](https://doc.rust-lang.org/std/iter/trait.Iterator.html#provided-methods)
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should:
 
@@ -27,7 +27,7 @@ A bonus solution should:
 `UnicodeSegmentation::graphemes(input, true)`.
 The documentation for this method can be found [here](https://unicode-rs.github.io/unicode-segmentation/unicode_segmentation/trait.UnicodeSegmentation.html#tymethod.graphemes).
 
-#### Examples
+### Examples
 
 ```rust
 pub fn reverse(input: &str) -> String {
@@ -35,7 +35,7 @@ pub fn reverse(input: &str) -> String {
 }
 ```
 
-#### Bonus solution
+### Bonus solution
 
 ```rust
 use unicode_segmentation::UnicodeSegmentation;

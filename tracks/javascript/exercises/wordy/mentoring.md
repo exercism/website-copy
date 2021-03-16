@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 There are many _valid_ solutions to this problem. If the student has written
 something completely different than the options listed below, do not dismiss it.
@@ -16,7 +16,7 @@ The main ways of implementation consist of two forms:
 - Extensively using `replace` or `match` and then directly applying the operator
 - Tokenizing the input (parsing) and then executing the tokens
 
-#### Actions / Operators
+### Actions / Operators
 
 There are four (4) operators (and one extra if you include `cubed`) that should
 be defined as a function, preferably in a lookup operator name to action/
@@ -57,7 +57,7 @@ const OPERATIONS = {
 
 Discourage inline operations with `if/else` trees or `switches`.
 
-#### Parsing / Tokenization
+### Parsing / Tokenization
 
 There are two key patterns for matching:
 - `LITERAL_NUMBER`: `/(-?\d+)/`
@@ -76,7 +76,7 @@ The key here is to _not_ duplicate these patterns.
 
 Discourage `eval`.
 
-#### Traversing the question
+### Traversing the question
 
 Valid methods of traversing the question are:
 - splitting on a space, and slicing per 3 (or 2 depending on implementation),
@@ -105,7 +105,7 @@ Valid methods of traversing the question are:
 
 Discourage `if/else` trees or `switches`.
 
-#### Error throwing
+### Error throwing
 
 Unfortunately the current implementation of checking the error is incorrect and
 may cause the student plenty of issues (We are working towards changing this).

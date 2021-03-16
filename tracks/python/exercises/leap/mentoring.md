@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 This is a nice, concise, very efficient solution:
 
@@ -22,7 +22,7 @@ def is_leap_year(year):
     return divisible_by_4 and (not divisible_by_100 or divisible_by_400)
 ```
 
-### Common suggestions
+## Common suggestions
 - there are just two cases that return True:
   - a year is a multiple of 4 *and not** 100
   - a year is a multiple of 4, 100, and 400
@@ -38,7 +38,7 @@ def is_leap_year(year):
 - eliminate duplicate work; no year should ever have to be checked multiple times for the same condition
 
 
-### Talking points
+## Talking points
 - it's very helpful to internalize the rules Python uses for [expression order](https://docs.python.org/3/reference/expressions.html#evaluation-order)
 - remember that **and** and **or** do not return **bool**, but instead:
   - **and** returns either the first term that is *considered* False, or the last term that is *considered* True

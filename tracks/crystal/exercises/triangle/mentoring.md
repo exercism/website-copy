@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 This problem has relatively few variations.
 
@@ -38,10 +38,10 @@ Testing all permutations for the triangle inequality should be unnecessary, unle
 @valid = sides.permutations.all? { |s1, s2, s3| s2 < s1 + s3 }
 ```
 
-### Structure
+## Structure
 
 The structure here is dictated by the problem, for the most part. A validation method can be defined instead of using a stored property. Using `!isoseles? && !equilateral?` in the `scalene?` method is perhaps a little more legible, but tests the array more than once. 
 
-### Style
+## Style
 
 Using `property?` to generate a `valid?` accessor is convenient. It's probably best to declare the type of `@sides` either in the getter or in the signature for `initialize`.

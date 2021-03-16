@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 A conditional structure with a single nested **if** can avoid duplicated effort:
 
@@ -65,7 +65,7 @@ def hey(phrase):
     return answer
 ```
 
-### Common suggestions
+## Common suggestions
 - use the standard methods of the **str** class to your advantage
   - the **str.isupper** method ignores the presence of characters that are non case-aware
   - the **str.endswith** method is more flexible than indexing / slicing and comparison
@@ -75,7 +75,7 @@ def hey(phrase):
 - try to eliminate duplicate work; neither of the other two checks need ever be run more than once
 - helper functions _may_ help overall readability
 
-### Talking points
+## Talking points
 - rather than have multiple **return** statements, you _may_ find it helpful to track the return value through the conditional tree as a variable, so that you have a single **return** statement; this is known as Single Entry Single Exit or SESE, however:
   - doing so without duplicating effort often results in structures that are more complicated and even less readable than the alternative
   - you eliminate the logical help that earlier **return** statements higher up in the code give you; the careful use of **if** and **elif** can return some of this, but multiple **if** statements can easily result multiple changes to the result

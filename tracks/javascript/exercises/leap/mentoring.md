@@ -5,7 +5,7 @@ The point of this exercise is to teach the student to use:
 - [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 - [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-### Reasonable solutions
+## Reasonable solutions
 
 In the solutions below, the placement of parentheses and the order of operations is _significant_. Variations include
 using a named `function` instead of an arrow function assigned to a `const`, may have extraneous wrapping parentheses,
@@ -38,7 +38,7 @@ The particularly clever student will use `Date`. Do not punish them for this - i
 export const isLeap = (year) => new Date(year, 1, 29).getMonth() === 1
 ```
 
-### Common suggestions
+## Common suggestions
 
 This is used to be the first mentored exercise, but now it's one of the first side exercises. You may use this to
 determine a student's skill, help them set up their test suite, and generally point out certain things. In the
@@ -113,7 +113,7 @@ Other suggestions are as follows:
           can never be true.
         - You can solve this by rearranging your parentheses.
 
-### Talking points
+## Talking points
 - If there are more than two "returns" or more than three "tests", you can talk about the two cases that return `true`:
   - A year is a multiple of 4 *and not* 100
   - A year is a multiple of 4, 100, and 400
@@ -125,7 +125,7 @@ Other suggestions are as follows:
 - If a student submits one-liner with a `return`, talk about implicit return of arrow functions with
   [concise body rather than block body](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Function_body).
 
-#### Maintainability and performance:
+### Maintainability and performance:
 Something like this ís readable and maintainable, but if a student submits this, point out resources (functions are created each invocation) and returning expression evaluations as in this example, each invocation `isDivisibleFn` is recreated, which can be fixed by inversing the curry; and all values are calculated before they are used. In fact, when `by400` is true, the rest doesn't matter, so it's a waste of CPU cycles. Applying the suggestions to this works the same when it comes to logical operators, _order of operations_ and _order of evaluation_ as per the second reasonable solution.
 
 ```javascript
@@ -146,7 +146,7 @@ export const isLeap = year => {
 };
 ```
 
-#### Short circuit explanation
+### Short circuit explanation
 Some students ask something along the lines of:
 
 > Are some expressions not evaluated if they won't effect the result?
