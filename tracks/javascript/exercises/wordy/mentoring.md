@@ -1,3 +1,5 @@
+# Mentoring
+
 ### Reasonable solutions
 
 There are many _valid_ solutions to this problem. If the student has written

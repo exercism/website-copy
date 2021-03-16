@@ -1,3 +1,5 @@
+# dont use date parse
+
 Use [`Date#getTime`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime),
 as `Date.parse(%{parameter.name})` is not a good candidate.
 

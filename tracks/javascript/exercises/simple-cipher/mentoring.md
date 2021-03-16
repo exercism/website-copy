@@ -1,3 +1,5 @@
+# Mentoring
+
 This exercise focuses on
 - DRYing up an implementation
 - Maintainability ([magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)), variable naming)

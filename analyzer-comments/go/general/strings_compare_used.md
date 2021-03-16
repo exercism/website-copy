@@ -1,3 +1,5 @@
+# strings compare used
+
 Remove the usage of `strings.Compare`. It's [official documentation](https://golang.org/pkg/strings/#Compare) states:
 
 > Compare is included only for symmetry with package bytes.

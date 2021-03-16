@@ -1,3 +1,5 @@
+# use proper method name
+
 The method name should match exactly what was used in the tests.
 
 Rename the method to `%<methodName>s`.

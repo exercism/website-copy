@@ -1,3 +1,5 @@
+# Mentoring
+
 New concepts: Array query methods (+ chaining methods), instantiating a class, writing and calling(!) a getter method or `attr_reader`.
 
 ### Minimal solution for approval

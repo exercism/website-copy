@@ -1,3 +1,5 @@
+# Mentoring
+
 This exercise builds upon their knowledge of arrays from the previous exercise `resistor-color`. It's a natural
 extension and prepares them for `resistor-color-trio`.
 

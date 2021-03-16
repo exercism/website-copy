@@ -1,3 +1,5 @@
+# Mentoring
+
 This is a good exercise to talk about bringing domain concepts (what types of remark will bob respond to, how does he categorise remarks and how does he respond) in to the code, as it is quite easy and most students will do it automatically.
 
 This exercise introduces some string handling functions, such as `String.trim`, `String.endsWith`, `String.any`, `String.isEmpty`, `Char.isAlpa` and `Char.isUpper`

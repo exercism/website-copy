@@ -1,3 +1,5 @@
+# Mentoring
+
 ### Problem and challenges
 
 The problem asks the student to score a string as a Scrabble(TM) word.

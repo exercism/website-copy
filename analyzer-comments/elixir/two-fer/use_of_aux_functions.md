@@ -1,3 +1,5 @@
+# use of aux functions
+
 [comment] # (This warning is raised when the solution defines any private function)
 
 Try to solve this exercise without defining any additional functions.

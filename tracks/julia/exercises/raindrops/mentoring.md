@@ -1,4 +1,4 @@
-## Mentoring suggestions
+# Mentoring suggestions
 
 - Unrolled solutions are fine, don't require that students use loops or reduction or whatever.
 - Prefer a tuple or vector of pairs to a Dict. There's no need to add values to the Dict or lookup items by key, so a simpler container is better.

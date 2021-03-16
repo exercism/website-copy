@@ -1,3 +1,5 @@
+# prefer side effect free date
+
 Use [`Date#getTime`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
 and [`new Date(value)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Syntax),
 which takes a number of milliseconds as `value` and constructs a _new_ date.

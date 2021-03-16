@@ -1,3 +1,5 @@
+# prefer strict equality
+
 In _TypeScript_, always prefer [strict (identity and non-identity) equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Identity)
 such as `===` and `!==` over the forms that use implicit type coercion,
 such as [`==`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Equality)

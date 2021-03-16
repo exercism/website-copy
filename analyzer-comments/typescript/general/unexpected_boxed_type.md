@@ -1,3 +1,5 @@
+# unexpected boxed type
+
 Use `${'literal.type'}` instead of the boxed type `${'boxed.type'}`. In
 TypeScript, the types `Object`, `Number`, `Boolean` and `String` are types which
 refer to non-primitive boxed objects that are almost never used appropriately in

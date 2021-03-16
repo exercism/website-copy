@@ -1,3 +1,5 @@
+# explicit return
+
 Remove the explicit return to simplify the method.
 
 In Ruby, a method will return the result of the last evaluated statement. Explicitly using the `return` keyword is therefore unnecessary, except when returning early in a method.

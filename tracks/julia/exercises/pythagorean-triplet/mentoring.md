@@ -1,3 +1,5 @@
+# Mentoring
+
 ## Mentor guidance
 
 - A n^3 solution is trivial to find, but too slow for the tests. An n^2 solution is pretty easy to find. A O(n) solution requires solving some simultaneous equations.

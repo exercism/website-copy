@@ -1,3 +1,5 @@
+# avoid printing and logging
+
 Avoid printing and logging via `stdout` and `stderr`.
 
 Usually it is not a good idea to output something to `stdout` or `stderr` in lower level packages.

@@ -1,3 +1,5 @@
+# section about comments
+
 Go has [great guidelines](https://golang.org/doc/effective_go.html) about how to write comments. There's a standard format you can use for documentation comments, which can then be turned into beautiful documentation automatically by the `godoc` tool.
 
 The package comment should start with the word `Package` followed by the package name, like this:

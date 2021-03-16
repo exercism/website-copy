@@ -1,3 +1,5 @@
+# Mentoring
+
 The point of this exercise is to get them going after the "hello-world"
 exercise, create a file (by checking the test) and figuring out how to work
 the `.test` files. It's supposed to teach students:

@@ -1,3 +1,5 @@
+# use fmt placeholder for string
+
 In Go people tend to prefer type-specific placeholders rather than the generic `%%v`. 
 There are two reasons for this. First, more specific placeholders often have additional options, 
 for example the format `%%f` for `float` values can also specify the precision: `%%.2f`. 

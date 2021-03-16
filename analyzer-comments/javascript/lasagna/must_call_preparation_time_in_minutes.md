@@ -1,3 +1,5 @@
+# must call preparation time in minutes
+
 Change `%{target}` so it calls `%{function}`.
 
 According to the instructions, `%{target}` can be implemented by taking the preparation time in minutes and adding the amount of time spent in the oven.

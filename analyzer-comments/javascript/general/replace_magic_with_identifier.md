@@ -1,3 +1,5 @@
+# replace magic with identifier
+
 There is a [magic value](https://en.wikipedia.org/wiki/Magic_number_(programming)) `%{literal}` can be replaced by `%{identifier}`.
 When possible, named constants are often a better choice than inlined literals because, but not limited to:
 

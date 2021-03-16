@@ -1,3 +1,5 @@
+# Mentoring
+
 New concepts: Iterating over an array (preferably with `each_cons`, avoid `each_with_index`); `.chars` to split the string; (private) `attr_reader`; raising an Argument Error; inline if-statement; `unless` 
 
 ### Minimal solution for approval

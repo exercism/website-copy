@@ -1,3 +1,5 @@
+# gofmt not used
+
 Run `gofmt` on the solution, which helps formatting code in Go.
 
 Code formatting in Go is very important to the community.

@@ -1,3 +1,5 @@
+# Mentoring
+
 ### Reasonable Solutions
 
 There are two approaches, iterative and non-iterative. Students are highly likely to use the iterative approach first, and should be encouraged (but **not** required) to explore the mathematical approach. On the other hand, if the student arrives at the mathematical solution first, there may be a presumption that they already understand iteration, and the mentor may wish to explore the iterative approach in discussion, or not at all, at their discretion.
