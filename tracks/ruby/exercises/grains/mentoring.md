@@ -3,7 +3,7 @@
 The instructions for the students suggest(!) that the first solution would use an iteration, and that the next step would be optimizing (with maths) for performance and/or readability.
 At this point, students should have used 'basic' and 'advanced' Enumberable methods for iterations in previous exercises (core: Hamming, Difference of Squares, side: Series).  
 
-### Reasonable solutions
+## Reasonable solutions
 
 The use of a custom exception, the choice of variable names that relate to the story not the maths (`position` rather than `number`), and the use of `cover?` all make this an excellent solution.
 
@@ -28,7 +28,7 @@ class BoardPositionError < ArgumentError
 end
 ```
 
-### Common suggestions 
+## Common suggestions 
 - With a compound conditional `(< 1 || > 64)` -> Extract the compound conditional in a separate method and/or use `between?`.
 - With a range, like in the example -> `cover?` is a great and fast way to check if an object is inside the range.
 
@@ -38,7 +38,7 @@ end
 - If the solution uses `64` in multiple places, suggest extracting the number to a constant. [This link](https://refactoring.guru/replace-magic-number-with-symbolic-constant) can be a good resource to share.
 
 
-### Talking points
+## Talking points
 - Naming things is so relevant for this exercise. What does the magic number 64 means? Parameter name: is it a 'number' or...?
 - Following the above, perhaps discuss the concept of [magic numbers](https://refactoring.guru/replace-magic-number-with-symbolic-constant) and why we tend to replace them by constants or similar named constructs.
 - Constants (and naming them).

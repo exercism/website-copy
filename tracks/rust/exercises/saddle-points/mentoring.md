@@ -1,11 +1,11 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - iterators
 - vectors
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -21,7 +21,7 @@ A reasonable solution should do the following:
   matrixes. Adding a second vector to store or cache the mins of columns is
   fine.
 
-### Examples
+## Examples
 
 ```rust
 pub fn find_saddle_points(input: &[Vec<u64>]) -> Vec<(usize, usize)> {

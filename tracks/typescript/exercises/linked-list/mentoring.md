@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 ```typescript
 interface NodeParams<T> {
   value: Readonly<T>
@@ -144,7 +144,7 @@ Variations include the following:
 - A student may use a `NO_ELEMENT` element instead of `null` or `undefined` to indicate there is no element at `next` / `head` / `prev` / `tail`.
 - A student does not need to `return this`.
 
-#### Note about Array solutions
+### Note about Array solutions
 The current tests are _not_ enforcing this implementation to actually be a
 LinkedList, but the instructions clearly say you'll need to create a `Node` or
 `Element` data structure pointing to `next` and `prev`. The following _could_ be

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 There are technically two ways to do this, but only one is useful.
 
@@ -20,10 +20,10 @@ end
 ```
 The second solution is mathematically equivalent, but totally obscures the meaning and intent of the code. It can be a talking point for the mathematically inclined, and it is acceptable as a solution, but students should be cautioned against using this sort of "clever" code in real-world applications.
 
-### Structure
+## Structure
 
 Creating an object (or any helper methods) solves no problems here. Since nothing will be instantiated, a `Struct` or `Module` would be preferable to a `Class`. The Crystal documentation suggests using structs when possible for performance reasons, but this is not a requirement.
 
-### Style
+## Style
 
 Using `year % 4 == 0` is less preferable than `year.modulo(4).zero?`, and neither improve on `year.divisible_by?(4)`. 

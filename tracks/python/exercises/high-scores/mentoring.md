@@ -1,6 +1,6 @@
 # Mentoring
 
-### Problem Summary and Challenges
+## Problem Summary and Challenges
 
 This problem asks that students be familiar with **lists** and list manipulation in Python.  In particular:
 
@@ -9,7 +9,7 @@ This problem asks that students be familiar with **lists** and list manipulation
 -  Strategies for sorting/filtering lists 
 
   
-### Reasonable Solutions
+## Reasonable Solutions
 Canonical solution using the `max()` built-in to return `personal_best()`, and reverse `sorted()` for `personal_top_three`.
 ```python
     def latest(scores):
@@ -60,7 +60,7 @@ Since immutability has not yet been introduced, solutions that mutate the origin
         return scores[:3]
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 - Use **`sorted()`** over **`sort()`**. `sorted()` returns a _**copy**_ , `sort()` _**mutates in place**_.  
   Solutions that use `sort()` without first _copying_ the data in `scores` effectively erase the "latest" score. If `latest()` is called after the `sort()`, it will be inaccurate.
@@ -71,9 +71,9 @@ Since immutability has not yet been introduced, solutions that mutate the origin
 - The syntax of **`sorted(scores, reverse=True)[:3]`** is preferred over **`sorted(scores, reverse=True)[0:3]`**. All slices default to zero unless otherwise specified - so convention is to leave it off.
 
   
-### Talking Points
+## Talking Points
 
-#### Copying Data and Lists
+### Copying Data and Lists
 - Python is _pass by object reference_.  You cannot copy list data by assigning a new variable name, you must copy data by calling `.copy()` or using slice syntax `copied_data = data[:]`
 - **Indexing and slicing work from either direction**.  Positive numbers from the left (starting at 0), negative numbers from the right (starting at -1).
 - Why _wouldn't_ you use `heapq.nlargest` for getting the top three scores?  What other strategies could you use within the class to create and manage the "top three" scores?  How does your strategy change if there are incoming scores to manage on top of the existing scores?

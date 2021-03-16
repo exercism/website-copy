@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 A `list`-based solution optimizes for `Allergies.lst` access, but sacrifices the speed of `Allergies.is_allergic_to` lookups.
 
@@ -118,9 +118,9 @@ class Allergies:
        return self._items
 ```
 
-### Common Suggestions
+## Common Suggestions
 
-#### The Binary Representation of Integers and Bitwise Operators Can Help
+### The Binary Representation of Integers and Bitwise Operators Can Help
 
 *Note: This suggestion was written up for a student that was struggling with this exercise, so it's probably quite a bit more wordy than it needs to be for an average submission.*
 

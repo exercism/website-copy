@@ -1,6 +1,6 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - [Integer (i64 in this case)](https://doc.rust-lang.org/std/primitive.i64.html)
 - [constant](https://doc.rust-lang.org/std/keyword.const.html)
@@ -9,7 +9,7 @@
 which is the `offset` field in the [DateTime](https://docs.rs/chrono/0.4.6/chrono/struct.DateTime.html)
 struct from the [Chrono crate](https://docs.rs/chrono))
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should:
 
@@ -22,7 +22,7 @@ A reasonable solution should:
 - Not use `.unwrap()` or `.expect()`
 - Not use `.pow()`
 
-#### Examples
+### Examples
 
 ```rust
 use chrono::{DateTime, Duration, Utc};

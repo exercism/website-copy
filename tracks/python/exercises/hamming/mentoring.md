@@ -1,12 +1,12 @@
 # Mentoring
 
-### Problem and Challenges
+## Problem and Challenges
 
 The solution needs to raise an exception if the lengths are different.
 
 Otherwise, the task is to find the number of differences between two strings of the same size.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 We check the lengths, and then look for differences:
 	
@@ -27,7 +27,7 @@ def distance(strand_a, strand_b):
 
 This works, but needs to use an index variable to walk the two strings.
 
-#### Introducing zip()
+### Introducing zip()
 
 We can use the zip function to pair up the two strands:
 
@@ -44,7 +44,7 @@ def distance(strand_a, strand_b):
 	return count
 ```
     
-#### List Comprehensions
+### List Comprehensions
 	
 The solution below uses a List Comprehension to provide a more terse approach:
 	

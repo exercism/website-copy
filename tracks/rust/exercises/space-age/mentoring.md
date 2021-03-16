@@ -1,11 +1,11 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - custom trait
 - default trait implementation
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -13,7 +13,7 @@ A reasonable solution should do the following:
 - Use a default trait implementation for years_during
 - Bonus points if they use a macro to clean up the constant definition
 
-### Examples
+## Examples
 
 ```rust
 const EARTH_YEAR_IN_SECONDS: f64 = 31557600.0;
@@ -117,7 +117,7 @@ impl Planet for Neptune {
 }
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 Upon passing the tests, the student may appreciate being introduced to macros with this exercise.
 

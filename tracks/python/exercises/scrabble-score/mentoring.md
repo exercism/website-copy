@@ -1,11 +1,11 @@
 # Mentoring
 
-### Problem and challenges
+## Problem and challenges
 
 The problem asks the student to score a string as a Scrabble(TM) word.
 In Scrabble, rare letters are worth more than common letters.
 
-### Reasonable solutions
+## Reasonable solutions
 	
 The basic solution has two parts: defining a global dictionary using a 
 dictionary literal called LETTER_VALUE, and using it. Using it is quite simple:
@@ -104,7 +104,7 @@ The Enum approach has the benefit of not incurring any runtime costs, in
 addition to being more readable than a dictionary literal, and being 
 immutable.
 
-### Common Suggestions
+## Common Suggestions
 
 This is a good place to introduce a number of ideas:
 Comprehensions (both dictionary, and generator given to the sum), 
@@ -112,7 +112,7 @@ the use of a dictionary to rapidly map between letters and values,
 and inverting a "dictionary". 
 
 
-### Talking points
+## Talking points
 
 The presented solution uses global variables, 
 without making a great case for them. 

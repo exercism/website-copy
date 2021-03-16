@@ -1,11 +1,11 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - enum
 - generic over type
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should do the following:
 
@@ -15,7 +15,7 @@ A reasonable solution should do the following:
 - Utilize Eq for slices
 - not reimplement the functionality of the `windows` method
 
-### Examples
+## Examples
 
 ```rust
 #[derive(Debug, PartialEq)]

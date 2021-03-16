@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```java
 import java.time.LocalDate;
@@ -26,7 +26,7 @@ class Gigasecond {
 ```
 
 
-### Common suggestions
+## Common suggestions
 
 - Define a constant (`static final`) for gigasecond.
 - Use [Java 7 Underscores in Numeric Literals](https://docs.oracle.com/javase/7/docs/technotes/guides/language/underscores-literals.html) to make the gigasecond constant easier to read.
@@ -35,13 +35,13 @@ class Gigasecond {
 - Use [`LocalDate.atStartOfDay()`](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#atStartOfDay--) to convert a `LocalDate` to a `LocalDateTime`.
 
 
-### Talking points
+## Talking points
 
-#### Eager computation
+### Eager computation
 
 A student can choose to compute the result for `getDate()` in the constructor. It is a really good optimization. In that case, it should be noted that it is possible because the `birthDate` is only provided in the constructor and is immutable.
 
-#### Type safety
+### Type safety
 
 We can add more type safety by using the class `java.time.Duration` for the gigasecond constant.
 

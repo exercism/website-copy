@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Simple Solution
+### Simple Solution
 ```scala
 object Bob {
   def response(statement: String): String = {
@@ -27,7 +27,7 @@ object Bob {
 }
 ```
 
-#### Solution using Extractors
+### Solution using Extractors
 
 ```scala
 object Bob {

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 ```bash
 #!/usr/bin/env bash
@@ -21,7 +21,7 @@ main "$@"
 ```
 
 
-### Common suggestions
+## Common suggestions
 - use `"$#"` to get number of arguments
 This will even handle the whitespace tests, such as:
 
@@ -36,7 +36,7 @@ $2 = "horse shoe"
 \```
 
 
-### Talking points
+## Talking points
 - Suggest using [Indirect Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 `"${!index}"` to dynamically access the shell argument. https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
 ```bash

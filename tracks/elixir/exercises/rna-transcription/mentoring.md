@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```elixir
 # Enum.map with case (and/or anonymous function) based approach
@@ -52,13 +52,13 @@ defmodule RnaTranscription do
 end
 ```
 
-### Common suggestions
+## Common suggestions
 
-#### Use ?instead of 'char' for matches
+### Use ?instead of 'char' for matches
 
 Using charlist ('A' -> 'U') forces you to iterate over the charlist and concatenate the list of charlists later. Using chars directly (?A -> ?U) circumvents creating lists of (char) lists.
 
-#### Use multiheaded anonymous function
+### Use multiheaded anonymous function
 
 It's arguable if using a multiheaded anonymous function is better as it might be harder to read for newcomers to the language. So instead of using case block (like in 1st reasonable approach), one would write:
 

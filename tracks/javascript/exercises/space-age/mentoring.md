@@ -4,7 +4,7 @@ This exercise introduces:
 - floating point math
 - rounding via [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) with explicit casting using [`Number` as a function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#Using_Number_to_convert_a_Date_object)
 
-### Reasonable solutions
+## Reasonable solutions
 
 Reasonable solutions define all the periods in a map (object):
 
@@ -42,7 +42,7 @@ export function age(planet, earthAgeInS) {
 }
 ```
 
-#### Changelog
+### Changelog
 
 Earlier versions of this exercise required (for a correct implementation) to dynamically create functions on the
 prototype, and expected a string output, instead of a number (rounded on two decimals):

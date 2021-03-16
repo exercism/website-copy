@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```python
 class Garden(object):
@@ -30,11 +30,11 @@ class Garden(object):
 ```
 
 
-### Common suggestions
+## Common suggestions
 - Use a constant list for default list of student names.
 - Use a constant dict to map from letters to plant names, like `PLANT_NAMES` above.
 
-### Talking points
+## Talking points
 - List comprehensions for lists of two things aren't that much shorter that just two copies of the code, but they work if the problem expands to more rows.
 - Doing the whole computation in `plants()` means looking up the student in the least each time, which is O(n) for each query, and O(n^2) to ask about all students.
 - To get O(n) constructor and O(1) lookup, you can either:

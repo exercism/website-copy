@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 An iterative solution is fine:
 
@@ -41,7 +41,7 @@ def binary_search_helper(list_of_numbers, number, low, high):
         return binary_search_helper(list_of_numbers, number, mid + 1, high)
 ```
 
-### Unreasonable Solutions
+## Unreasonable Solutions
 
 The whole point of binary search is to efficiently find a value in the list, in
 O(log(n)) time.  Any solution that searches the entire list, or copies even
@@ -63,10 +63,10 @@ def binary_search(list_of_numbers, number):
         return (mid + 1) + binary_search(list_of_numbers[mid+1:], number)
 ```
 
-### Common suggestions
+## Common suggestions
 - When the code gets the wrong answer, find a small test case that fails and suggest thinking through the logic to see where it goes wrong.
 
-### Talking points
+## Talking points
 - Using a single variable to track where the midpoint is on each iteration is not enough, because you also need to track how long the current sub-list is.
 - You can represent the high end of the range as the last index where the value could be (inclusive), or one past that (exclusive).  The exclusive approach seems more natural in Python, because that's the way slicing works.
 - There's a builtin binary seach functionality in python called bisect:

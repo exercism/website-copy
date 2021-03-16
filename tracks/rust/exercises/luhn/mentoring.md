@@ -1,19 +1,19 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - higher-order functions
 - iterators
 - str to digits
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should do the following:
 
 - use iterators rather than loops.
 - utilize higher order functions on iterators and on option types
 
-### Examples
+## Examples
 
 ```rust
 pub fn is_valid(code: &str) -> bool {

@@ -2,7 +2,7 @@
 
 This exercise is the first in which we commonly see students use a map or write two functions. There are several ways to solve this and simple and readable code are an important criteria on this solution. Benchmarks could also be introduced as a measure of why a solution is better than another.
 
-### Reasonable solutions
+## Reasonable solutions
 
 Solutions have a wide range here. A solution should be in the range of the solutions below to be approved. That means not 
 overly complicated / verbose and not slower than the second solution.
@@ -60,7 +60,7 @@ func Score(s string) int {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 The most common feedback revolves around:
 
@@ -84,12 +84,12 @@ The most common feedback revolves around:
 * If they use the `strings.ToLower`/`strings.ToUpper` before the loop, you could point out that using the `unicode` functions in the loop is a bit faster.
 * are they using go routines? They are probably very excited about the easy of use or think it will be super fast: It isn't. Go routines make this exercise super slow. Point to benchmarking the exercise with and without goroutines.
 
-### Talking points
+## Talking points
 
 * `rune`s vs `byte`s. What are runes? What is the difference? `Rune`s are not necessary here (we are in ascii space) but they are faster because we need no extra type conversions.
 * How to use and read benchmarks in go: it seems some students mistake the time the benchmarks or tests took altogether as an indication of speed. Point out that the important number for speed is the ns/op (nanoseconds per operation) value.
 * If they used go routines talk about why the go routines don't make sense here. They add too much overhead to be faster than a simple switch + count.
 
-### Mentoring Tools
+## Mentoring Tools
 
 * [Exalysis](https://github.com/exercism/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```haskell
 step :: Integer -> Integer
@@ -14,7 +14,7 @@ collatz n
     | otherwise = Nothing
 ```
 
-### Common suggestions
+## Common suggestions
 Many students seem to come up with solutions in which the concerns of
 
 1. Computing the next Collatz number given some input number.
@@ -30,7 +30,7 @@ A approach is to only write custom code for '1.' above and solve the other
 three items with standard Haskell functionality: `iterate`, `takeWhile` and
 `length`.
 
-### Talking points
+## Talking points
 - When dividing a number, many students seem to go for `div` even though `quot`
 is a better choice here. This is a good opportunity to discuss the merits of
 `quot` and `rem` over `div` and `mod`.

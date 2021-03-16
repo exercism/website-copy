@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 ```typescript
 export default class Triangle {
 
@@ -33,6 +33,6 @@ is sound, you should approve it. Alternatives use `zip` (which is what
 `buildRow` does by "zipping" self + neighbor), recursion, or one single `for`
 loop.
 
-### Common suggestions
+## Common suggestions
 - `rows` should be `readonly` (and students should now that by now)
 - a getter makes more sense than an extra field `lastRow`

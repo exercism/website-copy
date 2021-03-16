@@ -5,7 +5,7 @@ and introduce with them the idea that we do not need to reinvent the wheel every
 write a new program; it is perfectly acceptable, and even encouraged in real life software engineering,
 to find and implement existing solutions to common problems.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 ```
 package diffsquares
@@ -27,7 +27,7 @@ func Difference(n int) int {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 **Find the result of either function with a for loop**
 
@@ -41,12 +41,12 @@ func Difference(n int) int {
   The reason `math` package supports `float64` values exclusively is because operating with decimal points brings its own set of challenges, (which is true for any programming language) which are dealt with by the package itself.  
   For the sake of doing simple math operations, like squaring a number `n`, Go encourages programmers to write their own implementations, such as a simple `n * n`.
 
-### Talking points
+## Talking points
 
 - Difference between execution in constant time (O(1)) and linear time (O(n)).
   Discussion should not veer the student into always finding the _best_ and most performant algorithm to solve problems (there are better platforms out there that promote such programming style);  
   in fact, we should also explain that readability should take precedence over performance. This exercise is however a good chance to introduce the student to such concepts as Big-O notation, if they weren't familiar with it before.
 
-### Mentoring Tools
+## Mentoring Tools
 
 - [Exalysis](https://github.com/exercism/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.

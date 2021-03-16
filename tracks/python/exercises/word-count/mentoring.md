@@ -1,6 +1,6 @@
 # Mentoring
 
-### Problem and Challenges
+## Problem and Challenges
 
 The problem asks the for the count of
 unique words in a string.
@@ -8,7 +8,7 @@ unique words in a string.
 The solution must parse the text into words,
 and then bin the words, returning a dictionary.
 
-#### Complications
+### Complications
 
 In the following sentence, we
 must retain the \' in "can't", and remove them from 

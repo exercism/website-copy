@@ -1,13 +1,13 @@
 # Mentoring
 
-### Common suggestions
+## Common suggestions
 
 - Perhaps this would be better with bitwise operators? Have you tried that yet?
 - You can save some allocations if you use a tuple rather than a vector. If you would like to do that, just swap those [] for ().
 - \``reverse!`\` is an in-place variant on \``reverse`\` that you might prefer to use to reduce allocations.
 
 
-### Example solution
+## Example solution
 
 ````
 pdb5627's solution (slightly edited)

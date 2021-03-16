@@ -1,18 +1,18 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - hashmap
 - macros
 - macros by example
 
-### Reasonable solutions
+## Reasonable solutions
 
 A reasonable solution should do the following:
 
 - utilize a recursive macro
 
-### Examples
+## Examples
 
 ```rust
 #[macro_export]
@@ -28,7 +28,7 @@ macro_rules! hashmap {
 }
 ```
 
-### Common Suggestions
+## Common Suggestions
 
 A more concise alternate solution.
 ```rust

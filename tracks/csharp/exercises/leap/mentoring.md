@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```csharp
 using System;
@@ -26,7 +26,7 @@ public static class Leap
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 - Instead of using several, potentially nested if-statement, suggest to remove the if-statements by returning a single expression using the boolean `&&` and `||` operators.
 - Instead of explicitly returning `true` or `false` (e.g. `if (x) return true else return false`), suggest to simply return the boolean condition (`return x`).
@@ -45,7 +45,7 @@ public static class Leap
     ```
     Albeit correct in output, the check `year % 400` is _only_ true for `1.03%` years that are divisible by 4. Always try to put the common path first. Logically, following the instructions putting this check first is **incorrect**.
 
-### Talking points
+## Talking points
 - _order of operation_ matters:
   - 75% of all years *cannot* be leap years because they are not multiples of 4; test `year % 4 == 0` first
   - 98.97% of all leap years are multiples of 4 that are not multiples of 100; test `year % 100 != 0` second

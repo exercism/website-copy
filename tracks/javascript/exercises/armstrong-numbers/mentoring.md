@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 The solution should consist of the following three steps:
 
@@ -16,7 +16,7 @@ export function steps(input) {
 }
 ```
 
-#### Converting to a list of digits
+### Converting to a list of digits
 
 Most approaches of converting a `number` to a list of digits is to first
 convert said `number` to a `string` and splitting on each character boundary.
@@ -30,7 +30,7 @@ with numbers, both are equally fine.
 The final result, depending on the rest of the code, does **not** need to be
 converted back to an `array` of numbers, but it's probably _cleaner_ to do so.
 
-#### Summation of powers
+### Summation of powers
 
 The general way to sum a list in JavaScript is to use `.reduce`. Approaches
 using `for(...)` loops are possible, but not as idiomatic as possible. In order

@@ -1,10 +1,10 @@
 # Mentoring
 
-### Problem and challenges
+## Problem and challenges
 
 The solution looks for duplicate letters.
 
-### Reasonable solutions
+## Reasonable solutions
 	
 This version searches for a second copy of each letter in turn:
 	
@@ -24,13 +24,13 @@ def is_isogram(string):
 
 This version needs the index to construct the substring of remaining characters.
 
-#### Sorting the string
+### Sorting the string
     
 Another approach is to sort the input, and walk down it looking for
 duplicates. However, Python provides a number of useful tools that allow
 alternative approaches.  
 
-#### Trimming the string
+### Trimming the string
 
 If the approach is to remove non-letters, it is simpler to look for things that
 belong (letters) than things that do not belong - a much harder list to define.
@@ -56,7 +56,7 @@ for ch in string:
 s = ''.join(result)
 ```
 
-#### Introducing List Comprehension
+### Introducing List Comprehension
 
 In turn, it is much more concise and faster to use a List Comprehension:
 
@@ -66,7 +66,7 @@ result = [ch for ch in string if ch.isalpha()]
 s = ''.join(result)
 ```
 
-#### Introducing Counter
+### Introducing Counter
 
 The Counter collection provides a simple way to solve the problem:
 
@@ -88,7 +88,7 @@ def is_isogram(string):
     return count == 1
 ```
 
-##### Defective Solution using Handcrafted Counters 
+#### Defective Solution using Handcrafted Counters 
 
 The solution might define their own counters:
 

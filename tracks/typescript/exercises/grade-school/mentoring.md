@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 ```typescript
 type StudentRoster<T> = Map<T, string[]>
 
@@ -34,10 +34,10 @@ Variations include:
 - Using insertion-time sort (`addStudent`)
 - Using destructuring or `.concat` to duplicate `studentsInGrade`
 
-### Common suggestions
+## Common suggestions
 - Does not warrent blocking approval, if the student uses an `{}`, you can point out that the test wants a `Map` anyway, or at least somehting that behaves like it.
 
-### Talking points
+## Talking points
 - Insertion sort vs sorting when outputting the roster
 - Converting everything to `string` or only for the output
 - Methods of cloning (deep clone iteration, `slice()`, etc)

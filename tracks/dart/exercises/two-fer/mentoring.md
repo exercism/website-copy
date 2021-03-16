@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 The most simple solution is to set the default value for an optional parameter to `"you"` and use 
 string interpolation:
@@ -17,7 +17,7 @@ Solution using an expression-bodied method:
 String twofer([String name = "you"]) => "One for $name, one for me.";
 ```
 
-### Common suggestions
+## Common suggestions
 
 - If they are using overloaded methods, suggest to use a single method with an 
 [optional parameter][reference-optional-parameter].

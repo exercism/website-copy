@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 This solution is easy to follow, has minimal re-assignments, and uses conditional logic in such a way to make the code more readable.
 
@@ -31,14 +31,14 @@ letters_only <- function(string) { gsub("[^a-zA-Z]", "", string) }
 
 The learning goal here is to get comfortable with regular-expressions, pattern matching, and common string operations. Secondarily, having students check multiple conditions in an orderly fashion bolsters their conditional flow control.
 
-### Common suggestions
+## Common suggestions
 
 - If a student uses dense conditional statements, readability can easily be degraded.
 - If a student uses a Boolean vector for indexing, so too can readability decrease (although decent examples exist, like the one below). Have students try to make their answer as intelligible as possible.
 - If students are performing the same operations on `input` in their if statements, suggest that they create a variable instead, so the computer doesn't have to do more work than necessary.
 - If they use explicit `return` commands, discuss how R returns values from a function and suggest they remove the explicit returns.
 
-### Talking points
+## Talking points
 
 An advanced solution might look like one below, where indexing is used instead of if statements. Notice that readability is decreased, but the ordering of the conditions checked is identical.
 

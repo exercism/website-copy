@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 This is a nice, concise, efficient solution:
 
@@ -10,7 +10,7 @@ leap <- function(year) {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 - There are just two cases that return `TRUE`:
     1. A year is a multiple of 4 *and not* 100.
@@ -27,6 +27,6 @@ _looks_ right, but will force a year like 999 to be checked for being a multiple
 - Eliminate duplicate work; no year should ever have to be checked multiple times for the same condition.
 
 
-### Talking points
+## Talking points
 
 It's probably too early in the track to introduce the concept of vectorized functions, but worth mentioning here in case it comes up. Using `&&` instead of `&` and `||` instead of `|` is still correct if the input year can be assumed to be a scalar. But use of the vectorized `&` and `|` is preferable since this will yield a vectorized solution.

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 ```ruby
 class Matrix
@@ -37,7 +37,7 @@ end
 
 Separate methods are also permissible rather than doing all the work upfront in `initialize`.
 
-### Common Suggestions
+## Common Suggestions
 
 There's no need to overload a student with all of these suggestions, so here is a list ordered roughly by most important suggestions first:
 

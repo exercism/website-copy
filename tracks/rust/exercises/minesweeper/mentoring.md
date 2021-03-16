@@ -1,13 +1,13 @@
 # Mentoring
 
-### Concepts
+## Concepts
 
 - Iterators
 - Iterator Methods
 - &str
 - char
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 A reasonable solution should:
 
@@ -16,7 +16,7 @@ A reasonable solution should:
 - Handle edge cases (first and last line / column) gracefully
 - ***optional***: Boost readability by e.g. defining mine character (`'*'`) as a constant
 
-### Examples
+## Examples
 
 Slightly modified from [insideoutclub's solution](https://exercism.io/tracks/rust/exercises/minesweeper/solutions/08cd76e81c9443e8a0f8c3a4883cbb42):
 ```rust

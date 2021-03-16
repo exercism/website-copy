@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 This solution is very intuitive and follows step-by-step the instructions in the exercise:
 
@@ -26,12 +26,12 @@ raindrops <- function(number) {
 
 The learning goal here is to avoid unnecessary conversion of inputs as strings and to account for inputs that are factors of more than one if-statement (e.g. 15).
 
-### Common suggestions
+## Common suggestions
 
 - Avoid a string transformation of the input at the beginning.
 - For-loops impact the readability here a bit, I think, so one could point learners to alternatives. 
 
-### Talking points
+## Talking points
 
 More advanced learners might prefer to avoid several if conditions could be pointed to an alternative with an if-else statement:
 

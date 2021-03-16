@@ -1,10 +1,10 @@
 # Mentoring
 
-### Problem and challenges
+## Problem and challenges
 
 The problem requires the student to reverse a given string.
 
-### Reasonable solutions
+## Reasonable solutions
 
 [Extended Slice Notation][1] is the fastest way to reverse a string in Python.
 
@@ -24,7 +24,7 @@ def reverse(text):
 ... is also a reasonable straightforward solution with an acceptable
 performance.
 
-### Unreasonable solutions
+## Unreasonable solutions
 
 ```python
 def reverse(text):
@@ -58,7 +58,7 @@ def reverse(text):
 - Shadowing built-in object names (`reversed`) with custom ones is error
   prone.
 
-### Common suggestions
+## Common suggestions
 
 - Make sure students didn't build the result string with character by character
   concatenation - it is quite slow.
@@ -69,7 +69,7 @@ def reverse(text):
 - Do not convert initial string to list or other collection, `reversed`
   accepts strings.
 
-### Talking points
+## Talking points
 
 - Python support for negative indexes.
 - Slicing notation - `[start:stop:step]`.

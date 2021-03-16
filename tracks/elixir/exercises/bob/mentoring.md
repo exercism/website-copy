@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```elixir
 defmodule Bob do
@@ -34,9 +34,9 @@ defmodule Bob do
 end
 ```
 
-### Common suggestions
+## Common suggestions
 
-#### `is_shouting`
+### `is_shouting`
 
 If a solution uses names like `is_shouting` and `is_question`,
 it can be pointed out that Elixir has the following naming convention:
@@ -48,14 +48,14 @@ Sources:
 - https://github.com/christopheradams/elixir_style_guide#predicate-macro-names-with-guards
 - https://github.com/lexmag/elixir-style-guide#predicate-funs-name
 
-#### Usage of regular expressions
+### Usage of regular expressions
 
 This exercise can be solved without regular expressions and a student could be encouraged to try to do that.
  - Regular expressions are not known for their readability. `String.ends_with?(input, "?")` is more obvious than `Regex.match?(~r/\?$/, input)`.
  - It is a good habit to use simple tools for simple problems and advanced tools for advanced problems.
  - Elixir developers should be familiar with the `String` module and the functions it offers.
 
-#### Hint functions for the truly stuck
+### Hint functions for the truly stuck
 
 - [`String#trim/1`](https://hexdocs.pm/elixir/String.html#trim/1)
 - [`String#ends_with?/2`](https://hexdocs.pm/elixir/String.html#ends_with?/2)

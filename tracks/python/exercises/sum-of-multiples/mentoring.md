@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 This solution deliberately shows the two steps separately:
 1) finding the set of numbers that are multiples and,
@@ -35,11 +35,11 @@ def sum_of_multiples(limit, multiples):
     return sum({n for m in multiples for n in range(m, limit, m)})
 ```
 
-### Common Suggestions
+## Common Suggestions
  - It's tempting to write a complex one liner for this, but that should be discouraged in favour of
    PEP8 compliant solutions for readability and maintainability.
 
 
-### Talking points
+## Talking points
  - It's possible to do this with a set or list [and associated comprehensions] instead of the generators shown above. 
    The benefit of a generator is the space used is constant no matter how large the inputs are.

@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using a foreach loop
+### Using a foreach loop
 
 ```csharp
 using System;
@@ -32,7 +32,7 @@ public static class NucleotideCount
 }
 ```
 
-#### Foreach with ToDictionary
+### Foreach with ToDictionary
 
 ```csharp
 using System;

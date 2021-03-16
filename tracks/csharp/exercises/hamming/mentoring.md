@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using LINQ
+### Using LINQ
 
 ```csharp
 using System;
@@ -22,7 +22,7 @@ public static class Hamming
 }
 ```
 
-#### Using a for-loop
+### Using a for-loop
 
 ```csharp
 using System;

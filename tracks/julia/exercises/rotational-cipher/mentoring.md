@@ -1,13 +1,13 @@
 # Mentoring
 
-### Mentor guidance
+## Mentor guidance
 
 We want them to realise that they can define two methods for `rotate`.
 
 The metaprogramming is quite challenging for lots of students. Consider offering to just show them the answer: "The metaprogramming is a bit hard to understand at first, would you like me to show you that part of the answer?"
 
 
-### Example solution
+## Example solution
 
 ````
 ```julia
@@ -84,7 +84,7 @@ end
 ````
 
 
-### Common suggestions
+## Common suggestions
 
 (Formatted so you can copy and paste easily)
 
@@ -106,6 +106,6 @@ end
 ````
 
 
-### Talking points
+## Talking points
 
 - Iterating a string is slow because it's a variable length encoding. If you're iterating something with elements of a fixed size (a vector of UInt8s or an ASCIIStr (Strs.jl), perhaps), this can be faster.

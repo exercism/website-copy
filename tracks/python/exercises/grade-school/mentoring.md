@@ -1,6 +1,6 @@
 # Mentoring
 
-### Problem and Challenges
+## Problem and Challenges
 
 The primary challenge of this exercise is to implement a class that acts as a 
 simple database that represents the students assigned to each grade in a 
@@ -17,9 +17,9 @@ reducing or eliminating the ability of the user to mutate the underlying
 database and change the results without using the "public" API presented in
 our class.
 
-### Reasonable Solutions
+## Reasonable Solutions
 
-#### Using a dictionary as a database
+### Using a dictionary as a database
 
 A straightforward approach is to use a dict as the database.
 
@@ -57,7 +57,7 @@ the need for most of the **sorted** calls in **Student.grade** and
 to **add_student** necessarily receives a list that's already sorted. If you 
 see this suggest **bisect.insort** instead.
 
-#### Using a list of tuples as a database
+### Using a list of tuples as a database
 
 An alternative approach is to use a list of tuples as the database:
 
@@ -85,7 +85,7 @@ the students in a given grade is now O(N) instead of the nicer O(1) with a
 dictionary, but realistically the two are identical for the input constraints
 of the problem as stated.
 
-#### Using a tuple of tuples as a database
+### Using a tuple of tuples as a database
 
 Here we have the first example of a solution that addresses the issue of 
 mutability; in both of the above directy mutation of the underlying database
@@ -111,7 +111,7 @@ class School:
         return [n for g, n in self._db if g == grade_number]
 ```
 
-#### Using a database as a database
+### Using a database as a database
 
 We're not here to teach SQL, but the more advanced student will discover (or 
 will want to know) that in Python we can always address all of the compromises 

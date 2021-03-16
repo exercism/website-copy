@@ -8,7 +8,7 @@ The point of this exercise is to teach the student to use:
 - [Type inference](https://www.typescriptlang.org/docs/handbook/functions.html#inferring-the-types)
 - [Boxed types](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```typescript
 function isLeapYear(year: number) {
@@ -30,7 +30,7 @@ A student may export inline `export default function`, a student may substitute 
 
 A student may explicitly type the return value as `boolean`.
 
-### Common suggestions
+## Common suggestions
 - There are two types of students that give different responses than the reasonable solutions:
   - A student explicitly returns `true` and `false` and doesn't use [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) to combine multiple expressions,
   - A student comes up with something "clever", that is usually either unreadable at first sight or unmaintable, or both.
@@ -61,7 +61,7 @@ A student may explicitly type the return value as `boolean`.
   - The [`semicolon`](https://palantir.github.io/rules/semicolon/) rule is set to `true`, `"never"`, which prefers [Automatic Semicolon Insertion](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-automatic-semicolon-insertion)
   - The [`variable-name`](https://palantir.github.io/tslint/rules/variable-name/) rule limits variable names by not allowing keywords/types to be a variable name. A variable named `number` is therefore not allowed.
 
-### Talking points
+## Talking points
 * [Remainder (%)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()), also known as modulo. This usually does not need explaining.
 * [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators), especially `&&` and `||`. If they use the binary forms, explain how [short-circuit](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-circuit_evaluation) evaluation works.
 * [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence): unlike some other languages, logical AND (`&&`) _always_ has a **higher** precedence than logical OR (`||`).

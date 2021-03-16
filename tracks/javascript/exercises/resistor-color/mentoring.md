@@ -3,7 +3,7 @@
 This exercise introduces the student to [`Arrays`][ref-array] as well as showing that you can export multiple bindings
 at once.
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```javascript
 export const COLORS = [
@@ -41,12 +41,12 @@ an `Array`. However, check the common suggestions for anything else. A `Map` is 
 `Object`, in this particular instance.
 
 
-### Common suggestions
+## Common suggestions
 
 If the solution does not look like the reasonable solution, do _not_ approve it. Here are a few common suggestions
 based on student's solutions.
 
-#### Manually doing `indexOf`
+### Manually doing `indexOf`
 
 A student may manually try to find the index of a color:
 
@@ -65,7 +65,7 @@ export function colorCode(color) {
 }
 ```
 
-#### Using `findIndex`
+### Using `findIndex`
 
 A student may try using [`Array#findIndex`][ref-array-find-index] for the `colorCode()` method but remind them that
 [`Array#indexOf`][ref-array-index-of] only requires a simple string as the argument whereas
@@ -81,7 +81,7 @@ export const colorCode = (color) => COLORS.indexOf(color);
 
 Introduce the student to [`Array#indexOf`][ref-array-index-of].
 
-#### A set of conditionals or a switch
+### A set of conditionals or a switch
 
 A student may use a series of ifs or a `switch` statement:
 
@@ -105,7 +105,7 @@ They may not know of the _concept_ of `Array`. You may gently ask how experience
 that there _are_ languages that do **not** have arrays. So them not knowing about it does not mean they don't have any
 experience.
 
-#### Using an Object/Map but not indexer/Keys
+### Using an Object/Map but not indexer/Keys
 
 If a student uses an `Object` to store the data, the valid way to export the `COLORS` constant is by using
 `Object.keys`. If they are manually mapping for the object, you should indicate that manual mapping is not necessary
@@ -113,7 +113,7 @@ and if they need the extra help, point them towards `Object.keys`.
 
 Similarly, if they use an `Object`, they _SHOULD_ use the indexer (`[index]` bracket notation).
 
-#### Time Complexity
+### Time Complexity
 
 A student may use an `Object` instead of an `Array` to store color names with the intention to optimize the execution
 time.

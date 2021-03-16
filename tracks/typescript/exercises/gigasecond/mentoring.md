@@ -2,7 +2,7 @@
 
 This exercise introduces [`Date`][ref-date].
 
-### Reasonable solutions
+## Reasonable solutions
 
 Their are two optimal solutions. 
 
@@ -45,7 +45,7 @@ export default class Gigasecond {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 - Prefer `Date#getTime` over [`Date#valueOf`][ref-value-of]. They are functionally equivalent, but
   `valueOf` is marked as follows: "This method is usually called internally by JavaScript and not explicitly in code.",
@@ -58,7 +58,7 @@ The following don't warrant a dissaproval but can be mentioned:
 - If your instance breaks if a return-value is modified, mark it as `Readonly<T>`, and consider _freezing_ the value.
 - If you don't want to return `Readonly<T>` values, make sure it's a fresh instance on each call.
 
-### Talking points
+## Talking points
 
 - [Unix/UTC time][wiki-unix]. This is why `getTime` is preferred over any manual calculation.
 - A good moment to introduce [`const`][ref-const] and explain local [`export`][ref-export], but not a necessity.

@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```haskell
 isLeapYear :: Integer -> Bool
@@ -76,7 +76,7 @@ import Data.Time.Calendar (isLeapYear)
 
 This solution assumes that `time` has been added as a dependency in package.yaml.
 
-### Common suggestions
+## Common suggestions
 
 - This can be seen as an opportunity to practice using guards to separate the
   three criteria. If so, avoid solutions that simply provide one guard and an
@@ -112,7 +112,7 @@ This solution assumes that `time` has been added as a dependency in package.yaml
 - When using guards, consider if the solution is deemed more readable.
 - When using if-then-else, literal `True` or `False` suggests simplification is possible.
 
-### Talking points
+## Talking points
  
 - Some students tend to write patterns like
 

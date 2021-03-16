@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```haskell
 import Data.Char (toLower)
@@ -55,14 +55,14 @@ This solution traverses the input at most once and terminates once each is found
 
 It has the benefit of being efficient, declarative and `Data.Set`-based.
 
-### Common suggestions
+## Common suggestions
 
 - Instead of `"abc...xyz"`, one can just write `['a'..'z']`.
 - Some solutions use `nub`. This is never necessary. It is better to use `Data.Set` here.
 - Some solutions `map head . group . sort`; this is also not necessary. Use `Data.Set`.
 - Avoid manual recursion in favor of `any`, `scanl` or set-based operators.
 
-### Talking points
+## Talking points
 
 - Consider non-strictness and the number of iterations over the input.
 - Consider efficient data types (lists vs. sets).

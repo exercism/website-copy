@@ -1,13 +1,13 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```julia
 
 ```
 
-### Common suggestions
+## Common suggestions
 - 
 
-### Talking points
+## Talking points
 - If they represent the data as array internally, suggest using a `Dict{T, Nothing}` and discuss the differences (e.g. O(1) lookup)

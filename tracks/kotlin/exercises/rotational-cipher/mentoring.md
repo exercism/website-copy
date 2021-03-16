@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 ```kotlin
 class RotationalCipher(private val key: Int) {
@@ -26,5 +26,5 @@ class RotationalCipher(private val key: Int) {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 * Do not allow private members to access object state. This allows for easier refactoring to another object because their state is self contained.

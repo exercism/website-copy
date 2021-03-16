@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```scala
 object Twofer {
@@ -9,7 +9,7 @@ object Twofer {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 - Use default parameters instead of multipe `twofer` functions.
 - Instead of using an if-statement, suggest to use a single expression. This will force the student to remove any duplication in the code.

@@ -1,13 +1,13 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```rust
 pub fn is_leap_year(year):
     year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)
 ```
 
-### Common suggestions
+## Common suggestions
 - there are just two cases that return True:
   - a year is a multiple of 4 *and not** 100
   - a year is a multiple of 4, 100, and 400
@@ -29,13 +29,13 @@ pub fn is_leap_year(year):
 - eliminate duplicate work; no year should ever have to be checked multiple
   times for the same condition
 
-### Talking points
+## Talking points
 - it's very helpful to internalize the rules Rust uses for [expression
   order](https://doc.rust-lang.org/reference/expressions.html#expression-precedence)
 - there is no run time penalty from binding parts of the boolean expression to
   a meaningful name and combining them afterwards
 
-### Benchmark code
+## Benchmark code
 
 Included is a simple project which benchmarks some variants.
 

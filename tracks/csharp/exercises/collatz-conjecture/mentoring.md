@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using a while loop
+### Using a while loop
 
 ```csharp
 using System;
@@ -37,7 +37,7 @@ public static class CollatzConjecture
 }
 ```
 
-#### Using recursion
+### Using recursion
 
 ```csharp
 using System;

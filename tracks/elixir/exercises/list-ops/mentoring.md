@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```elixir
 defmodule ListOps do
@@ -54,9 +54,9 @@ defmodule ListOps do
 end
 ```
 
-### Common suggestions
+## Common suggestions
 
-#### Naming conventions
+### Naming conventions
 
 In this exercise students need to use helper functions with a name similar to the public version.
 
@@ -64,11 +64,11 @@ They should name the private function the same name as the public functions,
 but starting with `do_`, according to the
 [elixir style guide](https://github.com/christopheradams/elixir_style_guide#private-functions-with-same-name-as-public).
 
-#### Performance problems
+### Performance problems
 
 Students frequently have solutions that time out.
 Normally this is because they are reversing the entire list at each iteration.
 
-#### Stretch solution
+### Stretch solution
 
 Suggest that the student implements all of these using their own reduce function.

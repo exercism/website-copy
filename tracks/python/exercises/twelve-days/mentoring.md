@@ -1,6 +1,6 @@
 # Mentoring
 
-### Problem and challenges
+## Problem and challenges
 
 You are asked to print portions of the Christmas Carol
 "The Twelve Days of Christmas", a recursive song like
@@ -12,7 +12,7 @@ There are three challenges
 * Adapting the text for the first day
 * Pasting things together in the right order
 
-### Reasonable solutions
+## Reasonable solutions
 
 ```python
 days = [None, 'first', 'second', 'third', 'fourth', 'fifth', 'sixth',
@@ -81,7 +81,7 @@ Another attempt to deal with this uses surgery:
 This works until you want to recite the first verse again.  
 And and and and it leads to an excess of additions.  
 
-#### Choice of Data Structures
+### Choice of Data Structures
 
 You can create a dictionary to hold the names, like this:
 
@@ -97,7 +97,7 @@ You will see solutions that use a list for the gifts and a dictionary
 for the numbers: they know how to use a list, 
 but revert to the familiar solution for translation.
 
-#### Precooked Solutions
+### Precooked Solutions
 
 Some solutions simply use a precooked list.
 
@@ -155,7 +155,7 @@ those that are needed.
 Point out the inefficiency.
 
 
-#### String Addition
+### String Addition
 
 Programming is the universal language!
 This one uses string addition.
@@ -177,7 +177,7 @@ def recite(start_verse , end_verse):
 
 As usual, request a solution that appends to a list and calls join().
 
-#### Too Clever By Half
+### Too Clever By Half
 
 ```python
 PLAIN_GIFTS = [
@@ -203,6 +203,6 @@ copy saves space by leaving off a ', ' per entry.
 While uncommon, it is an example of the kind of
 false economy that should be nipped in the bud.
 
-#### Talking Points
+### Talking Points
 
 List Comprehension, delegation of concerns.

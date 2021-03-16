@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 This is a straight-forward, logical solution:
 
@@ -27,13 +27,13 @@ parse_phone_number <- function(number_string) {
 }
 ```
 
-### Common suggestions
+## Common suggestions
 
 - Same as the Word Count exercise, `[regex](https://regexr.com/)` is a great resource for visualizing regular expression pattern matching.
 - Emphasize the `grep`, `gsub`, and `gregexpr` family of functions. As with the solution above, most of the conditional logic can be replaced with keen pattern matching.
 
 
-### Talking points
+## Talking points
 
 A solution heavy on pattern-matching might look like this:
 ```r

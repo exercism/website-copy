@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
 This exercise can be solved in two ways. If the student does _not_ enable the
 final test, an implementation using random generation at query time suffices,
@@ -132,12 +132,12 @@ Variations include:
 - for loop for the generation and iterating 100 through 999 for the digits
 - mutating the "possible names" array (popping / shifting / splicing)
 
-### Common suggestions
+## Common suggestions
 - If a student uses an `Array` instead of a `Set` or `Hash` for the `usedNames`, suggest they change it
 - If a student is not correctly generating the names, suggest they fix it
 - If a student defines a setter explicitly, at least notify them that it's uncessary, but does allow for a custom error
 
-### Talking points
+## Talking points
 - See if they want to tackle the final test which generates all names:
   - Steer them first towards why the tests take forever with a `rand` implementation
   - Help them calculate how many names are possible and help them realise that this is a relatively small number

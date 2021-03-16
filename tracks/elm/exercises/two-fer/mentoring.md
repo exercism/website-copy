@@ -7,7 +7,7 @@ This is also going to be the most common exercise that we are asked to mentor, s
 
 The goal of the exercise is to get acquainted with Elm. This is often an excellent place to start introducing people to the tooling.
 
-### Reasonable solutions
+## Reasonable solutions
 
 We don't have any clear guidelines around when to approve.
 Some people have been adding comments and approving straight away, others have been approving when the solution has a nice `Maybe.withDefault` in it.
@@ -23,7 +23,7 @@ twoFer name =
     "One for " ++ Maybe.withDefault "you" name ++ ", one for me."
 ```
 
-### Common suggestions
+## Common suggestions
 
 One mentor recommended to focus on a single thing, and only add other improvements as "food for thought" that the author can take with them as they move on to the next exercise.
 

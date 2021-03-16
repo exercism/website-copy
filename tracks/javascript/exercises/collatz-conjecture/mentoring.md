@@ -1,11 +1,11 @@
 # Mentoring
 
-### Reasonable solution
+## Reasonable solution
 
 The collatz conjecture has multiple approaches when it comes to implementation,
 both a recursive and an iterative implementation can be idiomatic.
 
-#### Recursive solution
+### Recursive solution
 
 The recursive approach is most natural one, given the description, which hints
 at calling the same steps over and over, with different input, until the value
@@ -56,7 +56,7 @@ export const steps = (n) => {
 }
 ```
 
-#### Iterative solution
+### Iterative solution
 
 The iterative solution does require a _bookkeeping_ variable. The approach is
 very similar to the recursive solution, and determining the next `n` can be

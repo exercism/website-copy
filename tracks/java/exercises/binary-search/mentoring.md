@@ -2,9 +2,9 @@
 
 :warning: The following notes are for a version of the exercise that does not involve the use of generics (see this [issue](https://github.com/exercism/java/issues/1507) for more information). To validate a solution involving generics, use [this test](https://github.com/exercism/java/blob/65e2f240123b3357e310881bc5f2c29e92009343/exercises/binary-search/src/test/java/BinarySearchTest.java).
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Using a while-loop
+### Using a while-loop
 ```java
 
 import java.util.List;
@@ -45,7 +45,7 @@ class BinarySearch {
 }
 ```
 
-#### Using recursion
+### Using recursion
 ```java
 
 import java.util.List;

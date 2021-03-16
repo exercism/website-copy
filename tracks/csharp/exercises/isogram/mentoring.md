@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### without using `LINQ` 
+### without using `LINQ` 
 
 ```csharp
 using System;
@@ -24,7 +24,7 @@ public static class Isogram
 }
 ```
 
-#### using `LINQ`
+### using `LINQ`
 
 ```csharp
 using System;

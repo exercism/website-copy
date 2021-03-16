@@ -1,6 +1,6 @@
 # Mentoring
 
-### Reasonable Solutions
+## Reasonable Solutions
 
 A solution with a single loop that counts the differnces:
 
@@ -55,5 +55,5 @@ int compute(const char *lhs, const char *rhs)
 }
 ```
 
-### Common suggestions
+## Common suggestions
 1. Reducing calls to `strlen` - every call is a string length loop.

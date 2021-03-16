@@ -2,7 +2,7 @@
 
 This exercise introduces [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
-### Reasonable solutions
+## Reasonable solutions
 ```javascript
 const GIGASECOND_IN_MS = (10 ** 9) * 1000
 
@@ -13,7 +13,7 @@ export function gigasecond(date) {
 
 Variations include using `const` with an arrow function or `module.exports`.
 
-### Common suggestions
+## Common suggestions
 - Prefer `Date#getTime` over [`Date#valueOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/valueOf). They are functionally equivalent, but
   `valueOf` is marked as follows: "This method is usually called internally by JavaScript and not explicitly in code.",
   which is true.
@@ -25,13 +25,13 @@ Variations include using `const` with an arrow function or `module.exports`.
   }
   ```
 
-### Talking points
+## Talking points
 - [Unix/UTC time](https://en.wikipedia.org/wiki/Unix_time). This is why `getTime` is preferred over any manual calculation.
 - A good moment to introduce [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) and explain local [`export`](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export), but not a necessity.
 - `setSeconds` only works because it _rolls over_, but it wasn't meant to be used like this. Its function is to set the
   seconds component of the date.
 
-### Response template
+## Response template
 You can use the template below to respond to a student. If there are big issues don't approve the solution. If they
 didn't convert to milliseconds, make sure you change the `12` to `9` and the name as well.
 

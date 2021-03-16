@@ -1,8 +1,8 @@
 # Mentoring
 
-### Reasonable solutions
+## Reasonable solutions
 
-#### Solution using `flapMap`
+### Solution using `flapMap`
 
 ```scala
 object Etl {
@@ -11,7 +11,7 @@ object Etl {
 }
 ```
 
-#### Solution using `for` comprehension
+### Solution using `for` comprehension
 
 ```scala
 object Etl {
