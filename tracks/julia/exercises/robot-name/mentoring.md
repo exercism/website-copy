@@ -1,3 +1,5 @@
+# Mentoring
+
 ## Mentoring notes
 
 The main point of this exercise is to learn about mutable structs and to reinforce the idea of writing methods for your own types.

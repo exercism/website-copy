@@ -1,3 +1,5 @@
+# invert if for happy path on left
+
 To simplify, invert the `if` condition handling the error case, 
 then get rid of the `else` branch by returning within the `if`.
 A Go proverb says "[The happy path is left-aligned](https://medium.com/@matryer/line-of-sight-in-code-186dd7cdea88)",

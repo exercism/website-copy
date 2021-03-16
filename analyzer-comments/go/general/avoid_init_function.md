@@ -1,3 +1,5 @@
+# avoid init function
+
 Avoid using the `init` function:
 1) It slows down startup time and the developer using the package cannot do anything about that slow-down, apart from removing the `init` function.
 2) Using the `init` function is mostly used to initialize `global variables`. 

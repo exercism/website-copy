@@ -1,3 +1,5 @@
+# Mentoring
+
 ### Reasonable Solutions
 
 There are a number of equally-good choices for iteration in this problem, but there is no reason to use anything other than `count` to determine the number of differences between the strings (`reduce` or `select ... size` are possible, but the goal is to use `count`).

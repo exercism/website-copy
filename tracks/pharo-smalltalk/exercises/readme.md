@@ -1,4 +1,4 @@
-## Notes
+# Notes
 
 Unlike other tracks, Pharo has an IDE built in itself, and so mentoring tools have been built into Pharo to retrieve user exercises and create feedback notes.
 

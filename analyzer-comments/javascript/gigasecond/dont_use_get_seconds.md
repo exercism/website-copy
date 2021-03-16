@@ -1,3 +1,5 @@
+# dont use get seconds
+
 Use [`Date#getTime`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
 to get the number of milliseconds the _entire_ `Date` represents, instead of
 getting the `seconds` component of the `Date`. In general, [Unix/UTC time](https://en.wikipedia.org/wiki/Unix_time),

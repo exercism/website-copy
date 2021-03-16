@@ -1,3 +1,5 @@
+# wrong specification
+
 [comment] # (This warning is raised when the solution has a typespec different than the exemplar)
 
 Make sure that the typespec for `two_fer/1` is correct. The function accepts one argument - a string, and returns one argument - also a string.

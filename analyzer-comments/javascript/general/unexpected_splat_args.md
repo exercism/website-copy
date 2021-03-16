@@ -1,3 +1,5 @@
+# unexpected splat args
+
 Define a parameter called `%{splat-arg.name}` with the type `%{parameter.type}`,
 instead of using `...%{splat-arg.name}: %{parameter.type}[]`.
 

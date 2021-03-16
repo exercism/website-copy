@@ -1,3 +1,5 @@
+# Mentoring
+
 ### New Concepts
 
 Hash (it's new here because Robot Name has been removed as a core exercise); constant; `each_with_object`: avoiding a separate accumulator variable.

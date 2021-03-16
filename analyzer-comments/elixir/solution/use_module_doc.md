@@ -1,3 +1,5 @@
+# use module doc
+
 [comment] # (This error is raised when the submission lacks @moduledoc for the Module)
 
 It is recommended to have a [`@moduledoc`](https://hexdocs.pm/elixir/writing-documentation.html#module-attributes) attribute to describe the intent of the module.

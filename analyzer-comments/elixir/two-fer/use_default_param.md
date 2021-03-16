@@ -1,3 +1,5 @@
+# use default param
+
 [comment] # (This error is raised when the solution doesn't use default parameters)
 
 Use a [default parameter](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) for this solution.

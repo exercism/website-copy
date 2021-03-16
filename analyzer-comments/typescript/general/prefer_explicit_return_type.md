@@ -1,3 +1,5 @@
+# prefer explicit return type
+
 In order to guard against accidental changes, always define the `return` type
 for public APIs, such as functions that are `export`ed:
 

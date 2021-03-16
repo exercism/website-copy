@@ -1,3 +1,5 @@
+# prefer const over let and var
+
 Instead of \`${'kind'} ${'name'}\`, consider using \`const\`.
 
 The `const` declaration stops a variable from being accidentally reassigned,

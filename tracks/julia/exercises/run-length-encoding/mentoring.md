@@ -1,3 +1,5 @@
+# Mentoring
+
 ## Common comments
 
 - You might not know that repeatedly concatenating strings like this causes a lot of strings to be allocated (they are not appended in place). If you want to avoid that you can use an `IOBuffer` or (less efficiently) a vector of `Char`.

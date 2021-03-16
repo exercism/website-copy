@@ -1,3 +1,5 @@
+# lossy rune to byte conversion
+
 The `rune` to `byte` conversion is safe here, because the input string contains only ASCII characters.
 Go `runes` can consist of multiple `bytes`, though, which can cause trouble when dealing with non-ASCII characters.
 

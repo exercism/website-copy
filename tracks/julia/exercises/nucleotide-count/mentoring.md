@@ -1,3 +1,5 @@
+# Mentoring
+
 ### Mentor guidance
 
 Students that use four counting variables rather than mutating a dict should be shown the dict solution or asked to come up with it on their own if there is some doubt that they knew they could do that.

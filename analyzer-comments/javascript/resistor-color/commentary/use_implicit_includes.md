@@ -1,3 +1,5 @@
+# use implicit includes
+
 Using `includes` iterates _twice_ over the array. Performance is not an issue in 
 this exercise, but the logic is unnecessary. 
 

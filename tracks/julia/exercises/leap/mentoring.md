@@ -1,3 +1,5 @@
+# Mentoring
+
 ### Mentor guidance
 
 We don't need to bikeshed on this too long. Just prompt them to improve their code if they do something needlessly convoluted. `if` statements are okay, but consider prompting them with the first or third suggestions.

@@ -1,3 +1,5 @@
+# Mentoring
+
 ### Reasonable Solutions
 
 There are two general approaches to this problem. Crystal has a more-or-less purpose-designed method for this problem in `String#tr`.

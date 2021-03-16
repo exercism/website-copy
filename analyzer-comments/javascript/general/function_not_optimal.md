@@ -1,3 +1,5 @@
+# function not optimal
+
 It looks like `%{function}` is not optimal.
 This analyzer is a Work In Progress and can't tell you exactly why it thinks something is not optimal.
 Feel free to ignore this feedback.

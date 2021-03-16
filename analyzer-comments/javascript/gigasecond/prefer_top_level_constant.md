@@ -1,3 +1,5 @@
+# prefer top level constant
+
 Consider extracting the `GIGASECOND` number into a constant:
 
 ```javascript

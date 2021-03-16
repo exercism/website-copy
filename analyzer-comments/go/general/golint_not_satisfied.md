@@ -1,3 +1,5 @@
+# golint not satisfied
+
 There's a great tool called [`golint`](https://github.com/golang/lint) which will examine the code for common problems and style issues.
 Run `golint` on the solution, e.g.: `golint two_fer.go`; it will make some useful suggestions.
 
