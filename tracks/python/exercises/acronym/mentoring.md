@@ -10,7 +10,7 @@ and select the first letter of each word.
 There are two characters that require special attention: 
 the hypen, used to tie together words such as "metal-oxide", 
 and the underscore, which must not be included.  
-The underscore can be silently remmoved, but the hypen marks 
+The underscore can be silently removed, but the hypen marks 
 the boundary between two words, and it is simplest to replace 
 it with a space.
 
@@ -42,7 +42,7 @@ def abbreviate(words):
     return acronym
 ```
 
-The student should be told about building lists and join() them.
+The student should be told about building lists and `join()`ing them.
 
 ### Regular Expressions
 
@@ -69,7 +69,7 @@ special place as a pseudo-space.
 
 As noted above, assembling a string character by character is slow.
 
-Once string addition is replaced with list joining(), it
+Once string addition is replaced with list `join()`ing, it
 is a natural place for a List Comprehension.
 
 It would be better to call the string method upper() only once, 
