@@ -25,6 +25,18 @@ use strict;
 use warnings;
 use Exporter 'import';
 our @EXPORT_OK = qw(two_fer);
+sub two_fer {
+    return "One for " . (shift || "you") . ", one for me.";
+}
+1;
+```
+
+```perl
+package TwoFer;
+use strict;
+use warnings;
+use Exporter 'import';
+our @EXPORT_OK = qw(two_fer);
 use experimental qw(signatures);
 sub two_fer ($name = 'you') {
     return "One for $name, one for me.";
