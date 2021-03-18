@@ -1,7 +1,7 @@
 # Mentoring
 
 This is a great opportunity to prepare for the track with attention to style conventions.
-This is currently the first reviewed problem on the Python track, and serves to
+This is currently the first reviewed problem on the Perl track, and serves to
 make sure the student understands unit testing and Test Driven Design.
 
 ## Reasonable Solutions
@@ -48,7 +48,7 @@ But remember TMTOWDI - There's More Than One Way To Do It!
 ## Common Suggestions
 
 - Suggest using a default value instead of any form of conditionals.
-- If the student is using perl 5.2>, suggest using the `experimentals` module but make them aware that they're unlikely to find that particular patter in the wild.
+- If the student is using perl 5.2>, suggest using the `experimentals` module but make them aware that they're unlikely to find that particular pattern in the wild.
 - If the student is using perl <5.2, suggest upgrading to get new features - but, again, make them aware that not every situation they might walk into is going to be running the latest version
 - Some people need help with running the tests.
 - Check indentation.
