@@ -73,8 +73,8 @@ Some users may have trouble running pytest due to path issues.
 Get them to paste you any error messages in another iteration (and remind them they can do as many iterations as they want!!) then talk them through
 
 ```shell
-$ cd path/to/dir/
-prove .
+    $ cd path/to/dir/
+    prove .
 ```
 
 or 
