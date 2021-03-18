@@ -64,8 +64,8 @@ Do they know how to run the tests?
 Some users may have trouble running pytest due to path issues.
 Get them to paste you any error messages in another iteration (and remind them they can do as many iterations as they want!!) then talk them
 ```perl
-     $ cd path/to/dir/
-     prove .
+$ cd path/to/dir/
+prove .
 ```
 
 or 
