@@ -48,11 +48,11 @@ But remember TMTOWDI - There's More Than One Way To Do It!
 ## Common Suggestions
 
 - Suggest using a default value instead of any form of conditionals.
-- If the student is using perl 5.2>, suggest using the `experimentals` module but make them aware that they're unlikely to find that particular pattern in the wild.
-- If the student is using perl <5.2, suggest upgrading to get new features - but, again, make them aware that not every situation they might walk into is going to be running the latest version
+- If the student is using Perl 5.2 or newer, suggest using the `experimentals` module but make them aware that they're unlikely to find that particular pattern in the wild.
+- If the student is using Perl older than 5.2, suggest upgrading to get new features - but, again, make them aware that not every situation they might walk into is going to be running the latest version.
 - Some people need help with running the tests.
 - Check indentation.
-- Printing vs. returning
+- Printing vs. returning.
 
 ## Talking Points
 
@@ -86,7 +86,7 @@ or
 
 For a bit more information.
 
-Do they understand what the tests tell them? Importantly, do they understand how the information is getting fed to them via `__DATA__`? They're going to need to understand that, and JSON itself, before they can totally understand what's happening.
+Do they understand what the tests tell them? Importantly, do they understand how the information is getting fed to them via `__DATA__`? They're going to need to understand that, and JSON itself to some degree, before they can totally understand what's happening.
 
 ### Editing the Tests
 
