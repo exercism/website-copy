@@ -17,14 +17,14 @@ class Luhn
   def valid?
     return unless valid_format?
 
-    luhn_sum % 10 == 0
+    (luhn_sum % 10).zero?
   end
 
   private
   attr_reader :candidate
 
   def valid_format?
-    candidate.size > 1 && candidate !~ (/\D/)
+    candidate.size > 1 && candidate !~ /\D/
   end
 
 
