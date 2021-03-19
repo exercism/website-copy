@@ -79,8 +79,8 @@ prove .
 or 
 
 ```shell
-    $cd path/to/dir
-    prove -v .
+$cd path/to/dir
+prove -v .
 ```
 
 For a bit more information.
