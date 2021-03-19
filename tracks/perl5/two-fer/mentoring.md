@@ -61,7 +61,7 @@ But remember TMTOWDI - There's More Than One Way To Do It!
 - Style preferences. This exercise is a good opportunity to talk about style conventions like indentation, parameter parenthesis in method declarations (if using `experimental`) and removing redundant and/or stale comments.
   Given the place in the curriculum it may be worth not going too deep and to not address points that are controversial or personal preference.
 - Unit Tests. For some students this will be an introduction to the notion of unit tests.
-  Make the case that these allow them to be productive while engaging with the problem.
+  -  Make the case that these allow them to be productive while engaging with the problem.
 
 ## Mentoring Notes
 
