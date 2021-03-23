@@ -25,14 +25,35 @@ track/bash:
 track/c:
 - **/c/**/*
 
+track/ceylon:
+- **/ceylon/**/*
+
+track/cfml:
+- **/cfml/**/*
+
+track/clojure:
+- **/clojure/**/*
+
+track/coffeescript:
+- **/coffeescript/**/*
+
 track/common-lisp:
 - **/common-lisp/**/*
+
+track/coq:
+- **/coq/**/*
 
 track/cpp:
 - **/cpp/**/*
 
+track/crystal:
+- **/crystal/**/*
+
 track/csharp:
 - **/csharp/**/*
+
+track/d:
+- **/d/**/*
 
 track/dart:
 - **/dart/**/*
@@ -55,14 +76,32 @@ track/erlang:
 track/factor:
 - **/factor/**/*
 
+track/fortran:
+- **/fortran/**/*
+
 track/fsharp:
 - **/fsharp/**/*
+
+track/gleam:
+- **/gleam/**/*
+
+track/gnu-api:
+- **/gnu-api/**/*
 
 track/go:
 - **/go/**/*
 
+track/groovy:
+- **/groovy/**/*
+
 track/haskell:
 - **/haskell/**/*
+
+track/haxe:
+- **/haxe/**/*
+
+track/idris:
+- **/idris/**/*
 
 track/j:
 - **/j/**/*
@@ -79,8 +118,20 @@ track/julia:
 track/kotlin:
 - **/kotlin/**/*
 
+track/lfe:
+- **/lfe/**/*
+
+track/lua:
+- **/lua/**/*
+
+track/mips:
+- **/mips/**/*
+
 track/nim:
 - **/nim/**/*
+
+track/objective-c:
+- **/objective-c/**/*
 
 track/ocaml:
 - **/ocaml/**/*
@@ -91,6 +142,21 @@ track/perl5:
 track/pharo-smalltalk:
 - **/pharo-smalltalk/**/*
 
+track/php:
+- **/php/**/*
+
+track/plsql:
+- **/plsql/**/*
+
+track/pony:
+- **/pony/**/*
+
+track/powershell:
+- **/powershell/**/*
+
+track/prolog:
+- **/prolog/**/*
+
 track/purescript:
 - **/purescript/**/*
 
@@ -100,11 +166,11 @@ track/python:
 track/r:
 - **/r/**/*
 
-track/raku:
-- **/raku/**/*
-
 track/racket:
 - **/racket/**/*
+
+track/raku:
+- **/raku/**/*
 
 track/reasonml:
 - **/reasonml/**/*
@@ -121,11 +187,23 @@ track/scala:
 track/scheme:
 - **/scheme/**/*
 
+track/sml:
+- **/sml/**/*
+
 track/swift:
 - **/swift/**/*
 
+track/tcl:
+- **/tcl/**/*
+
 track/typescript:
 - **/typescript/**/*
+
+track/vbnet:
+- **/vbnet/**/*
+
+track/vimscript:
+- **/vimscript/**/*
 
 track/x86-64-assembly:
 - **/x86-64-assembly/**/*
