@@ -97,7 +97,7 @@ For C# the `%` operator, referred to as remainder, is precisely defined in the [
 - `private const`s are preferred to `readonly` fields as they are more idiomatic and, not that it matters
 much here, more performant
 - Converting the time to minutes simpifies processing.  Again, not a particularly C# point
-- Converting the time to minutes could cause an overflow if you use an Int32.  This could cause the time to be incorrectly computed.  If you have a more advanced student, you may want to aks them to also test for overflow conditions by creating a test using `new Clock(1, Int32.MaxValue)`
+- Converting the time to minutes could cause an overflow if you use an Int32.  This could cause the time to be incorrectly computed.  If you have a more advanced student, you may want to ask them to also test for overflow conditions by creating a test using `new Clock(1, Int32.MaxValue)`
 - `IEquatable` does not buy you anything in this example.  IEquatable allows an object to signal
 that callers such as a generic collection can use a typed implementation of `Equals()` to test
 equality.  In the case of classes this simply saves a call through `Equals(object)'.  In the case of
