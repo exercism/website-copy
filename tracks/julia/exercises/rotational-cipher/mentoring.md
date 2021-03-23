@@ -49,6 +49,7 @@ This works because:
    └─ returns the "distance" between both characters in the alphabet as an Int (e.g. `'b' - 'a' == 1`).
 ```
 
+
 ```
 'a' + (c - 'a' + n) % 26
 └┬┘   └────────┬───────┘
