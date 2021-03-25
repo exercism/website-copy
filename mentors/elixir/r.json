@@ -14,5 +14,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Programmer/developer/engineer, working full time with elixir for two years doing regular web stuff."
+  },
+  {
+    "github_username": "rslopes",
+    "name": "Renan Lopes",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/rslopes",
+    "avatar_url": "https://s.gravatar.com/avatar/a9a6d17994673e9d3ba7748fc2ef8348",
+    "bio": "I enjoy learning and teaching programming languages. The mentoring allows me to teach and learn from the students."
   }
 ]
