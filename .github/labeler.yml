@@ -1,5 +1,5 @@
 type/analyzer-comments:
-- 'automated-comments/**/*.md'
+- 'analyzer-comments/**/*.md'
 
 type/ci:
 - '.github/workflows/**/*'
