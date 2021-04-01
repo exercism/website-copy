@@ -110,5 +110,13 @@
     "link_url": "http://michaeldimmitt.surge.sh",
     "avatar_url": "https://avatars0.githubusercontent.com/u/11463275?s=400&u=aa8e3d6c761c4ea4ee2175fa43db94652cfa25ca&v=4",
     "bio": "Passionate about user experience helping others, I write a lot of javascript and am always learning new things."
+  },
+  {
+    "github_username": "michael-sage",
+    "name": "Michael Sage",
+    "link_text": "My Profile",
+    "link_url": "https://exercism.io/profiles/michael-sage",
+    "avatar_url": "https://avatars.githubusercontent.com/u/74803690?s=400&u=7e8f07b8e98f666b9cb6dc3527e39fefec948837&v=4",
+    "bio": "React developer professionally, full-stack in my spare time. I love learning and teaching others so we can all grow together :)"
   }
 ]
