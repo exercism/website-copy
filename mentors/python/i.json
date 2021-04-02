@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Python has been my go to language for more than a decade. It is a beautiful language and very versatile and has evolved rapidly in the last several years. My overall software design experience extends to a little over 2 decades in multiple industries including health care, fintech, and logistics."
+  },
+  {
+    "github_username": "IsaacG",
+    "name": "Isaac Good",
+    "link_text": "Personal Site",
+    "link_url": "http://isaacgood.com",
+    "avatar_url": null,
+    "bio": "I learned Python in 2013 and have been a heavy user ever since. I spend a lot of time writing, reviewing and mentoring Python, both professionally and personally. My other area of fascination is bash."
   }
 ]
