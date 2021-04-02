@@ -16,6 +16,14 @@
     "bio": "Full time backend engineer. Gopher."
   },
   {
+    "github_username": "andrerfcsantos",
+    "name": "André Santos",
+    "link_text": "GitHub",
+    "link_url": "https://github.com/andrerfcsantos",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6928620",
+    "bio": "Software Engineer. I work with several languages including Java, Go, Python and Javascript, but Go is probably my favorite. I want to help making the learning experience of Go to be as smooth as possible for other people."
+  },
+  {
     "github_username": "as27",
     "name": "Andreas Schroepfer",
     "link_text": null,
