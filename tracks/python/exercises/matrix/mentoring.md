@@ -14,7 +14,7 @@ class Matrix(object):
 
     def __init__(self, matrix_string: str):
         self.rows = [[int(s) for s in word.split()]
-                     for word in matrix_string.split('\n')]
+                     for word in matrix_string.splitlines()]
 
     def row(self, index: int) -> list:
         return self.rows[index - 1].copy()
@@ -33,11 +33,11 @@ when row() or column() are called.
 You will even find many solutions like this in the 
 community area.
 
-We should encourage students to move from strings to integers in __init__. 
+We should encourage students to move from strings to integers in `__init__`.
 While there are no test cases with non-integers,
 point out that if the input contained bad data,
 you would want the constructor to fail, rather 
-than failing at row() or column()
+than failing at `row()` or `column()`.
 
 ### Duplicate Storage
 
@@ -46,6 +46,27 @@ the matrix: the original and the transposed matrix.
 Point out that this takes twice the storage, and 
 that constructing a column on the fly isn't that
 difficult.
+
+### String splitting choices
+
+For the first `split()`, Python provides a handy `str.splitlines()` so an
+explicit `str.split("\n")` isn't needed; Python can help figure out
+line separators for you!
+
+The `str.split()` function defaults to splitting on all whitespace. Since
+we don't want whitespace in the entry we pass to `int()`, it's safe to assume
+any whitespace in the data is a valid split point. If the student specifies
+`str.split(" ")`, you can ask if the argument is needed.
+
+#### Loop Choices
+
+Often a student will build the list using an explicit list index, opting to
+loop over `range(len(list))`. Point out that rarely is the index actually
+what is needed in a loop. If they are using the index and the element, mention
+the `enumerate()` built-in.
+
+If the solution contains two loops, point out that iterating over the data
+is expensive and why do it twice when it can be done just one time.
 
 ### To Copy or not to Copy
 
@@ -56,4 +77,12 @@ has in mind: they may want to take a row and
 update an entry.  
 
 In any case, this isn't a topic to burden a beginner with, 
-but you may want to comment about it if you see it in the solution. 
+but can be a fun thing to point out once approving the exercise.
+You can use something like:
+
+```
+Fun fact. If someone does: `matrix.row(3)[0] = 5`, this will alter the data
+stored in the matrix. Conversely, if they did `matrix.column(3)[0] = 5`,
+this would *not* update the matrix. Making `row()` behave like `column()`
+is simple. The reverse is a fair bit more tricky. Something to think about :)
+```
