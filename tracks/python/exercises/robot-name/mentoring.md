@@ -30,9 +30,9 @@ class Robot(object):
             self.name = ''.join(
                 random.choices(string.ascii_uppercase, 2) + random.choices(string.digits, 3)
             )
-	    if self.name not in Robot.names:
-	        Robot.names.add(self.name)
-		break
+            if self.name not in Robot.names:
+                Robot.names.add(self.name)
+                break
 ````
 
 ## Talking Points
