@@ -56,11 +56,11 @@ This exercise involves building a string which is returned. The string may end
 up being rather large. Since strings are immutable in Python, every time a
 string append is done, Python needs to create a new string object and discard
 the old string object. This can get expensive when the string is large and/or
-the append is done many times. Instead, a list and `str.join` should be used;
-list appends are cheaper in the long run.
+the append is done many times. Instead, a `list` and `str.join` should be used;
+`list` appends are cheaper in the long run.
 
 List comprehensions are much more familiar than generators to many people.
-However, building a list is an extra step that is not needed. It requires
+However, building a `list` is an extra step that is not needed. It requires
 creating an extra copy of the data which is promptly discarded. Using a
 generator bypasses that step.
 
