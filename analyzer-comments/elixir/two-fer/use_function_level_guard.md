@@ -1,6 +1,6 @@
 # use function level guard
 
-[comment] # (This error is raised when the solution uses guards, but not in the function clause)
+[comment]: # (This error is raised when the solution uses guards, but not in the function clause)
 
 Use [guards](https://hexdocs.pm/elixir/master/guards.html) in the function clause to prevent `two_fer/1` from executing code with non-binary inputs.
 

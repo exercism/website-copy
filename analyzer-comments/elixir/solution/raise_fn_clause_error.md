@@ -1,6 +1,6 @@
 # raise fn clause error
 
-[comment] # (This error is raised when the submission includes a call to `raise FunctionClauseError` rather than having Elixir fail in matching the call to the two_fer function for non-string types.)
+[comment]: # (This error is raised when the submission includes a call to `raise FunctionClauseError` rather than having Elixir fail in matching the call to the two_fer function for non-string types.)
 
 Do not directly call `raise FunctionClauseError`.
 

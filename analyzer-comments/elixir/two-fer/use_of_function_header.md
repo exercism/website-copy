@@ -1,6 +1,6 @@
 # use of function header
 
-[comment] # (This error is raised when the solution uses a function header)
+[comment]: # (This error is raised when the solution uses a function header)
 
 A function header (a function definition without a body) is only necessary for functions with default arguments that have multiple clauses.
 
