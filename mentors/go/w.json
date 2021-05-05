@@ -22,5 +22,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I'm a front-end web developer, I'm passionate to learn new skills, and helping others to learn."
-   }
+  },
+  {
+    "github_username": "willfolsom",
+    "name": "Will Folsom",
+    "link_text": "Github",
+    "link_url": "https://github.com/willfolsom",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3690251?v=4",
+    "bio": "I'm a full stack developer who has worked in Go professionally. I enjoy mentoring and Exercism, so I'm happy to be here."
+  }
 ]
