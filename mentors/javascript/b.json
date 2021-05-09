@@ -78,5 +78,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "If you want to learn something, read about it. If you want to understand something, write about it. If you want to master something, teach it, so here I am :)"
+  },
+  {
+    "github_username": "Bassel17",
+    "name": "Bassel Kanso",
+    "link_text": "bassel.tech",
+    "link_url": "https://bassel.tech/",
+    "avatar_url": "http://github.com/bassel17.png",
+    "bio": "I occasionally write about software development and design, I consume Javascript daily and mentor people cause it's fun!"
   }
 ]
