@@ -27,15 +27,15 @@ key or a function to map from that name to the orbital period is preferred:
 
 ```javascript
 function getOrbitalPeriod(planet) {
-  const [p, ...lanet] = planet
-  return ORBITAL_PERIODS[[p.toUpperCase(), ...lanet].join('')]
+  const [firstLetter, ...rest] = planet
+  return ORBITAL_PERIODS[[firstLetter.toUpperCase(), ...rest].join('')]
 }
 ```
 
 In the above case, the destructuring solution is equivalent to using an indexer
 on `planet[0]` and/or substringing.
 
-Finally converting from the input age in seconds to the output:
+Finally, converting from the input age in seconds to the output:
 ```javascript
 export function age(planet, earthAgeInS) {
   return Number((earthAgeInS / EARTH_YEAR_IN_S / getOrbitalPeriod(planet)).toFixed(2))
