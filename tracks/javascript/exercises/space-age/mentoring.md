@@ -27,8 +27,8 @@ key or a function to map from that name to the orbital period is preferred:
 
 ```javascript
 function getOrbitalPeriod(planet) {
-  const [p, ...lanet] = planet
-  return ORBITAL_PERIODS[[p.toUpperCase(), ...planet].join('')]
+  const [firstLetter, ...rest] = planet
+  return ORBITAL_PERIODS[[firstLetter.toUpperCase(), ...rest].join('')]
 }
 ```
 
