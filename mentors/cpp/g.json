@@ -6,5 +6,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have used C++ at work for 15 years. I aspire for performance in my coding."
+  },
+  {
+    "github_username": "GauravKhulway",
+    "name": "Gaurav Khulway",
+    "link_text": "Linkedin profile",
+    "link_url": "https://www.linkedin.com/in/gaurav-khulway-626257177/",
+    "avatar_url": null,
+    "bio": "I love problem solving using C++."
   }
 ]
