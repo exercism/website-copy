@@ -191,7 +191,7 @@ Try changing `s = "Pling"` to `s *= "Pling"` and benchmarking with 3, 14, and 15
 <details>
 <summary>Expected benchmark results and explanation</summary>
 
-raindrops3a is the version with `s *= "Pling"`.
+raindrops4a is the version with `s *= "Pling"`.
 
 ```julia
 using BenchmarkTools
