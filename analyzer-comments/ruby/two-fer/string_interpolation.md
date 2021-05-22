@@ -4,5 +4,5 @@ As well as string interpolation, another common way to create strings in Ruby is
 For example:
 
 ```ruby
-"One for %%s, one for you" %% %{name_variable}
+"One for %%s, one for me." %% %{name_variable}
 ```
