@@ -1,10 +1,10 @@
 # use default param
 
-[comment]: # (This error is raised when the solution doesn't use default parameters)
+[comment]: # (This error is raised when the solution doesn't use default arguments)
 
-Use a [default parameter](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) for this solution.
+Use a [default argument](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) for this solution.
 
-- [Default parameters](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) removes the need of writing duplicate function clauses for functions with different [arities](https://en.wikipedia.org/wiki/Arity).
+- [Default arguments](https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments) removes the need of writing duplicate function clauses for functions with different [arities](https://en.wikipedia.org/wiki/Arity).
 
 ```elixir
 # Consider this function:
