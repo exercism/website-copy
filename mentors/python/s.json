@@ -166,5 +166,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "Python anywhere and everywhere."
+  },
+  {
+    "github_username": "squeakyboots",
+    "name": "Dan",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "Mentoring so that I can clear some of the Python track items pending in hopes my own get moving. I really enjoy Python and want to feel mastery with it before learning a second language that covers its blind spots. Maybe C#? Or not if 3.12 has JIT =D"
   }
 ]
