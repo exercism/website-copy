@@ -169,323 +169,323 @@
 
 - name: "track/05ab1e"
   description: "05AB1E track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/ada"
   description: "Ada track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/arm64-assembly"
   description: "ARM64 Assembly track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/babashka"
   description: "Babashka track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/ballerina"
   description: "Ballerina track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/bash"
   description: "Bash track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/c"
   description: "C track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/ceylon"
   description: "Ceylon track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/cfml"
   description: "CFML track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/clojure"
   description: "Clojure track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/clojurescript"
   description: "ClojureScript track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/coffeescript"
   description: "CoffeeScript track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/common-lisp"
   description: "Common Lisp track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/coq"
   description: "Coq track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/cpp"
   description: "C++ track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/crystal"
   description: "Crystal track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/csharp"
   description: "C# track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/d"
   description: "D track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/dart"
   description: "Dart track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/delphi"
   description: "Delphi Pascal track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/elixir"
   description: "Elixir track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/elm"
   description: "Elm track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/emacs-lisp"
   description: "Emacs Lisp track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/erlang"
   description: "Erlang track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/factor"
   description: "Factor track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/forth"
   description: "Forth track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/fortran"
   description: "Fortran track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/fsharp"
   description: "F# track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/gleam"
   description: "Gleam track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/gnu-apl"
   description: "GNU APL track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/go"
   description: "Go track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/groovy"
   description: "Groovy track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/haskell"
   description: "Haskell track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/haxe"
   description: "Haxe track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/idris"
   description: "Idris track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/io"
   description: "Io track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/j"
   description: "J track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/java"
   description: "Java track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/javascript"
   description: "JavaScript track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/julia"
   description: "Julia track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/kotlin"
   description: "Kotlin track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/lfe"
   description: "LFE track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/lua"
   description: "Lua track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/mips"
   description: "MIPS Assembly track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/nim"
   description: "Nim track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/nix"
   description: "Nix track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/objective-c"
   description: "Objective-C track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/ocaml"
   description: "OCaml track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/perl5"
   description: "Perl 5 track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/pharo-smalltalk"
   description: "Pharo track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/php"
   description: "PHP track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/plsql"
   description: "PL/SQL track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/pony"
   description: "Pony track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/powershell"
   description: "PowerShell track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/prolog"
   description: "Prolog track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/purescript"
   description: "PureScript track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/python"
   description: "Python track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/r"
   description: "R track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/racket"
   description: "Racket track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/raku"
   description: "Raku track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/reasonml"
   description: "ReasonML track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/red"
   description: "Red track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/ruby"
   description: "Ruby track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/rust"
   description: "Rust track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/scala"
   description: "Scala track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/scheme"
   description: "Scheme track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/shen"
   description: "Shen track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/sml"
   description: "Standard ML track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/solidity"
   description: "Solidity track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/swift"
   description: "Swift track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/system-verilog"
   description: "SystemVerilog track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/tcl"
   description: "Tcl track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/typescript"
   description: "TypeScript track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/vbnet"
   description: "VB.NET track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/vimscript"
   description: "Vim script track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/wren"
   description: "Wren track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/x86-64-assembly"
   description: "x86-64 Assembly track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/z3"
   description: "Z3 track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "track/zig"
   description: "Zig track"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "type/analyzer-comments"
   description: "Analyzer comments"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "type/ci"
   description: ""
@@ -497,8 +497,8 @@
 
 - name: "type/mentor-bios"
   description: "Mentor bios"
-  color: "cccccc"
+  color: "c8d7ff"
 
 - name: "type/mentor-notes"
   description: "Mentor notes"
-  color: "cccccc"
+  color: "c8d7ff"
