@@ -327,6 +327,10 @@
   description: ""
   color: "ededed"
 
+- name: "type/copy"
+  description: ""
+  color: "ededed"
+
 - name: "type/mentor-bios"
   description: "Mentor bios"
   color: "cccccc"
