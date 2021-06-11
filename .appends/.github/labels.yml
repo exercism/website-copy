@@ -1,0 +1,336 @@
+# ----------------------------------------------------------------------------------------- #
+# These are the repository-specific labels that augment the Exercise-wide labels defined in #
+# https://github.com/exercism/org-wide-files/blob/main/global-files/.github/labels.yml.     #
+# ----------------------------------------------------------------------------------------- #
+
+- name: "track/05ab1e"
+  description: "05AB1E track"
+  color: "cccccc"
+
+- name: "track/ada"
+  description: "Ada track"
+  color: "cccccc"
+
+- name: "track/arm64-assembly"
+  description: "ARM64 Assembly track"
+  color: "cccccc"
+
+- name: "track/babashka"
+  description: "Babashka track"
+  color: "cccccc"
+
+- name: "track/ballerina"
+  description: "Ballerina track"
+  color: "cccccc"
+
+- name: "track/bash"
+  description: "Bash track"
+  color: "cccccc"
+
+- name: "track/c"
+  description: "C track"
+  color: "cccccc"
+
+- name: "track/ceylon"
+  description: "Ceylon track"
+  color: "cccccc"
+
+- name: "track/cfml"
+  description: "CFML track"
+  color: "cccccc"
+
+- name: "track/clojure"
+  description: "Clojure track"
+  color: "cccccc"
+
+- name: "track/clojurescript"
+  description: "ClojureScript track"
+  color: "cccccc"
+
+- name: "track/coffeescript"
+  description: "CoffeeScript track"
+  color: "cccccc"
+
+- name: "track/common-lisp"
+  description: "Common Lisp track"
+  color: "cccccc"
+
+- name: "track/coq"
+  description: "Coq track"
+  color: "cccccc"
+
+- name: "track/cpp"
+  description: "C++ track"
+  color: "cccccc"
+
+- name: "track/crystal"
+  description: "Crystal track"
+  color: "cccccc"
+
+- name: "track/csharp"
+  description: "C# track"
+  color: "cccccc"
+
+- name: "track/d"
+  description: "D track"
+  color: "cccccc"
+
+- name: "track/dart"
+  description: "Dart track"
+  color: "cccccc"
+
+- name: "track/delphi"
+  description: "Delphi Pascal track"
+  color: "cccccc"
+
+- name: "track/elixir"
+  description: "Elixir track"
+  color: "cccccc"
+
+- name: "track/elm"
+  description: "Elm track"
+  color: "cccccc"
+
+- name: "track/emacs-lisp"
+  description: "Emacs Lisp track"
+  color: "cccccc"
+
+- name: "track/erlang"
+  description: "Erlang track"
+  color: "cccccc"
+
+- name: "track/factor"
+  description: "Factor track"
+  color: "cccccc"
+
+- name: "track/forth"
+  description: "Forth track"
+  color: "cccccc"
+
+- name: "track/fortran"
+  description: "Fortran track"
+  color: "cccccc"
+
+- name: "track/fsharp"
+  description: "F# track"
+  color: "cccccc"
+
+- name: "track/gleam"
+  description: "Gleam track"
+  color: "cccccc"
+
+- name: "track/gnu-apl"
+  description: "GNU APL track"
+  color: "cccccc"
+
+- name: "track/go"
+  description: "Go track"
+  color: "cccccc"
+
+- name: "track/groovy"
+  description: "Groovy track"
+  color: "cccccc"
+
+- name: "track/haskell"
+  description: "Haskell track"
+  color: "cccccc"
+
+- name: "track/haxe"
+  description: "Haxe track"
+  color: "cccccc"
+
+- name: "track/idris"
+  description: "Idris track"
+  color: "cccccc"
+
+- name: "track/io"
+  description: "Io track"
+  color: "cccccc"
+
+- name: "track/j"
+  description: "J track"
+  color: "cccccc"
+
+- name: "track/java"
+  description: "Java track"
+  color: "cccccc"
+
+- name: "track/javascript"
+  description: "JavaScript track"
+  color: "cccccc"
+
+- name: "track/julia"
+  description: "Julia track"
+  color: "cccccc"
+
+- name: "track/kotlin"
+  description: "Kotlin track"
+  color: "cccccc"
+
+- name: "track/lfe"
+  description: "LFE track"
+  color: "cccccc"
+
+- name: "track/lua"
+  description: "Lua track"
+  color: "cccccc"
+
+- name: "track/mips"
+  description: "MIPS Assembly track"
+  color: "cccccc"
+
+- name: "track/nim"
+  description: "Nim track"
+  color: "cccccc"
+
+- name: "track/nix"
+  description: "Nix track"
+  color: "cccccc"
+
+- name: "track/objective-c"
+  description: "Objective-C track"
+  color: "cccccc"
+
+- name: "track/ocaml"
+  description: "OCaml track"
+  color: "cccccc"
+
+- name: "track/perl5"
+  description: "Perl 5 track"
+  color: "cccccc"
+
+- name: "track/pharo-smalltalk"
+  description: "Pharo track"
+  color: "cccccc"
+
+- name: "track/php"
+  description: "PHP track"
+  color: "cccccc"
+
+- name: "track/plsql"
+  description: "PL/SQL track"
+  color: "cccccc"
+
+- name: "track/pony"
+  description: "Pony track"
+  color: "cccccc"
+
+- name: "track/powershell"
+  description: "PowerShell track"
+  color: "cccccc"
+
+- name: "track/prolog"
+  description: "Prolog track"
+  color: "cccccc"
+
+- name: "track/purescript"
+  description: "PureScript track"
+  color: "cccccc"
+
+- name: "track/python"
+  description: "Python track"
+  color: "cccccc"
+
+- name: "track/r"
+  description: "R track"
+  color: "cccccc"
+
+- name: "track/racket"
+  description: "Racket track"
+  color: "cccccc"
+
+- name: "track/raku"
+  description: "Raku track"
+  color: "cccccc"
+
+- name: "track/reasonml"
+  description: "ReasonML track"
+  color: "cccccc"
+
+- name: "track/red"
+  description: "Red track"
+  color: "cccccc"
+
+- name: "track/ruby"
+  description: "Ruby track"
+  color: "cccccc"
+
+- name: "track/rust"
+  description: "Rust track"
+  color: "cccccc"
+
+- name: "track/scala"
+  description: "Scala track"
+  color: "cccccc"
+
+- name: "track/scheme"
+  description: "Scheme track"
+  color: "cccccc"
+
+- name: "track/shen"
+  description: "Shen track"
+  color: "cccccc"
+
+- name: "track/sml"
+  description: "Standard ML track"
+  color: "cccccc"
+
+- name: "track/solidity"
+  description: "Solidity track"
+  color: "cccccc"
+
+- name: "track/swift"
+  description: "Swift track"
+  color: "cccccc"
+
+- name: "track/system-verilog"
+  description: "SystemVerilog track"
+  color: "cccccc"
+
+- name: "track/tcl"
+  description: "Tcl track"
+  color: "cccccc"
+
+- name: "track/typescript"
+  description: "TypeScript track"
+  color: "cccccc"
+
+- name: "track/vbnet"
+  description: "VB.NET track"
+  color: "cccccc"
+
+- name: "track/vimscript"
+  description: "Vim script track"
+  color: "cccccc"
+
+- name: "track/wren"
+  description: "Wren track"
+  color: "cccccc"
+
+- name: "track/x86-64-assembly"
+  description: "x86-64 Assembly track"
+  color: "cccccc"
+
+- name: "track/z3"
+  description: "Z3 track"
+  color: "cccccc"
+
+- name: "track/zig"
+  description: "Zig track"
+  color: "cccccc"
+
+- name: "type/analyzer-comments"
+  description: "Analyzer comments"
+  color: "cccccc"
+
+- name: "type/ci"
+  description: ""
+  color: "ededed"
+
+- name: "type/mentor-bios"
+  description: "Mentor bios"
+  color: "cccccc"
+
+- name: "type/mentor-notes"
+  description: "Mentor notes"
+  color: "cccccc"
