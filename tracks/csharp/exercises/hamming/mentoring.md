@@ -82,7 +82,7 @@ public static int Distance(string strand1, string strand2)
 }
 ```
 
-### A single line method using lambda operator
+### A single expression
 
 ```csharp
 public static int Distance(string first, string second) =>
