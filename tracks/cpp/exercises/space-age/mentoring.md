@@ -1,4 +1,5 @@
 ### Reasonable solutions
+
 ```cpp
 #if !defined(SPACE_AGE_H)
 #define SPACE_AGE_H
@@ -104,12 +105,14 @@ namespace space_age
 }
 ```
 ### Common suggestions
+
  * Make sure the data type is big enough to store a 33 bit value (needed for neptune)
  * Make sure the data type is consistent (constructor, class member and return type from `seconds()`)
  * Constants should be static.
  * Arguments with names that indicate the units used.
  * Use `constexpr` for the functions.
 ### Talking points
+
  * `explicit` constructor so you don't accidently do a type casting. [examples](https://en.cppreference.com/w/cpp/language/explicit).
  * Prefer initialization over assignment. [Good explanation](https://stackoverflow.com/a/7350783)
  * Being explicit about units.
