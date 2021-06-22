@@ -3,7 +3,7 @@
 - Iterators
 - Iterator Methods
 - Pattern matching
-- Modelling a problem with the type system
+- Modeling a problem with the type system
 
 ### Reasonable Solutions
 
