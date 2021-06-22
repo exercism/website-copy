@@ -12,7 +12,7 @@ A reasonable solution should do the following:
   a larger list
 - Utilize Eq for slices
 - not reimplement the functionality of the `windows` method
-- some student call 2 time the windows function instead of checking the size. For the performance point of view it's the same because the windows function do the check.
+- some students call 2 times the `windows` function instead of checking the size. From the performance point of view it's the same because the `windows` function do the check before applying the window process.
 
 ### Examples
 
