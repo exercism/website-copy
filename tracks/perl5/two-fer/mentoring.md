@@ -83,7 +83,7 @@ $cd path/to/dir
 prove -v .
 ```
 
-For a bit more information.
+For a bit more information:
 
 Do they understand what the tests tell them? Importantly, do they understand how the information is getting fed to them via `__DATA__`? They're going to need to understand that, and JSON itself to some degree, before they can totally understand what's happening.
 
