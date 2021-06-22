@@ -84,6 +84,15 @@ public static int Distance(string strand1, string strand2)
 }
 ```
 
+### A single expression
+
+```csharp
+public static int Distance(string first, string second) =>
+        strand1.Length != strand2.Length
+            ? throw new ArgumentException("Strands have different length")
+            : strand1.Zip(strand2, (nucleotide1, nucleotide2) => nucleotide1 == nucleotide2 ? 0 : 1).Sum();
+```
+
 Suggest that it might be useful to have the exceptional case handled first, as this is usually how C# methods are structured: error-handling first, than the regular implementation.
 
 The non-LINQ approach is almost twice as fast as the LINQ approach for long strands (say 1 billion letters)
