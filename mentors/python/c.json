@@ -70,5 +70,13 @@
     "link_url": null,
     "avatar_url": "https://www.gravatar.com/avatar/94f2c7b7448e27de9b811d5d5d1fed59?s=128",
     "bio": "French developper for more than 20 years in Management Systems, i was insterested in several languages and technologies like C++, Java, PHP, etc. I used Python in many projected, i admit that it offer a solution quicky to many problems."
+  },
+  {
+    "github_username": "chayandatta",
+    "name": "Chayan Datta",
+    "link_text": "github profile",
+    "link_url": "https://github.com/chayandatta",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32599474?v=4",
+    "bio": "Chayan is a Python developer with 2+ experience, he has worked on many projects and released PyPi module with 5k+ downloads. He also talks in parseltongue"
   }
 ]
