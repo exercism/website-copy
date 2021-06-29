@@ -129,7 +129,7 @@ public enum Allergen
 ##### Using hex values:
 
 ```csharp
-Flags]
+[Flags]
 public enum Allergen
 {
     None         = 0x0,
