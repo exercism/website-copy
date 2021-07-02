@@ -6,7 +6,7 @@ This is a nice, concise, very efficient solution:
 
 ```cpp
 namespace leap {
-  bool is_leap_year(const int& year)
+  bool is_leap_year(const int year)
   {
     return ((year % 4 == 0) && (year % 100 != 0)) ||
            (year % 400 == 0);
@@ -18,7 +18,7 @@ You can also use boolean XOR (which looks a little prettier) if you notice that 
 
 ```cpp
 namespace leap {
-  bool is_leap_year(const int& year)
+  bool is_leap_year(const int year)
   {
     return (year % 4 == 0) ^
            (year % 100 == 0) ^
@@ -42,3 +42,4 @@ namespace leap {
 - Meaningful argument names
 - Using `unsigned` integer types
 - `!(year % 4)` vs `year % 4 == 0`
+- Consider making the function a `constexpr` function
