@@ -1,7 +1,7 @@
 # function reuse
 
-Proper function reuse is crucial to writing maintainable code.
+Reusing a written function can help when writing maintainable code.
 
 Reuse existing functions:
-- `remaining_minutes_in_oven/1` should call `expected_minutes_in_oven/0`
-- `total_time_in_minutes/2` should call `preparation_time_in_minutes/1`
+- `remaining_minutes_in_oven/1` can reuse `expected_minutes_in_oven/0`
+- `total_time_in_minutes/2` can reuse `preparation_time_in_minutes/1`
