@@ -1,6 +1,6 @@
 # function reuse
 
-Reusing a written function can help when writing maintainable code.
+Reusing an already written function can help when writing maintainable code.
 
 Reuse existing functions:
 - `remaining_minutes_in_oven/1` can reuse `expected_minutes_in_oven/0`
