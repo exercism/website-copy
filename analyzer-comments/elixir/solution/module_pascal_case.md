@@ -9,9 +9,9 @@ Module names are always written in PascalCase in Elixir.
 ```elixir
 # PascalCase
 
-@%{expected}
+defmodule %{expected} do
 
 # not PascalCase
 
-@%{actual}
+defmodule %{actual} do
 ```
