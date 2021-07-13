@@ -2,7 +2,7 @@
 
 ## Problem and Challenges
 
-The problem asks the for the count of
+The problem asks for the count of
 unique words in a string.
 
 The solution must parse the text into words,
