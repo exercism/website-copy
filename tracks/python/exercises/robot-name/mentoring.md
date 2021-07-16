@@ -20,12 +20,6 @@ class Robot(object):
     names = set()
 
     def __init__(self):
-        self.set_name()
-
-    def reset(self):
-        self.set_name()
-
-    def set_name(self):
         while True:
             self.name = ''.join(
                 random.choices(string.ascii_uppercase, 2) + random.choices(string.digits, 3)
@@ -33,6 +27,9 @@ class Robot(object):
             if self.name not in Robot.names:
                 Robot.names.add(self.name)
                 break
+
+    def reset(self):
+        self.__init__()
 ````
 
 ## Talking Points
