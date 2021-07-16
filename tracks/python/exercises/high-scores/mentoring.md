@@ -22,10 +22,42 @@ Canonical solution using the `max()` built-in to return `personal_best()`, and r
         return sorted(scores, reverse=True)[:3]
 ```
 
+Handling the edge-case of an empty ```scores``` list under the convention that an empty list ```[]``` represents an undefined operation.
+
+An explicit approach:
+```python
+  def latest(scores):
+    try:
+      return scores[-1]
+    except IndexError:
+      return []
+  
+  def personal_best(scores):
+    try:
+      return max(scores)
+    except ValueError:
+      return []
+  
+  def personal_top_three(scores):
+    return sorted(scores, reverse=True)[:3]
+```
+
+The fact that the ```personal_top_three``` function works for an empty ```scores``` list can be leveraged for ```latest``` as well. For Python 3.4+, ```max``` has a default argument for empty iterables.
+```python
+  def latest(scores):
+    return scores[-1:]
+      
+  def personal_best(scores):
+    return max(scores, default=[])
+  
+  def personal_top_three(scores):
+    return sorted(scores, reverse=True)[:3]
+```
+
 Solution sorting in reverse order for `personal_best` and `personal_top_three`.  `personal_best()` returns index zero of the sorted scores.
 ```python
     def latest(scores):
-        return scores[-1]
+        return scores[-1:]
 
     def personal_best(scores):
         return sorted(scores, reverse=True)[0]
@@ -36,10 +68,10 @@ Solution sorting in reverse order for `personal_best` and `personal_top_three`. 
 Solution sorting without reversed. `personal_best()` returns index **-1** and `personal_top_three()` returns a slice from the right, using negative indexes.
 ```python
     def latest(scores):
-        return scores[-1]
+        return scores[-1:]
 
     def personal_best(scores):
-        return sorted(scores)[-1]
+        return sorted(scores)[-1:]
 
     def personal_top_three(scores):
         return sorted(scores)[:-4:-1]
