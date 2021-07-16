@@ -1,5 +1,13 @@
 [
   {
+    "github_username": "AronNaylor",
+    "name": "Aron Naylor",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I'm a Coud Engineer working in the DevOps space. I use Javascript professionally to develop serverless devops tools and cloud native services and solutions."
+  },
+  {
     "github_username": "AAorris",
     "name": "Aaron Morris",
     "link_text": "Website",
