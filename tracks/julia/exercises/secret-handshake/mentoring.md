@@ -95,7 +95,7 @@ end
 Samyak's solution, with a nice, simple for loop.
 
 Declaring `actions` as a const outside of the function avoids allocating it each time.
-Samyak could have declared `actions` within the function as a tuple instead, which would give the same or better performance and avoids defining a top-level constant.
+One could declare `actions` within the function as a tuple instead, which would give the same or better performance and avoids defining a top-level constant.
 
 ```julia
 const actions = ["wink", "double blink", "close your eyes", "jump"]
