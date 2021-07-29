@@ -8,11 +8,11 @@
     "bio": "Did Prolog professionally a long time ago. Still think its the best language in the world!"
   },
   {
-  "github_username": "teto1992",
-  "name": "Stefano Forti",
-  "link_text": "Personal site",
-  "link_url": "http://pages.di.unipi.it/forti/",
-  "avatar_url": "http://pages.di.unipi.it/forti/assets/images/profile.jpg",
-  "bio": "Post-doc researcher and Pisa CoderDojo founder and mentor. I use Prolog for fast (and clean!) prototyping of my research and fun ideas. I really enjoy mentoring people in improving their programming skills!"
-}
+    "github_username": "teto1992",
+    "name": "Stefano Forti",
+    "link_text": "Personal site",
+    "link_url": "http://pages.di.unipi.it/forti/",
+    "avatar_url": "http://pages.di.unipi.it/forti/assets/images/profile.jpg",
+    "bio": "Post-doc researcher and Pisa CoderDojo founder and mentor. I use Prolog for fast (and clean!) prototyping of my research and fun ideas. I really enjoy mentoring people in improving their programming skills!"
+  }
 ]
