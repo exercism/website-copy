@@ -79,9 +79,13 @@ public class Allergies
 
 - Instead of manually iterating over allergies, suggest to use LINQ.
 - The `List()` method should use the `IsAllergicTo()` method in its implementation, to prevent duplication of logic.
+  - Duplication is bad because it violates the [DRY Principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)  
 - The list of allergies can be created using `Enum.GetValues(typeof(Allergen))`, which does require a type cast to be able to work with it.
 - Although not strictly necessary, it is good practice to decorate the `Allergen` enumeration with the `[Flags]` attribute, to indicate that it can hold multiple values at once.
+  - [FlagsAttribute documentation](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute) 
 - When storing the `mask` constructor parameter as a field, that field can be made `readonly` as it will never change.
+- When comparing with the `mask` use the `Enum.HasFlags` method as it is more idiomatic than the bitwise compare to an int
+  - See the [Enum.HasFlag documentation](https://docs.microsoft.com/en-us/dotnet/api/system.enum.hasflag) 
 
 ### Talking points
 
