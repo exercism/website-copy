@@ -85,7 +85,7 @@ public class Allergies
   - [FlagsAttribute documentation](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute) 
 - When storing the `mask` constructor parameter as a field, that field can be made `readonly` as it will never change.
 - When comparing with the `mask` use the `Enum.HasFlags` method as it is more idiomatic than the bitwise compare to an int
-  - See the [Enum.HasFlag documentation](https://docs.microsoft.com/en-us/dotnet/api/system.enum.hasflag) 
+  - [Enum.HasFlag documentation](https://docs.microsoft.com/en-us/dotnet/api/system.enum.hasflag) 
 
 ### Talking points
 
