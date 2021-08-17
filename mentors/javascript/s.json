@@ -71,5 +71,13 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "JavaScript is awesome because of all the flexible solutions it allows! Catch me writing functional JS. I'm a software engineer of a production GraphQL API written in NodeJS."
+  },
+  {
+    "github_username": "serzn1",
+    "name": "Sergei Babin",
+    "link_text": "GitHub Profile",
+    "link_url": "https://github.com/serzn1/",
+    "avatar_url": "https://avatars.githubusercontent.com/serzn1",
+    "bio": "JavaScript is the main language of the web. Ready to share my 15+ years of experience."
   }
 ]
