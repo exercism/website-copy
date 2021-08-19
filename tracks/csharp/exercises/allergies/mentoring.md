@@ -84,8 +84,7 @@ public class Allergies
 - Although not strictly necessary, it is good practice to decorate the `Allergen` enumeration with the `[Flags]` attribute, to indicate that it can hold multiple values at once.
   - [FlagsAttribute documentation](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute) 
 - When storing the `mask` constructor parameter as a field, that field can be made `readonly` as it will never change.
-- When comparing with the `mask` use the `Enum.HasFlags` method as it is more idiomatic than the bitwise compare to an int
-  - [Enum.HasFlag documentation](https://docs.microsoft.com/en-us/dotnet/api/system.enum.hasflag) 
+- When comparing with the `mask` use the [`Enum.HasFlags` method]((https://docs.microsoft.com/en-us/dotnet/api/system.enum.hasflag) ) as it is more idiomatic than the bitwise compare to an int
 
 ### Talking points
 
