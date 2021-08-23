@@ -70,5 +70,14 @@
     "link_url": "https://nahua.dev",
     "avatar_url": null,
     "bio": "I am a self-taught programmer with a background in liberal arts. I work with Python professionally in the intersection between software development and deep learning. In my spare time, I also play with Go, Rust, and Swift."
+  },
+  {
+    "github_username": "Nishant-Mishra",
+    "name": "scic0",
+    "link_text": null,
+    "link_url": null,
+    "avatar_url": null,
+    "bio": "I am a Embedded Software Developer by profession. I came in touch with Python from various test setups and automated testing jigs/scripts, which I created for testing the embedded firmware. Now I am developing in Python part-time since last 5 years."
   }
+
 ]
