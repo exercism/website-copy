@@ -1,7 +1,7 @@
 # pylint refactor
 
 **Line %{lineno}** [ _%{code}_ ]  :  %{message}.
- Was reported.
+ Was reported by Pylint.
 
 This code is emitting a [`code smell`][code smell], and may be in need of
 a re-write or refactor.

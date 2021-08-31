@@ -1,7 +1,7 @@
 # pylint convention
 
 **Line %{lineno}** [ _%{code}_ ]  :  %{message}.
- Was reported.
+ Was reported by Pylint.
 
 Which means this code doesn't follow general [`code style`][PEP8] conventions.
 While this type of issue generally doesn't affect the way code _executes_, it can hurt
