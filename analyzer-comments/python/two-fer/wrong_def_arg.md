@@ -1,1 +1,1 @@
-A value other than 'you' is used as a default argument.
+A value other than 'you' is being used as a default argument.

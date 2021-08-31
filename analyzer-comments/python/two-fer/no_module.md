@@ -1,4 +1,4 @@
 # missing module or misnamed file
 
-We were unable to find a file called `two_fer.py` in your file path.
-Without the file, we cannot run an analysis of your solution.
+We were unable to find a file called `two_fer.py` in the file path.
+Without the file, an analysis of the solution cannot be performed.

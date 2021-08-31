@@ -1,2 +1,4 @@
-String concatenation with the + operator is a valid approach, but f-strings
-and str.format offer more functionality and elegant solutions.
+String concatenation with the + operator is a valid approach, but it can create maintenance and readability issues.
+Using the method [`str.format()`](https://docs.python.org/3/library/stdtypes.html#str.format) or [`f-strings`](https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals) (_AKA `formatted string literals` or `interpolated strings`_) can offer options that improve maintainability and make variable replacement within strings clearer.
+
+The blog post [String Formatting in Python](https://realpython.com/python-string-formatting/) is a good starting point for understanding all of Python's string formatting options, and [Newer Python String Format Techniques](https://realpython.com/python-formatted-output/) also provides some good tips and tricks for using `str.format()` and `f-strings`.
