@@ -1,9 +1,6 @@
 # pylint informational
 
-PyLint is reporting that it has found an error or problem in the code that needs to be addressed.
+**Line %{lineno}** [ _%{code}_ ]  :  %{message}.
+ Was reported by Pylint.
 
-On line #%{lineno}, %{code} was reported:  %{message}.
-
-For more information on PyLint and PyLint checker message code %{code} see:
-
-* [Pylint Checker Options and Switches](http://pylint.pycqa.org/en/latest/technical_reference/features.html#pylint-checkers-options-and-switches)
+This code has an error or problem that should be addressed.
