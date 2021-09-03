@@ -11,7 +11,7 @@ Variable names are always written in snake_case in Elixir.
 
 %{expected}
 
-# not snake_case
+# not camelCase
 
 %{actual}
 ```
