@@ -11,7 +11,7 @@ We shouldn't require the mutating-a-dict strategy because it's actually pretty s
 
 (Formatted so you can copy and paste easily)
 
-- Btw, you can initialise the Dict with a generator, if you like: \`Dict(base => 0 for base in "ACGT")\`
+- Btw, you can initialise the Dict with a generator, if you like: \`Dict(base => 0 for base in "ACGT")\`. You could also use broadcasting: \`Dict(collect("ACGT") .=> 0)\`.
 - In Julia, the properties of objects are generally considered private unless documented otherwise, so we generally prefer \`value in keys(dict)\` or \`haskey(dict, value)\` over \`value in dict.keys\`
 
 
