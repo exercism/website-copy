@@ -70,7 +70,7 @@ input.split('\n')
     )
   })
 ```
- -If a student try to do everything inside the constructor suggest on them to defer calculations to getters as they are supposed to defer the cost of calculating the value until it is needed. If the value never needed, you never pay the cost.[[2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)] 
+- If a student tries to implement everything inside a constructor, suggest on them to defer calculations to getters as they are supposed to defer the cost of calculating the result until it is needed. [[2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)] 
 
 ## Talking points
 - Functions are first class citizens, so you can pass one to `Array#map` and it executes on each one
