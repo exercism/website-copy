@@ -1,106 +1,23 @@
 # Mentoring
 
-## Reasonable solutions
-
-### Using for loop iteration
-
-```java
-class BirdWatcher {
-    private int[] birdsPerDay;
-
-    public BirdWatcher(int[] birdsPerDay) {
-        this.birdsPerDay = birdsPerDay;
-    }
-
-    public int[] getLastWeek() {
-        return birdsPerDay;
-    }
-
-    public int getToday() {
-        return birdsPerDay.length > 0 ? birdsPerDay[birdsPerDay.length - 1] : 0;
-    }
-
-    public int incrementTodaysCount() {
-        return ++birdsPerDay[birdsPerDay.length - 1];
-    }
-
-    public boolean hasDayWithoutBirds() {
-        for (int dailyBirdCount : birdsPerDay) {
-            if (dailyBirdCount == 0) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public int getCountForFirstDays(int numberOfDays) {
-        int visitingBirdsCount = 0;
-        for (int i = 0; i < Math.min(numberOfDays, birdsPerDay.length); i++) {
-            visitingBirdsCount += birdsPerDay[i];
-        }
-        return visitingBirdsCount;
-    }
-
-    public int getBusyDays() {
-        int busyDaysCount = 0;
-        for (int dailyBirdCount : birdsPerDay) {
-            if (dailyBirdCount >= 5) {
-                busyDaysCount++;
-            }
-        }
-        return busyDaysCount;
-    }
-}
-```
-
-## Using streams
-
-```java
-import java.util.Arrays;
-
-class BirdWatcher {
-    private final int[] birdsPerDay;
-
-    public BirdWatcher(int[] birdsPerDay) {
-        this.birdsPerDay = birdsPerDay;
-    }
-
-    public int[] getLastWeek() {
-        return birdsPerDay;
-    }
-
-    public int getToday() {
-        return birdsPerDay.length == 0 ? 0 : birdsPerDay[birdsPerDay.length - 1];
-    }
-
-    public int incrementTodaysCount() {
-        return ++birdsPerDay[birdsPerDay.length - 1];
-    }
-
-    public boolean hasDayWithoutBirds() {
-        return Arrays.stream(birdsPerDay).anyMatch(birds -> birds == 0);
-    }
-
-    public int getCountForFirstDays(int numberOfDays) {
-        return Arrays.stream(birdsPerDay, 0, Math.min(birdsPerDay.length, numberOfDays))
-            .sum();
-    }
-
-    public int getBusyDays() {
-        return (int) Arrays.stream(birdsPerDay).filter(this::isBusyDay).count();
-    }
-
-    private boolean isBusyDay(int birds) {
-        return birds >= 5;
-    }
-}
-```
-
 ## Common suggestions
 
-- Leverage common Java libraries like `Math.min`
+- Since the exercise is about using arrays, for loops and for-each loops, nudge them towards solutions that match the exemplar.
+- In particular, although this exercise *could* be solved using Streams, the purpose here is to use for loops.
 
 ## Talking points
+
+### IndexOutOfBoundsException
+
+At least one of the methods checks for edge cases or they will get this exception.
+This is a good chance to talk about what happens if you try to select data from outside of the array's bounds.
+In fact, there is a second method that also has this problem, but does not require them to handle it to pass tests: `incrementTodaysCount`.
+
+### Helpful Java libraries
+
+This can be a good time to bring up the fact that there are many helpful Java libraries, for example: `Math.min`.
+Obviously this is only for their benefit to learn more about the types of libraries that Java has to offer.
+Linking them to the Javadoc can also be useful: [`Math.min`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(int,int))
 
 ### Defensive copying
 
