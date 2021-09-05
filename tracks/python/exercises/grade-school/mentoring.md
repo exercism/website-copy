@@ -71,7 +71,7 @@ class School:
     def add_student(self, name, grade):
         insort(self._db, (grade, name))
 
-    def roster(self, num):
+    def roster(self):
         return [n for _, n in self._db]
 
     def grade(self, grade_number):
