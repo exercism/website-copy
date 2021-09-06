@@ -27,6 +27,18 @@ default behaviour. Splitting the string per character can be done using the
 `string` descructuring `[...string]` or `.split('')`. Since we're only dealing
 with numbers, both are equally fine.
 
+The studen could also opt to use a mathematical approach to get the array of digits since
+it typically has much faster run time: 
+
+```javascript
+let digits = [];
+while (number >= 1) {
+  const lastDigit = number % 10;
+  number = (number / 10) | 0;
+  digits.push(lastDigit);
+}
+``` 
+
 The final result, depending on the rest of the code, does **not** need to be
 converted back to an `array` of numbers, but it's probably _cleaner_ to do so.
 
@@ -49,3 +61,5 @@ callback.
 - Instead of using `.map(n => +n)`, the `Number` function can be passed in,
   without an anonymous function: `.map(Number)`.
 - Bookkeeping variables such as `result` are unnecessary. Suggest `.reduce`.
+- if a student uses the mathematical way to get the array of digits; and mentions run time, 
+  we might as well remind the student that **push** is faster than **unshift**, if **unshift** was used.
