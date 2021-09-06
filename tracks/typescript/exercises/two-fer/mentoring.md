@@ -12,24 +12,32 @@ the `.test` files. It's supposed to teach students:
 There is only one reasonable form of solution, where the method of exporting or
 defining the function can be different.
 
-### Static method on a class
+### Inline export of a function
 
 ```typescript
-export default class TwoFer {
-  static twoFer(name: string = 'you'): string {
-    return `One for ${name}, one for me.`
-  }
+export function twoFer(name: string = 'you'): string {
+  return `One for ${name}, one for me.`
 }
 ```
 
-### Property on the default export object
+### Inline export of a constant
 
 ```typescript
-export default {
-  twoFer(name: string = 'you'): string {
-    return `One for ${name}, one for me.`
-  }
+export const twoFer = (name: string = 'you'): string => {
+  return `One for ${name}, one for me.`
 }
+```
+
+Variants such as implicit return are allowed too.
+
+### Separate export
+
+```typescript
+function twoFer(name: string = 'you'): string {
+  return `One for ${name}, one for me.`
+}
+
+export { twoFer }
 ```
 
 ### Approvability
