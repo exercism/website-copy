@@ -7,11 +7,11 @@
 Module names are always written in PascalCase in Elixir.
 
 ```elixir
-# PascalCase
+# this is PascalCase
 
 defmodule %{expected} do
 
-# not PascalCase
+# this is not PascalCase
 
 defmodule %{actual} do
 ```
