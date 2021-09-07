@@ -7,11 +7,11 @@
 Variable names are always written in snake_case in Elixir.
 
 ```elixir
-# snake_case
+# this is snake_case
 
 %{expected}
 
-# not snake_case
+# this is not snake_case
 
 %{actual}
 ```
