@@ -46,6 +46,6 @@ With `scan`, you avoid the multiple iteration. You also got rid of the intermedi
 - `/\b[a-zA-Z]/` # only returns first letters, not `_` (but completely ignores words starting with `_`)
 - `\b[[:alpha:]]/` # same
 - `/\b\w/` # close enough; but it would return `_` as a first 'word character'
-- `/\b[[:word]]/` # same
+- `/\b[[:word:]]/` # same
 - `/(?<!\p{Alpha})\p{Alpha}/` # finds first letters even with underscores in front of them (Note: we don't have tests for this case. The only reason we test for `'` is to ensure that `split` is not a equally good choice.)
 - `/(?:\b|_)([[:alpha:]])/` # finds first letters even with underscores before and throughout, e.g., ""_Ruby_On_Rails_" as "ROR" and I10N as "I"
