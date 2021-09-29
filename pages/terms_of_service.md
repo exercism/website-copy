@@ -1,19 +1,19 @@
 # Terms of Service
 
-Last Revised: April 2019
+Last Revised: September 2021
 
 ## Overview
 
-Exercism (also referred to as exercism.io) is an online platform designed to help you improve your coding skills through practice and mentorship.
+Exercism (also referred to as exercism.org) is an online platform designed to help you improve your coding skills through practice and mentorship.
 
-Our platform comprises of a web site is located at https://exercism.io (and associated subdomains) and a command line application (CLI).
+Our platform comprises of a web site located at https://exercism.org (and associated subdomains) and a command line application (CLI).
 
-Exercism is run and managed by Exercism, a not-profit-company. The following Terms of Service (these **Terms**) are an agreement between **Exercism** and you, and govern your permitted use of our **Platform**.
+Exercism is run and managed by Exercism, a not-for-profit company. The following Terms of Service (these **Terms**) are an agreement between **Exercism** and you, and govern your permitted use of our **Platform**.
 
 You might also want to read:
 
-- Our [Privacy Policy](https://exercism.io/privacy)
-- Our community [Code of Conduct](https://exercism.io/code-of-conduct)
+- Our [Privacy Policy](https://exercism.org/privacy)
+- Our community [Code of Conduct](https://exercism.org/code-of-conduct)
 
 Our general approach should be fairly straightforward to understand:
 
@@ -32,22 +32,22 @@ operational, but we cannot offer any guarantees of this.
 
 ## In detail
 
-Exercism is run and managed by Exercism ("We", "Us"), a not-profit-company registered in the UK with Company Number 11733062. The following Terms of Service (these **Terms**) are an agreement between **Exercism** and you, and governs your permitted use of our **Platform**.
+Exercism is run and managed by Exercism ("We", "Us"), a not-for-profit company registered in the UK with Company Number 11733062. The following Terms of Service (these **Terms**) are an agreement between **Exercism** and you, and governs your permitted use of our **Platform**.
 
 Any clause headings, numbers, and/or emphasis in these Terms are for ease of reference only and shall not be taken into account in the construction or interpretation of the clauses to which they refer.
 
 If any provision of these Terms is found to be illegal, void or unenforceable, then that provision shall be deemed severable from these Terms and shall not affect the validity and enforceability of any remaining provisions of these Terms.
 
-We reserve the right to modify these Terms at any time by posting revised Terms on https://exercism.io. These Terms apply to all who access or use our Platform, registered or otherwise.
+We reserve the right to modify these Terms at any time by posting revised Terms on https://exercism.org. These Terms apply to all who access or use our Platform, registered or otherwise.
 
-Any personal information submitted to our Platform is subject to our [Privacy Policy](https://exercism.io/privacy).
+Any personal information submitted to our Platform is subject to our [Privacy Policy](https://exercism.org/privacy).
 
 ### Definitions
 
 - Track(s) - a programming language track on Exercism, a collection of exercises and a group of Mentors who provide feedback on Solutions.
 - Solution(s) - code that is submitted by our Users (posted on Exercism) as a solution to an exercise in a track.
 - Iteration - a particular version, or revision, of an individual's Solution.
-- Feedback - feedback given by a Mentor or other User relating to a Solution that a User has posted on Exercism.
+- Feedback - comments given by a Mentor or other User relating to a Solution that a User has posted on Exercism.
 - Mentor - a User of Exercism who provides Feedback on Solutions. A Mentor belongs to a Track. Individual users may be students on one track and mentors on another.
 - User(s) - any user of the Exercism Platform, whether signed up or not.
 - User Contributed Content - any content that Users post to our Platform.
@@ -205,5 +205,5 @@ By using our Platform or communicating generally with Us, You agree that we may 
 
 If it is brought to our attention that there is any security breach, We may attempt to notify You electronically by posting a notice on the Site or sending an email to You.
 
-Within our Platform we invite you to configure your notification preferences describing what and when you
-would like us to contact us you about.
+Within our Platform we invite you to configure your notification preferences describing what you would like us to contact you about and when
+you would like to be contacted.
