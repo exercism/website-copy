@@ -1,5 +1,10 @@
 # defmacro with `_is` and question mark
 
+[comment]: # (requires 3 params:)
+[comment]: # (- actual: the incorrect name that the student used)
+[comment]: # (- option1: the correct name for functions)
+[comment]: # (- option2: the correct name for guards)
+
 Elixir has specific naming conventions which include how to name [functions that return booleans](https://hexdocs.pm/elixir/naming-conventions.html#trailing-question-mark-foo) and [functions that return booleans and are valid in guard clauses](https://hexdocs.pm/elixir/naming-conventions.html#is_-prefix-is_foo):
 
 > Functions that return a boolean are named with a trailing question mark.
