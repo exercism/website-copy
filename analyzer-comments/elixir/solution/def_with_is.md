@@ -18,4 +18,4 @@ Elixir has specific naming conventions which include how to name [functions that
 %{actual}
 ```
 
-Note that functions that return booleans and are valid in guards follow another convention and are named with a `is_` prefix (`defguard is_foo`). Both conventions must not mix.
+Note that guards, some built-in functions and macros that return booleans and are valid in guards follow another convention and are named with a `is_` prefix (`def is_integer`, `defguard is_foo`, `defmacro is_foo`). Both conventions must not mix.
