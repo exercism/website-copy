@@ -1,5 +1,7 @@
 # do not use `div`/`rem`
 
-Sieve algorithm should mark multiples of a prime number as composite.
-While `div` and `rem` can be used to check for this, try to find these numbers by multiplying your prime.
-[`Enum.chunk_every/2`](https://hexdocs.pm/elixir/Enum.html#chunk_every/2)  might be useful to partition your sieve.
+Like the instructions mention, the purpose of this exercise is to build a Sieve of Eratosthenes without the use of operations such as division or modulo division.
+Please refer to the [Wikipedia link](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) for a description of the algorithm.
+
+Building the Sieve of Eratosthenes in an immutable language such as Elixir may feel a bit unnatural,
+but it is a beautiful algorithm invented more than two millennia ago that is worth learning and implementing.
