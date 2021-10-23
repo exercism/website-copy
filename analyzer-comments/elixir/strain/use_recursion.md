@@ -1,3 +1,3 @@
 # use recursion
 
-The purpose of this exercise is to practice recursion. Solve it without using list comprehensions, `Enum.filter/2` and `Enum.reject/2` functions.
+As the instructions mention, you should implement `keep/2` and `discard/2` without the use of `Enum.filter/2`, `Enum.reject/2`. Also avoid their `Stream` equivalents and list comprehensions.
