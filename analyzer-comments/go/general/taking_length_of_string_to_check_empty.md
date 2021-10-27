@@ -1,4 +1,3 @@
 # taking length of string to check empty
 
-Rather than declaring the variable `%{name}` first, and then assigning a value to it afterwards, 
-it is more common to declare and assign in a single statement.
+It is not necessary to determine the length of the variable `%{name}`. To find out if a string is empty, check whether it is equal to an empty string.
