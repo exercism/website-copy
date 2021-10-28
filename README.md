@@ -35,3 +35,6 @@ Here's an example for [Ruby's Isogram](https://github.com/exercism/website-copy/
 ![Create a new file](http://g.recordit.co/96zCDgEkfG.gif)
 
 </details>
+
+
+                       Thanks for reading
