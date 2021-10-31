@@ -4,7 +4,7 @@
 ```kotlin
 object ScrabbleScore {
     fun scoreWord(input: String): Int =
-            input.toUpperCase().sumBy {
+            input.uppercase().sumOf {
                 when (it) {
                     'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T' -> 1
                     'D', 'G' -> 2
@@ -23,4 +23,4 @@ object ScrabbleScore {
 * Use `when` instead of nested `if` expressions
 * In the `when` expression, group letters with the same value instead of creating one row per letter 
 * Remember to convert the letters to uppercase or compare with both lower and uppercase
-* You can use `sumBy` on the input string, or combine `map` and `sum`
+* You can use `sumOf` on the input string, or combine `map` and `sum`
