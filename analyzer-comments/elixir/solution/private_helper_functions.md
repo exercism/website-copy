@@ -6,7 +6,7 @@
 
 The public interface of a codebase should be carefully considered. Each public function increases long term maintenance cost because it can be used anywhere in the project. The more times a function is used, the more work it takes to change that function.
 
-In this exercise, the public interface has already been provided by the stub file. All other functions should be private.
+In every Exercism exercise, the public interface is defined by the test suite. If a function is being tested, it needs to the public. All other functions should be private.
 
 ```elixir
 # this is a private function
