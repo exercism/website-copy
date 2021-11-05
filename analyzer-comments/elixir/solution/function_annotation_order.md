@@ -5,7 +5,7 @@
 [comment]: # (- actual: The incorrect order that the student used)
 
 
-There is not a correct order between the `@doc` and `@spec` modules attributes. But the elixir community convention is to use `@doc` first and `@spec` next to the function  
+Developers can choose the order of the `@doc` and `@spec` modules attributes, but the Elixir community convention is to use `@doc` first and `@spec` next to the function.
 
 ```elixir
 # recommended order
