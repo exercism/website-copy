@@ -18,4 +18,4 @@ In every Exercism exercise, the public interface is defined by the test suite. I
 %{actual}
 ```
 
-Note that when writing a library, it is often necessary to make functions public for use among modules. To hide such functions from the documentation and from library users, add `@doc false` before each function definition.
+Note that when writing a library, it is often necessary to make functions public for use among modules. To hide such functions from the documentation, add `@doc false` before the function definitions or `@moduledoc` false to hide the whole module.
