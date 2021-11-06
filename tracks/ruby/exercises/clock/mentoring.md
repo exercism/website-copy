@@ -1,7 +1,7 @@
 # Mentoring
 
 Clock introduces students to the concept of **value objects** and **[modular
-arithmetic](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)**.
+arithmetic][modular-arithmetic]**.
 
 **Note:** This exercise changes a lot depending on which version the person has solved.
 
@@ -46,10 +46,10 @@ end
 A good solution should have the following:
 
 * Store a single quantity
-* Implement [value-object semantics](https://www.sitepoint.com/value-objects-explained-with-ruby/) (immutability, `==`/`hash`/`eql?` by value)
+* Implement [value-object semantics][value-object-semantics] (immutability, `==`/`hash`/`eql?` by value)
 * Not store more than a day's worth of time
 * Use `protected` to allow access to another instance’s `time` in `==` without making the attributes public.
-- Use constants instead of [magic numbers](https://refactoring.guru/replace-magic-number-with-symbolic-constant).
+* Use constants instead of [magic numbers][magic-numbers].
 
 ## Mentoring flow
 
@@ -139,11 +139,8 @@ Times and dates in particular are usually defined this way. You define some zero
 point (sometimes called the _epoch_) and store a single counter since then. Some
 examples of this approach include:
 
-* [UNIX timestamps](http://unixtimestamp.50x.eu/about.php) measure date-times as
-  the number of milliseconds since midnight on January 1st 1970.
-* [Postgres time-of-day](https://www.postgresql.org/docs/current/static/datatype-datetime.html)
-stores the number of microseconds since midnight (very similar problem to
-`Clock` but with higher precision)
+* [UNIX timestamps][UNIX-timestamps] measure date-times as the number of milliseconds since midnight on January 1st 1970.
+* [Postgres time-of-day][Postgres-time-of-day] stores the number of microseconds since midnight (very similar problem to `Clock` but with higher precision)
 
 **Math**
 
@@ -200,8 +197,7 @@ immutable clock returns
 
 > Event duration: 10:30 - 12:00
 
-[Value objects](https://www.sitepoint.com/value-objects-explained-with-ruby/)
-like `Clock` should almost always be immutable to prevent this sort of bug.
+[Value objects][value-objects] like `Clock` should almost always be immutable to prevent this sort of bug.
 Bonus points if you `#freeze` in the constructor.
 
 ### modulo vs remainder
@@ -252,3 +248,9 @@ read it in a different form. The following pattern:
 is very common in software. Discuss the difference between human representation
 of data and data that is easy to work with.
 
+[Postgres-time-of-day]: https://www.postgresql.org/docs/current/static/datatype-datetime.html
+[UNIX-timestamps]: https://web.archive.org/web/20200412172800/http://unixtimestamp.50x.eu/about.php
+[magic-numbers]: https://refactoring.guru/replace-magic-number-with-symbolic-constant
+[modular-arithmetic]: https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic
+[value-object-semantics]: https://www.sitepoint.com/value-objects-explained-with-ruby/
+[value-objects]: https://www.sitepoint.com/value-objects-explained-with-ruby/
