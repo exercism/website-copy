@@ -54,3 +54,7 @@ end
 - Using the `prime` library rather than manually calculating doesn't make sense if we consider that prime is only suggested via examples given, but not by specification, as the specification stated is "factors".
 - Using `select`.
 - Not needing `("")` on the `join`
+
+## Changelog
+
+- 2021 Nov - Markdown adjustment to style guide (sentences and links)
