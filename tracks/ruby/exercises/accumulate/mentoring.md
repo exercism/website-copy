@@ -1,12 +1,11 @@
 # Mentoring
 
-This exercise is asking you to re-implement `Array#map`. The goal is to get a
-feel for what's happening under the hood.
+This exercise is asking you to re-implement `Array#map`.
+The goal is to get a feel for what's happening under the hood.
 
 ## Reasonable Solutions
 
-There are 4 general classes of solutions that fall in a matrix
-`(functional | imperative) X ( high-level | low-level)`.
+There are 4 general classes of solutions that fall in a matrix `(functional | imperative) X ( high-level | low-level)`.
 
 ```ruby
 # High-level functional
@@ -62,6 +61,7 @@ end
 ```
 
 ### Talking Points
+
 - Block syntax (`yield` vs `block.call`)
 - All `Enumerable` methods can be implemented in terms of `each` or `reduce`
 - High vs low-level approaches
@@ -72,6 +72,8 @@ end
 Note that the student should _not_ use `Array#map` here as that defeats the
 purpose of this exercise. From the instructions:
 
-> Keep your hands off that collect/map/fmap/whatchamacallit functionality
-> provided by your standard library! Solve this one yourself using other basic
-> tools instead.
+> Keep your hands off that collect/map/fmap/whatchamacallit functionality provided by your standard library!
+> Solve this one yourself using other basic tools instead.
+
+## Changelog
+
