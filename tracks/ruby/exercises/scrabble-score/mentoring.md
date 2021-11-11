@@ -15,6 +15,7 @@ class Scrabble
   ].flat_map { |letters, score|
     letters.map { |letter| [letter, score] }
   }.to_h
+
   private_constant :LETTERS
 
   def self.score(word)
@@ -30,11 +31,13 @@ class Scrabble
   end
 
   private
+
   attr_reader :letters
 end
 ```
 
 Some mentors also prefer a more complicated MultiKeyHash class:
+
 ```ruby
 class Scrabble
   class MultiKeyHash
@@ -49,6 +52,7 @@ class Scrabble
     end
 
     private
+
     attr_reader :exploded
   end
 
@@ -62,5 +66,9 @@ class Scrabble
     %w[Q Z]                 => 10
   )
 
-  ...
+  # The rest of the class
 ```
+
+## Changelog
+
+- 2021 Nov - Markdown adjustment to style guide (sentences and links)
