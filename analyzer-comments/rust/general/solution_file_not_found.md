@@ -1,3 +1,3 @@
 # solution file not found
 
-Solution file `src/lib.rs` was not found.
+The solution file (`src/lib.rs`) could not be found.
