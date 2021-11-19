@@ -78,13 +78,5 @@
     "link_url": null,
     "avatar_url": null,
     "bio": "I have 3 years experience in Python and still learning to improve. I currently work as a cloud automation engineer at Maersk in Copenhagen, Denmark. I am here to help you succeed in your python journey!" 
-  },
-  {
-    "github_username": "thejoycekung",
-    "name": "Joyce Kung",
-    "link_text": "LinkedIn",
-    "link_url": "https://www.linkedin.com/in/thejoycekung",
-    "avatar_url": null,
-    "bio": "I started learning Python a couple years ago (on Exercism!) to get a new, simple, goto language to replace Bash/C++. Looking forward to giving back to this community and helping people learn!"
   }
 ]
