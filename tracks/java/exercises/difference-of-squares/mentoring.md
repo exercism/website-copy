@@ -78,8 +78,6 @@ class DifferenceOfSquaresCalculator {
 Solution based on the closed-form formula:
 
 ```java
-import java.util.stream.IntStream;
-
 public final class DifferenceOfSquaresCalculator {
 
     public int computeSquareOfSumTo(int n) {
