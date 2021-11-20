@@ -9,4 +9,4 @@ Example:
     """
     @spec count(list(any())) :: integer()
     def count(list), do: length(list)
-```elixir
+```
