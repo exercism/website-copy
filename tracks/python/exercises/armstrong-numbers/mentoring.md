@@ -57,4 +57,4 @@ def is_armstrong(number):
     return number == total
 ```
 
-Suggest the students have a look at Python's [built-in functions](https://docs.python.org/3/library/functions.html) for a helper function that can make this easier.
+Suggest having a look at Python's [built-in functions](https://docs.python.org/3/library/functions.html) for a helper function that can make this easier.
