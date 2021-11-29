@@ -2,7 +2,7 @@
 
 ## Problem and challenges
 
-The problem requires the student to sum each digit of a number raised to the (length of number) power.
+The problem requires the student to sum each digit of an integer or _natural number_ raised to the number of digits' power.
 
 ## Reasonable solutions
 
