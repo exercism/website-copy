@@ -17,7 +17,7 @@ def is_armstrong(number):
 ```
 
 This may also be written without the generator.
-This avoid the more complex generator type at the expense of a more complex the sum line.
+This avoids the more complex generator type at the expense of a more complex sum line.
 
 ```python
 def is_armstrong(number):
