@@ -50,7 +50,8 @@ class Character:
         self.hitpoints = 10 + modifier(self.constitution)
 ```
 
-Note the attribution declaration, `self.constitution: int`. Without this line, pylint will complain, `Instance of 'Character' has no 'constitution' member (no-member)`.
+Note the attribution declaration, `self.constitution: int`.
+Without this line, pylint will complain; `Instance of 'Character' has no 'constitution' member (no-member)`.
 
 ### Removing a min value
 
