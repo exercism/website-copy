@@ -46,7 +46,7 @@ Potential feedback snippet:
 
 ### Talking points
 
-Students unfamiliar with `sum()` may use a for loop and sum up the values themselves:
+Students unfamiliar with `sum()` may use a for loop to add the values themselves:
 
 ```python
 def is_armstrong(number):
