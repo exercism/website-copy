@@ -36,7 +36,7 @@ def is_armstrong(number):
 
 Often students are unaware of [generator expressions](https://www.python.org/dev/peps/pep-0289/) and that they can be passed directly to functions that accept iterables.
 The code above uses a generator expression to build a list then iterates through the list.
-The middle step of a temporarily list is not needed.
+The middle step of a temporary list is not needed.
 
 Potential feedback snippet:
 
