@@ -6,7 +6,7 @@ The problem requires the student to sum each digit of an integer or _natural num
 
 ## Reasonable solutions
 
-This exercise can be solved fairly straight forward:
+This exercise can be solved in a fairly straightforward fashion:
 
 ```python
 def is_armstrong(number):
