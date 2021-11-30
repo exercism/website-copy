@@ -16,7 +16,7 @@ def is_armstrong(number):
     return number == total
 ```
 
-This may also be written without the generator.
+This solution can also be written without the generator.
 This avoids the more complex generator type at the expense of a more complex sum line.
 
 ```python
