@@ -4,9 +4,9 @@ Developers can choose the order of the `@doc` and `@spec` modules attributes, bu
 
 Example:
 ```elixir
-    @doc """
-    This function counts the number elements in a list
-    """
-    @spec count(list(any())) :: integer()
-    def count(list), do: length(list)
+@doc """
+This function counts the number elements in a list
+"""
+@spec count(list(any())) :: integer()
+def count(list), do: length(list)
 ```
