@@ -37,7 +37,7 @@ def is_armstrong(number):
     # With a generator expression passed to sum
     total = sum(digit ** count for digit in digits)
 
-Students are often unaware of [generator expressions](https://www.python.org/dev/peps/pep-0289/) and that they can be passed directly to functions that accept iterables.
+Students are often unaware of [generator expressions][pep-289] and that they can be passed directly to functions that accept iterables.
 The first line uses a comprehension to build a `list`  for `sum()` to iterate through.
 The middle step of a temporary list takes up space in memory and is not needed.
 The second line shows the `list` replaced by an equivalent `generator expression` that `sum()` can also iterate through. 
@@ -61,4 +61,7 @@ def is_armstrong(number):
     return number == total
 ```
 
-Suggest having a look at Python's [built-in functions](https://docs.python.org/3/library/functions.html) for a helper function that can make this easier.
+Suggest having a look at Python's [built-in functions][functions] for a helper function that can make this easier.
+
+[functions]: https://docs.python.org/3/library/functions.html
+[pep-289]: https://www.python.org/dev/peps/pep-0289/

@@ -39,8 +39,9 @@ def is_leap_year(year):
 
 
 ## Talking points
-- it's very helpful to internalize the rules Python uses for [expression order](https://docs.python.org/3/reference/expressions.html#evaluation-order)
+- it's very helpful to internalize the rules Python uses for [expression order][evaluation-order]
 - remember that **and** and **or** do not return **bool**, but instead:
   - **and** returns either the first term that is *considered* False, or the last term that is *considered* True
   - **or** returns either the first term that is *considered* True, or the last term that is *considered* False
 
+[evaluation-order]: https://docs.python.org/3/reference/expressions.html#evaluation-order

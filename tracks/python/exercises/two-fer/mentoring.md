@@ -19,7 +19,7 @@ def two_fer(name='you'):
 ## Common Suggestions
 
 - Suggest using a default value instead of any form of conditionals.
-- If the student is using Python 3? Suggest [Literal String Interpolation introduced with Python 3.6](https://www.python.org/dev/peps/pep-0498/).
+- If the student is using Python 3? Suggest [Literal String Interpolation introduced with Python 3.6][pep-498].
 - If the student is using Python <= 3.5, suggest upgrading to Python 3.7 for additional language features.
 - Some people need help with running the tests.
 - Check indentation.
@@ -97,3 +97,5 @@ def two_fer(*name):
 This satisfies the tests but is more complex than needed.
 Encourage the student to find a simpler solution,
 perhaps suggest the term "default argument".
+
+[pep-498]: https://www.python.org/dev/peps/pep-0498/
