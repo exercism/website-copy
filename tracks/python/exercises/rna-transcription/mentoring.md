@@ -24,12 +24,10 @@ Common approaches to translating the strand include: a dictionary,
 
 Dictionaries are the most common and simple. They work well.
 
-[`str.translate()`](https://docs.python.org/3/library/stdtypes.html#str.translate)
-is a bit more esoteric and should use
-[`str.maketrans()`](https://docs.python.org/3/library/stdtypes.html#str.maketrans)
-to form the translation map. This is less common but also a good solution.
-`str.translate()` should not be used without `str.maketrans()`. The developer
-should not need to use an ASCII table to read or modify the code.
+[`str.translate()`][str-translate] is a bit more esoteric and should use [`str.maketrans()`][str-maketrans] to form the translation map.
+This is less common but also a good solution.
+`str.translate()` should not be used without `str.maketrans()`.
+The developer should not need to use an ASCII table to read or modify the code.
 
 In either of the prior two cases, the translation mapping should be created
 once at the module level as a constant rather than created every time the
@@ -45,7 +43,7 @@ Here are some comments that can be copy/pasted/edited to address some of these
 points:
 
 ```Text
-For a more compact and less repetitive solution you can build a translation map (typically done with a `dict` though [`str.maketrans()`](https://docs.python.org/3/library/stdtypes.html#str.maketrans) is also an option). That way you don't need to have another `if` for each letter.
+For a more compact and less repetitive solution you can build a translation map (typically done with a `dict` though [`str.maketrans()`][str-maketrans] is also an option). That way you don't need to have another `if` for each letter.
 The translation dict is a good candidate for a module-level constant. There is not need to have it recreated every time the function is called.
 Python is a pretty high level language with all sorts of string support. Can you come up with a solution that doesn't require someone pull out an ASCII table to read/modify?
 ```
@@ -83,3 +81,6 @@ points:
 ```Text
 If you want to go the extra step, type annotation is worth adding to your code!
 ```
+
+[str-maketrans]: https://docs.python.org/3/library/stdtypes.html#str.maketrans
+[str-translate]: https://docs.python.org/3/library/stdtypes.html#str.translate

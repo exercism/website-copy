@@ -80,4 +80,6 @@ def hey(phrase):
   - doing so without duplicating effort often results in structures that are more complicated and even less readable than the alternative
   - you eliminate the logical help that earlier **return** statements higher up in the code give you; the careful use of **if** and **elif** can return some of this, but multiple **if** statements can easily result multiple changes to the result
   - SESE is mainly a virtue in languages that have a _goto_ statement; as Python lacks any such functionality its benefits are far less clear; consider trying it both ways and see which is more readable to you
-- in Python [truth-value testing](https://docs.python.org/3/library/stdtypes.html#truth-value-testing) is the idiomatic way to check for the presence of an empty (`if not phrase:`) or non-empty (`if phrase:`) string; indeed it's the idiomatic way to check for the "empty" or "full" versions of all the builtin types and collections, and should generally be used in favor of direct comparison or length testing
+- in Python [truth-value testing][truth-value-testing] is the idiomatic way to check for the presence of an empty (`if not phrase:`) or non-empty (`if phrase:`) string; indeed it's the idiomatic way to check for the "empty" or "full" versions of all the builtin types and collections, and should generally be used in favor of direct comparison or length testing
+
+[truth-value-testing]: https://docs.python.org/3/library/stdtypes.html#truth-value-testing
