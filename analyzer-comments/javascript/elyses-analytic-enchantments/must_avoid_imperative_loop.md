@@ -2,6 +2,6 @@
 
 Avoid use of for loops with this practice exercise.
 
-According to the instructions, there are build-in methods on the JavaScript Array global object that are geared towards analysis.
+According to the introduction, there are built-in methods on the JavaScript Array object that are geared towards analysis.
 
-Take a look at the instructions and/or the MDN docs on what methods are available to use.
+Take a look at the instructions and/or the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) on what methods are available to use.
