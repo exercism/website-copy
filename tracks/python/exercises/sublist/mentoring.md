@@ -62,6 +62,6 @@ For an efficient solution, it is important to recognize that a list of size `m` 
 Ask the student to think how many ways a list of unknowns `[a, b, c]` can fit into the list `[1, 2, 3, 4]`.
 Knowing the valid bounds minimizes the checks needed and avoids checking invalid slices, i.e. `[list_one[i:len(list_two)] for i in range(len(list_one))]`.
 
-Checking the list lengths prior to the `for` loop is not necessary, as `range(0)` or `range(-1)` returns an iterable which outputs zero elements.
+Checking the list lengths prior to the `for` loop is not necessary, as `range(0)` or `range(-1)` returns an iterable which procudes zero elements.
 
 Any additional checks (e.g. checking for empty lists) is not necessary and simply increases code complexity.
