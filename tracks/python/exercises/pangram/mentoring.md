@@ -2,7 +2,7 @@
 
 ## Problem and Challenges
 
-The problem asks you to determine if a sentence (or, string) is a pangram.
+The problem asks you to determine if a given `string` (_or sentence_) is a [**pangram**][pangram] in English.
 
 ## Reasonable Solution
 
@@ -10,7 +10,7 @@ The problem asks you to determine if a sentence (or, string) is a pangram.
 import string
 
 
-def is_pangram(sentence: str) -> bool:
+def is_pangram(sentence):
     sentence = sentence.lower()
     return all(letter in sentence for letter in string.ascii_lowercase)
 ```
@@ -19,16 +19,16 @@ def is_pangram(sentence: str) -> bool:
 
 ### Approaches
 
-While this exercise is simple, there are many ways to approach it.
-However, they all do one of two things:
+While this exercise is straightforward, there are many ways to approach it.
+Most solutions do one of two things:
 
 * Check if all the required letters are present.
-* Compute the letters in the string and compare it the required letters.
+* Compute the `set` of letters in the string and compare it to the required letters.
 
 Some reasonable examples:
 
-* `return len({i for i in sentence if i.isalpha()}) == 26`
-* `return {i for i in sentence if i.isalpha()} == set(string.ascii_lowercase)`
+* `return len({item for item in sentence if item.isalpha()}) == 26`
+* `return {item for iteim in sentence if item.isalpha()} == set(string.ascii_lowercase)`
 * `return set(sentence).issuperset(set(string.ascii_lowercase))`
 
 Some approaches worth discussing:
@@ -37,7 +37,7 @@ Some approaches worth discussing:
 * Building new strings repeatedly, e.g. using `str.remove()` to iteratively remove letters then checking for `""`.
 * Using a fixed string for the alphabet instead of leveraging the `string` module.
 
-To help nudge students towards the `all()` solution, encourage students to solve if a given sentence is a pangram _in their mind_ and consider how they do so.
+To help nudge students towards a solution using `all()`, encourage students to solve if a given sentence is a pangram _in their mind_ and consider how they do so.
 Alternatively, encourage students to consider how they would teach a young child to solve if a given sentence is a pangram.
 
 ### Optimizations
@@ -56,3 +56,5 @@ Students unfamiliar with generators or `all()` may accomplish the same with a lo
             return False
     return True
 ```
+
+[pangram] https://www.thoughtco.com/pangram-word-play-term-1691561
