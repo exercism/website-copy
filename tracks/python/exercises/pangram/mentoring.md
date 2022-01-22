@@ -10,7 +10,7 @@ The problem asks you to determine if a sentence (or, string) is a pangram.
 import string
 
 
-def is_pangram(sentence: str) -> bool:
+def is_pangram(sentence):
     sentence = sentence.lower()
     return all(letter in sentence for letter in string.ascii_lowercase)
 ```
