@@ -32,8 +32,8 @@ def scalene(sides):
 This exercise could be solved by explicitly comparing various sides against each other.
 For example, `equilateral` could be solved using `all(side == sides[0] for side in sides)`.
 However, `len(set())` provides a quick way to count unique values in an iterable.
-Recognizing that counting the number of unique side lengths can be used to solve this simplifies the problem.
-Using sets also allows the need to handle solving different ways of combining various sides.
+Recognizing that counting the number of _unique_ side lengths can be used to solve this simplifies the problem greatly.
+Using sets also solves the need to handle different ways of combining various sides.
 
 ### Validation
 
@@ -47,9 +47,10 @@ Alternatively, `all(side < sum(sides) - side for side in sides)`.
 
 ### Decorators
 
-The validation can be taken one step further and used as a decorator, if the student is comfortable with decorators.
+Validation can be taken one step further in the form of a `decorator`, if the student is comfortable with `decorators`:
 
-```
+```python
+# Decorator function.
 def is_valid(func):
 
     def wrapped(sides):
@@ -62,6 +63,7 @@ def is_valid(func):
     return wrapped
 
 
+# Decorator in use.
 @is_valid
 def equilateral(sides):
     return len(set(sides)) == 1
