@@ -25,6 +25,8 @@ def scalene(sides):
     return is_valid(sides) and len(set(sides)) == 3
 ```
 
+Note: This exercise appears fairly early in the concept tree so students may not yet be familiar with generators.
+
 ## Talking Points
 
 ### Sets and unique values
