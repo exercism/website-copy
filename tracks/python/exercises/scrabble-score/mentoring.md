@@ -11,7 +11,7 @@ The basic solution has two parts: defining a global dictionary using a
 dictionary literal called LETTER_VALUE, and using it. Using it is quite simple:
 
 ```python
-def score(word: str) -> int:
+def score(word):
     return sum( LETTER_VALUE[ch] for ch in word.upper() )
 ```
 
@@ -57,7 +57,7 @@ LETTERS_TO_SCORES = {
                     for ch in letters.split(', ') 
 }
 
-def score(word: str) -> int:
+def score(word):
     return sum( LETTERS_TO_SCORES[ch] for ch in word.upper()  )
 ```
 
@@ -96,7 +96,7 @@ class Letters(IntEnum):
     J = X = 8
     Q = Z = 10
     
-def score(word: str) -> int:
+def score(word):
      return sum(Letters[c] for c in word.upper())
 ```
 

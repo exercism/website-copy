@@ -12,16 +12,16 @@ to write methods row() and column().
 ```python
 class Matrix(object):
 
-    def __init__(self, matrix_string: str):
+    def __init__(self, matrix_string):
         self.rows = [
 	    [int(s) for s in word.split()]
             for word in matrix_string.splitlines()
 	]
 
-    def row(self, index: int) -> list[int]:
+    def row(self, index):
         return self.rows[index - 1].copy()
 
-    def column(self, index: int) -> list[int]:
+    def column(self, index):
         return [row[index - 1] for row in self.rows]
 ```
 

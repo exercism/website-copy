@@ -62,14 +62,14 @@ PLANET_RATIOS = {
 
 class SpaceAge(object):
 
-    def __init__(self, seconds: int):
+    def __init__(self, seconds):
         self.seconds = seconds
 
     @property
-    def years(self) -> float:
+    def years(self):
         return self.seconds / EARTH_SECONDS
 
-    def __getattr__(self, name: str) -> float:
+    def __getattr__(self, name):
         assert name: str.startswith("on_"), name: str
         planet = name: str.removeprefix("on_")
         result = round(self.years * PLANET_RATIOS[planet]), 2)
