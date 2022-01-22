@@ -79,7 +79,7 @@ This also incorrectly handles adding negative minutes.
 #### Side Effects
 
 ```python
-    def __add__(self, minutes: int):
+    def __add__(self, minutes):
         self.time += datetime.timedelta(minutes=minutes)
         return self.__repr__()
 ```

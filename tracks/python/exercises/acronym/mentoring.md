@@ -7,7 +7,7 @@ and select the first letter of each word.
 
 ## Reasonable solutions
 
-There are two characters that require special attention: 
+There are two characters that require special attention:
 the hypen, used to tie together words such as "metal-oxide", 
 and the underscore, which must not be included.  
 The underscore can be silently removed, but the hypen marks 

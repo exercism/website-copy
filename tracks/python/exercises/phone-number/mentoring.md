@@ -13,7 +13,7 @@ The `pretty()` method needs to return a formatted number.
 class PhoneNumber:
     """Phone number validator."""
 
-    def __init__(self, number: str):
+    def __init__(self, number):
         """Load and clean a number, validating it."""
         # Raise exceptions for invalid characters.
         for char in string.ascii_letters:
@@ -52,7 +52,7 @@ class PhoneNumber:
                 if part.startswith(invalid_char):
                     raise ValueError(f'{part_name} cannot start with {char_name}')
 
-    def pretty(self) -> str:
+    def pretty(self):
         """Return a pretty string of the number."""
         return f'({self.area_code})-{self.exchange}-{self.subscriber}'
 ```

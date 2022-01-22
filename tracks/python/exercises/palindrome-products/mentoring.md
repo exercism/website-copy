@@ -11,22 +11,16 @@ A naive **O(N²logN)** solution can lead to timeouts when running the tests onli
 
 ```python
 import operator
-from typing import Callable, Optional, Sequence
-
-Factors = list[list[int]]
-Result = tuple[Optional[int], Factors]
-Comparison = Callable[[int, int], bool]
 
 
-def is_palindrome(num: int) -> bool:
+def is_palindrome(num):
     textual = str(num)
     return textual == textual[::-1]
 
 
-def search(factor_range: Sequence[int],
-           better_found: Comparison) -> Result:
+def search(factor_range, better_found):
     found = None
-    factors: Factors = []
+    factors = []
     for i in factor_range:
         for j in factor_range:
             num = i*j
@@ -42,7 +36,7 @@ def search(factor_range: Sequence[int],
     return (found, factors)
 
 
-def largest(min_factor: int, max_factor: int) -> Result:
+def largest(min_factor, max_factor):
     if min_factor > max_factor:
         raise ValueError('min must be <= max')
     # decrementing for time optimization (see note above)
@@ -50,7 +44,7 @@ def largest(min_factor: int, max_factor: int) -> Result:
                   operator.ge)
 
 
-def smallest(min_factor: int, max_factor: int) -> Result:
+def smallest(min_factor, max_factor):
     if min_factor > max_factor:
         raise ValueError('min must be <= max')
     return search(range(min_factor, max_factor + 1),
@@ -77,15 +71,7 @@ def smallest(min_factor: int, max_factor: int) -> Result:
 ## Faster solution
 
 ```python
-from typing import Iterator, Optional
-
-Factors = list[list[int]]
-Result = tuple[Optional[int], Factors]
-
-
-def palindromes(digits: int,
-                reverse: bool = False,
-                add_zero: bool = False) -> Iterator[int]:
+def palindromes(digits, reverse = False, add_zero = False):
     # Palindromes are:
     # - [digit]: 1, 2, ..., 9
     # - [digit][same_digit]: 11, 22, ..., 99
@@ -107,10 +93,8 @@ def palindromes(digits: int,
                 yield number
 
 
-def get_factors(number: int,
-                min_factor: int,
-                max_factor: int) -> Factors:
-    factors: Factors = []
+def get_factors(number, min_factor, max_factor):
+    factors = []
     # number = i*j
     # i in [1, sqrt(number)] when i <= j
     # i, j in [min_factor, max_factor]
@@ -127,9 +111,7 @@ def get_factors(number: int,
     return factors
 
 
-def search(min_factor: int,
-           max_factor: int,
-           reverse: bool = False) -> Result:
+def search(min_factor, max_factor, reverse = False):
     min_p, max_p = (min_factor*min_factor, max_factor*max_factor)
     min_digits, max_digits = (len(str(min_p)), len(str(max_p)))
     if reverse:
@@ -145,13 +127,13 @@ def search(min_factor: int,
     return None, []
 
 
-def largest(min_factor: int, max_factor: int) -> Result:
+def largest(min_factor, max_factor):
     if min_factor > max_factor:
         raise ValueError('min must be <= max')
     return search(min_factor, max_factor, reverse=True)
 
 
-def smallest(min_factor: int, max_factor: int) -> Result:
+def smallest(min_factor, max_factor):
     if min_factor > max_factor:
         raise ValueError('min must be <= max')
     return search(min_factor, max_factor)

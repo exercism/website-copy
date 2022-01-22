@@ -114,7 +114,7 @@ have an ord() larger than 255.
     print(ord('\U00000394'))
 ```
 
-Our first solution looked to the right for duplicates among the remaining characters: 
+Our first solution looked to the right for duplicates among the remaining characters:
 this one looks to the left at the characters we have already seen.
 This idiom is best rewritten using sets or lists to hold the previous characters.
 

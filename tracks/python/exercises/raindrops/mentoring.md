@@ -16,7 +16,7 @@ concatenation.
 Therefore the following is considered both reasonable and acceptable:
 
 ```python
-def convert(number: int) -> str:
+def convert(number):
   
     result = ''
     if number % 3 == 0:
@@ -62,7 +62,7 @@ Note that the final one will not involve a copy since the value of
 ### Leverage the ternary if
 
 ```python
-def convert(number: int) -> str:
+def convert(number):
   
     result = ''
     result += "Pling" if number % 3 == 0 else ""
@@ -78,7 +78,7 @@ in this situation.
 ### Alternatively, use multiplication of a str
 
 ```python
-def convert(number: int) -> str:
+def convert(number):
   
     result = ''
     result += "Pling" * (number % 3 == 0)
@@ -112,7 +112,7 @@ DROPS = (
    ('Plong', 7),
 )
 
-def convert(number: int) -> str:
+def convert(number):
     result = "".join(d for d, f in DROPS if not number % f)
     return str(result or number)
 ```
@@ -138,7 +138,7 @@ DROPS = {
     'Plong': 7,
 }
 
-def convert(number: int) -> str:
+def convert(number):
     result = "".join(d for d, f in DROPS.items() if not number % f)
     return str(result or number)
 ```
@@ -168,7 +168,7 @@ class Drops(Enum):
     Plang = 5
     Plong = 7
 
-def convert(number: int) -> str:
+def convert(number):
     result = "".join(d.name for d in Drops if not number % d.value)
     return str(result or number)
 ```

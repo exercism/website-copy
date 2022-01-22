@@ -33,7 +33,7 @@ text = ["Bucket of coal",
         "twelve Drummers Drumming, "]
 
 
-def one_verse(days, text, start: int) -> str:
+def one_verse(days, text, start):
     format_string = "On the {} day of Christmas my true love gave to me: "
 
     result = [format_string.format(days[start])]
@@ -47,7 +47,7 @@ def one_verse(days, text, start: int) -> str:
     return ''.join(result + gifts[::-1])
 
 
-def recite(start: int, finish: int) -> list:
+def recite(start, finish):
     return [one_verse(days, text, i) for i in range(start, finish+1)]
 ```
 
