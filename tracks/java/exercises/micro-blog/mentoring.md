@@ -2,7 +2,7 @@
 
 ## Reasonable solutions
 
-Probably most simple and easy to read solution for this problem.
+A straightforward and easy to read solution for this problem.
 
 ```java
 
@@ -25,7 +25,7 @@ class MicroBlog {
 }
 ```
 
-A bit compact code that benefits from streams functionality and string constructor for codepoints.
+A bit more compact code that benefits from functionality of streams and string constructor for code points.
 
 ```java
 class MicroBlog {
@@ -42,7 +42,7 @@ class MicroBlog {
 
 ## Common suggestions
 
-- As a starting point suggest using [`input.codePoints()`][Charsequence#codePoints] to convert the string to code points.
+- As a starting point, suggest using [`input.codePoints()`][Charsequence#codePoints] to convert the string to code points.
 - `StringBuilder.appendCodePoint` and `new String(new int[] { codePoints }, 0, codePointCount)` can be used for translation from code point to string. 
 - Input length can be checked to ignore smaller inputs for efficiency.
 
