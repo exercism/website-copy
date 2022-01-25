@@ -2,7 +2,7 @@
 
 ## Reasonable solutions
 
-Probably most simple and easy to read solution for this problem
+Probably most simple and easy to read solution for this problem.
 
 ```java
 
@@ -25,7 +25,7 @@ class MicroBlog {
 }
 ```
 
-A bit compact code that benefits from streams functionality and string constructor for codepoints
+A bit compact code that benefits from streams functionality and string constructor for codepoints.
 
 ```java
 class MicroBlog {
