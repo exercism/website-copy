@@ -62,6 +62,6 @@ For an _efficient_ solution, it is important to recognize that a `list` of size 
 Ask the student to think through how many ways a `list` of unknown elements `[element_a, element_b, element_c]` can fit into the `list` `[element_1, element_2, element_3, element_4]`.
 Knowing the valid bounds of the problem minimizes the checks needed and avoids checking invalid `slices/sublists` - for example, `[list_one[i:len(list_two)] for i in range(len(list_one))]`.
 
-Checking the list lengths prior to the `for` loop is not necessary, as `range(0)` or `range(-1)` returns an `iterable` which procudes zero elements.
+Checking the list lengths prior to the `for` loop is not necessary, as `range(0)` or `range(-1)` returns an `iterable` which produces zero elements.
 
 Any additional checks (_for example, checking for empty lists_) is not necessary and simply increases code complexity.
