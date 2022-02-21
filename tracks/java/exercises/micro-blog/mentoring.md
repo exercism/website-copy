@@ -40,6 +40,18 @@ class MicroBlog {
 }
 ```
 
+Same code as above except now it just fashioned into a one-liner.
+
+```java
+class MicroBlog {
+  public String truncate(String input) {
+  
+    return input.length() > 5 ? new String(input.codePoints().limit(5).toArray(),0,5) : input;
+    
+  }
+}
+```
+
 ## Common suggestions
 
 - As a starting point, suggest using [`input.codePoints()`][Charsequence#codePoints] to convert the string to code points.
