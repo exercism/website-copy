@@ -4,6 +4,9 @@
 - Prefer a tuple or vector of pairs to a Dict. There's no need to add values to the Dict or lookup items by key, so a simpler container is better.
 - If performance matters, constructing strings is slow! Profiling shows that `string(number)` and string concatenation are the biggest time sinks. Branching / lookup and remainder calculation are blazingly fast by comparison.
 
+
+## Example solutions
+
 ````
 You can solve this exercise a great number of ways!
 The fastest solutions avoid constructing new strings unless they have to and instead return one of several statically allocated strings when `n` is divisible by 3, 5, or 7.
@@ -246,3 +249,4 @@ function raindrops6(number)
     end
 end
 ```
+````
