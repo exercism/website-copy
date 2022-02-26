@@ -21,7 +21,7 @@ class Twofer {
 ```
 
 ```java
-import java.util.Optional;
+import java.util.Objects;
 
 class Twofer {
   String twofer(String name) {
