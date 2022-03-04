@@ -33,6 +33,7 @@ class Garden(object):
 ## Common suggestions
 - Use a constant list for default list of student names.
 - Use a constant dict to map from letters to plant names, like `PLANT_NAMES` above.
+- Make sure that the student is not using a mutable default value for `students` and if so, explain why that is not advised.
 
 ## Talking points
 - List comprehensions for lists of two things aren't that much shorter that just two copies of the code, but they work if the problem expands to more rows.
