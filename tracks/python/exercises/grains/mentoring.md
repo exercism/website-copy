@@ -32,7 +32,7 @@ there is a gerenal formula:
 **2^0+2^1+2^2+2^3+....+2^n=(2^(n+1))-1**.
 
 ## Solution using Bitwise left operator
-```
+```python
 def square(number):
     if(number<1 or number>64):
         raise ValueError("square must be between 1 and 64")
