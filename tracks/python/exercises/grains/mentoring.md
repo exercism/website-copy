@@ -1,6 +1,6 @@
 ## Reasonable solution By calculating power.
 
-```
+```python
 def square(number):
     """
     This Function is going to return the number of grains on a given square number.
