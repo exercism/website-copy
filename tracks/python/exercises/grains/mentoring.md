@@ -46,7 +46,7 @@ def total():
 ```
 ### Left shift bitwise operator
 
-**2 power n = 1<<n**
+**2 power n = 1 << n** 
 ```python
 >>> 2^0
 1
