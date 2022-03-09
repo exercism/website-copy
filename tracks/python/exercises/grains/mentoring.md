@@ -4,7 +4,7 @@
 def square(number):
     """
     This Function must return the number of grains on a given square number.
-    :parama: int square number on which we want to calculate the amount of grains.
+    :param: int square number on which we want to calculate the amount of grains.
     :return int amount of grains present on the give square number(number).
     """
     if(number<1 or number>64):
