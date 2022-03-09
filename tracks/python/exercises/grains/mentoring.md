@@ -3,7 +3,7 @@
 ```python
 def square(number):
     """
-    This Function must return the number of grains on a given square number.
+    This function must return the number of grains on a given square number.
     :param: int square number on which we want to calculate the amount of grains.
     :return int amount of grains present on the give square number(number).
     """
@@ -12,10 +12,9 @@ def square(number):
     else:
         return 2**(number - 1)
 
-
 def total():
     """
-    This Function must return the total number of grains on the chess board.
+    This function must return the total number of grains on the chess board.
     :return int total number of grains a chess board can contain.
     """
     # As 2^0 + 2^1 + 2^2 + 2^3 +....+ 2^n = (2^(n + 1)) - 1.
@@ -41,8 +40,7 @@ def square(number):
         raise ValueError("square must be between 1 and 64")
     else:
         return 1 << number - 1 
-
-
+        
 def total():
     # As 2^0 + 2^1 + 2^2 + 2^3 +....+ 2^n = (2^(n + 1)) - 1
     return (1 << 64) - 1
