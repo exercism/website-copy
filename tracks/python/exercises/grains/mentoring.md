@@ -2,6 +2,15 @@
 
 ## Problem and challenges
 
+The problem describes a scenario played out on a chessboard.
+One grain is placed on the first square.
+Twice that number of grains is placed on the next square.
+The doubling continues until all squares are filled.
+
+The problem requires writing a `square(number)` function which returns the number of grains on any given square.
+
+The problem requires writing a `total()` function which returns the total number of grains on the board.
+
 ## Reasonable solutions
 
 ```python
