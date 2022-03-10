@@ -4,8 +4,8 @@
 def square(number):
     """Return the number of grains on a given square number.
     
-    :param: int - square number on which we want to calculate the amount of grains.
-    :return int - amount of grains present on the give square number(number).
+    :param number int: Square number on which we want to calculate the amount of grains.
+    :return int: Amount of grains present on the give square number(number).
     """
     if number < 1 or number > 64:
         raise ValueError("square must be between 1 and 64")
@@ -15,7 +15,7 @@ def square(number):
 def total():
     """Return the total number of grains on the chess board.
     
-    :return int total number of grains a chess board can contain.
+    :return int: Total number of grains a chess board can contain.
     """
     # As 2^0 + 2^1 + 2^2 + 2^3 +....+ 2^n = (2^(n + 1)) - 1.
     return 2**64 - 1
