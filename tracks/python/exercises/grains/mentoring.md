@@ -65,7 +65,7 @@ Exponents are typically not a CPU instruction and instead often require a loop.
 Therefore replacing `2**power` with `1 << power` is usually faster.
 
 Note: while bitwise shift operators are faster, they can make the code harder to understand.
-While this does improve code efficiency, the difference is rarely significant,
+While this does improve code efficiency, the difference is rarely significant.
 
 ```
 >>> for i in range(5):
