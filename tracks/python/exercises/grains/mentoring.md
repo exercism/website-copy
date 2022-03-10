@@ -1,4 +1,8 @@
-# Reasonable solution by calculating power.
+# Mentoring
+
+## Problem and challenges
+
+## Reasonable solutions
 
 ```python
 def square(number):
@@ -21,15 +25,15 @@ def total():
     return 2**64 - 1
 ```
 
-## For function `square(number)` :
+### `square(number)`
 
 As we did `2**(number - 1)` on block one there will be only 1 grain, 2 to the power of 0 equals 1. On block 2 there will 2 and on block 3 there will be 4 which is equal to 2 to the power of 1, and 2 to the power of 2, respectively. Hence generalized, **2 to the power of (number-1)**.
 
-## For function `total()` :
+### `total()`
 
 There is a general formula : **2^0 + 2^1 + 2^2 + 2^3 +....+ 2^n = (2^(n + 1)) - 1**.
 
-# Solution using bitwise left operator.
+## Bitwise left shift operator
 
 ```python
 def square(number):
