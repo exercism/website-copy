@@ -25,6 +25,11 @@ echo "${output:-$1}"
 
 ## Common Suggestions
 
+* Check for a hash-pling: `#!/bin/bash`
+* Consider a more robust hash-pling: `#!/usr/bin/env bash` 
+* Aaron Maxwell's [Bash Strict Mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/): `set -euo pipefail`
+* Recommend a static analysis and linting tool, eg `shellcheck`
+
 See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/main/tracks/bash/exercises/two-fer/mentoring.md) for some common suggestions.
 
 ## Talking Points
