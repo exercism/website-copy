@@ -1,6 +1,7 @@
 # variables 
 
 [comment]: # (This error is raised when a variable is unused)
+[comment]: # (Some unused variables, like `_` cannot be used anywhere)
 [comment]: # (requires 1 param:)
 [comment]: # (- definition: code extract with unused value)
 

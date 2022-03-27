@@ -1,6 +1,7 @@
 # patterns 
 
 [comment]: # (This error is raised when a pattern is unused)
+[comment]: # (Some patterns, like `{} = record` cannot be used)
 [comment]: # (requires 1 param:)
 [comment]: # (- definition: code extract with unused value)
 
