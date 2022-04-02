@@ -16,6 +16,9 @@ type/mentor-notes:
 
 # Tracks
 
+track/abap:
+- '**/abap/**/*'
+
 track/bash:
 - '**/bash/**/*'
 

@@ -7,6 +7,10 @@
   description: "05AB1E track"
   color: "c8d7ff"
 
+- name: "track/abap"
+  description: "ABAP track"
+  color: "c8d7ff"
+
 - name: "track/ada"
   description: "Ada track"
   color: "c8d7ff"
