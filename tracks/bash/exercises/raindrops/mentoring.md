@@ -25,11 +25,6 @@ echo "${output:-$1}"
 
 ## Common Suggestions
 
-* Check for a hash-pling: `#!/bin/bash`
-* Consider a more robust hash-pling: `#!/usr/bin/env bash` 
-* Aaron Maxwell's [Bash Strict Mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/): `set -euo pipefail`
-* Recommend a static analysis and linting tool, eg `shellcheck`
-
 See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/main/tracks/bash/exercises/two-fer/mentoring.md) for some common suggestions.
 
 ## Talking Points
@@ -44,3 +39,78 @@ See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/
         > Within an expression, shell variables may also be referenced by name without using the parameter expansion syntax.
 
       [https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic](https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic)
+
+
+## Preflight checks
+
+Check if the interpreter directive, aka hash-pling `#!` is present. Increased portability is achieved by not hard-coding this path. An indirect lookup with `env` is current best practice. Contrast:
+
+```
+#! /bin/bash
+#! /usr/bin/env bash
+```
+
+
+## Interactive prompt self-help
+
+Query if there is an awareness of classic documentation that is typically available:
+
+```
+$ man  bash
+$ info bash
+```
+
+A leaner alternative, [`tldr` (https://github.com/tldr-pages/tldr/)](https://github.com/tldr-pages/tldr/), reduces documentation down to common usage examples:
+
+```
+$ tldr bash
+
+bash
+
+Bourne-Again SHell, an `sh`-compatible command-line interpreter.
+More information: <https://gnu.org/software/bash/>.
+
+- Start an interactive shell session:
+    bash
+
+- Execute a command and then exit:
+    bash -c "command"
+
+...
+
+```
+
+
+## Static analysis & linting
+
+[ShellCheck (https://shellcheck.net/)](https://shellcheck.net/) by Vidar Holen is a stable pre 1.0 tool that provides a set of clear, editable rationales for each type of detected issue. Further less problematic recommendations can also be requested:
+
+```
+$ shellcheck <file>
+$ shellcheck --enable=all <file>
+```
+
+
+## Debug
+
+Consider Aaron Maxwell's [Bash Strict Mode (http://redsymbol.net/articles/unofficial-bash-strict-mode/)](http://redsymbol.net/articles/unofficial-bash-strict-mode/) to help reduce an invisible issue down to a minimal working example:
+
+```
+set -Eeuo pipefail
+IFS=$'\n\t'
+```
+
+
+## Online Resources
+
+A special mention must be made of Michael Mol's chrestomathy site, [Rosetta Code (https://rosettacode.org/wiki/Category:Bash)](https://rosettacode.org/wiki/Category:Bash). Comparing solutions with other known or even unknown languages can be rather instructive.
+
+|                            | Address
+---------------------------- | ---------------------
+Manual                       | https://www.gnu.org/software/bash/manual/
+Frequently Asked Questions   | http://mywiki.wooledge.org/BashFAQ
+Reference Card               | https://devhints.io/bash
+Pure BASH Bible              | https://github.com/dylanaraps/pure-bash-bible
+Essential Bash               | https://www.programming-books.io/essential/
+BASH Notes for Professionals | https://www.programming-books.io/essential/bash/
+PDF version, 1.8 MB          | https://books.goalkicker.com/BashBook/BashNotesForProfessionals.pdf
