@@ -41,6 +41,9 @@ See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/
       [https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic](https://www.gnu.org/software/bash/manual/bash.html#Shell-Arithmetic)
 
 
+# Bash Guidance
+
+
 ## Preflight checks
 
 Check if the interpreter directive, aka hash-pling `#!` is present. Increased portability is achieved by not hard-coding this path. An indirect lookup with `env` is current best practice. Contrast:
@@ -83,7 +86,7 @@ More information: <https://gnu.org/software/bash/>.
 
 ## Static analysis & linting
 
-[ShellCheck (https://shellcheck.net/)](https://shellcheck.net/) by Vidar Holen is a stable pre 1.0 tool that provides a set of clear, editable rationales for each type of detected issue. Further less problematic recommendations can also be requested:
+[ShellCheck (https://shellcheck.net/)](https://shellcheck.net/) by Vidar Holen is a stable pre 1.0 tool that provides a set of clear, editable rationales for each type of detected issue. Other less problematic recommendations can also be requested:
 
 ```
 $ shellcheck <file>
@@ -101,16 +104,16 @@ IFS=$'\n\t'
 ```
 
 
-## Online Resources
+## Resources
 
 A special mention must be made of Michael Mol's chrestomathy site, [Rosetta Code (https://rosettacode.org/wiki/Category:Bash)](https://rosettacode.org/wiki/Category:Bash). Comparing solutions with other known or even unknown languages can be rather instructive.
 
-|                            | Address
----------------------------- | ---------------------
-Manual                       | https://www.gnu.org/software/bash/manual/
-Frequently Asked Questions   | http://mywiki.wooledge.org/BashFAQ
-Reference Card               | https://devhints.io/bash
-Pure BASH Bible              | https://github.com/dylanaraps/pure-bash-bible
-Essential Bash               | https://www.programming-books.io/essential/
-BASH Notes for Professionals | https://www.programming-books.io/essential/bash/
-PDF version, 1.8 MB          | https://books.goalkicker.com/BashBook/BashNotesForProfessionals.pdf
+|                                  | Address
+---------------------------------- | ---------------------
+Manual                             | https://www.gnu.org/software/bash/manual/
+Frequently Asked Questions         | http://mywiki.wooledge.org/BashFAQ
+Reference Card                     | https://devhints.io/bash
+Pure Bash Bible                    | https://github.com/dylanaraps/pure-bash-bible
+Essential Bash                     | https://www.programming-books.io/essential/
+Bash Notes for Professionals + PDF | https://www.programming-books.io/essential/bash/ https://books.goalkicker.com/BashBook/BashNotesForProfessionals.pdf
+
