@@ -116,4 +116,3 @@ Reference Card                     | https://devhints.io/bash
 Pure Bash Bible                    | https://github.com/dylanaraps/pure-bash-bible
 Essential Bash                     | https://www.programming-books.io/essential/
 Bash Notes for Professionals + PDF | https://www.programming-books.io/essential/bash/ https://books.goalkicker.com/BashBook/BashNotesForProfessionals.pdf
-
