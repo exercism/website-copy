@@ -11,7 +11,7 @@ This is a basic string translation problem.
 translation = {"G": "C", "C": "G", "T": "A", "A": "U"}
 
 
-def to_rna(dna_strand)
+def to_rna(dna_strand):
     return "".join(translation[i] for i in dna_strand)
 ```
 
