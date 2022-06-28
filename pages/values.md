@@ -16,7 +16,7 @@ Based on this, we consider this is what Exercism looks like at its core:
 - Exercism’s value is in the community, the discussion and the learning.
 - Exercism should be enjoyable, challenging and valuable.
 - Exercism should feel safe and nurturing. 
-- Exercism focusses on the learning journey, not the destination. Empathy and encouragement are more important than absolute factual correctness.
+- Exercism focuses on the learning journey, not the destination. Empathy and encouragement are more important than absolute factual correctness.
 - Exercism should not be limited to being an online tool. It could be used in schools or in places without good internet access.
 
 
