@@ -88,7 +88,8 @@ More information: <https://gnu.org/software/bash/>.
 
 ## Static analysis & linting
 
-[ShellCheck (https://shellcheck.net/)](https://shellcheck.net/) by Vidar Holen is a stable pre 1.0 tool that provides a set of clear, editable rationales for each type of detected issue. Other less problematic recommendations can also be requested:
+[ShellCheck (https://shellcheck.net/)](https://shellcheck.net/) by Vidar Holen is a tool that detects common issues
+Other less problematic recommendations can also be requested:
 
 ```
 $ shellcheck <file>
