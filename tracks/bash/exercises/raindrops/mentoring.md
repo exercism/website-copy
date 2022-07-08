@@ -46,7 +46,9 @@ See the [two-fer notes](https://raw.githubusercontent.com/exercism/website-copy/
 
 ## Preflight checks
 
-Check if the interpreter directive, aka hash-pling `#!` is present. Increased portability is achieved by not hard-coding this path. An indirect lookup with `env` is current best practice. Contrast:
+Check if the interpreter directive, aka hash-bash `#!` is present.
+[Increased portability](http://mywiki.wooledge.org/BashGuide/CommandsAndArguments#Scripts) is achieved by not hard-coding this path, but looked up using `env`.
+Contrast:
 
 ```
 #! /bin/bash
