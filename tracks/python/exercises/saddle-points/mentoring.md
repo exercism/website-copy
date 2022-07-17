@@ -10,7 +10,7 @@ highest value in that row and the lowest value in that column.
 
 ```python
 def saddle_points(matrix):
-    result = list()
+    result = []
     if not matrix:
         return result
     if not all(len(row) == len(matrix[0]) for row in matrix):
