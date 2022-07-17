@@ -65,9 +65,8 @@ problem.
 There are various ways of iterating over the values, but nested 
 `for` loops are the most straightforward. Since the column and 
 row indicies are required along with the values, this is a good 
-place to introduce the `enumerate()` function. Alternatively, 
-students might use `range()` and `len()` functions and retrive
-the values by index.
+place to introduce the `enumerate()` function.
+This should be preferred over using a combination of `range()` and `len()`.
 
 ```python
 for row_num, row in enumerate(matrix):
