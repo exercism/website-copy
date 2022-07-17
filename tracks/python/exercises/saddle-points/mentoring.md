@@ -2,9 +2,7 @@
 
 ## Problem and challenges
 
-This problem requires the student to find the points in a 
-matrix (represented as `list[list[int]]`) that are both the 
-highest value in that row and the lowest value in that column.
+This problem requires the student to find the points in a matrix (represented as `list[list[int]]`) that are both the highest value in that row and the lowest value in that column.
 
 ## Reasonable solution
 
@@ -26,14 +24,12 @@ def saddle_points(matrix):
 
 ### Checking for an empty or invalid matrix
 
-This problem requires identifying when the matrix is irregular 
-i.e. the number of items in each row is inconsistent. The 
-easiest way to do this is to simply check that the length 
-of each row is equal to the length of the first row. 
+This problem requires identifying when the matrix is irregular i.e. the number of items in each row is inconsistent. 
+The easiest way to do this is to simply check that the length of each row is equal to the length of the first row. 
+Students may also include additional checks for other types of invalid data if desired.
 
-It is also helpful to first identify when an empty matrix has 
-been given and return an empty result. This prevents an 
-`IndexError` from trying to index into an empty list.
+It is also helpful to first identify when an empty matrix has been given and return an empty result. 
+This prevents an `IndexError` from trying to index into an empty list.
 
 ```python
 # Best solution2
@@ -55,17 +51,12 @@ for row in matrix:
     raise ValueError("irregular matrix")
  ```
 
-This might be a good place to introduce concepts like list 
-comprehensions and the `all()` or `any()` function, which 
-are easier to use here but will be helpful for the main
-problem.
+This might be a good place to introduce concepts like list comprehensions and the `all()` or `any()` functions, which are easier to use here but will be helpful for the main problem.
 
 ### Iterating over the values
 
-There are various ways of iterating over the values, but nested 
-`for` loops are the most straightforward. Since the column and 
-row indicies are required along with the values, this is a good 
-place to introduce the `enumerate()` function.
+There are various ways of iterating over the values, but nested `for` loops are the most straightforward. 
+Since the column and row indicies are required along with the values, this is a good place to introduce the `enumerate()` function. 
 This should be preferred over using a combination of `range()` and `len()`.
 
 ```python
@@ -75,22 +66,16 @@ for row_num, row in enumerate(matrix):
 
 ### Checking for saddle points
 
-Students must check that the value is the highest value in that
-row and the lowest value in the column. This is a good place to
-introduce the `max()` and `min()` functions which take an iterable
-and return the highest or lowest value.
+Students must check that the value is the highest value in that row and the lowest value in the column. 
+This is a good place to introduce the `max()` and `min()` functions which take an iterable and return the highest or lowest value.
 
-Another challenge here is getting the column. At this stage most 
-students should be ready to use a comprehension which is the best way, 
-but students who aren't familar with comprehensions might use an 
-additional `for` loop instead. To make it simpler, suggest creating 
-a separate function for getting the column. 
+Another challenge here is getting the column. 
+At this stage most students should be ready to use a comprehension which is the best way, but students who aren't familar with comprehensions might use an additional `for` loop instead. 
+To make it simpler, suggest creating a separate function for getting the column. 
 
 Students will often write more complicated checks than required. 
-Once we've extracted the row and column that we want to check, all
-we need to do is check that the `max` of the row is equal to the `min`
-of the column. Guide them to think about what we're checking for and
-suggest that they experiment with different checks to see what works.
+Once we've extracted the row and column that we want to check, all we need to do is check that the `max` of the row is equal to the `min` of the column. 
+Guide them to think about what we're checking for and suggest that they experiment with different checks to see what works.
 
 ```
 # Suggested solution
@@ -104,85 +89,27 @@ if max(row) == min(get_column(matrix, col_index):
 
 ### Returning the result
 
-The task requires returning a `list` of `dict` objects, one for each 
-saddle point, with the keys "row" and "column" and the values being
-the one-based index (i.e. the location, not the value, of the saddle 
-points).
+The task requires returning a `list` of `dict` objects, one for each saddle point, with the keys "row" and "column" and the values being the one-based index (i.e. the location, not the value, of the saddle points).
 
 ```
 result.append({"row": row_num + 1, "column": column_num + 1})
     return result
 ```
 
-There are various ways to structure the code for this problem; 
-do not insist that they use a particular approach if their
-chosen approach as also valid. Shorter code is not the only 
-goal here - readability is a key challenge in this task, so 
-don't make suggestions that would shorten the code at the 
-expense of readability. That said, many students will end up 
-writing much more code than is required - try to judge when 
-the extra length is just stepping through the problem and 
-where it could be best improved. Asking them to break of 
-complicated bit of code into separate functions can help 
-them work through each part without being overwhelmed - they 
-can recombine the code afterwards if desired.
-
-Students often create move variables that they need when
-looping, particularly when using multiple loops. They may
-also use unhelpful names for their variables, possibly 
-because they have too many to name. Encourage them to 
-give their variables descriptive names, and share common
-naming conventions such as the use of `i` and `j` for 
-indicies. 
-
-If their solution is difficult for you to understand due
-to the use of many confusing or single letter variables, 
-don't hesitate to start with this advice and wait for them 
-to fix this before giving further suggestions - there's no 
-point trying to parse their ninja code if you're going 
-to ask them to fix the issue anyway, and often making the 
-variable names clearer will help them improve the solution 
-on their own.
-
-Students will often include additional checks, such as 
-checking that the values are numeric or that the given
-type is a list. The only checks that are required to pass
-the tests are that the columns are all the same length,
-and perhaps to test for an empty matrix depending on the 
-approach. Hoever, there is nothing wrong with including 
-additional checks and you shouldn't ask the student to 
-remove them unless they are truly redundent (i.e. dead 
-code) or cause valid matricies to be rejected.
-
 ## Talking points
 
-This problem potentially introduces several new concepts to
-the student, including:
+This problem potentially introduces several new concepts to the student, including:
 - inner loops
 - list comprehensions
 - the built-in functions `all`, `max`, `min` and `enumerate`
 
-Don't hesitate to introduce these concepts, as none of 
-them are particularly difficult conceptually, but in this
-problem it's easy to become confused by the control flow
-and the use of unfamilar concepts can sometimes worsen this, 
-so avoid introducing too many new concepts at once. Pick the
-ones that the student can most easily apply to make their
-code simpler and easier to read.
-
-Don't suggest using nested list comprehensions as these aren't
-likely to be an improvement, but they are fine if the student
-chooses to use one and can do so legibly. If the student wants
-to explore alternative approaches, one approach is to create 
-a transverse matrix for easier access to the columns:
-
+If the student wants to explore alternative approaches, one approach is to create a transverse matrix for easier access to the columns:
 ```
 for row_num, row in enumerate(matrix):
     for col_num, col in enumerate(zip(*matrix)):
         if max(row) == min(col):
 ```
-Using the `zip` function and the unpacking operator is not strictly
-required:
+Using the `zip` function and the unpacking operator is not strictly required:
 ```
 transverse_matrix = [
   [row[col_num] for row in matrix] 
