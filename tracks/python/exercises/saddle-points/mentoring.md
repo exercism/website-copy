@@ -78,10 +78,7 @@ for row_num, row in enumerate(matrix):
 Students must check that the value is the highest value in that
 row and the lowest value in the column. This is a good place to
 introduce the `max()` and `min()` functions which take an iterable
-and return the highest or lowest value. Alternatively students might 
-use the `<` and `>` operators and compare the value to each value
-in that row and column. This appreach is valid but generally results
-is much more verbose code. 
+and return the highest or lowest value.
 
 Another challenge here is getting the column. At this stage most 
 students should be ready to use a comprehension which is the best way, 
