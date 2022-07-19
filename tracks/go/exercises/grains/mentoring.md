@@ -4,9 +4,10 @@ _Grains_
 
 ## Reasonable Solutions
 
-This can be solved by calculating `2^n` (e.g. with `math.Pow`) or by using the shift operator `<<`. This solution uses the shift operator:
+This can be solved by calculating `2^n` (e.g. with `math.Pow`) or by using the shift operator `<<`.
+This solution uses the shift operator:
 
-```
+```go
 package grains
 
 import (
@@ -34,8 +35,10 @@ func Total() uint64 {
 
 ## Common suggestions
 
+Please watch out, due to an integer overflow, a wrong solution can pass the tests.
+
 In the exercise a `uint64` is used. Normally the `func Total()` should sum up the values from <code>2<sup>0</sup></code> to <code>2<sup>63</sup></code>:
-```
+```go
 func Total() uint64 {
 	var total uint64 = 0
 	for i := 0; i <= 63; i++ {
@@ -44,10 +47,11 @@ func Total() uint64 {
 	return total
 }
 ```
-This results in `18446744073709551615` which is in binary `1111111111111111111111111111111111111111111111111111111111111111`. This is the max value a `uint64` can store, so when adding more values, an integer overflow is the result.
+This results in `18446744073709551615` which is in binary `1111111111111111111111111111111111111111111111111111111111111111`.
+This is the max value a `uint64` can store, so when adding more values, an integer overflow is the result.
 
 When using the following code, which counts to <code>2<sup>65</sup></code>, an integer overflow is the result:
-```
+```go
 func Total() uint64 {
 	var total uint64 = 0
 	for i := 0; i <= 65; i++ {
@@ -64,11 +68,9 @@ func Total() uint64 {
 2^65=9223372036854775808     new sum: 18446744073709551615
 ```
 
-Please watch out, there can be wrong implementations here that pass all the tests. As you can see, the result after summing up to <code>2<sup>63</sup></code> and after summing up to <code>2<sup>65</sup></code> is the same&rarr;all test cases also pass if the values are summed up to <code>2<sup>65</sup></code>.
+As you can see, the result after summing up to <code>2<sup>63</sup></code> and after summing up to <code>2<sup>65</sup></code> is the same&rarr;all test cases also pass if the values are summed up to <code>2<sup>65</sup></code>.
 
 
 ## Talking points
 
-## Mentoring Tools
-
-* [Exalysis](https://github.com/exercism/exalysis) is a tool designed to help mentors of the Exercism Go track. It will watch the clipboard for Exercism download links, automatically download the student's solution, run the tests, check e.g. `gofmt` and `golint`, and make several helpful suggestions for the student based on static analysis of the code for common errors and problems. The results are copied to the clipboard, so all you need to do is paste the response, review it, edit it to add your own remarks, and submit.
+[to be defined]
