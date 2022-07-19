@@ -64,7 +64,7 @@ func Total() uint64 {
 2^65=9223372036854775808     new sum: 18446744073709551615
 ```
 
-Please watch out, there can be wrong implementations here that pass all the tests. As you can see, the result after summing up to <code>2<sup>63</sup></code> and after summing up to <code>2<sup>65</sup></code> is the same&rarr;all test-cases pass, also if the values are summed up to <code>2<sup>65</sup></code>.
+Please watch out, there can be wrong implementations here that pass all the tests. As you can see, the result after summing up to <code>2<sup>63</sup></code> and after summing up to <code>2<sup>65</sup></code> is the same&rarr;all test cases also pass if the values are summed up to <code>2<sup>65</sup></code>.
 
 
 ## Talking points
