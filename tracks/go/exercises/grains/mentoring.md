@@ -17,7 +17,7 @@ import (
 // first square has 1 and every subsequent square doubles the number.
 func Square(number int) (uint64, error) {
 	if number < 1 || number > 64 {
-		return 0, fmt.Errorf("Input[%d] invalid. Input should be between 1 and 64 (inclusive)", number)
+		return 0, fmt.Errorf("input should be between 1 and 64 (inclusive), got: %d", number)
 	}
 	// a left shift is equivalent to multiplying by 2.  So we need to left
 	// shift by num-1 times to get the number of grains on that square
@@ -33,8 +33,6 @@ func Total() uint64 {
 ```
 
 ## Common suggestions
-
-## Talking points
 
 In the exercise a `uint64` is used. Normally the `func Total()` should sum up the values from <code>2<sup>0</sup></code> to <code>2<sup>63</sup></code>:
 ```
@@ -66,7 +64,10 @@ func Total() uint64 {
 2^65=9223372036854775808     new sum: 18446744073709551615
 ```
 
-As you can see, the result for after summing up to <code>2<sup>63</sup></code> and after summing uo to <code>2<sup>65</sup></code> is the same&rarr;all test-cases pass, also if the values are summarized up to <code>2<sup>65</sup></code>.
+Please watch out, there can be wrong implementations here that pass all the tests. As you can see, the result for after summing up to <code>2<sup>63</sup></code> and after summing uo to <code>2<sup>65</sup></code> is the same&rarr;all test-cases pass, also if the values are summed up to <code>2<sup>65</sup></code>.
+
+
+## Talking points
 
 ## Mentoring Tools
 
