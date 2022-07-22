@@ -105,6 +105,7 @@ This problem potentially introduces several new concepts to the student, includi
 
 If the student wants to explore alternative approaches, one approach is to create a transverse matrix for easier access to the columns:
 
+```
 for row_num, row in enumerate(matrix):
     for col_num, col in enumerate(zip(*matrix)):
         if max(row) == min(col):
