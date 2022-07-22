@@ -75,7 +75,7 @@ Regular languages are [context free][context-free], which means they cannot main
 Languages which use a stack are called [context sensitive][context-sensitive] languages and *can* maintain a context.
 
 Languages such as simple arithmetic expressions (e.g. `x = a + m * b`) are regular and can be matched using regular expressions.
-Languages such as HTML - or bracket matching, require a context sensitive grammer and cannot be matched using regular expressions.
+However, languages such as HTML - or bracket matching, require a context sensitive grammar and **cannot** be matched using regular expressions.
 
 While *formal* regular expressions cannot maintain context, there are *implementations* of regular expressions which do support parsing context sensitive grammars using [recursion][regex-recursion].
 Using recusion, a grammar can support [recursive descent parsing][recursive-descent-parser] which, with the help of backtracking, forms a type of a context stack.
