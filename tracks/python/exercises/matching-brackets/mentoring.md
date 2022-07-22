@@ -65,7 +65,7 @@ The intent is to provide direction if one would like to delve deeper into this t
 
 Regular expressions are often a go-to for parsing strings.
 However, standard regular expressions are a poor fit for this particular exercise.
-Below is some theory which explains why it is a poor fit.
+Below is some theory which explains the issue.
 
 In formal language theory, computer science and linguistics, the Chomsky hierarchy [Chomsky hierarchy][chomsky-hierarchy] is a hierarchy of *formal grammars*.
 A grammar is a tool used to describe a *language*, such as mathematical expressions, a programming language or an HTML document.
