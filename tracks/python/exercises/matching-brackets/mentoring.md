@@ -30,7 +30,7 @@ def is_paired(input_string):
 
 ### Maintaining Context
 
-The key to solving this problem is recognizing that the solution is all about maintaining contexts.
+The key to solving this problem is recognizing that the solution is all about _maintaining context_.
 When processing an open bracket, the context changes to that bracket type, adding a new context.
 Prior open brackets need to be preserved, but do not need to be accessed until the current context is closed.
 When deciding if a given close bracket is valid, the current context (the last known open bracket) is all that is needed.
