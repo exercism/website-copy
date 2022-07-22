@@ -104,13 +104,10 @@ This problem potentially introduces several new concepts to the student, includi
 - the built-in functions `all`, `max`, `min` and `enumerate`
 
 If the student wants to explore alternative approaches, one approach is to create a transverse matrix for easier access to the columns:
-```
+
 for row_num, row in enumerate(matrix):
     for col_num, col in enumerate(zip(*matrix)):
         if max(row) == min(col):
-```
-Using the `zip` function and the unpacking operator is not strictly required:
-```
 transverse_matrix = [
   [row[col_num] for row in matrix] 
   for col_num in range(len(matrix[0]))
