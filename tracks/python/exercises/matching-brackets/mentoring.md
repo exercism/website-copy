@@ -33,7 +33,7 @@ def is_paired(input_string):
 The key to solving this problem is recognizing that the solution is all about maintaining contexts.
 When processing an open bracket, the context changes to that bracket type, adding a new context.
 Prior open brackets need to be preserved, but do not need to be accessed until the current context is closed.
-When deciding is a given close bracket is valid, the current context is all that is needed - what the last open bracket was.
+When deciding if a given close bracket is valid, the current context (the last known open bracket) is all that is needed.
 If the current context matches the close bracket, the context is closed.
 If the current context does not match, the close bracket is invalid.
 
