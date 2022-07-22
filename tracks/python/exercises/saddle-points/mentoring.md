@@ -56,7 +56,7 @@ This might be a good place to introduce concepts like list comprehensions and th
 ### Iterating over the values
 
 There are various ways of iterating over the values, but nested `for` loops are the most straightforward. 
-Since the column and row indicies are required along with the values, this is a good place to introduce the `enumerate()` function. 
+Since the column and row indices are required along with the values, this is a good place to introduce the `enumerate()` function. 
 This should be preferred over using a combination of `range()` and `len()`.
 
 ```python
