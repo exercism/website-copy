@@ -72,7 +72,7 @@ A grammar is a tool used to describe a *language*, such as mathematical expressi
 
 Regular expressions provide a way to describe a "[regular language][regular-language]".
 Regular languages are [context free][context-free], which means they cannot maintain a current context or operate based on contexts.
-Languages which use a stack as called [context sensitive][context-sensitive] and *can* maintain a context.
+Languages which use a stack are called [context sensitive][context-sensitive] languages and *can* maintain a context.
 
 Languages such as simple arithmetic expressions (e.g. `x = a + m * b`) are regular and can be matched using regular expressions.
 Languages such as HTML - or bracket matching, require a context sensitive grammer and cannot be matched using regular expressions.
