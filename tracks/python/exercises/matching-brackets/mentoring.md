@@ -81,8 +81,12 @@ While *formal* regular expressions cannot maintain context, there are *implement
 Using recusion, a grammar can support [recursive descent parsing][recursive-descent-parser] which, with the help of backtracking, forms a type of a context stack.
 
 Python's standard `re` module does not support recursive regular expression.
-As such, it cannot parse context sensitive grammers.
+As such, it cannot parse context sensitive grammars.
 This is what makes it a poor fit for parsing context sensitive languages like HTML and matching brackets.
+
+For those eager to explore regex-recursion, the third party [regex][pypi-regex-module] module provides support for recursive regex in Python.
+
+[Rexegg][rexegg-site] also offers some great explanation and tips, as does this [Stack Overflow Post][so-recursive-regex-python].
 
 
 [chomsky-hierarchy]: https://en.wikipedia.org/wiki/Chomsky_hierarchy
