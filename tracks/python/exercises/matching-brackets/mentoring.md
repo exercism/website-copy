@@ -94,4 +94,9 @@ For those eager to explore regex-recursion, the third party [regex][pypi-regex-m
 [context-free]: https://en.wikipedia.org/wiki/Context-free_language
 [context-sensitive]: https://en.wikipedia.org/wiki/Context-sensitive_grammar
 [regex-recursion]: https://www.regular-expressions.info/recurse.html
+[pypi-regex-module]: https://pypi.org/project/regex/
+[rexegg-site]: https://www.rexegg.com/regex-recursion.html
+[so-recursive-regex-python]: https://stackoverflow.com/questions/23183777/recursive-regexp-in-python
+[list-python]: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+
 [recursive-descent-parser]: https://en.wikipedia.org/wiki/Recursive_descent_parser
