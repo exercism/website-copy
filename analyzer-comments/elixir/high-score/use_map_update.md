@@ -1,6 +1,6 @@
 # use `Map.update/4`
 
-Use [`Map.update`] instead of [`Map.put`] + [`Map.get`] in `update_score` to
+Use [`Map.update`] in `update_score` to
 update `scores` in a single call. For the updating function, define an
 anonymous function using [`fn`] or the [`&` operator shorthand].
 
