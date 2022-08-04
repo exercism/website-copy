@@ -14,7 +14,7 @@ denominations = (9, "billion"), (6, "million"), (3, "thousand"), (2, "hundred")
 def say(number):
     if 0 > number or number > 999999999999:
         raise ValueError("input out of range")
-    if number < 20 and number >= 10:
+    if 10 <= number < 20:
         return teens[number % 10]
     if number < 100:
         if number // 10 and number % 10:
@@ -30,7 +30,9 @@ def say(number):
 ```
 Or without using recursion:
 ```
-def say3(number):
+denominations = (9, "billion"), (6, "million"), (3, "thousand"), (0, "")
+
+def say_three_digits(number):
     hundreds_col, tens_col, ones_col = number // 100, number // 10 % 10, number % 10
     result = [str(digits[hundreds_col]) + " hundred"] if hundreds_col else []
     if tens_col == 1:
@@ -47,7 +49,7 @@ def say(number):
     result = []
     for k, denomination in denominations:
         if number > 10**k - 1:
-            result += say3(number // 10**k)
+            result += say_three_digits(number // 10**k)
             result += [denomination]
             number %= 10**k
     return " ".join(e for e in result if e) or "zero"
@@ -99,7 +101,7 @@ Students will not need or want to use all of these, but mentors should look for 
 * Assignment operators
 * Unpacking operator
 * Short circuit evaluation and the use of `or`/`and` for control flow
-* Ternery if-else
+* Ternery conditional operator
 * Integer division and modulo operators, and the divmod function
 * Recusion
 
