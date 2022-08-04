@@ -109,7 +109,7 @@ Students who wish to extend the exercise can rewrite the function to include 'an
 This will require rewriting the tests, which might also serve as a learning opportunity for the student.
 
 This problem is a good opportunity to practice writing concise code and balancing readability. 
-It is also a good chance to code verbosely while the problem is solved, and then iterate on the solution to reduce length and complexity, so don't require the student to write concise code on every iteration. 
+It is also a good chance to code verbosely while the problem is solved, and then iterate on the solution to reduce length and complexity.
 A terse solution which demonstrates some techniques:
 ```
 digits = [""] + "one two three four five six seven eight nine".split()
