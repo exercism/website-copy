@@ -59,7 +59,7 @@ def say(number):
 
 ### Defining the literals
 Typically this problem will begin with defining the literals needed. 
-These can be done as either lists or dicts, but most students will fine dicts easier to work with for this problem. 
+These can be done as either lists or dictionaries; many students will find dictionaries easier to work with for this problem. 
 Encourage the student to define these at the start rather than embedding them in their code.
 
 ### Values below 1000
