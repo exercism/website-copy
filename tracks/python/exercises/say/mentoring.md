@@ -68,7 +68,7 @@ The return value of this function will typically be a string, but it can also be
 Whether in this function or for the final return, encourage them to use a list and combine the elements using `str.join`.
 
 The main challenges are ensuring that the 'hundred' denominator is conditionally included and that the tens and ones columns are joined with a hyphen if they are both present.
-Simple `if` checks for each of these conditions are the most straightforward approach.
+Simple `if` checks for each of these conditions is the most straightforward approach.
 
 Another valid approach is to only handle values below 100, and instead handle the hundreds alongside the other denominators.
 This approach typically requires the use of recursion. 
