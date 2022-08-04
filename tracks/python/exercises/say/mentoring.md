@@ -115,7 +115,7 @@ A terse solution which demonstrates some techniques:
 digits = [""] + "one two three four five six seven eight nine".split()
 teens = "ten eleven twelve thir four fif six seven eigh nine".split()
 tens = ["", ""] + "twenty thirty forty fifty sixty seventy eighty ninety".split()
-denominations = (9, 'billion'), (6, 'million'), (3, 'thousand'), (2, 'hundred')
+denominations = (9, "billion"), (6, "million"), (3, "thousand"), (2, "hundred")
 
 def say(n):
     if 0 > n or n > 999999999999:
@@ -123,7 +123,7 @@ def say(n):
     if n < 20 and n >= 10:
         return teens[n % 10] + "teen" if n % 10 > 2 else ""
     if n < 100:
-        return '-'.join(filter(bool, [tens[n // 10], digits[n % 10]])) or 'zero'
+        return "-".join(filter(bool, [tens[n // 10], digits[n % 10]])) or "zero"
     k, d = [t for t in denominations if n > 10**t[0] - 1][0]
     return " ".join([say(n // 10**k), d] + ([say(n % 10**k)] if n % 10**k else []))
 ```
