@@ -70,8 +70,8 @@ Whether in this function or for the final return, encourage them to use a list a
 The main challenges are ensuring that the 'hundred' denominator is conditionally included and that the tens and ones columns are joined with a hyphen if they are both present.
 Simple `if` checks for each of these conditions is the most straightforward approach.
 
-Another valid approach is to only handle values below 100, and instead handle the hundreds alongside the other denominators.
-This approach typically requires the use of recursion. 
+Another approach is to only handle values below 100, and instead handle the hundreds alongside the other denominators.
+This typically requires the use of recursion. 
 
 ### Larger numbers
 Encourage the student to use the first function they wrote for each set of three digits rather than duplicating code.
@@ -82,11 +82,10 @@ Finally, the student must add a guard that returns a `ValueError` if the input i
 A guard is also the easiest way to handle the zero case, but this can also be handled through short circuit evaluation.
 
 ### Parsing the number
-The number needs to be broken up into groups of three. 
-This can be handled either with numeric operators or by casting to a string.
-Generally a student will find it easier to work with the number as a string for this problem, but both approaches are valid.
+The number needs to be broken up into groups of three as well as isolating each digit. 
+Two common approaches are to use the `//` and `%` operators or to cast the integer to a string and access the digits by indexing or iterating.
 
-## Talking points
+## Talking Points
 List comprehensions are very useful for this exercise.
 
 There are a wide variety of valid approaches to this problem, which gives students a lot of opportunity to experiment and encounter new ways of manipulating data.
