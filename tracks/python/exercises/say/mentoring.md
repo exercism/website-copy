@@ -87,7 +87,7 @@ This can be handled either with numeric operators or by casting to a string.
 Generally a student will find it easier to work with the number as a string for this problem, but both approaches are valid.
 
 ## Talking points
-The student should be familiar with comprehensions - if they aren't, introduce the concept as they are very useful here.
+List comprehensions are very useful for this exercise.
 
 There are a wide variety of valid approaches to this problem, which gives students a lot of opportunity to experiment and encounter new ways of manipulating data.
 Some useful techniques that students might not have encountered are listed below.
