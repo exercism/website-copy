@@ -101,7 +101,7 @@ Students will not need or want to use all of these, but mentors should look for 
 * Assignment operators
 * Unpacking operator
 * Short circuit evaluation and the use of `or`/`and` for control flow
-* Ternery conditional operator
+* Ternary conditional operator
 * Integer division and modulo operators, and the divmod function
 * Recusion
 
