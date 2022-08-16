@@ -14,7 +14,7 @@ public static class NucleotideCount
     public static IDictionary<char, int> Count(string sequence)
     {
         var nucleotideCounts = new Dictionary<char, int> { {'A', 0}, {'C', 0}, {'G', 0}, {'T', 0} };
-        
+
         foreach (var c in sequence)
         {
             if (nucleotideCounts.ContainsKey(c))
@@ -42,11 +42,11 @@ using System.Linq;
 public static class NucleotideCount
 {
     private static readonly char[] ValidNucleotideSymbols = {'A', 'C', 'G', 'T'};
-    
+
     public static IDictionary<char, int> Count(string sequence)
     {
         var nucleotideCounts = ValidNucleotideSymbols.ToDictionary(c => c, c => 0);
-        
+
         foreach (var c in sequence)
         {
             if (ValidNucleotideSymbols.Contains(c))
@@ -66,6 +66,9 @@ public static class NucleotideCount
 
 ### Common Suggestions
 
- * Iterating over the input string more than once wastes cycles, memory, etc. Often it isn't obvious that this is happening because methods like `ToList`, `GroupBy` or `Count` will iterate a list without the student having to write a loop.
-   * Hence, using `sequence.Any()` or `sequence.Where(...)` to implement the exception is wrong. It should be thrown within the single iteration.
-   * Similarly, though there are numerous ways to use LINQ to solve this problem it should be avoided. All of them involve iterating the input string multiple times.
+As the README doesn't explicitly mention that a student should optimize for performance, don't discard solutions just on this ground. Rather, use it as a chance to start a discussion about readability/performance trade-offs and when to prefer which.
+
+* If you look for a performance-oriented solution, iterating over the input string more than once wastes cycles, memory, etc. Often, it isn't obvious that this is happening because LINQ's `ToList`, `GroupBy` and `Count` methods will iterate over _all_ the `string`'s characters.
+  * If you care about raw performance, LINQ is usually not the best option, as most of its methods involve iterating the input string multiple times.
+
+* If one wants to optimize for readability, using LINQ is probably the best approach.
