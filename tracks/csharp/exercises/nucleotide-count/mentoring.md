@@ -67,6 +67,6 @@ public static class NucleotideCount
 As the README doesn't explicitly mention that a student should optimize for performance, don't discard solutions just on this ground. Rather, use it as a chance to start a discussion about readability/performance trade-offs and when to prefer which.
 
 * If you look for a performance-oriented solution, iterating over the input string more than once wastes cycles, memory, etc. Often, it isn't obvious that this is happening because methods like `ToList`, `GroupBy` and `Count` will iterate over all the string's characters without the student having to write a loop.
-  * Similarly, though there are numerous ways to use LINQ to solve this problem, it should be avoided in performance scenarios. All of them involve iterating the input string multiple times.
+  * If you care about raw performance, LINQ is usually not the best option, as most of its methods involve iterating the input string multiple times.
 
 * If one wants to optimize for readability, using LINQ is probably the best approach.
