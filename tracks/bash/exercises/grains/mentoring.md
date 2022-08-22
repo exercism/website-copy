@@ -13,13 +13,11 @@ function main() {
 
   if [[ "$square" == "total" ]]; then
     echo "2^64 - 1" | bc
-    exit 0
-  elif [[ "$square" -lt 1 || "$square" -gt 64 ]]; then
+  elif (( square < 1 || square > 64 )); then
     echo "Error: invalid input"
-    exit 1
+    return 1
   else
     echo "2^($square - 1)" | bc
-    exit 0
   fi
 }
 
@@ -41,13 +39,11 @@ function main() {
 
   if [[ "$square" == "total" ]]; then
     printf '%u\n' "$(( 2**64 - 1 ))"
-    exit 0
-  elif [[ "$square" -lt 1 || "$square" -gt 64 ]]; then
+  elif (( square < 1 || square > 64 )); then
     echo "Error: invalid input"
-    exit 1
+    return 1
   else
     printf '%u\n' "$(( 2**(square - 1) ))"
-    exit 0
   fi
 }
 
