@@ -25,8 +25,8 @@ static class DiffieHellman
 
 ### Talking points: Questions to challenge more advance learners with.
 
-There is no easy way to generate a BigInteger random number. There is many options, and one example is here 
+There is no easy way to generate a BigInteger random number. There are many options, one example is here:
 https://gist.github.com/rharkanson/50fe61655e80488fcfec7d2ee8eff568. 
 
-But this might be too much for some and perhaps the generation of a 32 integer could be used as a starting point for a discussiona bout limitations
-of the standard libraries as well as implications of 'shortcuts' like that have on security of solutions. In this example the standard libraries support BigInteger operations typical in secuirty applications with the `BigInteger.ModPow()` function. Without it there is a lot of casting to do. But there is no good way to generate a random BigInteger necessary for a lot of securitity tasks. The use of `random.Next((int)primeP)` appears to be working, the tests pass, but the solution is not what it seems as the returned random numbers are of `BigInteger` type, but all fall within 64 bit integer range. 
+But this might be too much for some, and perhaps the generation of a 32 bit integer could be used as a starting point for a discussion about limitations
+of the standard libraries as well as implications of 'shortcuts' like that have on security of solutions. In this example, the standard libraries support `BigInteger` operations typical in secuirty applications with the `BigInteger.ModPow()` function. Without it, there is a lot of casting to do. But there is no good way to generate a random `BigInteger` necessary for a lot of securitity tasks. The use of `random.Next((int)primeP)` appears to be working, the tests pass, but the solution is not what it seems as the returned random numbers are of `BigInteger` type, but all fall within the 64 bit integer range. 
