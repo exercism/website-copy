@@ -60,12 +60,20 @@ public class Matrix
 }
 ```
 
-### Common suggestions: Good suggestions specific to this exercise. Good lessons that emerge from it.
+### Common suggestions:
+*Good suggestions specific to this exercise. Good lessons that emerge from it.*
 
-- While it is possible to solve the problem using multidimensional arrays the jagged array is easier to work with. 
+- While it is possible to solve the problem using multidimensional arrays the jagged array is easier to work with.
+This is because it is possible to return a single row simply as `matrix[r]`.  
 
-### Talking points: Questions to challenge more advance learners with.
+### Talking points:
+*Questions to challenge more advance learners with.*
 
 - The differences between multidimensional and jagged arrays in general and in C#.
-- There are two problems: paring of input and responding to queries. 
+In this case the data is dense so there are no memory efficiencies to talk about. 
+However, the choice influeces the type of code we can write. 
+- There are two problems: parsing of input and responding to queries. 
+Both are relatively simple and there is no need for input checking. 
 - The problem can be solved with iteration using loops and using Linq. What's the difference? 
+Both the parsing and access to column data change. 
+The change in parsing is more obvious between very imperative use of two loops vs more declarative expression using linq. 
