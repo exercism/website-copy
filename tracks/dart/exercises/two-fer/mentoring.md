@@ -38,3 +38,9 @@ within the Dart community.
 [reference-optional-parameter]: https://dart.dev/guides/language/language-tour#default-parameter-values
 [reference-string-interpolation]: https://dart.dev/guides/language/language-tour#strings
 [reference-expression-bodied-method]: https://dart.dev/guides/language/language-tour#functions
+
+## Solution Video
+
+Step by Step [video][youtube-video] solution for this exercise
+
+[youtube-video]: https://www.youtube.com/watch?v=3fSPTQWGuik&t=2s
