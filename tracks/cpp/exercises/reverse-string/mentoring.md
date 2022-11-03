@@ -33,9 +33,9 @@ namespace reverse_string {
 
 ## Talking points
 
- - Do not reinvent the weel, reuse existing algorithms when possible.
- - Be aware of hidden copies being made by using certain types as function parameters (`std::string` in this case):
+ - Do not reinvent the wheel, reuse existing algorithms when possible.
+ - Be aware of hidden copies being made by using certain types as function parameters. (`std::string` in this case)
  - Usage of modern c++ features to solve a problem.
  - Make sure you enabled **all** tests.
  - When appending to a vector or string, *reserving* size can be an optimization. (although there's usually even better alternatives)
- - It's good practise to define functions in the `.h` file and implement them in the `.cpp` file. (with exeprions for inline, constexpr or templated functions)
+ - It's good practice to define functions in the `.h` file and implement them in the `.cpp` file. (with exceptions for inline, constexpr or templated functions)
