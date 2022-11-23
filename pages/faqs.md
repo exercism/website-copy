@@ -92,15 +92,15 @@ There are a few different ways - becoming a mentor, managing a language track or
 
 ## How do new language tracks get added to the site?
 
-A new language track gets created when a member of the community takes the lead on it and becomes a maintainer of the track. If you'd like to get involved in helping set one up, there are [instructions here](https://github.com/exercism/request-new-language-track/blob/main/README.md).
+A new language track gets created when a member of the community takes the lead building and launching the track.
+If you'd like to get involved in helping set one up, there are [instructions here](https://github.com/exercism/generic-track/blob/main/README.md).
 
-## Why are issues taking a while to get resolved?
+## Reporting an issue
 
-Version 3 of Exercism is being actively worked on, which means that contributors and maintainers are splitting their time between the current version (V2) and the next.
+We use the [Exercism Community Forum][forum-support] to help people resolve issues.
+In a few cases we may ask you to open an issue on GitHub, but this will be rare.
 
-## Opening an Issue
-
-Before submitting an issue, be sure to check the relevant GitHub issue tracker to see if it has already been reported or resolved:
+Before reporting an issue, be sure to check the relevant GitHub issue tracker to see if it has already been reported or resolved:
 
 1. [The Exercism Website or Product](https://github.com/exercism/website-copy/issues)
 2. [The Command-Line Interface (CLI) Client](https://github.com/exercism/CLI/issues)
@@ -110,21 +110,25 @@ You can search through issues (remove the `is:open` filter to include closed/res
 
 ## What if my issue is not listed here or in GitHub?
 
-If your problem hasn't been resolved or reported, then create an issue in the appropriate repository by selecting the green **New issue** button.
+If your problem hasn't been resolved or reported, then create a new post in the [Forum][forum-support].
 
 Make sure to include the following information:
 
 1. The output of the `exercism troubleshoot` command (for CLI issues)
 1. Details on the issue you are experiencing
 1. Instructions on how to reproduce the issue
-1. If applicable, reference to any related issue using its issue number (formatted like #1203)
+1. If applicable, reference to any related issue.
 
 ## What if there is an issue with language on the website?
 
-If your issue pertains to an exercise in your language track, then please find the correct language track [from this list](https://github.com/search?q=topic%3Aexercism-track+org%3Aexercism+fork%3Atrue) and submit an issue there. Please specify if the issue is with the instructions or something language specific, using the template below.
+If your issue pertains to an exercise in the Exercism track for the language you are practicing, then please open an issue in the [Forum][forum-support].
+Please specify if the issue is with the instructions or something language specific.
 
-If you have spotted a typo or if you have a suggestion for clearer language or instructions on the general website, then [create an issue for Exercism Website Copy](https://github.com/exercism/website-copy/issues/new) with the following information:
+If you have spotted a typo or if you have a suggestion for clearer language or instructions on the general website, then create a post in the [Forum][forum-building-exercism] with the following information:
 
 1. Link to the page where the issue is
 1. Explanation of what the mistake is or what is unclear
 1. Your proposed change
+
+[forum-support]: https://forum.exercism.org/c/support/8
+[forum-building-exercism]: https://forum.exercism.org/c/exercism/building-exercism/125
