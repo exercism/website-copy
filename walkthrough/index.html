@@ -25,7 +25,9 @@ Congratulations, you've now installed Exercism on your computer! Our next step i
 
 [[Configure the CLI-&gt;Configuring the CLI]]</tw-passagedata><tw-passagedata pid="4" name="Talk to a Volunteer" tags="" position=""># Talk to a Volunteer
 
-Are you having problems installing Exercism? Don't worry! We have volunteers willing to help you [here](https://gitter.im/exercism/support). Getting new people to learn with Exercism is our top priority, so please don't be afraid to reach out.</tw-passagedata><tw-passagedata pid="5" name="Configuring the CLI" tags="" position=""># Configuring the CLI
+Are you having problems installing Exercism? Don't worry!
+We have volunteers willing to help you [on our forum](https://forum.exercism.org/).
+Getting new people to learn with Exercism is our top priority, so please don't be afraid to reach out.</tw-passagedata><tw-passagedata pid="5" name="Configuring the CLI" tags="" position=""># Configuring the CLI
 
 In order to configure the CLI, paste in the following text into your terminal:
 
@@ -338,72 +340,108 @@ If you would like to read more on Homebrew before installing it, the &lt;a href=
 Paste in the following text into your terminal:
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 After typing in the command, hit the `Enter` key.
 
-After hitting the `Enter` key, you should see that the terminal prompts you to confirm installation.
-
-![Confirming brew installation](https://raw.githubusercontent.com/exercism/interactive-cli-walkthrough/main/contents/assets/mac/confirming_brew_installation.png)
-
 ## Step 2
 
-Hit the `Enter` key to confirm the `homebrew` installation.
+```none
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==&gt; Checking for `sudo` access (which may request your password)...
+Password:
+```
 
-After hitting the `Enter` key, the terminal prompts you to confirm again by typing in your password.
+Type in your password and hit `Enter`.
 
-![Input password](https://raw.githubusercontent.com/exercism/interactive-cli-walkthrough/main/contents/assets/mac/input_password.png)
-
-## Step 3
-
-Type in your password in the terminal and hit `Enter`.
-
-&gt; Sidenote: If it's your first time doing this, you might be confused that as you are typing, nothing appears. This is a security feature of the terminal. Just keep on typing and press `Enter` when you finish.
+&gt; Sidenote: If it is your first time doing this, you might be confused that as you are typing, nothing appears.
+&gt; This is a security feature of the terminal.
+&gt; Just keep on typing and press `Enter` when you finish.
 
 ### Incorrect password was typed in
 
-You will see a message that an incorrect password was typed in. First, try to verify if you've typed your password correctly. If it still doesn't work, it may be the case that the password you have isn't the administrator's password. It would be good to ask your administrator to put in the password for you.
+You will see a message that an incorrect password was typed in.
+First, try to verify if you have typed your password correctly.
+If it still doesn't work, it may be the case that the password you have isn't the administrator's password.
+It would be good to ask your administrator to put in the password for you.
 
 ### Correct password was typed in
 
-Your terminal should now reply saying that the `homebrew` installation has started. It may look something like this:
+Your terminal should now reply saying that the `homebrew` installation has started.
 
-![Homebrew installing](https://raw.githubusercontent.com/exercism/interactive-cli-walkthrough/main/contents/assets/mac/homebrew_installing.png)
+## Step 3
+
+After hitting the `Enter` key, you should see that the terminal prompts you to confirm installation.
+
+&gt; Sidenote: Your installation directories may be different.
+
+```none
+==&gt; This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==&gt; The following existing directories will be made writable by user only:
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+==&gt; The following existing directories will have their owner set to glennj:
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+==&gt; The following existing directories will have their group set to admin:
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+
+Press RETURN/ENTER to continue or any other key to abort:
+```
+
+Hit the `Enter` key to confirm the `homebrew` installation.
 
 ## Step 4
 
-Since `homebrew` is still installing at this point, the only need thing we need to do is wait. It may take at most 5 minutes.
+Since `homebrew` is still installing at this point, the only need thing we need to do is wait.
+It may take at most 5 minutes.
 
 ### Installation is successful
 
-After waiting, your terminal must respond with a message saying that the Homebrew installation is complete. It may look something like this:
+After waiting, your terminal must respond with a message saying that the Homebrew installation is complete.
+It may look something like this:
 
-![Homebrew install confirmation](https://raw.githubusercontent.com/exercism/interactive-cli-walkthrough/main/contents/assets/mac/homebrew_install_confirmation.png)
+```none
+==&gt; Installation successful!
 
-### Installation isn't successful
+==&gt; Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
 
-If you don't seem to see a message confirming that homebrew is installed, we first recommend to check whether your internet connection is up. The installation process requires it. If your connection is up, we recommend running the install process again.
+==&gt; Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==&gt; Next steps:
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+```
+
+### Installation is not successful
+
+If you don't seem to see a message confirming that homebrew is installed, we first recommend to check whether your internet connection is up.
+The installation process requires it.
+If your connection is up, we recommend running the install process again.
 
 ## Wrapping up
 
-Once you've reached the end of this tutorial, you should've installed Homebrew on your computer.
+Once you have reached the end of this tutorial, you should have installed Homebrew on your computer.
 
 ---
 
 ## Were you able to install Homebrew?
 - [[Yes-&gt;Installing Exercism via Homebrew]]
 - [[I don't know-&gt;Verifying Homebrew Installation]]
-- [[No-&gt;Installing Homebrew - Troubleshooting]]</tw-passagedata><tw-passagedata pid="17" name="Installing Homebrew - Troubleshooting" tags="" position=""># Installing Homebrew - Troubleshooting
-Having problems getting homebrew on your computer? A solution to your problem may be outlined below.
-
----
-
-## Were you able to install Homebrew?
-
-- [[Yes-&gt;Installing Exercism on a Mac]]
-- [[No-&gt;Talk to a Volunteer]]
-- [[Try another installation method-&gt;Manual Installation on a Mac]]</tw-passagedata><tw-passagedata pid="18" name="Installing Exercism via Homebrew" tags="" position=""># Installing Exercism via Homebrew
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="17" name="Installing Exercism via Homebrew" tags="" position=""># Installing Exercism via Homebrew
 
 You've made it to the last step! Since we've got the parts to install Exercism, it shouldn't be long before you start your learning journey with Exercism.
 
@@ -477,7 +515,7 @@ Once you've reached the end of this tutorial, you should've installed Exercism o
 ## Have you installed Exercism on your computer?
 
 - [[Yes-&gt;CLI Installation complete]]
-- [[No-&gt;Installing Exercism via Homebrew - Troubleshooting]]</tw-passagedata><tw-passagedata pid="19" name="Installing Exercism via Homebrew - Troubleshooting" tags="" position=""># Installing Exercism via Homebrew - Troubleshooting
+- [[No-&gt;Installing Exercism via Homebrew - Troubleshooting]]</tw-passagedata><tw-passagedata pid="18" name="Installing Exercism via Homebrew - Troubleshooting" tags="" position=""># Installing Exercism via Homebrew - Troubleshooting
 Having problems getting Exercism on your computer? A solution to your problem may be present below.
 
 ---
@@ -486,7 +524,7 @@ Having problems getting Exercism on your computer? A solution to your problem ma
 
 - [[Yes-&gt;CLI Installation complete]]
 - [[No-&gt;Talk to a Volunteer]]
-- [[Try another installation method-&gt;Manual Installation on a Mac]]</tw-passagedata><tw-passagedata pid="20" name="Manual Installation on a Mac" tags="" position=""># Installing Exercism on a Mac manually
+- [[Try another installation method-&gt;Manual Installation on a Mac]]</tw-passagedata><tw-passagedata pid="19" name="Manual Installation on a Mac" tags="" position=""># Installing Exercism on a Mac manually
 
 To install Exercism on a Mac manually, we first need to determine your Mac's processor architecture.
 
@@ -495,7 +533,7 @@ To install Exercism on a Mac manually, we first need to determine your Mac's pro
 ## Do you know what your Mac's processor architecture is?
 - [[32 bit-&gt;Download and unzip 32 bit version on a Mac]]
 - [[64 bit-&gt;Download and unzip 64 bit version on a Mac]]
-- [[I don't know-&gt;Determine processor architecture on a Mac]]</tw-passagedata><tw-passagedata pid="21" name="Determine processor architecture on a Mac" tags="" position=""># Determine processor architecture on a Mac
+- [[I don't know-&gt;Determine processor architecture on a Mac]]</tw-passagedata><tw-passagedata pid="20" name="Determine processor architecture on a Mac" tags="" position=""># Determine processor architecture on a Mac
 
 The first step in installing Exercism manually is to determine your Mac's processor architecture. For this step, we need to use the terminal. If you need instructions on how to open the terminal, [[Opening the Terminal on a Mac]] would be helpful.
 
@@ -539,7 +577,7 @@ If you've reached the end of this tutorial without any problems, you should now 
 
 - [[32 bit-&gt;Download and unzip 32 bit version on a Mac]]
 - [[64 bit-&gt;Download and unzip 64 bit version on a Mac]]
-- [[I don't know-&gt;Determine processor architecture on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="22" name="Determine processor architecture on a Mac - Troubleshooting" tags="" position=""># Determine processor architecture on a Mac - Troubleshooting
+- [[I don't know-&gt;Determine processor architecture on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="21" name="Determine processor architecture on a Mac - Troubleshooting" tags="" position=""># Determine processor architecture on a Mac - Troubleshooting
 
 Having problems determining your processor architecture? A solution to your problem may be outlined below.
 
@@ -549,7 +587,7 @@ Having problems determining your processor architecture? A solution to your prob
 
 - [[32 bit-&gt;Download and unzip 32 bit version on a Mac]]
 - [[64 bit-&gt;Download and unzip 64 bit version on a Mac]]
-- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="23" name="Download and unzip 32 bit version on a Mac" tags="" position=""># Downloading Exercism on your Mac
+- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="22" name="Download and unzip 32 bit version on a Mac" tags="" position=""># Downloading Exercism on your Mac
 
 Now that we've found out that you run on a 32-bit processor architecture. Let's now download Exercism.
 
@@ -606,7 +644,7 @@ If you've reached the end of this tutorial without any problems, you should've t
 ## Were you able to get the Exercism program in your `Downloads` folder?
 
 - [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Download and unzip 32 bit version on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="24" name="Download and unzip 32 bit version on a Mac - Troubleshooting" tags="" position=""># Download Exercism on your Mac - Troubleshooting
+- [[No-&gt;Download and unzip 32 bit version on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="23" name="Download and unzip 32 bit version on a Mac - Troubleshooting" tags="" position=""># Download Exercism on your Mac - Troubleshooting
 Having problems determining your downloading the 32 bit version of exercism? A solution to your problem may be outlined below.
 
 ---
@@ -614,7 +652,7 @@ Having problems determining your downloading the 32 bit version of exercism? A s
 ## Were you able to get the Exercism program in your `Downloads` folder?
 
 - [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="25" name="Download and unzip 64 bit version on a Mac" tags="" position=""># Downloading Exercism on your Mac
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="24" name="Download and unzip 64 bit version on a Mac" tags="" position=""># Downloading Exercism on your Mac
 
 Now that we've found out that you run on a 64-bit processor architecture. Let's now download Exercism.
 
@@ -671,7 +709,7 @@ If you've reached the end of this tutorial without any problems, you should've t
 ## Were you able to get the Exercism program in your `Downloads` folder?
 
 - [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Download and unzip 64 bit version on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="26" name="Download and unzip 64 bit version on a Mac - Troubleshooting" tags="" position=""># Download Exercism on your Mac - Troubleshooting
+- [[No-&gt;Download and unzip 64 bit version on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="25" name="Download and unzip 64 bit version on a Mac - Troubleshooting" tags="" position=""># Download Exercism on your Mac - Troubleshooting
 Having problems determining your downloading the 64 bit version of exercism? A solution to your problem may be outlined below.
 
 ---
@@ -679,7 +717,7 @@ Having problems determining your downloading the 64 bit version of exercism? A s
 ## Were you able to get the Exercism program in your `Downloads` folder?
 
 - [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="27" name="Create bin folder on a Mac" tags="" position=""># Create bin folder on a Mac
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="26" name="Create bin folder on a Mac" tags="" position=""># Create bin folder on a Mac
 
 In order to place the Exercism program cleanly in our computer, let's create a folder named `bin` in order to house it.
 
@@ -744,7 +782,7 @@ If you've reached the end of this tutorial without any problems, you should've c
 ## Were you able to move the exercism program to your `bin` folder?
 
 - [[Yes-&gt;Add to $PATH on a Mac]]
-- [[No-&gt;Create bin folder on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="28" name="Create bin folder on a Mac - Troubleshooting" tags="" position=""># Create bin folder on a Mac - Troubleshooting
+- [[No-&gt;Create bin folder on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="27" name="Create bin folder on a Mac - Troubleshooting" tags="" position=""># Create bin folder on a Mac - Troubleshooting
 Having problems creating and moving exercism to your `bin` folder? A solution to your problem may be outlined below.
 
 ---
@@ -752,7 +790,7 @@ Having problems creating and moving exercism to your `bin` folder? A solution to
 ## Were you able to move the exercism program to your `bin` folder?
 
 - [[Yes-&gt;Add to $PATH on a Mac]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="29" name="Add to $PATH on a Mac" tags="" position=""># Add to $PATH on a Mac
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="28" name="Add to $PATH on a Mac" tags="" position=""># Add to $PATH on a Mac
 
 In order to for us to run the exercism program from anywhere in our terminal, we need to add its location to the $PATH variable.
 
@@ -795,7 +833,7 @@ If you've reached the end of this tutorial without any problems, you have instal
 ## Were you able to install Exercism?
 
 - [[Yes-&gt;CLI Installation complete]]
-- [[No-&gt;Add to $PATH on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="30" name="Add to $PATH on a Mac - Troubleshooting" tags="" position=""># Add to $PATH on a Mac - Troubleshooting
+- [[No-&gt;Add to $PATH on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="29" name="Add to $PATH on a Mac - Troubleshooting" tags="" position=""># Add to $PATH on a Mac - Troubleshooting
 Having problems creating adding exercism to the $PATH variable? A solution to your problem may be outlined below.
 
 ---
@@ -803,7 +841,7 @@ Having problems creating adding exercism to the $PATH variable? A solution to yo
 ## Were you able to install Exercism?
 
 - [[Yes-&gt;CLI Installation complete]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="31" name="Installing Exercism on a Mac" tags="" position=""># Installing Exercism on a Mac
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="30" name="Installing Exercism on a Mac" tags="" position=""># Installing Exercism on a Mac
 
 To install Exercism on a Mac, we first need to open the terminal.
 
@@ -812,7 +850,7 @@ To install Exercism on a Mac, we first need to open the terminal.
 ## Do you know how to open the terminal?
 
 - [[Yes-&gt;Asking about Homebrew]]
-- [[No-&gt;Opening the Terminal on a Mac]]</tw-passagedata><tw-passagedata pid="32" name="Determine processor architecture on a Mac - Expert" tags="" position=""># Determine processor architecture on a Mac
+- [[No-&gt;Opening the Terminal on a Mac]]</tw-passagedata><tw-passagedata pid="31" name="Determine processor architecture on a Mac - Expert" tags="" position=""># Determine processor architecture on a Mac
 
 To determine your processor architecture, run:
 
@@ -831,7 +869,7 @@ Also, all computers with more than 4 GB of memory has to have a 64 bit processor
 ## Do you know your processor architecture?
 
 - [[Yes-&gt;Manual Installation on a Mac]]
-- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="33" name="Installing Exercism on a Mac - Expert" tags="" position=""># Installing Exercism on a Mac
+- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="32" name="Installing Exercism on a Mac - Expert" tags="" position=""># Installing Exercism on a Mac
 
 To install exercism via Homebrew run:
 
@@ -856,7 +894,7 @@ It should be at least version 3.x
 - [[Yes-&gt;CLI Installation complete]]
 - [[I don't know my processor architecture-&gt;Determine processor architecture on a Mac - Expert]]
 - [[How do I put the binary in my path?-&gt;Create bin folder on a Mac]]
-- [[I'm lost, can we start over?-&gt;Installing Exercism on a Mac]]</tw-passagedata><tw-passagedata pid="34" name="Moving exercism to PATH on Windows 10" tags="" position=""># Moving the Exercism CLI to the right folder on Windows 10
+- [[I'm lost, can we start over?-&gt;Installing Exercism on a Mac]]</tw-passagedata><tw-passagedata pid="33" name="Moving exercism to PATH on Windows 10" tags="" position=""># Moving the Exercism CLI to the right folder on Windows 10
 
 To make the Exercism CLI usable on your computer, we need to move the `exercism` executable file to the correct folder. Using the Command Prompt we just opened, we are going to open the folder.
 
@@ -905,7 +943,7 @@ After hitting the `Enter` key, the Command Prompt should reply with how the `exe
 ## Have you installed the Exercism CLI on your computer?
 
 - [[Yes-&gt;CLI Installation complete]]
-- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="35" name="Download and unzip 64-bit version on Windows 10" tags="" position=""># Downloading the Exercism CLI on Windows 10
+- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="34" name="Download and unzip 64-bit version on Windows 10" tags="" position=""># Downloading the Exercism CLI on Windows 10
 
 Let's download the latest version of the Exercism CLI to get up and running.
 
@@ -949,13 +987,13 @@ If you've reached the end of this tutorial without any problems, you should have
 ## Were you able to get the program `exercism` in your `Downloads` folder?
 
 - [[Yes-&gt;Opening the Command Prompt on Windows 10]]
-- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="36" name="Windows Introduction" tags="" position=""># Installing Exercism on Windows
+- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="35" name="Windows Introduction" tags="" position=""># Installing Exercism on Windows
 
 The installer application will determine what version of the Exercism CLI you need, download it, and place it in the right location.
 If you are on Windows 10, you may opt to install the CLI manually by following the steps provided.
 
 - [[Install the CLI using the installer application.-&gt;Download CLI Installer for Windows]]
-- [[Proceed with manual installation.-&gt;Download and unzip 64-bit version on Windows 10]]</tw-passagedata><tw-passagedata pid="37" name="Opening the Command Prompt on Windows 10" tags="" position=""># Opening the Command Prompt on Windows 10
+- [[Proceed with manual installation.-&gt;Download and unzip 64-bit version on Windows 10]]</tw-passagedata><tw-passagedata pid="36" name="Opening the Command Prompt on Windows 10" tags="" position=""># Opening the Command Prompt on Windows 10
 
 For Exercism to work, it needs to be in the correct folder. The easiest way to move it is by using the Command Prompt.
 
@@ -989,7 +1027,7 @@ After double clicking, you'll see a window like the one shown here:
 ## Were you able to open the Command Prompt?
 
 - [[Yes-&gt;Moving exercism to PATH on Windows 10]]
-- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="38" name="Download CLI Installer for Windows" tags="" position=""># Option to install the Exercism CLI using the installer for Windows
+- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="37" name="Download CLI Installer for Windows" tags="" position=""># Option to install the Exercism CLI using the installer for Windows
 
 Use the link below to download and execute the Windows Installer for the Exercism CLI.  A new browser window will be opened when you click this link.  Please return to this browser window and let us know if you were successful.
 
