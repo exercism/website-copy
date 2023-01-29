@@ -1,7 +1,7 @@
 # must declare function
 
 Ensure the method `%{method/name}` exists. It was not found when
-analysing this solution. If it does not exist, point this out to the student.
+analysing this solution.
 
 ⚡ **Warning:** We cannot guarantee the analyzer worked correctly on this point. 
 Please double-check if it made a mistake, and if it did please open an issue 
