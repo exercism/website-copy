@@ -531,7 +531,7 @@ To install Exercism on a Mac manually, we first need to determine your Mac's pro
 ---
 
 ## Do you know what your Mac's processor architecture is?
-- [[32 bit-&gt;Download and unzip 32 bit version on a Mac]]
+- [[32 bit-&gt;Sorry, we don't support 32 bit Mac's]]
 - [[64 bit-&gt;Download and unzip 64 bit version on a Mac]]
 - [[I don't know-&gt;Determine processor architecture on a Mac]]</tw-passagedata><tw-passagedata pid="20" name="Determine processor architecture on a Mac" tags="" position=""># Determine processor architecture on a Mac
 
@@ -587,72 +587,9 @@ Having problems determining your processor architecture? A solution to your prob
 
 - [[32 bit-&gt;Download and unzip 32 bit version on a Mac]]
 - [[64 bit-&gt;Download and unzip 64 bit version on a Mac]]
-- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="22" name="Download and unzip 32 bit version on a Mac" tags="" position=""># Downloading Exercism on your Mac
+- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="22" name="Sorry, we don't support 32 bit Mac's" tags="" position=""># Can't install Exercism on your 32 bit Mac
 
-Now that we've found out that you run on a 32-bit processor architecture. Let's now download Exercism.
-
----
-
-## Step 1
-
-Open your browser and navigate to this page:
-
-```
-https://github.com/exercism/cli/releases/latest
-```
-
-To verify you are on the correct page, you must see a Downloads list when you scroll down.
-
-![Downloads list](https://raw.githubusercontent.com/exercism/interactive-cli-walkthrough/main/contents/assets/downloads_list.png)
-
-## Step 2
-
-On the downloads list, click on the file named:
-
-```
-exercism-mac-32bit.tgz
-```
-
-Clicking on it downloads the file.
-
-If you're unable to find it, here it is on the downloads list:
-
-![32-bit download](https://raw.githubusercontent.com/exercism/interactive-cli-walkthrough/main/contents/assets/mac/32_bit_download.png)
-
-To verify whether you've downloaded the right file, you should see the following file in your `Downloads` folder:
-
-```
-exercism-mac-32bit.tgz
-```
-
-## Step 3
-
-Double click on `exercism-mac-32bit.tgz` in order to extract it.
-
-To determine whether you've correctly extracted it, you must see a file named `exercism` appear.
-
-To illustrate, your `Downloads` folder should somewhat appear as this:
-
-![Exercism extracted](https://raw.githubusercontent.com/exercism/interactive-cli-walkthrough/main/contents/assets/mac/exercism_extracted.png)
-
-## Wrapping up
-
-If you've reached the end of this tutorial without any problems, you should've the Exercism program in your `Downloads` folder!
-
----
-
-## Were you able to get the Exercism program in your `Downloads` folder?
-
-- [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Download and unzip 32 bit version on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="23" name="Download and unzip 32 bit version on a Mac - Troubleshooting" tags="" position=""># Download Exercism on your Mac - Troubleshooting
-Having problems determining your downloading the 32 bit version of exercism? A solution to your problem may be outlined below.
-
----
-
-## Were you able to get the Exercism program in your `Downloads` folder?
-
-- [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="24" name="Download and unzip 64 bit version on a Mac" tags="" position=""># Downloading Exercism on your Mac
+Unfortunately, we don't support installing Exercism on 32 bit Mac's. Please use the online editor instead.</tw-passagedata><tw-passagedata pid="23" name="Download and unzip 64 bit version on a Mac" tags="" position=""># Downloading Exercism on your Mac
 
 Now that we've found out that you run on a 64-bit processor architecture. Let's now download Exercism.
 
@@ -675,7 +612,7 @@ To verify you are on the correct page, you must see a Downloads list when you sc
 On the downloads list, click on the file named:
 
 ```
-exercism-mac-64bit.tgz
+exercism-darwin-x86_64.tar.gz
 ```
 
 Clicking on it downloads the file.
@@ -687,12 +624,12 @@ If you're unable to find it, here it is on the downloads list:
 To verify whether you've downloaded the right file, you should see the following file in your `Downloads` folder:
 
 ```
-exercism-mac-64bit.tgz
+exercism-darwin-x86_64.tar.gz
 ```
 
 ## Step 3
 
-Double click on `exercism-mac-64bit.tgz` in order to extract it.
+Double click on `exercism-darwin-x86_64.tar.gz` in order to extract it.
 
 To determine whether you've correctly extracted it, you must see a file named `exercism` appear.
 
@@ -709,7 +646,7 @@ If you've reached the end of this tutorial without any problems, you should've t
 ## Were you able to get the Exercism program in your `Downloads` folder?
 
 - [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Download and unzip 64 bit version on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="25" name="Download and unzip 64 bit version on a Mac - Troubleshooting" tags="" position=""># Download Exercism on your Mac - Troubleshooting
+- [[No-&gt;Download and unzip 64 bit version on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="24" name="Download and unzip 64 bit version on a Mac - Troubleshooting" tags="" position=""># Download Exercism on your Mac - Troubleshooting
 Having problems determining your downloading the 64 bit version of exercism? A solution to your problem may be outlined below.
 
 ---
@@ -717,7 +654,7 @@ Having problems determining your downloading the 64 bit version of exercism? A s
 ## Were you able to get the Exercism program in your `Downloads` folder?
 
 - [[Yes-&gt;Create bin folder on a Mac]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="26" name="Create bin folder on a Mac" tags="" position=""># Create bin folder on a Mac
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="25" name="Create bin folder on a Mac" tags="" position=""># Create bin folder on a Mac
 
 In order to place the Exercism program cleanly in our computer, let's create a folder named `bin` in order to house it.
 
@@ -782,7 +719,7 @@ If you've reached the end of this tutorial without any problems, you should've c
 ## Were you able to move the exercism program to your `bin` folder?
 
 - [[Yes-&gt;Add to $PATH on a Mac]]
-- [[No-&gt;Create bin folder on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="27" name="Create bin folder on a Mac - Troubleshooting" tags="" position=""># Create bin folder on a Mac - Troubleshooting
+- [[No-&gt;Create bin folder on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="26" name="Create bin folder on a Mac - Troubleshooting" tags="" position=""># Create bin folder on a Mac - Troubleshooting
 Having problems creating and moving exercism to your `bin` folder? A solution to your problem may be outlined below.
 
 ---
@@ -790,7 +727,7 @@ Having problems creating and moving exercism to your `bin` folder? A solution to
 ## Were you able to move the exercism program to your `bin` folder?
 
 - [[Yes-&gt;Add to $PATH on a Mac]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="28" name="Add to $PATH on a Mac" tags="" position=""># Add to $PATH on a Mac
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="27" name="Add to $PATH on a Mac" tags="" position=""># Add to $PATH on a Mac
 
 In order to for us to run the exercism program from anywhere in our terminal, we need to add its location to the $PATH variable.
 
@@ -833,7 +770,7 @@ If you've reached the end of this tutorial without any problems, you have instal
 ## Were you able to install Exercism?
 
 - [[Yes-&gt;CLI Installation complete]]
-- [[No-&gt;Add to $PATH on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="29" name="Add to $PATH on a Mac - Troubleshooting" tags="" position=""># Add to $PATH on a Mac - Troubleshooting
+- [[No-&gt;Add to $PATH on a Mac - Troubleshooting]]</tw-passagedata><tw-passagedata pid="28" name="Add to $PATH on a Mac - Troubleshooting" tags="" position=""># Add to $PATH on a Mac - Troubleshooting
 Having problems creating adding exercism to the $PATH variable? A solution to your problem may be outlined below.
 
 ---
@@ -841,7 +778,7 @@ Having problems creating adding exercism to the $PATH variable? A solution to yo
 ## Were you able to install Exercism?
 
 - [[Yes-&gt;CLI Installation complete]]
-- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="30" name="Installing Exercism on a Mac" tags="" position=""># Installing Exercism on a Mac
+- [[No-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="29" name="Installing Exercism on a Mac" tags="" position=""># Installing Exercism on a Mac
 
 To install Exercism on a Mac, we first need to open the terminal.
 
@@ -850,7 +787,7 @@ To install Exercism on a Mac, we first need to open the terminal.
 ## Do you know how to open the terminal?
 
 - [[Yes-&gt;Asking about Homebrew]]
-- [[No-&gt;Opening the Terminal on a Mac]]</tw-passagedata><tw-passagedata pid="31" name="Determine processor architecture on a Mac - Expert" tags="" position=""># Determine processor architecture on a Mac
+- [[No-&gt;Opening the Terminal on a Mac]]</tw-passagedata><tw-passagedata pid="30" name="Determine processor architecture on a Mac - Expert" tags="" position=""># Determine processor architecture on a Mac
 
 To determine your processor architecture, run:
 
@@ -869,7 +806,7 @@ Also, all computers with more than 4 GB of memory has to have a 64 bit processor
 ## Do you know your processor architecture?
 
 - [[Yes-&gt;Manual Installation on a Mac]]
-- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="32" name="Installing Exercism on a Mac - Expert" tags="" position=""># Installing Exercism on a Mac
+- [[I don't know-&gt;Talk to a Volunteer]]</tw-passagedata><tw-passagedata pid="31" name="Installing Exercism on a Mac - Expert" tags="" position=""># Installing Exercism on a Mac
 
 To install exercism via Homebrew run:
 
@@ -894,7 +831,7 @@ It should be at least version 3.x
 - [[Yes-&gt;CLI Installation complete]]
 - [[I don't know my processor architecture-&gt;Determine processor architecture on a Mac - Expert]]
 - [[How do I put the binary in my path?-&gt;Create bin folder on a Mac]]
-- [[I'm lost, can we start over?-&gt;Installing Exercism on a Mac]]</tw-passagedata><tw-passagedata pid="33" name="Moving exercism to PATH on Windows 10" tags="" position=""># Moving the Exercism CLI to the right folder on Windows 10
+- [[I'm lost, can we start over?-&gt;Installing Exercism on a Mac]]</tw-passagedata><tw-passagedata pid="32" name="Moving exercism to PATH on Windows 10" tags="" position=""># Moving the Exercism CLI to the right folder on Windows 10
 
 To make the Exercism CLI usable on your computer, we need to move the `exercism` executable file to the correct folder. Using the Command Prompt we just opened, we are going to open the folder.
 
@@ -943,7 +880,7 @@ After hitting the `Enter` key, the Command Prompt should reply with how the `exe
 ## Have you installed the Exercism CLI on your computer?
 
 - [[Yes-&gt;CLI Installation complete]]
-- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="34" name="Download and unzip 64-bit version on Windows 10" tags="" position=""># Downloading the Exercism CLI on Windows 10
+- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="33" name="Download and unzip 64-bit version on Windows 10" tags="" position=""># Downloading the Exercism CLI on Windows 10
 
 Let's download the latest version of the Exercism CLI to get up and running.
 
@@ -987,13 +924,13 @@ If you've reached the end of this tutorial without any problems, you should have
 ## Were you able to get the program `exercism` in your `Downloads` folder?
 
 - [[Yes-&gt;Opening the Command Prompt on Windows 10]]
-- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="35" name="Windows Introduction" tags="" position=""># Installing Exercism on Windows
+- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="34" name="Windows Introduction" tags="" position=""># Installing Exercism on Windows
 
 The installer application will determine what version of the Exercism CLI you need, download it, and place it in the right location.
 If you are on Windows 10, you may opt to install the CLI manually by following the steps provided.
 
 - [[Install the CLI using the installer application.-&gt;Download CLI Installer for Windows]]
-- [[Proceed with manual installation.-&gt;Download and unzip 64-bit version on Windows 10]]</tw-passagedata><tw-passagedata pid="36" name="Opening the Command Prompt on Windows 10" tags="" position=""># Opening the Command Prompt on Windows 10
+- [[Proceed with manual installation.-&gt;Download and unzip 64-bit version on Windows 10]]</tw-passagedata><tw-passagedata pid="35" name="Opening the Command Prompt on Windows 10" tags="" position=""># Opening the Command Prompt on Windows 10
 
 For Exercism to work, it needs to be in the correct folder. The easiest way to move it is by using the Command Prompt.
 
@@ -1027,7 +964,7 @@ After double clicking, you'll see a window like the one shown here:
 ## Were you able to open the Command Prompt?
 
 - [[Yes-&gt;Moving exercism to PATH on Windows 10]]
-- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="37" name="Download CLI Installer for Windows" tags="" position=""># Option to install the Exercism CLI using the installer for Windows
+- [[No-&gt;Download CLI Installer for Windows]]</tw-passagedata><tw-passagedata pid="36" name="Download CLI Installer for Windows" tags="" position=""># Option to install the Exercism CLI using the installer for Windows
 
 Use the link below to download and execute the Windows Installer for the Exercism CLI.  A new browser window will be opened when you click this link.  Please return to this browser window and let us know if you were successful.
 
