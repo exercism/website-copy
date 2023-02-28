@@ -1,10 +1,12 @@
 # no rescue
 
-Do not use exceptions for flow control. Try to solve this exercise without using `rescue`.
+Do not use exceptions for flow control.
+Try to solve this exercise without using `rescue`.
 
-If you're using a standard library function whose name ends with `!` (raises errors), find an equivalent function.
+If you are using a standard library function with a name ending with a `!` (raises errors), look for an equivalent function without the `!` (often return `{:ok, result}` or `{:error, message}`).
 
-Note: If you're seeing this automated comment on your solution, the other automated comments might not be accurate. Fix this problem first!
+Note: if you are seeing this automated comment on your solution, other automated comments might not be accurate.
+Fix this problem first!
 
 ```elixir
 # preferred: for example `case`
