@@ -1,0 +1,1 @@
+Consider guiding towards a solution in which none of the existing Python library functions are used, but rather one in which students create the logic/algorithm theirselves. Try and suggest different approaches and perhaps introduce them to benchmarking methods, and see for themselves the impact of the different approaches. 
