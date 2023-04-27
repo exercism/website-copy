@@ -32,7 +32,7 @@ When limit is very large and values in multiples are high in the range, there co
 
 ```python
 def sum_of_multiples(limit, multiples):
-    return sum({n for m in multiples if m for n in range(m, limit, m)})
+    return sum({n for mul in multiples if mul for n in range(mul, limit, mul)})
 ```
 
 ## Common Suggestions
