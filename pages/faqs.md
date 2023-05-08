@@ -2,7 +2,7 @@
 
 ## Who is behind Exercism?
 
-Exercism was originally founded by [Katrina Owen](http://www.kytrinyx.com/). Katrina is a polyglot developer and Ruby Hero award winner who accidentally became a developer while pursuing a degree in molecular biology. She began nitpicking code back in 2006 while volunteering at JavaRanch, and got hooked. When programming, her focus is on automation, workflow optimization, and refactoring. She cares deeply about open source and contributes to several projects outside of Exercism.
+Exercism was originally founded by [Katrina Owen](https://exercism.github.io/kytrinyx/). Katrina is a polyglot developer and Ruby Hero award winner who accidentally became a developer while pursuing a degree in molecular biology. She began nitpicking code back in 2006 while volunteering at JavaRanch, and got hooked. When programming, her focus is on automation, workflow optimization, and refactoring. She cares deeply about open source and contributes to several projects outside of Exercism.
 
 In 2016, Katrina decided that for Exercism to fulfill its potential, it needed a professional product team to rethink Exercism from the ground up. She recruited [Jeremy Walker](https://ihid.co.uk) as co-founder, and working with [Nicole Chalmers](https://twitter.com/n_chalmers) and the team at [Thalamus](http://thalamus.ai), they reconceived Exercism as the fully-fledged product you see today.
 
@@ -15,8 +15,8 @@ Despite being one vowel away from "exorcism", the name has nothing to do with de
 Instead, it's a pun on exercise. The way Katrina came to think about each exercise is that they are small, trivial, and seemingly simple. However, when it comes to solving an exercise, the devil is often in the details. In other words, that simple exercise is suddenly more challenging once you think about the finer details.
 
 To learn more about what it means for the devil to be in the details, check out the
-[Overkill](http://www.kytrinyx.com/talks/overkill) and
-[Succession](http://www.kytrinyx.com/talks/succession) talks by Katrina.
+[One Small Step](https://www.youtube.com/watch?v=JXCJL4IJUhQ) and
+[Here Be Dragons](https://www.youtube.com/watch?v=QAUHYzC9kFM) talks by Katrina.
 
 ## The Basics
 
