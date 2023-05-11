@@ -9,7 +9,7 @@ The problem requires the student to sum each digit of an integer or _natural num
 This exercise can be solved in a fairly straightforward fashion:
 
 ```python
-def is_armstrong(number):
+def is_armstrong_number(number):
     digits = (int(d) for d in str(number))
     count = len(str(number))
     total = sum(digit ** count for digit in digits)
@@ -20,7 +20,7 @@ This solution can also be written without the generator.
 This avoids the more complex generator type at the expense of a more complex sum line.
 
 ```python
-def is_armstrong(number):
+def is_armstrong_number(number):
     count = len(str(number))
     total = sum(int(digit) ** count for digit in str(number))
     return number == total
@@ -36,7 +36,7 @@ def is_armstrong(number):
     
     # With a generator expression passed to sum
     total = sum(digit ** count for digit in digits)
-
+```
 Students are often unaware of [generator expressions][pep-289] and that they can be passed directly to functions that accept iterables.
 The first line uses a comprehension to build a `list`  for `sum()` to iterate through.
 The middle step of a temporary list takes up space in memory and is not needed.
