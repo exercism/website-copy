@@ -10,8 +10,9 @@ This exercise can be solved in a fairly straightforward fashion:
 
 ```python
 def is_armstrong(number):
-    digits = (int(d) for d in str(number))
-    count = len(str(number))
+    str_num = str(number)
+    digits = (int(d) for d in str_num)
+    count = len(str_num)
     total = sum(digit ** count for digit in digits)
     return number == total
 ```
@@ -21,8 +22,9 @@ This avoids the more complex generator type at the expense of a more complex sum
 
 ```python
 def is_armstrong(number):
-    count = len(str(number))
-    total = sum(int(digit) ** count for digit in str(number))
+    str_num = str(number)
+    count = len(str_num)
+    total = sum(int(digit) ** count for digit in str_num)
     return number == total
 ```
 
