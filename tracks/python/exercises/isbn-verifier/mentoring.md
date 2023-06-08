@@ -101,7 +101,7 @@ for position, value in enumerate(isbn):
         try:
             total += int(value) * (10 - position)
         except ValueError:
-        return False
+            return False
 ```
 
 Checking for non-digits separately from the summation allows for explicitly and directly handling that test.
