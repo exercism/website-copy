@@ -225,6 +225,7 @@ let my_Clock = Clock {hours: -24, minutes:-1440};
 There is an article on [`struct literals and constructors`] that explains how to prevent initialization by a struct literal. The struct literal concerns are not specifically related to this exercise but are to be considered when using structs in your own projects.
 
 [`struct literals and constructors`]: https://steveklabnik.com/writing/structure-literals-vs-constructors-in-rust
+```
 
 If they didn't use the chrono crate
 
