@@ -33,7 +33,7 @@ def is_valid(isbn: str) -> bool:
 
 ### Generator expressions
 
-The sum can be computed using the `sum()` [built-in function][builtin-functions] (see "Reasonable Solution") or with a `for` loop.
+The sum can be computed using the [built-in function `sum()`][builtin-sum] (see "Reasonable Solution") or with a `for` loop.
 
 ```python
 total = 0
@@ -55,7 +55,7 @@ for position, value in zip(range(10, 0, -1), values):
     total += int(value) * position
 ```
 
-The [`enumerate()` function][builtin-functions] provides a nice way to get both a position and a value.
+The [built-in function `enumerate()`][builtin-enumerate] provides a nice way to get both a position and a value.
 The position returned by `enumerate()` does need to be modified (`10 - position`) to be used.
 
 ### The trailing "X" value
@@ -76,7 +76,7 @@ Recognize that changing the data from `str` to `list[str]` allows for more flexi
 
 ### Checking for non-digits
 
-The [built-in `any()` function][builtin-functions] is a concise approach for checking for any non-digit values in the input.
+The [built-in function `any()`][builtin-any] is a concise approach for checking for any non-digit values in the input.
 If the input is first converted to a string and a trailing "X" is replaced with a digit, the digit check is fairly straight forward.
 If the trailing "X" is not handled prior to the digit check, the final character needs to be handled separately.
 
@@ -101,12 +101,13 @@ for position, value in enumerate(isbn):
         try:
             total += int(value) * (10 - position)
         except ValueError:
-	    return False
+            return False
 ```
 
 Checking for non-digits separately from the summation allows for explicitly and directly handling that test.
 Checking explicitly for a condition makes the test more clear and separates various pieces of logic.
 
-
-[builtin-functions]: https://docs.python.org/3/library/functions.html
+[builtin-any]: https://docs.python.org/3/library/functions.html#any
+[builtin-enumerate]: https://docs.python.org/3/library/functions.html#enumerate
+[builtin-sum]: https://docs.python.org/3/library/functions.html#sum
 [PEP-255]: https://www.python.org/dev/peps/pep-0255/
