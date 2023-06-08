@@ -42,7 +42,7 @@ for position, value in enumerate(values)):
 ```
 
 Generator expressions are considered very Pythonic.
-Generators were added to the language (see [PEP-255]) becuase they provide a compact, clean and efficient method for iterating through data (compared to other approaches such as building lists or iterators).
+Generators were added to the language (see [PEP-255]) because they provide a compact, clean and efficient method for iterating through data (compared to other approaches such as building lists or iterators).
 
 ### The position value
 
