@@ -1,5 +1,7 @@
 ### Reasonable Solutions
 
+There are other reasonable solutions not listed here.
+
 ```typescript
 export class ResistorColor {
   
@@ -30,15 +32,13 @@ export class ResistorColor {
 
 ### Common Suggestions
 
-- The student should create an array containing the list of color strings. This should be `private` and `readonly`.
+- The student should create an array containing the list of color strings. This can be a top-level constant or a `private` and `readonly` member.
 
 - Look for an opportunity to put the access modifier `private` keyword in the constructor for the shorthand way of assigning it to an instance variable.
 
 - Ensure the student checks for the error case early on as to short-circuit the program as quickly as possible.
 
 - If the student hardcodes numbers (such as _2)_, point out that rather than having this "magic number" it could be a constant or readonly instance variable.
-
-- Ensure the student uses proper type annotations, but consider suggesting they omit the types in "obvious" cases (such as when immediately assigning the variable to concrete value).
 
 - Any final comments on chosen names, formatting, unnecessary code / comments / console.log's
 
