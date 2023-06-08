@@ -55,7 +55,7 @@ for position, value in zip(range(10, 0, -1), values):
     total += int(value) * position
 ```
 
-The [`enumerate()` function][builtins-functions] provides a nice way to get both a position and a value.
+The [`enumerate()` function][builtin-functions] provides a nice way to get both a position and a value.
 The position returned by `enumerate()` does need to be modified (`10 - position`) to be used.
 
 ### The trailing "X" value
