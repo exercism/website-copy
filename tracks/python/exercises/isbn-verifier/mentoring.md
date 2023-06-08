@@ -42,7 +42,7 @@ for position, value in enumerate(values)):
 ```
 
 Generator expressions are considered very Pythonic.
-Generators were added to the language (see [PEP-255]) becuase they provide a compact, clean and efficient method for iterating through data (compared to other approaches such as building lists or iterators).
+Generators were added to the language (see [PEP-255]) because they provide a compact, clean and efficient method for iterating through data (compared to other approaches such as building lists or iterators).
 
 ### The position value
 
@@ -55,7 +55,7 @@ for position, value in zip(range(10, 0, -1), values):
     total += int(value) * position
 ```
 
-The [`enumerate()` function][builtins-functions] provides a nice way to get both a position and a value.
+The [`enumerate()` function][builtin-functions] provides a nice way to get both a position and a value.
 The position returned by `enumerate()` does need to be modified (`10 - position`) to be used.
 
 ### The trailing "X" value
