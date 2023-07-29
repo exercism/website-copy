@@ -26,7 +26,7 @@ main "$@"
 #!/usr/bin/env bash
 main () {
   [[ -n $1 ]] || exit 1
-  declare -ra WORDS=( ${1//[![:alpha:]]/ } )
+  declare -ra WORDS=( ${1//[!\'[:alpha:]]/ } )
 
   for word in "${WORDS[@]}"; do
     output+=${word:0:1}
