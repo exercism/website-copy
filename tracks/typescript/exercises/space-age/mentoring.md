@@ -6,7 +6,7 @@ This exercise introduces:
 - rounding via [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) with explicit casting using [`Number` as a function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#Using_Number_to_convert_a_Date_object)
 
 Additionally there are many solutions but they all have cons and pros. The
-Javascript implementation is to generify the implementation using a map and the
+JavaScript implementation is to generify the implementation using a map and the
 prototype, but that doesn't _quite_ work with the TypeScript typing system.
 
 ## Reasonable Solutions
@@ -45,10 +45,10 @@ on the class like this:
 }
 ```
 
-The pros is that autocomplete works, there is no `any` and it's easy to see if
+The pro is that auto-complete works, there is no `any` and it's easy to see if
 a method is missed (in the tests you'll see a red wobbly). The con is that the
-business logic (calculation) is not seperate from the input, and that adding
-pluto or the likes requires slightly more work than adding a name + number in
+business logic (calculation) is not separate from the input, and that adding
+Pluto or the likes requires slightly more work than adding a name + number in
 a constant defined elsewhere. However, this is space -- it's all pretty stable.
 
 The method above is _preferred_ over a generic mapped type:
@@ -73,7 +73,7 @@ class SpaceAge {
 }
 ```
 
-This generic `[k: string]` does _not_ autocomplete, does _not_ catch typos and
+This generic `[k: string]` does _not_ auto-complete, does _not_ catch typos and
 other issues and accepts methods (keys) that don't exist on the resulting type.
 
 _If_ someone implements it like this, make sure that don't have `any` as the
@@ -81,7 +81,7 @@ value, but rather `() => number`, which at least makes the typing show up when
 using the class, but you should note that whilst it's nice to dynamically
 generate these, it's not TS-friendy.
 
-Finaly, there are ways to actually make typescrypt auto complete and separating
+Finaly, there are ways to actually make TypeScript auto-complete and separating
 the input from the business logic, one of which is listed below with comments
 at the type definitions what they are used for:
 
@@ -140,9 +140,9 @@ const SpaceAge = function(number: Readonly<number>): ISpaceAge {
 export default SpaceAge
 ```
 
-The pro is that `autocomplete` works, there is no `any` and there is separation
+The pro is that auto-complete works, there is no `any` and there is separation
 between input and logic, but the con is that we can't rely on TS to make sure
-the implmentation of `SpaceAge` is correct, as the cast to `any` and then
+the implementation of `SpaceAge` is correct, as the cast to `any` and then
 `SpaceAge` is necessary.
 
 ### Note about future versions
