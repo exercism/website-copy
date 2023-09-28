@@ -20,5 +20,6 @@
   },
   { "username": "habere-et-dispertire", "tracks": ["raku"] },
   { "username": "ee7", "tracks": ["nim", "zig"] },
-  { "username": "jonmcalder", "tracks": ["r"] }
+  { "username": "jonmcalder", "tracks": ["r"] },
+  { "username": "homersimpsons", "tracks": ["php"] }
 ]
