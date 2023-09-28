@@ -1,0 +1,24 @@
+[
+  { "username": "IsaacG", "tracks": ["awk", "bash", "jq"] },
+  { "username": "kotp", "tracks": ["ruby"] },
+  { "username": "vaeng", "tracks": ["cpp"] },
+  { "username": "lpil", "tracks": ["gleam"] },
+  { "username": "meatball", "tracks": ["crystal"] },
+  {
+    "username": "glennj",
+    "tracks": [
+      "8th",
+      "awk",
+      "ballerina",
+      "bash",
+      "jq",
+      "lua",
+      "pharo-smalltalk",
+      "tcl",
+      "wren"
+    ]
+  },
+  { "username": "habere-et-dispertire", "tracks": ["raku"] },
+  { "username": "ee7", "tracks": ["nim", "zig"] },
+  { "username": "jonmcalder", "tracks": ["r"] }
+]
