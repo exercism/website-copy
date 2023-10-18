@@ -1,4 +1,4 @@
-# do not use `%` or `/`
+# do not use `%%` or `/`
 
 Like the instructions mention, the purpose of this exercise is to build a Sieve of Eratosthenes without the use of operations such as division or modulo division.
 Please refer to the [Wikipedia link][wikipedia] for a description of the algorithm.
