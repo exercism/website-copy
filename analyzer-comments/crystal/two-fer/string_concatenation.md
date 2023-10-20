@@ -1,6 +1,7 @@
 # string concatenation
 
-String concatenation is perfectly valid within Crystal, but a more common way to compose a string is with [string interpolation][interpolation]. For example:
+String concatenation is perfectly valid within Crystal, but a more common way to compose a string is with [string interpolation][interpolation].
+For example:
 
 ```crystal
 # Rather than:
