@@ -5,7 +5,7 @@ For example:
 
 ```crystal
 # Rather than:
-number % 2 == 0
+number %% 2 == 0
 
 # Consider:
 number.divisible_by?(2)
