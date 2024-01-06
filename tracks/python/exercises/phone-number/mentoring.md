@@ -10,51 +10,41 @@ The `pretty()` method needs to return a formatted number.
 ## Reasonable Solution
 
 ```python
+import re
+
 class PhoneNumber:
-    """Phone number validator."""
+    def __init__(self, input_number_str: str):
+        self.number = self._clean_nanp(input_number_str)
+        self.area_code = self.number[:3]
 
-    def __init__(self, number):
-        """Load and clean a number, validating it."""
-        # Raise exceptions for invalid characters.
-        for char in string.ascii_letters:
-            if char in number:
-                raise ValueError('letters not permitted')
+    def pretty(self) -> str:
+        """Return phone number in the format (XXX)-XXX-XXXX"""
+        return f"({self.area_code})-{self.number[3:6]}-{self.number[6:]}"
 
-        invalid_chars = set(string.punctuation) - set('+-().')
-        for char in invalid_chars:
-            if char in number:
-                raise ValueError('punctuations not permitted')
+    def _clean_nanp(self, number_str: str) -> str:
+        number_str = re.sub(r'[^\d]', '', number_str)  # Remove all non-digit characters
 
-        # Drop all non-digits.
-        digits = ''.join(i for i in number if i.isdigit())
+        def check_length(number_str):
+            if len(number_str) < 10:
+                raise ValueError("Number must not be fewer than 10 digits")
+            if len(number_str) == 11 and number_str[0] != '1':
+                raise ValueError("11 digits must start with 1")
+            if len(number_str) > 11:
+                raise ValueError("Number must not be greater than 11 digits")
 
-        if len(digits) > 11:
-            raise ValueError('more than 11 digits')
+        def check_start_chars(number_str):
+            if number_str[0] in ('0', '1'):
+                raise ValueError("Area code cannot start with 0 or 1")
+            if number_str[3] in ('0', '1'):
+                raise ValueError("Exchange code cannot start with 0 or 1")
 
-        if len(digits) == 11:
-            if not digits.startswith('1'):
-                raise ValueError('11 digits must start with 1')
-            # For an 11-digit with country code, drop the country code.
-            digits = digits[1:]
+        # Validation checks
+        if re.search(r'\D', number_str):
+            raise ValueError("Letters and punctuations not permitted")
+        check_length(number_str)
+        check_start_chars(number_str)
 
-        if len(digits) != 10:
-            raise ValueError('incorrect number of digits')
-
-        self.number = digits
-        self.area_code = digits[0:3]
-        self.exchange = digits[3:6]
-        self.subscriber = digits[6:10]
-
-        for invalid_char, char_name in (('0', 'zero'),  ('1', 'one')):
-            for part, part_name in (
-                (self.area_code, 'area code'), (self.exchange, 'exchange code')
-            ):
-                if part.startswith(invalid_char):
-                    raise ValueError(f'{part_name} cannot start with {char_name}')
-
-    def pretty(self):
-        """Return a pretty string of the number."""
-        return f'({self.area_code})-{self.exchange}-{self.subscriber}'
+        return number_str
 ```
 
 ## Talking Points
