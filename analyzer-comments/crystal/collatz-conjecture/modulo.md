@@ -1,4 +1,4 @@
-# # Modulo
+# Modulo
 
 Modulo comparisons is perfectly valid within Crystal, but a more readable way to compare the remainder of a division is with the [`divisible_by?`][divisible_by] method.
 Or even better if you want to check if a number is odd or even, use the [`odd?`][odd?] and [`even?`][even?] methods.
