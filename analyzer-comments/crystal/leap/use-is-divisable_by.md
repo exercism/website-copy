@@ -11,4 +11,4 @@ number %% 2 == 0
 number.divisible_by?(2)
 ```
 
-[divisible_by]: https://crystal-lang.org/api/latest/Int.html#divisible_by%3F%28num%29%3ABool-instance-method
+[divisible_by]: https://crystal-lang.org/api/latest/Int.html#divisible_by%%3F%%28num%%29%%3ABool-instance-method
