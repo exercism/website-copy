@@ -61,7 +61,7 @@ It is possible to combine parts 2 and 3, but this often leads to less readable c
 
 ### Common suggestions:
 * Avoid complex, deeply nested logic.
-* Are all of the conditions treated as special cases in code actually special cases? For instance, does a leading vowel need to be treated differently than a first vowel in the middle of the word?
+* Reduce the number of special cases by generalizing logic.  For instance, the first vowel in the word can potentially be handled the same, regardless of whether it is at the start of the word or not.
 * Prefer switch/case to long if/else chains.
 * Add explanatory comments when the intent of the code might not be clear to the reader.
 * `gofmt` ensures consistent formatting, and is standard across most of the Go community.
