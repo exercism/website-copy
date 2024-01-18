@@ -28,7 +28,7 @@ func pigWord(word string) string {
 }
 ```
 
-3. Identify how many letters count as consonants without overly convoluted logic.
+3. Identify how many letters count as consonants.
 
 ```
 func consonantCount(word string) int {
