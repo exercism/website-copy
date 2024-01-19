@@ -13,6 +13,6 @@ number %% 2 == 0
 number.even?
 ```
 
-[divisible_by]: https://crystal-lang.org/api/latest/Int.html#divisible_by%3F%28num%29%3ABool-instance-method
-[odd?]: https://crystal-lang.org/api/Int.html#odd%3F%3ABool-instance-method
-[even]: https://crystal-lang.org/api/Int.html#odd%3F%3ABool-instance-method
+[divisible_by]: https://crystal-lang.org/api/latest/Int.html#divisible_by%%3F%%28num%%29%%3ABool-instance-method
+[odd?]: https://crystal-lang.org/api/Int.html#odd%%3F%%3ABool-instance-method
+[even]: https://crystal-lang.org/api/Int.html#odd%%3F%%3ABool-instance-method
