@@ -52,10 +52,10 @@ public class PangramChecker {
 
 ## Common suggestions
 
-- Suggest using StringBuilder instead of String concatenating when the students are concatenating within a for-loop
+- Suggest using `StringBuilder` instead of String concatenating when the students are concatenating within a for-loop
 
 ## Talking points
 
-- Shortcurcuit elvalutiaon, so you don't have to check the entire alphabet twice
+- Short-circuit evaluation, so you don't have to check the entire alphabet twice
 
 ## Changelog
