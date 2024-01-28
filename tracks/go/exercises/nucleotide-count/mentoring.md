@@ -2,7 +2,8 @@
 
 ### Reasonable Solutions
 
-Using a map is probably the most idiomatic solution to this problem, especially since the Histogram type basically must be a map. Using a switch is about 4 times faster over the provided test cases because it does not require hashing.
+Using a map is probably the most idiomatic solution to this problem, especially since the Histogram type basically must be a map.
+Using a switch is about four times faster over the provided test cases because it does not require hashing.
 
 #### Map Example
 ```Go
