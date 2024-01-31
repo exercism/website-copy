@@ -21,5 +21,7 @@
   { "username": "ee7", "tracks": ["nim", "zig"] },
   { "username": "jonmcalder", "tracks": ["r"] },
   { "username": "homersimpsons", "tracks": ["php"] },
-  { "username": "ceddlyburge", "tracks": ["elm"] }
+  { "username": "ceddlyburge", "tracks": ["elm"] },
+  { "username": "sanderploegsma", "tracks": ["java"] },
+  { "username": "manumafe98", "tracks": ["java"] }
 ]
