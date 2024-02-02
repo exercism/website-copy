@@ -3,6 +3,7 @@
 ## ETL
 
 ### Problem asks
+
 Restructure grouped letters by point values into individual mappings. 
 Transform the old format (point-value groups) 
 into a new format (letter-score pairs) in TypeScript. 
