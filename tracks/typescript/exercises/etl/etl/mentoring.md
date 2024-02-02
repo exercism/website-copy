@@ -10,10 +10,10 @@ Associate lowercase letters with their corresponding point values, transitioning
 
 ## Reasonable Solution
 
-The code snippet provided in TypeScript represents a function named transform. 
-This function takes in an object oldData, which has keys representing point values (as strings) and values as arrays of strings (letters associated with those point values).
+The code snippet provided in TypeScript represents a function named `transform`. 
+This function takes in an object `oldData`, which has keys representing point values (as strings) and values as arrays of strings (letters associated with those point values).
 
-The function iterates through the oldData object, assigning each letter (converted to lowercase) to its corresponding score in the newData object. 
+The function iterates through the `oldData` object, assigning each letter (converted to lowercase) to its corresponding score in the `newData` object. 
 The return value of the function is an object where keys are lowercase letters and values are the associated point values (as numbers).
 
 ```typescript
@@ -30,36 +30,6 @@ export function transform(oldData: { [key: string]: string[] }): { [key: string]
 }
 ```
 
-Certainly! Here's a mentoring file for the ETL (Extract, Transform, Load) problem based on the structure of the previous mentoring file for the leap year problem:
-
-```markdown
-# Mentoring
-
-## ETL
-
-### Problem Overview
-
-The ETL problem involves transforming data from an old format to a new format. In this case, the task is to restructure grouped letters by point values into individual mappings. The old format consists of point-value groups, while the new format should be letter-score pairs.
-
-### Reasonable Solution
-
-The provided TypeScript code represents a function named `transform`. This function takes in an object `oldData`, where keys represent point values (as strings) and values are arrays of strings (letters associated with those point values).
-
-The function iterates through the `oldData` object, assigning each letter (converted to lowercase) to its corresponding score in the `newData` object. The return value of the function is an object where keys are lowercase letters, and values are the associated point values (as numbers).
-
-```typescript
-export function transform(oldData: { [key: string]: string[] }): { [key: string]: number } {
-    const newData: { [key: string]: number } = {};
-
-    for (const [score, letters] of Object.entries(oldData)) {
-        letters.forEach((letter: string) => {
-            newData[letter.toLowerCase()] = Number(score);
-        });
-    }
-
-    return newData;
-}
-```
 
 ### Common Suggestions:
 
@@ -84,4 +54,3 @@ export function transform(oldData: { [key: string]: string[] }): { [key: string]
 - **Functional Approach:**
   - Introduce a more functional approach using methods like `map` and `reduce` for constructing the new data object, making the code more concise.
 
-This mentoring file aims to guide students through understanding the ETL problem, providing a reasonable solution, and offering suggestions for improvement and further exploration.
