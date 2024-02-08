@@ -51,6 +51,21 @@ sequence.replace(/[CGAT]g/, (nucleotide) => /* */)
 - Use iteration via [`String#split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) or [`String#replace`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace) instead of using `for`/`forEach` with [`Array#push`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 - Discourage [`Array#reduce`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) for this particular solution, because it creates a lot of intermediary strings (more than the `split` approach), except if the rest of the solution is correct (then you can mention it but approve). Using `reduce` requires more interpretation by the reader to follow, change and maintain.
 - Discourage [`String#substring`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) with foreach iteration, because character iteration via `split('')` is more idiomatic and maintainable than `substring` with 1. Using `split('')` requires less interpretation by the reader to follow, change and maintain.
+- another way of wrinting types 
+  - ```typescript
+    type AllowedStrand = "A" | "C" | "G" | "T";
+  
+    type Nucleotides = {
+      [key in AllowedStrand as string]: string;
+    };
+    
+    const adnTranscribedRna: Nucleotides = {
+      A: "U",
+      C: "G",
+      G: "C",
+      T: "A"
+    };
+    ```
 
 ## Talking points
 
