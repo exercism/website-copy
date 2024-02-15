@@ -10,4 +10,4 @@ knightIsAwake || (archerIsAwake && !prisonerIsAwake);
 knightIsAwake || archerIsAwake && !prisonerIsAwake;
 ```
 
-Please note that, in certain complex cases, using parenthesis can improve readability and understanding of the condition.
+Please note that, in certain complex cases, using parentheses can improve readability and understanding of the condition.
