@@ -4,8 +4,8 @@ Instead of comparing booleans with the literal values, it can be simplified to j
 
 ```java
 // instead of
-return knightIsAwake == true
+return knightIsAwake == true;
 
 // use
-return knightIsAwake
+return knightIsAwake;
 ```
