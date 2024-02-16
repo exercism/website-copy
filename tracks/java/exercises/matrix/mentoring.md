@@ -10,7 +10,7 @@ class Matrix {
         matrix = Arrays.stream(matrixAsString.split("\n"))
             .map(
                 row -> Arrays.stream(row.split(" "))
-                    .map(Integer::parseInt)
+                    .mapToInt(Integer::parseInt)
                     .toArray())
             .toArray(int[][]::new);
     }
