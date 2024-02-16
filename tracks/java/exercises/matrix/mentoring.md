@@ -7,10 +7,10 @@ class Matrix {
     private int[][] matrix;
 
     Matrix(String matrixAsString) {
-        matrix = matrixAsString.split("\n").stream()
+        matrix = Arrays.stream(matrixAsString.split("\n"))
             .map(
-                row -> row.split(" ").stream()
-                    .map(Integer::parseInt)
+                row -> Arrays.stream(row.split(" "))
+                    .mapToInt(Integer::parseInt)
                     .toArray())
             .toArray(int[][]::new);
     }
@@ -21,7 +21,7 @@ class Matrix {
     }
 
     int[] getColumn(int columnNumber) {
-        return Arrays.stream(matrix).map(row -> row[column - 1]).toArray();
+        return Arrays.stream(matrix).mapToInt(row -> row[columnNumber - 1]).toArray();
     }
 }
 ```
