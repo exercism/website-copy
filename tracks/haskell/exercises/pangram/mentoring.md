@@ -38,32 +38,17 @@ isPangram = any null . scanl deleteLower alphabet
 
 This solution traverses the input at most once and terminates once each is found.
 
-It has the benefit of being efficient and `Data.Set`-based.
-
-```haskell
-import Data.Char (toLower)
-import qualified Data.Set as Set
-import           Data.Set (Set)
-
-alphabet :: Set Char
-alphabet = Set.fromList ['a'..'z']
-
-isPangram = (alphabet `Set.isSubsetOf`) . Set.map toLower . Set.fromList
-```
-
-This solution traverses the input at most once and terminates once each is found.
-
-It has the benefit of being efficient, declarative and `Data.Set`-based.
-
 ## Common suggestions
 
 - Instead of `"abc...xyz"`, one can just write `['a'..'z']`.
 - Some solutions use `nub`. This is never necessary. It is better to use `Data.Set` here.
 - Some solutions `map head . group . sort`; this is also not necessary. Use `Data.Set`.
 - Avoid manual recursion in favor of `any`, `scanl` or set-based operators.
+- Instead of doing `Set.fromList` and then `Set.map`, it's preferred to stick with list and convert to `Set` in last step.
 
 ## Talking points
 
 - Consider non-strictness and the number of iterations over the input.
 - Consider efficient data types (lists vs. sets).
 - Consider making a *declarative* solution, i.e. one that describes the result rather than the method of finding it.
+- Mention about `Set.fromDistinctAscList ['a'..'z']` if student's solution is `Set`-based. Make sure to mention that input is unchecked so this has to be careful.
