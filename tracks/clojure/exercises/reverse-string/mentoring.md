@@ -13,6 +13,7 @@ This exercise is about re-implementing a common library function.
   (apply str (reverse s)))
 ```
 
+One may prefer this because the above expresses the intent more clearly.
 ```clojure
 (ns reverse-string)
 
