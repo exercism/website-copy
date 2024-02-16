@@ -119,6 +119,7 @@ This will require rewriting the tests, which might also serve as a learning oppo
 This problem is a good opportunity to practice writing concise code and balancing readability. 
 It is also a good chance to code verbosely while the problem is solved, and then iterate on the solution to reduce length and complexity.
 A terse solution which demonstrates some techniques:
+
 ```python
 digits = [""] + "one two three four five six seven eight nine".split()
 teens = "ten eleven twelve thir four fif six seven eigh nine".split()
