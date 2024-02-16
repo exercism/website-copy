@@ -2,8 +2,9 @@
 
 ## Reasonable solutions
 
-Let them know that the most important thing to do here is not to try to code first, but to know how the maths behind this exercise is and how to solve it on paper. You can use this [website][reference-math-website] to explain it. <br>
-Next they can go ahead and take what they wrote down and try to put it in a coding logic.<br>
+Let them know that the most important thing to do here is not to try to code first, but to know how the maths behind this exercise is and how to solve it on paper.
+You can use this [website][reference-math-website] to explain it.
+Next they can go ahead and take what they wrote down and try to put it in a coding logic.
 Lastly, they can go and put their written solution to a code now. 
 
 They should always use this approach before start to code, so coding become only a tool for the solution.
