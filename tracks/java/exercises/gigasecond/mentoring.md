@@ -34,12 +34,18 @@ class Gigasecond {
 - Use [constructor chaining](https://beginnersbook.com/2013/12/java-constructor-chaining-with-example/) to avoid code duplication.
 - Use [`LocalDate.atStartOfDay()`](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#atStartOfDay--) to convert a `LocalDate` to a `LocalDateTime`.
 
-
 ## Talking points
 
 ### Eager computation
 
 A student can choose to compute the result for `getDate()` in the constructor. It is a really good optimization. In that case, it should be noted that it is possible because the `birthDate` is only provided in the constructor and is immutable.
+
+### Exception handling
+
+`plusSeconds` can throw a `java.time.DateTimeException`.
+A student may choose to catch this exception in the constructor, but this results in `birthDateTime` being null, so the class won't have been instantiated properly.
+There's no sensible default value that be stored in `birthDateTime`.
+It's better to let the exception be thrown, failing fast, and let calling code deal with it. 
 
 ### Type safety
 
