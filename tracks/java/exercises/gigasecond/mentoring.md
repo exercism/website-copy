@@ -42,7 +42,10 @@ A student can choose to compute the result for `getDate()` in the constructor. I
 
 ### Exception handling
 
-`plusSeconds` can throw a `java.time.DateTimeException`. A student may choose to  catch this exception in the constructor, but this results in  `birthDateTime` being null, so the class won't have been instantiated properly. There's no sensible default value that be stored in  `birthDateTime`. It's better to let the exception be thrown, failing fast, and let calling code deal with it. 
+`plusSeconds` can throw a `java.time.DateTimeException`.
+A student may choose to catch this exception in the constructor, but this results in `birthDateTime` being null, so the class won't have been instantiated properly.
+There's no sensible default value that be stored in `birthDateTime`.
+It's better to let the exception be thrown, failing fast, and let calling code deal with it. 
 
 ### Type safety
 
