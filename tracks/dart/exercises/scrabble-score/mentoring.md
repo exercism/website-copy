@@ -7,6 +7,7 @@ Show both of them to get them, to get them to know more dart concepts.
 Map class will be used for both solutions.
 
 ### Solution 1: using fold method ***_recommended_***
+
 ```dart
 int score([String word]) {
   var values = {
@@ -24,6 +25,7 @@ int score([String word]) {
 ```
 
 ### Solution 2: using map and reduce methods
+
 ```dart
 int score([String word]) {
   var values = {
@@ -41,6 +43,7 @@ int score([String word]) {
 ```
 
 ## Common suggestions
+
 - Students need to know how [Map][reference-map-class] works, because they need it for both of the solutions
 - Solution 1 is more important than Solution 2. They need the [fold-method][reference-fold-method] for future exercises
 
