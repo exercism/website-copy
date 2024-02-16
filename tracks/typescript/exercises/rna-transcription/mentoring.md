@@ -57,28 +57,7 @@ sequence.replace(/[CGAT]g/, (nucleotide) => /* */)
 - Encourage streams because it's harder to use intermediary variables (which can lead to bugs) and forces "one-by-one" approach. It is easier to explain the [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) solution over multiple conditionals when it's a stream.
 - If a student uses an `Object`, point them to `falsy` values.
 - Highlight TypeScript's ability to infer types automatically, reducing the need for explicit type declarations in many cases.
-  - For example, TypeScript can infer the types of objects like TRANSCRIPTION without the need for explicit type declarations, making code more concise and readable. For instance, the following code:
-    ```
-    const TRANSCRIPTION = {
-      C: 'G',
-      G: 'C',
-      A: 'U',
-      T: 'A',
-    };
-    ``` 
-    is functionally equivalent to the more verbose version with explicit type declarations:
-    ```
-    type AllowedStrand = "A" | "C" | "G" | "T";
-  
-    type Nucleotides = {
-      [key in AllowedStrand as string]: string;
-    };
-    
-    const adnTranscribedRna: Nucleotides = {
-      A: "U",
-      C: "G",
-      G: "C",
-      T: "A"
-    };
-    ```
-    This showcases TypeScript's ability to intelligently deduce types from the structure of the code, simplifying development and improving developer productivity.
+- For example, TypeScript can infer the types of objects like TRANSCRIPTION without the need for explicit type declarations, making code more concise and readable.
+- However, in more complex applications where types like DnaNucleotide and RnaNucleotide are externally provisioned, explicitly defining types using constructs like Record<X, Y> might be more appropriate.
+- Additionally, if those types exist, one may also expect all the transitions/transcriptions to exist as types.
+- This balance between conciseness and explicitness is crucial for maintaining clarity and robustness in the codebase.
