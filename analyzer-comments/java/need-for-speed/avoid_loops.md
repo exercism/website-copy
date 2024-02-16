@@ -1,3 +1,4 @@
 # avoid loops
 
-Consider converting the `loop` statement and returning a single expression using the `<=` operator while reusing methods already implemented in the class.
+Instead of using a loop, consider returning a single expression using the `<=` operator.
+You can re-use the other methods already implemented in the class.
