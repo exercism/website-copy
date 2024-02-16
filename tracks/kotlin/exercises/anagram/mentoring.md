@@ -1,6 +1,7 @@
 # Mentoring
 
 ## Reasonable Solutions
+
 ```kotlin
 class Anagram(var anagram: String){
     fun match(list: List<String>): Set<String>{
@@ -16,4 +17,5 @@ class Anagram(var anagram: String){
 ```
 
 ## Common suggestions
+
 * Function `sorted()` can be used to sort according to the characters natural sort order
