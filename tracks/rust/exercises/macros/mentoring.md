@@ -24,7 +24,7 @@ macro_rules! hashmap {
             _m
         }
     };
-    ( $($key:expr => $value:expr,)+ ) => { hashmap!($($key => $value),+) }
+    ( $($key:expr => $value:expr,)+ ) => { $crate::hashmap!($($key => $value),+) }
 }
 ```
 
