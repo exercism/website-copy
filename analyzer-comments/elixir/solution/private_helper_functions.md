@@ -7,7 +7,7 @@
 The public interface of a codebase should be carefully considered, as each public function increases long term maintenance costs and makes refactoring harder.
 
 In every Exercism exercise, the public interface is defined by the test suite.
-If a function is being tested, it needs to the public.
+If a function is being tested, it needs to be public.
 All other functions should be private, including functions with the same name but different arities.
 
 ```elixir
