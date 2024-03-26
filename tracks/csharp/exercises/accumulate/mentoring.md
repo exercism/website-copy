@@ -22,6 +22,8 @@ public static class AccumulateExtensions
 
 ### Storing the results in an intermediate list
 
+Solutions that don't use the `yield` keyword such as the following one which stores the results in an intermediate list *don't* pass the laziness test. The accumulate execution must be deferred until `ToList()` is called on it, which is tested with the `Accumulate_is_lazy` method.
+
 ```csharp
 using System;
 using System.Collections.Generic;
