@@ -4,20 +4,31 @@
 
 The first way to implement this function is to use a for loop :
 ```cpp
-unsigned long long square(int indice) {
+unsigned long long square(int index) {
     unsigned long long result = 1;
-    for (int i = 0; i < indice; i++) result *= 2;
+    for (int i = 0; i < index; i++) result *= 2;
     return result;
 }
 ```
-A cleaner way to do this is to use a recursive function :
+Another good way to do this is to use a recursive function :
 ```cpp
-unsigned long long square(int indice) {
-    if (indice == 1) return 1;
-    else return square(indice - 1) * 2;
+unsigned long long square(int index) {
+    if (index == 1) return 1;
+    else return square(index - 1) * 2;
 }
 ```
 This way, the code is shorter and in my mind, easier to read.
+
+The last option and the more direct one is :
+```cpp
+unsigned long long square(int index)
+{
+    return 1ULL << (index - 1);
+}
+```
+This code use left bitshifting. Left bitshifting consists in adding 0 at the end of the binary writing of the number.
+
+If you do ```5 << 2```, you are taking 5, which is 101 in binary, and you shift the bits by 2, so you end up with 10100 and that equal to 20.
 
 ## Second function
 At first sight, we want to use the first function to do it easily :
@@ -28,7 +39,7 @@ unsigned long long total() {
     return sum;
 }
 ```
-However with this solution, each time you call the function square with the indice i, you do i products.
+However with this solution, each time you call the function square with the index i, you do i products.
 In the following solution, you only do 64 products and by adding to the sum each time you multiply by 2 :
 ```cpp
 unsigned long long total() {
