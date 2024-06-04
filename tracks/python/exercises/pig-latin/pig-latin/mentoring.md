@@ -5,34 +5,32 @@ Pig Latin is a fun way to play with words. In this exercise, you'll learn how to
 
 ## Pig Latin Rules
 1. Words that start with a vowel (a, e, i, o, u):
+    - Add "ay" to the end of the word.
+    - Example: "apple" becomes "appleay".
 
-_ Add "ay" to the end of the word.
-_ Example: "apple" becomes "appleay".
+2. Words that start with "xr" or "yt":
+    - Add "ay" to the end of the word.
+    - Example: "xray" becomes "xrayay".
 
-Words that start with "xr" or "yt":
+3. Words that start with consonants:
+    - Move all the consonants before the first vowel to the end of the word and then add "ay".
+    - Example: "pig" becomes "igpay".
 
-Add "ay" to the end of the word.
-Example: "xray" becomes "xrayay".
-Words that start with consonants:
+4. Words that have "qu" after consonants:
+    - Move the consonants and "qu" to the end and add "ay".
+    - Example: "square" becomes "aresquay".
 
-Move all the consonants before the first vowel to the end of the word and then add "ay".
-Example: "pig" becomes "igpay".
-Words that have "qu" after consonants:
+5. Words with consonants followed by "y":
+    - Move the consonants before "y" to the end and add "ay".
+    - Example: "my" becomes "may".
 
-Move the consonants and "qu" to the end and add "ay".
-Example: "square" becomes "aresquay".
-Words with consonants followed by "y":
-
-Move the consonants before "y" to the end and add "ay".
-Example: "my" becomes "ymay".
-Step-by-Step Implementation
+## Step-by-Step Implementation
 Let's start by writing a function to translate a whole sentence into Pig Latin. We'll break it down into smaller, manageable tasks.
 
-Step 1: Translate a Sentence
+### Step 1: Translate a Sentence
 First, we'll create a function that splits a sentence into words, translates each word, and then joins the translated words back into a sentence.
 
-python
-Copy code
+```
 def translate_to_pig_latin(sentence):
     # Split the sentence into words
     words = sentence.split()
@@ -42,11 +40,12 @@ def translate_to_pig_latin(sentence):
     
     # Join the translated words back into a sentence
     return ' '.join(pig_latin_words)
-Step 2: Translate a Word
+```
+
+## Step 2: Translate a Word
 Next, we'll write a function to translate a single word into Pig Latin according to the rules.
 
-python
-Copy code
+```
 def translate_word_to_pig_latin(word):
     # Rule 1: If the word starts with a vowel or "xr" or "yt"
     if word[0] in 'aeiou' or word.startswith('xr') or word.startswith('yt'):
@@ -64,27 +63,31 @@ def translate_word_to_pig_latin(word):
     
     # Just in case, return the word as is (should not reach here)
     return word
-Putting It All Together
+```
+
+## Putting It All Together
 Now, let's combine these functions to see how they work together. We'll test the translation with a few examples.
 
-python
-Copy code
+```
 # Test the function
 print(translate_to_pig_latin("apple"))  # appleay
 print(translate_to_pig_latin("xray"))   # xrayay
 print(translate_to_pig_latin("quick brown fox jumps over the lazy dog"))  # ickquay ownbray oxfay umpsjay overay ethay azylay ogday
 print(translate_to_pig_latin("square"))  # aresquay
-Detailed Explanation
-translate_to_pig_latin(sentence):
+```
 
+## Detailed Explanation
+1. translate_to_pig_latin(sentence):
 This function takes a sentence, splits it into words, translates each word, and then joins the words back into a sentence.
-translate_word_to_pig_latin(word):
 
+2. translate_word_to_pig_latin(word):
 This function translates a single word into Pig Latin according to the rules. It checks the initial characters of the word to determine the appropriate rule to apply.
-Rules Implementation:
 
-Rule 1: Checks if the word starts with a vowel or "xr" or "yt" and adds "ay" to the end.
-Rule 3: Looks for "qu" and moves it with preceding consonants to the end.
-Rules 2 and 4: Finds the first vowel or 'y' (not at the start), moves preceding consonants to the end, and adds "ay".
-Conclusion
-This approach ensures that we handle each rule for translating words into Pig Latin. By breaking the problem into smaller functions, we make the code easier to understand and maintain. Keep practicing with different sentences to get a better grasp of Pig Latin translation!
+3. Rules Implementation:
+    - Rule 1: Check if the word starts with a vowel or "xr" or "yt" and add "ay" to the end.
+    - Rule 3: Look for "qu" and move it with preceding consonants to the end.
+    - Rules 2 and 4: Find the first vowel or 'y' (not at the start), move preceding consonants to the end, and add "ay".
+
+
+## Conclusion
+This approach ensures that we handle each rule for translating words into Pig Latin. By breaking the problem into smaller functions, we make the code easier to understand and maintain. Keep practising with different sentences to get a better grasp of Pig Latin translation!
