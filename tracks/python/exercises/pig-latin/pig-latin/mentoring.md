@@ -1,4 +1,6 @@
-# Explanation
+# Pig Latin
+
+### Reasonable solutions:
 In Pig Latin:
 
 1. Words that start with a vowel (a, e, i, o, u): Add "ay" to the end of the word.
