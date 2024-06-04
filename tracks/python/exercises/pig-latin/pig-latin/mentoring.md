@@ -4,19 +4,19 @@
 In Pig Latin:
 
 1. Words that start with a vowel (a, e, i, o, u): Add "ay" to the end of the word.
-- Example: "apple" becomes "appleay".
+ - Example: "apple" becomes "appleay".
 
 2. Words that start with "xr" or "yt": Add "ay" to the end of the word.
-- Example: "xray" becomes "xrayay".
+ - Example: "xray" becomes "xrayay".
 
 3. Words that start with consonants: Move all the consonants before the first vowel to the end of the word and then add "ay".
-- Example: "pig" becomes "igpay".
+ - Example: "pig" becomes "igpay".
 
 5. Words that have "qu" after consonants: Move the consonants and "qu" to the end and add "ay".
-- Example: "square" becomes "aresquay".
+ - Example: "square" becomes "aresquay".
 
 6. Words with consonants followed by "y": Move the consonants before "y" to the end and add "ay".
-- Example: "my" becomes "may".
+ - Example: "my" becomes "may".
 
 # Code
 Let's write the Python code step-by-step to translate a sentence into Pig Latin.
