@@ -42,7 +42,7 @@ def translate_to_pig_latin(sentence):
     return ' '.join(pig_latin_words)
 ```
 
-## Step 2: Translate a Word
+### Step 2: Translate a Word
 Next, we'll write a function to translate a single word into Pig Latin according to the rules.
 
 ```
