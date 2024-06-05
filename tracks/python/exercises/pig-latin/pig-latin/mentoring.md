@@ -1,93 +1,42 @@
 # Pig Latin
 
-## Introduction
-Pig Latin is a fun way to play with words. In this exercise, you'll learn how to translate English sentences into Pig Latin by following a few simple rules. We'll break down the process step-by-step and provide you with clear code examples to help you understand and implement the translation.
 
-## Pig Latin Rules
-1. Words that start with a vowel (a, e, i, o, u):
-    - Add "ay" to the end of the word.
-    - Example: "apple" becomes "appleay".
+## Common Areas of Improvement
+When mentoring students on the Pig Latin exercise, it's essential to focus on common areas where they might struggle. Here are some key points to keep in mind:
 
-2. Words that start with "xr" or "yt":
-    - Add "ay" to the end of the word.
-    - Example: "xray" becomes "xrayay".
+1. Understanding the Rules Clearly
+    - Rule Comprehension: Ensure that students fully understand each of the Pig Latin translation rules before diving into coding. Misunderstanding the rules often leads to incorrect implementations.
+    - Edge Cases: Highlight the importance of edge cases such as words starting with "xr" or "yt", and those containing "qu".
+2. String Manipulation Skills
+    - Splitting and Joining Strings: Students should be comfortable using functions to split sentences into words and join words back into sentences.
+    - String Slicing: Emphasize the importance of correctly slicing strings to rearrange parts of the word as per the rules.
+    - Prefix Checking: Encourage using built-in string functions like starts with to simplify rule checks.
+3. Iterating Over Strings
+    - Looping Over Characters: Ensure students understand how to iterate over characters in a string, especially when finding the first vowel or handling specific patterns.
+    - Range-based Loops: Encourage using range-based loops or list comprehensions for readability and efficiency.
+4. Condition Handling
+    - Simplifying Conditions: Help students learn to simplify complex conditions using logical operators and short-circuit evaluation to make their code more readable.
+    - Avoiding Nested Conditions: Suggest breaking down nested conditions into simpler, well-named functions to improve clarity.
+5. Code Readability and Maintenance
+    - Comments and Documentation: Reinforce the habit of writing meaningful comments and docstrings to explain their logic, especially for complex parts.
+    - Function Decomposition: Guide students to decompose their solution into smaller, reusable functions, each handling a specific rule or task.
+  
+## Common suggestions:
 
-3. Words that start with consonants:
-    - Move all the consonants before the first vowel to the end of the word and then add "ay".
-    - Example: "pig" becomes "igpay".
+    - Avoid complex, deeply nested logic.
+    - Reduce the number of special cases by generalizing logic. For instance, the first vowel in the word can potentially be handled the same, regardless of whether it is at the start of the word or not.
+    - Prefer if/else chains.
+    - Add explanatory comments when the intent of the code might not be clear to the reader.
 
-4. Words that have "qu" after consonants:
-    - Move the consonants and "qu" to the end and add "ay".
-    - Example: "square" becomes "aresquay".
+## Examples and Talking Points:
+1. Clear Rule Application:
+    - Before: Students might apply rules in a scattered way.
+    - Improvement: Help them structure their code to apply rules in a clear, step-by-step manner.
 
-5. Words with consonants followed by "y":
-    - Move the consonants before "y" to the end and add "ay".
-    - Example: "my" becomes "may".
+2. Efficient String Handling:
+    - Before: Using manual loops for operations that can be handled by built-in functions.
+    - Improvement: Introduce functions like split, join, starts with, and slicing techniques to simplify their code.
 
-## Step-by-Step Implementation
-Let's start by writing a function to translate a whole sentence into Pig Latin. We'll break it down into smaller, manageable tasks.
-
-### Step 1: Translate a Sentence
-First, we'll create a function that splits a sentence into words, translates each word, and then joins the translated words back into a sentence.
-
-```
-def translate_to_pig_latin(sentence):
-    # Split the sentence into words
-    words = sentence.split()
-    
-    # Translate each word to Pig Latin
-    pig_latin_words = [translate_word_to_pig_latin(word) for word in words]
-    
-    # Join the translated words back into a sentence
-    return ' '.join(pig_latin_words)
-```
-
-### Step 2: Translate a Word
-Next, we'll write a function to translate a single word into Pig Latin according to the rules.
-
-```
-def translate_word_to_pig_latin(word):
-    # Rule 1: If the word starts with a vowel or "xr" or "yt"
-    if word[0] in 'aeiou' or word.startswith('xr') or word.startswith('yt'):
-        return word + 'ay'
-    
-    # Rule 3: If the word starts with consonants followed by "qu"
-    if 'qu' in word:
-        qu_index = word.index('qu')
-        return word[qu_index + 2:] + word[:qu_index + 2] + 'ay'
-    
-    # Rule 2 and Rule 4: Move consonants before the first vowel to the end and add "ay"
-    for i, char in enumerate(word):
-        if char in 'aeiou' or (char == 'y' and i != 0):
-            return word[i:] + word[:i] + 'ay'
-    
-    # Just in case, return the word as is (should not reach here)
-    return word
-```
-
-## Putting It All Together
-Now, let's combine these functions to see how they work together. We'll test the translation with a few examples.
-
-```
-# Test the function
-print(translate_to_pig_latin("apple"))  # appleay
-print(translate_to_pig_latin("xray"))   # xrayay
-print(translate_to_pig_latin("quick brown fox jumps over the lazy dog"))  # ickquay ownbray oxfay umpsjay overay ethay azylay ogday
-print(translate_to_pig_latin("square"))  # aresquay
-```
-
-## Detailed Explanation
-1. translate_to_pig_latin(sentence):
-This function takes a sentence, splits it into words, translates each word, and then joins the words back into a sentence.
-
-2. translate_word_to_pig_latin(word):
-This function translates a single word into Pig Latin according to the rules. It checks the initial characters of the word to determine the appropriate rule to apply.
-
-3. Rules Implementation:
-    - Rule 1: Check if the word starts with a vowel or "xr" or "yt" and add "ay" to the end.
-    - Rule 3: Look for "qu" and move it with preceding consonants to the end.
-    - Rules 2 and 4: Find the first vowel or 'y' (not at the start), move preceding consonants to the end, and add "ay".
-
-
-## Conclusion
-This approach ensures that we handle each rule for translating words into Pig Latin. By breaking the problem into smaller functions, we make the code easier to understand and maintain. Keep practising with different sentences to get a better grasp of Pig Latin translation!
+3. Comprehensive Testing:
+    - Before: Testing with only a few basic cases.
+    - Improvement: Show them how to write tests that cover all rules, including edge cases like "yttria" or "squeal".
