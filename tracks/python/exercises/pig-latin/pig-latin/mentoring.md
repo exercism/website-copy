@@ -1,42 +1,87 @@
-# Pig Latin
+# Mentoring
+
+## Problem and challenges
+
+The problem requires the student to rearrange the English word based on the given rules in the instruction.
+
+## Reasonable solutions
+
+This exercise can be solved by using one `for` loop.
+
+```
+def translate(text):
+    return ' '.join([pig(word) for word in text.split(' ')])
+def pig(word):
+    if word[0] not in 'aieou' and word[1:3] == 'qu':
+        return word[3:] + word[:3] + "ay"
+    if word[0] in 'aieou':
+        return word + "ay"
+    if word[:2] in ['yt', 'xr']:
+        return word + "ay"
+    if word[:2] in ['qu']:
+        return word[2:] + word[:2] + "ay"
+    if set('aieou') - set(word) == set('aieou') and 'yt' not in word:
+        return word[1:] + word[:1] + "ay"
+    return pig(word[1:] + word[0])
+```
+
+Exercise solved using two `for` loops.
+
+```
+def translate(sentence):
+    words = sentence.split()
+    pig_latin_words = [translate_to_pig_latin(word) for word in words]
+    return ' '.join(pig_latin_words)
 
 
-## Common Areas of Improvement
-When mentoring students on the Pig Latin exercise, it's essential to focus on common areas where they might struggle. Here are some key points to keep in mind:
+def translate_to_pig_latin(word):
+    vowels = "aeiou"
 
-1. Understanding the Rules Clearly
-    - Rule Comprehension: Ensure that students fully understand each of the Pig Latin translation rules before diving into coding. Misunderstanding the rules often leads to incorrect implementations.
-    - Edge Cases: Highlight the importance of edge cases such as words starting with "xr" or "yt", and those containing "qu".
-2. String Manipulation Skills
-    - Splitting and Joining Strings: Students should be comfortable using functions to split sentences into words and join words back into sentences.
-    - String Slicing: Emphasize the importance of correctly slicing strings to rearrange parts of the word as per the rules.
-    - Prefix Checking: Encourage using built-in string functions like starts with to simplify rule checks.
-3. Iterating Over Strings
-    - Looping Over Characters: Ensure students understand how to iterate over characters in a string, especially when finding the first vowel or handling specific patterns.
-    - Range-based Loops: Encourage using range-based loops or list comprehensions for readability and efficiency.
-4. Condition Handling
-    - Simplifying Conditions: Help students learn to simplify complex conditions using logical operators and short-circuit evaluation to make their code more readable.
-    - Avoiding Nested Conditions: Suggest breaking down nested conditions into simpler, well-named functions to improve clarity.
-5. Code Readability and Maintenance
-    - Comments and Documentation: Reinforce the habit of writing meaningful comments and docstrings to explain their logic, especially for complex parts.
-    - Function Decomposition: Guide students to decompose their solution into smaller, reusable functions, each handling a specific rule or task.
-  
-## Common suggestions:
+    # Rule 1: Word begins with a vowel or starts with "xr" or "yt"
+    if word[0] in vowels or word.startswith("xr") or word.startswith("yt"):
+        return word + "ay"
+    
+    # Rule 3 and Rule 4 need to be checked within the loop
+    for i, char in enumerate(word):
+        if char == "u" and i > 0 and word[i-1] == 'q':
+            # Rule 3: "qu" handling
+            return word[i + 1:] + word[:i + 1] + "ay"
+        elif char in vowels:
+            # Rule 2: Move initial consonants to the end and add "ay"
+            return word[i:] + word[:i] + "ay"
+        elif char == 'y' and i > 0:
+            # Rule 4: Consonants followed by "y"
+            return word[i:] + word[:i] + "ay"
+    
+    # If no vowels are found, just add "ay" to the word (edge case)
+    return word + "ay"
+```
 
-    - Avoid complex, deeply nested logic.
-    - Reduce the number of special cases by generalizing logic. For instance, the first vowel in the word can potentially be handled the same, regardless of whether it is at the start of the word or not.
-    - Prefer if/else chains.
-    - Add explanatory comments when the intent of the code might not be clear to the reader.
+Prefer to use the first approach. Using multiple `for` loops in your code can sometimes lead to readability issues and inefficiencies. Remember that readability and maintainability are crucial.
 
-## Examples and Talking Points:
-1. Clear Rule Application:
-    - Before: Students might apply rules in a scattered way.
-    - Improvement: Help them structure their code to apply rules in a clear, step-by-step manner.
+## Talking points
 
-2. Efficient String Handling:
-    - Before: Using manual loops for operations that can be handled by built-in functions.
-    - Improvement: Introduce functions like split, join, starts with, and slicing techniques to simplify their code.
+1. Students may unfamiliar with `join()` may use `for` loop or list comprehension to concatenate:
 
-3. Comprehensive Testing:
-    - Before: Testing with only a few basic cases.
-    - Improvement: Show them how to write tests that cover all rules, including edge cases like "yttria" or "squeal".
+    ```
+    my_list = ["apple", "banana", "cherry"]
+    separator = ", "
+    result = separator.join(my_list)
+    print(result)
+    # Output: "apple, banana, cherry"
+    ```
+
+2. Also students may unfamiliar with `set()`:
+
+    The `set()` function is a powerful data structure in Python.
+    
+    - A set is an unordered collection of unique elements.
+    - You can create a set using curly braces {} or the set() constructor.
+    
+    Example:
+    ```
+    my_set = {1, 2, 3, 4}
+    ```
+    suggest students to look at the basic operations on `set`.
+
+
