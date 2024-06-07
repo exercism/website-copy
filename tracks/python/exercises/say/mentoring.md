@@ -2,7 +2,7 @@
 
 ## Problems and Challenges
 
-This problem requires the student to transform an integer (0 <= n < 1,000,000,000,000) into its full English equivalent, and raise an exception for values outside that range.
+This problem requires the student to transform an integer (0 <= n < 1,000,000,000,000) into its full English equivalent and raise an exception for values outside that range.
 Take note of the tests - the use of 'and' as a separator is not required, and adding it will cause the tests to fail, but it is suggested as an extension exercise. 
 
 ## Reasonable Solution
@@ -72,7 +72,7 @@ Next, the instructions suggest beginning by creating a function which works for 
 The return value of this function will typically be a string, but it can also be a list of strings for later assembly.
 Whether in this function or for the final return, encourage them to use a list and combine the elements using `str.join`.
 
-The main challenges are ensuring that the 'hundred' denominator is conditionally included and that the tens and ones columns are joined with a hyphen if they are both present.
+The main challenges are ensuring that the 'hundred' denominator is conditionally included and that the tens and one's columns are joined with a hyphen if they are both present.
 Simple `if` checks for each of these conditions is the most straightforward approach.
 
 Another approach is to only handle values below 100, and instead handle the hundreds alongside the other denominators.
@@ -80,8 +80,8 @@ This typically requires the use of recursion.
 
 ### Larger numbers
 
-Encourage the student to use the first function they wrote for each set of three digits rather than duplicating code.
-Each set of three can be checked individually and conditionally added along with the appropriate denominator, or alternatively the denominators can be stored in a list and iterated over.
+Encourage the student to use the first function they wrote for each set of three digits rather than duplicating the code.
+Each set of three can be checked individually and conditionally added along with the appropriate denominator or the denominators can be stored in a list and iterated over.
 
 ### Zero or invalid input
 
