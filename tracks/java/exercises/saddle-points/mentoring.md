@@ -59,7 +59,7 @@ final class Matrix {
 Rather than checking the whole row and column for every coordinate to check if
 each point is a Saddle Point, we can pre-process the matrix and find all of the
 column minimums and row maxes. This reduces the number of extra times that each
-row and column has to be traversed (requiring exactly 3 traversals):
+row and column have to be traversed (requiring exactly 3 traversals):
 
 ```java
 import java.util.Collections;
