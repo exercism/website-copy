@@ -6,12 +6,12 @@ Example :
 
 ```java
 // instead of
-if (knightIsAwake) {
+if (someExpression) {
   return true;
 } else {
   return false;
 }
 
 // ... return the expression directly
-return knightIsAwake;
+return someExpression;
 ```
