@@ -1,7 +1,7 @@
 # Pow
 
 Using `pow`, `sqrt` or `**` is totally valid and can be necessary in many situations.
-However when wanting a distance in 2d space we can use the [`hypot` method][hypot] which returns the hypotenuse of the x and y lengths.
+However when we want a distance in Cartesian space we can use the [`hypot` method][hypot] which returns the hypotenuse of a right angle triangle with sides x and y.
 
 ```crystal
 # Rather than:
