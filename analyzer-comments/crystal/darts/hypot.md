@@ -1,6 +1,6 @@
 # Pow
 
-Using the `pow`, `sqrt` or `**` is totally valid and can be neassisary in many situations.
+Using `pow`, `sqrt` or `**` is totally valid and can be necessary in many situations.
 However when wanting a distance in 2d space we can use the [`hypot` method][hypot] which returns the hypotenuse of the x and y lengths.
 
 ```crystal
