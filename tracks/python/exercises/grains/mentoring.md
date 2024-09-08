@@ -18,7 +18,7 @@ def square(number):
     """Return the number of grains on a given square number.
     
     :param number: int - square number on which we want to calculate the amount of grains.
-    :return: int - amount of grains present on the give square number(number).
+    :return: int - the amount of grains present on the given square number(number).
     """
     if number < 1 or number > 64:
         raise ValueError("square must be between 1 and 64")
@@ -38,7 +38,7 @@ def total():
 ### `square(number)`
 
 As we did `2**(number - 1)` on block one there will be only 1 grain, 2 to the power of 0 equals 1.
-On block 2 there will 2 and on block 3 there will be 4 which is equal to 2 to the power of 1, and 2 to the power of 2, respectively.
+On block 2 there will be 2 and on block 3 there will be 4 which is equal to 2 to the power of 1, and 2 to the power of 2, respectively.
 Hence generalized, **2 to the power of (number-1)**.
 
 ### `total()`
