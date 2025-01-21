@@ -1,0 +1,2 @@
+- Whenever providing feedback about a code style, link it with a [ruby style guide](https://ruby.style/).
+- Ensure you provide a link to the [official documentation](https://www.ruby-lang.org/en/documentation) as much as possible to support their learning.
