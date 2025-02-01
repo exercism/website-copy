@@ -1,113 +1,106 @@
-## Key Components of the Code
+# Mentor’s Guide to Supporting Students on Poker Hand Evaluation
 
-### 1. **Card Values**
-A dictionary, `CARD_VALUES`, maps card ranks (e.g., `2`, `T`, `A`) to numerical values for easier comparisons. These numerical values are critical for evaluating hands, checking sequences, and determining hand rankings
-
-```python
-CARD_VALUES = {'2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, 
-               'T': 10, 'J': 11, 'Q': 12, 'K': 13, 'A': 14}
-```
-
-### 2. **Parsing Hands**
-The `parse_hand` function processes a poker hand to extract sorted values and check if the hand is a flush.
-
-```python
-def parse_hand(hand):
-    values = sorted([card_value(card) for card in hand], reverse=True)
-    flush = len(set(card[1] for card in hand)) == 1
-    return values, flush
-```
-- **Values**: A list of numerical values of the cards in descending order.
-- **Flush**: A boolean indicating if all cards have the same suit.
-
-### 3. **Checking for Straight**
-The `is_straight` function checks if the card values form a consecutive sequence.
-
-```python
-def is_straight(values):
-    return all(values[i] - 1 == values[i + 1] for i in range(len(values) - 1))
-```
-This ensures the values are sequential.
-
-### 4. **Ranking Hands**
-The `rank` function assigns a rank and relevant details to a hand.
-
-```python
-def rank(hand):
-    values, flush = parse_hand(hand)
-    value_counts = Counter(values)
-    counts = sorted(value_counts.values(), reverse=True)
-    straight = is_straight(values)
-
-    match counts:
-        case [4, 1]:
-            return HAND_RANKS["Four of a Kind"], values
-        case [3, 2]:
-            return HAND_RANKS["Full House"], values
-        case [3, 1, 1]:
-            return HAND_RANKS["Three of a Kind"], values
-        case [2, 2, 1]:
-            return HAND_RANKS["Two Pair"], values
-        case [2, 1, 1, 1]:
-            return HAND_RANKS["One Pair"], values
-        case [1, 1, 1, 1, 1]:
-            if flush and straight:
-                return (HAND_RANKS["Royal Flush"], values) if values[0] == 14 else (HAND_RANKS["Straight Flush"], values)
-            if flush:
-                return HAND_RANKS["Flush"], values
-            if straight:
-                return HAND_RANKS["Straight"], values
-            return HAND_RANKS["High Card"], values
-```
-
-#### Explanation:
-- **Counts**: A sorted list of card frequency counts (e.g., `[4, 1]` for Four of a Kind).
-- **`match-case`**: Handles all possible hand combinations by matching frequency patterns and additional conditions like flush and straight.
-- **Output**: Returns a tuple with the hand rank and sorted values for tiebreakers.
-
-### 5. **Determining the Best Hand(s)**
-The `best_poker_hands` function identifies the highest-ranking hand(s) among a list of hands.
-
-```python
-def best_poker_hands(hands):
-    ranked_hands = [(rank(hand), hand) for hand in hands]  # Compute the rank of each hand
-    best_rank = max(ranked_hands, key=lambda x: x[0])[0]  # Find the highest rank
-    return [hand for r, hand in ranked_hands if r == best_rank]  # Return hands matching the best rank
-```
-
-#### Process:
-1. **Rank Calculation**: The function computes the rank of each hand using the `rank` function.
-2. **Identify Best Rank**: It determines the highest rank by comparing the first element (rank) of each tuple in `ranked_hands`.
-3. **Filter Best Hands**: It filters and returns all hands that share the best rank, allowing for ties when multiple hands have the same rank.
-
-This approach ensures efficiency by ranking hands once and using a single pass to identify and return the best ones.
+This guide is designed to help mentors support current students as they work on the problem of evaluating and comparing poker hands. It emphasizes core concepts, principles, and problem-solving approaches—including parsing input, evaluating a hand, ranking hands, and selecting the best hand
 
 ---
 
-## Efficiency
+## 1. Reasonable Solution(s)
 
-1. **Time Complexity**:
-   - Parsing a single hand: \(O(k \log k)\), where \(k = 5\) (number of cards in a hand).
-   - Ranking \(n\) hands: \(O(n \cdot k \log k)\).
+### Parsing and evaluating and returning the best hand(s)
 
-2. **Space Complexity**:
-   - Minimal extra space for counters and sorted lists.
+```python
+import collections
+
+# Mapping for card ranks.
+RANKS = {
+    "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "10": 10,
+    "T": 10, "J": 11, "Q": 12, "K": 13, "A": 14
+}
+
+def parse_hand(hand_string):
+    """Parses a poker hand into numeric rank and suit pairs."""
+    list_of_cards = hand_string.split(" ")
+    parsed_cards = []
+    for card in list_of_cards:
+        if card.startswith("10"):
+            rank_part = "10"
+            suit = card[2]
+        else:
+            rank_part = card[0]
+            suit = card[1]
+        numeric_rank = RANKS[rank_part]
+        parsed_cards.append((numeric_rank, suit))
+    return parsed_cards
+
+def evaluate_hand(parsed_cards):
+    """Evaluates a parsed hand and returns a tuple representing the rank."""
+    values = sorted([card[0] for card in parsed_cards])
+    suits = [card[1] for card in parsed_cards]
+    frequency = collections.Counter(values)
+    freq_sorted = sorted(frequency.items(), key=lambda x: (x[1], x[0]), reverse=True)
+    flush = len(set(suits)) == 1
+    straight = values == list(range(values[0], values[0] + 5)) or values == [2, 3, 4, 5, 14]
+    
+    if straight and flush:
+        return (8, values[-1])
+    if freq_sorted[0][1] == 4:
+        quad = freq_sorted[0][0]
+        kicker = [v for v in values if v != quad][0]
+        return (7, quad, kicker)
+    if freq_sorted[0][1] == 3 and freq_sorted[1][1] == 2:
+        return (6, freq_sorted[0][0], freq_sorted[1][0])
+    if flush:
+        return (5, sorted(values, reverse=True))
+    if straight:
+        return (4, values[-1])
+    if freq_sorted[0][1] == 3:
+        kickers = sorted([v for v in values if v != freq_sorted[0][0]], reverse=True)
+        return (3, freq_sorted[0][0], kickers)
+    if freq_sorted[0][1] == 2 and freq_sorted[1][1] == 2:
+        return (2, sorted([freq_sorted[0][0], freq_sorted[1][0]], reverse=True), [v for v in values if v not in [freq_sorted[0][0], freq_sorted[1][0]]][0])
+    if freq_sorted[0][1] == 2:
+        kickers = sorted([v for v in values if v != freq_sorted[0][0]], reverse=True)
+        return (1, freq_sorted[0][0], kickers)
+    return (0, sorted(values, reverse=True))
+
+def best_hands(hands):
+    """Determines the best hand(s) from a list of poker hands."""
+    best = []
+    best_rank = None
+    for hand in hands:
+        parsed_cards = parse_hand(hand)
+        current_rank = evaluate_hand(parsed_cards)
+        if best_rank is None or current_rank > best_rank:
+            best_rank = current_rank
+            best = [hand]
+        elif current_rank == best_rank:
+            best.append(hand)
+    return best
+```
 
 ---
 
-## Improvements in Optimization
+## 2. Common Suggestions
 
-1. **Consolidated Parsing**:
-   - `parse_hand` combines common operations (sorting values, checking flush).
-
-2. **Reduced Repetition**:
-   - Computed values, flush, and straight once, reused multiple times.
-
-3. **Modern Features**:
-   - `match-case` simplifies hand ranking logic, making it easier to maintain.
+- **Using frequency counts to simplify evaluation** rather than iterating multiple times.
+- **Sorting values upfront** to make straight detection simpler.
+- **Using tuples for ranking** to take advantage of built-in tuple comparison.
+- **Using a dictionary to store card frequencies** instead of repeatedly counting occurrences.
 
 ---
 
-## Summary
+## 3. Talking Points
 
-This optimized code efficiently evaluates poker hands and determines the best hand(s) using clear and maintainable logic. By leveraging Python's advanced features and efficient data structures, it ensures both performance and readability.
+- **Why is frequency counting effective?**
+- **How does tuple comparison simplify ranking comparisons?**
+- **What are the best ways to handle edge cases like ********************************`"10"`******************************** vs ********************************`"T"`********************************?**
+- **How should students approach debugging when rankings appear incorrect?**
+- **What are the trade-offs between different data structures for storing hands?**
+- **Does an object oriented approach for cards or hands make sense here? Why or why not**
+
+---
+
+## 4. Change Guide
+
+- **2024 January** - Initial version of the mentor guide created.
+
