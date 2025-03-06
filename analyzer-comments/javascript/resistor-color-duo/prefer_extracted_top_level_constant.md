@@ -6,7 +6,7 @@ Consider extracting the constant to the top level scope:
 const %{name} = %{value}
 
 // the rest of your code below it
-export const decodedValue = (...)
+export %{method.signature}
 ```
 
 Only functions, classes and constants that are `export`ed, are visible and accessible from the outside.
