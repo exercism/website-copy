@@ -62,6 +62,4 @@ tracks/tcl/**/*                        @exercism/website-copy-tcl
 tracks/typescript/**/*                 @exercism/website-copy-typescript
 tracks/vbnet/**/*                      @exercism/website-copy-vbnet
 tracks/vimscript/**/*                  @exercism/website-copy-vimscript
-tracks/x86-asse
-
-mbly/**/*               @exercism/website-copy-x86-assembly
+tracks/x86-assembly/**/*               @exercism/website-copy-x86-assembly
