@@ -151,9 +151,9 @@ exercises.
   accidental mistakes. If you expect the function to return a string, mark it as
   such.
 - Even if you have a default value applied to your parameter, mark its type even
-  though it currently can be inferred. This lets you later remove the
-  default value without causing issues (either the type will then be inferred as `any`, or you'll
-  get an `no-implicit-any` error).
+  though it currently can be inferred. This allows you to later remove the
+  default value and not run into issues (either it will then be `any` or you'll
+  get an error `no-implicit-any`).
 
 [ref-template-literal]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 [ref-default-value]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
