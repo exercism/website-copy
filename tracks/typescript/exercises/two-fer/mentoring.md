@@ -152,7 +152,7 @@ exercises.
   such.
 - Even if you have a default value applied to your parameter, mark its type even
   though it currently can be inferred. This allows you to later remove the
-  default type and not run into issues (either it will then be `any` or you'll
+  default value and not run into issues (either it will then be `any` or you'll
   get an error `no-implicit-any`).
 
 [ref-template-literal]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
