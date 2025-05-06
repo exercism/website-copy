@@ -4,4 +4,3 @@ When working with `Strings`, prefer direct comparison to `null` instead of using
 
 Using `Optional` in this context adds unnecessary complexity and avoids the intended practice of handling `null` values directly.
 
-
