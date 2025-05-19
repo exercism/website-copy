@@ -19,11 +19,15 @@ exercism help
 ```
 
 ## Configuration
-You need to tell the tool who you are. You can find your token in your [settings page](http://exercism.io/my/settings).
+To configure the CLI, follow these steps:
 
-```
-exercism configure --token=YOUR_API_TOKEN
-```
+* Find your API token in your [settings page](http://exercism.io/my/settings).
+* Run the following command, replacing `YOUR_API_TOKEN` with your actual API token:
+  ```
+  exercism configure --token=YOUR_API_TOKEN
+  ```
+
+For more detailed instructions, refer to the [CLI documentation](https://exercism.io/cli-walkthrough).
 
 ## Troubleshooting
 
