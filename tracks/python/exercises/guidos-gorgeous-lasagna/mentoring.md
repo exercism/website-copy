@@ -9,6 +9,7 @@ The problem has four tasks.
 1. Define a function `preparation_time_in_minutes()` which takes the number of layers in the lasagna and returns how long it takes to prepare the lasagna.
 1. Define a function `elapsed_time_in_minutes()` which takes the number of layers in the lasagna and the elapsed bake time.
   This function then returns how much time has elapsed between preparing the lasagna and the elapsed bake time.
+1. Ensure all functions have docstring.
 
 ## Reasonable solution
 
@@ -115,5 +116,14 @@ It is good practice when coding to [avoid repeating yourself](https://en.wikiped
 In `elapsed_time_in_minutes()` can you reuse a previously defined function to avoid repeating calculations?
 ```
 
+### Docstrings
+
+Docstring conventions are documented in [PEP-257][pep-0257].
+The tests only check that docstrings exist, and not their contents.
+This is a good opportunity to discuss docstring conventions if the student is interested.
+There are [many docstring styles][docstring-styles] to pick from; all of them conform to PEP-257.
+
 [magic numbers]: https://en.wikipedia.org/wiki/Magic_number_(programming)
 [dry]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+[pep-0257]: https://peps.python.org/pep-0257/
+[docstring-styles]: https://stackoverflow.com/a/24385103
