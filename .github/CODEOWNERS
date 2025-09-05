@@ -1,4 +1,3 @@
-
 # Track-specific reviewers
 tracks/ada/**/*                        @exercism/website-copy-ada
 tracks/ballerina/**/*                  @exercism/website-copy-ballerina
