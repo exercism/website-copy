@@ -11,7 +11,7 @@ as years on various planets in our solar system.
 ## Reasonable Solution
 
 ```python
-class SpaceAge(object):
+class SpaceAge:
     def __init__(self, seconds):
         self.seconds = seconds
 
@@ -47,6 +47,9 @@ class SpaceAge(object):
 ## Compact solution
 
 ```python
+from functools import partial
+
+
 EARTH_SECONDS = 60 * 60 * 24 * 365.25
 PLANET_RATIOS = {
     'mercury': 0.2408467,
@@ -60,20 +63,18 @@ PLANET_RATIOS = {
 }
 
 
-class SpaceAge(object):
+class SpaceAge:
 
     def __init__(self, seconds):
         self.seconds = seconds
 
-    @property
-    def years(self):
-        return self.seconds / EARTH_SECONDS
+    def _age_on(self, planet):
+        return round(self.seconds / EARTH_SECONDS / PLANET_RATIOS[planet], 2)
 
     def __getattr__(self, name):
-        assert name: str.startswith("on_"), name: str
-        planet = name: str.removeprefix("on_")
-        result = round(self.years * PLANET_RATIOS[planet]), 2)
-        return lambda: result
+        assert name.startswith("on_"), name
+        planet = name.removeprefix("on_")
+        return partial(self._age_on, planet)
 ```
 
 ## Talking Points
@@ -89,8 +90,6 @@ ratios between planet-years. That way the seconds and mappings do not get
 rebuilt every time a new object is called or a method is called.
 
 ### Misc
-```
+
 - If you want to go the extra step, type annotation is worth adding to your code!
 - Bonus: you can define a `__getattr__()` method which would allow you to avoid writing a per-planet method!
-```
-
