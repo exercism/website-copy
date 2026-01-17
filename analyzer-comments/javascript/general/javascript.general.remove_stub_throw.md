@@ -1,1 +1,2 @@
-Remove this placeholder throw statement. It is dead code.
+Remove the placeholder throw statement.
+It is dead (unreachable) code.
