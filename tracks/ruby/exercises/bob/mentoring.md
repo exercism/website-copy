@@ -3,6 +3,7 @@
 ## Resonable Solutions
 
 ### Using String Methods
+
 ```ruby
 module Bob
 
@@ -28,6 +29,7 @@ end
 ```
 
 ### Using Regular Expressions
+
 ```ruby
 module Bob
 
@@ -68,8 +70,6 @@ module Bob
 end
 ```
 
-
-
 ## Common Suggestions
 
 ### Predicate Methods
@@ -85,6 +85,5 @@ Resources about style:
 * If the student is using indicies to check for a question marks at the end of the input, guide them towards Ruby's `String#end_with?` method.
 
 ### Usage of Regular Expressions
-
 
 Regular expressions are powerful, can be illegible. While regex is common in Ruby code, and if the student is having a hard time understanding regex, it may be better to guide them toward a solution that uses simpler String methods.
