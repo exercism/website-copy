@@ -86,4 +86,4 @@ Resources about style:
 
 ### Usage of Regular Expressions
 
-Regular expressions are powerful, can be illegible. While regex is common in Ruby code, and if the student is having a hard time understanding regex, it may be better to guide them toward a solution that uses simpler String methods.
+Regular expressions are powerful, but can be illegible. While regex is common in Ruby code, and if the student is having a hard time understanding regex, it may be better to guide them toward a solution that uses simpler String methods.
