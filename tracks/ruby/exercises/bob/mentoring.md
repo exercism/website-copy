@@ -75,7 +75,7 @@ end
 
 ### Predicate Methods
 
-The names of predicate methods (methods that return a boolean value) should end in a question mark (i.e. Array#empty?).
+The names of predicate methods (methods that return a boolean value) should end in a question mark (i.e. `Array#empty?`).
 
 Students should avoid prefixing predicate methods with auxiliary verbs such as `is_yelling` or `has_question`
 These words are redundant and inconsistent with the style of boolean methods in the Ruby core library, such as `empty?` and `include?`.
