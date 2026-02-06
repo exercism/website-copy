@@ -36,9 +36,9 @@ end
 ```ruby
 module Bob
 
-  SILENCE = /\A\s*\z/.freeze
-  ASKING = /\?\s*\z/.freeze
-  SHOUTING = /\A[^A-Za-z]*[A-Z]+(?:[^a-z]*)\z/.freeze
+  SILENCE = /\A\s*\z/
+  ASKING = /\?\s*\z/
+  SHOUTING = /\A[^A-Za-z]*[A-Z]+(?:[^a-z]*)\z/
 
 
   def self.hey(input)
