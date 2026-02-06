@@ -1,6 +1,7 @@
 # Mentoring
 
-The key to this exercise is to look for patterns in a string, and extracting the specific criteria in order to make return the correct response. Most solutions look for `yelling` and `asking` criteria
+The key to this exercise is to look for patterns in a string, and extracting the specific criteria in order to make return the correct response.
+Most solutions look for `yelling` and `asking` criteria.
 
 ## Resonable Solutions
 
