@@ -39,8 +39,6 @@ module Bob
   SILENCE = /\A\s*\z/
   ASKING = /\?\s*\z/
   SHOUTING = /\A[^A-Za-z]*[A-Z]+(?:[^a-z]*)\z/
-
-
   def self.hey(input)
     case
     when silence?(input)
