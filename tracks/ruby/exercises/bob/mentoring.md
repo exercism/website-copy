@@ -86,9 +86,10 @@ Resources about style:
 - https://rubystyle.guide/#bool-methods-qmark
 - https://rubystyle.guide/#bool-methods-prefix
 
-### Using `end_with?`
+### Checking for a Question Mark With Indices
 
-* If the student is using indicies to check for a question mark at the end of the input, guide them towards Ruby's `String#end_with?` method.
+If the student is using indices or extra transforms to check for a question mark (e.g., `remark[-1] == '?'`, `remark.chars.last == '?'`, etc.), guide them toward `String#end_with?`.
+It is more readable and explicitly communicates the intent of the check.
 
 ### Usage of Regular Expressions
 
