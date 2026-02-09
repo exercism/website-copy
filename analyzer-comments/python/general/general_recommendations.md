@@ -5,6 +5,6 @@
 5.  Try to follow the docstring guidelines laid out in [PEP 257](https://peps.python.org/pep-0257/). Good documentation matters.
 6.  Write unit tests, but don't obsess over 100% coverage or edge cases.
 7.  Avoid [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)).
-8.  Prefer [enumerate](https://docs.python.org/3/library/functions.html#enumerate) over [range(len())](https://docs.python.org/3/library/functions.html#func-range) in loops.
+8.  Prefer [`enumerate()`](https://docs.python.org/3/library/functions.html#enumerate) over [range(len())](https://docs.python.org/3/library/functions.html#func-range) in loops that need both an index and element.
 9.  Prefer [comprehensions](https://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/) and [generator expressions](https://www.pythonmorsels.com/how-write-generator-expression/) over loops that append to a data structure. But don't [overuse comprehensions](https://treyhunner.com/2019/03/abusing-and-overusing-list-comprehensions-in-python/).
 10.  Prefer [str.join()](https://docs.python.org/3/library/stdtypes.html#str.join) over other methods of string concatenation.
