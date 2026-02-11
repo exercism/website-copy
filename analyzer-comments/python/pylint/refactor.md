@@ -10,9 +10,9 @@ a re-write or refactor.
 appears to have one or more patterns that could lead to _future_ bugs or maintenance issues.
 Consider taking a closer look at it.
 
-%Q{Instead of:\n\n```python\n#{bad_code}\n```\n}
-%Q{Try:\n\n```python\n#{good_code}\n```\n\n}
-%Q{Additional information:\n #{related_info}\n}
+%{bad_code}
+%{good_code}
+%{related_info}
 %{details}
 
 [code smell]: https://en.wikipedia.org/wiki/Code_smell

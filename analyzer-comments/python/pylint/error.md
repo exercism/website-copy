@@ -6,8 +6,7 @@
 
 This code has an error or problem that should be addressed.
 
-%Q{Instead of:\n\n```python\n#{bad_code}\n```\n}
-%Q{Try:\n\n```python\n#{good_code}\n```\n\n}
-%Q{Additional information:\n #{related_info}\n}
+%{bad_code}
+%{good_code}
+%{related_info}
 %{details}
-
