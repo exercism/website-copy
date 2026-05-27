@@ -5,9 +5,8 @@
 - [Integer (i64 in this case)](https://doc.rust-lang.org/std/primitive.i64.html)
 - [constant](https://doc.rust-lang.org/std/keyword.const.html)
 - [struct](https://doc.rust-lang.org/std/keyword.struct.html)
-(We're returning the [Utc](https://docs.rs/chrono/0.4.6/chrono/offset/struct.Utc.html) struct,
-which is the `offset` field in the [DateTime](https://docs.rs/chrono/0.4.6/chrono/struct.DateTime.html)
-struct from the [Chrono crate](https://docs.rs/chrono))
+(We're returning [`PrimitiveDateTime`](https://docs.rs/time/latest/time/struct.PrimitiveDateTime.html)
+from the [`time` crate](https://docs.rs/time/), which this exercise uses instead of `chrono`.)
 
 ## Reasonable solutions
 
