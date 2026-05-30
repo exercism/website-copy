@@ -72,7 +72,7 @@ solutions did not require nesting of the tests. The extra response makes it
 more interesting in some languages, but in JavaScript it doesn't.
 
 ### Common suggestions
-- If a student uses the complicated `RegExp` of `isShouting`, discuss its use over a simpler `message.toUpperCase() === message && /A-Z/.test(message)` which checks if there is at least one letter.
+- If a student uses the complicated `RegExp` of `isShouting`, discuss its use over a simpler `message.toUpperCase() === message && /[A-Z]/.test(message)` which checks if there is at least one letter.
 - If a student uses the correct `RegExp` but does _not_ use the `^` or `$` boundaries, explain how we're trying to match the entire message and not part of it. The tests won't raise a false positive, but other input might.
 
 ### Talking points
