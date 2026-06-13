@@ -15,7 +15,7 @@ end
 
 ## Talking points
 
-- Comparing lengths (`letters.uniq.length == letters.length`) is **marginally** quicker than comparing letters (`letters.uniq == letters`) but its more code.
+- Comparing lengths (`letters.uniq.length == letters.length`) is **marginally** quicker than comparing letters (`letters.uniq == letters`) but it's more code.
   Which is better?
 
 ## Changelog
