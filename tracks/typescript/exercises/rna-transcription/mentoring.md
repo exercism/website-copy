@@ -42,7 +42,7 @@ return sequence.replace(/./g, (nucleotide) => /* */)
 
 Variations include replacing only the "known" nucleotides:
 ```typescript
-sequence.replace(/[CGAT]g/, (nucleotide) => /* */)
+sequence.replace(/[CGAT]/g, (nucleotide) => /* */)
 ```
 
 ## Common suggestions
