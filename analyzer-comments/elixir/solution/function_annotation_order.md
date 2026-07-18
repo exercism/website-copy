@@ -1,12 +1,14 @@
 # Function Annotation Order
 
-Developers can choose the order of the `@doc` and `@spec` modules attributes, but the Elixir community convention is to use `@doc` first and `@spec` next to the function.
+Conventionally, `@doc` function annotations should come before `@spec` function annotations, and `@spec` function annotations should come directly before the function. If the function has multiple clauses, function annotations should go before the first clause.
 
 Example:
+
 ```elixir
 @doc """
 This function counts the number elements in a list
 """
 @spec count(list(any())) :: integer()
-def count(list), do: length(list)
+def count([]), do: 0
+def count([h | t]), do: 1 + count(t)
 ```
