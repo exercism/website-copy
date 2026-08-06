@@ -95,13 +95,14 @@ See about finding a way to check if it's alphabetic without using regex.
 ```
 
 If they don't use a `match` to compare the conditions:
-````md
+
 We can `match` on just two conditions: `is_question` and `is_yelling`. Like this:
-```rust
+
+````rust
 match (is_question, is_yelling) {
     (true, false) => SURE,
     ...
-```
+}
 ````
 
 If they put their constants inside the function:
@@ -121,4 +122,25 @@ There's an example in [Rust By Example](https://doc.rust-lang.org/rust-by-exampl
 If they use `_` instead of `false` in their match statement:
 ```
 Using the `_` in the true/false `match` suggests that there's something else to catch while there isn't. This makes it less readable and can even be a source of bugs in some cases. So, we should limit its use to only when it's needed. Here, we should use `false` because there is no other option.
+```
+
+If they use `.to_uppercase()` to check if the string is yelling instead of checking for the absence of lowercase characters:
+```
+Note that `.to_uppercase()` allocates a new `String` on the heap on every call.
+A more efficient and idiomatic approach is to check that the string contains at
+least one alphabetic character and no lowercase characters:
+`message.chars().any(char::is_alphabetic) && !message.chars().any(char::is_lowercase)`
+```
+
+If they use `.contains()` to check for lowercase/uppercase instead of `.chars().any()`:
+```
+Both `.contains()` and `.chars().any()` are equivalent here, but `.chars().any(char::is_lowercase)`
+makes the intent more explicit — we're checking a property of each character, not searching for a pattern.
+```
+
+If they use nested `if/else` instead of a `match` on a tuple of booleans:
+```
+Consider using `match (is_question, is_yelled)` — matching on a tuple of booleans
+is idiomatic Rust and avoids repeating condition checks across branches. It also
+makes it immediately clear that all combinations are handled exhaustively.
 ```
