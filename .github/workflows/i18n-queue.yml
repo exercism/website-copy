@@ -111,7 +111,7 @@ jobs:
     steps:
       # exercism/i18n, at main. NEVER this repository: see the header.
       - name: Check out exercism/i18n (scripts only)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: exercism/i18n
           ref: main
@@ -122,9 +122,9 @@ jobs:
             locales.json
             website-exclusions.json
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Which English changed
         id: changed
@@ -254,7 +254,7 @@ jobs:
       english-changed: ${{ steps.changed.outputs.count != '0' }}
     steps:
       - name: Check out exercism/i18n (scripts only)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: exercism/i18n
           ref: main
@@ -265,9 +265,9 @@ jobs:
             locales.json
             website-exclusions.json
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
 
       # Did THIS push change English, in files the PR touches? Every input is an
       # API response, as in `queue`. Anything that cannot be read counts as a

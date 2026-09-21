@@ -58,20 +58,20 @@ jobs:
       # sparse checkout of scripts/, the two JSON files and the production
       # locales only.
       - name: Check out exercism/i18n (scripts and translations)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: exercism/i18n
           ref: main
           path: i18n
           persist-credentials: false
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
           package_json_file: i18n/package.json
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
 
       # One dependency (`yaml`), needed only when this repo is the website.
       - name: Install
