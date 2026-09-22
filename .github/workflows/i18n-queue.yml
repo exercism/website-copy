@@ -1,17 +1,17 @@
-# Installed as .github/workflows/i18n-queue.yml in each repo that holds
-# English. Copy it byte for byte from exercism/i18n/source-repo-workflows/.
+# This workflow is installed as .github/workflows/i18n-queue.yml in every repo
+# that holds English. Don't edit it in those repos. Edit it in
+# exercism/i18n/source-repo-workflows/ and copy it to each repo.
 #
-# When a maintainer adds `ready-to-translate` to a PR, this opens an issue in
-# exercism/i18n to translate the PR's English. The logic lives in
-# exercism/i18n/.github/workflows/source-queue.yml, which explains every job
-# and why it is fork-safe. This file holds only the trigger and the
-# permissions the called jobs may use.
+# When a maintainer adds the `ready-to-translate` label to a PR, this workflow
+# opens an issue in exercism/i18n asking for the PR's English to be translated.
+# The work happens in exercism/i18n/.github/workflows/source-queue.yml. This
+# file only sets when it runs and what it is allowed to do.
 #
-# `pull_request_target` gives fork PRs this repo's secrets, and nothing here
-# checks out or runs the PR's code. The called workflow checks out only
-# exercism/i18n at main. `secrets: inherit` passes on the organisation secret
-# EXERCISM_I18N_APP_PRIVATE_KEY, from which the called jobs mint a token for
-# exercism/i18n issues.
+# It runs on `pull_request_target` so that PRs from forks can use the
+# organisation's secrets. That is safe because nothing in this workflow checks
+# out or runs code from the PR. It only checks out exercism/i18n.
+# `secrets: inherit` passes on the Exercism i18n app's private key, which the
+# workflow uses to open the issue.
 
 name: i18n queue
 
