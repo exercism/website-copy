@@ -66,7 +66,7 @@ There are two key patterns for matching:
 In order to parse the question correctly, a student may:
 - match the first number and store it as initial value, then match
   `(${OPERATORS})(${LITERAL_NUMBER})` and replace the initial value constantly,
-- match ``(${LITERAL_NUMBER})(${OPERATORS})(${LITERAL_NUMBER})`, calculate the
+- match `(${LITERAL_NUMBER})(${OPERATORS})(${LITERAL_NUMBER})`, calculate the
   result and replace it with the result, until it finds the `?` or no more
   `OPERATORS`,
 - parse all `OPERATORS` and `LITERAL_NUMBER` first into tokens and then
