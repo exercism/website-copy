@@ -1,6 +1,9 @@
 # Initial Notes
-- Both CalculateWorkingCarsPerHour and CalculateWorkingCarsPerMinute do not need to have multiple variables declared instead they can just be calculated in the return statement.
-- Both the 95000 and 10000 constants that are brought in from the question prompt should be declared as constants either in the CalculateCost function or in the package itself, this avoids a "MagicNumber" and allows you to declare a name for the values.
+
+- Both `CalculateWorkingCarsPerHour()` and `CalculateWorkingCarsPerMinute()` do not need to have multiple variables declared.
+  The result can be calculated directly in the return statement.
+- Both the `95000` and `10000` constants from the instructions should be declared as constants, either in `CalculateCost()` or in the package.
+  This avoids a "MagicNumber" and allows you to declare a name for the values.
 
 # Benchmark code
 
@@ -8,7 +11,7 @@
 package cars
 
 import (
-	"strconv"
+	"fmt"
 	"testing"
 )
 
@@ -28,7 +31,7 @@ func BenchmarkCalculateWorkingCarsPerHour(b *testing.B) {
 	for _, tt := range tests {
 		b.Run(
 			// Name the sub-benchmark using the input values
-			"productionPerHour="+strconv.Itoa(tt.productionPerHour)+"-successRate="+strconv.FormatFloat(tt.successRate, 'f', -1, 64),
+			fmt.Sprintf("productionPerHour=%d-successRate=%f", tt.productionPerHour, tt.successRate),
 			func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
 					CalculateWorkingCarsPerHour(tt.productionPerHour, tt.successRate)
@@ -52,9 +55,9 @@ func BenchmarkCalculateWorkingCarsPerMinute(b *testing.B) {
 
 	for _, tt := range tests {
 		b.Run(
-			"productionPerHour="+strconv.Itoa(tt.productionPerHour)+"-successRate="+strconv.FormatFloat(tt.successRate, 'f', -1, 64),
+			fmt.Sprintf("productionPerHour=%d-successRate=%f", tt.productionPerHour, tt.successRate),
 			func(b *testing.B) {
-				for i := 0; i < b.N; i++ {
+				for b.Loop() {
 					CalculateWorkingCarsPerMinute(tt.productionPerHour, tt.successRate)
 				}
 			})
@@ -76,9 +79,9 @@ func BenchmarkCalculateCost(b *testing.B) {
 
 	for _, tt := range tests {
 		b.Run(
-			"carsCount="+strconv.Itoa(tt.carsCount),
+			fmt.Sprintf("carsCount=%d", tt.carsCount),
 			func(b *testing.B) {
-				for i := 0; i < b.N; i++ {
+				for b.Loop() {
 					CalculateCost(tt.carsCount)
 				}
 			})
