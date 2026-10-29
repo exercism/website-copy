@@ -28,6 +28,6 @@ object Flattener {
 ```
 
 ## Common suggestions
-* Remember that the solution must work for any type, not just `Int`s or lists on `Int`s (although the tests only test just these cases)
+* Remember that the solution must work for any type, not just `Int`s or lists of `Int`s (although the tests only test just these cases).
 * The `filterNotNull()` function can make your life easier. Include the nulls in your preliminary list, then filter them out.
-* As a challenge, try __not__ using library function `flatMap()`, and instead find a different way
+* As a challenge, try __not__ using library function `flatMap()`, and instead find a different way.
