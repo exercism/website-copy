@@ -81,7 +81,7 @@ value, but rather `() => number`, which at least makes the typing show up when
 using the class, but you should note that whilst it's nice to dynamically
 generate these, it's not TS-friendy.
 
-Finaly, there are ways to actually make TypeScript auto-complete and separating
+Finally, there are ways to actually make TypeScript auto-complete and separating
 the input from the business logic, one of which is listed below with comments
 at the type definitions what they are used for:
 
@@ -132,8 +132,8 @@ const SpaceAge = function(number: Readonly<number>): ISpaceAge {
     ) as ISpaceAge
 
 // A function may not be called as a class by default in TypeScript. This double
-// cast makes it anything followed by a class. In later version of TS casting to
-// unknown is prefered over this cast to any.
+// cast makes it anything followed by a class. In later versions of TS casting to
+// unknown is preferred over this cast to any.
 //
 } as any as SpaceAge
 
@@ -156,12 +156,16 @@ newer test suite, should this change also come to TypeScript.
 ### Common suggestions
 - If a student uses `any`, suggest explicit return types / value types.
 - If a student uses [`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) followed by a `forEach`, `reduce` or `map` looking up the `key`, suggest [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+- If a student uses `Readonly<number>` on the parameter but not on `seconds`, point out that marking `seconds` as `readonly` in the class is more idiomatic for enforcing immutability in TypeScript.
+- If a student duplicates the `EARTH_YEAR_IN_S` constant inside each method instead of defining it once at the top level, suggest extracting it as a named constant to follow the DRY principle.
+- If a student is not using TypeScript-specific features like interfaces or typed return values at all (i.e. writing it like plain JS), suggest adding explicit return types to the planet methods for better type safety.
+  
 
 ### Talking points
 These don't make for a make-or-break comment, but if you're having a discussion you could point out different methods of
 rounding to x digits:
-- If a student is rounding via `Math.round(age  100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) and [`Number(other)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#Using_Number_to_convert_a_Date_object)
+- If a student is rounding via `Math.round(age * 100) / 100`, introduce them to [`Number#toFixed`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) and [`Number(other)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#Using_Number_to_convert_a_Date_object)
 - If a student is rounding via `Number(age.toFixed(2))`, explain they could have used [`Math.round()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
 
-Since the dynamically created, staticly typed version is so complex, only talk
+Since the dynamically created, statically typed version is so complex, only talk
 about it if the student explicitly asks how they could create such a solution.
