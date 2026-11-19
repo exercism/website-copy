@@ -1,5 +1,5 @@
 [
-  { "username": "IsaacG", "tracks": ["awk", "bash", "jq"] },
+  { "username": "IsaacG", "tracks": ["awk", "bash", "gdscript", "go", "jq", "sqlite"] },
   { "username": "vaeng", "tracks": ["cpp"] },
   { "username": "lpil", "tracks": ["gleam"] },
   { "username": "meatball", "tracks": ["crystal"] },
